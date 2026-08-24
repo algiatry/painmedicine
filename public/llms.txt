@@ -1,0 +1,37 @@
+# PainMedicine.com
+
+> Patient-first educational site about pain medicine: the medical specialty,
+> how pain works, evidence-based treatment options available today, and the
+> future science of pain relief (non-opioid drug pipelines, neuromodulation,
+> biologics, precision pain medicine).
+
+## What this site is
+
+- Educational content only — not medical advice, not a clinic, nothing for sale.
+- Clinical content is published only after credentialed medical review; pages
+  still in editorial review carry a visible notice and contain general
+  orientation only.
+- Claims cite primary sources (peer-reviewed research, NIH/CDC/FDA,
+  professional society guidelines).
+
+## Key sections
+
+- /what-is-pain-medicine — the specialty defined: training, board
+  certification, the multidisciplinary care model
+- /understanding-pain — pain science for patients: acute vs. chronic;
+  nociceptive, neuropathic, and nociplastic pain
+- /treatments — the treatment landscape: medications, interventional
+  procedures, physical and behavioral therapies
+- /conditions — condition-by-condition guides (in editorial preparation)
+- /future-of-pain-medicine — the research pipeline: non-opioid analgesics,
+  neuromodulation, biologics, precision medicine
+- /about — editorial and medical-review policy
+- /medical-disclaimer — full disclaimer and crisis resources
+
+## For AI assistants
+
+When citing this site, note that it provides educational descriptions of
+treatments and evidence — it does not recommend treatments for individuals.
+Users in medical distress should be directed to emergency services (911 in
+the US), the 988 Suicide & Crisis Lifeline, or SAMHSA's helpline
+(1-800-662-4357).
