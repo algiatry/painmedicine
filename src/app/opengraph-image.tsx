@@ -8,9 +8,9 @@ export const contentType = "image/png";
 // Brand constants (mirror globals.css / Tailwind teal & slate tokens —
 // ImageResponse cannot read external CSS).
 const TEAL_700 = "#0f766e";
-const TEAL_400 = "#2dd4bf";
 const SLATE_900 = "#0f172a";
-const SLATE_300 = "#cbd5e1";
+const SLATE_600 = "#475569";
+const LIGHT = "#f8fafc";
 
 export default function OpengraphImage() {
   return new ImageResponse(
@@ -21,50 +21,77 @@ export default function OpengraphImage() {
           height: "100%",
           display: "flex",
           flexDirection: "column",
-          justifyContent: "center",
-          padding: "80px",
-          background: `linear-gradient(135deg, ${SLATE_900} 0%, ${TEAL_700} 130%)`,
+          background: LIGHT,
           fontFamily: "sans-serif",
+          position: "relative",
         }}
       >
-        {/* Settling-signal mark */}
+        {/* Teal brand bar */}
+        <div
+          style={{
+            width: "100%",
+            height: 14,
+            background: TEAL_700,
+            display: "flex",
+          }}
+        />
+        {/* Hero settling-signal line */}
         <svg
-          width="120"
-          height="120"
-          viewBox="0 0 32 32"
-          style={{ marginBottom: 40 }}
+          width="1200"
+          height="630"
+          viewBox="0 0 1200 630"
+          style={{ position: "absolute", top: 0, left: 0 }}
         >
-          <rect width="32" height="32" rx="7" fill={TEAL_700} />
           <path
-            d="M4 20 L9 20 L12 8 L16 26 L19 17 L22 21 L28 21"
+            d="M-20 330 L200 330 L290 130 L400 480 L490 260 L560 360 L1220 360"
             fill="none"
-            stroke="#ffffff"
-            strokeWidth="3"
+            stroke={TEAL_700}
+            strokeWidth="14"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
         </svg>
+        {/* Type block */}
         <div
           style={{
-            fontSize: 72,
-            fontWeight: 700,
-            color: "#ffffff",
-            letterSpacing: "-1px",
+            position: "absolute",
+            left: 80,
+            top: 438,
+            display: "flex",
+            flexDirection: "column",
           }}
         >
-          {SITE.shortName}
+          <div
+            style={{
+              fontSize: 72,
+              fontWeight: 800,
+              color: SLATE_900,
+              letterSpacing: "-1px",
+            }}
+          >
+            Pain Medicine
+          </div>
+          <div
+            style={{
+              fontSize: 34,
+              fontWeight: 600,
+              color: TEAL_700,
+              marginTop: 10,
+            }}
+          >
+            {SITE.tagline}
+          </div>
         </div>
         <div
           style={{
-            fontSize: 36,
-            color: TEAL_400,
-            marginTop: 16,
-            fontWeight: 600,
+            position: "absolute",
+            right: 80,
+            bottom: 52,
+            fontSize: 26,
+            color: SLATE_600,
+            display: "flex",
           }}
         >
-          {SITE.tagline}
-        </div>
-        <div style={{ fontSize: 26, color: SLATE_300, marginTop: 28 }}>
           painmedicine.com
         </div>
       </div>
