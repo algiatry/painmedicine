@@ -4,6 +4,10 @@ import ThreeTypesOfPain from "./science/ThreeTypesOfPain";
 import AcuteVsChronic from "./science/AcuteVsChronic";
 import MeasuringPain from "./science/MeasuringPain";
 import PipelineTracker from "./future/PipelineTracker";
+import Neuromodulation from "./future/Neuromodulation";
+import BiologicsGeneTherapy from "./future/BiologicsGeneTherapy";
+import PrecisionPainMedicine from "./future/PrecisionPainMedicine";
+import MindAndBrain from "./future/MindAndBrain";
 
 /**
  * Maps an article slug to the component that renders its illustrated body.
@@ -16,4 +20,8 @@ export const ARTICLE_BODIES: Record<string, ComponentType> = {
   "acute-vs-chronic-pain": AcuteVsChronic,
   "measuring-pain": MeasuringPain,
   pipeline: PipelineTracker,
+  neuromodulation: Neuromodulation,
+  "biologics-and-gene-therapy": BiologicsGeneTherapy,
+  "precision-pain-medicine": PrecisionPainMedicine,
+  "mind-and-brain": MindAndBrain,
 };

@@ -187,21 +187,25 @@ export const HUBS: Hub[] = [
         title: "Next-generation neuromodulation",
         blurb:
           "Closed-loop spinal cord stimulation and non-invasive brain and nerve stimulation.",
+        href: "/future-of-pain-medicine/neuromodulation",
       },
       {
         title: "Biologics & gene-targeted therapy",
         blurb:
           "What migraine's antibody breakthrough proved, and where gene therapy for pain is headed.",
+        href: "/future-of-pain-medicine/biologics-and-gene-therapy",
       },
       {
         title: "Precision pain medicine",
         blurb:
           "Pharmacogenomics, biomarkers, and matching the treatment to the patient.",
+        href: "/future-of-pain-medicine/precision-pain-medicine",
       },
       {
         title: "Mind, brain, and new frontiers",
         blurb:
           "Pain reprocessing science, virtual reality analgesia, and early-stage research — covered honestly.",
+        href: "/future-of-pain-medicine/mind-and-brain",
       },
     ],
   },
