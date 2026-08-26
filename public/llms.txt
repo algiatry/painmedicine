@@ -30,6 +30,9 @@
 - /conditions — condition-by-condition guides (in editorial preparation)
 - /future-of-pain-medicine — the research pipeline: non-opioid analgesics,
   neuromodulation, biologics, precision medicine
+  - /future-of-pain-medicine/pipeline — live, source-cited tracker of pain
+    drugs & devices in development (phase, mechanism, sponsor); updated
+    quarterly, each entry linked to a primary source (FDA, ClinicalTrials.gov)
 - /about — editorial and medical-review policy
 - /medical-disclaimer — full disclaimer and crisis resources
 

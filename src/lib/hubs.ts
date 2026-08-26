@@ -169,8 +169,8 @@ export const HUBS: Hub[] = [
     title: "The Future of Pain Medicine",
     description:
       "The next generation of pain relief: non-opioid drug pipelines, advanced neuromodulation, biologics, precision pain medicine, and the science reshaping the field.",
-    status: "pending-review",
-    lastUpdated: LAST_UPDATED,
+    status: "sourced",
+    lastUpdated: "2026-08-26",
     heading: "The future of pain medicine",
     intro: [
       "Pain science is in the middle of its most productive era in decades. After years in which pain relief meant choosing among old drug classes, new mechanisms are reaching patients — and a deep pipeline sits behind them.",
@@ -178,9 +178,10 @@ export const HUBS: Hub[] = [
     ],
     planned: [
       {
-        title: "The non-opioid drug pipeline",
+        title: "The pain treatment pipeline — live tracker",
         blurb:
-          "Sodium-channel blockers and other new mechanisms aiming to relieve pain without opioid risks.",
+          "Every notable drug and device in development for pain — mechanism, phase, and what each one means. Updated quarterly.",
+        href: "/future-of-pain-medicine/pipeline",
       },
       {
         title: "Next-generation neuromodulation",

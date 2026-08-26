@@ -9,14 +9,14 @@ import {
   medicalWebPageJsonLd,
 } from "@/lib/schema";
 import { getHub } from "@/lib/hubs";
-import { ARTICLES, getArticle } from "@/lib/understanding";
-import { ARTICLE_BODIES } from "@/components/science";
+import { ALL_ARTICLES, getArticle } from "@/lib/articles";
+import { ARTICLE_BODIES } from "@/components/bodies";
 import { SITE } from "@/lib/site";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return ARTICLES.map((a) => ({ hub: a.hub, article: a.slug }));
+  return ALL_ARTICLES.map((a) => ({ hub: a.hub, article: a.slug }));
 }
 
 export async function generateMetadata({

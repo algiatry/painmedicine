@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SITE } from "@/lib/site";
 import { HUBS } from "@/lib/hubs";
-import { ARTICLES } from "@/lib/understanding";
+import { ALL_ARTICLES } from "@/lib/articles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -18,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "weekly" as const,
   }));
 
-  const articleEntries = ARTICLES.map((a) => ({
+  const articleEntries = ALL_ARTICLES.map((a) => ({
     url: `${SITE.url}/${a.hub}/${a.slug}`,
     lastModified: new Date(a.lastUpdated),
     changeFrequency: "monthly" as const,

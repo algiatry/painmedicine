@@ -26,7 +26,8 @@ export type Reference = {
 };
 
 export type Article = PageMeta & {
-  hub: "understanding-pain";
+  /** Owning hub slug, e.g. "understanding-pain" or "future-of-pain-medicine". */
+  hub: string;
   /** ~50-60 word plain-English answer to the page's core question (AEO). */
   answer: string;
   faqs: { question: string; answer: string }[];
