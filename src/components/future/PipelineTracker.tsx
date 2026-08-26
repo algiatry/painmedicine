@@ -223,6 +223,12 @@ export default function PipelineTracker() {
         reporting on the science, not medical advice; decisions belong with your
         clinician.
       </P>
+      <P>
+        And because much of this pipeline exists to reduce reliance on opioids:
+        if you or someone you love is struggling with opioid or other substance
+        use, the SAMHSA National Helpline is free, confidential, and open 24/7
+        at <strong>1-800-662-HELP (4357)</strong>.
+      </P>
 
       {activePhases.map((phase) => {
         const list = candidatesByPhase(phase);

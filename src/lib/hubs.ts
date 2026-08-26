@@ -192,7 +192,7 @@ export const HUBS: Hub[] = [
       {
         title: "Biologics & gene-targeted therapy",
         blurb:
-          "What migraine's antibody breakthrough proved, and where gene therapy for pain is headed.",
+          "What migraine's antibody drugs proved, and where gene therapy for pain is headed.",
         href: "/future-of-pain-medicine/biologics-and-gene-therapy",
       },
       {

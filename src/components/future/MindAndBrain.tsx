@@ -113,8 +113,8 @@ export default function MindAndBrain() {
           how pain works
         </Link>{" "}
         explains. That idea has a hopeful corollary: if the brain builds pain,
-        the brain can be part of the cure. This is some of the most promising —
-        and most misunderstood — territory in the field.
+        the brain can be part of the treatment. This is some of the most
+        promising — and most misunderstood — territory in the field.
       </P>
 
       <H2 id="unlearn">Unlearning pain</H2>

@@ -269,7 +269,7 @@ export const FUTURE_ARTICLES: Article[] = [
     status: "sourced",
     lastUpdated: LAST_REVIEWED,
     answer:
-      "If the brain builds the experience of pain, then the brain can be part of the cure — and that is no longer just a metaphor. Pain reprocessing therapy helped most patients in a landmark trial become pain-free by unlearning a false alarm. An FDA-authorized virtual-reality program treats chronic back pain at home. And early research is testing whether psychedelics can help reset a sensitized pain system.",
+      "If the brain builds the experience of pain, then the brain can be part of the treatment — and that is no longer just a metaphor. Pain reprocessing therapy helped most patients in a landmark trial become pain-free by unlearning a false alarm. An FDA-authorized virtual-reality program treats chronic back pain at home. And early research is testing whether psychedelics can help reset a sensitized pain system.",
     faqs: [
       {
         question: "Isn't a 'mind-based' treatment just saying my pain is imaginary?",
