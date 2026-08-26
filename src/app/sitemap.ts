@@ -6,7 +6,13 @@ import { ALL_ARTICLES } from "@/lib/articles";
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
-  const staticEntries = ["", "/about", "/medical-disclaimer"].map((path) => ({
+  const staticEntries = [
+    "",
+    "/about",
+    "/medical-disclaimer",
+    "/find-help",
+    "/glossary",
+  ].map((path) => ({
     url: `${SITE.url}${path}`,
     lastModified: now,
     changeFrequency: "monthly" as const,

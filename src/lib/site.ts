@@ -47,6 +47,8 @@ export const NAV: NavItem[] = [
 ];
 
 export const SUPPORT_LINKS = [
+  { label: "Find Help", href: "/find-help" },
+  { label: "Glossary", href: "/glossary" },
   { label: "About & Editorial Policy", href: "/about" },
   { label: "Medical Disclaimer", href: "/medical-disclaimer" },
 ] as const;
