@@ -1,13 +1,28 @@
 import type { MetadataRoute } from "next";
 import { SITE } from "@/lib/site";
 import { HUBS } from "@/lib/hubs";
+import { ARTICLES } from "@/lib/understanding";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPaths = ["", "/about", "/medical-disclaimer"];
-  const hubPaths = HUBS.map((h) => `/${h.slug}`);
-  return [...staticPaths, ...hubPaths].map((path) => ({
+  const now = new Date();
+
+  const staticEntries = ["", "/about", "/medical-disclaimer"].map((path) => ({
     url: `${SITE.url}${path}`,
-    lastModified: new Date(),
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+  }));
+
+  const hubEntries = HUBS.map((h) => ({
+    url: `${SITE.url}/${h.slug}`,
+    lastModified: new Date(h.lastUpdated),
     changeFrequency: "weekly" as const,
   }));
+
+  const articleEntries = ARTICLES.map((a) => ({
+    url: `${SITE.url}/${a.hub}/${a.slug}`,
+    lastModified: new Date(a.lastUpdated),
+    changeFrequency: "monthly" as const,
+  }));
+
+  return [...staticEntries, ...hubEntries, ...articleEntries];
 }

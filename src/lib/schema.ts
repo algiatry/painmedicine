@@ -1,14 +1,22 @@
 import { SITE } from "./site";
 
 /**
- * Review status gates clinical content. Pages with status !== "reviewed"
- * must render the pending-review notice and must NOT carry a reviewer byline.
+ * Review status gates how a page presents its credibility.
  *
- * Clinical content HOLD: per launch decision, no clinical claims publish
- * until council reviewer credentials are confirmed. Hub pages ship as
- * structural/navigational content only.
+ * - "draft" / "pending-review": incomplete or clinical content held for
+ *   review. Renders the in-review notice; carries NO reviewer byline.
+ * - "sourced": full educational content built from cited primary sources
+ *   (IASP, NIH, WHO, Cochrane, peer-reviewed literature) that makes no
+ *   individualized clinical recommendation. Publishes with an HONEST byline
+ *   ("written from primary sources — independent medical review pending"),
+ *   never a fabricated "reviewed by" credit.
+ * - "reviewed": a named credentialed reviewer has signed off. ONLY then may a
+ *   reviewer byline appear. See CONTENT-TEMPLATE.md.
+ *
+ * Clinical guidance (condition/treatment/opioid pages) stays held until
+ * reviewer credentials are confirmed.
  */
-export type ReviewStatus = "draft" | "pending-review" | "reviewed";
+export type ReviewStatus = "draft" | "pending-review" | "sourced" | "reviewed";
 
 export type Reviewer = {
   name: string;
@@ -64,6 +72,19 @@ export function medicalWebPageJsonLd(meta: {
       name: SITE.name,
       url: SITE.url,
     },
+  };
+}
+
+export function breadcrumbJsonLd(items: { name: string; path: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((it, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: it.name,
+      item: `${SITE.url}${it.path}`,
+    })),
   };
 }
 

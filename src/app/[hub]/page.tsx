@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import JsonLd from "@/components/JsonLd";
 import ReviewByline from "@/components/ReviewByline";
@@ -52,7 +53,11 @@ export default async function HubPage({
         <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900">
           {hub.heading}
         </h1>
-        <ReviewByline reviewer={hub.reviewer} lastUpdated={hub.lastUpdated} />
+        <ReviewByline
+          status={hub.status}
+          reviewer={hub.reviewer}
+          lastUpdated={hub.lastUpdated}
+        />
       </header>
 
       <div className="mt-8 space-y-5">
@@ -68,18 +73,44 @@ export default async function HubPage({
           id={`${hub.slug}-coverage`}
           className="text-xl font-semibold text-slate-900"
         >
-          What this section will cover
+          {hub.planned.some((p) => p.href)
+            ? "Explore this section"
+            : "What this section will cover"}
         </h2>
         <ul className="mt-5 space-y-4">
-          {hub.planned.map((item) => (
-            <li
-              key={item.title}
-              className="rounded-lg border border-slate-200 p-5"
-            >
-              <h3 className="font-semibold text-slate-900">{item.title}</h3>
-              <p className="mt-1 text-sm text-slate-600">{item.blurb}</p>
-            </li>
-          ))}
+          {hub.planned.map((item) =>
+            item.href ? (
+              <li key={item.title}>
+                <Link
+                  href={item.href}
+                  className="group flex items-start justify-between gap-4 rounded-lg border border-slate-200 p-5 transition-colors hover:border-teal-600"
+                >
+                  <span>
+                    <span className="block font-semibold text-slate-900 group-hover:text-teal-700">
+                      {item.title}
+                    </span>
+                    <span className="mt-1 block text-sm text-slate-600">
+                      {item.blurb}
+                    </span>
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className="mt-0.5 text-slate-300 transition-colors group-hover:text-teal-600"
+                  >
+                    →
+                  </span>
+                </Link>
+              </li>
+            ) : (
+              <li
+                key={item.title}
+                className="rounded-lg border border-slate-200 p-5"
+              >
+                <h3 className="font-semibold text-slate-900">{item.title}</h3>
+                <p className="mt-1 text-sm text-slate-600">{item.blurb}</p>
+              </li>
+            ),
+          )}
         </ul>
       </section>
 

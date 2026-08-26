@@ -3,8 +3,11 @@ import type { PageMeta } from "./schema";
 export type Hub = PageMeta & {
   heading: string;
   intro: string[];
-  /** Planned spoke pages — rendered as a roadmap until content passes review */
-  planned: { title: string; blurb: string }[];
+  /**
+   * Spoke pages. A `href` marks a spoke that is live — the hub renders it as a
+   * link; items without `href` render as a roadmap of what is still coming.
+   */
+  planned: { title: string; blurb: string; href?: string }[];
   faqs?: { question: string; answer: string }[];
 };
 
@@ -69,33 +72,37 @@ export const HUBS: Hub[] = [
     title: "Understanding Pain",
     description:
       "How pain actually works: acute vs. chronic pain, the three recognized types of pain, and why pain is more than tissue damage.",
-    status: "pending-review",
-    lastUpdated: LAST_UPDATED,
+    status: "sourced",
+    lastUpdated: "2026-08-26",
     heading: "Understanding pain",
     intro: [
       "Pain is not a simple alarm wire from body to brain. It is an experience the nervous system constructs — which is why two people with the same injury can hurt very differently, and why pain can persist after tissue has healed.",
-      "Understanding the kind of pain you have matters, because different kinds of pain respond to different treatments. This hub builds that foundation in plain language.",
+      "Understanding the kind of pain you have matters, because different kinds of pain respond to different treatments. These plain-language guides build that foundation, drawn from primary sources and cited on every page.",
     ],
     planned: [
       {
-        title: "Acute vs. chronic pain",
+        title: "How pain works",
         blurb:
-          "Why the 3-month line matters, and how pain that persists becomes its own condition.",
+          "Nociceptors, the spinal 'gate,' and central sensitization — the science of hurting, made readable.",
+        href: "/understanding-pain/how-pain-works",
       },
       {
         title: "The three types of pain",
         blurb:
           "Nociceptive, neuropathic, and nociplastic pain — the modern classification and why it guides treatment.",
+        href: "/understanding-pain/types-of-pain",
       },
       {
-        title: "How pain works",
+        title: "Acute vs. chronic pain",
         blurb:
-          "Nociceptors, the spinal 'gate,' and central sensitization — the science of hurting, made readable.",
+          "Why the 3-month line matters, and how pain that persists becomes its own condition.",
+        href: "/understanding-pain/acute-vs-chronic-pain",
       },
       {
         title: "Measuring pain",
         blurb:
           "Why the 0-to-10 scale is imperfect, and better ways to describe pain to your clinician.",
+        href: "/understanding-pain/measuring-pain",
       },
     ],
   },

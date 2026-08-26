@@ -18,8 +18,13 @@
 
 - /what-is-pain-medicine — the specialty defined: training, board
   certification, the multidisciplinary care model
-- /understanding-pain — pain science for patients: acute vs. chronic;
-  nociceptive, neuropathic, and nociplastic pain
+- /understanding-pain — pain science for patients (live, source-cited):
+  - /understanding-pain/how-pain-works — nociceptors, the spinal gate
+    (Melzack & Wall), and central sensitization
+  - /understanding-pain/types-of-pain — nociceptive, neuropathic, and
+    nociplastic pain (the IASP's 2017 third category)
+  - /understanding-pain/acute-vs-chronic-pain — the 3-month line and ICD-11
+  - /understanding-pain/measuring-pain — pain scales and how to describe pain
 - /treatments — the treatment landscape: medications, interventional
   procedures, physical and behavioral therapies
 - /conditions — condition-by-condition guides (in editorial preparation)
