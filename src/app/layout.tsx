@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
 import { organizationJsonLd } from "@/lib/schema";
 import { SITE } from "@/lib/site";
+import { Analytics } from "@vercel/analytics/next";
 
 const sourceSans = Source_Sans_3({
   variable: "--font-source-sans",
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
