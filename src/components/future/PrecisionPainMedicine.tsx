@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { Figure, H2, P } from "@/components/science/Figure";
+import { FIG } from "@/lib/fig";
 
 const GROUPS = [
   {
     x: 20,
     cx: 136,
-    accent: "#64748b",
+    accent: FIG.muted,
     title: "Poor metabolizer",
     sub: "gene barely active",
     pct: 0.15,
@@ -16,7 +17,7 @@ const GROUPS = [
   {
     x: 282,
     cx: 398,
-    accent: "#0d9488",
+    accent: FIG.nerve,
     title: "Normal metabolizer",
     sub: "gene works as usual",
     pct: 0.55,
@@ -27,7 +28,7 @@ const GROUPS = [
   {
     x: 544,
     cx: 660,
-    accent: "#d97706",
+    accent: FIG.signalDark,
     title: "Ultrarapid metabolizer",
     sub: "gene overactive",
     pct: 0.95,
@@ -54,26 +55,26 @@ function MetabolizerFigure() {
         </desc>
         {GROUPS.map((g) => (
           <g key={g.title}>
-            <rect x={g.x} y="16" width="232" height="218" rx="14" fill="#ffffff" stroke="#e2e8f0" />
+            <rect x={g.x} y="16" width="232" height="218" rx="14" fill={FIG.white} stroke={FIG.soft} />
             <rect x={g.x} y="16" width="232" height="6" rx="3" fill={g.accent} />
-            <text x={g.cx} y="52" textAnchor="middle" fontSize="16.5" fontWeight="700" fill="#0f172a">
+            <text x={g.cx} y="52" textAnchor="middle" fontSize="16.5" fontWeight="700" fill={FIG.ink}>
               {g.title}
             </text>
             <text x={g.cx} y="72" textAnchor="middle" fontSize="12.5" fontWeight="600" fill={g.accent}>
               {g.sub}
             </text>
-            <text x={g.cx} y="104" textAnchor="middle" fontSize="12" fill="#64748b">
+            <text x={g.cx} y="104" textAnchor="middle" fontSize="12" fill={FIG.muted}>
               codeine → morphine
             </text>
-            <rect x={g.x + 26} y="116" width="180" height="14" rx="7" fill="#e2e8f0" />
+            <rect x={g.x + 26} y="116" width="180" height="14" rx="7" fill={FIG.soft} />
             <rect x={g.x + 26} y="116" width={180 * g.pct} height="14" rx="7" fill={g.accent} />
-            <text x={g.cx} y="152" textAnchor="middle" fontSize="12" fill="#64748b">
+            <text x={g.cx} y="152" textAnchor="middle" fontSize="12" fill={FIG.muted}>
               {g.pctLabel}
             </text>
-            <text x={g.cx} y="188" textAnchor="middle" fontSize="13.5" fontWeight="600" fill="#0f172a">
+            <text x={g.cx} y="188" textAnchor="middle" fontSize="13.5" fontWeight="600" fill={FIG.ink}>
               {g.out1}
             </text>
-            <text x={g.cx} y="206" textAnchor="middle" fontSize="13.5" fill="#475569">
+            <text x={g.cx} y="206" textAnchor="middle" fontSize="13.5" fill={FIG.textMid}>
               {g.out2}
             </text>
           </g>

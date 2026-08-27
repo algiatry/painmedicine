@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Figure, H2, P, anim } from "./Figure";
+import { FIG } from "@/lib/fig";
 
 /**
  * Figure 1 — the pain signal pathway, schematic. Skin → nerve → spinal
@@ -31,19 +32,19 @@ function PathwayFigure() {
         y1="150"
         x2="366"
         y2="150"
-        stroke="#f59e0b"
+        stroke={FIG.signal}
         strokeWidth="3"
         className="fig-draw"
         style={anim(0.25, 252)}
       />
-      <circle cx="180" cy="150" r="4" fill="#f59e0b" className="fig-pop" style={anim(0.5)} />
-      <circle cx="240" cy="150" r="4" fill="#f59e0b" className="fig-pop" style={anim(0.75)} />
-      <circle cx="300" cy="150" r="4" fill="#f59e0b" className="fig-pop" style={anim(1.0)} />
+      <circle cx="180" cy="150" r="4" fill={FIG.signal} className="fig-pop" style={anim(0.5)} />
+      <circle cx="240" cy="150" r="4" fill={FIG.signal} className="fig-pop" style={anim(0.75)} />
+      <circle cx="300" cy="150" r="4" fill={FIG.signal} className="fig-pop" style={anim(1.0)} />
       {/* path: spinal cord -> brain */}
       <path
         d="M441 116 C 520 70, 590 78, 628 104"
         fill="none"
-        stroke="#0d9488"
+        stroke={FIG.nerve}
         strokeWidth="3"
         className="fig-draw"
         style={anim(1.35, 215)}
@@ -51,46 +52,46 @@ function PathwayFigure() {
 
       {/* Stage 1 — skin + nociceptor */}
       <g>
-        <rect x="34" y="132" width="84" height="40" rx="8" fill="#f1f5f9" stroke="#cbd5e1" />
+        <rect x="34" y="132" width="84" height="40" rx="8" fill={FIG.ground} stroke={FIG.line} />
         {/* stimulus spark */}
         <path
           d="M76 104 l-9 20 h11 l-8 20 22 -26 h-12 z"
-          fill="#f59e0b"
-          stroke="#d97706"
+          fill={FIG.signal}
+          stroke={FIG.signalDark}
           strokeWidth="1"
           className="fig-pop"
           style={anim(0)}
         />
         {/* free nerve endings */}
-        <path d="M50 172 v14 M68 172 v18 M86 172 v14 M104 172 v18" stroke="#94a3b8" strokeWidth="2" fill="none" />
+        <path d="M50 172 v14 M68 172 v18 M86 172 v14 M104 172 v18" stroke={FIG.faint} strokeWidth="2" fill="none" />
       </g>
 
       {/* Stage 3 — spinal cord cross-section with gate */}
       <g>
-        <ellipse cx="404" cy="150" rx="40" ry="54" fill="#ffffff" stroke="#94a3b8" strokeWidth="2" />
+        <ellipse cx="404" cy="150" rx="40" ry="54" fill={FIG.white} stroke={FIG.faint} strokeWidth="2" />
         {/* butterfly gray matter */}
         <path
           d="M404 118 C 388 128, 386 150, 396 158 C 386 166, 388 188, 404 182 C 420 188, 422 166, 412 158 C 422 150, 420 128, 404 118 Z"
-          fill="#e2e8f0"
-          stroke="#cbd5e1"
+          fill={FIG.soft}
+          stroke={FIG.line}
         />
         {/* the gate */}
-        <rect x="356" y="138" width="14" height="24" rx="3" fill="#ccfbf1" stroke="#0d9488" strokeWidth="2" />
-        <line x1="363" y1="138" x2="363" y2="162" stroke="#0d9488" strokeWidth="1.5" />
+        <rect x="356" y="138" width="14" height="24" rx="3" fill={FIG.nerveTint} stroke={FIG.nerve} strokeWidth="2" />
+        <line x1="363" y1="138" x2="363" y2="162" stroke={FIG.nerve} strokeWidth="1.5" />
       </g>
 
       {/* Stage 4 — brain */}
       <g>
         <path
           d="M636 104 C 628 84, 656 70, 676 78 C 692 68, 720 78, 718 98 C 732 104, 730 128, 712 132 C 706 148, 680 150, 672 138 C 652 146, 630 128, 636 104 Z"
-          fill="#ccfbf1"
-          stroke="#0f766e"
+          fill={FIG.nerveTint}
+          stroke={FIG.nerveDark}
           strokeWidth="2"
         />
         <path
           d="M660 96 c 10 -6, 16 4, 26 -2 M654 112 c 12 6, 22 -4, 34 2 M690 90 c 6 8, 2 16, 8 22"
           fill="none"
-          stroke="#0f766e"
+          stroke={FIG.nerveDark}
           strokeWidth="1.5"
           className="fig-draw"
           style={anim(2.0, 130)}
@@ -105,26 +106,26 @@ function PathwayFigure() {
         { n: "4", x: 678, y: 168, d: 2.15 },
       ].map((b) => (
         <g key={b.n} className="fig-pop" style={anim(b.d)}>
-          <circle cx={b.x} cy={b.y} r="13" fill="#0f766e" />
-          <text x={b.x} y={b.y + 5} textAnchor="middle" fontSize="15" fontWeight="700" fill="#ffffff">
+          <circle cx={b.x} cy={b.y} r="13" fill={FIG.nerveDark} />
+          <text x={b.x} y={b.y + 5} textAnchor="middle" fontSize="15" fontWeight="700" fill={FIG.white}>
             {b.n}
           </text>
         </g>
       ))}
 
       {/* labels */}
-      <g fontSize="14" fill="#334155" textAnchor="middle">
+      <g fontSize="14" fill={FIG.text} textAnchor="middle">
         <text x="76" y="248" fontWeight="600">Nociceptors</text>
-        <text x="76" y="266" fill="#64748b">detect a threat</text>
+        <text x="76" y="266" fill={FIG.muted}>detect a threat</text>
 
         <text x="242" y="262" fontWeight="600">Signal travels</text>
-        <text x="242" y="280" fill="#64748b">Aδ fast · C slow</text>
+        <text x="242" y="280" fill={FIG.muted}>Aδ fast · C slow</text>
 
         <text x="404" y="248" fontWeight="600">The spinal gate</text>
-        <text x="404" y="266" fill="#64748b">filters the signal</text>
+        <text x="404" y="266" fill={FIG.muted}>filters the signal</text>
 
         <text x="678" y="206" fontWeight="600">The brain</text>
-        <text x="678" y="224" fill="#64748b">builds the pain</text>
+        <text x="678" y="224" fill={FIG.muted}>builds the pain</text>
       </g>
       </svg>
     </Figure>
@@ -155,41 +156,41 @@ function SensitizationFigure() {
       </desc>
 
       {/* input: small wave */}
-      <text x="112" y="40" textAnchor="middle" fontSize="14" fontWeight="600" fill="#334155">
+      <text x="112" y="40" textAnchor="middle" fontSize="14" fontWeight="600" fill={FIG.text}>
         Same input
       </text>
       <path
         d="M40 120 q 12 -20 24 0 t 24 0 t 24 0 t 24 0 t 24 0"
         fill="none"
-        stroke="#f59e0b"
+        stroke={FIG.signal}
         strokeWidth="2.5"
         className="fig-draw"
         style={anim(0, 210)}
       />
 
       {/* amplifier */}
-      <path d="M250 70 L 250 170 L 400 120 Z" fill="#f1f5f9" stroke="#94a3b8" strokeWidth="2" />
+      <path d="M250 70 L 250 170 L 400 120 Z" fill={FIG.ground} stroke={FIG.faint} strokeWidth="2" />
       {/* the gain dial, turned up */}
-      <circle cx="300" cy="120" r="24" fill="#ffffff" stroke="#0d9488" strokeWidth="2" />
+      <circle cx="300" cy="120" r="24" fill={FIG.white} stroke={FIG.nerve} strokeWidth="2" />
       {/* the needle sweeps from low to high once the input arrives */}
       <line
         x1="300"
         y1="120"
         x2="317"
         y2="105"
-        stroke="#0f766e"
+        stroke={FIG.nerveDark}
         strokeWidth="3"
         strokeLinecap="round"
         className="fig-dial"
         style={{ ...anim(0.9), transformOrigin: "300px 120px" }}
       />
-      <circle cx="300" cy="120" r="3" fill="#0f766e" />
+      <circle cx="300" cy="120" r="3" fill={FIG.nerveDark} />
       <text
         x="325"
         y="185"
         textAnchor="middle"
         fontSize="13"
-        fill="#64748b"
+        fill={FIG.muted}
         className="fig-fade"
         style={anim(1.3)}
       >
@@ -197,13 +198,13 @@ function SensitizationFigure() {
       </text>
 
       {/* output: large wave */}
-      <text x="600" y="40" textAnchor="middle" fontSize="14" fontWeight="600" fill="#334155">
+      <text x="600" y="40" textAnchor="middle" fontSize="14" fontWeight="600" fill={FIG.text}>
         Amplified pain
       </text>
       <path
         d="M440 120 q 15 -55 30 0 t 30 0 t 30 0 t 30 0 t 30 0"
         fill="none"
-        stroke="#d97706"
+        stroke={FIG.signalDark}
         strokeWidth="3.5"
         className="fig-draw"
         style={anim(1.7, 380)}
@@ -212,7 +213,7 @@ function SensitizationFigure() {
       {/* arrows */}
       <path
         d="M150 120 h 90"
-        stroke="#cbd5e1"
+        stroke={FIG.line}
         strokeWidth="2"
         markerEnd="url(#arrow-cs)"
         className="fig-fade"
@@ -220,7 +221,7 @@ function SensitizationFigure() {
       />
       <path
         d="M404 120 h 28"
-        stroke="#cbd5e1"
+        stroke={FIG.line}
         strokeWidth="2"
         markerEnd="url(#arrow-cs)"
         className="fig-fade"
@@ -228,7 +229,7 @@ function SensitizationFigure() {
       />
       <defs>
         <marker id="arrow-cs" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-          <path d="M0 0 L 8 4 L 0 8 z" fill="#cbd5e1" />
+          <path d="M0 0 L 8 4 L 0 8 z" fill={FIG.line} />
         </marker>
       </defs>
       </svg>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Figure, H2, P, anim } from "./Figure";
+import { FIG } from "@/lib/fig";
 
 function PathwayFigure() {
   return (
@@ -30,44 +31,44 @@ function PathwayFigure() {
             markerHeight="7"
             orient="auto-start-reverse"
           >
-            <path d="M0 0 L10 5 L0 10 z" fill="#0d9488" />
+            <path d="M0 0 L10 5 L0 10 z" fill={FIG.nerve} />
           </marker>
         </defs>
 
         {/* step 1 */}
         <g className="fig-rise" style={anim(0)}>
-          <rect x="90" y="28" width="290" height="62" rx="14" fill="#f0fdfa" stroke="#0d9488" strokeWidth="1.8" />
-          <text x="235" y="54" textAnchor="middle" fontSize="14.5" fontWeight="700" fill="#0f172a">
+          <rect x="90" y="28" width="290" height="62" rx="14" fill={FIG.nerveGround} stroke={FIG.nerve} strokeWidth="1.8" />
+          <text x="235" y="54" textAnchor="middle" fontSize="14.5" fontWeight="700" fill={FIG.ink}>
             Expectation of relief
           </text>
-          <text x="235" y="74" textAnchor="middle" fontSize="12.5" fill="#475569">
+          <text x="235" y="74" textAnchor="middle" fontSize="12.5" fill={FIG.textMid}>
             context, ritual, trust — the cortex
           </text>
         </g>
 
         {/* step 2 */}
         <g className="fig-rise" style={anim(0.6)}>
-          <rect x="90" y="128" width="290" height="62" rx="14" fill="#f0fdfa" stroke="#0d9488" strokeWidth="1.8" />
-          <text x="235" y="154" textAnchor="middle" fontSize="14.5" fontWeight="700" fill="#0f172a">
+          <rect x="90" y="128" width="290" height="62" rx="14" fill={FIG.nerveGround} stroke={FIG.nerve} strokeWidth="1.8" />
+          <text x="235" y="154" textAnchor="middle" fontSize="14.5" fontWeight="700" fill={FIG.ink}>
             The brainstem&rsquo;s pain-control hub
           </text>
-          <text x="235" y="174" textAnchor="middle" fontSize="12.5" fill="#475569">
+          <text x="235" y="174" textAnchor="middle" fontSize="12.5" fill={FIG.textMid}>
             releases the body&rsquo;s own opioids
           </text>
         </g>
 
         {/* step 3 */}
         <g className="fig-rise" style={anim(1.2)}>
-          <rect x="90" y="228" width="290" height="62" rx="14" fill="#f0fdfa" stroke="#0d9488" strokeWidth="1.8" />
-          <text x="235" y="254" textAnchor="middle" fontSize="14.5" fontWeight="700" fill="#0f172a">
+          <rect x="90" y="228" width="290" height="62" rx="14" fill={FIG.nerveGround} stroke={FIG.nerve} strokeWidth="1.8" />
+          <text x="235" y="254" textAnchor="middle" fontSize="14.5" fontWeight="700" fill={FIG.ink}>
             Less pain signal gets through
           </text>
-          <text x="235" y="274" textAnchor="middle" fontSize="12.5" fill="#475569">
+          <text x="235" y="274" textAnchor="middle" fontSize="12.5" fill={FIG.textMid}>
             measured down to the spinal cord
           </text>
         </g>
 
-        <g fill="none" stroke="#0d9488" strokeWidth="3" markerEnd="url(#path-arrow)">
+        <g fill="none" stroke={FIG.nerve} strokeWidth="3" markerEnd="url(#path-arrow)">
           <line x1="235" y1="94" x2="235" y2="122" className="fig-draw fig-fade" style={anim(0.45, 34)} />
           <line x1="235" y1="194" x2="235" y2="222" className="fig-draw fig-fade" style={anim(1.05, 34)} />
         </g>
@@ -79,19 +80,19 @@ function PathwayFigure() {
             y1="159"
             x2="384"
             y2="159"
-            stroke="#dc2626"
+            stroke={FIG.caution}
             strokeWidth="2.5"
             strokeDasharray="6 5"
             strokeLinecap="round"
           />
-          <rect x="436" y="120" width="210" height="78" rx="12" fill="#fef2f2" stroke="#fca5a5" strokeWidth="1.5" />
-          <text x="541" y="146" textAnchor="middle" fontSize="13" fontWeight="700" fill="#991b1b">
+          <rect x="436" y="120" width="210" height="78" rx="12" fill={FIG.cautionGround} stroke={FIG.cautionEdge} strokeWidth="1.5" />
+          <text x="541" y="146" textAnchor="middle" fontSize="13" fontWeight="700" fill={FIG.cautionText}>
             The naloxone test
           </text>
-          <text x="541" y="166" textAnchor="middle" fontSize="12" fill="#7f1d1d">
+          <text x="541" y="166" textAnchor="middle" fontSize="12" fill={FIG.cautionTextDark}>
             block the body&rsquo;s opioids,
           </text>
-          <text x="541" y="183" textAnchor="middle" fontSize="12" fill="#7f1d1d">
+          <text x="541" y="183" textAnchor="middle" fontSize="12" fill={FIG.cautionTextDark}>
             and placebo relief fades
           </text>
         </g>
@@ -101,8 +102,8 @@ function PathwayFigure() {
 }
 
 const TRIAL_BARS = [
-  { label: "Placebo, honestly labeled", sub: "added to usual care", pct: 30, accent: "#0d9488" },
-  { label: "Usual care alone", sub: "the comparison group", pct: 9, accent: "#94a3b8" },
+  { label: "Placebo, honestly labeled", sub: "added to usual care", pct: 30, accent: FIG.nerve },
+  { label: "Usual care alone", sub: "the comparison group", pct: 9, accent: FIG.faint },
 ];
 
 function OpenLabelFigure() {
@@ -125,20 +126,20 @@ function OpenLabelFigure() {
           const w = 460 * (b.pct / 35);
           return (
             <g key={b.label}>
-              <text x="40" y={y - 10} fontSize="13.5" fontWeight="700" fill="#0f172a">
+              <text x="40" y={y - 10} fontSize="13.5" fontWeight="700" fill={FIG.ink}>
                 {b.label}
               </text>
-              <text x="40" y={y + 42} fontSize="12" fill="#64748b">
+              <text x="40" y={y + 42} fontSize="12" fill={FIG.muted}>
                 {b.sub}
               </text>
-              <rect x="40" y={y} width="560" height="26" rx="13" fill="#e2e8f0" />
+              <rect x="40" y={y} width="560" height="26" rx="13" fill={FIG.soft} />
               <rect x="40" y={y} width={w} height="26" rx="13" fill={b.accent} />
               <text
                 x={40 + w + 14}
                 y={y + 18}
                 fontSize="14"
                 fontWeight="700"
-                fill="#334155"
+                fill={FIG.text}
               >
                 ~{b.pct}% pain reduction
               </text>

@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { Figure, H2, P } from "@/components/science/Figure";
+import { FIG } from "@/lib/fig";
 
 const APPROACHES = [
   {
     x: 30,
     cx: 140,
-    accent: "#0d9488",
-    tint: "#ccfbf1",
+    accent: FIG.nerve,
+    tint: FIG.nerveTint,
     title: "Pain reprocessing",
     l1: "Teaches the brain that safe",
     l2: "signals aren't danger.",
@@ -15,8 +16,8 @@ const APPROACHES = [
   {
     x: 270,
     cx: 380,
-    accent: "#0891b2",
-    tint: "#cffafe",
+    accent: FIG.cyan,
+    tint: FIG.cyanTint,
     title: "Virtual reality",
     l1: "Immersive at-home skills:",
     l2: "breathing, mindfulness.",
@@ -25,8 +26,8 @@ const APPROACHES = [
   {
     x: 510,
     cx: 620,
-    accent: "#7c3aed",
-    tint: "#ede9fe",
+    accent: FIG.violet,
+    tint: FIG.violetTint,
     title: "Psychedelics",
     l1: "Testing whether plasticity",
     l2: "can reset chronic pain.",
@@ -52,38 +53,38 @@ function BrainFigure() {
 
         {/* the brain */}
         <g>
-          <ellipse cx="380" cy="66" rx="58" ry="42" fill="#ccfbf1" stroke="#0f766e" strokeWidth="2" />
+          <ellipse cx="380" cy="66" rx="58" ry="42" fill={FIG.nerveTint} stroke={FIG.nerveDark} strokeWidth="2" />
           <path
             d="M340 52 c 14 -10, 26 6, 40 -3 c 12 -7, 28 2, 34 10 M336 74 c 16 8, 30 -5, 46 3 c 12 6, 26 0, 34 -4 M380 30 c 6 12, 2 24, 6 36"
             fill="none"
-            stroke="#0f766e"
+            stroke={FIG.nerveDark}
             strokeWidth="1.5"
           />
         </g>
-        <text x="380" y="122" textAnchor="middle" fontSize="12.5" fill="#64748b">
+        <text x="380" y="122" textAnchor="middle" fontSize="12.5" fill={FIG.muted}>
           the brain that constructs pain
         </text>
 
         <defs>
           <marker id="mb-arrow" markerWidth="9" markerHeight="9" refX="6" refY="4.5" orient="auto">
-            <path d="M0 0 L 9 4.5 L 0 9 z" fill="#cbd5e1" />
+            <path d="M0 0 L 9 4.5 L 0 9 z" fill={FIG.line} />
           </marker>
         </defs>
 
         {APPROACHES.map((a) => (
           <g key={a.title}>
             {/* connector up to the brain */}
-            <line x1={a.cx} y1="150" x2={380} y2="112" stroke="#cbd5e1" strokeWidth="2" markerEnd="url(#mb-arrow)" />
-            <rect x={a.x} y="150" width="220" height="162" rx="14" fill="#ffffff" stroke="#e2e8f0" />
+            <line x1={a.cx} y1="150" x2={380} y2="112" stroke={FIG.line} strokeWidth="2" markerEnd="url(#mb-arrow)" />
+            <rect x={a.x} y="150" width="220" height="162" rx="14" fill={FIG.white} stroke={FIG.soft} />
             <circle cx={a.cx} cy="188" r="20" fill={a.tint} />
             <circle cx={a.cx} cy="188" r="6" fill={a.accent} />
-            <text x={a.cx} y="238" textAnchor="middle" fontSize="15.5" fontWeight="700" fill="#0f172a">
+            <text x={a.cx} y="238" textAnchor="middle" fontSize="15.5" fontWeight="700" fill={FIG.ink}>
               {a.title}
             </text>
-            <text x={a.cx} y="260" textAnchor="middle" fontSize="12.5" fill="#475569">
+            <text x={a.cx} y="260" textAnchor="middle" fontSize="12.5" fill={FIG.textMid}>
               {a.l1}
             </text>
-            <text x={a.cx} y="277" textAnchor="middle" fontSize="12.5" fill="#475569">
+            <text x={a.cx} y="277" textAnchor="middle" fontSize="12.5" fill={FIG.textMid}>
               {a.l2}
             </text>
             <rect x={a.cx - 68} y="290" width="136" height="20" rx="10" fill={a.tint} />

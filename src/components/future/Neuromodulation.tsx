@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Figure, H2, P } from "@/components/science/Figure";
+import { FIG } from "@/lib/fig";
 
 const LEVELS = [
   {
@@ -45,25 +46,25 @@ function LevelsFigure() {
         </desc>
 
         {/* neuraxis */}
-        <line x1="160" y1="52" x2="160" y2="328" stroke="#cbd5e1" strokeWidth="2" markerEnd="url(#nm-arrow)" />
+        <line x1="160" y1="52" x2="160" y2="328" stroke={FIG.line} strokeWidth="2" markerEnd="url(#nm-arrow)" />
         <defs>
           <marker id="nm-arrow" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
-            <path d="M0 0 L 9 4.5 L 0 9 z" fill="#cbd5e1" />
+            <path d="M0 0 L 9 4.5 L 0 9 z" fill={FIG.line} />
           </marker>
         </defs>
 
         {LEVELS.map((l) => (
           <g key={l.anat}>
-            <text x="138" y={l.yc + 4} textAnchor="end" fontSize="13" fontWeight="600" fill="#475569">
+            <text x="138" y={l.yc + 4} textAnchor="end" fontSize="13" fontWeight="600" fill={FIG.textMid}>
               {l.anat}
             </text>
-            <line x1="170" y1={l.yc} x2="208" y2={l.yc} stroke="#cbd5e1" strokeWidth="2" />
-            <circle cx="160" cy={l.yc} r="9" fill="#ccfbf1" stroke="#0d9488" strokeWidth="2" />
-            <rect x="208" y={l.yc - 30} width="490" height="60" rx="10" fill="#f8fafc" stroke="#e2e8f0" />
-            <text x="226" y={l.yc - 6} fontSize="15" fontWeight="600" fill="#0f172a">
+            <line x1="170" y1={l.yc} x2="208" y2={l.yc} stroke={FIG.line} strokeWidth="2" />
+            <circle cx="160" cy={l.yc} r="9" fill={FIG.nerveTint} stroke={FIG.nerve} strokeWidth="2" />
+            <rect x="208" y={l.yc - 30} width="490" height="60" rx="10" fill={FIG.paper} stroke={FIG.soft} />
+            <text x="226" y={l.yc - 6} fontSize="15" fontWeight="600" fill={FIG.ink}>
               {l.title}
             </text>
-            <text x="226" y={l.yc + 16} fontSize="13" fill="#64748b">
+            <text x="226" y={l.yc + 16} fontSize="13" fill={FIG.muted}>
               {l.detail}
             </text>
           </g>

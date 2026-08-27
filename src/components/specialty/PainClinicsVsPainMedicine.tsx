@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Figure, H2, P } from "../science/Figure";
+import { FIG } from "@/lib/fig";
 
 const SIGNALS = [
   { title: "Verifiable training", sub: "board-certified physicians you can look up in the ABMS registry" },
@@ -28,20 +29,20 @@ function SignalsFigure() {
           const y = 26 + i * 60;
           return (
             <g key={s.title}>
-              <rect x="26" y={y} width="628" height="50" rx="12" fill="#ffffff" stroke="#e2e8f0" strokeWidth="1.5" />
-              <circle cx="56" cy={y + 25} r="14" fill="#f0fdfa" stroke="#0d9488" strokeWidth="2" />
+              <rect x="26" y={y} width="628" height="50" rx="12" fill={FIG.white} stroke={FIG.soft} strokeWidth="1.5" />
+              <circle cx="56" cy={y + 25} r="14" fill={FIG.nerveGround} stroke={FIG.nerve} strokeWidth="2" />
               <path
                 d={`M49 ${y + 25} l5 5 l9 -10`}
                 fill="none"
-                stroke="#0d9488"
+                stroke={FIG.nerve}
                 strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
               />
-              <text x="86" y={y + 21} fontSize="13.5" fontWeight="700" fill="#0f172a">
+              <text x="86" y={y + 21} fontSize="13.5" fontWeight="700" fill={FIG.ink}>
                 {s.title}
               </text>
-              <text x="86" y={y + 40} fontSize="12" fill="#64748b">
+              <text x="86" y={y + 40} fontSize="12" fill={FIG.muted}>
                 {s.sub}
               </text>
             </g>

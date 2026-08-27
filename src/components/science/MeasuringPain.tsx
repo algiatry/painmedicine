@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { Figure, H2, P } from "./Figure";
+import { FIG } from "@/lib/fig";
 
 const FACES = [
-  { val: 0, cx: 50, accent: "#0d9488", mouth: "M41 102 Q50 112 59 102" },
-  { val: 2.5, cx: 190, accent: "#14b8a6", mouth: "M181 103 Q190 109 199 103" },
-  { val: 5, cx: 330, accent: "#64748b", mouth: "M321 105 L339 105" },
-  { val: 7.5, cx: 470, accent: "#f59e0b", mouth: "M461 108 Q470 102 479 108" },
-  { val: 10, cx: 610, accent: "#d97706", mouth: "M601 110 Q610 100 619 110" },
+  { val: 0, cx: 50, accent: FIG.nerve, mouth: "M41 102 Q50 112 59 102" },
+  { val: 2.5, cx: 190, accent: FIG.nerveBright, mouth: "M181 103 Q190 109 199 103" },
+  { val: 5, cx: 330, accent: FIG.muted, mouth: "M321 105 L339 105" },
+  { val: 7.5, cx: 470, accent: FIG.signal, mouth: "M461 108 Q470 102 479 108" },
+  { val: 10, cx: 610, accent: FIG.signalDark, mouth: "M601 110 Q610 100 619 110" },
 ];
 
 function ScaleFigure() {
@@ -27,18 +28,18 @@ function ScaleFigure() {
         </desc>
         <defs>
           <linearGradient id="painscale" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0" stopColor="#14b8a6" />
-            <stop offset="0.55" stopColor="#fbbf24" />
-            <stop offset="1" stopColor="#f59e0b" />
+            <stop offset="0" stopColor={FIG.nerveBright} />
+            <stop offset="0.55" stopColor={FIG.signalBright} />
+            <stop offset="1" stopColor={FIG.signal} />
           </linearGradient>
         </defs>
 
         {/* faces */}
         {FACES.map((f) => (
           <g key={f.val}>
-            <circle cx={f.cx} cy="96" r="20" fill="#ffffff" stroke={f.accent} strokeWidth="2" />
-            <circle cx={f.cx - 7} cy="90" r="1.8" fill="#334155" />
-            <circle cx={f.cx + 7} cy="90" r="1.8" fill="#334155" />
+            <circle cx={f.cx} cy="96" r="20" fill={FIG.white} stroke={f.accent} strokeWidth="2" />
+            <circle cx={f.cx - 7} cy="90" r="1.8" fill={FIG.text} />
+            <circle cx={f.cx + 7} cy="90" r="1.8" fill={FIG.text} />
             <path d={f.mouth} fill="none" stroke={f.accent} strokeWidth="2" strokeLinecap="round" />
           </g>
         ))}
@@ -49,15 +50,15 @@ function ScaleFigure() {
           const x = 50 + i * 56;
           return (
             <g key={i}>
-              <line x1={x} y1="150" x2={x} y2="166" stroke="#ffffff" strokeWidth="1" />
-              <text x={x} y="186" textAnchor="middle" fontSize="13" fontWeight="600" fill="#475569">
+              <line x1={x} y1="150" x2={x} y2="166" stroke={FIG.white} strokeWidth="1" />
+              <text x={x} y="186" textAnchor="middle" fontSize="13" fontWeight="600" fill={FIG.textMid}>
                 {i}
               </text>
             </g>
           );
         })}
-        <text x="50" y="208" textAnchor="start" fontSize="12.5" fill="#64748b">No pain</text>
-        <text x="610" y="208" textAnchor="end" fontSize="12.5" fill="#64748b">Worst imaginable</text>
+        <text x="50" y="208" textAnchor="start" fontSize="12.5" fill={FIG.muted}>No pain</text>
+        <text x="610" y="208" textAnchor="end" fontSize="12.5" fill={FIG.muted}>Worst imaginable</text>
       </svg>
     </Figure>
   );
@@ -67,7 +68,7 @@ const PEOPLE = [
   {
     label: "Person A",
     origin: 40,
-    accent: "#d97706",
+    accent: FIG.signalDark,
     meters: [
       { name: "Sleep", pct: 0.25 },
       { name: "Mood", pct: 0.3 },
@@ -77,7 +78,7 @@ const PEOPLE = [
   {
     label: "Person B",
     origin: 400,
-    accent: "#0d9488",
+    accent: FIG.nerve,
     meters: [
       { name: "Sleep", pct: 0.7 },
       { name: "Mood", pct: 0.65 },
@@ -101,16 +102,16 @@ function BeyondNumberFigure() {
           daily-activity meters differ markedly.
         </desc>
 
-        <line x1="360" y1="40" x2="360" y2="266" stroke="#e2e8f0" strokeWidth="1.5" />
+        <line x1="360" y1="40" x2="360" y2="266" stroke={FIG.soft} strokeWidth="1.5" />
 
         {PEOPLE.map((p) => {
           const cx = p.origin + 130;
           return (
             <g key={p.label}>
-              <text x={cx} y="96" textAnchor="middle" fontSize="66" fontWeight="800" fill="#0f172a">
+              <text x={cx} y="96" textAnchor="middle" fontSize="66" fontWeight="800" fill={FIG.ink}>
                 7
               </text>
-              <text x={cx} y="122" textAnchor="middle" fontSize="14" fontWeight="600" fill="#64748b">
+              <text x={cx} y="122" textAnchor="middle" fontSize="14" fontWeight="600" fill={FIG.muted}>
                 {p.label} · rates pain 7/10
               </text>
               {p.meters.map((m, i) => {
@@ -118,10 +119,10 @@ function BeyondNumberFigure() {
                 const x = p.origin + 20;
                 return (
                   <g key={m.name}>
-                    <text x={x} y={y} fontSize="12.5" fill="#475569">
+                    <text x={x} y={y} fontSize="12.5" fill={FIG.textMid}>
                       {m.name}
                     </text>
-                    <rect x={x} y={y + 8} width="220" height="10" rx="5" fill="#e2e8f0" />
+                    <rect x={x} y={y + 8} width="220" height="10" rx="5" fill={FIG.soft} />
                     <rect x={x} y={y + 8} width={220 * m.pct} height="10" rx="5" fill={p.accent} />
                   </g>
                 );

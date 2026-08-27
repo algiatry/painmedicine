@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Figure, H2, P } from "./Figure";
+import { FIG } from "@/lib/fig";
 
 /**
  * Figure — two pain trajectories over time. Acute pain (amber) rises with an
@@ -23,22 +24,22 @@ function TimelineFigure() {
         </desc>
 
         {/* axes */}
-        <line x1="70" y1="250" x2="712" y2="250" stroke="#cbd5e1" strokeWidth="2" markerEnd="url(#axis-arrow)" />
-        <line x1="70" y1="60" x2="70" y2="250" stroke="#cbd5e1" strokeWidth="2" />
+        <line x1="70" y1="250" x2="712" y2="250" stroke={FIG.line} strokeWidth="2" markerEnd="url(#axis-arrow)" />
+        <line x1="70" y1="60" x2="70" y2="250" stroke={FIG.line} strokeWidth="2" />
         <defs>
           <marker id="axis-arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
-            <path d="M0 0 L 9 4.5 L 0 9 z" fill="#cbd5e1" />
+            <path d="M0 0 L 9 4.5 L 0 9 z" fill={FIG.line} />
           </marker>
         </defs>
-        <text x="66" y="150" textAnchor="middle" fontSize="12" fill="#94a3b8" transform="rotate(-90 66 150)">
+        <text x="66" y="150" textAnchor="middle" fontSize="12" fill={FIG.faint} transform="rotate(-90 66 150)">
           Pain intensity
         </text>
-        <text x="70" y="280" fontSize="13" fill="#64748b">Injury</text>
-        <text x="700" y="280" textAnchor="end" fontSize="13" fill="#64748b">Time →</text>
+        <text x="70" y="280" fontSize="13" fill={FIG.muted}>Injury</text>
+        <text x="700" y="280" textAnchor="end" fontSize="13" fill={FIG.muted}>Time →</text>
 
         {/* 3-month marker */}
-        <line x1="312" y1="66" x2="312" y2="258" stroke="#94a3b8" strokeWidth="1.5" strokeDasharray="4 4" />
-        <text x="312" y="54" textAnchor="middle" fontSize="13" fontWeight="600" fill="#475569">
+        <line x1="312" y1="66" x2="312" y2="258" stroke={FIG.faint} strokeWidth="1.5" strokeDasharray="4 4" />
+        <text x="312" y="54" textAnchor="middle" fontSize="13" fontWeight="600" fill={FIG.textMid}>
           ≈ 3 months
         </text>
 
@@ -46,25 +47,25 @@ function TimelineFigure() {
         <path
           d="M70 250 C 110 112, 152 96, 188 108 C 236 128, 262 168, 312 176 C 384 186, 430 166, 500 178 C 566 188, 626 170, 700 178"
           fill="none"
-          stroke="#0d9488"
+          stroke={FIG.nerve}
           strokeWidth="3.5"
         />
         {/* acute curve */}
         <path
           d="M70 250 C 110 110, 150 95, 185 105 C 235 122, 300 246, 360 249 L 700 250"
           fill="none"
-          stroke="#f59e0b"
+          stroke={FIG.signal}
           strokeWidth="3.5"
         />
 
         {/* legend */}
         <g>
-          <line x1="96" y1="92" x2="128" y2="92" stroke="#f59e0b" strokeWidth="3.5" />
-          <text x="136" y="96" fontSize="13.5" fill="#334155">
+          <line x1="96" y1="92" x2="128" y2="92" stroke={FIG.signal} strokeWidth="3.5" />
+          <text x="136" y="96" fontSize="13.5" fill={FIG.text}>
             Acute — protective, fades with healing
           </text>
-          <line x1="96" y1="116" x2="128" y2="116" stroke="#0d9488" strokeWidth="3.5" />
-          <text x="136" y="120" fontSize="13.5" fill="#334155">
+          <line x1="96" y1="116" x2="128" y2="116" stroke={FIG.nerve} strokeWidth="3.5" />
+          <text x="136" y="120" fontSize="13.5" fill={FIG.text}>
             Chronic — persists past ~3 months
           </text>
         </g>

@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { Figure, H2, P } from "@/components/science/Figure";
+import { FIG } from "@/lib/fig";
 
 const STEPS = [
   {
     x: 40,
     top: 230,
     cx: 135,
-    fill: "#f1f5f9",
-    stroke: "#cbd5e1",
+    fill: FIG.ground,
+    stroke: FIG.line,
     title: "Small molecules",
     sub: "act broadly",
     ex: "opioids · gabapentinoids",
@@ -16,8 +17,8 @@ const STEPS = [
     x: 250,
     top: 160,
     cx: 345,
-    fill: "#e0e7ff",
-    stroke: "#4f46e5",
+    fill: FIG.indigoTint,
+    stroke: FIG.indigo,
     title: "Antibodies",
     sub: "block one molecule",
     ex: "CGRP · anti-NGF",
@@ -26,8 +27,8 @@ const STEPS = [
     x: 460,
     top: 90,
     cx: 555,
-    fill: "#ede9fe",
-    stroke: "#7c3aed",
+    fill: FIG.violetTint,
+    stroke: FIG.violet,
     title: "Gene therapy",
     sub: "targets the gene itself",
     ex: "NaV1.7 / SCN9A",
@@ -52,26 +53,26 @@ function PrecisionFigure() {
         </desc>
 
         {/* precision arrow along the tops */}
-        <line x1="120" y1="235" x2="660" y2="80" stroke="#0d9488" strokeWidth="2" strokeDasharray="5 5" markerEnd="url(#bio-arrow)" />
+        <line x1="120" y1="235" x2="660" y2="80" stroke={FIG.nerve} strokeWidth="2" strokeDasharray="5 5" markerEnd="url(#bio-arrow)" />
         <defs>
           <marker id="bio-arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
-            <path d="M0 0 L 9 4.5 L 0 9 z" fill="#0d9488" />
+            <path d="M0 0 L 9 4.5 L 0 9 z" fill={FIG.nerve} />
           </marker>
         </defs>
-        <text x="664" y="70" textAnchor="end" fontSize="12.5" fontWeight="600" fill="#0f766e">
+        <text x="664" y="70" textAnchor="end" fontSize="12.5" fontWeight="600" fill={FIG.nerveDark}>
           more precise →
         </text>
 
         {STEPS.map((s) => (
           <g key={s.title}>
             <rect x={s.x} y={s.top} width="190" height={baseline - s.top} rx="10" fill={s.fill} stroke={s.stroke} strokeOpacity="0.5" />
-            <text x={s.cx} y={s.top + 28} textAnchor="middle" fontSize="16" fontWeight="700" fill="#0f172a">
+            <text x={s.cx} y={s.top + 28} textAnchor="middle" fontSize="16" fontWeight="700" fill={FIG.ink}>
               {s.title}
             </text>
-            <text x={s.cx} y={s.top + 48} textAnchor="middle" fontSize="13" fill="#475569">
+            <text x={s.cx} y={s.top + 48} textAnchor="middle" fontSize="13" fill={FIG.textMid}>
               {s.sub}
             </text>
-            <text x={s.cx} y={s.top + 68} textAnchor="middle" fontSize="12" fill="#64748b">
+            <text x={s.cx} y={s.top + 68} textAnchor="middle" fontSize="12" fill={FIG.muted}>
               {s.ex}
             </text>
           </g>

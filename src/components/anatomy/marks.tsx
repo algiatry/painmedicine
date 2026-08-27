@@ -6,7 +6,9 @@
  * emblems. SiteMarker is that motif at figure scale.
  */
 
-const AMBER = "#f59e0b";
+import { FIG } from "@/lib/fig";
+
+const AMBER = FIG.signal;
 
 export function SiteMarker({
   x,
@@ -46,17 +48,17 @@ export function SiteMarker({
   );
 }
 
-/** Palette shared by every anatomy component. */
+/** Palette shared by every anatomy component — drawn from the FIG tokens. */
 export const ANATOMY = {
-  outline: "#94a3b8", // slate — anatomy outlines
-  fill: "#f1f5f9", // slate-100 — anatomy fill
-  limb: "#cbd5e1", // slate-300 — limb capsule inner
-  bone: "#f8fafc",
-  soft: "#e2e8f0", // slate-200 — discs, soft tissue
-  nerve: "#0d9488", // teal — nervous system
-  nerveDark: "#0f766e",
-  cartilage: "#14b8a6",
-  highlight: "#ccfbf1", // teal-100 — highlighted structures
-  signal: "#f59e0b", // amber — the pain signal / sites
-  signalDark: "#d97706",
+  outline: FIG.faint, // slate — anatomy outlines
+  fill: FIG.ground, // slate-100 — anatomy fill
+  limb: FIG.line, // slate-300 — limb capsule inner
+  bone: FIG.paper,
+  soft: FIG.soft, // slate-200 — discs, soft tissue
+  nerve: FIG.nerve, // teal — nervous system
+  nerveDark: FIG.nerveDark,
+  cartilage: FIG.nerveBright,
+  highlight: FIG.nerveTint, // teal-100 — highlighted structures
+  signal: FIG.signal, // amber — the pain signal / sites
+  signalDark: FIG.signalDark,
 } as const;

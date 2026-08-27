@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { Figure, H2, P } from "./Figure";
+import { FIG } from "@/lib/fig";
 
 const TYPES = [
   {
     key: "nociceptive",
     name: "Nociceptive",
     tag: "tissue damage",
-    accent: "#d97706",
-    tint: "#fef3c7",
+    accent: FIG.signalDark,
+    tint: FIG.signalTint,
     line1: "Nociceptors fire from actual or",
     line2: "threatened harm to tissue.",
     examples: "sprains · arthritis · a cut",
@@ -16,8 +17,8 @@ const TYPES = [
     key: "neuropathic",
     name: "Neuropathic",
     tag: "nerve damage",
-    accent: "#4f46e5",
-    tint: "#e0e7ff",
+    accent: FIG.indigo,
+    tint: FIG.indigoTint,
     line1: "A lesion or disease of the",
     line2: "nervous system itself.",
     examples: "sciatica · diabetic neuropathy",
@@ -26,8 +27,8 @@ const TYPES = [
     key: "nociplastic",
     name: "Nociplastic",
     tag: "over-sensitive system",
-    accent: "#0d9488",
-    tint: "#ccfbf1",
+    accent: FIG.nerve,
+    tint: FIG.nerveTint,
     line1: "Altered pain processing without",
     line2: "clear tissue or nerve damage.",
     examples: "fibromyalgia · widespread pain",
@@ -88,7 +89,7 @@ function TypesFigure() {
         const cx = x + 116;
         return (
           <g key={t.key}>
-            <rect x={x} y="20" width="232" height="258" rx="14" fill="#ffffff" stroke="#e2e8f0" />
+            <rect x={x} y="20" width="232" height="258" rx="14" fill={FIG.white} stroke={FIG.soft} />
             <rect x={x} y="20" width="232" height="6" rx="3" fill={t.accent} />
             {/* icon */}
             <circle cx={cx} cy="82" r="34" fill={t.tint} />
@@ -96,21 +97,21 @@ function TypesFigure() {
               <TypeIcon kind={t.key} accent={t.accent} />
             </g>
             {/* title + tag */}
-            <text x={cx} y="150" textAnchor="middle" fontSize="19" fontWeight="700" fill="#0f172a">
+            <text x={cx} y="150" textAnchor="middle" fontSize="19" fontWeight="700" fill={FIG.ink}>
               {t.name}
             </text>
             <text x={cx} y="171" textAnchor="middle" fontSize="13" fontWeight="600" fill={t.accent}>
               {t.tag}
             </text>
             {/* mechanism */}
-            <text x={cx} y="200" textAnchor="middle" fontSize="13.5" fill="#334155">
+            <text x={cx} y="200" textAnchor="middle" fontSize="13.5" fill={FIG.text}>
               {t.line1}
             </text>
-            <text x={cx} y="218" textAnchor="middle" fontSize="13.5" fill="#334155">
+            <text x={cx} y="218" textAnchor="middle" fontSize="13.5" fill={FIG.text}>
               {t.line2}
             </text>
             {/* examples */}
-            <text x={cx} y="252" textAnchor="middle" fontSize="12.5" fill="#64748b">
+            <text x={cx} y="252" textAnchor="middle" fontSize="12.5" fill={FIG.muted}>
               {t.examples}
             </text>
           </g>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Figure, H2, P } from "../science/Figure";
+import { FIG } from "@/lib/fig";
 
 const STEPS = [
   { n: 1, title: "Your story", sub: "a detailed history of the pain; and everything it touches", x: 105 },
@@ -32,12 +33,12 @@ function VisitFlowFigure() {
             markerHeight="7"
             orient="auto-start-reverse"
           >
-            <path d="M0 0 L10 5 L0 10 z" fill="#0d9488" />
+            <path d="M0 0 L10 5 L0 10 z" fill={FIG.nerve} />
           </marker>
         </defs>
 
         {/* connectors */}
-        <g fill="none" stroke="#0d9488" strokeWidth="2.5" markerEnd="url(#visit-arrow)">
+        <g fill="none" stroke={FIG.nerve} strokeWidth="2.5" markerEnd="url(#visit-arrow)">
           <line x1="139" y1="92" x2="228" y2="92" />
           <line x1="296" y1="92" x2="385" y2="92" />
           <line x1="453" y1="92" x2="542" y2="92" />
@@ -45,11 +46,11 @@ function VisitFlowFigure() {
 
         {STEPS.map((s) => (
           <g key={s.n}>
-            <circle cx={s.x} cy="92" r="30" fill="#f0fdfa" stroke="#0d9488" strokeWidth="2" />
-            <text x={s.x} y="99" textAnchor="middle" fontSize="19" fontWeight="800" fill="#0f766e">
+            <circle cx={s.x} cy="92" r="30" fill={FIG.nerveGround} stroke={FIG.nerve} strokeWidth="2" />
+            <text x={s.x} y="99" textAnchor="middle" fontSize="19" fontWeight="800" fill={FIG.nerveDark}>
               {s.n}
             </text>
-            <text x={s.x} y="150" textAnchor="middle" fontSize="14" fontWeight="700" fill="#0f172a">
+            <text x={s.x} y="150" textAnchor="middle" fontSize="14" fontWeight="700" fill={FIG.ink}>
               {s.title}
             </text>
             {s.sub.split("; ").map((line, i) => (
@@ -59,7 +60,7 @@ function VisitFlowFigure() {
                 y={172 + i * 17}
                 textAnchor="middle"
                 fontSize="11.5"
-                fill="#64748b"
+                fill={FIG.muted}
               >
                 {line}
               </text>

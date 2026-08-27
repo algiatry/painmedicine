@@ -11,12 +11,13 @@ import {
   type Modality,
   type Phase,
 } from "@/lib/pipeline";
+import { FIG } from "@/lib/fig";
 
 const MODALITY_TINT: Record<Modality, { fill: string; text: string }> = {
-  "Small molecule": { fill: "#ccfbf1", text: "#0f766e" },
-  Biologic: { fill: "#e0e7ff", text: "#3730a3" },
-  Device: { fill: "#cffafe", text: "#155e75" },
-  "Gene therapy": { fill: "#ede9fe", text: "#5b21b6" },
+  "Small molecule": { fill: FIG.nerveTint, text: FIG.nerveDark },
+  Biologic: { fill: FIG.indigoTint, text: FIG.indigoText },
+  Device: { fill: FIG.cyanTint, text: FIG.cyanText },
+  "Gene therapy": { fill: FIG.violetTint, text: FIG.violetText },
 };
 
 const PHASE_BADGE: Record<Phase, string> = {
@@ -89,7 +90,7 @@ function LandscapeFigure() {
 
         <defs>
           <marker id="pl-arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
-            <path d="M0 0 L 9 4.5 L 0 9 z" fill="#cbd5e1" />
+            <path d="M0 0 L 9 4.5 L 0 9 z" fill={FIG.line} />
           </marker>
         </defs>
 
@@ -99,13 +100,13 @@ function LandscapeFigure() {
           y1="24"
           x2={boardRight - 8}
           y2="24"
-          stroke="#e2e8f0"
+          stroke={FIG.soft}
           strokeWidth="2"
           markerEnd="url(#pl-arrow)"
           className="fig-draw"
           style={anim(0.15, 670)}
         />
-        <text x={boardRight - 14} y="16" textAnchor="end" fontSize="12" fill="#94a3b8" className="fig-fade" style={anim(0.5)}>
+        <text x={boardRight - 14} y="16" textAnchor="end" fontSize="12" fill={FIG.faint} className="fig-fade" style={anim(0.5)}>
           closer to patients →
         </text>
 
@@ -122,7 +123,7 @@ function LandscapeFigure() {
                 fill={MODALITY_COLOR[m]}
                 fillOpacity={0.055}
               />
-              <line x1={GUTTER} y1={y} x2={boardRight} y2={y} stroke="#e2e8f0" strokeWidth="1" />
+              <line x1={GUTTER} y1={y} x2={boardRight} y2={y} stroke={FIG.soft} strokeWidth="1" />
               <text
                 x={GUTTER - 12}
                 y={y + LANE_H / 2 + 4}
@@ -136,7 +137,7 @@ function LandscapeFigure() {
             </g>
           );
         })}
-        <line x1={GUTTER} y1={boardBottom} x2={boardRight} y2={boardBottom} stroke="#e2e8f0" strokeWidth="1" className="fig-fade" style={anim(0.5)} />
+        <line x1={GUTTER} y1={boardBottom} x2={boardRight} y2={boardBottom} stroke={FIG.soft} strokeWidth="1" className="fig-fade" style={anim(0.5)} />
 
         {/* column headers */}
         {STAGES.map((stage, ci) => (
@@ -147,12 +148,12 @@ function LandscapeFigure() {
             textAnchor="middle"
             fontSize="13.5"
             fontWeight="700"
-            fill={stage === "Approved" ? "#0f766e" : "#334155"}
+            fill={stage === "Approved" ? FIG.nerveDark : FIG.text}
             className="fig-fade"
             style={anim(0.35 + ci * 0.12)}
           >
             {stage}
-            <tspan dx="5" fill="#94a3b8" fontWeight="400">{`(${candidatesByPhase(stage).length})`}</tspan>
+            <tspan dx="5" fill={FIG.faint} fontWeight="400">{`(${candidatesByPhase(stage).length})`}</tspan>
           </text>
         ))}
 
@@ -162,7 +163,7 @@ function LandscapeFigure() {
           y={LANE_Y0}
           width={COL_W}
           height={boardBottom - LANE_Y0}
-          fill="#ccfbf1"
+          fill={FIG.nerveTint}
           fillOpacity="0.3"
           className="fig-fade"
           style={anim(1.7)}
@@ -172,7 +173,7 @@ function LandscapeFigure() {
           y1={LANE_Y0 - 6}
           x2={approvalX}
           y2={boardBottom + 6}
-          stroke="#0f766e"
+          stroke={FIG.nerveDark}
           strokeWidth="2"
           strokeDasharray="6 5"
           strokeLinecap="round"
@@ -185,7 +186,7 @@ function LandscapeFigure() {
           textAnchor="middle"
           fontSize="11.5"
           fontWeight="700"
-          fill="#0f766e"
+          fill={FIG.nerveDark}
           className="fig-fade"
           style={anim(1.85)}
         >
@@ -227,7 +228,7 @@ function LandscapeFigure() {
             <path
               d={`M${approvalX} ${LANE_Y0 + 1.5 * LANE_H} C ${approvalX} ${boardBottom + 10}, ${approvalX - 60} ${stripY - 6}, ${approvalX - 90} ${stripY + 24}`}
               fill="none"
-              stroke="#94a3b8"
+              stroke={FIG.faint}
               strokeWidth="1.8"
               strokeDasharray="4 5"
               markerEnd="url(#pl-arrow)"
@@ -241,11 +242,11 @@ function LandscapeFigure() {
                 width={boardRight - GUTTER}
                 height={48}
                 rx={10}
-                fill="#f8fafc"
-                stroke="#cbd5e1"
+                fill={FIG.paper}
+                stroke={FIG.line}
                 strokeDasharray="7 5"
               />
-              <text x={GUTTER - 12} y={stripY + 28} textAnchor="end" fontSize="12.5" fontWeight="600" fill="#94a3b8">
+              <text x={GUTTER - 12} y={stripY + 28} textAnchor="end" fontSize="12.5" fontWeight="600" fill={FIG.faint}>
                 Halted
               </text>
               {halted.map((c, i) => {
@@ -253,10 +254,10 @@ function LandscapeFigure() {
                 const cy = stripY + 24;
                 return (
                   <g key={c.name}>
-                    <circle cx={cx} cy={cy} r="6" fill="#ffffff" stroke="#94a3b8" strokeWidth="1.8" strokeDasharray="3 3" />
-                    <text x={cx + 14} y={cy + 4} fontSize="11.5" fontWeight="600" fill="#64748b">
+                    <circle cx={cx} cy={cy} r="6" fill={FIG.white} stroke={FIG.faint} strokeWidth="1.8" strokeDasharray="3 3" />
+                    <text x={cx + 14} y={cy + 4} fontSize="11.5" fontWeight="600" fill={FIG.muted}>
                       {chipLabel(c.name)}
-                      <tspan dx="5" fill="#94a3b8" fontWeight="400">— {c.modality.toLowerCase()}</tspan>
+                      <tspan dx="5" fill={FIG.faint} fontWeight="400">— {c.modality.toLowerCase()}</tspan>
                     </text>
                   </g>
                 );

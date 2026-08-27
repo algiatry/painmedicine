@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Figure, H2, P } from "./Figure";
+import { FIG } from "@/lib/fig";
 
 function CycleFigure() {
   return (
@@ -26,7 +27,7 @@ function CycleFigure() {
             markerHeight="7"
             orient="auto-start-reverse"
           >
-            <path d="M0 0 L10 5 L0 10 z" fill="#d97706" />
+            <path d="M0 0 L10 5 L0 10 z" fill={FIG.signalDark} />
           </marker>
           <marker
             id="arrow-weak"
@@ -37,28 +38,28 @@ function CycleFigure() {
             markerHeight="7"
             orient="auto-start-reverse"
           >
-            <path d="M0 0 L10 5 L0 10 z" fill="#64748b" />
+            <path d="M0 0 L10 5 L0 10 z" fill={FIG.muted} />
           </marker>
         </defs>
 
         {/* a bad night */}
-        <rect x="30" y="90" width="180" height="70" rx="14" fill="#f1f5f9" stroke="#94a3b8" strokeWidth="1.5" />
+        <rect x="30" y="90" width="180" height="70" rx="14" fill={FIG.ground} stroke={FIG.faint} strokeWidth="1.5" />
         <path
           d="M132 111 a17 17 0 1 0 4 24 a14 14 0 0 1 -4 -24 z"
-          fill="#475569"
+          fill={FIG.textMid}
         />
-        <text x="120" y="150" textAnchor="middle" fontSize="15" fontWeight="700" fill="#0f172a">
+        <text x="120" y="150" textAnchor="middle" fontSize="15" fontWeight="700" fill={FIG.ink}>
           A bad night
         </text>
 
         {/* a worse pain day */}
-        <rect x="470" y="90" width="180" height="70" rx="14" fill="#fffbeb" stroke="#f59e0b" strokeWidth="1.5" />
-        <g stroke="#d97706" strokeWidth="2.2" strokeLinecap="round">
+        <rect x="470" y="90" width="180" height="70" rx="14" fill={FIG.signalGround} stroke={FIG.signal} strokeWidth="1.5" />
+        <g stroke={FIG.signalDark} strokeWidth="2.2" strokeLinecap="round">
           <line x1="548" y1="106" x2="556" y2="122" />
           <line x1="560" y1="102" x2="560" y2="120" />
           <line x1="572" y1="106" x2="564" y2="122" />
         </g>
-        <text x="560" y="150" textAnchor="middle" fontSize="15" fontWeight="700" fill="#0f172a">
+        <text x="560" y="150" textAnchor="middle" fontSize="15" fontWeight="700" fill={FIG.ink}>
           A worse pain day
         </text>
 
@@ -66,15 +67,15 @@ function CycleFigure() {
         <path
           d="M215 95 Q340 30 465 95"
           fill="none"
-          stroke="#d97706"
+          stroke={FIG.signalDark}
           strokeWidth="5"
           strokeLinecap="round"
           markerEnd="url(#arrow-strong)"
         />
-        <text x="340" y="36" textAnchor="middle" fontSize="13" fontWeight="700" fill="#b45309">
+        <text x="340" y="36" textAnchor="middle" fontSize="13" fontWeight="700" fill={FIG.signalText}>
           The stronger direction
         </text>
-        <text x="340" y="54" textAnchor="middle" fontSize="12" fill="#92400e">
+        <text x="340" y="54" textAnchor="middle" fontSize="12" fill={FIG.signalTextDark}>
           poor sleep predicts future pain
         </text>
 
@@ -82,12 +83,12 @@ function CycleFigure() {
         <path
           d="M465 158 Q340 222 215 158"
           fill="none"
-          stroke="#64748b"
+          stroke={FIG.muted}
           strokeWidth="2.5"
           strokeLinecap="round"
           markerEnd="url(#arrow-weak)"
         />
-        <text x="340" y="230" textAnchor="middle" fontSize="12" fill="#64748b">
+        <text x="340" y="230" textAnchor="middle" fontSize="12" fill={FIG.muted}>
           pain disturbs sleep
         </text>
       </svg>
@@ -99,7 +100,7 @@ const CONSOLE = [
   {
     label: "Rested",
     origin: 40,
-    accent: "#0d9488",
+    accent: FIG.nerve,
     meters: [
       { name: "Pain amplifier (sensory cortex)", pct: 0.4, warn: false },
       { name: "Built-in pain brakes", pct: 0.75, warn: false },
@@ -109,7 +110,7 @@ const CONSOLE = [
   {
     label: "After a sleepless night",
     origin: 400,
-    accent: "#d97706",
+    accent: FIG.signalDark,
     meters: [
       { name: "Pain amplifier (sensory cortex)", pct: 0.85, warn: true },
       { name: "Built-in pain brakes", pct: 0.3, warn: false },
@@ -134,13 +135,13 @@ function ConsoleFigure() {
           high, brakes low, reflex nearly off.
         </desc>
 
-        <line x1="360" y1="30" x2="360" y2="220" stroke="#e2e8f0" strokeWidth="1.5" />
+        <line x1="360" y1="30" x2="360" y2="220" stroke={FIG.soft} strokeWidth="1.5" />
 
         {CONSOLE.map((p) => {
           const cx = p.origin + 130;
           return (
             <g key={p.label}>
-              <text x={cx} y="46" textAnchor="middle" fontSize="15" fontWeight="700" fill="#0f172a">
+              <text x={cx} y="46" textAnchor="middle" fontSize="15" fontWeight="700" fill={FIG.ink}>
                 {p.label}
               </text>
               {p.meters.map((m, i) => {
@@ -148,17 +149,17 @@ function ConsoleFigure() {
                 const x = p.origin + 20;
                 return (
                   <g key={m.name}>
-                    <text x={x} y={y} fontSize="12.5" fill="#475569">
+                    <text x={x} y={y} fontSize="12.5" fill={FIG.textMid}>
                       {m.name}
                     </text>
-                    <rect x={x} y={y + 8} width="220" height="10" rx="5" fill="#e2e8f0" />
+                    <rect x={x} y={y + 8} width="220" height="10" rx="5" fill={FIG.soft} />
                     <rect
                       x={x}
                       y={y + 8}
                       width={220 * m.pct}
                       height="10"
                       rx="5"
-                      fill={m.warn ? "#dc2626" : p.accent}
+                      fill={m.warn ? FIG.caution : p.accent}
                     />
                   </g>
                 );

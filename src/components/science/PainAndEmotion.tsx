@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Figure, H2, P, anim } from "./Figure";
+import { FIG } from "@/lib/fig";
 
 function SharedCircuitryFigure() {
   return (
@@ -18,52 +19,52 @@ function SharedCircuitryFigure() {
           volume control.
         </desc>
 
-        <circle cx="250" cy="150" r="125" fill="#0d9488" fillOpacity="0.12" stroke="#0d9488" strokeWidth="2" />
-        <circle cx="430" cy="150" r="125" fill="#d97706" fillOpacity="0.12" stroke="#d97706" strokeWidth="2" />
+        <circle cx="250" cy="150" r="125" fill={FIG.nerve} fillOpacity="0.12" stroke={FIG.nerve} strokeWidth="2" />
+        <circle cx="430" cy="150" r="125" fill={FIG.signalDark} fillOpacity="0.12" stroke={FIG.signalDark} strokeWidth="2" />
 
-        <text x="185" y="76" textAnchor="middle" fontSize="15" fontWeight="700" fill="#0f766e">
+        <text x="185" y="76" textAnchor="middle" fontSize="15" fontWeight="700" fill={FIG.nerveDark}>
           Pain processing
         </text>
-        <text x="152" y="140" textAnchor="middle" fontSize="12.5" fill="#475569">
+        <text x="152" y="140" textAnchor="middle" fontSize="12.5" fill={FIG.textMid}>
           nociceptive input
         </text>
-        <text x="152" y="160" textAnchor="middle" fontSize="12.5" fill="#475569">
+        <text x="152" y="160" textAnchor="middle" fontSize="12.5" fill={FIG.textMid}>
           sensory cortex
         </text>
-        <text x="152" y="180" textAnchor="middle" fontSize="12.5" fill="#475569">
+        <text x="152" y="180" textAnchor="middle" fontSize="12.5" fill={FIG.textMid}>
           spinal pathways
         </text>
 
-        <text x="497" y="76" textAnchor="middle" fontSize="15" fontWeight="700" fill="#b45309">
+        <text x="497" y="76" textAnchor="middle" fontSize="15" fontWeight="700" fill={FIG.signalText}>
           Emotion processing
         </text>
-        <text x="530" y="140" textAnchor="middle" fontSize="12.5" fill="#475569">
+        <text x="530" y="140" textAnchor="middle" fontSize="12.5" fill={FIG.textMid}>
           fear &amp; anxiety
         </text>
-        <text x="530" y="160" textAnchor="middle" fontSize="12.5" fill="#475569">
+        <text x="530" y="160" textAnchor="middle" fontSize="12.5" fill={FIG.textMid}>
           mood
         </text>
-        <text x="530" y="180" textAnchor="middle" fontSize="12.5" fill="#475569">
+        <text x="530" y="180" textAnchor="middle" fontSize="12.5" fill={FIG.textMid}>
           stress response
         </text>
 
         {/* overlap */}
-        <text x="340" y="112" textAnchor="middle" fontSize="12" fontWeight="700" fill="#334155" letterSpacing="0.08em">
+        <text x="340" y="112" textAnchor="middle" fontSize="12" fontWeight="700" fill={FIG.text} letterSpacing="0.08em">
           SHARED
         </text>
-        <text x="340" y="138" textAnchor="middle" fontSize="12.5" fontWeight="600" fill="#0f172a">
+        <text x="340" y="138" textAnchor="middle" fontSize="12.5" fontWeight="600" fill={FIG.ink}>
           anterior cingulate
         </text>
-        <text x="340" y="158" textAnchor="middle" fontSize="12.5" fontWeight="600" fill="#0f172a">
+        <text x="340" y="158" textAnchor="middle" fontSize="12.5" fontWeight="600" fill={FIG.ink}>
           insula
         </text>
-        <text x="340" y="178" textAnchor="middle" fontSize="12.5" fontWeight="600" fill="#0f172a">
+        <text x="340" y="178" textAnchor="middle" fontSize="12.5" fontWeight="600" fill={FIG.ink}>
           prefrontal cortex
         </text>
-        <text x="340" y="204" textAnchor="middle" fontSize="12" fill="#64748b">
+        <text x="340" y="204" textAnchor="middle" fontSize="12" fill={FIG.muted}>
           + the descending
         </text>
-        <text x="340" y="220" textAnchor="middle" fontSize="12" fill="#64748b">
+        <text x="340" y="220" textAnchor="middle" fontSize="12" fill={FIG.muted}>
           &ldquo;volume control&rdquo;
         </text>
       </svg>
@@ -72,11 +73,11 @@ function SharedCircuitryFigure() {
 }
 
 const LOOP = [
-  { label: "Pain", x: 340, y: 52, accent: "#d97706" },
-  { label: "“This will never end”", x: 552, y: 122, accent: "#64748b" },
-  { label: "Fear of movement", x: 490, y: 220, accent: "#64748b" },
-  { label: "Avoidance, deconditioning", x: 190, y: 220, accent: "#64748b" },
-  { label: "More pain, smaller life", x: 128, y: 122, accent: "#dc2626" },
+  { label: "Pain", x: 340, y: 52, accent: FIG.signalDark },
+  { label: "“This will never end”", x: 552, y: 122, accent: FIG.muted },
+  { label: "Fear of movement", x: 490, y: 220, accent: FIG.muted },
+  { label: "Avoidance, deconditioning", x: 190, y: 220, accent: FIG.muted },
+  { label: "More pain, smaller life", x: 128, y: 122, accent: FIG.caution },
 ];
 
 function FearAvoidanceFigure() {
@@ -108,7 +109,7 @@ function FearAvoidanceFigure() {
             markerHeight="6.5"
             orient="auto-start-reverse"
           >
-            <path d="M0 0 L10 5 L0 10 z" fill="#94a3b8" />
+            <path d="M0 0 L10 5 L0 10 z" fill={FIG.faint} />
           </marker>
           <marker
             id="exit-arrow"
@@ -119,12 +120,12 @@ function FearAvoidanceFigure() {
             markerHeight="7"
             orient="auto-start-reverse"
           >
-            <path d="M0 0 L10 5 L0 10 z" fill="#0d9488" />
+            <path d="M0 0 L10 5 L0 10 z" fill={FIG.nerve} />
           </marker>
         </defs>
 
         {/* loop arrows between successive nodes */}
-        <g fill="none" stroke="#94a3b8" strokeWidth="2" markerEnd="url(#loop-arrow)">
+        <g fill="none" stroke={FIG.faint} strokeWidth="2" markerEnd="url(#loop-arrow)">
           <path d="M395 62 Q505 74 540 104" className="fig-draw fig-fade" style={anim(0.25, 190)} />
           <path d="M552 140 Q540 185 512 204" className="fig-draw fig-fade" style={anim(0.65, 110)} />
           <path d="M420 228 Q340 244 262 228" className="fig-draw fig-fade" style={anim(1.05, 180)} />
@@ -136,7 +137,7 @@ function FearAvoidanceFigure() {
         <path
           d="M262 236 Q340 285 500 278"
           fill="none"
-          stroke="#0d9488"
+          stroke={FIG.nerve}
           strokeWidth="3.5"
           strokeLinecap="round"
           markerEnd="url(#exit-arrow)"
@@ -144,10 +145,10 @@ function FearAvoidanceFigure() {
           style={anim(2.45, 300)}
         />
         <g className="fig-fade" style={anim(2.9)}>
-          <text x="560" y="270" textAnchor="middle" fontSize="12.5" fontWeight="700" fill="#0f766e">
+          <text x="560" y="270" textAnchor="middle" fontSize="12.5" fontWeight="700" fill={FIG.nerveDark}>
             gradual return
           </text>
-          <text x="560" y="287" textAnchor="middle" fontSize="12.5" fontWeight="700" fill="#0f766e">
+          <text x="560" y="287" textAnchor="middle" fontSize="12.5" fontWeight="700" fill={FIG.nerveDark}>
             to activity
           </text>
         </g>
@@ -161,7 +162,7 @@ function FearAvoidanceFigure() {
               width="184"
               height="40"
               rx="12"
-              fill="#ffffff"
+              fill={FIG.white}
               stroke={n.accent}
               strokeWidth="1.8"
             />
@@ -171,7 +172,7 @@ function FearAvoidanceFigure() {
               textAnchor="middle"
               fontSize="13"
               fontWeight="600"
-              fill="#0f172a"
+              fill={FIG.ink}
             >
               {n.label}
             </text>

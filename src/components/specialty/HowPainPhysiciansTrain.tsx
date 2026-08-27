@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Figure, H2, P } from "../science/Figure";
+import { FIG } from "@/lib/fig";
 
 const FEEDERS = [
   "Anesthesiology",
@@ -36,7 +37,7 @@ function PathwayFigure() {
             markerHeight="6.5"
             orient="auto-start-reverse"
           >
-            <path d="M0 0 L10 5 L0 10 z" fill="#0d9488" />
+            <path d="M0 0 L10 5 L0 10 z" fill={FIG.nerve} />
           </marker>
         </defs>
 
@@ -48,58 +49,58 @@ function PathwayFigure() {
           const y = 30 + row * 62;
           return (
             <g key={f}>
-              <rect x={x} y={y} width="150" height="42" rx="10" fill="#ffffff" stroke="#94a3b8" strokeWidth="1.5" />
-              <text x={x + 75} y={y + 26} textAnchor="middle" fontSize="11.5" fontWeight="600" fill="#334155">
+              <rect x={x} y={y} width="150" height="42" rx="10" fill={FIG.white} stroke={FIG.faint} strokeWidth="1.5" />
+              <text x={x + 75} y={y + 26} textAnchor="middle" fontSize="11.5" fontWeight="600" fill={FIG.text}>
                 {f}
               </text>
             </g>
           );
         })}
-        <text x="181" y="238" textAnchor="middle" fontSize="12" fill="#64748b">
+        <text x="181" y="238" textAnchor="middle" fontSize="12" fill={FIG.muted}>
           a 4-year residency, six specialties
         </text>
 
         {/* converging arrows */}
-        <g fill="none" stroke="#0d9488" strokeWidth="2" markerEnd="url(#train-arrow)">
+        <g fill="none" stroke={FIG.nerve} strokeWidth="2" markerEnd="url(#train-arrow)">
           <path d="M340 82 Q400 100 442 118" />
           <path d="M340 144 Q400 144 442 140" />
           <path d="M340 200 Q400 176 442 158" />
         </g>
 
         {/* fellowship */}
-        <rect x="450" y="102" width="200" height="72" rx="13" fill="#f0fdfa" stroke="#0d9488" strokeWidth="2" />
-        <text x="550" y="131" textAnchor="middle" fontSize="13.5" fontWeight="700" fill="#0f172a">
+        <rect x="450" y="102" width="200" height="72" rx="13" fill={FIG.nerveGround} stroke={FIG.nerve} strokeWidth="2" />
+        <text x="550" y="131" textAnchor="middle" fontSize="13.5" fontWeight="700" fill={FIG.ink}>
           Pain medicine fellowship
         </text>
-        <text x="550" y="152" textAnchor="middle" fontSize="12" fill="#0f766e">
+        <text x="550" y="152" textAnchor="middle" fontSize="12" fill={FIG.nerveDark}>
           12 months, ACGME-accredited
         </text>
 
         {/* exam */}
-        <line x1="550" y1="178" x2="550" y2="206" stroke="#0d9488" strokeWidth="2.5" markerEnd="url(#train-arrow)" />
-        <rect x="430" y="212" width="240" height="60" rx="13" fill="#fffbeb" stroke="#f59e0b" strokeWidth="1.8" />
-        <text x="550" y="236" textAnchor="middle" fontSize="13" fontWeight="700" fill="#0f172a">
+        <line x1="550" y1="178" x2="550" y2="206" stroke={FIG.nerve} strokeWidth="2.5" markerEnd="url(#train-arrow)" />
+        <rect x="430" y="212" width="240" height="60" rx="13" fill={FIG.signalGround} stroke={FIG.signal} strokeWidth="1.8" />
+        <text x="550" y="236" textAnchor="middle" fontSize="13" fontWeight="700" fill={FIG.ink}>
           One shared board exam
         </text>
-        <text x="550" y="256" textAnchor="middle" fontSize="11.5" fill="#92400e">
+        <text x="550" y="256" textAnchor="middle" fontSize="11.5" fill={FIG.signalTextDark}>
           six ABMS boards certify to one standard
         </text>
 
         {/* years timeline */}
         <g>
-          <rect x="60" y="308" width="248" height="16" rx="8" fill="#cbd5e1" />
-          <rect x="312" y="308" width="248" height="16" rx="8" fill="#94a3b8" />
-          <rect x="564" y="308" width="62" height="16" rx="8" fill="#0d9488" />
-          <text x="184" y="345" textAnchor="middle" fontSize="11.5" fill="#64748b">
+          <rect x="60" y="308" width="248" height="16" rx="8" fill={FIG.line} />
+          <rect x="312" y="308" width="248" height="16" rx="8" fill={FIG.faint} />
+          <rect x="564" y="308" width="62" height="16" rx="8" fill={FIG.nerve} />
+          <text x="184" y="345" textAnchor="middle" fontSize="11.5" fill={FIG.muted}>
             medical school · 4 yrs
           </text>
-          <text x="436" y="345" textAnchor="middle" fontSize="11.5" fill="#64748b">
+          <text x="436" y="345" textAnchor="middle" fontSize="11.5" fill={FIG.muted}>
             residency · 4 yrs
           </text>
-          <text x="595" y="345" textAnchor="middle" fontSize="11.5" fill="#0f766e">
+          <text x="595" y="345" textAnchor="middle" fontSize="11.5" fill={FIG.nerveDark}>
             fellowship
           </text>
-          <text x="60" y="300" textAnchor="start" fontSize="11" fontWeight="600" fill="#475569">
+          <text x="60" y="300" textAnchor="start" fontSize="11" fontWeight="600" fill={FIG.textMid}>
             ≈ 9 years after college
           </text>
         </g>

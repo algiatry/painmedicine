@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Figure, H2, P } from "../science/Figure";
+import { FIG } from "@/lib/fig";
 
 const TEAM = [
   { label: "Pain physician", sub: "leads the plan", angle: -90 },
@@ -41,18 +42,18 @@ function TeamRingFigure() {
               y1={cy}
               x2={x}
               y2={y}
-              stroke="#cbd5e1"
+              stroke={FIG.line}
               strokeWidth="1.5"
             />
           );
         })}
 
         {/* patient center */}
-        <circle cx={cx} cy={cy} r="46" fill="#f0fdfa" stroke="#0d9488" strokeWidth="2.5" />
-        <text x={cx} y={cy - 2} textAnchor="middle" fontSize="15" fontWeight="800" fill="#0f172a">
+        <circle cx={cx} cy={cy} r="46" fill={FIG.nerveGround} stroke={FIG.nerve} strokeWidth="2.5" />
+        <text x={cx} y={cy - 2} textAnchor="middle" fontSize="15" fontWeight="800" fill={FIG.ink}>
           You
         </text>
-        <text x={cx} y={cy + 17} textAnchor="middle" fontSize="11.5" fill="#0f766e">
+        <text x={cx} y={cy + 17} textAnchor="middle" fontSize="11.5" fill={FIG.nerveDark}>
           part of every decision
         </text>
 
@@ -69,14 +70,14 @@ function TeamRingFigure() {
                 width="210"
                 height="46"
                 rx="12"
-                fill="#ffffff"
-                stroke="#94a3b8"
+                fill={FIG.white}
+                stroke={FIG.faint}
                 strokeWidth="1.5"
               />
-              <text x={x} y={y - 5} textAnchor="middle" fontSize="12.5" fontWeight="700" fill="#0f172a">
+              <text x={x} y={y - 5} textAnchor="middle" fontSize="12.5" fontWeight="700" fill={FIG.ink}>
                 {m.label}
               </text>
-              <text x={x} y={y + 13} textAnchor="middle" fontSize="11.5" fill="#64748b">
+              <text x={x} y={y + 13} textAnchor="middle" fontSize="11.5" fill={FIG.muted}>
                 {m.sub}
               </text>
             </g>
