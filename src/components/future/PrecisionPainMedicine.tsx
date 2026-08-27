@@ -113,6 +113,12 @@ export default function PrecisionPainMedicine() {
         identify them in advance. It is precision pain medicine you can act on
         today — the same dose, a different gene, a completely different outcome.
       </P>
+      <P>
+        Because codeine and tramadol are opioids, one note belongs here as much
+        as anywhere: if you or someone you love is struggling with opioid or
+        other substance use, the SAMHSA National Helpline is free, confidential,
+        and open 24/7 at <strong>1-800-662-HELP (4357)</strong>.
+      </P>
 
       <H2 id="mechanism">Matching the drug to the mechanism</H2>
       <P>
