@@ -2,6 +2,7 @@ import Link from "next/link";
 import { NAV, SITE } from "@/lib/site";
 import HeroSignal from "@/components/HeroSignal";
 import HubIcon from "@/components/HubIcon";
+import ArticleEmblem from "@/components/ArticleEmblem";
 
 /** Curated flagship reads — keeps the site's strongest pages one click deep. */
 const FEATURED = [
@@ -166,14 +167,17 @@ export default function Home() {
             sample of the standard the whole site holds itself to.
           </p>
           <ol className="mt-8 grid gap-x-12 sm:grid-cols-2">
-            {FEATURED.map((item, i) => (
+            {FEATURED.map((item) => (
               <li
                 key={item.href}
                 className="border-t border-slate-200 py-5 first:border-t-0 sm:first:border-t sm:[&:nth-child(-n+2)]:border-t-0"
               >
                 <Link href={item.href} className="group flex gap-4">
-                  <span className="w-7 shrink-0 pt-0.5 text-sm tabular-nums text-teal-700/80">
-                    {String(i + 1).padStart(2, "0")}
+                  <span className="mt-0.5 flex size-11 shrink-0 items-center justify-center rounded-lg border border-slate-200/80 bg-white">
+                    <ArticleEmblem
+                      slug={item.href.split("/").filter(Boolean).pop() ?? ""}
+                      className="size-7"
+                    />
                   </span>
                   <span>
                     <span className="text-xs font-semibold uppercase tracking-wider text-teal-700">

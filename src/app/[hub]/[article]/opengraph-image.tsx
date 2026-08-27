@@ -23,5 +23,6 @@ export default async function OpengraphImage({
     eyebrow: parentHub?.title ?? "Patient-first pain education",
     title: a?.title ?? SITE.tagline,
     subline: a?.description,
+    emblemSlug: a?.slug,
   });
 }

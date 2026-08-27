@@ -6,6 +6,7 @@ import ReviewByline from "@/components/ReviewByline";
 import { faqJsonLd, medicalWebPageJsonLd } from "@/lib/schema";
 import { HUBS, getHub } from "@/lib/hubs";
 import PageKicker from "@/components/PageKicker";
+import ArticleEmblem from "@/components/ArticleEmblem";
 
 export const dynamicParams = false;
 
@@ -85,9 +86,15 @@ export default async function HubPage({
               <li key={item.title}>
                 <Link
                   href={item.href}
-                  className="group flex items-start justify-between gap-4 rounded-xl border border-slate-200 bg-white p-5 transition-colors hover:border-teal-600/70"
+                  className="group flex items-start gap-4 rounded-xl border border-slate-200 bg-white p-5 transition-colors hover:border-teal-600/70"
                 >
-                  <span>
+                  <span className="flex size-12 shrink-0 items-center justify-center rounded-lg border border-slate-200/70 bg-paper/70">
+                    <ArticleEmblem
+                      slug={item.href.split("/").filter(Boolean).pop() ?? ""}
+                      className="size-8"
+                    />
+                  </span>
+                  <span className="flex-1">
                     <span className="block font-semibold text-slate-900 group-hover:text-teal-700">
                       {item.title}
                     </span>

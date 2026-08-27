@@ -13,6 +13,7 @@ import { ALL_ARTICLES, getArticle } from "@/lib/articles";
 import { ARTICLE_BODIES } from "@/components/bodies";
 import { SITE } from "@/lib/site";
 import PageKicker from "@/components/PageKicker";
+import ArticleEmblem from "@/components/ArticleEmblem";
 
 export const dynamicParams = false;
 
@@ -171,12 +172,20 @@ export default async function ArticlePage({
               <Link
                 key={r.href}
                 href={r.href}
-                className="group flex flex-col gap-1 py-4 sm:py-5"
+                className="group flex gap-4 py-4 sm:py-5"
               >
-                <span className="font-semibold text-slate-900 group-hover:text-teal-700">
-                  {r.title}
+                <span className="mt-0.5 flex size-11 shrink-0 items-center justify-center rounded-lg border border-slate-200/70 bg-paper/70">
+                  <ArticleEmblem
+                    slug={r.href.split("/").filter(Boolean).pop() ?? ""}
+                    className="size-7"
+                  />
                 </span>
-                <span className="text-sm text-slate-600">{r.blurb}</span>
+                <span className="flex flex-col gap-1">
+                  <span className="font-semibold text-slate-900 group-hover:text-teal-700">
+                    {r.title}
+                  </span>
+                  <span className="text-sm text-slate-600">{r.blurb}</span>
+                </span>
               </Link>
             ))}
           </div>

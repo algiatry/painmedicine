@@ -3,6 +3,7 @@ import { join } from "node:path";
 import { ImageResponse } from "next/og";
 import { BRAND, SIGNAL_PATH } from "@/lib/brand";
 import { SITE } from "@/lib/site";
+import { emblemDataUri } from "@/lib/emblems";
 
 /**
  * Shared frame for every social share card: paper ground, teal rule, the
@@ -52,13 +53,18 @@ export async function brandCard({
   eyebrow,
   title,
   subline,
+  emblemSlug,
 }: {
   eyebrow: string;
   title: string;
   subline?: string;
+  /** Article signature emblem (lib/emblems.ts), shown in a panel on the right. */
+  emblemSlug?: string;
 }) {
   const fonts = await loadFonts();
+  const emblem = emblemSlug ? emblemDataUri(emblemSlug, 190) : null;
   const titleSize = title.length > 70 ? 52 : title.length > 40 ? 60 : 72;
+  const textWidth = emblem ? 760 : 980;
 
   return new ImageResponse(
     (
@@ -120,7 +126,7 @@ export async function brandCard({
               letterSpacing: "-1.5px",
               lineHeight: 1.1,
               marginTop: 26,
-              maxWidth: 980,
+              maxWidth: textWidth,
             }}
           >
             {title}
@@ -135,10 +141,32 @@ export async function brandCard({
                 color: BRAND.muted,
                 lineHeight: 1.4,
                 marginTop: 24,
-                maxWidth: 860,
+                maxWidth: emblem ? 760 : 860,
               }}
             >
               {subline}
+            </div>
+          ) : null}
+
+          {emblem ? (
+            <div
+              style={{
+                position: "absolute",
+                top: 120,
+                right: 72,
+                width: 264,
+                height: 264,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                background: "#ffffff",
+                borderRadius: 36,
+                border: `2px solid #d7e5e2`,
+                boxShadow: "0 8px 28px rgba(15, 23, 42, 0.08)",
+              }}
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={emblem} width={190} height={190} alt="" />
             </div>
           ) : null}
 
