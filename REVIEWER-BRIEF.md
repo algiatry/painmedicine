@@ -12,8 +12,10 @@
 ## In one paragraph (send this)
 
 PainMedicine.com is an independent, patient-first educational resource on pain
-and the medical specialty that treats it. We are recruiting a **credentialed
-medical reviewer** to review clinical pages for accuracy before they publish.
+and the medical specialty that treats it — 26 source-cited pages are already
+live, spanning pain science, the research pipeline, and how the specialty
+works. We are recruiting a **credentialed medical reviewer** to review
+clinical pages for accuracy before they publish.
 Your name, credentials, and review date appear on each page you approve. The
 work is remote, asynchronous, flexible, and paid. You are reviewing
 pre-drafted, pre-cited educational content — not writing from scratch, and not
@@ -29,10 +31,19 @@ providing individual medical advice.
 - **Positioning:** independent and educational. Not a clinic. Nothing is sold.
   No individualized medical advice. Every clinical claim cites a primary source
   (NIH/NINDS, CDC, FDA, IASP, WHO/ICD-11, Cochrane, peer-reviewed journals).
-- **The standard, already visible:** the non-clinical sections are live and show
-  the quality bar — see `/understanding-pain/how-pain-works`,
-  `/understanding-pain/types-of-pain`, and `/future-of-pain-medicine/pipeline`.
-  Every page is written from cited sources with original explanatory figures.
+- **The standard, already visible:** three full hubs are live — **26
+  source-cited pages** — showing exactly the quality bar clinical pages will
+  meet: pain science (`/understanding-pain` — 7 explainers incl.
+  `/understanding-pain/pain-and-sleep` and
+  `/understanding-pain/the-placebo-effect`), the research pipeline
+  (`/future-of-pain-medicine` — 6 pages incl. the quarterly-updated
+  `/future-of-pain-medicine/pipeline` tracker), and the specialty itself
+  (`/what-is-pain-medicine` — 4 pages incl.
+  `/what-is-pain-medicine/how-pain-physicians-train`, which explains the
+  reviewer's own credential pathway to patients). Every page: primary-source
+  references, original explanatory figures, FAQ block, and an honest "written
+  from primary sources — review pending" byline. Plus `/find-help` and a
+  49-term cross-linked `/glossary`.
 - **Voice:** compassionate, ~8th-grade reading level, never condescending, never
   fear-based. The emotional spine is *"You are not imagining your pain."*
 - **Why a reviewer matters:** this is YMYL ("Your Money or Your Life") medical
@@ -73,8 +84,10 @@ typically takes **~30–60 minutes** to review.
 
 Publishable credentials, in rough priority for pain content:
 
-- **MD or DO**, board-certified in **Pain Medicine** (via anesthesiology,
-  PM&R, neurology, or psychiatry) — the strongest fit.
+- **MD or DO**, board-certified in **Pain Medicine** — the strongest fit. (Six
+  ABMS boards now certify it — anesthesiology, PM&R, psychiatry & neurology,
+  emergency medicine, family medicine, radiology — all via the same
+  ACGME-fellowship + shared-exam pathway.)
 - **MD/DO** in a closely related specialty (anesthesiology, PM&R, neurology,
   rheumatology, physiatry) for most condition pages.
 - **PharmD** — ideal for the medication/pharmacology pages (analgesics,
@@ -209,9 +222,11 @@ need one good reviewer to unlock the launch set.
 > Hi Dr. [Name],
 >
 > I run **PainMedicine.com**, an independent, non-commercial patient-education
-> site on pain and pain medicine. The non-clinical sections are already live and
-> source-cited; you can see the standard at
-> painmedicine.com/understanding-pain/how-pain-works.
+> site on pain and pain medicine. Twenty-six source-cited pages are already
+> live across three sections — pain science, the research pipeline, and the
+> specialty itself; you can see the standard at
+> painmedicine.com/understanding-pain/pain-and-sleep and
+> painmedicine.com/what-is-pain-medicine/how-pain-physicians-train.
 >
 > I'm looking for a **board-certified medical reviewer** to review clinical
 > pages (common pain conditions and treatments) for accuracy before they
@@ -232,8 +247,9 @@ need one good reviewer to unlock the launch set.
 
 - [ ] **Verify the license** on the relevant **state medical board** site
       (active, unrestricted, no disciplinary actions).
-- [ ] **Verify board certification** at **certificationmatters.org** (ABMS) or
-      the relevant specialty board.
+- [ ] **Verify board certification** via the ABMS lookup at
+      **abms.org/verify-certification** (Certification Matters) or the relevant
+      specialty board.
 - [ ] **Confirm identity** (a brief video call).
 - [ ] **Get written consent** to publish name + credentials + review date.
 - [ ] **Sign the one-page agreement.**
