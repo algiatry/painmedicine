@@ -1,22 +1,34 @@
-import { BRAND, MARK_RADIUS, MARK_STROKE, SIGNAL_PATH } from "@/lib/brand";
+import {
+  BRAND,
+  MARK_RADIUS,
+  MARK_STROKE,
+  SIGNAL_PATH,
+  SIGNAL_VIEWBOX,
+} from "@/lib/brand";
 
 type BrandMarkProps = {
   size?: number;
   className?: string;
   title?: string;
+  /** `tile` = favicon-style app icon. `signal` = editorial lockup (no square). */
+  variant?: "tile" | "signal";
 };
 
-/** Teal rounded tile with the settling-signal mark. */
 export default function BrandMark({
   size = 32,
   className,
   title,
+  variant = "tile",
 }: BrandMarkProps) {
+  const isSignal = variant === "signal";
+  const width = isSignal ? Math.round(size * (25.6 / 21.2)) : size;
+  const height = size;
+
   return (
     <svg
-      width={size}
-      height={size}
-      viewBox="0 0 32 32"
+      width={width}
+      height={height}
+      viewBox={isSignal ? SIGNAL_VIEWBOX : "0 0 32 32"}
       className={className}
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden={title ? undefined : true}
@@ -24,11 +36,13 @@ export default function BrandMark({
       focusable="false"
     >
       {title ? <title>{title}</title> : null}
-      <rect width="32" height="32" rx={MARK_RADIUS} fill={BRAND.teal} />
+      {isSignal ? null : (
+        <rect width="32" height="32" rx={MARK_RADIUS} fill={BRAND.teal} />
+      )}
       <path
         d={SIGNAL_PATH}
         fill="none"
-        stroke={BRAND.white}
+        stroke={isSignal ? BRAND.teal : BRAND.white}
         strokeWidth={MARK_STROKE}
         strokeLinecap="round"
         strokeLinejoin="round"

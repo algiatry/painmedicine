@@ -33,7 +33,7 @@ Canonical path lives in `src/lib/brand.ts`. Raster pipeline: `npm run brand` (`s
 | `public/brand/social.png` | Circle-cropped avatars (X, GitHub, LinkedIn) |
 | `src/app/opengraph-image.tsx` | 1200×630 share card |
 | `src/app/twitter-image.tsx` | Same card, `summary_large_image` |
-| `src/components/BrandMark.tsx` | Header / footer lockup |
+| `src/components/BrandMark.tsx` | `variant="tile"` for icons; `variant="signal"` for header/footer lockup |
 
 ## Rules
 

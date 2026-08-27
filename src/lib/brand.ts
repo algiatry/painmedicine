@@ -32,3 +32,6 @@ export const SIGNAL_PATH = SIGNAL_POINTS.map(([x, y], i) =>
 
 export const MARK_RADIUS = 8;
 export const MARK_STROKE = 2.6;
+
+/** Cropped to the stroke, not the 32×32 tile. Used in chrome lockups. */
+export const SIGNAL_VIEWBOX = "3.5 5.2 25.6 21.2";

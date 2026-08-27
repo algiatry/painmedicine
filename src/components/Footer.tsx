@@ -5,7 +5,7 @@ import BrandMark from "@/components/BrandMark";
 export default function Footer() {
   return (
     <footer className="mt-auto border-t border-slate-200 bg-slate-50">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 py-12 space-y-10">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-12 space-y-8">
         {/* Crisis / help lines */}
         <div className="rounded-lg border border-teal-200 bg-teal-50 p-5">
           <h2 className="text-sm font-semibold text-teal-900">
@@ -25,13 +25,20 @@ export default function Footer() {
         </div>
 
         <div className="grid gap-8 sm:grid-cols-3">
-          <div className="flex items-start gap-3">
-            <BrandMark size={32} className="h-8 w-8 shrink-0 mt-0.5" />
+          <div className="flex items-start gap-2.5">
+            <BrandMark
+              variant="signal"
+              size={20}
+              className="shrink-0 mt-1"
+            />
             <div>
-              <p className="text-base font-semibold text-slate-900">
+              <p className="text-base font-semibold tracking-tight text-slate-900">
                 {SITE.shortName}
+                <span className="ml-1.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-teal-700">
+                  .com
+                </span>
               </p>
-              <p className="mt-1 text-sm text-slate-600">{SITE.tagline}</p>
+              <p className="mt-0.5 text-sm text-slate-600">{SITE.tagline}</p>
             </div>
           </div>
           <nav aria-label="Footer sections">

@@ -27,7 +27,7 @@ export default function OpengraphImage() {
             top: 0,
             left: 0,
             width: 1200,
-            height: 10,
+            height: 8,
             background: BRAND.teal,
             display: "flex",
           }}
@@ -36,78 +36,95 @@ export default function OpengraphImage() {
         <div
           style={{
             display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-between",
-            width: 680,
-            padding: "72px 0 68px 72px",
-          }}
-        >
-          <div style={{ display: "flex", alignItems: "center" }}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={MARK_URI} width={52} height={52} alt="" />
-            <div
-              style={{
-                display: "flex",
-                fontSize: 30,
-                fontWeight: 700,
-                color: BRAND.ink,
-                letterSpacing: "-0.4px",
-                marginLeft: 16,
-              }}
-            >
-              {SITE.shortName}
-            </div>
-          </div>
-
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <div
-              style={{
-                display: "flex",
-                fontSize: 52,
-                fontWeight: 700,
-                color: BRAND.ink,
-                letterSpacing: "-1px",
-                lineHeight: 1.15,
-              }}
-            >
-              Understand pain.
-            </div>
-            <div
-              style={{
-                display: "flex",
-                fontSize: 52,
-                fontWeight: 700,
-                color: BRAND.ink,
-                letterSpacing: "-1px",
-                lineHeight: 1.15,
-                marginTop: 4,
-              }}
-            >
-              Understand your options.
-            </div>
-            <div
-              style={{
-                display: "flex",
-                fontSize: 22,
-                color: BRAND.muted,
-                marginTop: 28,
-              }}
-            >
-              painmedicine.com
-            </div>
-          </div>
-        </div>
-
-        <div
-          style={{
-            display: "flex",
-            flex: 1,
             alignItems: "center",
-            justifyContent: "center",
+            justifyContent: "space-between",
+            width: "100%",
+            height: "100%",
+            padding: "64px 72px",
           }}
         >
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              width: 620,
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "baseline" }}>
+              <div
+                style={{
+                  display: "flex",
+                  fontSize: 28,
+                  fontWeight: 700,
+                  color: BRAND.ink,
+                  letterSpacing: "-0.4px",
+                }}
+              >
+                {SITE.shortName}
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  fontSize: 14,
+                  fontWeight: 700,
+                  color: BRAND.teal,
+                  letterSpacing: "0.16em",
+                  textTransform: "uppercase",
+                  marginLeft: 10,
+                }}
+              >
+                .com
+              </div>
+            </div>
+
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                marginTop: 36,
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  fontSize: 48,
+                  fontWeight: 700,
+                  color: BRAND.ink,
+                  letterSpacing: "-1px",
+                  lineHeight: 1.12,
+                }}
+              >
+                Understand pain.
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  fontSize: 48,
+                  fontWeight: 700,
+                  color: BRAND.ink,
+                  letterSpacing: "-1px",
+                  lineHeight: 1.12,
+                  marginTop: 6,
+                }}
+              >
+                Understand your options.
+              </div>
+            </div>
+
+            <div
+              style={{
+                display: "flex",
+                fontSize: 20,
+                color: BRAND.muted,
+                marginTop: 22,
+              }}
+            >
+              Patient-first pain education
+            </div>
+          </div>
+
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={MARK_URI} width={320} height={320} alt="" />
+          <img src={MARK_URI} width={280} height={280} alt="" />
         </div>
       </div>
     ),
