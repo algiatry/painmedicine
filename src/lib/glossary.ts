@@ -44,6 +44,12 @@ export const GLOSSARY: GlossaryTerm[] = [
       "The modern understanding that pain is shaped by biological, psychological, and social factors together — not by tissue damage alone.",
   },
   {
+    term: "CBT-I (cognitive behavioral therapy for insomnia)",
+    definition:
+      "A structured, non-drug program that retrains sleep habits and the thoughts that fuel insomnia. In people with chronic pain it reliably improves sleep and mood; its direct effect on pain is more modest.",
+    href: "/understanding-pain/pain-and-sleep",
+  },
+  {
     term: "Central sensitization",
     definition:
       "A state in which the spinal cord and brain become more responsive to pain signals, so the same input produces more pain. A key driver of chronic pain.",
@@ -73,10 +79,22 @@ export const GLOSSARY: GlossaryTerm[] = [
       "A rare but severe chronic pain condition, usually affecting a limb and often following an injury. Early recognition matters.",
   },
   {
+    term: "Conditioned pain modulation (CPM)",
+    definition:
+      "The nervous system's built-in 'pain-inhibits-pain' reflex: pain in one part of the body can suppress pain signals from elsewhere. Sleep loss can weaken or switch off this reflex.",
+    href: "/understanding-pain/pain-and-sleep",
+  },
+  {
     term: "CYP2D6",
     definition:
       "A liver enzyme, and the gene that builds it, that determines how quickly a person converts certain painkillers such as codeine into their active form — a cornerstone of pharmacogenomics.",
     href: "/future-of-pain-medicine/precision-pain-medicine",
+  },
+  {
+    term: "Descending modulation",
+    definition:
+      "The brain's own volume control for pain: circuits running from the brain down to the spinal cord that can amplify or dampen pain signals. Emotion, attention, stress, and expectation all feed into it.",
+    href: "/understanding-pain/pain-and-emotion",
   },
   {
     term: "Dorsal horn",
@@ -89,6 +107,18 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "A small cluster of sensory nerve-cell bodies serving one region of the body; a precise target for neuromodulation of focal pain.",
     href: "/future-of-pain-medicine/neuromodulation",
+  },
+  {
+    term: "Endogenous opioids",
+    definition:
+      "Pain-relieving chemicals the body makes itself, such as endorphins, acting on the same receptors as opioid drugs. They are part of how the brain's own pain-relief system — including placebo analgesia — works.",
+    href: "/understanding-pain/the-placebo-effect",
+  },
+  {
+    term: "Fear-avoidance model",
+    definition:
+      "A well-supported map of how chronic pain can grow: fear of pain leads to avoiding movement, avoidance leads to deconditioning and a smaller life, and both feed more pain. The evidence-backed exit is a gradual, supported return to activity.",
+    href: "/understanding-pain/pain-and-emotion",
   },
   {
     term: "Gate control theory",
@@ -113,6 +143,12 @@ export const GLOSSARY: GlossaryTerm[] = [
       "Pain treatment that combines medical, physical, and psychological approaches, reflecting that chronic pain has many contributors.",
   },
   {
+    term: "Naloxone",
+    definition:
+      "A drug that blocks opioid receptors. It reverses opioid overdoses — and in research, its ability to blunt placebo pain relief showed that placebo analgesia runs on the body's own opioid chemistry.",
+    href: "/understanding-pain/the-placebo-effect",
+  },
+  {
     term: "NaV1.7 / NaV1.8",
     definition:
       "Sodium channels that carry pain signals in peripheral nerves. Blocking NaV1.8 produced the first new non-opioid painkiller class in decades; NaV1.7 is a major gene-therapy target.",
@@ -129,6 +165,12 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "Pain caused by damage or disease in the nervous system itself — often described as burning, shooting, or electric.",
     href: "/understanding-pain/types-of-pain",
+  },
+  {
+    term: "Nocebo effect",
+    definition:
+      "The placebo effect's evil twin: expecting harm produces real symptoms. In vaccine trials, about a third of people receiving only saline reported 'side effects' like headache and fatigue.",
+    href: "/understanding-pain/the-placebo-effect",
   },
   {
     term: "Nociceptive pain",
@@ -155,15 +197,21 @@ export const GLOSSARY: GlossaryTerm[] = [
     href: "/understanding-pain/measuring-pain",
   },
   {
+    term: "Open-label placebo",
+    definition:
+      "A placebo given with full honesty — the patient knows it is inert. In small randomized trials it still improved symptoms such as chronic low back pain, suggesting the ritual and expectation of care carry real weight.",
+    href: "/understanding-pain/the-placebo-effect",
+  },
+  {
     term: "Opioid",
     definition:
       "A class of strong pain-relieving drugs that act on the body's opioid receptors. Effective but carrying risks of dependence and overdose, so used with careful stewardship.",
   },
   {
-    term: "Paresthesia",
+    term: "Pain catastrophizing",
     definition:
-      "A tingling, 'pins and needles' sensation. Older spinal cord stimulators created it deliberately to mask pain; newer ones can work without it.",
-    href: "/future-of-pain-medicine/neuromodulation",
+      "An automatic habit of worst-case thinking about pain ('this will never end'). It predicts worse pain and disability — and because it is a learned appraisal habit, not a character flaw, it can be retrained.",
+    href: "/understanding-pain/pain-and-emotion",
   },
   {
     term: "Pain reprocessing therapy (PRT)",
@@ -172,10 +220,22 @@ export const GLOSSARY: GlossaryTerm[] = [
     href: "/future-of-pain-medicine/mind-and-brain",
   },
   {
+    term: "Paresthesia",
+    definition:
+      "A tingling, 'pins and needles' sensation. Older spinal cord stimulators created it deliberately to mask pain; newer ones can work without it.",
+    href: "/future-of-pain-medicine/neuromodulation",
+  },
+  {
     term: "Pharmacogenomics",
     definition:
       "The study of how a person's genes affect their response to medicines — used to make pain prescribing safer and more effective.",
     href: "/future-of-pain-medicine/precision-pain-medicine",
+  },
+  {
+    term: "Placebo effect",
+    definition:
+      "Real, measurable symptom relief produced by expectation and the context of care — in pain, it works through the brain's own opioid chemistry and descending pain control. It eases symptoms; it does not treat the underlying disease.",
+    href: "/understanding-pain/the-placebo-effect",
   },
   {
     term: "Quantitative sensory testing (QST)",
@@ -187,6 +247,12 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: "Radiofrequency ablation",
     definition:
       "An interventional procedure that uses heat to interrupt specific nerves carrying pain signals.",
+  },
+  {
+    term: "Slow-wave sleep",
+    definition:
+      "The deepest stage of sleep, when the body — including the pain system — does much of its restoration. Disrupting it, even without shortening sleep, lowers pain thresholds and produces widespread tenderness.",
+    href: "/understanding-pain/pain-and-sleep",
   },
   {
     term: "Spinal cord stimulation (SCS)",
