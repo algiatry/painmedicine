@@ -12,6 +12,7 @@ import { getHub } from "@/lib/hubs";
 import { ALL_ARTICLES, getArticle } from "@/lib/articles";
 import { ARTICLE_BODIES } from "@/components/bodies";
 import { SITE } from "@/lib/site";
+import PageKicker from "@/components/PageKicker";
 
 export const dynamicParams = false;
 
@@ -89,7 +90,10 @@ export default async function ArticlePage({
         </ol>
       </nav>
 
-      <header className="mt-6 space-y-5">
+      <header className="mt-6 space-y-4">
+        <PageKicker href={`/${a.hub}`} iconHref={`/${a.hub}`}>
+          {parentTitle}
+        </PageKicker>
         <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900">
           {a.title}
         </h1>
@@ -162,19 +166,17 @@ export default async function ArticlePage({
           >
             Keep reading
           </h2>
-          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+          <div className="mt-6 divide-y divide-slate-200 border-y border-slate-200">
             {a.related.map((r) => (
               <Link
                 key={r.href}
                 href={r.href}
-                className="group rounded-xl border border-slate-200 bg-white p-5 shadow-card transition-all hover:-translate-y-0.5 hover:border-teal-600/60 hover:shadow-card-hover motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+                className="group flex flex-col gap-1 py-4 sm:py-5"
               >
-                <span className="block font-semibold text-slate-900 group-hover:text-teal-700">
+                <span className="font-semibold text-slate-900 group-hover:text-teal-700">
                   {r.title}
                 </span>
-                <span className="mt-1 block text-sm text-slate-600">
-                  {r.blurb}
-                </span>
+                <span className="text-sm text-slate-600">{r.blurb}</span>
               </Link>
             ))}
           </div>

@@ -6,11 +6,11 @@ import type { ReactNode } from "react";
  * lightning bolts; a settling wave, not a flatline.
  */
 const ICONS: Record<string, ReactNode> = {
-  // The specialty: a clinic badge.
+  // The specialty: a credential plate, not a clinic plus.
   "/what-is-pain-medicine": (
     <>
-      <rect x="3.5" y="3.5" width="17" height="17" rx="4.5" />
-      <path d="M12 8.2v7.6M8.2 12h7.6" />
+      <rect x="4" y="5.5" width="16" height="13" rx="2" />
+      <path d="M7 10h10M7 14h6.5" />
     </>
   ),
   // Understanding: the settling signal, contained — pain made legible.

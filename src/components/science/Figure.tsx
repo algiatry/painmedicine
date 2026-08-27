@@ -15,10 +15,10 @@ export function Figure({
 }) {
   return (
     <figure className="my-8">
-      <div className="overflow-x-auto rounded-xl border border-slate-200 bg-gradient-to-b from-paper/80 to-slate-50 p-4 shadow-card sm:p-6">
+      <div className="overflow-x-auto rounded-xl border border-slate-200 bg-paper/60 p-4 sm:p-6">
         {children}
       </div>
-      <figcaption className="mt-2.5 border-l-2 border-teal-600/50 pl-3 text-sm text-slate-500">
+      <figcaption className="mt-2.5 text-sm text-slate-500">
         {caption}
       </figcaption>
     </figure>

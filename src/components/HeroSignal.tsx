@@ -27,28 +27,38 @@ const END_Y = y(X1);
 /** Faint vertical time ticks behind the wave. */
 const TICKS = [116, 208, 300, 392, 484];
 
-export default function HeroSignal({ className }: { className?: string }) {
+export default function HeroSignal({
+  className,
+  variant = "hero",
+}: {
+  className?: string;
+  variant?: "hero" | "strip";
+}) {
+  const viewBox = variant === "strip" ? `0 110 ${W} 140` : `0 0 ${W} ${H}`;
+  const strokeId = `hero-signal-stroke-${variant}`;
+  const glowId = `hero-signal-glow-${variant}`;
+
   return (
     <svg
-      viewBox={`0 0 ${W} ${H}`}
+      viewBox={viewBox}
       className={className}
       aria-hidden="true"
       focusable="false"
       xmlns="http://www.w3.org/2000/svg"
     >
       <defs>
-        <linearGradient id="hero-signal-stroke" x1="0" y1="0" x2="1" y2="0">
+        <linearGradient id={strokeId} x1="0" y1="0" x2="1" y2="0">
           <stop offset="0" stopColor={BRAND.tealDark} />
           <stop offset="0.55" stopColor={BRAND.teal} />
           <stop offset="1" stopColor="#2dd4bf" />
         </linearGradient>
-        <radialGradient id="hero-signal-glow" cx="0.72" cy="0.42" r="0.75">
+        <radialGradient id={glowId} cx="0.72" cy="0.42" r="0.75">
           <stop offset="0" stopColor={BRAND.teal} stopOpacity="0.07" />
           <stop offset="1" stopColor={BRAND.teal} stopOpacity="0" />
         </radialGradient>
       </defs>
 
-      <rect width={W} height={H} fill="url(#hero-signal-glow)" />
+      <rect width={W} height={H} fill={`url(#${glowId})`} />
 
       {TICKS.map((x) => (
         <line
@@ -79,7 +89,7 @@ export default function HeroSignal({ className }: { className?: string }) {
       <polyline
         points={POINTS.join(" ")}
         fill="none"
-        stroke="url(#hero-signal-stroke)"
+        stroke={`url(#${strokeId})`}
         strokeWidth="5"
         strokeLinecap="round"
         strokeLinejoin="round"

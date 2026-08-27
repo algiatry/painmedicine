@@ -8,48 +8,56 @@ const FEATURED = [
   {
     eyebrow: "Understanding pain",
     title: "How pain works",
-    blurb: "Nociceptors, the spinal 'gate,' and why the brain — not the injury alone — decides how much it hurts.",
+    blurb:
+      "Nociceptors, the spinal 'gate,' and why the brain — not the injury alone — decides how much it hurts.",
     href: "/understanding-pain/how-pain-works",
   },
   {
     eyebrow: "Understanding pain",
     title: "Pain and sleep",
-    blurb: "The cycle runs both ways — but a bad night drives pain harder than pain drives bad nights.",
+    blurb:
+      "The cycle runs both ways — but a bad night drives pain harder than pain drives bad nights.",
     href: "/understanding-pain/pain-and-sleep",
   },
   {
     eyebrow: "Understanding pain",
     title: "The placebo effect",
-    blurb: "Real, blockable-with-a-drug biology — and what responding to it actually proves about your pain.",
+    blurb:
+      "Real, blockable-with-a-drug biology — and what responding to it actually proves about your pain.",
     href: "/understanding-pain/the-placebo-effect",
   },
   {
     eyebrow: "Understanding pain",
     title: "Pain and emotion",
-    blurb: "Emotion is written into the definition of pain itself. The shared circuitry, explained.",
+    blurb:
+      "Emotion is written into the definition of pain itself. The shared circuitry, explained.",
     href: "/understanding-pain/pain-and-emotion",
   },
   {
     eyebrow: "The future",
     title: "The pipeline",
-    blurb: "A source-cited tracker of the pain drugs and devices in development right now.",
+    blurb:
+      "A source-cited tracker of the pain drugs and devices in development right now.",
     href: "/future-of-pain-medicine/pipeline",
   },
   {
     eyebrow: "The specialty",
     title: "Your first visit",
-    blurb: "What a first pain-medicine evaluation involves, what to bring, and how long it takes.",
+    blurb:
+      "What a first pain-medicine evaluation involves, what to bring, and how long it takes.",
     href: "/what-is-pain-medicine/your-first-visit",
   },
 ];
 
+const START = NAV[0];
+const MORE_HUBS = NAV.slice(1);
+
 export default function Home() {
   return (
     <div>
-      {/* Hero — soft paper wash settling into white, like the signal itself */}
-      <section className="border-b border-slate-200/70 bg-gradient-to-b from-paper via-paper/60 to-white">
+      <section className="border-b border-slate-200/70 bg-gradient-to-b from-paper via-paper/50 to-white">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="grid items-center gap-10 pt-12 pb-14 sm:pt-16 sm:pb-18 lg:grid-cols-[1fr_minmax(0,30rem)] lg:gap-14">
+          <div className="grid items-center gap-8 pt-12 pb-10 sm:pt-16 sm:pb-14 lg:grid-cols-[minmax(0,1fr)_minmax(0,28rem)] lg:gap-12 lg:pb-16">
             <div className="max-w-2xl">
               <p className="text-sm font-semibold uppercase tracking-widest text-teal-700">
                 Patient-first pain education
@@ -58,96 +66,130 @@ export default function Home() {
                 Pain is real. So are your options.
               </h1>
               <p className="mt-6 text-lg text-slate-600">
-                {SITE.shortName} exists to answer two questions clearly and honestly:
-                what can pain medicine do for you <em>today</em>, and what is medical
-                science building for <em>tomorrow</em>? No hype, no sales — just
-                evidence-grounded education to help you have better conversations
-                with your care team.
+                {SITE.shortName} exists to answer two questions clearly and
+                honestly: what can pain medicine do for you <em>today</em>, and
+                what is medical science building for <em>tomorrow</em>? No hype,
+                no sales — just evidence-grounded education to help you have
+                better conversations with your care team.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
                   href="/what-is-pain-medicine"
-                  className="rounded-md bg-teal-700 px-5 py-3 text-sm font-semibold text-white shadow-card transition-colors hover:bg-teal-800"
+                  className="rounded-md bg-teal-700 px-5 py-3 text-sm font-semibold text-white hover:bg-teal-800"
                 >
                   What is pain medicine?
                 </Link>
                 <Link
                   href="/future-of-pain-medicine"
-                  className="rounded-md border border-slate-300 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-700 transition-colors hover:border-teal-700 hover:text-teal-700"
+                  className="rounded-md border border-slate-300 bg-white/80 px-5 py-3 text-sm font-semibold text-slate-700 hover:border-teal-700 hover:text-teal-700"
                 >
                   The future of pain relief
                 </Link>
               </div>
             </div>
             <figure className="hidden lg:block" aria-hidden="true">
-              <div className="rounded-2xl border border-slate-200/80 bg-white/80 p-4 shadow-card">
-                <HeroSignal className="block h-auto w-full" />
-              </div>
-              <figcaption className="mt-3 text-center text-xs font-medium uppercase tracking-widest text-slate-400">
-                A signal, settling — that is the goal
-              </figcaption>
+              <HeroSignal className="block h-auto w-full" />
             </figure>
           </div>
         </div>
+        <div className="lg:hidden overflow-hidden" aria-hidden="true">
+          <HeroSignal variant="strip" className="block h-24 w-full sm:h-28" />
+        </div>
       </section>
 
-      {/* Hubs */}
-      <section aria-labelledby="explore-heading" className="py-14 sm:py-18">
+      <section aria-labelledby="explore-heading" className="py-14 sm:py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <h2 id="explore-heading" className="text-2xl font-semibold text-slate-900">
+          <h2
+            id="explore-heading"
+            className="text-2xl font-semibold text-slate-900"
+          >
             Start where you are
           </h2>
-          <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {NAV.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="group rounded-xl border border-slate-200 bg-white p-6 shadow-card transition-all hover:-translate-y-0.5 hover:border-teal-600/60 hover:shadow-card-hover motion-reduce:transition-none motion-reduce:hover:translate-y-0"
-              >
-                <span className="flex size-11 items-center justify-center rounded-lg bg-teal-50 text-teal-700 transition-colors group-hover:bg-teal-700 group-hover:text-white">
-                  <HubIcon href={item.href} className="size-6" />
-                </span>
-                <h3 className="mt-4 text-base font-semibold text-slate-900 group-hover:text-teal-700">
-                  {item.label}
-                </h3>
-                <p className="mt-2 text-sm text-slate-600">{item.description}</p>
-              </Link>
-            ))}
+          <div className="mt-8 grid gap-10 lg:grid-cols-12 lg:gap-14">
+            <Link
+              href={START.href}
+              className="group lg:col-span-5 rounded-xl border border-slate-200 bg-paper/70 p-7 sm:p-8"
+            >
+              <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-teal-700">
+                <HubIcon href={START.href} className="size-3.5" />
+                Start here
+              </span>
+              <h3 className="mt-4 text-2xl font-semibold tracking-tight text-slate-900 group-hover:text-teal-700">
+                {START.label}
+              </h3>
+              <p className="mt-3 text-slate-600">{START.description}</p>
+              <span className="mt-6 inline-block text-sm font-semibold text-teal-700">
+                Read the specialty
+                <span aria-hidden="true"> →</span>
+              </span>
+            </Link>
+
+            <ul className="lg:col-span-7 divide-y divide-slate-200 border-y border-slate-200">
+              {MORE_HUBS.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="group flex gap-4 py-4 sm:py-5"
+                  >
+                    <span className="mt-0.5 text-teal-700">
+                      <HubIcon href={item.href} className="size-5" />
+                    </span>
+                    <span>
+                      <span className="block font-semibold text-slate-900 group-hover:text-teal-700">
+                        {item.label}
+                      </span>
+                      <span className="mt-1 block text-sm text-slate-600">
+                        {item.description}
+                      </span>
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
 
-      {/* Flagship reads */}
       <section
         aria-labelledby="featured-heading"
-        className="border-t border-slate-200/70 bg-paper/60 py-14 sm:py-18"
+        className="border-t border-slate-200/70 bg-paper/50 py-14 sm:py-16"
       >
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <h2 id="featured-heading" className="text-2xl font-semibold text-slate-900">
+          <h2
+            id="featured-heading"
+            className="text-2xl font-semibold text-slate-900"
+          >
             Good first reads
           </h2>
           <p className="mt-2 max-w-2xl text-sm text-slate-600">
-            Every page below is written from primary sources, cited, and
-            illustrated — a fair sample of the standard the whole site holds
-            itself to.
+            Written from primary sources, cited, and illustrated — a fair
+            sample of the standard the whole site holds itself to.
           </p>
-          <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {FEATURED.map((item) => (
-              <Link
+          <ol className="mt-8 grid gap-x-12 sm:grid-cols-2">
+            {FEATURED.map((item, i) => (
+              <li
                 key={item.href}
-                href={item.href}
-                className="group rounded-xl border border-slate-200 bg-white p-6 shadow-card transition-all hover:-translate-y-0.5 hover:border-teal-600/60 hover:shadow-card-hover motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+                className="border-t border-slate-200 py-5 first:border-t-0 sm:first:border-t sm:[&:nth-child(-n+2)]:border-t-0"
               >
-                <p className="text-xs font-semibold uppercase tracking-wider text-teal-700">
-                  {item.eyebrow}
-                </p>
-                <h3 className="mt-2 text-base font-semibold text-slate-900 group-hover:text-teal-700">
-                  {item.title}
-                </h3>
-                <p className="mt-2 text-sm text-slate-600">{item.blurb}</p>
-              </Link>
+                <Link href={item.href} className="group flex gap-4">
+                  <span className="w-7 shrink-0 pt-0.5 text-sm tabular-nums text-teal-700/80">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <span>
+                    <span className="text-xs font-semibold uppercase tracking-wider text-teal-700">
+                      {item.eyebrow}
+                    </span>
+                    <span className="mt-1 block font-semibold text-slate-900 group-hover:text-teal-700">
+                      {item.title}
+                    </span>
+                    <span className="mt-1 block text-sm text-slate-600">
+                      {item.blurb}
+                    </span>
+                  </span>
+                </Link>
+              </li>
             ))}
-          </div>
+          </ol>
         </div>
       </section>
     </div>

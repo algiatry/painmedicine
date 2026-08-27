@@ -5,7 +5,7 @@ import JsonLd from "@/components/JsonLd";
 import ReviewByline from "@/components/ReviewByline";
 import { faqJsonLd, medicalWebPageJsonLd } from "@/lib/schema";
 import { HUBS, getHub } from "@/lib/hubs";
-import HubIcon from "@/components/HubIcon";
+import PageKicker from "@/components/PageKicker";
 
 export const dynamicParams = false;
 
@@ -50,10 +50,8 @@ export default async function HubPage({
       />
       {hub.faqs && hub.faqs.length > 0 && <JsonLd data={faqJsonLd(hub.faqs)} />}
 
-      <header className="space-y-5">
-        <span className="flex size-12 items-center justify-center rounded-xl bg-teal-50 text-teal-700">
-          <HubIcon href={`/${hub.slug}`} className="size-7" />
-        </span>
+      <header className="space-y-4">
+        <PageKicker iconHref={`/${hub.slug}`}>{hub.title}</PageKicker>
         <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900">
           {hub.heading}
         </h1>
@@ -87,7 +85,7 @@ export default async function HubPage({
               <li key={item.title}>
                 <Link
                   href={item.href}
-                  className="group flex items-start justify-between gap-4 rounded-xl border border-slate-200 bg-white p-5 shadow-card transition-all hover:-translate-y-0.5 hover:border-teal-600/60 hover:shadow-card-hover motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+                  className="group flex items-start justify-between gap-4 rounded-xl border border-slate-200 bg-white p-5 transition-colors hover:border-teal-600/70"
                 >
                   <span>
                     <span className="block font-semibold text-slate-900 group-hover:text-teal-700">
