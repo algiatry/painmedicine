@@ -1,9 +1,12 @@
 import Link from "next/link";
-import { Figure, H2, P } from "./Figure";
+import { Figure, H2, P, anim } from "./Figure";
 
 function PathwayFigure() {
   return (
-    <Figure caption="Placebo analgesia is a real neural event: expectation engages the brain's descending pain-control system, releasing the body's own opioids and damping pain signals as far down as the spinal cord. Block those opioids with naloxone, and much of the relief disappears.">
+    <Figure
+      animate
+      caption="Placebo analgesia is a real neural event: expectation engages the brain's descending pain-control system, releasing the body's own opioids and damping pain signals as far down as the spinal cord. Block those opioids with naloxone, and much of the relief disappears."
+    >
       <svg
         role="img"
         aria-labelledby="pathway-title pathway-desc"
@@ -32,58 +35,66 @@ function PathwayFigure() {
         </defs>
 
         {/* step 1 */}
-        <rect x="90" y="28" width="290" height="62" rx="14" fill="#f0fdfa" stroke="#0d9488" strokeWidth="1.8" />
-        <text x="235" y="54" textAnchor="middle" fontSize="14.5" fontWeight="700" fill="#0f172a">
-          Expectation of relief
-        </text>
-        <text x="235" y="74" textAnchor="middle" fontSize="12.5" fill="#475569">
-          context, ritual, trust — the cortex
-        </text>
-
-        {/* step 2 */}
-        <rect x="90" y="128" width="290" height="62" rx="14" fill="#f0fdfa" stroke="#0d9488" strokeWidth="1.8" />
-        <text x="235" y="154" textAnchor="middle" fontSize="14.5" fontWeight="700" fill="#0f172a">
-          The brainstem&rsquo;s pain-control hub
-        </text>
-        <text x="235" y="174" textAnchor="middle" fontSize="12.5" fill="#475569">
-          releases the body&rsquo;s own opioids
-        </text>
-
-        {/* step 3 */}
-        <rect x="90" y="228" width="290" height="62" rx="14" fill="#f0fdfa" stroke="#0d9488" strokeWidth="1.8" />
-        <text x="235" y="254" textAnchor="middle" fontSize="14.5" fontWeight="700" fill="#0f172a">
-          Less pain signal gets through
-        </text>
-        <text x="235" y="274" textAnchor="middle" fontSize="12.5" fill="#475569">
-          measured down to the spinal cord
-        </text>
-
-        <g fill="none" stroke="#0d9488" strokeWidth="3" markerEnd="url(#path-arrow)">
-          <line x1="235" y1="94" x2="235" y2="122" />
-          <line x1="235" y1="194" x2="235" y2="222" />
+        <g className="fig-rise" style={anim(0)}>
+          <rect x="90" y="28" width="290" height="62" rx="14" fill="#f0fdfa" stroke="#0d9488" strokeWidth="1.8" />
+          <text x="235" y="54" textAnchor="middle" fontSize="14.5" fontWeight="700" fill="#0f172a">
+            Expectation of relief
+          </text>
+          <text x="235" y="74" textAnchor="middle" fontSize="12.5" fill="#475569">
+            context, ritual, trust — the cortex
+          </text>
         </g>
 
-        {/* naloxone note */}
-        <line
-          x1="430"
-          y1="159"
-          x2="384"
-          y2="159"
-          stroke="#dc2626"
-          strokeWidth="2.5"
-          strokeDasharray="6 5"
-          strokeLinecap="round"
-        />
-        <rect x="436" y="120" width="210" height="78" rx="12" fill="#fef2f2" stroke="#fca5a5" strokeWidth="1.5" />
-        <text x="541" y="146" textAnchor="middle" fontSize="13" fontWeight="700" fill="#991b1b">
-          The naloxone test
-        </text>
-        <text x="541" y="166" textAnchor="middle" fontSize="12" fill="#7f1d1d">
-          block the body&rsquo;s opioids,
-        </text>
-        <text x="541" y="183" textAnchor="middle" fontSize="12" fill="#7f1d1d">
-          and placebo relief fades
-        </text>
+        {/* step 2 */}
+        <g className="fig-rise" style={anim(0.6)}>
+          <rect x="90" y="128" width="290" height="62" rx="14" fill="#f0fdfa" stroke="#0d9488" strokeWidth="1.8" />
+          <text x="235" y="154" textAnchor="middle" fontSize="14.5" fontWeight="700" fill="#0f172a">
+            The brainstem&rsquo;s pain-control hub
+          </text>
+          <text x="235" y="174" textAnchor="middle" fontSize="12.5" fill="#475569">
+            releases the body&rsquo;s own opioids
+          </text>
+        </g>
+
+        {/* step 3 */}
+        <g className="fig-rise" style={anim(1.2)}>
+          <rect x="90" y="228" width="290" height="62" rx="14" fill="#f0fdfa" stroke="#0d9488" strokeWidth="1.8" />
+          <text x="235" y="254" textAnchor="middle" fontSize="14.5" fontWeight="700" fill="#0f172a">
+            Less pain signal gets through
+          </text>
+          <text x="235" y="274" textAnchor="middle" fontSize="12.5" fill="#475569">
+            measured down to the spinal cord
+          </text>
+        </g>
+
+        <g fill="none" stroke="#0d9488" strokeWidth="3" markerEnd="url(#path-arrow)">
+          <line x1="235" y1="94" x2="235" y2="122" className="fig-draw fig-fade" style={anim(0.45, 34)} />
+          <line x1="235" y1="194" x2="235" y2="222" className="fig-draw fig-fade" style={anim(1.05, 34)} />
+        </g>
+
+        {/* naloxone note — the blocking evidence arrives last */}
+        <g className="fig-fade" style={anim(1.9)}>
+          <line
+            x1="430"
+            y1="159"
+            x2="384"
+            y2="159"
+            stroke="#dc2626"
+            strokeWidth="2.5"
+            strokeDasharray="6 5"
+            strokeLinecap="round"
+          />
+          <rect x="436" y="120" width="210" height="78" rx="12" fill="#fef2f2" stroke="#fca5a5" strokeWidth="1.5" />
+          <text x="541" y="146" textAnchor="middle" fontSize="13" fontWeight="700" fill="#991b1b">
+            The naloxone test
+          </text>
+          <text x="541" y="166" textAnchor="middle" fontSize="12" fill="#7f1d1d">
+            block the body&rsquo;s opioids,
+          </text>
+          <text x="541" y="183" textAnchor="middle" fontSize="12" fill="#7f1d1d">
+            and placebo relief fades
+          </text>
+        </g>
       </svg>
     </Figure>
   );

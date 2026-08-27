@@ -55,6 +55,61 @@ body {
   }
 }
 
+/*
+ * Figure choreography.
+ *
+ * AnimateOnView (science/AnimateOnView.tsx) adds `data-animate` on mount and
+ * `data-inview` when the figure scrolls into view. The natural (SSR / no-JS /
+ * reduced-motion) state is the FINISHED figure — pre-animation states exist
+ * only under [data-animate]:not([data-inview]). Stagger with --fd (delay) and
+ * size stroke draws with --len, both via the anim() helper in Figure.tsx.
+ */
+@media (prefers-reduced-motion: no-preference) {
+  /*
+   * The transition exists ONLY in the in-view state: arming (data-animate)
+   * must snap to the hidden pre-state instantly, otherwise the arming itself
+   * animates the figure from finished to hidden.
+   */
+  [data-animate][data-inview] :is(.fig-draw, .fig-fade, .fig-rise, .fig-pop, .fig-dial) {
+    transition:
+      stroke-dashoffset 0.9s cubic-bezier(0.33, 1, 0.68, 1),
+      opacity 0.55s ease-out,
+      transform 0.8s cubic-bezier(0.33, 1, 0.68, 1);
+    transition-delay: var(--fd, 0s);
+  }
+  [data-animate] .fig-draw {
+    stroke-dasharray: var(--len, 600px);
+  }
+  [data-animate]:not([data-inview]) .fig-draw {
+    stroke-dashoffset: var(--len, 600px);
+  }
+  [data-animate][data-inview] .fig-draw {
+    stroke-dashoffset: 0;
+  }
+  [data-animate]:not([data-inview]) .fig-fade {
+    opacity: 0;
+  }
+  [data-animate]:not([data-inview]) .fig-rise {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  [data-animate] .fig-pop {
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  [data-animate]:not([data-inview]) .fig-pop {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  /* Rotates into place around an inline transform-origin (SVG user units). */
+  [data-animate] .fig-dial {
+    transform-box: view-box;
+  }
+  [data-animate]:not([data-inview]) .fig-dial {
+    transform: rotate(-75deg);
+  }
+}
+
 @keyframes signal-draw {
   to {
     stroke-dashoffset: 0;

@@ -1,4 +1,5 @@
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
+import AnimateOnView from "./AnimateOnView";
 
 /**
  * Shared wrapper for the original SVG figures used across the
@@ -9,20 +10,36 @@ import type { ReactNode } from "react";
 export function Figure({
   caption,
   children,
+  animate = false,
 }: {
   caption: string;
   children: ReactNode;
+  /** Play this figure's choreography (fig-* classes) when scrolled into view. */
+  animate?: boolean;
 }) {
   return (
     <figure className="my-8">
       <div className="overflow-x-auto rounded-xl border border-slate-200 bg-paper/60 p-4 sm:p-6">
-        {children}
+        {animate ? <AnimateOnView>{children}</AnimateOnView> : children}
       </div>
       <figcaption className="mt-2.5 text-sm text-slate-500">
         {caption}
       </figcaption>
     </figure>
   );
+}
+
+/**
+ * Inline style for a choreographed element: stagger delay in seconds and,
+ * for `.fig-draw` strokes, a dash length safely >= the true path length.
+ */
+export function anim(delay: number, len?: number): CSSProperties {
+  return {
+    "--fd": `${delay}s`,
+    // px units required: stroke-dashoffset rejects unitless custom-property
+    // values (computes to 0), even though stroke-dasharray accepts them.
+    ...(len !== undefined ? { "--len": `${len}px` } : {}),
+  } as CSSProperties;
 }
 
 /** Section heading shared by the explainer bodies. */

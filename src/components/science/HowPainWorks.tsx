@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "./Figure";
+import { Figure, H2, P, anim } from "./Figure";
 
 /**
  * Figure 1 — the pain signal pathway, schematic. Skin → nerve → spinal
@@ -8,7 +8,10 @@ import { Figure, H2, P } from "./Figure";
  */
 function PathwayFigure() {
   return (
-    <Figure caption="The pain signal pathway: a stimulus becomes a signal, the spinal gate filters it, and the brain builds the experience of pain.">
+    <Figure
+      animate
+      caption="The pain signal pathway: a stimulus becomes a signal, the spinal gate filters it, and the brain builds the experience of pain."
+    >
       <svg
         role="img"
         aria-labelledby="pathway-title pathway-desc"
@@ -23,16 +26,27 @@ function PathwayFigure() {
       </desc>
 
       {/* signal path: skin -> spinal cord */}
-      <line x1="118" y1="150" x2="366" y2="150" stroke="#f59e0b" strokeWidth="3" />
-      <circle cx="180" cy="150" r="4" fill="#f59e0b" />
-      <circle cx="240" cy="150" r="4" fill="#f59e0b" />
-      <circle cx="300" cy="150" r="4" fill="#f59e0b" />
+      <line
+        x1="118"
+        y1="150"
+        x2="366"
+        y2="150"
+        stroke="#f59e0b"
+        strokeWidth="3"
+        className="fig-draw"
+        style={anim(0.25, 252)}
+      />
+      <circle cx="180" cy="150" r="4" fill="#f59e0b" className="fig-pop" style={anim(0.5)} />
+      <circle cx="240" cy="150" r="4" fill="#f59e0b" className="fig-pop" style={anim(0.75)} />
+      <circle cx="300" cy="150" r="4" fill="#f59e0b" className="fig-pop" style={anim(1.0)} />
       {/* path: spinal cord -> brain */}
       <path
         d="M441 116 C 520 70, 590 78, 628 104"
         fill="none"
         stroke="#0d9488"
         strokeWidth="3"
+        className="fig-draw"
+        style={anim(1.35, 215)}
       />
 
       {/* Stage 1 — skin + nociceptor */}
@@ -44,6 +58,8 @@ function PathwayFigure() {
           fill="#f59e0b"
           stroke="#d97706"
           strokeWidth="1"
+          className="fig-pop"
+          style={anim(0)}
         />
         {/* free nerve endings */}
         <path d="M50 172 v14 M68 172 v18 M86 172 v14 M104 172 v18" stroke="#94a3b8" strokeWidth="2" fill="none" />
@@ -76,17 +92,19 @@ function PathwayFigure() {
           fill="none"
           stroke="#0f766e"
           strokeWidth="1.5"
+          className="fig-draw"
+          style={anim(2.0, 130)}
         />
       </g>
 
-      {/* numbered badges */}
+      {/* numbered badges — each pops as its stage of the story arrives */}
       {[
-        { n: "1", x: 76, y: 210 },
-        { n: "2", x: 242, y: 118 },
-        { n: "3", x: 404, y: 210 },
-        { n: "4", x: 678, y: 168 },
+        { n: "1", x: 76, y: 210, d: 0.1 },
+        { n: "2", x: 242, y: 118, d: 0.7 },
+        { n: "3", x: 404, y: 210, d: 1.4 },
+        { n: "4", x: 678, y: 168, d: 2.15 },
       ].map((b) => (
-        <g key={b.n}>
+        <g key={b.n} className="fig-pop" style={anim(b.d)}>
           <circle cx={b.x} cy={b.y} r="13" fill="#0f766e" />
           <text x={b.x} y={b.y + 5} textAnchor="middle" fontSize="15" fontWeight="700" fill="#ffffff">
             {b.n}
@@ -119,7 +137,10 @@ function PathwayFigure() {
  */
 function SensitizationFigure() {
   return (
-    <Figure caption="Central sensitization: the same small input, amplified. The nervous system can turn up its own gain — and leave it up.">
+    <Figure
+      animate
+      caption="Central sensitization: the same small input, amplified. The nervous system can turn up its own gain — and leave it up."
+    >
       <svg
         role="img"
         aria-labelledby="sensitize-title sensitize-desc"
@@ -142,15 +163,36 @@ function SensitizationFigure() {
         fill="none"
         stroke="#f59e0b"
         strokeWidth="2.5"
+        className="fig-draw"
+        style={anim(0, 210)}
       />
 
       {/* amplifier */}
       <path d="M250 70 L 250 170 L 400 120 Z" fill="#f1f5f9" stroke="#94a3b8" strokeWidth="2" />
       {/* the gain dial, turned up */}
       <circle cx="300" cy="120" r="24" fill="#ffffff" stroke="#0d9488" strokeWidth="2" />
-      <line x1="300" y1="120" x2="317" y2="105" stroke="#0f766e" strokeWidth="3" strokeLinecap="round" />
+      {/* the needle sweeps from low to high once the input arrives */}
+      <line
+        x1="300"
+        y1="120"
+        x2="317"
+        y2="105"
+        stroke="#0f766e"
+        strokeWidth="3"
+        strokeLinecap="round"
+        className="fig-dial"
+        style={{ ...anim(0.9), transformOrigin: "300px 120px" }}
+      />
       <circle cx="300" cy="120" r="3" fill="#0f766e" />
-      <text x="325" y="185" textAnchor="middle" fontSize="13" fill="#64748b">
+      <text
+        x="325"
+        y="185"
+        textAnchor="middle"
+        fontSize="13"
+        fill="#64748b"
+        className="fig-fade"
+        style={anim(1.3)}
+      >
         gain turned up
       </text>
 
@@ -163,11 +205,27 @@ function SensitizationFigure() {
         fill="none"
         stroke="#d97706"
         strokeWidth="3.5"
+        className="fig-draw"
+        style={anim(1.7, 380)}
       />
 
       {/* arrows */}
-      <path d="M150 120 h 90" stroke="#cbd5e1" strokeWidth="2" markerEnd="url(#arrow-cs)" />
-      <path d="M404 120 h 28" stroke="#cbd5e1" strokeWidth="2" markerEnd="url(#arrow-cs)" />
+      <path
+        d="M150 120 h 90"
+        stroke="#cbd5e1"
+        strokeWidth="2"
+        markerEnd="url(#arrow-cs)"
+        className="fig-fade"
+        style={anim(0.55)}
+      />
+      <path
+        d="M404 120 h 28"
+        stroke="#cbd5e1"
+        strokeWidth="2"
+        markerEnd="url(#arrow-cs)"
+        className="fig-fade"
+        style={anim(1.5)}
+      />
       <defs>
         <marker id="arrow-cs" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
           <path d="M0 0 L 8 4 L 0 8 z" fill="#cbd5e1" />

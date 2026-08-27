@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "./Figure";
+import { Figure, H2, P, anim } from "./Figure";
 
 function SharedCircuitryFigure() {
   return (
@@ -81,7 +81,10 @@ const LOOP = [
 
 function FearAvoidanceFigure() {
   return (
-    <Figure caption="The fear-avoidance loop. Each step feels protective in the moment, and each one feeds the next. The green arrow is the evidence-backed way out: gradual, supported return to movement.">
+    <Figure
+      animate
+      caption="The fear-avoidance loop. Each step feels protective in the moment, and each one feeds the next. The green arrow is the evidence-backed way out: gradual, supported return to movement."
+    >
       <svg
         role="img"
         aria-labelledby="loop-title loop-desc"
@@ -122,11 +125,11 @@ function FearAvoidanceFigure() {
 
         {/* loop arrows between successive nodes */}
         <g fill="none" stroke="#94a3b8" strokeWidth="2" markerEnd="url(#loop-arrow)">
-          <path d="M395 62 Q505 74 540 104" />
-          <path d="M552 140 Q540 185 512 204" />
-          <path d="M420 228 Q340 244 262 228" />
-          <path d="M172 204 Q140 184 130 140" />
-          <path d="M142 104 Q220 60 282 50" />
+          <path d="M395 62 Q505 74 540 104" className="fig-draw fig-fade" style={anim(0.25, 190)} />
+          <path d="M552 140 Q540 185 512 204" className="fig-draw fig-fade" style={anim(0.65, 110)} />
+          <path d="M420 228 Q340 244 262 228" className="fig-draw fig-fade" style={anim(1.05, 180)} />
+          <path d="M172 204 Q140 184 130 140" className="fig-draw fig-fade" style={anim(1.45, 110)} />
+          <path d="M142 104 Q220 60 282 50" className="fig-draw fig-fade" style={anim(1.85, 170)} />
         </g>
 
         {/* exit arrow */}
@@ -137,17 +140,21 @@ function FearAvoidanceFigure() {
           strokeWidth="3.5"
           strokeLinecap="round"
           markerEnd="url(#exit-arrow)"
+          className="fig-draw fig-fade"
+          style={anim(2.45, 300)}
         />
-        <text x="560" y="270" textAnchor="middle" fontSize="12.5" fontWeight="700" fill="#0f766e">
-          gradual return
-        </text>
-        <text x="560" y="287" textAnchor="middle" fontSize="12.5" fontWeight="700" fill="#0f766e">
-          to activity
-        </text>
+        <g className="fig-fade" style={anim(2.9)}>
+          <text x="560" y="270" textAnchor="middle" fontSize="12.5" fontWeight="700" fill="#0f766e">
+            gradual return
+          </text>
+          <text x="560" y="287" textAnchor="middle" fontSize="12.5" fontWeight="700" fill="#0f766e">
+            to activity
+          </text>
+        </g>
 
-        {/* nodes */}
-        {LOOP.map((n) => (
-          <g key={n.label}>
+        {/* nodes — rise in sequence around the loop */}
+        {LOOP.map((n, i) => (
+          <g key={n.label} className="fig-rise" style={anim(i * 0.4)}>
             <rect
               x={n.x - 92}
               y={n.y - 22}
