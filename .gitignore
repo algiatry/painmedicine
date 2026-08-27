@@ -44,3 +44,6 @@ next-env.d.ts
 
 # generated GSC reports
 /reports/
+
+# brand raster scratch
+/brand/_preview/

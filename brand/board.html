@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pain Medicine — brand board</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --teal: #0f766e;
+      --teal-dark: #115e59;
+      --ink: #0f172a;
+      --muted: #475569;
+      --paper: #f4f8f7;
+      --line: #e2e8f0;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.5;
+      text-wrap: pretty;
+    }
+    .wrap {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      min-height: 100vh;
+    }
+    aside {
+      background: var(--paper);
+      border-right: 1px solid var(--line);
+      padding: 36px 28px;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+    }
+    aside .tile { width: 72px; height: 72px; display: block; }
+    aside h1 {
+      margin-top: 18px;
+      font-size: 22px;
+      letter-spacing: -0.02em;
+    }
+    aside p.kicker {
+      margin-top: 4px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--teal);
+    }
+    aside .story {
+      margin-top: 22px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .swatches { margin-top: 28px; display: grid; gap: 8px; }
+    .swatch {
+      display: grid;
+      grid-template-columns: 36px 1fr;
+      gap: 10px;
+      align-items: center;
+      font-size: 12px;
+    }
+    .chip {
+      width: 36px; height: 36px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+    }
+    .swatch code { font-size: 11px; color: var(--muted); }
+    main { padding: 48px 56px 80px; max-width: 1080px; }
+    h2 {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin: 48px 0 16px;
+    }
+    h2:first-child { margin-top: 0; }
+    .ramp {
+      display: flex;
+      align-items: end;
+      gap: 28px;
+      flex-wrap: wrap;
+    }
+    .ramp figure { text-align: center; }
+    .ramp img { display: block; image-rendering: auto; }
+    .ramp figcaption {
+      margin-top: 8px;
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+    }
+    .grounds {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .grounds figure {
+      padding: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+    }
+    .grounds img { width: 96px; height: 96px; }
+    .grounds figcaption {
+      text-align: center;
+      margin-top: 8px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .lockup {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 20px 24px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+    .lockup img { width: 32px; height: 32px; }
+    .lockup .name { font-size: 20px; font-weight: 600; letter-spacing: -0.02em; }
+    .lockup .dot { font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--teal); }
+    .tab {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: 220px;
+      padding: 10px 14px;
+      background: #e8eaed;
+      border-radius: 10px 10px 0 0;
+      font-size: 13px;
+      color: #3c4043;
+    }
+    .tab img { width: 16px; height: 16px; border-radius: 3px; }
+    .og { width: 100%; border-radius: 8px; border: 1px solid var(--line); display: block; }
+    .rules {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .rules article {
+      padding: 20px 22px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+    }
+    .rules h3 { font-size: 15px; margin-bottom: 8px; }
+    .do { border-color: #99f6e4; background: #f0fdfa; }
+    .dont { border-color: #fecaca; background: #fef2f2; }
+    .rules li { margin-left: 18px; font-size: 14px; color: var(--muted); margin-bottom: 6px; }
+    .masks {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      align-items: center;
+    }
+    .masks .cell { text-align: center; }
+    .masks img { width: 160px; height: 160px; }
+    .circle { border-radius: 50%; }
+    .squircle { border-radius: 36px; }
+    .masks figcaption { margin-top: 8px; font-size: 12px; color: var(--muted); }
+    @media (max-width: 860px) {
+      .wrap { grid-template-columns: 1fr; }
+      aside { position: relative; height: auto; }
+      main { padding: 32px 20px 64px; }
+      .grounds, .rules, .masks { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <aside>
+      <img class="tile" src="mark.svg" alt="Pain Medicine mark" />
+      <p class="kicker">Settling signal</p>
+      <h1>Pain Medicine</h1>
+      <p class="story">
+        A damped waveform, not a heartbeat. Agitation on the left, rest on the right —
+        pain, then understanding, then options.
+      </p>
+      <div class="swatches">
+        <div class="swatch"><div class="chip" style="background:#0f766e"></div><div>Teal<br><code>#0f766e</code></div></div>
+        <div class="swatch"><div class="chip" style="background:#0f172a"></div><div>Ink<br><code>#0f172a</code></div></div>
+        <div class="swatch"><div class="chip" style="background:#475569"></div><div>Muted<br><code>#475569</code></div></div>
+        <div class="swatch"><div class="chip" style="background:#f4f8f7"></div><div>Paper<br><code>#f4f8f7</code></div></div>
+      </div>
+    </aside>
+    <main>
+      <h2>Size ramp</h2>
+      <div class="ramp">
+        <figure>
+          <img src="../public/icon-512.png" width="128" height="128" alt="128" />
+          <figcaption>128</figcaption>
+        </figure>
+        <figure>
+          <img src="../public/icon-512.png" width="64" height="64" alt="64" />
+          <figcaption>64</figcaption>
+        </figure>
+        <figure>
+          <img src="../public/icon-512.png" width="32" height="32" alt="32" />
+          <figcaption>32</figcaption>
+        </figure>
+        <figure>
+          <img src="../public/icon-512.png" width="16" height="16" alt="16" style="image-rendering:pixelated" />
+          <figcaption>16 (tab)</figcaption>
+        </figure>
+      </div>
+
+      <h2>On grounds</h2>
+      <div class="grounds">
+        <div>
+          <figure style="background:#f4f8f7"><img src="mark.svg" alt="on paper" /></figure>
+          <figcaption>Paper</figcaption>
+        </div>
+        <div>
+          <figure style="background:#0f172a"><img src="mark.svg" alt="on ink" /></figure>
+          <figcaption>Ink</figcaption>
+        </div>
+        <div>
+          <figure style="background:#0f766e"><img src="signal-on-teal.svg" alt="on teal" /></figure>
+          <figcaption>Teal field (signal only)</figcaption>
+        </div>
+      </div>
+
+      <h2>Header lockup</h2>
+      <div class="lockup">
+        <img src="mark.svg" alt="" />
+        <span class="name">Pain Medicine</span>
+        <span class="dot">.com</span>
+      </div>
+      <p style="margin-top:14px;font-size:13px;color:var(--muted)">Browser tab</p>
+      <div class="tab" style="margin-top:8px">
+        <img src="../public/icon-192.png" alt="" />
+        Pain Medicine
+      </div>
+
+      <h2>Masks (PWA / social)</h2>
+      <div class="masks">
+        <figure class="cell">
+          <img src="../public/icon-512.png" alt="rounded tile" />
+          <figcaption>Rounded tile · any</figcaption>
+        </figure>
+        <figure class="cell">
+          <img class="squircle" src="../public/icon-512-maskable.png" alt="squircle" />
+          <figcaption>Android squircle</figcaption>
+        </figure>
+        <figure class="cell">
+          <img class="circle" src="../public/brand/social.png" alt="circle" />
+          <figcaption>Circle · X / GitHub</figcaption>
+        </figure>
+      </div>
+
+      <h2>Share card · 1200×630</h2>
+      <img class="og" src="og-production.png" alt="Open Graph preview" />
+
+      <h2>Do / don’t</h2>
+      <div class="rules">
+        <article class="do">
+          <h3>Do</h3>
+          <ul>
+            <li>Keep the rest line — that’s the settling.</li>
+            <li>Use the teal tile in chrome (header, footer, favicon).</li>
+            <li>Regenerate rasters with <code>npm run brand</code>.</li>
+            <li>Give maskable / circle crops the dedicated assets.</li>
+          </ul>
+        </article>
+        <article class="dont">
+          <h3>Don’t</h3>
+          <ul>
+            <li>Redraw it as a heartbeat or ECG QRS.</li>
+            <li>Recolor to red, “medical blue,” or a gradient.</li>
+            <li>Stretch the signal into a line chart on share cards without the round joins.</li>
+            <li>Hand-edit PNGs — the path in <code>src/lib/brand.ts</code> is source.</li>
+          </ul>
+        </article>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

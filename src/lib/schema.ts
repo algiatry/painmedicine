@@ -40,6 +40,8 @@ export function organizationJsonLd() {
     name: SITE.name,
     url: SITE.url,
     description: SITE.description,
+    logo: `${SITE.url}/icon-512.png`,
+    image: `${SITE.url}/opengraph-image`,
   };
 }
 
@@ -71,6 +73,7 @@ export function medicalWebPageJsonLd(meta: {
       "@type": "Organization",
       name: SITE.name,
       url: SITE.url,
+      logo: `${SITE.url}/icon-512.png`,
     },
   };
 }

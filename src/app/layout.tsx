@@ -20,6 +20,14 @@ export const metadata: Metadata = {
     template: `%s | ${SITE.shortName}`,
   },
   description: SITE.description,
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: SITE.shortName,
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export const viewport: Viewport = {

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SITE, NAV, SUPPORT_LINKS, HELP_LINES } from "@/lib/site";
+import BrandMark from "@/components/BrandMark";
 
 export default function Footer() {
   return (
@@ -24,9 +25,14 @@ export default function Footer() {
         </div>
 
         <div className="grid gap-8 sm:grid-cols-3">
-          <div>
-            <p className="text-base font-semibold text-slate-900">{SITE.shortName}</p>
-            <p className="mt-2 text-sm text-slate-600">{SITE.tagline}</p>
+          <div className="flex items-start gap-3">
+            <BrandMark size={32} className="h-8 w-8 shrink-0 mt-0.5" />
+            <div>
+              <p className="text-base font-semibold text-slate-900">
+                {SITE.shortName}
+              </p>
+              <p className="mt-1 text-sm text-slate-600">{SITE.tagline}</p>
+            </div>
           </div>
           <nav aria-label="Footer sections">
             <p className="text-sm font-semibold text-slate-900">Explore</p>

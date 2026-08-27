@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint && npm run lint:content",
     "lint:content": "tsx scripts/content-lint.ts",
-    "gsc": "node scripts/gsc-report.mjs"
+    "gsc": "node scripts/gsc-report.mjs",
+    "brand": "python scripts/render-brand-assets.py"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 40">
+  <rect width="32" height="32" x="0" y="4" rx="8" fill="#0f766e"/>
+  <path d="M5.2 17.0 L9.0 7.0 L13.2 24.6 L17.4 12.2 L20.8 19.6 L23.8 17.0 L27.6 17.0" transform="translate(0,4)" fill="none" stroke="#ffffff"
+        stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="44" y="28" font-family="ui-sans-serif, system-ui, sans-serif"
+        font-size="22" font-weight="600" fill="#0f172a">Pain Medicine</text>
+</svg>
