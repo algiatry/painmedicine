@@ -167,7 +167,7 @@ export default async function ArticlePage({
               <Link
                 key={r.href}
                 href={r.href}
-                className="group rounded-lg border border-slate-200 p-5 transition-colors hover:border-teal-600"
+                className="group rounded-xl border border-slate-200 bg-white p-5 shadow-card transition-all hover:-translate-y-0.5 hover:border-teal-600/60 hover:shadow-card-hover motion-reduce:transition-none motion-reduce:hover:translate-y-0"
               >
                 <span className="block font-semibold text-slate-900 group-hover:text-teal-700">
                   {r.title}

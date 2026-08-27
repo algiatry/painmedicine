@@ -42,7 +42,7 @@ export default function BrandMark({
       <path
         d={SIGNAL_PATH}
         fill="none"
-        stroke={isSignal ? BRAND.teal : BRAND.white}
+        stroke={isSignal ? "currentColor" : BRAND.white}
         strokeWidth={MARK_STROKE}
         strokeLinecap="round"
         strokeLinejoin="round"

@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { NAV, SITE } from "@/lib/site";
+import HeroSignal from "@/components/HeroSignal";
+import HubIcon from "@/components/HubIcon";
 
 /** Curated flagship reads — keeps the site's strongest pages one click deep. */
 const FEATURED = [
@@ -43,85 +45,109 @@ const FEATURED = [
 
 export default function Home() {
   return (
-    <div className="mx-auto max-w-6xl px-4 sm:px-6">
-      {/* Hero */}
-      <section className="pt-12 pb-14 sm:pt-16 sm:pb-20 max-w-3xl">
-        <p className="text-sm font-semibold uppercase tracking-widest text-teal-700">
-          Patient-first pain education
-        </p>
-        <h1 className="mt-4 text-4xl sm:text-5xl font-semibold tracking-tight text-slate-900">
-          Pain is real. So are your options.
-        </h1>
-        <p className="mt-6 text-lg text-slate-600">
-          {SITE.shortName} exists to answer two questions clearly and honestly:
-          what can pain medicine do for you <em>today</em>, and what is medical
-          science building for <em>tomorrow</em>? No hype, no sales — just
-          evidence-grounded education to help you have better conversations
-          with your care team.
-        </p>
-        <div className="mt-8 flex flex-wrap gap-3">
-          <Link
-            href="/what-is-pain-medicine"
-            className="rounded-md bg-teal-700 px-5 py-3 text-sm font-semibold text-white hover:bg-teal-800"
-          >
-            What is pain medicine?
-          </Link>
-          <Link
-            href="/future-of-pain-medicine"
-            className="rounded-md border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 hover:border-teal-700 hover:text-teal-700"
-          >
-            The future of pain relief
-          </Link>
+    <div>
+      {/* Hero — soft paper wash settling into white, like the signal itself */}
+      <section className="border-b border-slate-200/70 bg-gradient-to-b from-paper via-paper/60 to-white">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="grid items-center gap-10 pt-12 pb-14 sm:pt-16 sm:pb-18 lg:grid-cols-[1fr_minmax(0,30rem)] lg:gap-14">
+            <div className="max-w-2xl">
+              <p className="text-sm font-semibold uppercase tracking-widest text-teal-700">
+                Patient-first pain education
+              </p>
+              <h1 className="mt-4 text-4xl sm:text-5xl font-semibold tracking-tight text-slate-900">
+                Pain is real. So are your options.
+              </h1>
+              <p className="mt-6 text-lg text-slate-600">
+                {SITE.shortName} exists to answer two questions clearly and honestly:
+                what can pain medicine do for you <em>today</em>, and what is medical
+                science building for <em>tomorrow</em>? No hype, no sales — just
+                evidence-grounded education to help you have better conversations
+                with your care team.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <Link
+                  href="/what-is-pain-medicine"
+                  className="rounded-md bg-teal-700 px-5 py-3 text-sm font-semibold text-white shadow-card transition-colors hover:bg-teal-800"
+                >
+                  What is pain medicine?
+                </Link>
+                <Link
+                  href="/future-of-pain-medicine"
+                  className="rounded-md border border-slate-300 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-700 transition-colors hover:border-teal-700 hover:text-teal-700"
+                >
+                  The future of pain relief
+                </Link>
+              </div>
+            </div>
+            <figure className="hidden lg:block" aria-hidden="true">
+              <div className="rounded-2xl border border-slate-200/80 bg-white/80 p-4 shadow-card">
+                <HeroSignal className="block h-auto w-full" />
+              </div>
+              <figcaption className="mt-3 text-center text-xs font-medium uppercase tracking-widest text-slate-400">
+                A signal, settling — that is the goal
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </section>
 
       {/* Hubs */}
-      <section aria-labelledby="explore-heading" className="pb-16 sm:pb-20">
-        <h2 id="explore-heading" className="text-2xl font-semibold text-slate-900">
-          Start where you are
-        </h2>
-        <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {NAV.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="group rounded-lg border border-slate-200 p-6 transition-colors hover:border-teal-600"
-            >
-              <h3 className="text-base font-semibold text-slate-900 group-hover:text-teal-700">
-                {item.label}
-              </h3>
-              <p className="mt-2 text-sm text-slate-600">{item.description}</p>
-            </Link>
-          ))}
+      <section aria-labelledby="explore-heading" className="py-14 sm:py-18">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <h2 id="explore-heading" className="text-2xl font-semibold text-slate-900">
+            Start where you are
+          </h2>
+          <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {NAV.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="group rounded-xl border border-slate-200 bg-white p-6 shadow-card transition-all hover:-translate-y-0.5 hover:border-teal-600/60 hover:shadow-card-hover motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+              >
+                <span className="flex size-11 items-center justify-center rounded-lg bg-teal-50 text-teal-700 transition-colors group-hover:bg-teal-700 group-hover:text-white">
+                  <HubIcon href={item.href} className="size-6" />
+                </span>
+                <h3 className="mt-4 text-base font-semibold text-slate-900 group-hover:text-teal-700">
+                  {item.label}
+                </h3>
+                <p className="mt-2 text-sm text-slate-600">{item.description}</p>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Flagship reads */}
-      <section aria-labelledby="featured-heading" className="pb-16 sm:pb-20">
-        <h2 id="featured-heading" className="text-2xl font-semibold text-slate-900">
-          Good first reads
-        </h2>
-        <p className="mt-2 max-w-2xl text-sm text-slate-600">
-          Every page below is written from primary sources, cited, and
-          illustrated — a fair sample of the standard the whole site holds
-          itself to.
-        </p>
-        <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {FEATURED.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="group rounded-lg border border-slate-200 p-6 transition-colors hover:border-teal-600"
-            >
-              <p className="text-xs font-semibold uppercase tracking-wider text-teal-700">
-                {item.eyebrow}
-              </p>
-              <h3 className="mt-2 text-base font-semibold text-slate-900 group-hover:text-teal-700">
-                {item.title}
-              </h3>
-              <p className="mt-2 text-sm text-slate-600">{item.blurb}</p>
-            </Link>
-          ))}
+      <section
+        aria-labelledby="featured-heading"
+        className="border-t border-slate-200/70 bg-paper/60 py-14 sm:py-18"
+      >
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <h2 id="featured-heading" className="text-2xl font-semibold text-slate-900">
+            Good first reads
+          </h2>
+          <p className="mt-2 max-w-2xl text-sm text-slate-600">
+            Every page below is written from primary sources, cited, and
+            illustrated — a fair sample of the standard the whole site holds
+            itself to.
+          </p>
+          <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {FEATURED.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="group rounded-xl border border-slate-200 bg-white p-6 shadow-card transition-all hover:-translate-y-0.5 hover:border-teal-600/60 hover:shadow-card-hover motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+              >
+                <p className="text-xs font-semibold uppercase tracking-wider text-teal-700">
+                  {item.eyebrow}
+                </p>
+                <h3 className="mt-2 text-base font-semibold text-slate-900 group-hover:text-teal-700">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm text-slate-600">{item.blurb}</p>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
     </div>

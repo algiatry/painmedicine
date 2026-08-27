@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { SITE, NAV } from "@/lib/site";
+import { SITE } from "@/lib/site";
 import BrandMark from "@/components/BrandMark";
+import NavLinks from "@/components/NavLinks";
 
 export default function Header() {
   return (
@@ -28,16 +29,7 @@ export default function Header() {
           </Link>
           <nav aria-label="Primary" className="hidden lg:block">
             <ul className="flex items-center gap-5">
-              {NAV.map((item) => (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className="text-sm font-medium text-slate-600 transition-colors hover:text-teal-700"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
+              <NavLinks />
             </ul>
           </nav>
         </div>
@@ -46,16 +38,7 @@ export default function Header() {
           className="lg:hidden -mx-4 px-4 pb-2.5 overflow-x-auto"
         >
           <ul className="flex gap-4 whitespace-nowrap">
-            {NAV.map((item) => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className="text-sm font-medium text-slate-600 hover:text-teal-700"
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
+            <NavLinks />
           </ul>
         </nav>
       </div>

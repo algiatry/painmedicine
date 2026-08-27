@@ -29,7 +29,7 @@ export default function Footer() {
             <BrandMark
               variant="signal"
               size={20}
-              className="shrink-0 mt-1"
+              className="shrink-0 mt-1 text-teal-700"
             />
             <div>
               <p className="text-base font-semibold tracking-tight text-slate-900">

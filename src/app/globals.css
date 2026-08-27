@@ -3,12 +3,22 @@
 :root {
   --background: #ffffff;
   --foreground: #1e293b;
+  --brand: #0f766e;
+  --brand-dark: #115e59;
+  --paper: #f4f8f7;
+  --ink: #0f172a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-brand: var(--brand);
+  --color-brand-dark: var(--brand-dark);
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
   --font-sans: var(--font-source-sans), system-ui, sans-serif;
+  --shadow-card: 0 1px 2px 0 rgb(15 23 42 / 0.04), 0 1px 3px 0 rgb(15 23 42 / 0.06);
+  --shadow-card-hover: 0 2px 4px -1px rgb(15 23 42 / 0.05), 0 8px 20px -6px rgb(15 118 110 / 0.14);
 }
 
 body {
@@ -18,4 +28,41 @@ body {
   /* Medical audience skews older: comfortable base size + line height */
   font-size: 1.0625rem;
   line-height: 1.65;
+}
+
+::selection {
+  background: #99f6e4; /* teal-200 — brand-consistent text selection */
+  color: var(--ink);
+}
+
+/* One consistent, visible focus ring site-wide (keyboard users only). */
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* The hero's settling signal draws itself once, then rests. */
+@media (prefers-reduced-motion: no-preference) {
+  .signal-draw {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: signal-draw 2.2s cubic-bezier(0.33, 1, 0.68, 1) 0.15s forwards;
+  }
+  .signal-rest-dot {
+    opacity: 0;
+    animation: signal-rest 0.5s ease-out 2s forwards;
+  }
+}
+
+@keyframes signal-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes signal-rest {
+  to {
+    opacity: 1;
+  }
 }
