@@ -1,5 +1,5 @@
 import JsonLd from "@/components/JsonLd";
-import { Figure, H2, P } from "@/components/science/Figure";
+import { Figure, H2, P, anim } from "@/components/science/Figure";
 import { SITE } from "@/lib/site";
 import {
   CANDIDATES,
@@ -39,82 +39,231 @@ function chipLabel(name: string) {
   return name === "Evoke closed-loop SCS" ? "Evoke SCS" : name;
 }
 
-/** Data-driven landscape: candidates arranged by development stage, colored by modality. */
+/**
+ * The pipeline board — a swimlane chart computed entirely from lib/pipeline.ts,
+ * so the quarterly data refresh redraws the art for free. Modality lanes ×
+ * phase columns; every candidate is a plotted node; the dashed teal line is
+ * FDA approval; halted candidates fall to a hatched siding below the board.
+ */
 function LandscapeFigure() {
   const STAGES: Phase[] = ["Phase 1", "Phase 2", "Phase 3", "Approved"];
-  const colX: Record<string, number> = {
-    "Phase 1": 110,
-    "Phase 2": 300,
-    "Phase 3": 490,
-    Approved: 680,
-  };
-  const modalities = Object.keys(MODALITY_COLOR) as Modality[];
+  const MODALITIES = Object.keys(MODALITY_COLOR) as Modality[];
+  const halted = candidatesByPhase("Discontinued");
+
+  // geometry
+  const GUTTER = 122; // lane labels
+  const COL_W = 156;
+  const COL_GAP = 8;
+  const colX0 = (i: number) => GUTTER + 6 + i * (COL_W + COL_GAP);
+  const LANE_Y0 = 68;
+  const LANE_H = 64;
+  const boardBottom = LANE_Y0 + MODALITIES.length * LANE_H;
+  const approvalX = colX0(3) - COL_GAP / 2; // between Phase 3 and Approved
+  const stripY = boardBottom + 28;
+  const H = halted.length > 0 ? stripY + 52 + 14 : boardBottom + 20;
+  const W = 800;
+  const boardRight = colX0(3) + COL_W;
+
+  // node stagger: columns light up left to right
+  const colDelay = [0.9, 1.15, 1.4, 2.0];
 
   return (
-    <Figure caption="Every tracked candidate by development stage and mechanism type. Further right = closer to patients. (Halted candidates are listed below, not shown here.)">
+    <Figure
+      animate
+      caption="The board, drawn live from the tracker data: each lane is a mechanism type, each column a development stage, and the dashed teal line is FDA approval. Halted candidates drop to the siding at the bottom — tanezumab fell at the line."
+    >
       <svg
         role="img"
         aria-labelledby="landscape-title landscape-desc"
-        viewBox="0 0 790 300"
+        viewBox={`0 0 ${W} ${H}`}
         className="mx-auto block h-auto w-full max-w-3xl"
       >
-        <title id="landscape-title">Pain treatment pipeline landscape</title>
+        <title id="landscape-title">The pain-treatment pipeline board</title>
         <desc id="landscape-desc">
-          Candidates grouped into four columns — Phase 1, Phase 2, Phase 3, and
-          Approved — with each candidate shown as a chip colored by whether it is
-          a small molecule, biologic, device, or gene therapy.
+          A swimlane chart. Rows are mechanism types — small molecule, biologic,
+          device, gene therapy. Columns run Phase 1, Phase 2, Phase 3, then
+          Approved, separated by a dashed line marking FDA approval. Each
+          candidate is a dot in its lane and stage; halted candidates appear in
+          a separate siding at the bottom.
         </desc>
 
-        {/* progression arrow */}
-        <line x1="40" y1="30" x2="748" y2="30" stroke="#e2e8f0" strokeWidth="2" markerEnd="url(#pl-arrow)" />
         <defs>
           <marker id="pl-arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
             <path d="M0 0 L 9 4.5 L 0 9 z" fill="#cbd5e1" />
           </marker>
         </defs>
-        <text x="748" y="22" textAnchor="end" fontSize="12" fill="#94a3b8">
-          further along →
+
+        {/* progression axis */}
+        <line
+          x1={GUTTER}
+          y1="24"
+          x2={boardRight - 8}
+          y2="24"
+          stroke="#e2e8f0"
+          strokeWidth="2"
+          markerEnd="url(#pl-arrow)"
+          className="fig-draw"
+          style={anim(0.15, 670)}
+        />
+        <text x={boardRight - 14} y="16" textAnchor="end" fontSize="12" fill="#94a3b8" className="fig-fade" style={anim(0.5)}>
+          closer to patients →
         </text>
 
-        {STAGES.map((stage) => {
-          const x = colX[stage];
-          const list = candidatesByPhase(stage);
+        {/* modality lanes */}
+        {MODALITIES.map((m, li) => {
+          const y = LANE_Y0 + li * LANE_H;
           return (
-            <g key={stage}>
-              <rect x={x - 86} y="66" width="172" height="180" rx="12" fill="#f8fafc" stroke="#e2e8f0" />
-              <text x={x} y="54" textAnchor="middle" fontSize="14" fontWeight="700" fill="#334155">
-                {stage}
-                <tspan fill="#94a3b8" fontWeight="400">{`  (${list.length})`}</tspan>
+            <g key={m} className="fig-fade" style={anim(0.1 + li * 0.12)}>
+              <rect
+                x={GUTTER}
+                y={y}
+                width={boardRight - GUTTER}
+                height={LANE_H}
+                fill={MODALITY_COLOR[m]}
+                fillOpacity={0.055}
+              />
+              <line x1={GUTTER} y1={y} x2={boardRight} y2={y} stroke="#e2e8f0" strokeWidth="1" />
+              <text
+                x={GUTTER - 12}
+                y={y + LANE_H / 2 + 4}
+                textAnchor="end"
+                fontSize="12.5"
+                fontWeight="600"
+                fill={MODALITY_TINT[m].text}
+              >
+                {m}
               </text>
-              {list.map((c, i) => {
-                const cy = 86 + i * 44;
-                const tint = MODALITY_TINT[c.modality];
+            </g>
+          );
+        })}
+        <line x1={GUTTER} y1={boardBottom} x2={boardRight} y2={boardBottom} stroke="#e2e8f0" strokeWidth="1" className="fig-fade" style={anim(0.5)} />
+
+        {/* column headers */}
+        {STAGES.map((stage, ci) => (
+          <text
+            key={stage}
+            x={colX0(ci) + COL_W / 2}
+            y="52"
+            textAnchor="middle"
+            fontSize="13.5"
+            fontWeight="700"
+            fill={stage === "Approved" ? "#0f766e" : "#334155"}
+            className="fig-fade"
+            style={anim(0.35 + ci * 0.12)}
+          >
+            {stage}
+            <tspan dx="5" fill="#94a3b8" fontWeight="400">{`(${candidatesByPhase(stage).length})`}</tspan>
+          </text>
+        ))}
+
+        {/* approved zone + the approval line */}
+        <rect
+          x={approvalX + COL_GAP / 2}
+          y={LANE_Y0}
+          width={COL_W}
+          height={boardBottom - LANE_Y0}
+          fill="#ccfbf1"
+          fillOpacity="0.3"
+          className="fig-fade"
+          style={anim(1.7)}
+        />
+        <line
+          x1={approvalX}
+          y1={LANE_Y0 - 6}
+          x2={approvalX}
+          y2={boardBottom + 6}
+          stroke="#0f766e"
+          strokeWidth="2"
+          strokeDasharray="6 5"
+          strokeLinecap="round"
+          className="fig-draw"
+          style={anim(1.65, 290)}
+        />
+        <text
+          x={approvalX}
+          y={boardBottom + 20}
+          textAnchor="middle"
+          fontSize="11.5"
+          fontWeight="700"
+          fill="#0f766e"
+          className="fig-fade"
+          style={anim(1.85)}
+        >
+          FDA approval
+        </text>
+
+        {/* candidate nodes, stacked per (lane, column) cell */}
+        {MODALITIES.map((m, li) =>
+          STAGES.map((stage, ci) => {
+            const cell = CANDIDATES.filter((c) => c.modality === m && c.phase === stage);
+            return cell.map((c, i) => {
+              const cx = colX0(ci) + 18;
+              const cy = LANE_Y0 + li * LANE_H + LANE_H / 2 + (i - (cell.length - 1) / 2) * 26;
+              const approved = stage === "Approved";
+              return (
+                <g key={c.name} className="fig-pop" style={anim(colDelay[ci] + i * 0.15)}>
+                  {approved && (
+                    <circle cx={cx} cy={cy} r="11" fill="none" stroke={MODALITY_COLOR[m]} strokeWidth="1.5" strokeOpacity="0.5" />
+                  )}
+                  <circle cx={cx} cy={cy} r={approved ? 7 : 6} fill={MODALITY_COLOR[m]} />
+                  <text
+                    x={cx + 15}
+                    y={cy + 4}
+                    fontSize="11.5"
+                    fontWeight={approved ? 700 : 600}
+                    fill={MODALITY_TINT[m].text}
+                  >
+                    {chipLabel(c.name)}
+                  </text>
+                </g>
+              );
+            });
+          }),
+        )}
+
+        {/* the halted siding */}
+        {halted.length > 0 && (
+          <>
+            <path
+              d={`M${approvalX} ${LANE_Y0 + 1.5 * LANE_H} C ${approvalX} ${boardBottom + 10}, ${approvalX - 60} ${stripY - 6}, ${approvalX - 90} ${stripY + 24}`}
+              fill="none"
+              stroke="#94a3b8"
+              strokeWidth="1.8"
+              strokeDasharray="4 5"
+              markerEnd="url(#pl-arrow)"
+              className="fig-draw fig-fade"
+              style={anim(2.5, 220)}
+            />
+            <g className="fig-fade" style={anim(2.7)}>
+              <rect
+                x={GUTTER}
+                y={stripY}
+                width={boardRight - GUTTER}
+                height={48}
+                rx={10}
+                fill="#f8fafc"
+                stroke="#cbd5e1"
+                strokeDasharray="7 5"
+              />
+              <text x={GUTTER - 12} y={stripY + 28} textAnchor="end" fontSize="12.5" fontWeight="600" fill="#94a3b8">
+                Halted
+              </text>
+              {halted.map((c, i) => {
+                const cx = approvalX - 74 + i * 190;
+                const cy = stripY + 24;
                 return (
                   <g key={c.name}>
-                    <rect x={x - 80} y={cy} width="160" height="34" rx="8" fill={tint.fill} stroke={MODALITY_COLOR[c.modality]} strokeOpacity="0.35" />
-                    <circle cx={x - 64} cy={cy + 17} r="4" fill={MODALITY_COLOR[c.modality]} />
-                    <text x={x - 50} y={cy + 21} fontSize="12.5" fontWeight="600" fill={tint.text}>
+                    <circle cx={cx} cy={cy} r="6" fill="#ffffff" stroke="#94a3b8" strokeWidth="1.8" strokeDasharray="3 3" />
+                    <text x={cx + 14} y={cy + 4} fontSize="11.5" fontWeight="600" fill="#64748b">
                       {chipLabel(c.name)}
+                      <tspan dx="5" fill="#94a3b8" fontWeight="400">— {c.modality.toLowerCase()}</tspan>
                     </text>
                   </g>
                 );
               })}
             </g>
-          );
-        })}
-
-        {/* modality legend */}
-        <g fontSize="12.5" fill="#475569">
-          {modalities.map((m, i) => {
-            const x = 44 + i * 185;
-            return (
-              <g key={m}>
-                <rect x={x} y="270" width="13" height="13" rx="3" fill={MODALITY_TINT[m].fill} stroke={MODALITY_COLOR[m]} />
-                <text x={x + 20} y="281">{m}</text>
-              </g>
-            );
-          })}
-        </g>
+          </>
+        )}
       </svg>
     </Figure>
   );
