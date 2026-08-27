@@ -1,27 +1,26 @@
-# PainMedicine.com
+# Algiatry
 
-Patient-first educational site on pain medicine — the specialty, the science
-of pain, today's evidence-based treatments, and the future of pain relief.
+*algos* (pain) + *-iatry* (healing). The study of pain, and its relief.
 
-Next.js (App Router) + TypeScript + Tailwind, deployed on Vercel.
+Algiatry builds patient-first, evidence-graded knowledge hubs for pain medicine. The work is public, the sources are cited, and the writing is reviewed before it ships.
 
-## Develop
+## Properties
 
-```bash
-npm run dev
-```
+| | |
+|---|---|
+| [**painmedicine**](https://github.com/algiatry/painmedicine) | The specialty, how pain works, the treatments that exist today, and the science shaping tomorrow's relief. → [painmedicine.com](https://painmedicine.com) |
 
-## Verify
+## How we work
 
-```bash
-npm run lint && npm run build
-```
+- **Evidence first.** Claims link to primary sources — trials, guidelines, reviews. If it can't be cited, it isn't published.
+- **Plain language.** Written for the person in pain, not the person prescribing.
+- **Reviewed.** Clinical content is checked by practicing physicians before release. Reviewers are named on the page.
+- **Open.** Corrections and issues are welcome. Open an issue in the relevant repo.
 
-## Editorial rules
+## Contributing
 
-This is YMYL medical content. Read `CONTENT-TEMPLATE.md` before touching any
-content — clinical content is gated behind medical review, and pages without
-a credentialed reviewer must keep `status: "pending-review"`.
+Clinicians, researchers, and editors interested in reviewing content: open an issue in [painmedicine](https://github.com/algiatry/painmedicine/issues) or write to the address in the repo README.
 
-Launch plan: see `.hermes/plans/2026-08-23_painmedicine-com-launch.md` in the
-texasbitcoin repo (planning workspace).
+---
+
+A [Meta](https://github.com/utilityincoming) property.
