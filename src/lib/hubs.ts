@@ -104,6 +104,24 @@ export const HUBS: Hub[] = [
           "Why the 0-to-10 scale is imperfect, and better ways to describe pain to your clinician.",
         href: "/understanding-pain/measuring-pain",
       },
+      {
+        title: "Pain and sleep",
+        blurb:
+          "The cycle runs both ways — but sleep loss drives pain harder than pain drives sleep loss. What one bad night does, and what helps.",
+        href: "/understanding-pain/pain-and-sleep",
+      },
+      {
+        title: "Pain and emotion",
+        blurb:
+          "Emotion is in the definition of pain itself. The shared brain circuitry, the fear-avoidance loop, and why brain-targeted care is not an insult.",
+        href: "/understanding-pain/pain-and-emotion",
+      },
+      {
+        title: "The placebo effect",
+        blurb:
+          "Real, blockable-with-a-drug biology: expectation switching on the brain's own pain-relief chemistry — and the honest limits of what it can do.",
+        href: "/understanding-pain/the-placebo-effect",
+      },
     ],
   },
   {

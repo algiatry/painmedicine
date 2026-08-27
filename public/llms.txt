@@ -25,6 +25,12 @@
     nociplastic pain (the IASP's 2017 third category)
   - /understanding-pain/acute-vs-chronic-pain — the 3-month line and ICD-11
   - /understanding-pain/measuring-pain — pain scales and how to describe pain
+  - /understanding-pain/pain-and-sleep — the bidirectional pain-sleep cycle;
+    sleep loss as the stronger driver (Finan 2013, Krause 2019)
+  - /understanding-pain/pain-and-emotion — shared pain/emotion brain circuitry,
+    descending modulation, the fear-avoidance model, depression comorbidity
+  - /understanding-pain/the-placebo-effect — placebo analgesia as endogenous
+    opioid biology (naloxone-blockable), open-label placebo trials, nocebo
 - /treatments — the treatment landscape: medications, interventional
   procedures, physical and behavioral therapies
 - /conditions — condition-by-condition guides (in editorial preparation)

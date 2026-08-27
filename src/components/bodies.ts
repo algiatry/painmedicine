@@ -3,6 +3,9 @@ import HowPainWorks from "./science/HowPainWorks";
 import ThreeTypesOfPain from "./science/ThreeTypesOfPain";
 import AcuteVsChronic from "./science/AcuteVsChronic";
 import MeasuringPain from "./science/MeasuringPain";
+import PainAndSleep from "./science/PainAndSleep";
+import PainAndEmotion from "./science/PainAndEmotion";
+import ThePlaceboEffect from "./science/ThePlaceboEffect";
 import PipelineTracker from "./future/PipelineTracker";
 import Neuromodulation from "./future/Neuromodulation";
 import BiologicsGeneTherapy from "./future/BiologicsGeneTherapy";
@@ -19,6 +22,9 @@ export const ARTICLE_BODIES: Record<string, ComponentType> = {
   "types-of-pain": ThreeTypesOfPain,
   "acute-vs-chronic-pain": AcuteVsChronic,
   "measuring-pain": MeasuringPain,
+  "pain-and-sleep": PainAndSleep,
+  "pain-and-emotion": PainAndEmotion,
+  "the-placebo-effect": ThePlaceboEffect,
   pipeline: PipelineTracker,
   neuromodulation: Neuromodulation,
   "biologics-and-gene-therapy": BiologicsGeneTherapy,

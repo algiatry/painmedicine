@@ -299,6 +299,290 @@ export const ARTICLES: Article[] = [
       },
     ],
   },
+  {
+    hub: HUB,
+    slug: "pain-and-sleep",
+    title: "Pain and Sleep",
+    description:
+      "Pain and sleep wreck each other — but not equally. Why a bad night raises tomorrow's pain, how sleep loss switches off the body's own pain brakes, and what the evidence says helps.",
+    status: "sourced",
+    lastUpdated: "2026-08-27",
+    answer:
+      "Pain and sleep affect each other in both directions, but research shows the sleep-to-pain direction is stronger: poor sleep predicts new and worsening pain more reliably than pain predicts poor sleep. Even one night of bad sleep lowers pain thresholds and weakens the brain's built-in pain-dampening systems — which is why sleep is a core target in modern pain care.",
+    faqs: [
+      {
+        question: "Does poor sleep cause pain, or does pain ruin sleep?",
+        answer:
+          "Both — it is a genuine cycle. But when researchers follow people over time, sleep problems predict future pain more strongly and consistently than pain predicts future sleep problems. That is actually hopeful news: it means sleep is not just a victim of pain. It is a lever you and your care team can work on.",
+      },
+      {
+        question: "Can one bad night really make the next day's pain worse?",
+        answer:
+          "Yes. In diary studies, night-to-night dips in sleep quality predicted next-day increases in pain — and quality mattered more than the number of hours slept. In the lab, a single night of sleep deprivation measurably lowered healthy people's pain thresholds and changed how their brains processed pain.",
+      },
+      {
+        question: "Is broken-up sleep as bad as short sleep?",
+        answer:
+          "For pain, it may be worse. In one experiment, sleep interrupted by repeated forced awakenings switched off the body's natural pain-inhibition response and increased spontaneous pain, while sleep that was merely shortened by the same amount did not. Deep, unbroken sleep seems to be what the pain system needs most.",
+      },
+      {
+        question: "Will fixing my insomnia fix my pain?",
+        answer:
+          "Treating insomnia — for example with cognitive behavioral therapy for insomnia (CBT-I) — reliably improves sleep and mood in people with chronic pain. Its direct effect on pain intensity is modest on average, but better sleep restores the systems that regulate pain, and it improves the daily life pain has disrupted. Ask your clinician whether it fits your situation.",
+      },
+    ],
+    references: [
+      {
+        source: "J Pain / PMC",
+        title:
+          "Finan, Goodin & Smith — The Association of Sleep and Pain: An Update and a Path Forward",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4046588/",
+      },
+      {
+        source: "J Neurosci / PMC",
+        title:
+          "Krause et al. — The Pain of Sleep Loss: A Brain Characterization in Humans",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6433768/",
+      },
+      {
+        source: "Sleep Med Rev / PubMed",
+        title:
+          "Sun et al. — Prevalence of sleep disturbances in patients with chronic non-cancer pain: systematic review and meta-analysis",
+        url: "https://pubmed.ncbi.nlm.nih.gov/33827029/",
+      },
+      {
+        source: "PLoS One / PMC",
+        title:
+          "Staffe et al. — Total sleep deprivation increases pain sensitivity, impairs conditioned pain modulation and facilitates temporal summation",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6892491/",
+      },
+      {
+        source: "Sleep Med Rev / PubMed",
+        title:
+          "Selvanathan et al. — Cognitive behavioral therapy for insomnia in patients with chronic pain: systematic review and meta-analysis",
+        url: "https://pubmed.ncbi.nlm.nih.gov/33610967/",
+      },
+      {
+        source: "NIH / NHLBI",
+        title: "Sleep Deprivation and Deficiency — patient information",
+        url: "https://www.nhlbi.nih.gov/health/sleep-deprivation",
+      },
+    ],
+    related: [
+      {
+        title: "How pain works",
+        href: "/understanding-pain/how-pain-works",
+        blurb: "The pain-dampening systems that sleep loss switches off.",
+      },
+      {
+        title: "Measuring pain",
+        href: "/understanding-pain/measuring-pain",
+        blurb: "Why your clinician asks about sleep — it is part of the picture.",
+      },
+    ],
+  },
+  {
+    hub: HUB,
+    slug: "pain-and-emotion",
+    title: "Pain and Emotion",
+    description:
+      "Emotion is written into the definition of pain itself. How pain and feeling share brain circuitry, why stress and fear turn the volume up, and why therapy that helps is proof of biology — not proof it was in your head.",
+    status: "sourced",
+    lastUpdated: "2026-08-27",
+    answer:
+      "Pain is defined by the world's pain scientists as an unpleasant sensory and emotional experience — emotion is part of pain, not a contaminant of it. Brain regions that process pain overlap with those that process feeling, and the brain's own volume-control system can amplify or dampen pain signals. That is why stress worsens pain, and why brain-targeted therapies can genuinely help.",
+    faqs: [
+      {
+        question: "Is my pain just depression in disguise?",
+        answer:
+          "No. Pain and depression are distinct conditions that share brain machinery and feed each other — around 65% of people with depression report pain, and depression affects roughly half of patients in pain clinics. Having both does not make either less real, and good care takes both seriously at the same time.",
+      },
+      {
+        question: "Why does stress make my pain worse?",
+        answer:
+          "Your brain runs a volume-control system that can amplify or suppress pain signals on their way through the spinal cord. Emotional state, anxiety, attention, and expectation all feed into it. Under stress the system tips toward amplification — the same signal genuinely hurts more. It is physiology, not weakness.",
+      },
+      {
+        question: "If therapy helps my pain, does that mean it was all in my head?",
+        answer:
+          "No. Psychological therapies like CBT produce measurable — usually modest — reductions in pain and disability across dozens of randomized trials. They work because pain-processing and emotion-processing circuits overlap, so treatments that calm one can quiet the other. Using the brain's own machinery is working with real biology, not imagining things.",
+      },
+    ],
+    references: [
+      {
+        source: "IASP",
+        title: "IASP Announces Revised Definition of Pain (2020)",
+        url: "https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/",
+      },
+      {
+        source: "Arch Intern Med / JAMA",
+        title: "Bair et al. — Depression and pain comorbidity: a literature review",
+        url: "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/216320",
+      },
+      {
+        source: "Nat Rev Neurosci / PMC",
+        title:
+          "Bushnell, Čeko & Low — Cognitive and emotional control of pain and its disruption in chronic pain",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4465351/",
+      },
+      {
+        source: "J Clin Invest / PMC",
+        title: "Ossipov, Dussor & Porreca — Central modulation of pain",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2964993/",
+      },
+      {
+        source: "Curr Opin Psychol / PMC",
+        title:
+          "Zale & Ditre — Pain-related fear, disability, and the fear-avoidance model of chronic pain",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4383173/",
+      },
+      {
+        source: "Expert Rev Neurother / PMC",
+        title: "Quartana, Campbell & Edwards — Pain catastrophizing: a critical review",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2696024/",
+      },
+      {
+        source: "Annu Rev Neurosci / PMC",
+        title:
+          "Atlas — How Instructions, Learning, and Expectations Shape Pain and Neurobiological Responses",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11793868/",
+      },
+      {
+        source: "Psychosom Med / PMC",
+        title:
+          "Eisenberger — The neural bases of social pain: evidence for shared representations with physical pain",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3273616/",
+      },
+      {
+        source: "Cochrane",
+        title:
+          "Williams et al. — Psychological therapies for the management of chronic pain in adults (plain-language summary)",
+        url: "https://www.cochrane.org/CD007407/SYMPT_what-are-benefits-and-risks-psychological-therapies-adults-persistent-and-distressing-pain-neither",
+      },
+    ],
+    related: [
+      {
+        title: "How pain works",
+        href: "/understanding-pain/how-pain-works",
+        blurb: "The signal path the brain's volume control acts on.",
+      },
+      {
+        title: "Pain and sleep",
+        href: "/understanding-pain/pain-and-sleep",
+        blurb: "The other everyday amplifier — and the same modulatory circuits.",
+      },
+      {
+        title: "The mind and the brain",
+        href: "/future-of-pain-medicine/mind-and-brain",
+        blurb: "Treatments now being built on exactly this circuitry.",
+      },
+    ],
+  },
+  {
+    hub: HUB,
+    slug: "the-placebo-effect",
+    title: "The Placebo Effect",
+    description:
+      "The placebo effect in pain is real, measurable biology: expectation switching on the brain's own pain-relief chemistry. What it proves about your pain — and what it can't do.",
+    status: "sourced",
+    lastUpdated: "2026-08-27",
+    answer:
+      "The placebo effect in pain is not imagination — it is expectation activating the brain's own pain-modulation system, including its natural opioid chemistry. Blocking that chemistry with a drug blocks placebo relief. Placebos can ease symptoms like pain and nausea, even when people know they're taking one, but they do not treat the underlying disease.",
+    faqs: [
+      {
+        question: "If a placebo helped me, does that mean my pain wasn't real?",
+        answer:
+          "No — the opposite. Placebo pain relief can be blocked by naloxone, a drug that blocks opioids, which shows the relief runs on the body's own painkilling chemistry. Imaging even shows reduced pain signaling in the spinal cord. Responding to a placebo means your pain-relief system works, not that your pain was fake.",
+      },
+      {
+        question: "Do placebos work if you know it's a placebo?",
+        answer:
+          "Often, for symptoms — in randomized trials, 'open-label' placebos given with full honesty still outperformed no treatment in irritable bowel syndrome and outperformed usual care alone in chronic low back pain. The trials are small and short, but they suggest the ritual and expectation of care matter, with no deception required.",
+      },
+      {
+        question: "Can expecting side effects actually give me side effects?",
+        answer:
+          "Yes — that is the nocebo effect. In COVID-19 vaccine trials, about a third of people who received only saline placebo reported 'systemic side effects' like headache and fatigue. Researchers estimated nocebo responses accounted for around three-quarters of such side effects reported after a first real vaccine dose.",
+      },
+    ],
+    references: [
+      {
+        source: "Lancet / PubMed",
+        title: "Levine, Gordon & Fields — The mechanism of placebo analgesia (1978)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/80579/",
+      },
+      {
+        source: "Nat Rev Neurosci / PMC",
+        title:
+          "Wager & Atlas — The neuroscience of placebo effects: connecting context, learning and health",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6013051/",
+      },
+      {
+        source: "Science / PubMed",
+        title:
+          "Eippert et al. — Direct evidence for spinal cord involvement in placebo analgesia",
+        url: "https://pubmed.ncbi.nlm.nih.gov/19833962/",
+      },
+      {
+        source: "PLoS ONE",
+        title:
+          "Kaptchuk et al. — Placebos without deception: a randomized controlled trial in irritable bowel syndrome",
+        url: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0015591",
+      },
+      {
+        source: "PAIN / PMC",
+        title:
+          "Carvalho et al. — Open-label placebo treatment in chronic low back pain: a randomized controlled trial",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5113234/",
+      },
+      {
+        source: "JAMA Netw Open",
+        title:
+          "Haas et al. — Frequency of adverse events in the placebo arms of COVID-19 vaccine trials: systematic review and meta-analysis",
+        url: "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2788172",
+      },
+      {
+        source: "Cochrane / PMC",
+        title:
+          "Hróbjartsson & Gøtzsche — Placebo interventions for all clinical conditions",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7156905/",
+      },
+      {
+        source: "PAIN / PubMed",
+        title:
+          "Tuttle et al. — Increasing placebo responses over time in U.S. clinical trials of neuropathic pain",
+        url: "https://pubmed.ncbi.nlm.nih.gov/26307858/",
+      },
+      {
+        source: "NIH / NCCIH",
+        title: "Placebo Effect — patient information",
+        url: "https://www.nccih.nih.gov/health/placebo-effect",
+      },
+      {
+        source: "AMA",
+        title:
+          "AMA Code of Medical Ethics Opinion 2.1.4 — Use of Placebo in Clinical Practice",
+        url: "https://code-medical-ethics.ama-assn.org/ethics-opinions/use-placebo-clinical-practice",
+      },
+    ],
+    related: [
+      {
+        title: "How pain works",
+        href: "/understanding-pain/how-pain-works",
+        blurb: "The descending pain-control system placebo relief runs on.",
+      },
+      {
+        title: "Pain and emotion",
+        href: "/understanding-pain/pain-and-emotion",
+        blurb: "Expectation is one dial on the same volume control.",
+      },
+      {
+        title: "Measuring pain",
+        href: "/understanding-pain/measuring-pain",
+        blurb: "Why self-reported relief is real data — and how to give better data.",
+      },
+    ],
+  },
 ];
 
 export function getArticle(hub: string, slug: string): Article | undefined {
