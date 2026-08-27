@@ -42,6 +42,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: "Biopsychosocial model",
     definition:
       "The modern understanding that pain is shaped by biological, psychological, and social factors together — not by tissue damage alone.",
+    href: "/what-is-pain-medicine/the-pain-team",
+  },
+  {
+    term: "Board certification",
+    definition:
+      "A physician's credential beyond the medical license: passing a national specialty exam and keeping it current through ongoing assessment. For pain medicine, the ABMS-recognized certificate is verifiable free at abms.org.",
+    href: "/what-is-pain-medicine/how-pain-physicians-train",
   },
   {
     term: "CBT-I (cognitive behavioral therapy for insomnia)",
@@ -121,6 +128,12 @@ export const GLOSSARY: GlossaryTerm[] = [
     href: "/understanding-pain/pain-and-emotion",
   },
   {
+    term: "Fellowship",
+    definition:
+      "A year (or more) of concentrated subspecialty training a physician completes after residency. Pain medicine requires a 12-month fellowship accredited by the ACGME before board certification.",
+    href: "/what-is-pain-medicine/how-pain-physicians-train",
+  },
+  {
     term: "Gate control theory",
     definition:
       "The idea, introduced by Melzack and Wall in 1965, that a 'gate' in the spinal cord can open or close to let more or fewer pain signals through.",
@@ -133,6 +146,12 @@ export const GLOSSARY: GlossaryTerm[] = [
     href: "/understanding-pain/how-pain-works",
   },
   {
+    term: "Interdisciplinary pain care",
+    definition:
+      "The aspirational standard beyond multidisciplinary: the disciplines meet regularly, share one biopsychosocial assessment and one set of goals, and include the patient in decisions.",
+    href: "/what-is-pain-medicine/the-pain-team",
+  },
+  {
     term: "Interventional pain procedure",
     definition:
       "An image-guided procedure — such as a nerve block, injection, or radiofrequency treatment — used to diagnose or treat pain.",
@@ -141,6 +160,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: "Multidisciplinary pain care",
     definition:
       "Pain treatment that combines medical, physical, and psychological approaches, reflecting that chronic pain has many contributors.",
+    href: "/what-is-pain-medicine/the-pain-team",
   },
   {
     term: "Naloxone",
@@ -224,6 +244,12 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "A tingling, 'pins and needles' sensation. Older spinal cord stimulators created it deliberately to mask pain; newer ones can work without it.",
     href: "/future-of-pain-medicine/neuromodulation",
+  },
+  {
+    term: "PDMP (prescription drug monitoring program)",
+    definition:
+      "A state database of controlled-substance prescriptions. The CDC recommends clinicians review it before and during prescribing — a routine safety habit at careful practices, not an accusation.",
+    href: "/what-is-pain-medicine/your-first-visit",
   },
   {
     term: "Pharmacogenomics",

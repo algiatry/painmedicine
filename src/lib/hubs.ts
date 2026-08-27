@@ -24,8 +24,8 @@ export const HUBS: Hub[] = [
     title: "What Is Pain Medicine?",
     description:
       "Pain medicine is a board-certified medical specialty dedicated to diagnosing, treating, and managing pain. Learn who pain specialists are and how the specialty works.",
-    status: "pending-review",
-    lastUpdated: LAST_UPDATED,
+    status: "sourced",
+    lastUpdated: "2026-08-27",
     heading: "What is pain medicine?",
     intro: [
       "Pain medicine is a recognized medical specialty — physicians who complete additional fellowship training focused specifically on diagnosing and treating pain, then earn board certification in the field.",
@@ -34,24 +34,28 @@ export const HUBS: Hub[] = [
     ],
     planned: [
       {
-        title: "How pain physicians train and certify",
+        title: "How pain physicians train",
         blurb:
-          "Fellowship pathways through anesthesiology, physical medicine & rehabilitation, neurology, and psychiatry — and what board certification means.",
+          "The nine-year road: six residency doors, one 12-month accredited fellowship, one shared board exam — and how to verify the credential.",
+        href: "/what-is-pain-medicine/how-pain-physicians-train",
       },
       {
-        title: "The multidisciplinary pain team",
+        title: "The pain team",
         blurb:
-          "Why the best pain care combines medical, physical, and behavioral expertise — the biopsychosocial model explained.",
+          "Why good pain care combines medical, physical, and behavioral expertise — the biopsychosocial model, and the evidence for team-based care.",
+        href: "/what-is-pain-medicine/the-pain-team",
       },
       {
-        title: "Your first visit to a pain specialist",
+        title: "Your first visit",
         blurb:
-          "What to expect, what to bring, and the questions worth asking.",
+          "What to expect, what to bring, how long it takes, and the safety habits that mark a careful clinic.",
+        href: "/what-is-pain-medicine/your-first-visit",
       },
       {
         title: "Pain clinics vs. pain medicine",
         blurb:
-          "How to recognize a legitimate, credentialed practice — and the red flags of clinics that aren't.",
+          "'Pain clinic' is a sign anyone can hang. The five checkable signals of a credentialed practice.",
+        href: "/what-is-pain-medicine/pain-clinics-vs-pain-medicine",
       },
     ],
     faqs: [

@@ -11,6 +11,10 @@ import Neuromodulation from "./future/Neuromodulation";
 import BiologicsGeneTherapy from "./future/BiologicsGeneTherapy";
 import PrecisionPainMedicine from "./future/PrecisionPainMedicine";
 import MindAndBrain from "./future/MindAndBrain";
+import ThePainTeam from "./specialty/ThePainTeam";
+import YourFirstVisit from "./specialty/YourFirstVisit";
+import HowPainPhysiciansTrain from "./specialty/HowPainPhysiciansTrain";
+import PainClinicsVsPainMedicine from "./specialty/PainClinicsVsPainMedicine";
 
 /**
  * Maps an article slug to the component that renders its illustrated body.
@@ -30,4 +34,8 @@ export const ARTICLE_BODIES: Record<string, ComponentType> = {
   "biologics-and-gene-therapy": BiologicsGeneTherapy,
   "precision-pain-medicine": PrecisionPainMedicine,
   "mind-and-brain": MindAndBrain,
+  "the-pain-team": ThePainTeam,
+  "your-first-visit": YourFirstVisit,
+  "how-pain-physicians-train": HowPainPhysiciansTrain,
+  "pain-clinics-vs-pain-medicine": PainClinicsVsPainMedicine,
 };

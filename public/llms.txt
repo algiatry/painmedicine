@@ -16,8 +16,15 @@
 
 ## Key sections
 
-- /what-is-pain-medicine — the specialty defined: training, board
-  certification, the multidisciplinary care model
+- /what-is-pain-medicine — the specialty defined (live, source-cited):
+  - /what-is-pain-medicine/how-pain-physicians-train — the ACGME fellowship,
+    the shared ABA exam, six certifying ABMS boards, and how to verify
+  - /what-is-pain-medicine/the-pain-team — the biopsychosocial model,
+    multidisciplinary vs interdisciplinary care (IASP), team-based evidence
+  - /what-is-pain-medicine/your-first-visit — what a first pain evaluation
+    involves, what to bring, standard assessment tools
+  - /what-is-pain-medicine/pain-clinics-vs-pain-medicine — five checkable
+    signals of a credentialed practice
 - /understanding-pain — pain science for patients (live, source-cited):
   - /understanding-pain/how-pain-works — nociceptors, the spinal gate
     (Melzack & Wall), and central sensitization

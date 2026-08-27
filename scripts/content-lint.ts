@@ -21,7 +21,7 @@ import { ALL_ARTICLES } from "../src/lib/articles";
 import type { PageMeta } from "../src/lib/schema";
 
 const REPO = path.resolve(__dirname, "..");
-const COMPONENT_DIRS = ["science", "future", "conditions", "treatments"].map(
+const COMPONENT_DIRS = ["science", "future", "specialty", "conditions", "treatments"].map(
   (d) => path.join(REPO, "src", "components", d)
 );
 
@@ -200,8 +200,12 @@ for (const a of ALL_ARTICLES) {
   if (prose) scanText(page, prose, "prose component");
 
   // Opioid rule: substantive opioid content must carry SAMHSA inline.
+  // Counted over reader-facing content only — bibliography titles (e.g. a
+  // citation of the CDC opioid guideline) are not content the rule targets.
   const combined = typedText + "\n" + prose;
-  const opioidMentions = (combined.match(/\bopioids?\b/gi) ?? []).length;
+  const contentText =
+    allStrings({ ...a, references: [] }).join("\n") + "\n" + prose;
+  const opioidMentions = (contentText.match(/\bopioids?\b/gi) ?? []).length;
   const hasSamhsa = /SAMHSA|1-800-662/i.test(combined);
   if (opioidMentions >= 3 && !hasSamhsa)
     err(page, `substantive opioid content (${opioidMentions} mentions) without inline SAMHSA helpline`);
