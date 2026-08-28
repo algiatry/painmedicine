@@ -200,7 +200,12 @@ export const HUBS: Hub[] = [
           "An inherited neurological disease, not a bad headache: the four-phase attack, the trigeminal-CGRP engine, the medication-overuse trap, and the designed drugs that changed everything.",
         href: "/conditions/migraine",
       },
-      { title: "Arthritis pain", blurb: "Osteoarthritis and inflammatory arthritis." },
+      {
+        title: "Arthritis pain",
+        blurb:
+          "One word, two diseases: osteoarthritis (not 'wear and tear') vs. the immune-driven arthritides — the day-pattern that tells them apart, and why one of them is a race.",
+        href: "/conditions/arthritis-pain",
+      },
       { title: "Fibromyalgia", blurb: "The signature nociplastic pain condition." },
       {
         title: "Sciatica",

@@ -388,4 +388,97 @@ export const CONDITION_ARTICLES: Article[] = [
       },
     ],
   },
+
+  {
+    hub: HUB,
+    slug: "arthritis-pain",
+    title: "Arthritis Pain",
+    description:
+      "What arthritis actually is — one word covering two very different diseases: osteoarthritis (a whole-joint disease, not 'wear and tear') and inflammatory arthritis (rheumatoid, psoriatic, gout). How to tell the patterns apart, why the X-ray rarely matches the pain, and how each is treated today.",
+    status: "sourced",
+    lastUpdated: "2026-08-28",
+    answer:
+      "Arthritis is an umbrella word for over a hundred joint conditions, but two families cover most of it. Osteoarthritis — the most common by far — is a whole-joint disease of cartilage, bone, and lining, not simple 'wear and tear.' Inflammatory arthritis — rheumatoid, psoriatic, gout — is the immune system attacking the joint. Telling them apart matters, because one is managed and the other is a race.",
+    faqs: [
+      {
+        question: "What is the difference between osteoarthritis and rheumatoid arthritis?",
+        answer:
+          "Different diseases sharing a word. Osteoarthritis is a gradual disease of the joint's own tissues — cartilage thins, bone remodels, the lining grumbles — typically in knees, hips, hands, and spine, hurting more with use. Rheumatoid arthritis is autoimmune: the immune system attacks the joint lining itself, classically in the small joints of both hands and feet symmetrically, with long morning stiffness, warm swelling, and whole-body fatigue. The distinction drives everything — including how urgently treatment should start.",
+      },
+      {
+        question: "Is osteoarthritis just wear and tear?",
+        answer:
+          "No — and retiring that phrase changes how people treat their joints. Osteoarthritis is an active disease process involving the whole joint: cartilage biology, bone remodeling, and low-grade inflammation of the lining. Joints are living tissue, not brake pads. That is why loading them sensibly through exercise strengthens rather than erodes them, and why guidelines put movement — not rest — at the center of treatment.",
+      },
+      {
+        question: "Why doesn't my X-ray match how much I hurt?",
+        answer:
+          "Because imaging shows structure and pain is made by the nervous system. The mismatch is well documented in both directions: many people with significant joint changes on X-ray have little pain, and many with real, daily arthritis pain have modest films. Severity on a scan is one input, not a verdict — how your joint feels and functions matters more to treatment decisions than how it photographs.",
+      },
+      {
+        question: "Does exercise make arthritis worse?",
+        answer:
+          "The evidence says the opposite — exercise is the most strongly recommended treatment for osteoarthritis in major guidelines. Strengthening the muscles around a joint cushions its load, and moving cartilage nourishes it; motion is closer to lotion than to wear. Soreness after starting is common and usually settles as the joint adapts. The practical approach is gradual and guided — a physical therapist can tailor loading to your joint, which is exactly what guidelines suggest.",
+      },
+      {
+        question: "When should I see a rheumatologist quickly?",
+        answer:
+          "When the inflammatory pattern shows itself: joints that are swollen, warm, and stiff for an hour or more in the morning — especially the small joints of both hands or feet — plus fatigue or feeling generally unwell. Modern rheumatology treats early inflammatory arthritis as a window of opportunity: disease-modifying treatment started promptly can prevent the joint damage that once defined rheumatoid arthritis. Months of watchful waiting is the one move the evidence argues against.",
+      },
+    ],
+    references: [
+      {
+        source: "Arthritis Care Res / PubMed",
+        title:
+          "Kolasinski et al. — 2019 American College of Rheumatology/Arthritis Foundation Guideline for the Management of Osteoarthritis of the Hand, Hip, and Knee",
+        url: "https://pubmed.ncbi.nlm.nih.gov/31908163/",
+      },
+      {
+        source: "The Lancet / PubMed",
+        title: "Smolen et al. — Rheumatoid arthritis (seminar)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/27156434/",
+      },
+      {
+        source: "BMC Musculoskelet Disord / PubMed",
+        title:
+          "Bedson & Croft — The discordance between clinical and radiographic knee osteoarthritis: a systematic search and summary of the literature",
+        url: "https://pubmed.ncbi.nlm.nih.gov/18764949/",
+      },
+      {
+        source: "NIH / NIAMS",
+        title: "Osteoarthritis — patient information",
+        url: "https://www.niams.nih.gov/health-topics/osteoarthritis",
+      },
+      {
+        source: "NCBI StatPearls",
+        title: "Gout",
+        url: "https://www.ncbi.nlm.nih.gov/books/NBK546606/",
+      },
+      {
+        source: "NIH / MedlinePlus",
+        title: "Arthritis — patient information",
+        url: "https://medlineplus.gov/arthritis.html",
+      },
+    ],
+    related: [
+      {
+        title: "Low back pain",
+        href: "/conditions/low-back-pain",
+        blurb:
+          "The same imaging honesty applies to the spine's facet-joint arthritis.",
+      },
+      {
+        title: "Medications for pain",
+        href: "/treatments/medications-for-pain",
+        blurb:
+          "Where NSAIDs and topicals genuinely earn their keep — inflamed, tissue-driven pain.",
+      },
+      {
+        title: "The pain treatment pipeline",
+        href: "/future-of-pain-medicine/pipeline",
+        blurb:
+          "The hunt for osteoarthritis drugs that modify the disease, not just the pain.",
+      },
+    ],
+  },
 ];

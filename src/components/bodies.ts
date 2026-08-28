@@ -21,6 +21,7 @@ import LowBackPain from "./conditions/LowBackPain";
 import Sciatica from "./conditions/Sciatica";
 import NeuropathicPain from "./conditions/NeuropathicPain";
 import Migraine from "./conditions/Migraine";
+import ArthritisPain from "./conditions/ArthritisPain";
 
 /**
  * Maps an article slug to the component that renders its illustrated body.
@@ -50,4 +51,5 @@ export const ARTICLE_BODIES: Record<string, ComponentType> = {
   sciatica: Sciatica,
   "neuropathic-pain": NeuropathicPain,
   migraine: Migraine,
+  "arthritis-pain": ArthritisPain,
 };

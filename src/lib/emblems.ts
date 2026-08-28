@@ -197,6 +197,16 @@ export const EMBLEMS: Record<string, string> = {
       `</g>`,
   ),
 
+  // A joint in cross-section — two bone ends, a narrowed gap, the signal
+  // at the joint line.
+  "arthritis-pain": g(
+    `<path stroke="${T}" d="M14 4h20l-3 12c-2 5 -12 5 -14 0z"/>` +
+      `<path stroke="${T}" d="M14 44h20l-3 -12c-2 -5 -12 -5 -14 0z"/>` +
+      `<path stroke="${S}" d="M12 24h11" stroke-width="2.2"/>` +
+      `<circle cx="38" cy="24" r="2.2" fill="${A}" stroke-width="0"/>` +
+      `<circle stroke="${A}" cx="38" cy="24" r="5.8" stroke-width="2.2"/>`,
+  ),
+
   // The aura's zigzag crescent beside the temple's pain rings.
   migraine: g(
     `<circle cx="16" cy="24" r="2.4" fill="${A}" stroke-width="0"/>` +
