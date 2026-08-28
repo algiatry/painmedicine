@@ -11,7 +11,6 @@ export type Hub = PageMeta & {
   faqs?: { question: string; answer: string }[];
 };
 
-const LAST_UPDATED = "2026-08-23";
 
 /**
  * Hub landing pages. Status is "pending-review" — structural/orientational
@@ -175,14 +174,19 @@ export const HUBS: Hub[] = [
     description:
       "Condition-by-condition guides to common pain conditions: why it hurts, today's treatment approaches, and when to see a specialist.",
     status: "pending-review",
-    lastUpdated: LAST_UPDATED,
+    lastUpdated: "2026-08-28",
     heading: "Pain conditions",
     intro: [
       "Every pain condition has its own mechanism, its own treatment ladder, and its own research pipeline. These guides connect all three — what it is, what helps today, and what science is working on next.",
-      "Condition guides publish after physician review. The launch set below is in editorial preparation now.",
+      "Guides are written from cited primary sources (WHO, NIH, guideline bodies, peer-reviewed literature) and publish with an honest byline while independent physician review is arranged. The rest of the launch set below is in editorial preparation now.",
     ],
     planned: [
-      { title: "Chronic low back pain", blurb: "The most common chronic pain condition worldwide." },
+      {
+        title: "Low back pain",
+        blurb:
+          "The world's leading cause of disability: what can actually hurt, why most cases are 'non-specific,' what an MRI really shows, the red flags, and today's treatment playbook.",
+        href: "/conditions/low-back-pain",
+      },
       { title: "Neuropathic pain & peripheral neuropathy", blurb: "Pain from nerve damage — and why it needs different treatment." },
       { title: "Migraine", blurb: "A neurological disease — and pain medicine's biggest recent success story." },
       { title: "Arthritis pain", blurb: "Osteoarthritis and inflammatory arthritis." },

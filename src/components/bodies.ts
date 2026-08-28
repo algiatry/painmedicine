@@ -16,6 +16,7 @@ import YourFirstVisit from "./specialty/YourFirstVisit";
 import HowPainPhysiciansTrain from "./specialty/HowPainPhysiciansTrain";
 import PainClinicsVsPainMedicine from "./specialty/PainClinicsVsPainMedicine";
 import Kratom from "./treatments/Kratom";
+import LowBackPain from "./conditions/LowBackPain";
 
 /**
  * Maps an article slug to the component that renders its illustrated body.
@@ -40,4 +41,5 @@ export const ARTICLE_BODIES: Record<string, ComponentType> = {
   "how-pain-physicians-train": HowPainPhysiciansTrain,
   "pain-clinics-vs-pain-medicine": PainClinicsVsPainMedicine,
   kratom: Kratom,
+  "low-back-pain": LowBackPain,
 };

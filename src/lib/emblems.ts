@@ -163,6 +163,19 @@ export const EMBLEMS: Record<string, string> = {
       `<circle cx="13" cy="42" r="2.4" fill="${A}" stroke-width="0"/>` +
       `<circle stroke="${A}" cx="35" cy="41" r="3.6" stroke-width="2.2"/>`,
   ),
+
+  // ——— Pain conditions ———
+
+  // A lumbar stack — three vertebrae over the sacrum, the signal at the low
+  // segment where most back pain lives.
+  "low-back-pain": g(
+    `<rect stroke="${T}" x="16" y="4" width="16" height="8" rx="3"/>` +
+      `<rect stroke="${T}" x="16" y="17" width="16" height="8" rx="3"/>` +
+      `<rect stroke="${T}" x="16" y="30" width="16" height="8" rx="3"/>` +
+      `<path stroke="${S}" d="M17 43h14" stroke-width="2.2"/>` +
+      `<circle cx="37.5" cy="34" r="2.6" fill="${A}" stroke-width="0"/>` +
+      `<circle stroke="${A}" cx="37.5" cy="34" r="6.5" stroke-width="2.2"/>`,
+  ),
 };
 
 /** Full standalone SVG document for a slug (share cards, tooling). */
