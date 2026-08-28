@@ -194,7 +194,12 @@ export const HUBS: Hub[] = [
           "When the wiring becomes the alarm: burning feet, the numb-yet-painful paradox, and the honest map of nerve-pain treatment from first-line drugs to stimulators.",
         href: "/conditions/neuropathic-pain",
       },
-      { title: "Migraine", blurb: "A neurological disease — and pain medicine's biggest recent success story." },
+      {
+        title: "Migraine",
+        blurb:
+          "An inherited neurological disease, not a bad headache: the four-phase attack, the trigeminal-CGRP engine, the medication-overuse trap, and the designed drugs that changed everything.",
+        href: "/conditions/migraine",
+      },
       { title: "Arthritis pain", blurb: "Osteoarthritis and inflammatory arthritis." },
       { title: "Fibromyalgia", blurb: "The signature nociplastic pain condition." },
       {

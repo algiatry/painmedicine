@@ -296,4 +296,96 @@ export const CONDITION_ARTICLES: Article[] = [
       },
     ],
   },
+
+  {
+    hub: HUB,
+    slug: "migraine",
+    title: "Migraine",
+    description:
+      "What migraine actually is — an inherited neurological disease, not a bad headache: the four phases of an attack, the trigeminal-CGRP engine behind the pain, the medication-overuse trap, and the new generation of treatments designed for migraine's own biology.",
+    status: "sourced",
+    lastUpdated: "2026-08-28",
+    answer:
+      "Migraine is an inherited neurological disease, not a bad headache — the headache is one phase of a whole-brain attack that can begin a day before the pain and end a day after it. It affects roughly one person in seven, ranks second among the world's causes of disability — first among young women — and is now treatable with drugs designed for its specific biology.",
+    faqs: [
+      {
+        question: "Is migraine just a bad headache?",
+        answer:
+          "No. Migraine is a neurological disease with a strong genetic basis, and the headache is only one phase of an attack that also brings sensory amplification (light, sound, and smell become painful), nausea, thinking changes, and often a day of 'hangover' afterward. The Global Burden of Disease studies rank migraine second among all causes of disability worldwide — and first among young women. Taking it seriously is not dramatizing; it is reading the data.",
+      },
+      {
+        question: "What causes migraine?",
+        answer:
+          "An inherited tendency toward a hypersensitive brain, plus an attack mechanism science can now trace: the trigeminal nerve — the head's main sensory nerve — activates and releases CGRP, a peptide that inflames the brain's pain-sensitive coverings and drives the throbbing pain. Attacks often begin in deep brain regions like the hypothalamus hours before any pain, which is why warning symptoms such as yawning and cravings arrive first. Triggers matter, but they act on this underlying biology — they are sparks, not the engine.",
+      },
+      {
+        question: "What is a migraine aura — and how do I know it isn't a stroke?",
+        answer:
+          "Aura is a slow electrical wave moving across the brain's surface, experienced by about one in three people with migraine — most often as shimmering zigzags or blind spots that gradually spread over twenty to sixty minutes, then fade. The gradual march is the signature: stroke symptoms typically arrive suddenly and all at once. Any first-ever aura, aura that includes weakness or trouble speaking, or a sudden thunderclap headache deserves emergency evaluation — this is one place not to self-diagnose.",
+      },
+      {
+        question: "Can taking painkillers make migraine worse?",
+        answer:
+          "Yes — this is the medication-overuse trap, and it is one of the most important facts in headache medicine. Using acute pain relievers on too many days per month, over months, can convert episodic migraine into a near-daily headache that the same medications no longer help. It happens with ordinary painkillers as well as migraine-specific ones. If you are reaching for relief more days than not, that is not a willpower problem — it is a recognized, treatable condition to bring to a clinician.",
+      },
+      {
+        question: "What are the new migraine treatments?",
+        answer:
+          "Migraine is pain medicine's biggest recent success story. The CGRP era began in 2018: monoclonal antibodies given monthly or quarterly to prevent attacks, followed by gepants — CGRP-blocking tablets, some usable both to treat an attack and to prevent the next ones — and lasmiditan, an acute option without triptans' vascular constraints. None is universal, but for many people these drugs — the first ever designed from migraine's own mechanism to prevent it — have changed what living with migraine means. Whether one fits you is a conversation for your clinician.",
+      },
+    ],
+    references: [
+      {
+        source: "ICHD-3 (IHS)",
+        title: "The International Classification of Headache Disorders, 3rd edition — migraine criteria",
+        url: "https://ichd-3.org/",
+      },
+      {
+        source: "J Headache Pain / PubMed",
+        title:
+          "Steiner et al. — Migraine remains second among the world's causes of disability, and first among young women: findings from GBD2019",
+        url: "https://pubmed.ncbi.nlm.nih.gov/33267788/",
+      },
+      {
+        source: "NEJM / PubMed",
+        title: "Ashina — Migraine (review)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/33211930/",
+      },
+      {
+        source: "Lancet Neurology / PubMed",
+        title:
+          "Charles — The pathophysiology of migraine: implications for clinical management",
+        url: "https://pubmed.ncbi.nlm.nih.gov/29229375/",
+      },
+      {
+        source: "NCBI StatPearls",
+        title: "Medication-Overuse Headache",
+        url: "https://www.ncbi.nlm.nih.gov/books/NBK538150/",
+      },
+      {
+        source: "NIH / MedlinePlus",
+        title: "Migraine — patient information",
+        url: "https://medlineplus.gov/migraine.html",
+      },
+    ],
+    related: [
+      {
+        title: "Biologics & gene-targeted therapy",
+        href: "/future-of-pain-medicine/biologics-and-gene-therapy",
+        blurb:
+          "The CGRP antibody story in full — migraine as proof that designed pain drugs work.",
+      },
+      {
+        title: "The pain treatment pipeline",
+        href: "/future-of-pain-medicine/pipeline",
+        blurb: "What's in trials next, PACAP antibodies included.",
+      },
+      {
+        title: "Pain and sleep",
+        href: "/understanding-pain/pain-and-sleep",
+        blurb:
+          "Why sleep regularity is a migraine treatment, not a platitude.",
+      },
+    ],
+  },
 ];

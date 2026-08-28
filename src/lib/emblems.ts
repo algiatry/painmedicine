@@ -197,6 +197,14 @@ export const EMBLEMS: Record<string, string> = {
       `</g>`,
   ),
 
+  // The aura's zigzag crescent beside the temple's pain rings.
+  migraine: g(
+    `<circle cx="16" cy="24" r="2.4" fill="${A}" stroke-width="0"/>` +
+      `<circle stroke="${A}" cx="16" cy="24" r="6.5" stroke-width="2.2"/>` +
+      `<path stroke="${T}" d="M33 6l-6 8 7 5-7 8 7 5-6 8"/>` +
+      `<path stroke="${S}" d="M16 8C9 12 5 18 5 24s4 12 11 16" stroke-width="2.2"/>`,
+  ),
+
   // The nerve's line down the leg — pinched at the top, radiating below.
   sciatica: g(
     `<circle cx="17" cy="9" r="2.4" fill="${A}" stroke-width="0"/>` +
