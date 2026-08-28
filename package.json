@@ -9,6 +9,7 @@
     "lint": "eslint && npm run lint:content",
     "lint:content": "tsx scripts/content-lint.ts",
     "gsc": "node scripts/gsc-report.mjs",
+    "bing": "node scripts/bing-keywords.mjs",
     "brand": "python scripts/render-brand-assets.py"
   },
   "dependencies": {
