@@ -19,6 +19,7 @@ import Kratom from "./treatments/Kratom";
 import MedicationsForPain from "./treatments/MedicationsForPain";
 import InterventionalProcedures from "./treatments/InterventionalProcedures";
 import PhysicalBehavioralTherapies from "./treatments/PhysicalBehavioralTherapies";
+import ComparingYourOptions from "./treatments/ComparingYourOptions";
 import LowBackPain from "./conditions/LowBackPain";
 import Sciatica from "./conditions/Sciatica";
 import NeuropathicPain from "./conditions/NeuropathicPain";
@@ -54,6 +55,7 @@ export const ARTICLE_BODIES: Record<string, ComponentType> = {
   "medications-for-pain": MedicationsForPain,
   "interventional-procedures": InterventionalProcedures,
   "physical-and-behavioral-therapies": PhysicalBehavioralTherapies,
+  "comparing-your-options": ComparingYourOptions,
   "low-back-pain": LowBackPain,
   sciatica: Sciatica,
   "neuropathic-pain": NeuropathicPain,

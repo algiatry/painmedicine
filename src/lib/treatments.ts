@@ -414,4 +414,97 @@ export const TREATMENT_ARTICLES: Article[] = [
       },
     ],
   },
+
+  {
+    hub: HUB,
+    slug: "comparing-your-options",
+    title: "Comparing Your Options",
+    description:
+      "An honest map of the pain-treatment evidence: what's well-proven, what's promising, what's weak — why almost everything helps 'modestly' on average, why modest effects stack, and how to read any treatment claim like the field does.",
+    status: "sourced",
+    lastUpdated: "2026-08-28",
+    answer:
+      "No single pain treatment wins across the board — that is the evidence's clearest finding, not a failure of it. Nearly every option helps modestly on average; treatments differ in how certain the evidence is, how long benefits last, how safe they are, and which pain mechanism they fit. The winning strategy is not finding the one big fix — it is stacking well-matched, modest, durable wins.",
+    faqs: [
+      {
+        question: "What is the most effective treatment for chronic pain?",
+        answer:
+          "The honest answer is a reframe: effectiveness lives in the match, not the treatment. Nerve-pain medications outperform everything else for neuropathic pain and underperform for arthritis; exercise holds the strongest recommendations across the most conditions; a stimulator can transform the right candidate and does nothing for the wrong one. Across trials, average effects are modest nearly everywhere — so the strongest plans combine several matched treatments rather than searching for a single dominant one.",
+      },
+      {
+        question: "Why do all these treatments only work 'modestly'?",
+        answer:
+          "Because trial averages flatten very different individual stories. A 'modest average benefit' typically means some people improved substantially, many a little, and some not at all — blended into one number. That has two practical consequences: a modest average is not a prediction of your result, and finding your responders' treatments requires fair, sequential trials. It is also why combinations beat single agents: modest effects from different mechanisms add, and their side effects mostly don't.",
+      },
+      {
+        question: "How can I tell whether a pain treatment claim is trustworthy?",
+        answer:
+          "Ask four questions of any claim: Compared with what — placebo, usual care, or nothing? In whom — people like you, or a different condition entirely? For how long — a two-week study says little about a ten-year problem? And who benefits from your yes? The red flags are consistent: one treatment claimed to work for every kind of pain, testimonials presented as data, secret mechanisms, and certainty language. Real evidence names its limits; marketing never does.",
+      },
+      {
+        question: "Are acupuncture and supplements worth trying?",
+        answer:
+          "They sit in different bins. Acupuncture has been tested in an unusually rigorous individual-patient-data meta-analysis: real benefits beyond sham for several chronic pain conditions — small on average, persistent, and low-risk, which makes it a reasonable adjunct for people drawn to it. Supplements are a certainty problem: mostly unregulated products with mostly weak evidence and real interaction potential. If you use them, tell your clinician — and read our kratom guide to see what honest evidence-reading looks like for one famous example.",
+      },
+      {
+        question: "How do I know if a treatment is actually working for me?",
+        answer:
+          "Run a fair trial on yourself: change one thing at a time; pick a functional target before you start — the walk, the workday, the sleep — rather than only a pain score; set a realistic time window with your clinician; keep a simple diary; and decide in advance what result will mean stop versus continue. This is how good pain physicians work through options, and it protects you from both quitting winners too early and riding losers too long.",
+      },
+    ],
+    references: [
+      {
+        source: "Cochrane / PubMed",
+        title:
+          "Geneen et al. — Physical activity and exercise for chronic pain in adults: an overview of Cochrane Reviews",
+        url: "https://pubmed.ncbi.nlm.nih.gov/28436583/",
+      },
+      {
+        source: "Cochrane / PubMed",
+        title:
+          "Williams et al. — Psychological therapies for the management of chronic pain (excluding headache) in adults",
+        url: "https://pubmed.ncbi.nlm.nih.gov/32794606/",
+      },
+      {
+        source: "JAMA / PubMed",
+        title:
+          "Krebs et al. — Effect of opioid vs nonopioid medications on pain-related function in patients with chronic back pain or hip or knee osteoarthritis pain (SPACE trial)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/29509867/",
+      },
+      {
+        source: "J Pain / PubMed",
+        title:
+          "Vickers et al. — Acupuncture for chronic pain: update of an individual patient data meta-analysis",
+        url: "https://pubmed.ncbi.nlm.nih.gov/29198932/",
+      },
+      {
+        source: "Ann Intern Med / PubMed",
+        title:
+          "Chou et al. — Epidural corticosteroid injections for radiculopathy and spinal stenosis: a systematic review and meta-analysis",
+        url: "https://pubmed.ncbi.nlm.nih.gov/26302454/",
+      },
+      {
+        source: "NIH / NCCIH",
+        title: "Pain: considering complementary approaches — patient information",
+        url: "https://www.nccih.nih.gov/health/pain",
+      },
+    ],
+    related: [
+      {
+        title: "Medications for pain",
+        href: "/treatments/medications-for-pain",
+        blurb: "The mechanism-match idea this whole map is built on.",
+      },
+      {
+        title: "Physical & behavioral therapies",
+        href: "/treatments/physical-and-behavioral-therapies",
+        blurb: "The high-certainty, low-risk corner of the map, in full.",
+      },
+      {
+        title: "Interventional procedures",
+        href: "/treatments/interventional-procedures",
+        blurb: "The selection-dependent corner — and the window rule.",
+      },
+    ],
+  },
 ];

@@ -164,6 +164,15 @@ export const EMBLEMS: Record<string, string> = {
       `<circle stroke="${A}" cx="35" cy="41" r="3.6" stroke-width="2.2"/>`,
   ),
 
+  // The evidence map in miniature — axes, the field of options, one match.
+  "comparing-your-options": g(
+    `<path stroke="${S}" d="M8 6v34h34" stroke-width="2.2"/>` +
+      `<circle cx="20" cy="32" r="3" fill="${T}" stroke-width="0"/>` +
+      `<circle cx="30" cy="22" r="3" fill="${T}" stroke-width="0"/>` +
+      `<circle cx="38" cy="30" r="3" fill="${T}" stroke-width="0"/>` +
+      `<circle stroke="${A}" cx="34" cy="12" r="5.5" stroke-width="2.2"/>`,
+  ),
+
   // The pacing staircase rising past the flattening signal wave.
   "physical-and-behavioral-therapies": g(
     `<path stroke="${T}" d="M5 40h10v-8h10v-8h10v-8h8"/>` +

@@ -167,7 +167,8 @@ export const HUBS: Hub[] = [
       {
         title: "Comparing your options",
         blurb:
-          "An honest look at evidence quality across treatments — what's strong, what's promising, what's weak.",
+          "The honest evidence map: why almost everything helps 'modestly,' why modest wins stack, and how to read any treatment claim like the field does.",
+        href: "/treatments/comparing-your-options",
       },
     ],
   },
