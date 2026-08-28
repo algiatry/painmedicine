@@ -134,13 +134,19 @@ export const HUBS: Hub[] = [
     description:
       "The full landscape of evidence-based pain treatment: medications, interventional procedures, and physical and behavioral therapies.",
     status: "pending-review",
-    lastUpdated: LAST_UPDATED,
+    lastUpdated: "2026-08-27",
     heading: "Pain treatments today",
     intro: [
       "Pain medicine today offers far more than pills. Treatment spans medication classes with very different mechanisms, image-guided procedures, neuromodulation devices, and physical and psychological therapies with real evidence behind them.",
       "This hub maps the whole landscape so you can understand what each option is, what the evidence says, and what questions to bring to your physician. It describes — it does not prescribe. Treatment decisions belong with you and your care team.",
     ],
     planned: [
+      {
+        title: "Kratom",
+        blurb:
+          "The Southeast Asian leaf two million Americans use for pain: how mitragynine works, what the evidence shows, the honest risks, and the 2026 fight over 7-OH.",
+        href: "/treatments/kratom",
+      },
       {
         title: "Medications for pain",
         blurb:

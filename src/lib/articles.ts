@@ -2,6 +2,7 @@ import type { Article } from "./understanding";
 import { ARTICLES as UNDERSTANDING_ARTICLES } from "./understanding";
 import { FUTURE_ARTICLES } from "./future";
 import { SPECIALTY_ARTICLES } from "./specialty";
+import { TREATMENT_ARTICLES } from "./treatments";
 
 /**
  * All hub-spoke articles across the site, aggregated for the shared
@@ -12,6 +13,7 @@ export const ALL_ARTICLES: Article[] = [
   ...UNDERSTANDING_ARTICLES,
   ...FUTURE_ARTICLES,
   ...SPECIALTY_ARTICLES,
+  ...TREATMENT_ARTICLES,
 ];
 
 export function getArticle(hub: string, slug: string): Article | undefined {

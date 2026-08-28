@@ -152,6 +152,17 @@ export const EMBLEMS: Record<string, string> = {
       `<path stroke="${S}" d="M18.5 26c5 2.5 11 4 19 4.5" stroke-dasharray="4 4" stroke-width="2.2"/>` +
       `<circle cx="24" cy="17.5" r="2.2" fill="${A}" stroke-width="0"/>`,
   ),
+
+  // ——— Pain treatments today ———
+
+  // The leaf, its midrib splitting to a receptor dot — plant meets pathway.
+  kratom: g(
+    `<path stroke="${T}" d="M24 5C13.5 9 10.5 19 24 27.5 37.5 19 34.5 9 24 5z"/>` +
+      `<path stroke="${T}" d="M24 7v18.5" stroke-width="2"/>` +
+      `<path stroke="${S}" d="M24 27.5v6c0 4 -4 5.5 -8 6.5M24 33.5c0 4 4 5.5 8 6.5" stroke-width="2.2"/>` +
+      `<circle cx="13" cy="42" r="2.4" fill="${A}" stroke-width="0"/>` +
+      `<circle stroke="${A}" cx="35" cy="41" r="3.6" stroke-width="2.2"/>`,
+  ),
 };
 
 /** Full standalone SVG document for a slug (share cards, tooling). */
