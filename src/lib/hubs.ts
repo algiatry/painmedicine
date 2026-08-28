@@ -192,7 +192,12 @@ export const HUBS: Hub[] = [
       { title: "Migraine", blurb: "A neurological disease — and pain medicine's biggest recent success story." },
       { title: "Arthritis pain", blurb: "Osteoarthritis and inflammatory arthritis." },
       { title: "Fibromyalgia", blurb: "The signature nociplastic pain condition." },
-      { title: "Sciatica", blurb: "Radicular pain from the low back down the leg." },
+      {
+        title: "Sciatica",
+        blurb:
+          "The pinched nerve root behind nine cases in ten, the disappearing-disc science, and what surgery does and doesn't change.",
+        href: "/conditions/sciatica",
+      },
       { title: "Cancer pain", blurb: "Managing pain through and after cancer treatment." },
       { title: "Complex regional pain syndrome (CRPS)", blurb: "Rare, severe, and important to catch early." },
     ],

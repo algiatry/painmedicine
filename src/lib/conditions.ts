@@ -106,4 +106,96 @@ export const CONDITION_ARTICLES: Article[] = [
       },
     ],
   },
+
+  {
+    hub: HUB,
+    slug: "sciatica",
+    title: "Sciatica",
+    description:
+      "What sciatica is and what causes it: the pinched nerve root behind most cases, why inflammation matters as much as pressure, the surprising science of herniated discs that vanish on their own, and how sciatica is treated today — including what surgery does and doesn't change.",
+    status: "sourced",
+    lastUpdated: "2026-08-28",
+    answer:
+      "Sciatica is nerve pain that runs from the lower back or buttock down the leg, along the path of the sciatic nerve. In roughly nine cases in ten the cause is a herniated disc pressing on — and inflaming — a nerve root in the lower spine. It can be severe, but its natural story is hopeful: most cases improve within weeks to a few months, and herniated discs often shrink away on their own.",
+    faqs: [
+      {
+        question: "What causes sciatica?",
+        answer:
+          "About 90% of sciatica comes from a herniated disc compressing and chemically irritating one of the nerve roots in the lower spine that merge to form the sciatic nerve. Less common causes include spinal stenosis (age-related narrowing of the nerve passages), spondylolisthesis (a slipped vertebra), and — rarely — irritation of the nerve further down its course. The pain is felt in the leg, but the problem almost always sits at the spine.",
+      },
+      {
+        question: "How long does sciatica take to go away?",
+        answer:
+          "Most episodes improve substantially within four to six weeks, and the majority resolve within about three months without surgery. That said, recovery is not always linear, a minority of cases persist longer, and worsening weakness or numbness at any point deserves prompt medical attention rather than more waiting.",
+      },
+      {
+        question: "Can a herniated disc heal on its own?",
+        answer:
+          "Yes — often. The immune system treats displaced disc material as debris to clear, and follow-up imaging shows herniations shrinking or vanishing over months. Counterintuitively, the dramatic-looking ones regress most: in a systematic review, free disc fragments resorbed in about 96% of cases and extrusions in about 70%, while mild bulges — the least alarming finding — changed least. A scary MRI report is not a life sentence.",
+      },
+      {
+        question: "Do I need surgery for sciatica?",
+        answer:
+          "Usually not. In a landmark randomized trial, early surgery relieved leg pain faster than continued conservative care, but by one year both groups had recovered at essentially the same high rate. Surgery earns its place for specific situations: progressive or severe leg weakness, signs of cauda equina syndrome (an emergency), or disabling pain that has not responded to months of well-run non-surgical care. Whether faster relief is worth an operation's risks is a personal decision to make with your clinicians.",
+      },
+      {
+        question: "How can I tell sciatica from ordinary back pain?",
+        answer:
+          "The signature of sciatica is leg-dominant pain: it radiates below the knee, often into the foot, and feels electric, burning, or shooting rather than achy. Numbness or tingling may trace the same line, and coughing or sneezing can fire it. Ordinary low back pain stays centered on the back. Clinicians confirm the picture with the story, a nerve exam, and tests like the straight-leg raise; imaging is reserved for red flags or when results would change the plan.",
+      },
+    ],
+    references: [
+      {
+        source: "NCBI StatPearls",
+        title: "Sciatica",
+        url: "https://www.ncbi.nlm.nih.gov/books/NBK507908/",
+      },
+      {
+        source: "NEJM / PubMed",
+        title: "Ropper & Zafonte — Sciatica (review)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/25806916/",
+      },
+      {
+        source: "NEJM / PubMed",
+        title:
+          "Peul et al. — Surgery versus prolonged conservative treatment for sciatica",
+        url: "https://pubmed.ncbi.nlm.nih.gov/17538084/",
+      },
+      {
+        source: "Clinical Rehabilitation / PubMed",
+        title:
+          "Chiu et al. — The probability of spontaneous regression of lumbar herniated disc: a systematic review",
+        url: "https://pubmed.ncbi.nlm.nih.gov/25009200/",
+      },
+      {
+        source: "NEJM / PubMed",
+        title: "Mathieson et al. — Trial of Pregabalin for Acute and Chronic Sciatica",
+        url: "https://pubmed.ncbi.nlm.nih.gov/28328324/",
+      },
+      {
+        source: "NIH / MedlinePlus",
+        title: "Sciatica — patient information",
+        url: "https://medlineplus.gov/sciatica.html",
+      },
+    ],
+    related: [
+      {
+        title: "Low back pain",
+        href: "/conditions/low-back-pain",
+        blurb:
+          "The parent territory — and where sciatica fits among the causes of a hurting back.",
+      },
+      {
+        title: "The three types of pain",
+        href: "/understanding-pain/types-of-pain",
+        blurb: "Sciatica is the everyday face of neuropathic pain.",
+      },
+      {
+        title: "Medications for pain",
+        href: "/treatments/medications-for-pain",
+        blurb:
+          "Why nerve pain gets different drugs — and what the sciatica trials honestly showed.",
+      },
+    ],
+  },
 ];

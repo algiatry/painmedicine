@@ -185,6 +185,14 @@ export const EMBLEMS: Record<string, string> = {
       `<circle cx="37.5" cy="34" r="2.6" fill="${A}" stroke-width="0"/>` +
       `<circle stroke="${A}" cx="37.5" cy="34" r="6.5" stroke-width="2.2"/>`,
   ),
+
+  // The nerve's line down the leg — pinched at the top, radiating below.
+  sciatica: g(
+    `<circle cx="17" cy="9" r="2.4" fill="${A}" stroke-width="0"/>` +
+      `<circle stroke="${A}" cx="17" cy="9" r="6" stroke-width="2.2"/>` +
+      `<path stroke="${T}" d="M17 15c0 7 6 9 6 15s-4 8-4 13"/>` +
+      `<path stroke="${S}" d="M28 20l4-4M31 29h5M28 38l4 4" stroke-width="2.2"/>`,
+  ),
 };
 
 /** Full standalone SVG document for a slug (share cards, tooling). */

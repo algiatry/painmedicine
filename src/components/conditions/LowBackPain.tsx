@@ -249,8 +249,11 @@ export default function LowBackPain() {
         an irritated or compressed <strong>nerve root</strong>, most often from
         a disc herniation. The signature is pain that travels: a sharp,
         electric, or burning line down the buttock and leg, sometimes with
-        numbness, tingling, or weakness. Sciatica is the everyday name;
-        radicular pain is the clinical one. Spinal stenosis — a narrowing of
+        numbness, tingling, or weakness.{" "}
+        <Link href="/conditions/sciatica" className={link}>
+          Sciatica
+        </Link>{" "}
+        is the everyday name; radicular pain is the clinical one. Spinal stenosis — a narrowing of
         the canal that tends to come with age — produces its own pattern: leg
         pain or heaviness on walking that eases when you sit or lean forward.
         Nerve-root pain deserves a clinical look, because it is assessed and
