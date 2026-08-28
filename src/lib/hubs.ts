@@ -141,12 +141,6 @@ export const HUBS: Hub[] = [
     ],
     planned: [
       {
-        title: "Kratom",
-        blurb:
-          "The Southeast Asian leaf two million Americans use for pain: how mitragynine works, what the evidence shows, the honest risks, and the 2026 fight over 7-OH.",
-        href: "/treatments/kratom",
-      },
-      {
         title: "Medications for pain",
         blurb:
           "The complete map: anti-inflammatories and acetaminophen, topicals, the nerve-pain medications, opioids honestly, and the first new class in decades — matched to the pain types they actually treat.",

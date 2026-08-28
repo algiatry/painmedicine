@@ -296,13 +296,10 @@ export default function ComparingYourOptions() {
         to it, that is a defensible bet. <strong>Supplements</strong> are
         mostly the opposite corner: unregulated products, thin trials,
         and genuine interaction potential — worth naming to your
-        clinician and pharmacist rather than filing under harmless. For a
-        full worked example of reading honest evidence on a gray-market
-        substance, our{" "}
-        <Link href="/treatments/kratom" className={link}>
-          kratom guide
-        </Link>{" "}
-        is this page&rsquo;s method applied to one famous case.
+        clinician and pharmacist rather than filing under harmless. The
+        four claim-reading questions at the end of this page apply with
+        extra force anywhere a product is sold outside medicine&rsquo;s
+        evidence machinery.
       </P>
 
       <H2 id="fair-trial">Running a fair trial on yourself</H2>

@@ -444,7 +444,7 @@ export const TREATMENT_ARTICLES: Article[] = [
       {
         question: "Are acupuncture and supplements worth trying?",
         answer:
-          "They sit in different bins. Acupuncture has been tested in an unusually rigorous individual-patient-data meta-analysis: real benefits beyond sham for several chronic pain conditions — small on average, persistent, and low-risk, which makes it a reasonable adjunct for people drawn to it. Supplements are a certainty problem: mostly unregulated products with mostly weak evidence and real interaction potential. If you use them, tell your clinician — and read our kratom guide to see what honest evidence-reading looks like for one famous example.",
+          "They sit in different bins. Acupuncture has been tested in an unusually rigorous individual-patient-data meta-analysis: real benefits beyond sham for several chronic pain conditions — small on average, persistent, and low-risk, which makes it a reasonable adjunct for people drawn to it. Supplements are a certainty problem: mostly unregulated products with mostly weak evidence and real interaction potential. If you use any — herbal products included — tell your clinician and pharmacist; interactions are the risk people most underestimate.",
       },
       {
         question: "How do I know if a treatment is actually working for me?",
