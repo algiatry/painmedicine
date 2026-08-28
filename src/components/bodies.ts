@@ -17,6 +17,7 @@ import HowPainPhysiciansTrain from "./specialty/HowPainPhysiciansTrain";
 import PainClinicsVsPainMedicine from "./specialty/PainClinicsVsPainMedicine";
 import Kratom from "./treatments/Kratom";
 import MedicationsForPain from "./treatments/MedicationsForPain";
+import InterventionalProcedures from "./treatments/InterventionalProcedures";
 import LowBackPain from "./conditions/LowBackPain";
 import Sciatica from "./conditions/Sciatica";
 import NeuropathicPain from "./conditions/NeuropathicPain";
@@ -50,6 +51,7 @@ export const ARTICLE_BODIES: Record<string, ComponentType> = {
   "pain-clinics-vs-pain-medicine": PainClinicsVsPainMedicine,
   kratom: Kratom,
   "medications-for-pain": MedicationsForPain,
+  "interventional-procedures": InterventionalProcedures,
   "low-back-pain": LowBackPain,
   sciatica: Sciatica,
   "neuropathic-pain": NeuropathicPain,

@@ -164,6 +164,14 @@ export const EMBLEMS: Record<string, string> = {
       `<circle stroke="${A}" cx="35" cy="41" r="3.6" stroke-width="2.2"/>`,
   ),
 
+  // Crosshair on the target — precision delivered to an address.
+  "interventional-procedures": g(
+    `<circle stroke="${T}" cx="24" cy="24" r="14"/>` +
+      `<path stroke="${T}" d="M24 4v8M24 36v8M4 24h8M36 24h8" stroke-width="2.2"/>` +
+      `<circle cx="24" cy="24" r="2.4" fill="${A}" stroke-width="0"/>` +
+      `<circle stroke="${A}" cx="24" cy="24" r="7" stroke-width="2.2"/>`,
+  ),
+
   // Capsule and tablet over the signal wave they quiet — many tools, one map.
   "medications-for-pain": g(
     `<rect stroke="${T}" x="6" y="10" width="22" height="11" rx="5.5" transform="rotate(-24 17 15.5)"/>` +

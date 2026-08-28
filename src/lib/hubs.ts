@@ -155,7 +155,8 @@ export const HUBS: Hub[] = [
       {
         title: "Interventional procedures",
         blurb:
-          "Nerve blocks, radiofrequency ablation, spinal cord stimulation, and other image-guided options.",
+          "The image-guided middle layer between pills and surgery: blocks, radiofrequency ablation, stimulators you can test-drive — and the window rule that makes them all work.",
+        href: "/treatments/interventional-procedures",
       },
       {
         title: "Physical & behavioral therapies",

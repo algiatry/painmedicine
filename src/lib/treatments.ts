@@ -218,4 +218,104 @@ export const TREATMENT_ARTICLES: Article[] = [
       },
     ],
   },
+
+  {
+    hub: HUB,
+    slug: "interventional-procedures",
+    title: "Interventional Procedures",
+    description:
+      "The image-guided middle layer between pills and surgery: epidural injections, nerve blocks, radiofrequency ablation, spinal cord and DRG stimulators, and pumps — what each one actually does, the honest evidence, and the window rule that makes them work.",
+    status: "sourced",
+    lastUpdated: "2026-08-28",
+    answer:
+      "Interventional pain procedures are the middle layer between medication and surgery: image-guided treatments delivered to the exact structure generating pain — an injection around an irritated nerve root, heat treatment of the tiny nerves serving an arthritic joint, or an implanted stimulator talking directly to the spinal cord. Their honest promise is not permanence: a well-chosen procedure buys a window of relief, and rehabilitation is what furnishes it.",
+    faqs: [
+      {
+        question: "What are interventional pain procedures?",
+        answer:
+          "Targeted treatments delivered with imaging guidance to a specific pain generator. The main families: epidural steroid injections and nerve blocks; joint and trigger-point injections; radiofrequency ablation, which quiets the small nerves serving painful joints for months at a time; neuromodulation — spinal cord, dorsal root ganglion, and peripheral nerve stimulators; and implanted pumps that deliver medication directly to the spinal fluid. Each targets a different structure, which is why the diagnosis matters more than the menu.",
+      },
+      {
+        question: "Do epidural steroid injections work?",
+        answer:
+          "Honestly: modestly, and mostly short-term. The best systematic review evidence shows epidural steroids provide real but modest relief for radiating nerve-root pain like sciatica, with benefits that fade over weeks to months, and little effect on ordinary back pain. That is not nothing — a rough stretch bridged, a rehab program made possible, sometimes surgery deferred while a disc resorbs on its own. The right frame is a bridge with a known span, not a repair.",
+      },
+      {
+        question: "What is radiofrequency ablation and how long does it last?",
+        answer:
+          "A two-step, test-then-treat approach used most for facet-joint pain in the neck and back. First, a temporary numbing block of the small medial branch nerves answers a question: is this joint the pain source? If relief follows, radiofrequency ablation uses precisely placed heat to quiet those same nerves for longer — typically many months to a year. The nerves regrow and the procedure can be repeated. Its results live or die on that diagnostic step, which is why the block comes first.",
+      },
+      {
+        question: "What is a spinal cord stimulator and who is it for?",
+        answer:
+          "An implanted device that delivers electrical pulses to the spinal cord, changing how pain signals are processed. Candidates are people with persistent nerve-related pain — painful diabetic neuropathy, complex regional pain syndrome, and pain persisting after spine surgery are the proven territories. Its most patient-friendly feature is unique in medicine: a temporary externally-worn trial lets you test-drive the therapy for about a week before deciding on the implant. Newer variants — high-frequency, closed-loop, and dorsal-root-ganglion stimulation — have strong randomized-trial results.",
+      },
+      {
+        question: "Are procedures a substitute for physical therapy?",
+        answer:
+          "No — they are how physical therapy becomes possible. The pattern behind nearly every interventional success story is the same: the procedure lowers the pain enough to move, and the movement, strengthening, and retraining that follow are what hold the gains. A procedure that buys a window no one uses tends to wear off into disappointment. Arriving with the question 'what will we do with the relief?' is the difference between a cycle of injections and a trajectory.",
+      },
+    ],
+    references: [
+      {
+        source: "Ann Intern Med / PubMed",
+        title:
+          "Chou et al. — Epidural corticosteroid injections for radiculopathy and spinal stenosis: a systematic review and meta-analysis",
+        url: "https://pubmed.ncbi.nlm.nih.gov/26302454/",
+      },
+      {
+        source: "NCBI StatPearls",
+        title: "Radiofrequency Ablation",
+        url: "https://www.ncbi.nlm.nih.gov/books/NBK482387/",
+      },
+      {
+        source: "NCBI StatPearls",
+        title: "Spinal Cord Stimulator Implant",
+        url: "https://www.ncbi.nlm.nih.gov/books/NBK555994/",
+      },
+      {
+        source: "NEJM / PubMed",
+        title:
+          "Kemler et al. — Spinal cord stimulation in patients with chronic reflex sympathetic dystrophy",
+        url: "https://pubmed.ncbi.nlm.nih.gov/10965008/",
+      },
+      {
+        source: "JAMA Neurology / PubMed",
+        title:
+          "Petersen et al. — Effect of high-frequency (10-kHz) spinal cord stimulation in patients with painful diabetic neuropathy: a randomized clinical trial",
+        url: "https://pubmed.ncbi.nlm.nih.gov/33818600/",
+      },
+      {
+        source: "PAIN / PubMed",
+        title:
+          "Deer et al. — Dorsal root ganglion stimulation yielded higher treatment success rate for complex regional pain syndrome and causalgia (ACCURATE trial)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/28030470/",
+      },
+      {
+        source: "NIH / MedlinePlus",
+        title: "Non-drug pain management — patient information",
+        url: "https://medlineplus.gov/nondrugpainmanagement.html",
+      },
+    ],
+    related: [
+      {
+        title: "Next-generation neuromodulation",
+        href: "/future-of-pain-medicine/neuromodulation",
+        blurb:
+          "Closed-loop stimulation and where the device frontier goes next.",
+      },
+      {
+        title: "Low back pain",
+        href: "/conditions/low-back-pain",
+        blurb:
+          "Where injections and ablation sit in the guideline playbook for the back.",
+      },
+      {
+        title: "Complex regional pain syndrome",
+        href: "/conditions/crps",
+        blurb:
+          "The condition where stimulation earned its randomized-trial reputation.",
+      },
+    ],
+  },
 ];
