@@ -575,4 +575,99 @@ export const CONDITION_ARTICLES: Article[] = [
       },
     ],
   },
+
+  {
+    hub: HUB,
+    slug: "cancer-pain",
+    title: "Cancer Pain",
+    description:
+      "Cancer pain is one of the most treatable parts of cancer — where it comes from (the disease, the treatment, and the years after), why opioids are a different conversation here, what palliative care actually is, and the full toolbox beyond the pill bottle.",
+    status: "sourced",
+    lastUpdated: "2026-08-28",
+    answer:
+      "Pain affects roughly half of people during cancer treatment and about two-thirds of those with advanced disease — and it is among the most treatable parts of cancer. With today's tools, most cancer pain can be brought under control. Treating it is part of cancer care, not an afterthought, and reporting it early is the step that makes everything else work.",
+    faqs: [
+      {
+        question: "Is pain an inevitable part of cancer?",
+        answer:
+          "No. Pain is common in cancer — studies find it in about 55% of people during treatment and 66% with advanced disease — but common is not the same as untreatable. With the modern toolbox, most cancer pain can be controlled well. The biggest obstacle is silence: pain that goes unreported goes untreated, and studies have long found a substantial minority of patients undertreated. Reporting pain early and specifically is not complaining — it is giving your team the information treatment runs on.",
+      },
+      {
+        question: "Will I get addicted to pain medicine during cancer treatment?",
+        answer:
+          "For people taking opioids as prescribed for cancer pain, with a team monitoring, addiction is uncommon — and fear of it is one of the best-documented reasons cancer pain goes undertreated. Physical dependence (the body adapting, needing a taper to stop) and tolerance (needing adjustment over time) are expected biology, not addiction. Your team plans for both. If use ever feels like it is escaping the plan — yours or a loved one's — say so early; confidential help exists, including the SAMHSA helpline at 1-800-662-4357.",
+      },
+      {
+        question: "What is “breakthrough” pain?",
+        answer:
+          "Pain that spikes through otherwise controlled background pain — typically fast-rising, severe, and short-lived, sometimes triggered by movement or an activity, sometimes arriving unprovoked. It is common in cancer and it is planned for: alongside regular, scheduled pain control, your team can provide a separate fast-acting rescue plan. Tracking when breakthrough episodes happen, what triggers them, and how long they last helps your team tune both halves of the plan.",
+      },
+      {
+        question: "Is palliative care the same as giving up?",
+        answer:
+          "No — this is one of medicine's most costly misunderstandings. Palliative care is specialist care for symptoms and quality of life, delivered alongside cancer treatment, at any stage. In a landmark randomized trial in metastatic lung cancer, people who received palliative care from diagnosis had better quality of life, less depression — and lived longer than those receiving standard care alone. Asking for palliative care early is not surrender; it is choosing the version of treatment with more support in it.",
+      },
+      {
+        question: "Why do I still have pain years after beating cancer?",
+        answer:
+          "Because treatment itself can leave durable marks: chemotherapy-induced nerve damage in the hands and feet, pain around surgical sites, joint pain from hormone-blocking therapy, and radiation's late effects. Millions of survivors live with pain after successful treatment — enough that oncology has its own guideline for it. Survivor pain is real, common, and treatable, usually with the same approaches used for other chronic pain. It deserves care, not gratitude-guilt about mentioning it.",
+      },
+    ],
+    references: [
+      {
+        source: "J Pain Symptom Manage / PubMed",
+        title:
+          "van den Beuken-van Everdingen et al. — Update on prevalence of pain in patients with cancer: systematic review and meta-analysis",
+        url: "https://pubmed.ncbi.nlm.nih.gov/27112310/",
+      },
+      {
+        source: "NEJM / PubMed",
+        title:
+          "Temel et al. — Early palliative care for patients with metastatic non-small-cell lung cancer",
+        url: "https://pubmed.ncbi.nlm.nih.gov/20818875/",
+      },
+      {
+        source: "J Clin Oncol / PubMed",
+        title: "Kwon — Overcoming barriers in cancer pain management",
+        url: "https://pubmed.ncbi.nlm.nih.gov/24799490/",
+      },
+      {
+        source: "J Clin Oncol / PubMed",
+        title:
+          "Paice et al. — Management of chronic pain in survivors of adult cancers: ASCO clinical practice guideline",
+        url: "https://pubmed.ncbi.nlm.nih.gov/27458286/",
+      },
+      {
+        source: "WHO",
+        title:
+          "WHO guidelines for the pharmacological and radiotherapeutic management of cancer pain in adults and adolescents (2018)",
+        url: "https://www.who.int/publications/i/item/9789241550390",
+      },
+      {
+        source: "NIH / NCI",
+        title: "Cancer pain — patient information",
+        url: "https://www.cancer.gov/about-cancer/treatment/side-effects/pain",
+      },
+    ],
+    related: [
+      {
+        title: "Neuropathic pain",
+        href: "/conditions/neuropathic-pain",
+        blurb:
+          "Chemotherapy-induced neuropathy is nerve pain — and it is treated as such.",
+      },
+      {
+        title: "Medications for pain",
+        href: "/treatments/medications-for-pain",
+        blurb:
+          "The full drug-class map — including where opioids genuinely belong.",
+      },
+      {
+        title: "Measuring pain",
+        href: "/understanding-pain/measuring-pain",
+        blurb:
+          "How to report pain so your team can actually act on it.",
+      },
+    ],
+  },
 ];

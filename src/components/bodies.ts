@@ -23,6 +23,7 @@ import NeuropathicPain from "./conditions/NeuropathicPain";
 import Migraine from "./conditions/Migraine";
 import ArthritisPain from "./conditions/ArthritisPain";
 import Fibromyalgia from "./conditions/Fibromyalgia";
+import CancerPain from "./conditions/CancerPain";
 
 /**
  * Maps an article slug to the component that renders its illustrated body.
@@ -54,4 +55,5 @@ export const ARTICLE_BODIES: Record<string, ComponentType> = {
   migraine: Migraine,
   "arthritis-pain": ArthritisPain,
   fibromyalgia: Fibromyalgia,
+  "cancer-pain": CancerPain,
 };

@@ -207,6 +207,15 @@ export const EMBLEMS: Record<string, string> = {
       `<circle stroke="${A}" cx="38" cy="24" r="5.8" stroke-width="2.2"/>`,
   ),
 
+  // Shelter over the signal — care carried alongside, not after.
+  "cancer-pain": g(
+    `<path stroke="${T}" d="M6 22C8 12 15 6 24 6s16 6 18 16"/>` +
+      `<path stroke="${T}" d="M24 6v5" stroke-width="2.2"/>` +
+      `<circle cx="24" cy="30" r="2.4" fill="${A}" stroke-width="0"/>` +
+      `<circle stroke="${A}" cx="24" cy="30" r="6.5" stroke-width="2.2"/>` +
+      `<path stroke="${S}" d="M10 42c4-4 8-4 14 0s10 4 14 0" stroke-width="2.2"/>`,
+  ),
+
   // Widespread: pain rings scattered both sides, above and below the line.
   fibromyalgia: g(
     `<path stroke="${S}" d="M6 24h36" stroke-dasharray="1.5 5" stroke-width="2"/>` +

@@ -218,7 +218,12 @@ export const HUBS: Hub[] = [
           "The pinched nerve root behind nine cases in ten, the disappearing-disc science, and what surgery does and doesn't change.",
         href: "/conditions/sciatica",
       },
-      { title: "Cancer pain", blurb: "Managing pain through and after cancer treatment." },
+      {
+        title: "Cancer pain",
+        blurb:
+          "One of the most treatable parts of cancer: the three sources, why opioids are a different conversation here, and the trial that proved palliative care is not giving up.",
+        href: "/conditions/cancer-pain",
+      },
       { title: "Complex regional pain syndrome (CRPS)", blurb: "Rare, severe, and important to catch early." },
     ],
   },
