@@ -133,7 +133,7 @@ export const HUBS: Hub[] = [
     description:
       "The full landscape of evidence-based pain treatment: medications, interventional procedures, and physical and behavioral therapies.",
     status: "pending-review",
-    lastUpdated: "2026-08-27",
+    lastUpdated: "2026-08-28",
     heading: "Pain treatments today",
     intro: [
       "Pain medicine today offers far more than pills. Treatment spans medication classes with very different mechanisms, image-guided procedures, neuromodulation devices, and physical and psychological therapies with real evidence behind them.",
@@ -149,7 +149,8 @@ export const HUBS: Hub[] = [
       {
         title: "Medications for pain",
         blurb:
-          "Non-opioid analgesics, adjuvant medications, topicals, opioid stewardship, and the first new non-opioid class in decades.",
+          "The complete map: anti-inflammatories and acetaminophen, topicals, the nerve-pain medications, opioids honestly, and the first new class in decades — matched to the pain types they actually treat.",
+        href: "/treatments/medications-for-pain",
       },
       {
         title: "Interventional procedures",

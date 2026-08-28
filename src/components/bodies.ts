@@ -16,6 +16,7 @@ import YourFirstVisit from "./specialty/YourFirstVisit";
 import HowPainPhysiciansTrain from "./specialty/HowPainPhysiciansTrain";
 import PainClinicsVsPainMedicine from "./specialty/PainClinicsVsPainMedicine";
 import Kratom from "./treatments/Kratom";
+import MedicationsForPain from "./treatments/MedicationsForPain";
 import LowBackPain from "./conditions/LowBackPain";
 
 /**
@@ -41,5 +42,6 @@ export const ARTICLE_BODIES: Record<string, ComponentType> = {
   "how-pain-physicians-train": HowPainPhysiciansTrain,
   "pain-clinics-vs-pain-medicine": PainClinicsVsPainMedicine,
   kratom: Kratom,
+  "medications-for-pain": MedicationsForPain,
   "low-back-pain": LowBackPain,
 };

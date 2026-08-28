@@ -124,4 +124,98 @@ export const TREATMENT_ARTICLES: Article[] = [
       },
     ],
   },
+
+  {
+    hub: HUB,
+    slug: "medications-for-pain",
+    title: "Medications for Pain",
+    description:
+      "The complete map of pain medications: anti-inflammatory drugs and acetaminophen, topicals, the nerve-pain medications, muscle relaxants, opioids, and the first genuinely new class in decades — what each one actually does, and why matching the drug to the pain type matters more than 'strength.'",
+    status: "sourced",
+    lastUpdated: "2026-08-28",
+    answer:
+      "Pain medications are not one ladder from weak to strong — they are different tools for different mechanisms. Anti-inflammatory drugs (NSAIDs) and acetaminophen treat everyday tissue-driven pain; a separate group of nerve-pain medications treats pain from damaged nerves; opioids act on the brain's own opioid system and now sit late in modern guidelines; and a new non-opioid class arrived in 2025. The right question is not which painkiller is strongest, but which one matches your pain's mechanism.",
+    faqs: [
+      {
+        question: "What are the main types of pain medication?",
+        answer:
+          "Six groups cover nearly everything: acetaminophen; NSAIDs (anti-inflammatory painkillers such as ibuprofen and naproxen); topical treatments applied to the skin; the nerve-pain medications (gabapentinoids, certain antidepressants used for their pain effects); muscle relaxants for short-term use; and opioids. A seventh arrived in 2025: suzetrigine, the first drug of a new non-opioid class that quiets pain-signaling nerves directly. Which group fits a given pain depends on its mechanism — a conversation for you and your clinician.",
+      },
+      {
+        question: "What is the strongest painkiller?",
+        answer:
+          "That is the question everyone asks, and it is quietly the wrong one. 'Strength' describes potency at one receptor, not effectiveness for your pain. The most potent opioid does little for nerve pain; an anti-inflammatory can outperform it for an inflamed joint; and for sensitized-pain-system conditions like fibromyalgia, most traditional painkillers underperform movement and brain-targeted care. Effectiveness comes from matching the medication's mechanism to the pain's mechanism — which is exactly what a pain physician is trained to do.",
+      },
+      {
+        question: "Why was I prescribed an antidepressant or a seizure medication for pain?",
+        answer:
+          "Because those labels describe the drug's first job, not its only one. Duloxetine and the tricyclics strengthen the spinal cord's own pain-dampening pathways; gabapentin and pregabalin calm the excitable signaling of damaged nerves. Both effects are independent of mood — the doses and timelines differ from psychiatric use, and international guidelines rank these drugs as first-line treatments for nerve pain. It is mechanism-matching, not a comment on your mental health.",
+      },
+      {
+        question: "What is the difference between acetaminophen and ibuprofen?",
+        answer:
+          "Acetaminophen (Tylenol) relieves pain and lowers fever but has little effect on inflammation, and its main safety boundary is the liver — especially because it hides inside many combination cold and pain products. Ibuprofen is an NSAID: it works by damping the body's inflammatory prostaglandin chemistry, which makes it useful for inflamed tissue but brings stomach, kidney, and cardiovascular cautions with longer use. Different mechanisms, different risks — which is why pharmacists ask what else you are taking.",
+      },
+      {
+        question: "Are there new pain medications that are not opioids?",
+        answer:
+          "Yes — and this is the most hopeful development in years. In January 2025 the FDA approved suzetrigine (Journavx), the first drug of a genuinely new pain-medication class in more than two decades. It blocks a sodium channel found on pain-sensing nerves outside the brain, relieving moderate-to-severe acute pain without opioid receptors, euphoria, or dependence potential. Behind it sits a deep pipeline of non-opioid candidates — tracked on our pipeline page.",
+      },
+    ],
+    references: [
+      {
+        source: "NIH / MedlinePlus",
+        title: "Pain relievers — patient information",
+        url: "https://medlineplus.gov/painrelievers.html",
+      },
+      {
+        source: "NCBI StatPearls",
+        title: "Nonsteroidal Anti-Inflammatory Drugs (NSAIDs)",
+        url: "https://www.ncbi.nlm.nih.gov/books/NBK547742/",
+      },
+      {
+        source: "NCBI StatPearls",
+        title: "Acetaminophen",
+        url: "https://www.ncbi.nlm.nih.gov/books/NBK482369/",
+      },
+      {
+        source: "Lancet Neurology / PMC",
+        title:
+          "Finnerup et al. — Pharmacotherapy for neuropathic pain in adults: systematic review, meta-analysis and updated NeuPSIG recommendations",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4493167/",
+      },
+      {
+        source: "CDC MMWR",
+        title:
+          "CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022",
+        url: "https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm",
+      },
+      {
+        source: "FDA",
+        title:
+          "FDA Approves Novel Non-Opioid Treatment for Moderate to Severe Acute Pain (suzetrigine, January 2025)",
+        url: "https://www.fda.gov/news-events/press-announcements/fda-approves-novel-non-opioid-treatment-moderate-severe-acute-pain",
+      },
+    ],
+    related: [
+      {
+        title: "The three types of pain",
+        href: "/understanding-pain/types-of-pain",
+        blurb:
+          "The mechanism map this whole page is built on — know your type, know your options.",
+      },
+      {
+        title: "The pain treatment pipeline",
+        href: "/future-of-pain-medicine/pipeline",
+        blurb:
+          "Every notable non-opioid drug and device in development, by phase.",
+      },
+      {
+        title: "Low back pain",
+        href: "/conditions/low-back-pain",
+        blurb:
+          "Where medications actually sit in the guideline playbook for the world's most common pain.",
+      },
+    ],
+  },
 ];

@@ -164,6 +164,15 @@ export const EMBLEMS: Record<string, string> = {
       `<circle stroke="${A}" cx="35" cy="41" r="3.6" stroke-width="2.2"/>`,
   ),
 
+  // Capsule and tablet over the signal wave they quiet — many tools, one map.
+  "medications-for-pain": g(
+    `<rect stroke="${T}" x="6" y="10" width="22" height="11" rx="5.5" transform="rotate(-24 17 15.5)"/>` +
+      `<path stroke="${T}" d="M12.5 20.4 L21.5 16.4" stroke-width="2.2"/>` +
+      `<circle stroke="${S}" cx="35" cy="15" r="7.5"/>` +
+      `<path stroke="${S}" d="M29.5 15h11" stroke-width="2"/>` +
+      `<path stroke="${A}" d="M5 38c3.5-6 7-6 10.5 0s7 6 10.5 0 7-6 10.5 0" stroke-width="2.4"/>`,
+  ),
+
   // ——— Pain conditions ———
 
   // A lumbar stack — three vertebrae over the sacrum, the signal at the low
