@@ -188,7 +188,12 @@ export const HUBS: Hub[] = [
           "The world's leading cause of disability: what can actually hurt, why most cases are 'non-specific,' what an MRI really shows, the red flags, and today's treatment playbook.",
         href: "/conditions/low-back-pain",
       },
-      { title: "Neuropathic pain & peripheral neuropathy", blurb: "Pain from nerve damage — and why it needs different treatment." },
+      {
+        title: "Neuropathic pain",
+        blurb:
+          "When the wiring becomes the alarm: burning feet, the numb-yet-painful paradox, and the honest map of nerve-pain treatment from first-line drugs to stimulators.",
+        href: "/conditions/neuropathic-pain",
+      },
       { title: "Migraine", blurb: "A neurological disease — and pain medicine's biggest recent success story." },
       { title: "Arthritis pain", blurb: "Osteoarthritis and inflammatory arthritis." },
       { title: "Fibromyalgia", blurb: "The signature nociplastic pain condition." },

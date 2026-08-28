@@ -186,6 +186,17 @@ export const EMBLEMS: Record<string, string> = {
       `<circle stroke="${A}" cx="37.5" cy="34" r="6.5" stroke-width="2.2"/>`,
   ),
 
+  // A nerve fiber losing its insulation left to right — solid, then dashed,
+  // sparking at the damaged end.
+  "neuropathic-pain": g(
+    `<path stroke="${T}" d="M4 26h16"/>` +
+      `<path stroke="${T}" d="M23 26h17" stroke-dasharray="4.5 4"/>` +
+      `<g stroke="${A}" stroke-width="2.2">` +
+      `<path d="M31 18l3-6M37 17l1-5M42 20l4-4"/>` +
+      `<path d="M31 34l3 6M37 35l1 5M42 32l4 4"/>` +
+      `</g>`,
+  ),
+
   // The nerve's line down the leg — pinched at the top, radiating below.
   sciatica: g(
     `<circle cx="17" cy="9" r="2.4" fill="${A}" stroke-width="0"/>` +

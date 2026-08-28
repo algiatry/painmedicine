@@ -198,4 +198,102 @@ export const CONDITION_ARTICLES: Article[] = [
       },
     ],
   },
+
+  {
+    hub: HUB,
+    slug: "neuropathic-pain",
+    title: "Neuropathic Pain",
+    description:
+      "What neuropathic pain is and what causes it: how damaged nerves become the source of pain rather than its messenger, why feet burn first, the numb-yet-painful paradox, and the honest map of treatments for nerve pain — from the first-line medications to spinal cord stimulation.",
+    status: "sourced",
+    lastUpdated: "2026-08-28",
+    answer:
+      "Neuropathic pain is pain caused by damage or disease in the nervous system itself — the wiring that normally reports pain becomes the thing generating it. It affects roughly 7–10% of adults, most often from diabetes, shingles, chemotherapy, or nerve injury. It feels different (burning, electric, shooting), behaves differently (numb yet painful), and responds to different treatments than ordinary pain.",
+    faqs: [
+      {
+        question: "What does neuropathic pain feel like?",
+        answer:
+          "People reach for electrical and thermal words: burning, shooting, stabbing, electric shocks, pins and needles. Two signatures set it apart from ordinary pain. Allodynia — pain from things that should not hurt at all, like a bedsheet brushing the skin. And the numb-yet-painful paradox: the same territory can be both less sensitive to touch and the site of intense spontaneous pain, because the damaged wiring both loses signal and generates false ones.",
+      },
+      {
+        question: "What causes neuropathic pain?",
+        answer:
+          "Anything that injures sensory nerves or their pathways. The most common causes are diabetes (the leading cause of peripheral neuropathy), shingles (postherpetic neuralgia), chemotherapy, nerve compression or injury — including sciatica — and alcohol-related and inherited neuropathies. Central causes include stroke, multiple sclerosis, and spinal cord injury. Sometimes no cause is found even after a careful workup; that is common and does not make the pain less real.",
+      },
+      {
+        question: "Why do my feet burn at night?",
+        answer:
+          "Burning feet — often worst in bed — is the classic voice of peripheral neuropathy, and there is a reason it starts there: the nerves serving the feet are the longest in the body, and nerves that are struggling metabolically tend to fail from their farthest tips backward. That is why symptoms typically begin in the toes and spread upward in a 'stocking' pattern, with hands joining later in a 'glove' pattern. New or worsening burning feet deserve a clinical evaluation — diabetes screening included.",
+      },
+      {
+        question: "Why don't normal painkillers work on nerve pain?",
+        answer:
+          "Because they aim at the wrong mechanism. Ordinary painkillers work mostly by calming inflammation around injured tissue. In neuropathic pain the tissue is often fine — the nerve itself is misfiring, driven by overactive sodium channels and sensitized spinal circuits. The medications with the best evidence target that machinery instead: gabapentinoids calm the overexcited signaling, and certain antidepressants strengthen the spinal cord's own pain-dampening pathways. Different fault, different tools.",
+      },
+      {
+        question: "Can neuropathic pain be treated?",
+        answer:
+          "Yes, with honest expectations. Treating the underlying cause matters most where possible — blood sugar control, relieving a compression, changing an offending drug. For the pain itself, first-line medications meaningfully help a substantial minority of patients, and clinicians often combine approaches or move to options like high-concentration capsaicin patches, lidocaine patches, or spinal cord stimulation, which showed strong results for painful diabetic neuropathy in a randomized trial. A realistic win is major relief, not always zero pain — and function often improves ahead of the numbers.",
+      },
+    ],
+    references: [
+      {
+        source: "NIH / NINDS",
+        title: "Peripheral Neuropathy — patient information",
+        url: "https://www.ninds.nih.gov/health-information/disorders/peripheral-neuropathy",
+      },
+      {
+        source: "Nat Rev Dis Primers / PMC",
+        title: "Colloca et al. — Neuropathic pain (primer)",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5371025/",
+      },
+      {
+        source: "PAIN / PubMed",
+        title:
+          "van Hecke et al. — Neuropathic pain in the general population: a systematic review of epidemiological studies",
+        url: "https://pubmed.ncbi.nlm.nih.gov/24291734/",
+      },
+      {
+        source: "Lancet Neurology / PMC",
+        title:
+          "Finnerup et al. — Pharmacotherapy for neuropathic pain in adults: systematic review, meta-analysis and updated NeuPSIG recommendations",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4493167/",
+      },
+      {
+        source: "JAMA Neurology / PubMed",
+        title:
+          "Petersen et al. — Effect of high-frequency (10-kHz) spinal cord stimulation in patients with painful diabetic neuropathy: a randomized clinical trial",
+        url: "https://pubmed.ncbi.nlm.nih.gov/33818600/",
+      },
+      {
+        source: "NCBI StatPearls",
+        title: "Postherpetic Neuralgia",
+        url: "https://www.ncbi.nlm.nih.gov/books/NBK493198/",
+      },
+      {
+        source: "IASP",
+        title: "IASP Terminology — neuropathic pain definition",
+        url: "https://www.iasp-pain.org/resources/terminology/",
+      },
+    ],
+    related: [
+      {
+        title: "Medications for pain",
+        href: "/treatments/medications-for-pain",
+        blurb:
+          "The nerve-pain medications explained — and why their names confuse everyone.",
+      },
+      {
+        title: "Sciatica",
+        href: "/conditions/sciatica",
+        blurb: "The most common face of nerve-root neuropathic pain.",
+      },
+      {
+        title: "Next-generation neuromodulation",
+        href: "/future-of-pain-medicine/neuromodulation",
+        blurb:
+          "Where spinal cord stimulation is headed for pain that medications miss.",
+      },
+    ],
+  },
 ];
