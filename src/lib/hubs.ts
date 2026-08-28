@@ -161,7 +161,8 @@ export const HUBS: Hub[] = [
       {
         title: "Physical & behavioral therapies",
         blurb:
-          "Physical therapy, cognitive behavioral therapy for pain, and other approaches with clinical evidence.",
+          "The active half of pain medicine: movement as medicine, the pacing skill that ends the boom-bust cycle, and what CBT and mindfulness honestly deliver.",
+        href: "/treatments/physical-and-behavioral-therapies",
       },
       {
         title: "Comparing your options",

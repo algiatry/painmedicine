@@ -164,6 +164,13 @@ export const EMBLEMS: Record<string, string> = {
       `<circle stroke="${A}" cx="35" cy="41" r="3.6" stroke-width="2.2"/>`,
   ),
 
+  // The pacing staircase rising past the flattening signal wave.
+  "physical-and-behavioral-therapies": g(
+    `<path stroke="${T}" d="M5 40h10v-8h10v-8h10v-8h8"/>` +
+      `<path stroke="${A}" d="M5 13c3-5 6-5 9 0s6 5 9 0" stroke-width="2.2"/>` +
+      `<circle cx="43" cy="10" r="2.4" fill="${A}" stroke-width="0"/>`,
+  ),
+
   // Crosshair on the target — precision delivered to an address.
   "interventional-procedures": g(
     `<circle stroke="${T}" cx="24" cy="24" r="14"/>` +

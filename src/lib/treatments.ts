@@ -318,4 +318,100 @@ export const TREATMENT_ARTICLES: Article[] = [
       },
     ],
   },
+
+  {
+    hub: HUB,
+    slug: "physical-and-behavioral-therapies",
+    title: "Physical & Behavioral Therapies",
+    description:
+      "The treatments that retrain pain rather than mask it: why movement is medicine for a sensitized system, what CBT and mindfulness honestly deliver, the pacing skill that ends the boom-bust cycle, and what a good active-care program looks like.",
+    status: "sourced",
+    lastUpdated: "2026-08-28",
+    answer:
+      "Physical and behavioral therapies are the active half of pain medicine — graded movement that rebuilds the body's capacity, and brain-targeted approaches like CBT and mindfulness that turn down the pain system's amplification. Their effects are modest on average but durable, side-effect-free, and compounding — which is why they hold the strongest recommendations in most chronic pain guidelines.",
+    faqs: [
+      {
+        question: "How can exercise reduce pain when moving is what hurts?",
+        answer:
+          "Because in most chronic pain, hurt does not equal harm — and movement treats the pain system itself. Exercise triggers the body's own pain-dampening chemistry, gradual loading rebuilds the strength that protects joints and spine, and each safe repetition teaches a sensitized nervous system that movement is not a threat, unwinding the fear-avoidance cycle that keeps pain loud. The craft is in the dose: started below the flare threshold and progressed gradually, movement is treatment; started with an ambush, it is a setback.",
+      },
+      {
+        question: "Why would I see a psychologist for pain? My pain isn't in my head.",
+        answer:
+          "Correct — and that is not what the referral means. Pain-processing and emotion-processing circuits overlap in the brain, so therapies that work those circuits can genuinely turn pain's volume down. Across dozens of randomized trials, cognitive behavioral therapy produces reliable, usually modest reductions in pain and disability — by changing how the nervous system handles the signal, not by talking you out of a real experience. Seeing a pain psychologist is using every lever on real biology.",
+      },
+      {
+        question: "What is pacing — and why do I crash after every good day?",
+        answer:
+          "The crash has a name: the boom-bust cycle. On a good day you do everything, the sensitized system flares, and the next days are lost to recovery — teaching the nervous system that activity is dangerous. Pacing replaces it: find the amount you can do even on a bad day, do that amount consistently, and increase by plan rather than by how you feel. Progress by schedule, not by symptoms. It feels slower and compounds much faster than the sawtooth it replaces.",
+      },
+      {
+        question: "Does mindfulness actually help pain?",
+        answer:
+          "In good trials, yes — modestly and honestly. In a randomized trial for chronic low back pain, mindfulness-based stress reduction improved pain and function more than usual care and performed on par with cognitive behavioral therapy, with gains persisting at one year. Mindfulness does not make pain vanish; it changes the relationship between the signal and the suffering, and it trains the attention and threat systems that set pain's volume. As one tool in an active plan, it earns its place.",
+      },
+      {
+        question: "What should good physical therapy for chronic pain look like?",
+        answer:
+          "Active, graded, and yours. A good program is built around things you do — progressive exercise, movement retraining, a home plan that advances — with passive treatments like heat or massage in supporting roles at most. It starts where you actually are, progresses by plan, treats flares as information rather than failure, and has a graduation goal: you, running your own program. Passive-only care that never changes and never ends is the pattern to walk away from.",
+      },
+    ],
+    references: [
+      {
+        source: "Cochrane / PubMed",
+        title:
+          "Geneen et al. — Physical activity and exercise for chronic pain in adults: an overview of Cochrane Reviews",
+        url: "https://pubmed.ncbi.nlm.nih.gov/28436583/",
+      },
+      {
+        source: "Cochrane / PubMed",
+        title:
+          "Williams et al. — Psychological therapies for the management of chronic pain (excluding headache) in adults",
+        url: "https://pubmed.ncbi.nlm.nih.gov/32794606/",
+      },
+      {
+        source: "JAMA / PubMed",
+        title:
+          "Cherkin et al. — Effect of mindfulness-based stress reduction vs cognitive behavioral therapy or usual care on back pain and functional limitations",
+        url: "https://pubmed.ncbi.nlm.nih.gov/27002445/",
+      },
+      {
+        source: "BMJ / PubMed",
+        title:
+          "Kamper et al. — Multidisciplinary biopsychosocial rehabilitation for chronic low back pain: Cochrane systematic review and meta-analysis",
+        url: "https://pubmed.ncbi.nlm.nih.gov/25694111/",
+      },
+      {
+        source: "BMJ / PubMed",
+        title:
+          "Wang et al. — Effect of tai chi versus aerobic exercise for fibromyalgia: comparative effectiveness randomized controlled trial",
+        url: "https://pubmed.ncbi.nlm.nih.gov/29563100/",
+      },
+      {
+        source: "NIH / MedlinePlus",
+        title: "Non-drug pain management — patient information",
+        url: "https://medlineplus.gov/nondrugpainmanagement.html",
+      },
+    ],
+    related: [
+      {
+        title: "Pain and emotion",
+        href: "/understanding-pain/pain-and-emotion",
+        blurb:
+          "The shared circuitry that makes brain-targeted therapy real biology.",
+      },
+      {
+        title: "Pain and sleep",
+        href: "/understanding-pain/pain-and-sleep",
+        blurb:
+          "The third active therapy: CBT-I and why sleep is a treatment target.",
+      },
+      {
+        title: "Fibromyalgia",
+        href: "/conditions/fibromyalgia",
+        blurb:
+          "The condition where gentleness proved itself a mechanism, not a compromise.",
+      },
+    ],
+  },
 ];
