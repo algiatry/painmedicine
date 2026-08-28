@@ -224,7 +224,12 @@ export const HUBS: Hub[] = [
           "One of the most treatable parts of cancer: the three sources, why opioids are a different conversation here, and the trial that proved palliative care is not giving up.",
         href: "/conditions/cancer-pain",
       },
-      { title: "Complex regional pain syndrome (CRPS)", blurb: "Rare, severe, and important to catch early." },
+      {
+        title: "Complex regional pain syndrome (CRPS)",
+        blurb:
+          "Rare, severe, and time-sensitive: pain out of proportion in a limb that visibly changes — the Budapest signs, the mirror-therapy science, and why the first months decide so much.",
+        href: "/conditions/crps",
+      },
     ],
   },
   {

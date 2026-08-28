@@ -207,6 +207,14 @@ export const EMBLEMS: Record<string, string> = {
       `<circle stroke="${A}" cx="38" cy="24" r="5.8" stroke-width="2.2"/>`,
   ),
 
+  // The mirror trick: a solid hand, the line of the glass, its dashed twin.
+  crps: g(
+    `<path stroke="${S}" d="M24 6v36" stroke-width="2.2" stroke-dasharray="5 4"/>` +
+      `<path stroke="${T}" d="M8 40V22c0-8 4-12 8-12M12 24v-8M16 22v-9"/>` +
+      `<path stroke="${T}" d="M40 40V22c0-8 -4-12 -8-12M36 24v-8M32 22v-9" stroke-dasharray="3 3.5"/>` +
+      `<circle cx="8" cy="14" r="2.2" fill="${A}" stroke-width="0"/>`,
+  ),
+
   // Shelter over the signal — care carried alongside, not after.
   "cancer-pain": g(
     `<path stroke="${T}" d="M6 22C8 12 15 6 24 6s16 6 18 16"/>` +

@@ -670,4 +670,99 @@ export const CONDITION_ARTICLES: Article[] = [
       },
     ],
   },
+
+  {
+    hub: HUB,
+    slug: "crps",
+    title: "Complex Regional Pain Syndrome",
+    description:
+      "CRPS explained: pain out of proportion after an injury, a limb that visibly changes, and why the first months matter most — the Budapest criteria, the brain-map science behind mirror therapy, and the treatments with real evidence, movement first.",
+    status: "sourced",
+    lastUpdated: "2026-08-28",
+    answer:
+      "Complex regional pain syndrome (CRPS) is severe, persistent limb pain out of proportion to the injury that started it — usually a fracture, surgery, or sprain — in a limb that visibly changes: color, temperature, swelling, sweating, movement. It is rare, real, and time-sensitive: recognized and treated early, with movement at the center, most people improve substantially.",
+    faqs: [
+      {
+        question: "What is CRPS and what does it feel like?",
+        answer:
+          "CRPS is a regional pain syndrome that usually follows an injury — most often a wrist fracture, surgery, or sprain — in which the pain outlives and outgrows the injury itself. It is typically burning or squeezing, spread beyond the original injury site, and severe out of proportion to what started it; light touch can be intensely painful. What sets CRPS apart is that the limb visibly changes too: color and temperature shifts, swelling, abnormal sweating, and over time changes in skin, hair, nails, and movement.",
+      },
+      {
+        question: "What causes CRPS?",
+        answer:
+          "An injury sets it off, and then several systems misbehave together: an exaggerated, lingering inflammatory response in the limb; disturbed small-nerve and blood-vessel regulation (the color, temperature, and sweating changes); and reorganization in the brain, where the affected limb's map measurably shrinks and blurs. It is not a psychological condition and not something patients cause. Why some people develop it after a routine injury and most do not remains one of pain medicine's open questions.",
+      },
+      {
+        question: "How is CRPS diagnosed?",
+        answer:
+          "Clinically, using the Budapest criteria: continuing pain out of proportion to the injury, plus a required mix of symptoms and examination signs across four categories — sensory (like pain from light touch), vasomotor (color or temperature asymmetry), sweating and swelling, and motor or trophic changes (weakness, tremor, skin, hair, and nail changes). No blood test or scan makes the diagnosis, though tests are sometimes used to rule out mimics. If your limb pain fits this picture, ask the question directly — early recognition is the whole game.",
+      },
+      {
+        question: "Does CRPS go away?",
+        answer:
+          "Often, substantially — especially when it is caught and treated in the first months. Many cases improve significantly within the first year with active rehabilitation; a minority persist and need long-term specialist care, and honest medicine holds both facts at once. The variable most within reach is time-to-treatment: the earlier the diagnosis is made and movement-based rehabilitation begins, the better the odds. CRPS caught early is a very different disease from CRPS found late.",
+      },
+      {
+        question: "Is it safe to move a limb with CRPS?",
+        answer:
+          "Not only safe — movement is the cornerstone of treatment. The instinct to guard and immobilize the limb is understandable and counterproductive: disuse feeds the swelling, the bone loss, and the brain's shrinking map of the limb. Rehabilitation is built to make movement possible again in graded steps — desensitization, graded motor imagery, mirror therapy, then progressive loading — with pain control supporting the movement, not replacing it. In CRPS, hurt does not equal harm; guarding is the riskier path.",
+      },
+    ],
+    references: [
+      {
+        source: "PAIN / PubMed",
+        title:
+          "Harden et al. — Validation of proposed diagnostic criteria (the 'Budapest criteria') for complex regional pain syndrome",
+        url: "https://pubmed.ncbi.nlm.nih.gov/20493633/",
+      },
+      {
+        source: "PAIN / PubMed",
+        title:
+          "de Mos et al. — The incidence of complex regional pain syndrome: a population-based study",
+        url: "https://pubmed.ncbi.nlm.nih.gov/17084977/",
+      },
+      {
+        source: "NEJM / PubMed",
+        title:
+          "Kemler et al. — Spinal cord stimulation in patients with chronic reflex sympathetic dystrophy",
+        url: "https://pubmed.ncbi.nlm.nih.gov/10965008/",
+      },
+      {
+        source: "PAIN / PubMed",
+        title:
+          "Deer et al. — Dorsal root ganglion stimulation yielded higher treatment success rate for complex regional pain syndrome and causalgia at 3 and 12 months (ACCURATE trial)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/28030470/",
+      },
+      {
+        source: "NCBI StatPearls",
+        title: "Complex Regional Pain Syndrome",
+        url: "https://www.ncbi.nlm.nih.gov/books/NBK430719/",
+      },
+      {
+        source: "NIH / MedlinePlus",
+        title: "Complex regional pain syndrome — patient information",
+        url: "https://medlineplus.gov/complexregionalpainsyndrome.html",
+      },
+    ],
+    related: [
+      {
+        title: "Neuropathic pain",
+        href: "/conditions/neuropathic-pain",
+        blurb:
+          "CRPS type II begins with a documented nerve injury — the family resemblance explained.",
+      },
+      {
+        title: "Next-generation neuromodulation",
+        href: "/future-of-pain-medicine/neuromodulation",
+        blurb:
+          "DRG stimulation — the device therapy that proved itself in CRPS first.",
+      },
+      {
+        title: "How pain works",
+        href: "/understanding-pain/how-pain-works",
+        blurb:
+          "The nervous-system plasticity that CRPS turns against a limb — and rehab turns back.",
+      },
+    ],
+  },
 ];
