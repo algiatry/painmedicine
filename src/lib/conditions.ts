@@ -481,4 +481,98 @@ export const CONDITION_ARTICLES: Article[] = [
       },
     ],
   },
+
+  {
+    hub: HUB,
+    slug: "fibromyalgia",
+    title: "Fibromyalgia",
+    description:
+      "What fibromyalgia actually is — the signature disease of a sensitized pain system: the measurable evidence that it is real, how it is diagnosed today, why exercise and sleep outperform most pills, and honest expectations for the three approved medications.",
+    status: "sourced",
+    lastUpdated: "2026-08-28",
+    answer:
+      "Fibromyalgia is chronic widespread pain — both sides of the body, above and below the waist — traveling with fatigue, unrefreshing sleep, and thinking difficulties. It affects roughly 2–4% of people, and modern research locates the problem in a sensitized pain system: the nervous system's volume control turned up. That is measurable biology, not imagination — and it points to treatments that retrain the system rather than mask it.",
+    faqs: [
+      {
+        question: "Is fibromyalgia a real disease or is it in my head?",
+        answer:
+          "It is real, and the evidence is measurable. Brain imaging shows people with fibromyalgia producing the same pain-processing activation as controls at roughly half the pressure. Spinal fluid carries elevated levels of pain-transmitting chemicals. And the body's own pain-dampening reflexes underperform on testing. Fibromyalgia is the signature example of nociplastic pain — pain from a sensitized pain system — recognized by the international pain-science community. Being brain-involved does not make it imaginary; all pain is made by the nervous system.",
+      },
+      {
+        question: "What causes fibromyalgia?",
+        answer:
+          "No single cause is known. The picture the evidence supports: an inherited tendency toward a sensitive pain system, often switched on or worsened by stressors — an illness, an injury, trauma, or a long stretch of poor sleep and stress. Once sensitized, the system amplifies signals that would not normally register as pain. Disrupted deep sleep appears to be both a symptom and a driver, which is one reason sleep is treated as a core target rather than a side issue.",
+      },
+      {
+        question: "How is fibromyalgia diagnosed?",
+        answer:
+          "By modern criteria, not by pressing tender points — that method was retired. Clinicians assess how widespread the pain is and how severe the accompanying symptoms are (fatigue, unrefreshing sleep, cognitive difficulty) over at least three months, and run basic blood work to check for mimics like thyroid disease or inflammatory arthritis. There is no blood test for fibromyalgia itself, but it is a recognized diagnosis made on positive grounds — not a label of last resort, and a diagnosis you are allowed to have alongside other conditions.",
+      },
+      {
+        question: "What is fibro fog?",
+        answer:
+          "The cognitive side of fibromyalgia: trouble concentrating, finding words, and holding a thread — often as disabling as the pain. It appears to arise from the same sources as the rest of the condition: a nervous system spending resources on amplified pain traffic, plus unrefreshing sleep compounding everything. It is not dementia and does not progress like one. The treatments that calm the overall condition — sleep, graded activity, pacing — are the ones that thin the fog.",
+      },
+      {
+        question: "What actually helps fibromyalgia?",
+        answer:
+          "The strongest evidence belongs to things that retrain the system: graded exercise — with tai chi performing as well as or better than aerobic exercise in a randomized trial — good sleep care, education about how the condition works, and cognitive behavioral approaches. Three medications are approved for fibromyalgia; honestly framed, each meaningfully helps a minority of the people who try it. Opioids are a specific poor fit and can worsen the underlying sensitivity. The realistic goal is a system turned down and a life built back up — most people can improve.",
+      },
+    ],
+    references: [
+      {
+        source: "JAMA / PubMed",
+        title: "Clauw — Fibromyalgia: a clinical review",
+        url: "https://pubmed.ncbi.nlm.nih.gov/24737367/",
+      },
+      {
+        source: "Semin Arthritis Rheum / PubMed",
+        title:
+          "Wolfe et al. — 2016 revisions to the 2010/2011 fibromyalgia diagnostic criteria",
+        url: "https://pubmed.ncbi.nlm.nih.gov/27916278/",
+      },
+      {
+        source: "Arthritis Rheum / PubMed",
+        title:
+          "Gracely et al. — Functional magnetic resonance imaging evidence of augmented pain processing in fibromyalgia",
+        url: "https://pubmed.ncbi.nlm.nih.gov/12115241/",
+      },
+      {
+        source: "BMJ / PubMed",
+        title:
+          "Wang et al. — Effect of tai chi versus aerobic exercise for fibromyalgia: comparative effectiveness randomized controlled trial",
+        url: "https://pubmed.ncbi.nlm.nih.gov/29563100/",
+      },
+      {
+        source: "NIH / NIAMS",
+        title: "Fibromyalgia — patient information",
+        url: "https://www.niams.nih.gov/health-topics/fibromyalgia",
+      },
+      {
+        source: "NIH / MedlinePlus",
+        title: "Fibromyalgia — patient information",
+        url: "https://medlineplus.gov/fibromyalgia.html",
+      },
+    ],
+    related: [
+      {
+        title: "The three types of pain",
+        href: "/understanding-pain/types-of-pain",
+        blurb:
+          "Fibromyalgia is the signature nociplastic condition — the third type, explained.",
+      },
+      {
+        title: "Pain and sleep",
+        href: "/understanding-pain/pain-and-sleep",
+        blurb:
+          "The experiment that produced fibromyalgia-like tenderness by disrupting deep sleep.",
+      },
+      {
+        title: "Mind, brain, and new frontiers",
+        href: "/future-of-pain-medicine/mind-and-brain",
+        blurb:
+          "The retraining therapies being built for exactly this kind of pain.",
+      },
+    ],
+  },
 ];

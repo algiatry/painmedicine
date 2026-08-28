@@ -206,7 +206,12 @@ export const HUBS: Hub[] = [
           "One word, two diseases: osteoarthritis (not 'wear and tear') vs. the immune-driven arthritides — the day-pattern that tells them apart, and why one of them is a race.",
         href: "/conditions/arthritis-pain",
       },
-      { title: "Fibromyalgia", blurb: "The signature nociplastic pain condition." },
+      {
+        title: "Fibromyalgia",
+        blurb:
+          "The signature disease of a sensitized pain system: the measurable evidence it's real, and why gentleness — tai chi included — beats most pills.",
+        href: "/conditions/fibromyalgia",
+      },
       {
         title: "Sciatica",
         blurb:

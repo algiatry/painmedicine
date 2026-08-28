@@ -207,6 +207,16 @@ export const EMBLEMS: Record<string, string> = {
       `<circle stroke="${A}" cx="38" cy="24" r="5.8" stroke-width="2.2"/>`,
   ),
 
+  // Widespread: pain rings scattered both sides, above and below the line.
+  fibromyalgia: g(
+    `<path stroke="${S}" d="M6 24h36" stroke-dasharray="1.5 5" stroke-width="2"/>` +
+      `<circle stroke="${A}" cx="13" cy="11" r="5" stroke-width="2.2"/>` +
+      `<circle stroke="${A}" cx="33" cy="14" r="5" stroke-width="2.2"/>` +
+      `<circle stroke="${A}" cx="17" cy="37" r="5" stroke-width="2.2"/>` +
+      `<circle stroke="${A}" cx="37" cy="34" r="5" stroke-width="2.2"/>` +
+      `<circle cx="25" cy="24" r="2.4" fill="${T}" stroke-width="0"/>`,
+  ),
+
   // The aura's zigzag crescent beside the temple's pain rings.
   migraine: g(
     `<circle cx="16" cy="24" r="2.4" fill="${A}" stroke-width="0"/>` +
