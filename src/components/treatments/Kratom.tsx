@@ -212,12 +212,15 @@ export default function Kratom() {
       <P>
         In July 2026 the DEA filed notice of intent to temporarily place 7-OH
         above that natural threshold — along with three related synthetic
-        compounds — into <strong>Schedule I</strong>. The action is written to
-        target the concentrates while leaving natural leaf kratom federally
-        unscheduled; as of late August 2026 the comment period had been
-        extended and the temporary order had not yet taken effect. However it
-        resolves, the direction is clear: regulators are drawing a line
-        between the traditional leaf and the isolated compound.
+        compounds — into <strong>Schedule I</strong>. The first half of that
+        action has now landed: on <strong>August 26, 2026</strong>, a temporary
+        order took effect placing the three synthetics — mitragynine
+        pseudoindoxyl, MGM-15, and MGM-16 — in Schedule I. The order for 7-OH
+        itself is still pending, with public comment on the proposed threshold
+        open through September 10, 2026 — and natural leaf kratom remains
+        federally unscheduled throughout. However the rest resolves, the
+        direction is clear: regulators are drawing a line between the
+        traditional leaf and the isolated compound.
       </P>
 
       <H2 id="legal-status">Where the law stands</H2>
