@@ -51,6 +51,24 @@ export const GLOSSARY: GlossaryTerm[] = [
     href: "/what-is-pain-medicine/how-pain-physicians-train",
   },
   {
+    term: "Boom-bust cycle",
+    definition:
+      "The pattern of overdoing activity on a good day, flaring, and losing the days that follow — which teaches a sensitized pain system that activity is dangerous. Pacing is its evidence-backed replacement.",
+    href: "/treatments/physical-and-behavioral-therapies",
+  },
+  {
+    term: "Budapest criteria",
+    definition:
+      "The clinical diagnostic criteria for complex regional pain syndrome: continuing pain out of proportion to the injury, plus a required mix of sensory, color/temperature, swelling/sweating, and motor or tissue signs.",
+    href: "/conditions/crps",
+  },
+  {
+    term: "Cauda equina syndrome",
+    definition:
+      "A rare surgical emergency in which the nerve bundle at the base of the spine is compressed. Warning signs: new numbness in the groin or inner thighs, trouble controlling bladder or bowels, or progressive leg weakness — seek same-day care.",
+    href: "/conditions/low-back-pain",
+  },
+  {
     term: "CBT-I (cognitive behavioral therapy for insomnia)",
     definition:
       "A structured, non-drug program that retrains sleep habits and the thoughts that fuel insomnia. In people with chronic pain it reliably improves sleep and mood; its direct effect on pain is more modest.",
@@ -98,6 +116,12 @@ export const GLOSSARY: GlossaryTerm[] = [
     href: "/future-of-pain-medicine/precision-pain-medicine",
   },
   {
+    term: "DMARD (disease-modifying antirheumatic drug)",
+    definition:
+      "A medication that treats inflammatory arthritis at its source — suppressing the immune attack itself rather than only the pain. Started early, DMARDs prevent most of the joint destruction that once defined rheumatoid arthritis.",
+    href: "/conditions/arthritis-pain",
+  },
+  {
     term: "Descending modulation",
     definition:
       "The brain's own volume control for pain: circuits running from the brain down to the spinal cord that can amplify or dampen pain signals. Emotion, attention, stress, and expectation all feed into it.",
@@ -140,6 +164,12 @@ export const GLOSSARY: GlossaryTerm[] = [
     href: "/understanding-pain/how-pain-works",
   },
   {
+    term: "Graded motor imagery",
+    definition:
+      "A staged rehabilitation approach for severe limb pain that begins below the threshold of movement — recognizing left from right in photos, imagining movement, then mirror therapy — to redraw the brain's map of the limb before loading it.",
+    href: "/conditions/crps",
+  },
+  {
     term: "Hyperalgesia",
     definition:
       "An exaggerated response to something that is genuinely painful — more pain than the stimulus would normally produce.",
@@ -155,6 +185,18 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: "Interventional pain procedure",
     definition:
       "An image-guided procedure — such as a nerve block, injection, or radiofrequency treatment — used to diagnose or treat pain.",
+  },
+  {
+    term: "Medication-overuse headache",
+    definition:
+      "A near-daily headache caused by using acute pain relievers on too many days per month, over months — it can convert episodic migraine into constant headache that the same medications no longer help. Recognized, it is treatable.",
+    href: "/conditions/migraine",
+  },
+  {
+    term: "Mirror therapy",
+    definition:
+      "A rehabilitation technique in which the painful limb rests hidden behind a mirror while the healthy limb moves in front of it — the brain watches what looks like two healthy limbs, and its blurred map of the painful one begins to redraw.",
+    href: "/conditions/crps",
   },
   {
     term: "Multidisciplinary pain care",
@@ -228,6 +270,12 @@ export const GLOSSARY: GlossaryTerm[] = [
       "A class of strong pain-relieving drugs that act on the body's opioid receptors. Effective but carrying risks of dependence and overdose, so used with careful stewardship.",
   },
   {
+    term: "Pacing",
+    definition:
+      "The activity skill at the center of chronic pain rehabilitation: find the amount you can do even on a bad day, do it consistently, and increase by plan rather than by how you feel — progress by schedule, not by symptoms.",
+    href: "/treatments/physical-and-behavioral-therapies",
+  },
+  {
     term: "Pain catastrophizing",
     definition:
       "An automatic habit of worst-case thinking about pain ('this will never end'). It predicts worse pain and disability — and because it is a learned appraisal habit, not a character flaw, it can be retrained.",
@@ -268,6 +316,12 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "A structured way of measuring how a person responds to controlled sensations, used to help characterize their pain mechanism.",
     href: "/future-of-pain-medicine/precision-pain-medicine",
+  },
+  {
+    term: "Radicular pain",
+    definition:
+      "Pain from an irritated or compressed nerve root at the spine, felt along that nerve's territory — a sharp, electric line down an arm or leg. Sciatica is the everyday name for its most common form.",
+    href: "/conditions/sciatica",
   },
   {
     term: "Radiofrequency ablation",

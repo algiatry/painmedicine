@@ -7,6 +7,27 @@ import ArticleEmblem from "@/components/ArticleEmblem";
 /** Curated flagship reads — keeps the site's strongest pages one click deep. */
 const FEATURED = [
   {
+    eyebrow: "Conditions",
+    title: "Low back pain",
+    blurb:
+      "The world's leading cause of disability: what can actually hurt, why most cases are 'non-specific,' and what an MRI really shows.",
+    href: "/conditions/low-back-pain",
+  },
+  {
+    eyebrow: "Conditions",
+    title: "Migraine",
+    blurb:
+      "An inherited neurological disease, not a bad headache — the four-phase attack, and the designed drugs that changed everything.",
+    href: "/conditions/migraine",
+  },
+  {
+    eyebrow: "Treatments",
+    title: "Comparing your options",
+    blurb:
+      "The honest evidence map: why almost everything helps 'modestly,' and why modest wins stack.",
+    href: "/treatments/comparing-your-options",
+  },
+  {
     eyebrow: "Understanding pain",
     title: "How pain works",
     blurb:
@@ -21,32 +42,11 @@ const FEATURED = [
     href: "/understanding-pain/pain-and-sleep",
   },
   {
-    eyebrow: "Understanding pain",
-    title: "The placebo effect",
-    blurb:
-      "Real, blockable-with-a-drug biology — and what responding to it actually proves about your pain.",
-    href: "/understanding-pain/the-placebo-effect",
-  },
-  {
-    eyebrow: "Understanding pain",
-    title: "Pain and emotion",
-    blurb:
-      "Emotion is written into the definition of pain itself. The shared circuitry, explained.",
-    href: "/understanding-pain/pain-and-emotion",
-  },
-  {
     eyebrow: "The future",
     title: "The pipeline",
     blurb:
       "A source-cited tracker of the pain drugs and devices in development right now.",
     href: "/future-of-pain-medicine/pipeline",
-  },
-  {
-    eyebrow: "The specialty",
-    title: "Your first visit",
-    blurb:
-      "What a first pain-medicine evaluation involves, what to bring, and how long it takes.",
-    href: "/what-is-pain-medicine/your-first-visit",
   },
 ];
 

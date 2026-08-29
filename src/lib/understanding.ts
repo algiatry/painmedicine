@@ -166,9 +166,14 @@ export const ARTICLES: Article[] = [
         blurb: "The signal path behind all three types.",
       },
       {
-        title: "Acute vs. chronic pain",
-        href: "/understanding-pain/acute-vs-chronic-pain",
-        blurb: "Why some pain outlasts the injury that started it.",
+        title: "Neuropathic pain",
+        href: "/conditions/neuropathic-pain",
+        blurb: "The second type in full — when the wiring becomes the alarm.",
+      },
+      {
+        title: "Fibromyalgia",
+        href: "/conditions/fibromyalgia",
+        blurb: "The signature nociplastic condition — the third type, lived.",
       },
     ],
   },
@@ -233,6 +238,11 @@ export const ARTICLES: Article[] = [
         title: "What is pain medicine?",
         href: "/what-is-pain-medicine",
         blurb: "The specialty built to treat pain that persists.",
+      },
+      {
+        title: "Low back pain",
+        href: "/conditions/low-back-pain",
+        blurb: "The three-month line in practice, in the world's most common pain.",
       },
     ],
   },
@@ -379,6 +389,12 @@ export const ARTICLES: Article[] = [
         href: "/understanding-pain/measuring-pain",
         blurb: "Why your clinician asks about sleep — it is part of the picture.",
       },
+      {
+        title: "Fibromyalgia",
+        href: "/conditions/fibromyalgia",
+        blurb:
+          "The condition the deep-sleep-disruption experiment points straight at.",
+      },
     ],
   },
   {
@@ -475,6 +491,11 @@ export const ARTICLES: Article[] = [
         title: "The mind and the brain",
         href: "/future-of-pain-medicine/mind-and-brain",
         blurb: "Treatments now being built on exactly this circuitry.",
+      },
+      {
+        title: "Physical & behavioral therapies",
+        href: "/treatments/physical-and-behavioral-therapies",
+        blurb: "The treatments that work this circuitry today.",
       },
     ],
   },
