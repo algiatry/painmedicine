@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/medical-disclaimer",
     "/find-help",
     "/glossary",
+    "/privacy",
   ].map((path) => ({
     url: `${SITE.url}${path}`,
     lastModified: now,

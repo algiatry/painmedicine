@@ -51,6 +51,7 @@ export const SUPPORT_LINKS = [
   { label: "Glossary", href: "/glossary" },
   { label: "About & Editorial Policy", href: "/about" },
   { label: "Medical Disclaimer", href: "/medical-disclaimer" },
+  { label: "Privacy Policy", href: "/privacy" },
 ] as const;
 
 /**
