@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { NAV, SITE } from "@/lib/site";
 import HeroSignal from "@/components/HeroSignal";
+import HeroPathway from "@/components/HeroPathway";
 import HubIcon from "@/components/HubIcon";
 import ArticleEmblem from "@/components/ArticleEmblem";
 
@@ -88,8 +89,8 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <figure className="hidden lg:block" aria-hidden="true">
-              <HeroSignal className="block h-auto w-full" />
+            <figure className="hidden lg:block">
+              <HeroPathway className="block h-auto w-full" />
             </figure>
           </div>
         </div>
