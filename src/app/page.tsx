@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { NAV, SITE } from "@/lib/site";
 import HeroSignal from "@/components/HeroSignal";
-import HeroPathway from "@/components/HeroPathway";
+import HeroFigure from "@/components/HeroFigure";
 import HubIcon from "@/components/HubIcon";
 import ArticleEmblem from "@/components/ArticleEmblem";
 
@@ -90,7 +90,7 @@ export default function Home() {
               </div>
             </div>
             <figure className="hidden lg:block">
-              <HeroPathway className="block h-auto w-full" />
+              <HeroFigure className="block h-auto w-full" />
             </figure>
           </div>
         </div>
@@ -110,7 +110,7 @@ export default function Home() {
           <div className="mt-8 grid gap-10 lg:grid-cols-12 lg:gap-14">
             <Link
               href={START.href}
-              className="group lg:col-span-5 rounded-xl border border-slate-200 bg-paper/70 p-7 sm:p-8"
+              className="group lg:col-span-5 rounded-xl border border-slate-200 bg-paper/70 p-7 transition-colors hover:border-teal-300 hover:bg-paper sm:p-8"
             >
               <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-teal-700">
                 <HubIcon href={START.href} className="size-3.5" />
@@ -120,9 +120,14 @@ export default function Home() {
                 {START.label}
               </h3>
               <p className="mt-3 text-slate-600">{START.description}</p>
-              <span className="mt-6 inline-block text-sm font-semibold text-teal-700">
+              <span className="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-teal-700">
                 Read the specialty
-                <span aria-hidden="true"> →</span>
+                <span
+                  aria-hidden="true"
+                  className="transition-transform group-hover:translate-x-0.5"
+                >
+                  →
+                </span>
               </span>
             </Link>
 
@@ -131,18 +136,24 @@ export default function Home() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="group flex gap-4 py-4 sm:py-5"
+                    className="group flex items-start gap-4 py-4 sm:py-5"
                   >
                     <span className="mt-0.5 text-teal-700">
                       <HubIcon href={item.href} className="size-5" />
                     </span>
-                    <span>
+                    <span className="min-w-0 flex-1">
                       <span className="block font-semibold text-slate-900 group-hover:text-teal-700">
                         {item.label}
                       </span>
                       <span className="mt-1 block text-sm text-slate-600">
                         {item.description}
                       </span>
+                    </span>
+                    <span
+                      aria-hidden="true"
+                      className="mt-0.5 shrink-0 text-slate-300 transition-all group-hover:translate-x-0.5 group-hover:text-teal-700"
+                    >
+                      →
                     </span>
                   </Link>
                 </li>
@@ -174,7 +185,7 @@ export default function Home() {
                 className="border-t border-slate-200 py-5 first:border-t-0 sm:first:border-t sm:[&:nth-child(-n+2)]:border-t-0"
               >
                 <Link href={item.href} className="group flex gap-4">
-                  <span className="mt-0.5 flex size-11 shrink-0 items-center justify-center rounded-lg border border-slate-200/80 bg-white">
+                  <span className="mt-0.5 flex size-11 shrink-0 items-center justify-center rounded-lg border border-slate-200/80 bg-white transition-colors group-hover:border-teal-300">
                     <ArticleEmblem
                       slug={item.href.split("/").filter(Boolean).pop() ?? ""}
                       className="size-7"
