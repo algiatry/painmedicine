@@ -1,4 +1,5 @@
 import { BRAND } from "@/lib/brand";
+import { FIG } from "@/lib/fig";
 
 /**
  * The brand mark, given room to breathe: a damped waveform settling to rest.
@@ -47,9 +48,12 @@ export default function HeroSignal({
       xmlns="http://www.w3.org/2000/svg"
     >
       <defs>
+        {/* Same amber→teal story as the desktop HeroFigure: the pain signal
+            (amber) settling into the nervous system's control (teal). */}
         <linearGradient id={strokeId} x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0" stopColor={BRAND.tealDark} />
-          <stop offset="0.55" stopColor={BRAND.teal} />
+          <stop offset="0" stopColor={FIG.signal} />
+          <stop offset="0.28" stopColor={FIG.signalDark} />
+          <stop offset="0.58" stopColor={BRAND.teal} />
           <stop offset="1" stopColor="#2dd4bf" />
         </linearGradient>
         <radialGradient id={glowId} cx="0.72" cy="0.42" r="0.75">
