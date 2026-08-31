@@ -64,6 +64,83 @@ function ScaleFigure() {
   );
 }
 
+/** Historical artifact, drawn as one: the 1947 dol scale, muted and retired. */
+function DolFigure() {
+  const DOL_W = 52;
+  const X0 = 46;
+  const x = (d: number) => X0 + d * DOL_W;
+  const jnds: number[] = [];
+  for (let d = 0.5; d <= 10; d += 1) jnds.push(d);
+  const evens = [0, 2, 4, 6, 8, 10];
+  return (
+    <Figure caption="The dol scale of 1947 — one dol = two just-noticeable differences of pain, topping out at 10.5. Other laboratories couldn't reproduce it, and no unit of pain has entered practice since.">
+      <svg
+        role="img"
+        aria-labelledby="dol-title dol-desc"
+        viewBox="0 0 660 196"
+        className="mx-auto block h-auto w-full max-w-2xl"
+      >
+        <title id="dol-title">The dol scale, 1947 — a retired unit of pain</title>
+        <desc id="dol-desc">
+          A historical scale from 0 to 10.5 dols with a small tick at every
+          half-dol, a bracket showing that one dol equals two just-noticeable
+          differences, a marker near 8 dols where the heat stimulus began to
+          damage skin, and a note that the unit was never adopted.
+        </desc>
+
+        <text x={X0} y="39" fontSize="12.5" fontWeight="600" fill={FIG.textMid}>
+          The dol, 1947
+        </text>
+        <g>
+          <rect x="520" y="22" width="118" height="26" rx="6" fill="none" stroke={FIG.faint} strokeWidth="1.2" strokeDasharray="4 4" />
+          <text x="579" y="39" textAnchor="middle" fontSize="11" letterSpacing="0.08em" fill={FIG.muted}>
+            NEVER ADOPTED
+          </text>
+        </g>
+
+        {/* one dol = two JNDs bracket */}
+        <g stroke={FIG.textMid} strokeWidth="1.3" fill="none">
+          <path d={`M${x(1)} 92 v-6 h${DOL_W} v6`} />
+          <line x1={x(1.5)} y1="86" x2={x(1.5)} y2="92" />
+        </g>
+        <text x={x(1.5)} y="74" textAnchor="middle" fontSize="12" fill={FIG.textMid}>
+          1 dol = 2 just-noticeable differences
+        </text>
+
+        {/* ~8 dols: the stimulus starts damaging skin */}
+        <line x1={x(8)} y1="62" x2={x(8)} y2="110" stroke={FIG.signalDark} strokeWidth="1.5" strokeDasharray="3 4" />
+        <text x={x(8)} y="54" textAnchor="middle" fontSize="12" fill={FIG.signalText}>
+          ≈ 8 dols — skin damage begins
+        </text>
+
+        {/* the scale bar */}
+        <rect x={x(0)} y="110" width={10.5 * DOL_W} height="12" rx="6" fill={FIG.soft} stroke={FIG.line} strokeWidth="1" />
+        {jnds.map((d) => (
+          <line key={d} x1={x(d)} y1="122" x2={x(d)} y2="127" stroke={FIG.faint} strokeWidth="1" />
+        ))}
+        {evens.map((d) => (
+          <g key={d}>
+            <line x1={x(d)} y1="122" x2={x(d)} y2="132" stroke={FIG.muted} strokeWidth="1.3" />
+            <text x={x(d)} y="150" textAnchor="middle" fontSize="12" fontWeight="600" fill={FIG.textMid}>
+              {d}
+            </text>
+          </g>
+        ))}
+        <text x={x(10.5) + 8} y="120" fontSize="11" fill={FIG.muted}>
+          10.5
+        </text>
+
+        <text x={X0} y="178" fontSize="12" fill={FIG.muted}>
+          first flicker of pain
+        </text>
+        <text x="638" y="178" textAnchor="end" fontSize="12" fill={FIG.muted}>
+          the most a person could bear
+        </text>
+      </svg>
+    </Figure>
+  );
+}
+
 const PEOPLE = [
   {
     label: "Person A",
@@ -157,6 +234,49 @@ export default function MeasuringPain() {
         <strong>should be respected</strong>. Your account is not a soft
         substitute for &ldquo;real&rdquo; data — for pain, it{" "}
         <em>is</em> the data.
+      </P>
+
+      <H2 id="the-dol">The unit of pain that almost was</H2>
+      <P>
+        Science did try to give pain a unit. In the 1940s a Cornell team —
+        James Hardy, Harold Wolff and Helen Goodell — built an instrument
+        called the <strong>dolorimeter</strong>: a lamp that focused a precise
+        dose of radiant heat onto a small patch of skin, usually the forehead,
+        blackened with ink so that every complexion absorbed the same energy.
+        Turning the heat up in careful steps, they counted twenty-one
+        &ldquo;just noticeable differences&rdquo; between the first flicker of
+        pain and the most a person could bear.
+      </P>
+      <P>
+        Two of those steps made one <strong>dol</strong> — from{" "}
+        <em>dolor</em>, the Latin word for pain — and the result was a scale
+        from 0 to 10.5 dols. It was a serious, careful piece of science: at
+        roughly 8 dols the heat was intense enough to start damaging skin,
+        which tells you how far the method was willing to go in search of a
+        number.
+      </P>
+      <DolFigure />
+      <P>
+        It didn&rsquo;t hold. Other laboratories couldn&rsquo;t reproduce the
+        results, and in the 1950s the anesthesiologist Henry Beecher — who had
+        treated soldiers on World War II battlefields and seen badly wounded
+        men report strikingly little pain — put his finger on the deeper
+        problem: how much something hurts depends on{" "}
+        <strong>what the pain means to the person</strong>. A lamp can be
+        calibrated. Meaning can&rsquo;t.
+      </P>
+      <P>
+        So there is no unit of pain — no dol, no degree, no decibel — and that
+        failure is this whole page in miniature. Pain isn&rsquo;t a stimulus;
+        it&rsquo;s an experience the brain assembles, shaped by{" "}
+        <Link
+          href="/understanding-pain/pain-and-emotion"
+          className="text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600"
+        >
+          attention, emotion and context
+        </Link>
+        . Medicine stopped trying to build a better lamp and started asking
+        better questions — which is exactly what the tools below are.
       </P>
 
       <H2 id="tools">The tools clinicians use</H2>

@@ -252,11 +252,11 @@ export const ARTICLES: Article[] = [
     slug: "measuring-pain",
     title: "Measuring Pain",
     description:
-      "Why pain is so hard to measure, what the 0-to-10 scale can and can't capture, and how to describe your pain so your care team truly understands it.",
+      "Why pain is so hard to measure, the 1947 attempt to give it a unit (the dol), what the 0-to-10 scale can and can't capture, and how to describe your pain so your care team truly understands it.",
     status: "sourced",
-    lastUpdated: LAST_UPDATED,
+    lastUpdated: "2026-08-31",
     answer:
-      "Pain is subjective — there is no blood test or scanner that measures it. Clinicians use rating tools like the 0-to-10 numeric scale, the faces scale, and questionnaires to track it over time. A single number is useful shorthand, but describing your pain's quality, timing, and effect on your life tells your care team far more.",
+      "Pain is subjective — there is no blood test or scanner that measures it, and no unit: researchers proposed the 'dol' in 1947, but it never held up outside the lab. Clinicians use rating tools like the 0-to-10 numeric scale, the faces scale, and questionnaires to track it over time. A single number is useful shorthand, but describing your pain's quality, timing, and effect on your life tells your care team far more.",
     faqs: [
       {
         question: "Is a higher pain number always worse?",
@@ -272,6 +272,16 @@ export const ARTICLES: Article[] = [
         question: "Why does my clinician ask about mood and sleep?",
         answer:
           "Pain, mood, and sleep strongly influence one another. Poor sleep and low mood can amplify pain, and pain disrupts both in return. Good pain care looks at the whole picture, not intensity alone, because addressing these together often helps more than treating pain by itself.",
+      },
+      {
+        question: "Can pain be measured in units, like temperature in degrees?",
+        answer:
+          "No — there is no accepted unit of pain. Researchers tried: in 1947 a Cornell team proposed the 'dol' and built a 0-to-10.5 scale from controlled heat stimuli, but other laboratories could not reproduce the results and the unit was abandoned. Modern medicine measures pain by structured self-report instead, because your own report is the closest thing there is to the experience itself.",
+      },
+      {
+        question: "What is a 'dol' in pain measurement?",
+        answer:
+          "The dol — from dolor, the Latin word for pain — was a proposed unit of pain intensity from the 1940s. One dol equalled two 'just noticeable differences' in pain, on a scale that ran from 0 to 10.5. It survives in the history of pain research and in trivia, but it was never adopted in clinical care, and none of the pain scales used today are built on it.",
       },
     ],
     references: [
@@ -295,6 +305,22 @@ export const ARTICLES: Article[] = [
         title: "Pain — patient information",
         url: "https://www.ninds.nih.gov/health-information/disorders/pain",
       },
+      {
+        source: "J Clin Invest (1947)",
+        title:
+          "Hardy, Wolff & Goodell — Discrimination of differences in intensity of a pain stimulus as a basis of a scale of pain intensity (the dol)",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC439460/",
+      },
+      {
+        source: "Pharmacol Rev (1957)",
+        title: "Beecher — The measurement of pain",
+        url: "https://pubmed.ncbi.nlm.nih.gov/13431416/",
+      },
+      {
+        source: "Wellcome Collection",
+        title: "Getting the measure of pain — the dolorimeter's rise and fall",
+        url: "https://wellcomecollection.org/stories/getting-the-measure-of-pain",
+      },
     ],
     related: [
       {
@@ -306,6 +332,11 @@ export const ARTICLES: Article[] = [
         title: "The three types of pain",
         href: "/understanding-pain/types-of-pain",
         blurb: "Describing quality helps identify the mechanism.",
+      },
+      {
+        title: "Pain and emotion",
+        href: "/understanding-pain/pain-and-emotion",
+        blurb: "Why what pain means changes how much it hurts — the insight that retired the dol.",
       },
     ],
   },
