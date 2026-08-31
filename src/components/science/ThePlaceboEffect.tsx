@@ -163,6 +163,46 @@ export default function ThePlaceboEffect() {
         actually demonstrates is that your brain owns a working pharmacy.
       </P>
 
+      <H2 id="placebo-vs-placebo-effect">The pill, the effect, the response</H2>
+      <P>
+        Three terms do different jobs here, and telling them apart clears up
+        most of the confusion:
+      </P>
+      <ul className="mt-4 space-y-3 text-slate-700">
+        <li className="flex gap-3">
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span>
+            <strong>A placebo</strong> — the thing itself: a sugar pill, a
+            saline injection, a sham procedure. Inert by design; it contains
+            nothing that acts on the body.
+          </span>
+        </li>
+        <li className="flex gap-3">
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span>
+            <strong>The placebo effect</strong> — the genuine neurobiological
+            response: real changes in symptoms produced by expectation,
+            context, and the ritual of care. This is what the rest of this page
+            is about.
+          </span>
+        </li>
+        <li className="flex gap-3">
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span>
+            <strong>The placebo response</strong> — what a trial&rsquo;s
+            placebo arm measures. It runs larger than the placebo effect,
+            because it also sweeps in natural recovery and the statistical
+            tendency of symptoms measured at their worst to drift back toward
+            typical.
+          </span>
+        </li>
+      </ul>
+      <P>
+        The pill is inert. The effect is not. Keep those two apart and the
+        science below reads cleanly — and the phrase &ldquo;it was{" "}
+        <em>just</em> a placebo&rdquo; stops making sense.
+      </P>
+
       <H2 id="block-it">Relief you can block with a drug</H2>
       <PathwayFigure />
       <P>

@@ -535,12 +535,22 @@ export const ARTICLES: Article[] = [
     slug: "the-placebo-effect",
     title: "The Placebo Effect",
     description:
-      "The placebo effect in pain is real, measurable biology: expectation switching on the brain's own pain-relief chemistry. What it proves about your pain — and what it can't do.",
+      "What the placebo effect is and how it works — expectation switching on the brain's own pain-relief chemistry — how a placebo differs from the placebo effect, what it proves about your pain, and what it can't do.",
     status: "sourced",
-    lastUpdated: "2026-08-27",
+    lastUpdated: "2026-08-31",
     answer:
-      "The placebo effect in pain is not imagination — it is expectation activating the brain's own pain-modulation system, including its natural opioid chemistry. Blocking that chemistry with a drug blocks placebo relief. Placebos can ease symptoms like pain and nausea, even when people know they're taking one, but they do not treat the underlying disease.",
+      "The placebo effect is a real, measurable response to the expectation of treatment — not imagination. A placebo is the inert treatment (a sugar pill, a saline shot); the placebo effect is your nervous system's genuine response to it. In pain, expectation activates the brain's own pain-modulation system, including its natural opioid chemistry — blocking that chemistry with a drug blocks placebo relief. Placebos can ease symptoms like pain and nausea, even when people know they're taking one, but they do not treat the underlying disease.",
     faqs: [
+      {
+        question: "What is the placebo effect, in plain terms?",
+        answer:
+          "It is a real improvement in symptoms produced by the expectation and ritual of treatment rather than by the treatment's ingredients. In pain it has a known biological pathway: expecting relief engages the brain's descending pain-control system and its own opioid chemistry, and measured pain signaling genuinely drops — an effect strong enough to be blocked by an opioid-blocking drug.",
+      },
+      {
+        question: "What is the difference between a placebo and the placebo effect?",
+        answer:
+          "A placebo is the inert thing — a sugar pill, a saline injection, a sham procedure. The placebo effect is your nervous system's real response to receiving it: measurable symptom change driven by expectation and context. Trials also speak of the 'placebo response,' which runs larger still because it adds natural recovery and symptoms drifting back from their worst. The pill is inert; the effect is not.",
+      },
       {
         question: "If a placebo helped me, does that mean my pain wasn't real?",
         answer:
@@ -609,6 +619,12 @@ export const ARTICLES: Article[] = [
         source: "NIH / NCCIH",
         title: "Placebo Effect — patient information",
         url: "https://www.nccih.nih.gov/health/placebo-effect",
+      },
+      {
+        source: "Psychother Psychosom (2018)",
+        title:
+          "Evers et al. — Implications of placebo and nocebo effects for clinical practice: expert consensus (terminology)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/29895014/",
       },
       {
         source: "AMA",
