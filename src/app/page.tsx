@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { NAV, SITE } from "@/lib/site";
+import JsonLd from "@/components/JsonLd";
 import HeroSignal from "@/components/HeroSignal";
 import HeroFigure from "@/components/HeroFigure";
 import HubIcon from "@/components/HubIcon";
@@ -164,6 +165,57 @@ export default function Home() {
       </section>
 
       <section
+        aria-labelledby="map-heading"
+        className="border-t border-slate-200/70 py-14 sm:py-16"
+      >
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="max-w-3xl">
+            <h2 id="map-heading" className="text-2xl font-semibold text-slate-900">
+              The territory, briefly
+            </h2>
+            <div className="mt-6 space-y-5 text-slate-600">
+              <p>
+                Pain medicine is a real medical specialty – physicians who
+                train for years in exactly one problem, yours. Most people
+                living with pain have never been told that it exists, what a
+                pain specialist actually does, or how to get referred to one.
+                That is where this site begins:{" "}
+                <Link
+                  href="/what-is-pain-medicine"
+                  className="font-semibold text-teal-700 hover:underline"
+                >
+                  what pain medicine is
+                </Link>{" "}
+                and how the specialty thinks.
+              </p>
+              <p>
+                Everything here is written from primary sources, reviewed
+                against current clinical guidelines, and kept free of ads,
+                sponsorships, and product sales. We are not your doctor, and
+                we say so plainly – the goal is that you walk into your next
+                appointment knowing the terrain, asking sharper questions, and
+                expecting more from your care. Start with{" "}
+                <Link
+                  href="/what-is-pain-medicine"
+                  className="font-semibold text-teal-700 hover:underline"
+                >
+                  the specialty itself
+                </Link>
+                , or jump straight to the{" "}
+                <Link
+                  href="/glossary"
+                  className="font-semibold text-teal-700 hover:underline"
+                >
+                  glossary
+                </Link>{" "}
+                whenever a term gets in the way.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
         aria-labelledby="featured-heading"
         className="border-t border-slate-200/70 bg-paper/50 py-14 sm:py-16"
       >
@@ -208,6 +260,17 @@ export default function Home() {
           </ol>
         </div>
       </section>
+
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: SITE.name,
+          alternateName: SITE.shortName,
+          url: SITE.url,
+          description: SITE.description,
+        }}
+      />
     </div>
   );
 }

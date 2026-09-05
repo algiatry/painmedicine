@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>B lockup — chrome spacing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Source Sans 3", sans-serif; color: #0f172a; background: #e2e8f0; }
+    header {
+      background: rgba(255,255,255,.9);
+      border-bottom: 1px solid #e2e8f0;
+      max-width: 1152px;
+      margin: 40px auto 0;
+    }
+    .row {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 24px; padding: 12px 24px;
+    }
+    a.lock { display: flex; align-items: center; gap: 8px; text-decoration: none; color: inherit; min-height: 44px; }
+    .word { display: flex; align-items: baseline; gap: 6px; }
+    .name { font-size: 20px; font-weight: 600; letter-spacing: -0.03em; }
+    .dot { font-size: 11px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: #0f766e; }
+    nav ul { display: flex; gap: 20px; list-style: none; }
+    nav a { font-size: 14px; font-weight: 500; color: #475569; text-decoration: none; }
+    main { max-width: 1152px; margin: 0 auto; background: #fff; padding: 48px 24px 56px; }
+    .k { font-size: 14px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: #0f766e; }
+    h1 { margin-top: 16px; font-size: 40px; letter-spacing: -0.03em; font-weight: 600; }
+    p.lede { margin-top: 24px; font-size: 18px; color: #475569; max-width: 40rem; line-height: 1.65; }
+    .caption { max-width: 1152px; margin: 8px auto 40px; font-size: 13px; color: #64748b; padding: 0 8px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="row">
+      <a class="lock" href="#">
+        <svg width="27" height="22" viewBox="3.5 5.2 25.6 21.2" aria-hidden="true">
+          <path d="M5.2 17 L9 7 L13.2 24.6 L17.4 12.2 L20.8 19.6 L23.8 17 L27.6 17"
+                fill="none" stroke="#0f766e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="word">
+          <span class="name">Pain Medicine</span>
+          <span class="dot">.com</span>
+        </span>
+      </a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#">What Is Pain Medicine</a></li>
+          <li><a href="#">Understanding Pain</a></li>
+          <li><a href="#">Treatments</a></li>
+          <li><a href="#">Conditions</a></li>
+          <li><a href="#">Future of Pain Medicine</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <p class="k">Patient-first pain education</p>
+    <h1>Pain is real. So are your options.</h1>
+    <p class="lede">Pain Medicine exists to answer two questions clearly and honestly: what can pain medicine do for you today, and what is medical science building for tomorrow?</p>
+  </main>
+  <p class="caption">Header B: signal at cap-height, 8px to the word, .com on the baseline. Hero top padding 48px — identity sits next to the thesis instead of a 96px desert.</p>
+</body>
+</html>

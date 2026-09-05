@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pain Medicine — upper-left lockup revisions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --teal: #0f766e;
+      --ink: #0f172a;
+      --muted: #475569;
+      --paper: #f4f8f7;
+      --line: #e2e8f0;
+      --white: #fff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.5;
+      text-wrap: pretty;
+    }
+    .page { max-width: 1120px; padding: 48px 40px 80px; }
+    h1 { font-size: 28px; letter-spacing: -0.03em; }
+    .lede { margin-top: 10px; max-width: 46rem; color: var(--muted); font-size: 17px; }
+    .obj {
+      margin: 28px 0 8px;
+      padding: 16px 18px;
+      background: var(--paper);
+      border-left: 3px solid var(--teal);
+      font-size: 15px;
+      color: var(--ink);
+    }
+    .obj strong { color: var(--teal); }
+    h2 {
+      margin: 48px 0 14px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--teal);
+    }
+    .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; }
+    article {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    article.rec { border-color: var(--teal); box-shadow: 0 0 0 1px var(--teal); }
+    .tag {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--teal);
+      padding: 8px 14px 0;
+    }
+    article h3 { font-size: 16px; padding: 4px 14px 10px; letter-spacing: -0.02em; }
+    .chrome {
+      background: var(--white);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      padding: 14px 14px;
+      display: flex;
+      align-items: center;
+      min-height: 64px;
+    }
+    .og-crop {
+      background: var(--paper);
+      padding: 22px 14px 28px;
+      border-bottom: 1px solid var(--line);
+      position: relative;
+    }
+    .og-crop::before {
+      content: "";
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 6px; background: var(--teal);
+    }
+    .note { padding: 12px 14px 16px; font-size: 13px; color: var(--muted); flex: 1; }
+    .note em { color: var(--ink); font-style: normal; font-weight: 600; }
+    .why { font-size: 12px; color: var(--muted); padding: 0 14px 16px; }
+    .why b { color: var(--ink); font-weight: 600; }
+    a.lock {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: inherit;
+    }
+    .name { font-size: 20px; font-weight: 600; letter-spacing: -0.03em; line-height: 1; }
+    .dot {
+      font-size: 11px; font-weight: 600;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--teal);
+    }
+    .kicker {
+      font-size: 10px; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--teal); margin-top: 4px;
+    }
+    .stack { display: flex; flex-direction: column; }
+    .word { display: flex; align-items: baseline; gap: 8px; }
+    svg.tile { display: block; flex-shrink: 0; }
+    svg.signal { display: block; flex-shrink: 0; }
+    .verdict {
+      margin-top: 40px;
+      padding: 22px 24px;
+      background: var(--paper);
+      border-radius: 12px;
+    }
+    .verdict h2 { margin: 0 0 8px; }
+    .verdict p { font-size: 15px; color: var(--ink); max-width: 46rem; }
+    .verdict ol { margin: 12px 0 0 20px; color: var(--muted); font-size: 14px; }
+    .verdict li { margin-bottom: 6px; }
+    @media (max-width: 860px) {
+      .page { padding: 28px 16px 56px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <h1>Upper-left lockup — three revisions</h1>
+    <p class="lede">
+      The site is a patient-first reference, not a clinic, not a journal, not a health app.
+      The upper-left is the “who is speaking” moment. Right now it speaks in an app-icon dialect
+      (rounded teal tile) that fights that job — especially on the share card, where the same tile
+      already sits giant on the right.
+    </p>
+    <p class="obj">
+      <strong>Objective filter:</strong> every lockup has to say “calm educational reference for a person in pain,”
+      own <em>painmedicine.com</em> against the OUP journal <em>Pain Medicine</em>, and keep the settling-signal
+      story readable at 32px. If it looks like Apple Health, a clinic portal, or a journal masthead, it fails.
+    </p>
+
+    <h2>In header chrome + share-card crop</h2>
+    <div class="grid">
+
+      <!-- A -->
+      <article>
+        <div class="tag">A · Conservative</div>
+        <h3>Optical tile</h3>
+        <div class="chrome">
+          <a class="lock" href="#">
+            <svg class="tile" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+              <rect width="32" height="32" rx="8" fill="#0f766e"/>
+              <path d="M5.2 17 L9 7 L13.2 24.6 L17.4 12.2 L20.8 19.6 L23.8 17 L27.6 17"
+                    fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="word">
+              <span class="name">Pain Medicine</span>
+              <span class="dot">.com</span>
+            </span>
+          </a>
+        </div>
+        <div class="og-crop">
+          <a class="lock" href="#">
+            <svg class="tile" width="40" height="40" viewBox="0 0 32 32" aria-hidden="true">
+              <rect width="32" height="32" rx="8" fill="#0f766e"/>
+              <path d="M5.2 17 L9 7 L13.2 24.6 L17.4 12.2 L20.8 19.6 L23.8 17 L27.6 17"
+                    fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="name">Pain Medicine</span>
+          </a>
+        </div>
+        <p class="note">
+          What shipped. Lowest risk. <em>Fails the objective filter:</em> the tile is a product icon,
+          and on the OG card it duplicates the 320px mark. At 32px the rest line is the first thing to vanish,
+          so it still reads heartbeat-adjacent.
+        </p>
+        <p class="why"><b>Keep from this:</b> the .com. That’s how we aren’t the journal.</p>
+      </article>
+
+      <!-- B -->
+      <article class="rec">
+        <div class="tag">B · Strong-fit · recommended</div>
+        <h3>Editorial signal</h3>
+        <div class="chrome">
+          <a class="lock" href="#">
+            <svg class="signal" width="36" height="28" viewBox="0 0 32 32" aria-hidden="true">
+              <path d="M5.2 17 L9 7 L13.2 24.6 L17.4 12.2 L20.8 19.6 L23.8 17 L27.6 17"
+                    fill="none" stroke="#0f766e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="stack">
+              <span class="word">
+                <span class="name">Pain Medicine</span>
+                <span class="dot">.com</span>
+              </span>
+            </span>
+          </a>
+        </div>
+        <div class="og-crop">
+          <a class="lock" href="#">
+            <span class="word">
+              <span class="name">Pain Medicine</span>
+              <span class="dot">.com</span>
+            </span>
+          </a>
+        </div>
+        <p class="note">
+          Drop the tile in chrome. The signal sits at cap-height, teal on paper — a publication mark,
+          not an app. <em>On the share card, drop the mini image entirely.</em> Upper-left becomes the name;
+          the giant tile on the right is the only picture. Favicon/PWA keep the teal tile — that’s the right
+          surface for an icon.
+        </p>
+        <p class="why"><b>Why it wins:</b> matches YMYL-reference posture. Sister-site instinct (name first). Settling still present without looking like vitals software.</p>
+      </article>
+
+      <!-- C -->
+      <article>
+        <div class="tag">C · Divergent</div>
+        <h3>Rest-line masthead</h3>
+        <div class="chrome">
+          <a class="lock" href="#" style="align-items:flex-end; gap:0; flex-direction:column;">
+            <span class="word">
+              <span class="name">Pain Medicine</span>
+              <span class="dot">.com</span>
+            </span>
+            <svg width="188" height="16" viewBox="0 0 32 32" preserveAspectRatio="none" aria-hidden="true" style="margin-top:4px;">
+              <path d="M5.2 17 L9 7 L13.2 24.6 L17.4 12.2 L20.8 19.6 L23.8 17 L27.6 17"
+                    fill="none" stroke="#0f766e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        <div class="og-crop">
+          <a class="lock" href="#" style="align-items:flex-end; gap:0; flex-direction:column;">
+            <span class="word">
+              <span class="name">Pain Medicine</span>
+              <span class="dot">.com</span>
+            </span>
+            <svg width="200" height="18" viewBox="0 0 32 32" preserveAspectRatio="none" aria-hidden="true" style="margin-top:6px;">
+              <path d="M5.2 17 L9 7 L13.2 24.6 L17.4 12.2 L20.8 19.6 L23.8 17 L27.6 17"
+                    fill="none" stroke="#0f766e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        <p class="note">
+          The name <em>is</em> the signal. Pain, then a settling rule, then rest under .com.
+          Most on-metaphor. Weakest as a system: stretching the path into an underline
+          turns it back into a chart — the OG mistake we just walked away from — and it
+          doesn’t survive 32px chrome or a favicon.
+        </p>
+        <p class="why"><b>Steal from this:</b> the idea that the rest line is the brand, not the spike. Don’t steal the stretch.</p>
+      </article>
+    </div>
+
+    <div class="verdict">
+      <h2>Recommendation</h2>
+      <p>
+        Ship <strong>B</strong> in two surfaces, keep the tile only where an icon is required:
+      </p>
+      <ol>
+        <li><strong>Header / footer</strong> — free-floating teal signal + “Pain Medicine” + .com. No rounded square. That’s the publication.</li>
+        <li><strong>OG / Twitter upper-left</strong> — wordmark + .com only. Delete the 52px mini-tile. The 320px tile on the right already is the image; repeating it upper-left makes the card look like a template.</li>
+        <li><strong>Favicon, Apple, PWA, social avatar</strong> — keep today’s teal tile. Those surfaces need a contained icon. Don’t force the editorial lockup into a 16px tab.</li>
+      </ol>
+      <p style="margin-top:14px;color:var(--muted);font-size:14px;">
+        Optional later, not in B: a one-line kicker under the wordmark (“Patient guide” / “The specialty, explained”)
+        if journal-collision shows up in the wild. Don’t add it until the name-plus-.com isn’t doing the job.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
