@@ -28,6 +28,11 @@ import ArthritisPain from "./conditions/ArthritisPain";
 import Fibromyalgia from "./conditions/Fibromyalgia";
 import CancerPain from "./conditions/CancerPain";
 import Crps from "./conditions/Crps";
+import NeckPain from "./conditions/NeckPain";
+import SpinalStenosis from "./conditions/SpinalStenosis";
+import DiabeticNeuropathy from "./conditions/DiabeticNeuropathy";
+import Endometriosis from "./conditions/Endometriosis";
+import PersistentPostsurgicalPain from "./conditions/PersistentPostsurgicalPain";
 
 /**
  * Maps an article slug to the component that renders its illustrated body.
@@ -64,4 +69,9 @@ export const ARTICLE_BODIES: Record<string, ComponentType> = {
   fibromyalgia: Fibromyalgia,
   "cancer-pain": CancerPain,
   crps: Crps,
+  "neck-pain": NeckPain,
+  "spinal-stenosis": SpinalStenosis,
+  "diabetic-neuropathy": DiabeticNeuropathy,
+  endometriosis: Endometriosis,
+  "persistent-postsurgical-pain": PersistentPostsurgicalPain,
 };

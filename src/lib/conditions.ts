@@ -673,6 +673,471 @@ export const CONDITION_ARTICLES: Article[] = [
 
   {
     hub: HUB,
+    slug: "persistent-postsurgical-pain",
+    title: "Persistent Postsurgical Pain",
+    description:
+      "Why pain can continue after an operation has healed: the three-month definition, nerve injury and sensitization, who is at higher risk, what must be ruled out, and how transitional pain care can prevent a difficult recovery from becoming a permanent handoff.",
+    status: "sourced",
+    lastUpdated: "2026-09-05",
+    answer:
+      "Persistent postsurgical pain is new pain, or pain made worse by an operation, that continues for at least three months and is localized to the surgical area or a related nerve territory. It is not automatically evidence that the operation failed. Infection, recurrence, mechanical complications, and other causes must be excluded; then treatment is matched to tissue, nerve, and sensitization mechanisms.",
+    faqs: [
+      {
+        question: "How long is pain normal after surgery?",
+        answer:
+          "Recovery time depends on the operation, but pain should generally trend toward less intensity and less interference as healing progresses. Persistent postsurgical pain is formally considered when new or increased pain lasts at least three months and other causes have been excluded. Severe pain, worsening pain, or pain accompanied by fever, drainage, swelling, chest symptoms, or new weakness should be assessed sooner rather than waiting for that threshold.",
+      },
+      {
+        question: "Does pain after surgery mean something went wrong?",
+        answer:
+          "Not necessarily. An operation can be technically successful while injured small nerves, scar sensitivity, altered movement, or nervous-system amplification continue to generate pain. But persistent or worsening pain still deserves evaluation for infection, poor healing, recurrence, implant or structural problems, and a new condition. Chronic pain should be diagnosed after those alternatives are considered, not instead of considering them.",
+      },
+      {
+        question: "What does nerve pain after surgery feel like?",
+        answer:
+          "Neuropathic postsurgical pain may feel burning, electric, shooting, stabbing, numb yet painful, or intensely sensitive to light touch around a scar or along a nerve territory. A patch of numbness alone can be expected after some incisions; expanding numbness, new weakness, or severe electric pain deserves clinical assessment.",
+      },
+      {
+        question: "Who is more likely to develop persistent postsurgical pain?",
+        answer:
+          "Risk is higher with pain already present before surgery, severe or prolonged acute postoperative pain, prior chronic pain, repeated operations, nerve injury, and some psychological and social stressors. Certain procedures carry higher risk because major nerves or sensitive tissues are involved. Risk factors are not destiny or blame; they identify people who may benefit from earlier, better-coordinated pain care.",
+      },
+      {
+        question: "How is persistent pain after surgery treated?",
+        answer:
+          "Treatment begins by identifying the dominant mechanism. Options may include graded rehabilitation, scar and sensory desensitization, treatment for neuropathic pain, psychological pain therapies, sleep support, and selected diagnostic or therapeutic procedures. A transitional or multidisciplinary pain service can coordinate these pieces and manage medication safely while function returns.",
+      },
+      {
+        question: "When should postoperative pain be evaluated urgently?",
+        answer:
+          "Seek urgent care for trouble breathing, chest pain, fainting, sudden confusion, uncontrolled bleeding, new one-sided leg swelling, rapidly worsening pain, fever with spreading redness or drainage, a cold or pale limb, new loss of strength or sensation, or loss of bladder or bowel control. Follow the operation-specific emergency instructions from the surgical team.",
+      },
+    ],
+    references: [
+      {
+        source: "PAIN / PubMed",
+        title: "Schug et al. — The IASP classification of chronic pain for ICD-11: chronic postsurgical or posttraumatic pain",
+        url: "https://pubmed.ncbi.nlm.nih.gov/30586070/",
+      },
+      {
+        source: "The Lancet / PubMed",
+        title: "Glare, Aubrey & Myles — Transition from acute to chronic pain after surgery",
+        url: "https://pubmed.ncbi.nlm.nih.gov/30983589/",
+      },
+      {
+        source: "BJA Education / PMC",
+        title: "Chronic post-surgical pain — update on incidence, risk factors and preventive treatment options",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9039436/",
+      },
+      {
+        source: "International Association for the Study of Pain",
+        title: "Prevention of chronic post-surgical pain",
+        url: "https://www.iasp-pain.org/resources/fact-sheets/prevention-of-chronic-post-surgical-pain/",
+      },
+      {
+        source: "PAIN / PubMed",
+        title: "Haroutiunian et al. — The neuropathic component in persistent postsurgical pain: systematic review",
+        url: "https://pubmed.ncbi.nlm.nih.gov/23273105/",
+      },
+      {
+        source: "J Pain Research / PMC",
+        title: "Katz et al. — Toronto General Hospital Transitional Pain Service: development and implementation",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4670028/",
+      },
+    ],
+    related: [
+      {
+        title: "Acute vs. chronic pain",
+        href: "/understanding-pain/acute-vs-chronic-pain",
+        blurb: "What changes when a protective postoperative signal persists beyond healing.",
+      },
+      {
+        title: "Neuropathic pain",
+        href: "/conditions/neuropathic-pain",
+        blurb: "How injured nerves generate burning, electric, numb-yet-painful symptoms.",
+      },
+      {
+        title: "Physical and behavioral therapies",
+        href: "/treatments/physical-and-behavioral-therapies",
+        blurb: "The rehabilitation and pain-skills side of postsurgical recovery.",
+      },
+    ],
+  },
+
+  {
+    hub: HUB,
+    slug: "endometriosis",
+    title: "Endometriosis",
+    description:
+      "What endometriosis is, why pain can spread beyond visible lesions, how diagnosis has moved beyond mandatory surgery, and how hormonal treatment, surgery, pelvic-floor care, and fertility goals shape an individualized plan.",
+    status: "sourced",
+    lastUpdated: "2026-09-05",
+    answer:
+      "Endometriosis is a chronic inflammatory disease in which tissue similar to the uterine lining grows outside the uterus. It can cause severe menstrual pain, persistent pelvic pain, pain with sex, bowel or bladder symptoms, and infertility. A normal scan does not exclude it, pain severity does not reliably reveal how much disease is visible, and surgery is no longer required before every clinical diagnosis or treatment plan.",
+    faqs: [
+      {
+        question: "What does endometriosis pain feel like?",
+        answer:
+          "The pattern varies. Common clues include menstrual pain that disrupts normal life, pelvic pain between periods, deep pain during or after sex, and cyclical pain with bowel movements or urination. Pain may reach the back, hips, or legs. Symptoms can be severe with limited visible disease, mild with extensive disease, or absent altogether.",
+      },
+      {
+        question: "Can an ultrasound or MRI rule out endometriosis?",
+        answer:
+          "No. Expert ultrasound and MRI can identify ovarian endometriomas and many forms of deep endometriosis, but superficial disease may remain invisible. A normal scan therefore does not prove that endometriosis is absent. Imaging is still useful for finding other causes, mapping visible disease, and planning specialist surgery when needed.",
+      },
+      {
+        question: "Do I need surgery to be diagnosed with endometriosis?",
+        answer:
+          "Not always. Current ACOG and ESHRE guidance supports clinical diagnosis and shared decision-making: some patients choose treatment based on symptoms and imaging, while others choose laparoscopy for diagnosis and possible treatment. Surgery remains important in selected cases, but it is no longer the mandatory first gate to having symptoms taken seriously.",
+      },
+      {
+        question: "How is endometriosis pain treated?",
+        answer:
+          "Options include analgesics, hormonal suppression, and surgery, chosen around symptoms, side effects, pregnancy goals, prior response, cost, and preference. Pelvic-floor physical therapy and broader multidisciplinary pain care may help when muscle guarding or persistent pain mechanisms coexist. Treatment controls disease activity and pain; no option guarantees that symptoms will never return.",
+      },
+      {
+        question: "Does a hysterectomy eliminate endometriosis?",
+        answer:
+          "Not necessarily. A hysterectomy removes the uterus, not every endometriosis lesion outside it, and persistent pain may also involve pelvic-floor muscles or a sensitized nervous system. It can fit selected situations, especially when uterine conditions also contribute and pregnancy is no longer desired, but guidelines require counseling that it may not eliminate symptoms or disease.",
+      },
+      {
+        question: "When should pelvic pain be evaluated urgently?",
+        answer:
+          "Seek urgent care for sudden severe pelvic pain, fainting, heavy bleeding, fever, persistent vomiting, a rigid or rapidly swelling abdomen, or pain with a possible pregnancy. These can signal ectopic pregnancy, ovarian torsion, a ruptured cyst, infection, appendicitis, or another acute condition rather than an ordinary endometriosis flare.",
+      },
+    ],
+    references: [
+      {
+        source: "American College of Obstetricians and Gynecologists",
+        title: "ACOG Clinical Practice Guideline No. 11 — Evaluation and Diagnosis of Endometriosis",
+        url: "https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2026/03/diagnosis-of-endometriosis",
+      },
+      {
+        source: "Human Reproduction Open / PMC",
+        title: "ESHRE guideline: endometriosis",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8951218/",
+      },
+      {
+        source: "American College of Obstetricians and Gynecologists",
+        title: "Chronic Pelvic Pain — Practice Bulletin No. 218, reaffirmed 2026",
+        url: "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2020/03/chronic-pelvic-pain",
+      },
+      {
+        source: "NEJM / PubMed",
+        title: "Taylor et al. — Treatment of endometriosis-associated pain with elagolix",
+        url: "https://pubmed.ncbi.nlm.nih.gov/28525302/",
+      },
+      {
+        source: "NIH / NICHD",
+        title: "Endometriosis — condition information",
+        url: "https://www.nichd.nih.gov/health/topics/endometri",
+      },
+      {
+        source: "WHO",
+        title: "Endometriosis — fact sheet",
+        url: "https://www.who.int/news-room/fact-sheets/detail/endometriosis",
+      },
+    ],
+    related: [
+      {
+        title: "The three types of pain",
+        href: "/understanding-pain/types-of-pain",
+        blurb: "Why inflammation, nerve signaling, muscle guarding, and sensitization can overlap.",
+      },
+      {
+        title: "Physical and behavioral therapies",
+        href: "/treatments/physical-and-behavioral-therapies",
+        blurb: "Where pelvic-floor rehabilitation and broader pain skills fit.",
+      },
+      {
+        title: "Pain and emotion",
+        href: "/understanding-pain/pain-and-emotion",
+        blurb: "Why distress changes pain without making it psychological or imagined.",
+      },
+    ],
+  },
+
+  {
+    hub: HUB,
+    slug: "diabetic-neuropathy",
+    title: "Diabetic Neuropathy",
+    description:
+      "How diabetes damages nerves: why symptoms begin in the toes, how feet can be numb and painful at once, why daily foot checks matter, and what current guidelines say about preventing damage and treating neuropathic pain.",
+    status: "sourced",
+    lastUpdated: "2026-09-05",
+    answer:
+      "Diabetic peripheral neuropathy is nerve damage caused by diabetes, usually beginning in the toes and moving upward in a symmetrical stocking pattern. It can cause burning, shocks, tingling, numbness, or all of them at once. Pain treatment matters, but loss of protective sensation matters just as much: an unnoticed blister or wound can become the more dangerous part of the disease.",
+    faqs: [
+      {
+        question: "What does diabetic neuropathy feel like?",
+        answer:
+          "Common symptoms include burning, electric shocks, stabbing pain, pins and needles, unusual sensitivity to light touch, or numbness. They usually begin in both toes or feet and spread upward over time; the hands may become involved later. Some people feel no warning symptoms even while protective sensation is fading, which is why screening matters.",
+      },
+      {
+        question: "Why is diabetic neuropathy worse at night?",
+        answer:
+          "Neuropathic pain often becomes more noticeable when the day is quiet and there are fewer competing sensations. Bed sheets may also trigger pain in sensitized skin, while sleep disruption and pain reinforce each other. Night pain is common, but a hot, swollen, discolored foot or an open wound needs examination rather than being assumed to be ordinary neuropathy.",
+      },
+      {
+        question: "Can diabetic neuropathy be reversed?",
+        answer:
+          "Established nerve loss is often not fully reversible, but progression is not inevitable. Managing glucose and other metabolic and cardiovascular risks can reduce future nerve damage, especially when started early. A clinician should also look for treatable contributors such as vitamin B12 deficiency, thyroid disease, kidney disease, alcohol exposure, or a medication effect instead of assuming every neuropathy in a person with diabetes comes only from diabetes.",
+      },
+      {
+        question: "What treatments help painful diabetic neuropathy?",
+        answer:
+          "Guidelines support several medication classes rather than one universal winner: serotonin-norepinephrine reuptake inhibitors, gabapentinoids, tricyclic antidepressants, and sodium-channel blockers, plus selected topical options. Choice depends on side effects, other conditions, sleep, mood, cost, and prior response. Switching classes is reasonable when one fails; opioid pain medicines are not recommended for this condition. If opioid use is becoming hard to control, confidential help is available from the SAMHSA National Helpline at 1-800-662-HELP (4357).",
+      },
+      {
+        question: "Why should I check my feet if they do not hurt?",
+        answer:
+          "Because numbness removes the alarm. A blister, cut, burn, pressure spot, or object in a shoe can worsen without being felt, particularly when diabetes also impairs circulation and healing. Daily visual checks and regular professional foot examinations are prevention, not housekeeping. Broken skin, drainage, spreading redness, swelling, black tissue, or a hot foot needs prompt medical attention.",
+      },
+      {
+        question: "How is diabetic neuropathy diagnosed?",
+        answer:
+          "Diagnosis usually starts with the symptom pattern and a bedside examination of pinprick or temperature, vibration, reflexes, and pressure sensation using a 10-gram monofilament. The ADA recommends assessment beginning at type 2 diabetes diagnosis and five years after type 1 diagnosis, then at least annually. Nerve-conduction or specialist testing is usually reserved for rapid, asymmetric, motor-predominant, or otherwise atypical cases.",
+      },
+    ],
+    references: [
+      {
+        source: "American Diabetes Association / Diabetes Care",
+        title: "Standards of Care in Diabetes—2026: Retinopathy, Neuropathy, and Foot Care",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690177/",
+      },
+      {
+        source: "American Academy of Neurology / PubMed",
+        title: "Price et al. — Oral and topical treatment of painful diabetic polyneuropathy: practice guideline update",
+        url: "https://pubmed.ncbi.nlm.nih.gov/34965987/",
+      },
+      {
+        source: "NIH / NIDDK",
+        title: "Peripheral neuropathy in diabetes — symptoms, diagnosis, and foot protection",
+        url: "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/nerve-damage-diabetic-neuropathies/peripheral-neuropathy",
+      },
+      {
+        source: "Nature Reviews Disease Primers / PMC",
+        title: "Feldman et al. — Diabetic neuropathy",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7096070/",
+      },
+      {
+        source: "JAMA Neurology / PubMed",
+        title: "Petersen et al. — High-frequency spinal cord stimulation for painful diabetic neuropathy: randomized clinical trial",
+        url: "https://pubmed.ncbi.nlm.nih.gov/33818600/",
+      },
+      {
+        source: "NIH / MedlinePlus",
+        title: "Diabetic nerve problems — patient information",
+        url: "https://medlineplus.gov/diabeticnerveproblems.html",
+      },
+    ],
+    related: [
+      {
+        title: "Neuropathic pain",
+        href: "/conditions/neuropathic-pain",
+        blurb: "The larger nerve-pain map — and why numbness and burning can coexist.",
+      },
+      {
+        title: "Medications for pain",
+        href: "/treatments/medications-for-pain",
+        blurb: "How the major nerve-pain medication classes work and where their limits lie.",
+      },
+      {
+        title: "Next-generation neuromodulation",
+        href: "/future-of-pain-medicine/neuromodulation",
+        blurb: "The device evidence for carefully selected refractory diabetic nerve pain.",
+      },
+    ],
+  },
+
+  {
+    hub: HUB,
+    slug: "spinal-stenosis",
+    title: "Lumbar Spinal Stenosis",
+    description:
+      "Why spinal stenosis makes standing and walking hurt: the shopping-cart sign, why a narrow MRI is not a diagnosis by itself, what improves walking, the limited evidence for injections, and when decompression surgery enters the conversation.",
+    status: "sourced",
+    lastUpdated: "2026-09-05",
+    answer:
+      "Lumbar spinal stenosis is narrowing around the nerves in the lower spine. It becomes a clinical condition when that narrowing produces neurogenic claudication: pain, heaviness, tingling, or weakness in the buttocks or legs brought on by standing or walking and eased by sitting or bending forward. A narrow-looking scan alone is not the disease; the symptoms and image must match.",
+    faqs: [
+      {
+        question: "What does spinal stenosis feel like?",
+        answer:
+          "The classic pattern is neurogenic claudication: aching, burning, heaviness, tingling, numbness, or weakness in one or both buttocks and legs that builds while standing or walking. Sitting or bending forward usually settles it, which is why leaning over a shopping cart can extend walking distance. Back pain may be present, but the walking-limited leg pattern is the stronger clue.",
+      },
+      {
+        question: "Is spinal stenosis the same as a pinched nerve?",
+        answer:
+          "They overlap but are not identical. Stenosis means space around nerves has narrowed, often at several levels. It can produce neurogenic claudication affecting both legs, or it can narrow one nerve exit and cause sciatica-like radicular pain. A person can also have substantial narrowing on MRI without symptoms, so the clinical pattern matters more than the word on the report.",
+      },
+      {
+        question: "Why does leaning forward help spinal stenosis?",
+        answer:
+          "Bending forward slightly increases space in parts of the lumbar canal and takes the spine out of the extended position that commonly provokes symptoms. Sitting, cycling, or leaning on a cart can therefore quiet leg symptoms faster than simply standing still. This posture-response is useful diagnostic evidence, but it does not by itself prove the diagnosis.",
+      },
+      {
+        question: "Can exercise help lumbar spinal stenosis?",
+        answer:
+          "Yes. The better-supported nonsurgical approach combines education with supervised exercise and rehabilitation, sometimes alongside manual therapy and psychologically informed care. The target is practical: greater walking capacity, leg and trunk strength, balance, and confidence. Exercise does not need to make the MRI look wider to improve what a person can do.",
+      },
+      {
+        question: "Do epidural steroid injections work for spinal stenosis?",
+        answer:
+          "High-quality reviews have not found clinically important, durable benefit from adding steroid for neurogenic claudication, and a 2021 multidisciplinary guideline recommended against epidural steroid injections for this specific condition. That is different from some cases of acute disc-related radicular pain. Whether an injection fits a different pain mechanism is a discussion for a clinician.",
+      },
+      {
+        question: "When is surgery considered for spinal stenosis?",
+        answer:
+          "Decompression surgery is generally discussed when leg symptoms and walking limits remain disabling despite a well-run nonsurgical plan, and imaging matches the clinical level. Progressive weakness or cauda equina symptoms make evaluation more urgent. Fusion is a separate decision usually tied to instability or another specific reason; it is not an automatic companion to decompression.",
+      },
+    ],
+    references: [
+      {
+        source: "J Pain / PubMed",
+        title: "Bussières et al. — Non-surgical interventions for lumbar spinal stenosis leading to neurogenic claudication: clinical practice guideline",
+        url: "https://pubmed.ncbi.nlm.nih.gov/33857615/",
+      },
+      {
+        source: "BMJ Open / PMC",
+        title: "Ammendolia et al. — Non-operative treatment for lumbar spinal stenosis with neurogenic claudication: updated systematic review",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8772406/",
+      },
+      {
+        source: "Spine Surgery and Related Research / PMC",
+        title: "The Essence of Clinical Practice Guidelines for Lumbar Spinal Stenosis, 2021: Diagnosis and Evaluation",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10447202/",
+      },
+      {
+        source: "JAMA / PMC",
+        title: "Suri et al. — Does this older adult with lower-extremity pain have lumbar spinal stenosis?",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3260477/",
+      },
+      {
+        source: "Annals of Internal Medicine / PMC",
+        title: "Delitto et al. — Surgery versus nonsurgical treatment of lumbar spinal stenosis: randomized trial",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6252248/",
+      },
+      {
+        source: "NIH / MedlinePlus",
+        title: "Spinal stenosis — patient information",
+        url: "https://medlineplus.gov/spinalstenosis.html",
+      },
+    ],
+    related: [
+      {
+        title: "Low back pain",
+        href: "/conditions/low-back-pain",
+        blurb: "The larger territory — and why scan findings do not always identify the pain source.",
+      },
+      {
+        title: "Sciatica",
+        href: "/conditions/sciatica",
+        blurb: "How single-root leg pain differs from the walking-limited stenosis pattern.",
+      },
+      {
+        title: "Interventional procedures",
+        href: "/treatments/interventional-procedures",
+        blurb: "The evidence and limits behind injections and spine procedures.",
+      },
+    ],
+  },
+
+  {
+    hub: HUB,
+    slug: "neck-pain",
+    title: "Neck Pain",
+    description:
+      "What neck pain means: why most cases are mechanical rather than dangerous, what arm symptoms can reveal about a nerve or spinal cord problem, when imaging helps, and the treatment options supported by current guidelines.",
+    status: "sourced",
+    lastUpdated: "2026-09-05",
+    answer:
+      "Neck pain usually comes from the muscles, joints, discs, and other tissues that support and move the cervical spine, without one structure that can be named with certainty. Most cases are not dangerous. The important divide is between local neck pain, pain from an irritated nerve running into an arm, and rare warning signs of spinal cord, vascular, infectious, cancerous, or traumatic disease.",
+    faqs: [
+      {
+        question: "What causes neck pain?",
+        answer:
+          "Most neck pain is non-specific or mechanical: several nearby muscles, joints, discs, and ligaments can contribute, but no single structure can be proved to be the source. A smaller group has cervical radiculopathy, where an irritated nerve root causes arm-dominant pain, tingling, numbness, or weakness. Serious causes such as fracture, infection, cancer, arterial disease, or spinal cord compression are uncommon but matter because they change the urgency of care.",
+      },
+      {
+        question: "Is neck pain from bad posture or looking down at a phone?",
+        answer:
+          "A sustained position can make a sensitive neck ache, but posture is not a simple verdict on tissue damage. There is no single perfect posture that prevents neck pain. More useful targets are changing position, taking movement breaks, building strength and tolerance, and adjusting a task when it repeatedly aggravates symptoms. Your posture can be one contributor without being the whole diagnosis.",
+      },
+      {
+        question: "When is neck pain an emergency?",
+        answer:
+          "Seek emergency care after major trauma, or for neck pain with sudden one-sided weakness, facial droop, trouble speaking, severe imbalance, loss of consciousness, or a sudden severe unfamiliar headache. Prompt assessment is also important for new clumsy hands, trouble walking, weakness in more than one limb, or loss of bladder or bowel control, which can signal spinal cord involvement. Fever, cancer history, immune suppression, unexplained weight loss, or steadily worsening night pain also deserve timely clinical evaluation.",
+      },
+      {
+        question: "Do I need an X-ray or MRI for neck pain?",
+        answer:
+          "Not automatically. Imaging is most useful when the history or examination suggests trauma, infection, cancer, progressive neurological loss, or another result that would change care. MRI is usually the most useful scan for new or worsening nerve-root symptoms because it shows nerves and other soft tissues. Scans also find age-related changes in people without symptoms, so an image must be interpreted alongside the clinical story.",
+      },
+      {
+        question: "What does a pinched nerve in the neck feel like?",
+        answer:
+          "Cervical radiculopathy usually produces arm-dominant symptoms: sharp, electric, burning, or shooting pain from the neck or shoulder into an arm, often with tingling, numbness, altered reflexes, or weakness in a pattern linked to one nerve root. Neck pain alone does not prove a pinched nerve. New or worsening weakness deserves prompt assessment.",
+      },
+      {
+        question: "What treatments help neck pain?",
+        answer:
+          "Guidelines converge on education, continued activity, and exercise-based rehabilitation, with manual therapy sometimes used as one part of a broader plan. Medication may offer short-term symptom relief for selected people, but it does not replace rebuilding movement and capacity. Injections or surgery are reserved for narrower situations, especially confirmed nerve or spinal cord compression. The right mix depends on the pattern and should be discussed with a clinician.",
+      },
+    ],
+    references: [
+      {
+        source: "J Orthop Sports Phys Ther",
+        title: "Blanpied et al. — Neck Pain: Revision 2017 Clinical Practice Guidelines",
+        url: "https://www.jospt.org/doi/10.2519/jospt.2017.0302",
+      },
+      {
+        source: "European Journal of Pain / PMC",
+        title: "Corp et al. — Evidence-based treatment recommendations for neck and low back pain across Europe",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7839780/",
+      },
+      {
+        source: "Archives of Physiotherapy / PMC",
+        title: "Feller et al. — Red flags for potential serious pathologies in people with neck pain",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11618059/",
+      },
+      {
+        source: "American College of Radiology / PubMed",
+        title: "ACR Appropriateness Criteria: Cervical Neck Pain or Cervical Radiculopathy",
+        url: "https://pubmed.ncbi.nlm.nih.gov/31054759/",
+      },
+      {
+        source: "Mayo Clinic Proceedings / PubMed",
+        title: "Cohen & Hooten — Advances in the diagnosis and management of neck pain",
+        url: "https://pubmed.ncbi.nlm.nih.gov/28645549/",
+      },
+      {
+        source: "NIH / MedlinePlus",
+        title: "Neck injuries and disorders — patient information",
+        url: "https://medlineplus.gov/neckinjuriesanddisorders.html",
+      },
+    ],
+    related: [
+      {
+        title: "The three types of pain",
+        href: "/understanding-pain/types-of-pain",
+        blurb: "Why a hurting neck can mix tissue, nerve, and sensitization mechanisms.",
+      },
+      {
+        title: "Physical and behavioral therapies",
+        href: "/treatments/physical-and-behavioral-therapies",
+        blurb: "How movement, graded loading, and pain skills fit into recovery.",
+      },
+      {
+        title: "Your first visit to a pain physician",
+        href: "/what-is-pain-medicine/your-first-visit",
+        blurb: "What happens when persistent neck or arm pain reaches a specialist.",
+      },
+    ],
+  },
+
+  {
+    hub: HUB,
     slug: "crps",
     title: "Complex Regional Pain Syndrome",
     description:
