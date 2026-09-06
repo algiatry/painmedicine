@@ -74,11 +74,16 @@ const BANNED: { re: RegExp; label: string }[] = [
   { re: /\bmiracle\b/i, label: `"miracle" claim` },
 ];
 
-// Dosing guidance: numbers with dose units, or take/schedule phrasing.
+// Dosing guidance: instructions to the reader are banned; established
+// regulator/label safety LIMITS (FDA maximums, label warnings, guideline
+// thresholds) printed as harm-reduction LITERACY are allowed — see
+// CONTENT-INTAKE.md §2 "Safety-threshold literacy". The lint therefore
+// flags instructional phrasing ("take 400 mg", "three times a day",
+// how-to-obtain) rather than the mere presence of a number+unit.
 const DOSING: { re: RegExp; label: string }[] = [
-  { re: /\b\d+(\.\d+)?\s?(mg|mcg|µg|milligrams?|micrograms?)\b/i, label: "numeric dose (mg/mcg)" },
-  { re: /\btake\s+\d+\b/i, label: `"take N" instruction` },
-  { re: /\b\d+\s?(times?|x)\s?(a|per)\s?(day|daily|week)\b/i, label: "dosing schedule" },
+  { re: /\btake\s+\d+(\.\d+)?\s?(mg|mcg|µg|milligrams?|micrograms?|tablets?|capsules?|pills?)\b/i, label: `"take N mg" instruction` },
+  { re: /\byou (should|can|may)?\s?(take|use)\s+(up to\s+)?\d+(\.\d+)?\s?(mg|mcg|µg)\b/i, label: "directive dose instruction" },
+  { re: /\b\btake\b.{0,25}\b\d+\s?(times?|x)\s?(a|per)\s?(day|daily|week)\b/i, label: "dosing schedule instruction" },
   { re: /\bhow to (get|obtain|buy|acquire)\b.{0,40}\b(opioid|oxycodone|fentanyl|hydrocodone|morphine|controlled)\b/i, label: "how-to-obtain framing for controlled substances" },
 ];
 

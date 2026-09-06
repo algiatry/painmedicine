@@ -24,7 +24,9 @@ explicit sign-off.**
 
 ### Banned phrasings
 - "cure," "best treatment," "guaranteed relief," "miracle," "breakthrough" (unless quoting)
-- Any dosing guidance whatsoever
+- Any dosing instruction to the reader (established regulator/label safety
+  limits printed as harm-reduction literacy — "the FDA ceiling is…" — are
+  allowed per CONTENT-INTAKE.md §2, never framed as the reader's dose)
 - Any "how to obtain" framing for controlled substances
 
 ## Required sections per clinical page

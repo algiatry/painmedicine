@@ -197,6 +197,22 @@ export const EMBLEMS: Record<string, string> = {
       `<path stroke="${A}" d="M5 38c3.5-6 7-6 10.5 0s7 6 10.5 0 7-6 10.5 0" stroke-width="2.4"/>`,
   ),
 
+  // A torso with the four organs each medication class touches.
+  "medication-organ-safety": g(
+    `<circle stroke="${S}" cx="24" cy="9" r="4.5"/>` +
+      `<path stroke="${S}" d="M24 13.5v21" stroke-width="2.2"/>` +
+      `<circle cx="24" cy="20" r="2.2" fill="${A}" stroke-width="0"/>` +
+      `<circle stroke="${T}" cx="18" cy="26" r="3.4" stroke-width="2.2"/>` +
+      `<circle stroke="${T}" cx="30" cy="26" r="3.4" stroke-width="2.2"/>` +
+      `<path stroke="${S}" d="M14 34.5h20" stroke-width="2.2"/>`,
+  ),
+
+  // A shield with a cross — stewardship and naloxone.
+  "opioid-stewardship": g(
+    `<path stroke="${T}" d="M24 5l14 5v10c0 10-6.5 17-14 21-7.5-4-14-11-14-21V10z"/>` +
+      `<path stroke="${A}" d="M24 17v12M18 23h12" stroke-width="2.6"/>`,
+  ),
+
   // ——— Pain conditions ———
 
   // A lumbar stack — three vertebrae over the sacrum, the signal at the low

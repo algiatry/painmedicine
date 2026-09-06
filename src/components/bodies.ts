@@ -20,6 +20,8 @@ import MedicationsForPain from "./treatments/MedicationsForPain";
 import InterventionalProcedures from "./treatments/InterventionalProcedures";
 import PhysicalBehavioralTherapies from "./treatments/PhysicalBehavioralTherapies";
 import ComparingYourOptions from "./treatments/ComparingYourOptions";
+import MedicationOrganSafety from "./treatments/MedicationOrganSafety";
+import OpioidStewardship from "./treatments/OpioidStewardship";
 import LowBackPain from "./conditions/LowBackPain";
 import Sciatica from "./conditions/Sciatica";
 import NeuropathicPain from "./conditions/NeuropathicPain";
@@ -61,6 +63,8 @@ export const ARTICLE_BODIES: Record<string, ComponentType> = {
   "interventional-procedures": InterventionalProcedures,
   "physical-and-behavioral-therapies": PhysicalBehavioralTherapies,
   "comparing-your-options": ComparingYourOptions,
+  "medication-organ-safety": MedicationOrganSafety,
+  "opioid-stewardship": OpioidStewardship,
   "low-back-pain": LowBackPain,
   sciatica: Sciatica,
   "neuropathic-pain": NeuropathicPain,

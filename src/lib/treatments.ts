@@ -416,6 +416,199 @@ export const TREATMENT_ARTICLES: Article[] = [
   },
 
   {
+
+    hub: HUB,
+    slug: "medication-organ-safety",
+    title: "Pain Medications & Your Organs: Liver, Kidneys, Heart, and Gut",
+    description:
+      "The organ-by-organ safety map for the everyday pain medications: acetaminophen and the liver, NSAIDs and the kidneys, heart, blood pressure, and stomach — the established label limits printed as literacy, and the combinations that turn safe drugs into injuries.",
+    status: "sourced",
+    lastUpdated: "2026-09-05",
+    answer:
+      "The most common pain medications are safe for most adults at their established label limits — but each class concentrates its risk in a specific organ. Acetaminophen's boundary is the liver, and the danger is stacking it across combination cold and pain products. NSAIDs (ibuprofen, naproxen) stress the kidneys, raise blood pressure, carry a cardiovascular warning, and can injure the stomach. Knowing which organ each drug touches — and which combinations multiply the load — is the difference between safe use and the most common medication injuries in the country.",
+    faqs: [
+      {
+        question: "How much acetaminophen is too much?",
+        answer:
+          "The established FDA adult ceiling is 4,000 milligrams in 24 hours — across every product combined. That total is the part people miss: acetaminophen hides inside prescription combination painkillers and dozens of cold, flu, sleep, and sinus products, so a person can exceed the ceiling without ever taking a tablet labeled 'Tylenol.' Regular alcohol use, fasting, and existing liver disease lower the safe amount well below the ceiling. Your own limit may be lower — confirm with your physician or pharmacist.",
+      },
+      {
+        question: "Can ibuprofen damage my kidneys?",
+        answer:
+          "It can, with the risk concentrated in specific situations: dehydration, existing kidney disease, heart failure, older age, and especially the triple combination of an NSAID plus a blood-pressure medication from the ACE-inhibitor/ARB family plus a diuretic (water pill) — nephrologists call it the 'triple whammy.' The OTC self-care ceiling is 1,200 mg per day, and NSAIDs work by damping the prostaglandin chemistry your kidneys use to regulate their own blood flow. Short courses in a healthy, hydrated adult rarely cause problems; daily long-term use is a conversation for your physician.",
+      },
+      {
+        question: "Do NSAIDs raise the risk of heart attack and stroke?",
+        answer:
+          "The FDA strengthened this warning in 2015: non-aspirin NSAIDs increase the chance of heart attack and stroke, the risk can begin within the first weeks of use, rises with longer use and higher doses, and is higher in people who already have heart disease or its risk factors. NSAIDs can also raise blood pressure and worsen heart failure. This does not mean a few days of ibuprofen for a sprain is dangerous — it means daily use, especially with cardiovascular risk factors, deserves a deliberate choice with your clinician.",
+      },
+      {
+        question: "Which is safer for my stomach — acetaminophen or ibuprofen?",
+        answer:
+          "For the stomach specifically, acetaminophen. NSAIDs injure the stomach and intestinal lining directly — they block the prostaglandins that maintain its protective mucus — which is why they carry warnings about ulcers and GI bleeding, a risk that climbs with age, prior ulcers, blood thinners, corticosteroids, and alcohol. Acetaminophen does not share that mechanism; its boundary is the liver instead. Every class trades one organ's risk for another's, which is exactly the point of matching the drug to your health picture.",
+      },
+      {
+        question: "What medication combinations are most dangerous for pain patients?",
+        answer:
+          "Three patterns dominate the injury statistics. First, hidden acetaminophen stacking — a prescription combination painkiller plus OTC cold medicine, silently doubling the liver load. Second, the kidney 'triple whammy': an NSAID layered onto an ACE-inhibitor/ARB and a diuretic. Third, opioids or sedatives combined with benzodiazepines, sleep medications, or alcohol — the combination behind most accidental overdose deaths, because each suppresses breathing through a shared pathway. A pharmacist can check your full list in minutes; bringing it to them is one of the highest-value safety steps available. And if opioids or sedative combinations are part of your life and worry is growing, the SAMHSA helpline (1-800-662-4357) is free and confidential.",
+      },
+    ],
+    references: [
+      {
+        source: "FDA",
+        title: "Don't Overuse Acetaminophen (consumer update)",
+        url: "https://www.fda.gov/consumers/consumer-updates/dont-overuse-acetaminophen",
+      },
+      {
+        source: "NIH / NIDDK — LiverTox",
+        title: "Acetaminophen — LiverTox: Clinical and Research Information on Drug-Induced Liver Injury",
+        url: "https://www.ncbi.nlm.nih.gov/books/NBK548162/",
+      },
+      {
+        source: "FDA",
+        title:
+          "Drug Safety Communication: FDA strengthens warning that non-aspirin NSAIDs can cause heart attacks or strokes (2015)",
+        url: "https://www.fda.gov/drugs/drug-safety-and-availability/fda-drug-safety-communication-fda-strengthens-warning-non-aspirin-nonsteroidal-anti-inflammatory",
+      },
+      {
+        source: "NCBI StatPearls",
+        title: "Nonsteroidal Anti-Inflammatory Drugs (NSAIDs)",
+        url: "https://www.ncbi.nlm.nih.gov/books/NBK547742/",
+      },
+      {
+        source: "NIH / NIDDK",
+        title: "Your Kidneys & How They Work — analgesic nephropathy and NSAID effects",
+        url: "https://www.niddk.nih.gov/health-information/kidney-disease/analgesic-nephropathy",
+      },
+      {
+        source: "Merck Manual",
+        title:
+          "Analgesic Nephropathy — including the NSAID + ACE inhibitor/ARB + diuretic combination",
+        url: "https://www.merckmanuals.com/professional/genitourinary-disorders/tubulointerstitial-diseases/analgesic-nephropathy",
+      },
+    ],
+    related: [
+      {
+        title: "Medications for pain",
+        href: "/treatments/medications-for-pain",
+        blurb:
+          "The class map this page zooms into — what each family does and which pain type it matches.",
+      },
+      {
+        title: "Opioids, honestly",
+        href: "/treatments/opioid-stewardship",
+        blurb:
+          "The mind-and-brain side of medication safety: dependence, tolerance, overdose prevention, and naloxone.",
+      },
+      {
+        title: "The three types of pain",
+        href: "/understanding-pain/types-of-pain",
+        blurb:
+          "Why the safest drug is the one matched to the mechanism — the foundation of every choice on this page.",
+      },
+    ],
+  },
+
+  {
+    hub: HUB,
+    slug: "opioid-stewardship",
+    title: "Opioids, Honestly: Dependence, Tolerance, and Staying Safe",
+    description:
+      "The mind-and-brain side of pain medication safety: how opioids actually work, the difference between dependence and addiction, tolerance and opioid-induced hyperalgesia, the overdose combinations that kill, naloxone, safe storage and disposal, and what the CDC guideline really says.",
+    status: "sourced",
+    lastUpdated: "2026-09-05",
+    answer:
+      "Opioids are powerful pain relievers that act on the brain's own opioid system — the same system that governs reward, breathing, and mood — which is why their benefits and their risks travel together. Physical dependence (the body adapts; stopping causes withdrawal) is normal physiology, not addiction; opioid use disorder is a separate, treatable medical condition. Modern guidelines place opioids late in the treatment ladder for chronic non-cancer pain, and the safety essentials are knowable: never combine with sedatives or alcohol, keep naloxone on hand, store securely, and taper rather than stop suddenly.",
+    faqs: [
+      {
+        question: "What's the difference between dependence and addiction?",
+        answer:
+          "Dependence is physiology: anyone taking opioids regularly for weeks develops it, because the body adapts to the drug's presence — stopping suddenly then triggers withdrawal (aches, sweating, insomnia, anxiety, diarrhea). It is expected, not a moral failing. Opioid use disorder (addiction) is different: a medical condition marked by loss of control, craving, and continued use despite harm. Most people prescribed opioids for pain do not develop the disorder, and the distinction matters — withdrawal symptoms after a taper do not mean you are addicted, and having a use disorder does not mean you deserve anything less than treatment.",
+      },
+      {
+        question: "What are the most dangerous opioid combinations?",
+        answer:
+          "One pattern kills more than any other: opioids plus another sedative. The FDA requires boxed warnings on combining opioids with benzodiazepines (alprazolam, lorazepam, diazepam) because each suppresses breathing and the effects multiply; alcohol, sleep medications, and gabapentinoids add to the same pile. CDC data show most opioid-involved overdose deaths involve more than one substance. This is also why tolerance loss is dangerous — after a break (detox, incarceration, a taper), the same previous dose can now stop breathing.",
+      },
+      {
+        question: "What is naloxone, and should my household have it?",
+        answer:
+          "Naloxone (Narcan and generics) is an opioid antidote: it knocks opioids off their receptors and can restore breathing within minutes of an overdose. It is available without a prescription in all 50 states, safe for laypeople to use, and harmless if given to someone who turns out not to have opioids in their system. The CDC guideline says clinicians should offer it when prescribing opioids — especially with sedative combinations, higher doses, a history of substance use disorder, or sleep-disordered breathing — and recommends teaching household members how to use it. If anyone in your home takes opioids, having naloxone within reach is the single highest-value safety step.",
+      },
+      {
+        question: "Can long-term opioids actually make pain worse?",
+        answer:
+          "Yes — a recognized phenomenon called opioid-induced hyperalgesia, where sustained opioid exposure sensitizes the pain system itself, so pain spreads, thresholds drop, and escalating doses chase diminishing returns. It is one reason the SPACE trial's finding mattered: in a year-long randomized trial for chronic back and arthritis pain, opioids performed no better than non-opioid medications on pain-related function, with more side effects. When pain keeps rising despite rising doses, that pattern itself is information worth bringing to your physician.",
+      },
+      {
+        question: "How should opioid medications be stored and disposed of?",
+        answer:
+          "Locked, counted, and out of reach — most diverted prescription opioids come from friends' and relatives' medicine cabinets, not from strangers. Keep them in original containers, away from children, teens, and visitors; track how many remain. For disposal, DEA National Take Back Days and year-round pharmacy/police drop boxes are the safest route; the FDA's flush list covers the most dangerous medications (including fentanyl and oxycodone) when no take-back option exists. Never keep leftover opioids 'just in case' — the leftover supply is where much of the crisis began.",
+      },
+      {
+        question: "If I've been on opioids for years, how do I stop safely?",
+        answer:
+          "Slowly, and with help — never abruptly. A medically supervised taper reduces the dose gradually so the nervous system readapts without severe withdrawal; guidelines warn that rapid or forced tapers can trigger uncontrolled pain, withdrawal, depression, and overdose if a person returns to a previous dose after losing tolerance. Successful long-term tapering usually pairs the dose reduction with non-opioid pain treatments and behavioral support. If stopping feels unmanageable, that is not failure — it is a signal that treatment works: the SAMHSA helpline (1-800-662-4357) is free, confidential, and open 24/7.",
+      },
+    ],
+    references: [
+      {
+        source: "CDC MMWR",
+        title:
+          "CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022",
+        url: "https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm",
+      },
+      {
+        source: "FDA",
+        title:
+          "Drug Safety Communication: FDA warns about serious risks and death when combining opioid pain or cough medicines with benzodiazepines",
+        url: "https://www.fda.gov/drugs/drug-safety-and-availability/fda-drug-safety-communication-fda-warns-about-serious-risks-and-death-when-combining-opioid-pain-or-cough",
+      },
+      {
+        source: "SAMHSA",
+        title: "National Helpline — 1-800-662-HELP (4357)",
+        url: "https://www.samhsa.gov/find-help/national-helpline",
+      },
+      {
+        source: "JAMA / PubMed",
+        title:
+          "Krebs et al. — Effect of opioid vs nonopioid medications on pain-related function (SPACE trial)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/29509867/",
+      },
+      {
+        source: "FDA",
+        title: "Disposal of Unused Medicines: What You Should Know",
+        url: "https://www.fda.gov/drugs/safe-disposal-medicines/disposal-unused-medicines-what-you-should-know",
+      },
+      {
+        source: "NIH / NIDA",
+        title: "Opioid Overdose Reversal Medications (Naloxone, Nalmefene)",
+        url: "https://nida.nih.gov/research-topics/opioid-overdose-reversal-medications",
+      },
+    ],
+    related: [
+      {
+        title: "Pain medications & your organs",
+        href: "/treatments/medication-organ-safety",
+        blurb:
+          "The body side of medication safety: liver, kidneys, heart, and gut — and the combinations that multiply risk.",
+      },
+      {
+        title: "Medications for pain",
+        href: "/treatments/medications-for-pain",
+        blurb:
+          "Where opioids sit in the modern class map — and the new non-opioid class that arrived in 2025.",
+      },
+      {
+        title: "Kratom",
+        href: "/treatments/kratom",
+        blurb:
+          "The unregulated opioid-reactor at the edge of the market — and the 2026 federal scheduling action.",
+      },
+    ],
+  },
+
+  {
     hub: HUB,
     slug: "comparing-your-options",
     title: "Comparing Your Options",

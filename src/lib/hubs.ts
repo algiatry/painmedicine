@@ -164,6 +164,18 @@ export const HUBS: Hub[] = [
           "The honest evidence map: why almost everything helps 'modestly,' why modest wins stack, and how to read any treatment claim like the field does.",
         href: "/treatments/comparing-your-options",
       },
+      {
+        title: "Pain medications & your organs",
+        blurb:
+          "Liver, kidneys, heart, and gut: the established label limits printed as literacy — acetaminophen stacking, the kidney 'triple whammy,' and the 2015 FDA heart warning in plain terms.",
+        href: "/treatments/medication-organ-safety",
+      },
+      {
+        title: "Opioids, honestly",
+        blurb:
+          "Dependence vs. addiction, tolerance and the trap at the end of it, the combinations that kill, naloxone, safe storage, and how tapers actually succeed.",
+        href: "/treatments/opioid-stewardship",
+      },
     ],
   },
   {

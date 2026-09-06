@@ -38,8 +38,21 @@ signed off) may carry a byline and publish as clinical guidance.
 **Banned phrasings**
 - "cure," "best treatment," "guaranteed relief," "miracle," "breakthrough"
   (unless directly quoting a source, in quotation marks).
-- **Any dosing guidance whatsoever.**
+- **Any dosing instruction to the reader** ("take X," "your dose," a schedule
+  to follow).
 - Any "how to obtain" framing for controlled substances.
+
+**Safety-threshold literacy (allowed — and encouraged on safety pages)**
+- Established **regulator/label safety limits** may be printed as literacy:
+  FDA maximums (e.g. the acetaminophen 4,000 mg/day adult ceiling), OTC Drug
+  Facts limits (ibuprofen 1,200 mg/day self-care; naproxen 660 mg/day),
+  boxed-warning thresholds, and guideline risk thresholds (e.g. CDC's ≥50
+  MME/day naloxone trigger).
+- Frame them as **the established limit**, never the reader's dose: *"the
+  FDA ceiling is…", "the label warns…"*, always followed by *"your own safe
+  amount may be lower — confirm with your physician/pharmacist."*
+- The distinction the lint enforces: **instructions are banned; established
+  limits printed as harm-reduction literacy are allowed.**
 
 **Safety rules**
 - Every page ships with the site-wide disclaimer (automatic).
