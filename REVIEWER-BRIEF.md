@@ -1,21 +1,24 @@
 # PainMedicine.com — Medical Reviewer Recruitment Brief
 
 > **Purpose.** This is the packet for finding and engaging a credentialed medical
-> reviewer. It is the single gating dependency for the site's clinical content:
-> until a named reviewer signs off, condition and treatment pages stay held (see
-> `CONTENT-TEMPLATE.md`). Hand the "About the site" and "The role" sections to a
-> candidate; keep the "Compensation," "Where to find candidates," and
-> "Verification" sections for yourself.
+> reviewer. Clinical pages currently publish as `sourced` with an honest
+> "written from primary sources, review pending" byline; a named reviewer is
+> what converts them to `reviewed` (see `CONTENT-TEMPLATE.md`). It is the
+> site's single biggest trust and search lever. Hand the "About the site" and
+> "The role" sections to a candidate; keep the "Compensation," "Where to find
+> candidates," and "Verification" sections for yourself. The first-touch email
+> lives in `REVIEWER-EMAIL.md`.
 
 ---
 
 ## In one paragraph (send this)
 
 PainMedicine.com is an independent, patient-first educational resource on pain
-and the medical specialty that treats it — 26 source-cited pages are already
-live, spanning pain science, the research pipeline, and how the specialty
-works. We are recruiting a **credentialed medical reviewer** to review
-clinical pages for accuracy before they publish.
+and the medical specialty that treats it — 40 source-cited pages are already
+live across five hubs: 16 condition guides, 7 treatment pages including opioid
+stewardship, the pain science underneath, the research pipeline, and how the
+specialty works. We are recruiting a **credentialed medical reviewer** to
+review the clinical pages for accuracy so they can carry a named byline.
 Your name, credentials, and review date appear on each page you approve. The
 work is remote, asynchronous, flexible, and paid. You are reviewing
 pre-drafted, pre-cited educational content — not writing from scratch, and not
@@ -31,19 +34,29 @@ providing individual medical advice.
 - **Positioning:** independent and educational. Not a clinic. Nothing is sold.
   No individualized medical advice. Every clinical claim cites a primary source
   (NIH/NINDS, CDC, FDA, IASP, WHO/ICD-11, Cochrane, peer-reviewed journals).
-- **The standard, already visible:** three full hubs are live — **26
-  source-cited pages** — showing exactly the quality bar clinical pages will
-  meet: pain science (`/understanding-pain` — 7 explainers incl.
-  `/understanding-pain/pain-and-sleep` and
-  `/understanding-pain/the-placebo-effect`), the research pipeline
-  (`/future-of-pain-medicine` — 6 pages incl. the quarterly-updated
-  `/future-of-pain-medicine/pipeline` tracker), and the specialty itself
-  (`/what-is-pain-medicine` — 4 pages incl.
-  `/what-is-pain-medicine/how-pain-physicians-train`, which explains the
-  reviewer's own credential pathway to patients). Every page: primary-source
-  references, original explanatory figures, FAQ block, and an honest "written
-  from primary sources — review pending" byline. Plus `/find-help` and a
-  49-term cross-linked `/glossary`.
+- **The standard, already visible:** five hubs are live — **40 source-cited
+  pages** — so the quality bar is not hypothetical:
+  - `/conditions` — 16 guides: low back pain, sciatica, neuropathic pain,
+    migraine, arthritis pain, fibromyalgia, cancer pain, CRPS, neck pain,
+    lumbar spinal stenosis, diabetic neuropathy, endometriosis, persistent
+    postsurgical pain, TMJ disorders, chronic pelvic pain, central post-stroke
+    pain.
+  - `/treatments` — 7 pages: medications for pain, medication organ safety,
+    opioid stewardship, interventional procedures, physical and behavioral
+    therapies, comparing your options, and an educational kratom page.
+  - `/understanding-pain` — 9 science explainers incl.
+    `/understanding-pain/the-placebo-effect` and
+    `/understanding-pain/the-nocebo-effect`.
+  - `/future-of-pain-medicine` — 5 pages incl. the quarterly-updated
+    `/future-of-pain-medicine/pipeline` tracker.
+  - `/what-is-pain-medicine` — 4 pages incl.
+    `/what-is-pain-medicine/how-pain-physicians-train`, which explains the
+    reviewer's own credential pathway to patients.
+
+  Every page: primary-source references (PubMed IDs verified), original
+  explanatory figures, FAQ block, and an honest "written from primary sources —
+  review pending" byline. Plus `/find-help` and a 60-term cross-linked
+  `/glossary`.
 - **Voice:** compassionate, ~8th-grade reading level, never condescending, never
   fear-based. The emotional spine is *"You are not imagining your pain."*
 - **Why a reviewer matters:** this is YMYL ("Your Money or Your Life") medical
@@ -105,23 +118,28 @@ PharmD for meds) is ideal but not required to start.
 
 ## Scope & commitment
 
-**Launch set** (highest-leverage clinical pages, already scoped):
+**Launch set** (highest-leverage clinical pages, all live and pre-cited):
 
-1. Chronic low back pain
-2. Neuropathic pain & peripheral neuropathy
-3. Migraine
-4. Arthritis pain (osteoarthritis / inflammatory)
-5. Fibromyalgia
-6. Sciatica
+1. Low back pain
+2. Neuropathic pain
+3. Sciatica
+4. Migraine
+5. Arthritis pain
+6. Fibromyalgia
 7. Cancer pain
 8. Complex regional pain syndrome (CRPS)
+9. Medications for pain
+10. Opioid stewardship
+11. Medication organ safety
+12. Interventional procedures
+13. Physical and behavioral therapies
 
-Plus the **Treatments** hub: medications (incl. an opioid-stewardship page),
-interventional procedures, and physical/behavioral therapies.
-
-That's roughly **10–14 pages** for launch, deliverable in batches on your
-schedule. After launch, expect a light ongoing cadence (a few pages a month if
-you want it, plus scheduled re-reviews).
+That's **13 pages** for launch, deliverable in batches on your schedule. A
+second wave of 8 condition guides (neck pain, spinal stenosis, diabetic
+neuropathy, endometriosis, persistent postsurgical pain, TMJ, chronic pelvic
+pain, central post-stroke pain) follows at whatever pace suits. After that,
+expect a light ongoing cadence (a few pages a month if you want it, plus
+scheduled re-reviews).
 
 ---
 
@@ -215,31 +233,11 @@ need one good reviewer to unlock the launch set.
 
 ---
 
-## Outreach message (ready to send)
+## Outreach message
 
-> **Subject:** Paid medical-reviewer role — patient pain-education site
->
-> Hi Dr. [Name],
->
-> I run **PainMedicine.com**, an independent, non-commercial patient-education
-> site on pain and pain medicine. Twenty-six source-cited pages are already
-> live across three sections — pain science, the research pipeline, and the
-> specialty itself; you can see the standard at
-> painmedicine.com/understanding-pain/pain-and-sleep and
-> painmedicine.com/what-is-pain-medicine/how-pain-physicians-train.
->
-> I'm looking for a **board-certified medical reviewer** to review clinical
-> pages (common pain conditions and treatments) for accuracy before they
-> publish. Content arrives fully drafted and cited — you'd review, flag issues,
-> and sign off. Your name, credentials, and review date would appear on each
-> page you approve. It's remote, asynchronous, flexible, and **paid** (happy to
-> work per-page, hourly, or on retainer).
->
-> Roughly 10–14 pages for launch, on your schedule, ~30–60 min each. Would you
-> be open to a quick call to see if it's a fit?
->
-> Thanks,
-> [Your name]
+The first-touch email and its follow-up live in **`REVIEWER-EMAIL.md`**,
+with sending notes. Personalize the one bracketed sentence; send links, not
+attachments; have the letter of agreement ready before the first send.
 
 ---
 
