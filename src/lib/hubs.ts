@@ -132,8 +132,8 @@ export const HUBS: Hub[] = [
     title: "Pain Treatments Today",
     description:
       "The full landscape of evidence-based pain treatment: medications, interventional procedures, and physical and behavioral therapies.",
-    status: "pending-review",
-    lastUpdated: "2026-08-28",
+    status: "sourced",
+    lastUpdated: "2026-09-08",
     heading: "Pain treatments today",
     intro: [
       "Pain medicine today offers far more than pills. Treatment spans medication classes with very different mechanisms, image-guided procedures, neuromodulation devices, and physical and psychological therapies with real evidence behind them.",
@@ -183,12 +183,12 @@ export const HUBS: Hub[] = [
     title: "Pain Conditions",
     description:
       "Condition-by-condition guides to common pain conditions: why it hurts, today's treatment approaches, and when to see a specialist.",
-    status: "pending-review",
-    lastUpdated: "2026-08-28",
+    status: "sourced",
+    lastUpdated: "2026-09-08",
     heading: "Pain conditions",
     intro: [
       "Every pain condition has its own mechanism, its own treatment ladder, and its own research pipeline. These guides connect all three — what it is, what helps today, and what science is working on next.",
-      "Guides are written from cited primary sources (WHO, NIH, guideline bodies, peer-reviewed literature) and publish with an honest byline while independent physician review is arranged. The rest of the launch set below is in editorial preparation now.",
+      "Guides are written from cited primary sources (WHO, NIH, guideline bodies, peer-reviewed literature) and publish with an honest byline while independent physician review is arranged.",
     ],
     planned: [
       {
