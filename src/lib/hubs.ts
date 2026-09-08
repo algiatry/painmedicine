@@ -245,6 +245,54 @@ export const HUBS: Hub[] = [
           "Rare, severe, and time-sensitive: pain out of proportion in a limb that visibly changes — the Budapest signs, the mirror-therapy science, and why the first months decide so much.",
         href: "/conditions/crps",
       },
+      {
+        title: "Neck pain",
+        blurb:
+          "Mostly mechanical, rarely dangerous: what arm symptoms reveal about a nerve or the spinal cord, when imaging helps, and the guideline-backed options.",
+        href: "/conditions/neck-pain",
+      },
+      {
+        title: "Lumbar spinal stenosis",
+        blurb:
+          "The shopping-cart sign: why standing and walking hurt and sitting helps, why a narrow MRI is not a diagnosis by itself, and when decompression enters the conversation.",
+        href: "/conditions/spinal-stenosis",
+      },
+      {
+        title: "Diabetic neuropathy",
+        blurb:
+          "Toes first, stocking pattern: how diabetes damages nerves, how feet can be numb and painful at once, and why daily foot checks are treatment, not housekeeping.",
+        href: "/conditions/diabetic-neuropathy",
+      },
+      {
+        title: "Endometriosis",
+        blurb:
+          "Why pain spreads beyond the visible lesions, how diagnosis moved past mandatory surgery, and how hormones, surgery, pelvic-floor care, and fertility goals shape a plan.",
+        href: "/conditions/endometriosis",
+      },
+      {
+        title: "Persistent postsurgical pain",
+        blurb:
+          "When pain outlasts the healing: the three-month definition, nerve injury and sensitization, who is at higher risk, and how transitional pain care prevents a hard recovery from becoming a chronic one.",
+        href: "/conditions/persistent-postsurgical-pain",
+      },
+      {
+        title: "TMJ pain and jaw disorders (TMD)",
+        blurb:
+          "Three places jaw pain lives, why a clicking jaw is usually harmless, what the OPPERA studies found actually predicts TMD, and why reversible care comes first.",
+        href: "/conditions/tmj-disorders",
+      },
+      {
+        title: "Chronic pelvic pain",
+        blurb:
+          "One neighborhood, many tenants: the shared nerve supply, the pelvic floor muscles found in most cases, the six-domain approach for men and women, and why a normal scan is not the end of the story.",
+        href: "/conditions/chronic-pelvic-pain",
+      },
+      {
+        title: "Central post-stroke pain",
+        blurb:
+          "Pain from inside the pathway: the thalamic lesion science, why it starts months after the stroke and gets missed, and the honest state of treatment.",
+        href: "/conditions/central-post-stroke-pain",
+      },
     ],
   },
   {

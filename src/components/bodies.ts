@@ -36,6 +36,9 @@ import SpinalStenosis from "./conditions/SpinalStenosis";
 import DiabeticNeuropathy from "./conditions/DiabeticNeuropathy";
 import Endometriosis from "./conditions/Endometriosis";
 import PersistentPostsurgicalPain from "./conditions/PersistentPostsurgicalPain";
+import TmjDisorders from "./conditions/TmjDisorders";
+import ChronicPelvicPain from "./conditions/ChronicPelvicPain";
+import CentralPostStrokePain from "./conditions/CentralPostStrokePain";
 
 /**
  * Maps an article slug to the component that renders its illustrated body.
@@ -80,4 +83,7 @@ export const ARTICLE_BODIES: Record<string, ComponentType> = {
   "diabetic-neuropathy": DiabeticNeuropathy,
   endometriosis: Endometriosis,
   "persistent-postsurgical-pain": PersistentPostsurgicalPain,
+  "tmj-disorders": TmjDisorders,
+  "chronic-pelvic-pain": ChronicPelvicPain,
+  "central-post-stroke-pain": CentralPostStrokePain,
 };

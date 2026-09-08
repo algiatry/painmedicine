@@ -1230,4 +1230,294 @@ export const CONDITION_ARTICLES: Article[] = [
       },
     ],
   },
+  {
+    hub: HUB,
+    slug: "tmj-disorders",
+    title: "TMJ Pain and Jaw Disorders (TMD)",
+    description:
+      "What temporomandibular disorders are: the three places jaw pain lives, why a clicking jaw is usually harmless, what the OPPERA studies found predicts TMD, and why conservative, reversible care comes first.",
+    status: "sourced",
+    lastUpdated: "2026-09-08",
+    answer:
+      "TMJ is the jaw joint in front of each ear; temporomandibular disorders (TMD) are the pain and movement problems involving that joint, the chewing muscles, or both. About 1 in 20 US adults have it. Muscle pain is the most common form, a clicking jaw by itself is usually harmless, and nearly every authority recommends starting with self-care, physical therapy, and reversible treatments rather than surgery or bite changes.",
+    faqs: [
+      {
+        question: "What does TMJ pain feel like?",
+        answer:
+          "Most often a dull ache in the cheek or temple that worsens with chewing, yawning, or after a night of clenching, sometimes radiating to the ear. Joint-centered TMD is sharper and sits right in front of the ear, sometimes with limited opening or catching. A temple headache reproduced by pressing the jaw muscles is the third recognized form.",
+      },
+      {
+        question: "Is a clicking jaw serious?",
+        answer:
+          "Usually not. Clicking generally means the joint's cushioning disc slips forward and pops back on opening, a common and often lifelong finding that by itself is usually painless. A painless click does not need treatment. Locking, inability to open enough to eat, or pain that is steadily worsening are the signs that deserve evaluation.",
+      },
+      {
+        question: "What causes TMD?",
+        answer:
+          "Mostly overworked chewing muscles combined with a pain system that is turned up. The OPPERA studies found that new TMD was predicted by prior pain elsewhere, worsening sleep, and psychological distress far more than by jaw anatomy. True joint arthritis occurs but is the minority, and imaging findings correlate poorly with pain.",
+      },
+      {
+        question: "How is TMD treated?",
+        answer:
+          "Least invasive first: softer foods during flares, heat, gentle jaw exercises, and releasing daytime clenching; then physical therapy and behavioral care for sleep and stress; a night-time stabilization splint for muscle pain in some people; short medication courses for flares. Joint procedures are reserved for locked or arthritic joints, and the National Academies specifically warned against irreversible surgery and bite adjustment as routine care.",
+      },
+      {
+        question: "What kind of doctor treats TMJ disorders?",
+        answer:
+          "Many people start with a dentist or an ear specialist. For persistent pain, an orofacial pain specialist, a recognized dental specialty, or a pain medicine physician is appropriate, often working with a physical therapist. If a proposed treatment is irreversible, ask what reversible options come first.",
+      },
+    ],
+    references: [
+      {
+        source: "National Academies of Sciences, Engineering, and Medicine (2020)",
+        title: "Temporomandibular Disorders: Priorities for Research and Care",
+        url: "https://nap.nationalacademies.org/catalog/25652/temporomandibular-disorders-priorities-for-research-and-care",
+      },
+      {
+        source: "NIH / NIDCR",
+        title: "TMD (Temporomandibular Disorders) — patient information",
+        url: "https://www.nidcr.nih.gov/health-info/tmd",
+      },
+      {
+        source: "J Oral Facial Pain Headache / PubMed",
+        title:
+          "Schiffman et al. — Diagnostic Criteria for Temporomandibular Disorders (DC/TMD) for clinical and research applications (2014)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/24482784/",
+      },
+      {
+        source: "J Dent Res / PubMed",
+        title: "Slade et al. — Painful temporomandibular disorder: decade of discovery from OPPERA studies (2016)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/27339423/",
+      },
+      {
+        source: "J Dent Res / PubMed",
+        title: "Harper, Schrepf & Clauw — Pain mechanisms and centralized pain in temporomandibular disorders (2016)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/27422858/",
+      },
+      {
+        source: "J Dent Res / PubMed",
+        title: "Ohrbach & Dworkin — The evolution of TMD diagnosis: past, present, future (2016)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/27313164/",
+      },
+    ],
+    related: [
+      {
+        title: "Migraine",
+        href: "/conditions/migraine",
+        blurb: "The most common co-traveler; the trigeminal system links them.",
+      },
+      {
+        title: "Fibromyalgia",
+        href: "/conditions/fibromyalgia",
+        blurb: "The sensitized-system pattern TMD often belongs to.",
+      },
+      {
+        title: "Physical and behavioral therapies",
+        href: "/treatments/physical-and-behavioral-therapies",
+        blurb: "The evidence-supported foundation for muscle-predominant TMD.",
+      },
+    ],
+  },
+  {
+    hub: HUB,
+    slug: "chronic-pelvic-pain",
+    title: "Chronic Pelvic Pain",
+    description:
+      "Why pelvic pain rarely has one source: the shared nerve supply, the pelvic floor muscles found in most cases, the six-domain approach used in men and women, and why a normal scan does not mean nothing is wrong.",
+    status: "sourced",
+    lastUpdated: "2026-09-08",
+    answer:
+      "Chronic pelvic pain is pain below the navel lasting six months or more, in any sex. The pelvis packs bladder, bowel, reproductive organs, and a muscular floor into a small space with shared nerves, so pain usually has more than one source. In women the origin is not gynecologic in about 80% of cases, and pelvic floor muscle pain is found in most. Evaluation sorts contributors by system; treatment addresses each active one, with pelvic floor physical therapy often central.",
+    faqs: [
+      {
+        question: "What causes chronic pelvic pain?",
+        answer:
+          "Usually several things at once: pelvic floor muscle pain, endometriosis, bladder pain syndrome, irritable bowel syndrome, nerve entrapment or post-surgical pain, and in men chronic prostatitis / chronic pelvic pain syndrome, which is rarely a true infection. Because these structures share nerve supply, one source sensitizes the neighbors, and long-standing pain often has two or three active contributors.",
+      },
+      {
+        question: "My tests are all normal. Why do I still have pelvic pain?",
+        answer:
+          "Because the most common source, the pelvic floor muscles, does not show on scans or scopes. A 2021 JAMA review found musculoskeletal pain and dysfunction in 50% to 90% of women with chronic pelvic pain, and a non-gynecologic origin in about 80%. A clinician who examines the pelvic floor for tender trigger points can find in minutes what imaging cannot.",
+      },
+      {
+        question: "Does pelvic floor physical therapy work?",
+        answer:
+          "For the muscle component, it has the strongest single trial in the field: in women with bladder pain syndrome and pelvic floor tenderness, targeted myofascial physical therapy produced a moderate-or-better response in 59% versus 26% with general massage. It is specific hands-on work by a trained therapist, not a Kegel handout. For a tight, painful pelvic floor, strengthening exercises can make pain worse.",
+      },
+      {
+        question: "Do men get chronic pelvic pain?",
+        answer:
+          "Yes. In men it usually carries the label chronic prostatitis / chronic pelvic pain syndrome. The NIH classification reserves a true bacterial cause for a small minority; most men have the pain syndrome without infection, and repeated antibiotic courses for a culture that was never positive do not help. The UPOINT six-domain approach was developed for exactly this group.",
+      },
+      {
+        question: "When should I see a specialist for pelvic pain?",
+        answer:
+          "Promptly for fever, unexplained bleeding, blood in urine or stool, a new mass, weight loss, or sudden severe pain. For pain lasting months with a normal workup, the right next step is usually a clinician who examines the pelvic floor and thinks in domains, working with a pelvic floor physical therapist, rather than another scope or surgery.",
+      },
+    ],
+    references: [
+      {
+        source: "Obstet Gynecol / PubMed",
+        title: "ACOG Practice Bulletin No. 218 — Chronic Pelvic Pain (2020)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/32080051/",
+      },
+      {
+        source: "JAMA / PubMed",
+        title: "Lamvu, Carrillo, Ouyang & Rapkin — Chronic pelvic pain in women: a review (2021)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/34128995/",
+      },
+      {
+        source: "Pain Physician / PubMed",
+        title: "Ahangari — Prevalence of chronic pelvic pain among women: an updated review (2014)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/24658485/",
+      },
+      {
+        source: "J Urol / PubMed",
+        title:
+          "FitzGerald et al. — Randomized multicenter clinical trial of myofascial physical therapy in women with interstitial cystitis/painful bladder syndrome (2012)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/22503015/",
+      },
+      {
+        source: "JAMA / PubMed",
+        title: "Krieger, Nyberg & Nickel — NIH consensus definition and classification of prostatitis (1999)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/10422990/",
+      },
+      {
+        source: "Urology / PubMed",
+        title:
+          "Shoskes et al. — Clinical phenotyping of patients with chronic prostatitis/chronic pelvic pain syndrome (UPOINT) and correlation with symptom severity (2009)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/19118880/",
+      },
+      {
+        source: "NIH / NIDDK",
+        title: "Prostatitis: inflammation of the prostate — patient information",
+        url: "https://www.niddk.nih.gov/health-information/urologic-diseases/prostate-problems/prostatitis-inflammation-prostate",
+      },
+      {
+        source: "ACOG",
+        title: "Chronic Pelvic Pain — patient FAQ",
+        url: "https://www.acog.org/womens-health/faqs/chronic-pelvic-pain",
+      },
+    ],
+    related: [
+      {
+        title: "Endometriosis",
+        href: "/conditions/endometriosis",
+        blurb: "The best-known gynecologic contributor, and why it rarely travels alone.",
+      },
+      {
+        title: "Persistent postsurgical pain",
+        href: "/conditions/persistent-postsurgical-pain",
+        blurb: "Nerve injury after pelvic and abdominal surgery.",
+      },
+      {
+        title: "Physical and behavioral therapies",
+        href: "/treatments/physical-and-behavioral-therapies",
+        blurb: "Where pelvic floor physical therapy fits in the broader toolkit.",
+      },
+    ],
+  },
+  {
+    hub: HUB,
+    slug: "central-post-stroke-pain",
+    title: "Central Post-Stroke Pain",
+    description:
+      "Pain generated by the stroke's damage to the brain's own pain pathways: what it feels like, why it starts months later and is often missed, the thalamic lesion science, and the honest state of treatment.",
+    status: "sourced",
+    lastUpdated: "2026-09-08",
+    answer:
+      "Central post-stroke pain is burning, aching, or cold-sensitive pain on the side of the body a stroke affected, caused by damage inside the brain's pain pathway itself, classically the thalamus. It affects roughly 1 in 10 stroke survivors, usually begins weeks to months after the stroke, and follows the map of sensory change rather than a joint or muscle. It is treated with nerve-pain medications and, when refractory, brain stimulation.",
+    faqs: [
+      {
+        question: "What does central post-stroke pain feel like?",
+        answer:
+          "A constant burning, aching, or pricking, sometimes with lancing jolts, in the arm, leg, face, or whole side of the body opposite the stroke, in the same territory where sensation changed. Sensitivity to cold is characteristic, and in most people ordinary touch or temperature is painful, a sign called allodynia.",
+      },
+      {
+        question: "How common is pain after a stroke?",
+        answer:
+          "Pain of some kind after stroke is very common, mostly from stiff shoulders, spasticity, and altered movement. Central post-stroke pain specifically affects about 8% to 11% of survivors in studies, rising above 50% in those whose strokes caused sensory loss or involved the thalamus.",
+      },
+      {
+        question: "Why did my pain start months after the stroke?",
+        answer:
+          "Delayed onset is typical. A 2020 meta-analysis found only about a third of cases begin in the first month; most start between one month and a year, and some later. The delay is a major reason the condition is missed, because by then follow-up is sparse and a new pain gets attributed to a joint or to the stroke in general.",
+      },
+      {
+        question: "What treatments help central post-stroke pain?",
+        answer:
+          "Nerve-pain medications, honestly described as partially effective: amitriptyline (the first drug shown to help), lamotrigine (44% responders in a 2001 trial), gabapentinoids (pregabalin missed its main endpoint in 2011 but improved sleep and anxiety), and SNRIs by extrapolation from other neuropathic pain. For refractory cases, repetitive transcranial magnetic stimulation and implanted motor cortex stimulation are used in specialist centers. Opioids are not recommended as ongoing treatment.",
+      },
+      {
+        question: "Who should I see for pain after a stroke?",
+        answer:
+          "First the stroke team, to rule out a new event. Then a neurologist, physiatrist, or pain medicine physician with neuropathic pain experience. Bring three facts: where the pain is, where sensation changed, and when the pain started relative to the stroke. Those make the diagnosis.",
+      },
+    ],
+    references: [
+      {
+        source: "Lancet Neurol / PubMed",
+        title: "Klit, Finnerup & Jensen — Central post-stroke pain: clinical characteristics, pathophysiology, and management (2009)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/19679277/",
+      },
+      {
+        source: "Adv Ther / PubMed",
+        title:
+          "Liampas et al. — Prevalence and management challenges in central post-stroke neuropathic pain: systematic review and meta-analysis (2020)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/32451951/",
+      },
+      {
+        source: "Pain / PubMed",
+        title: "Andersen et al. — Incidence of central post-stroke pain (1995)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/7659428/",
+      },
+      {
+        source: "Brain / PubMed",
+        title: "Sprenger et al. — Assessing the risk of central post-stroke pain of thalamic origin by lesion mapping (2012)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/22719000/",
+      },
+      {
+        source: "Pain / PubMed",
+        title: "Leijon & Boivie — Central post-stroke pain: a controlled trial of amitriptyline and carbamazepine (1989)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/2465530/",
+      },
+      {
+        source: "Neurology / PubMed",
+        title: "Vestergaard et al. — Lamotrigine for central poststroke pain: a randomized controlled trial (2001)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/11160953/",
+      },
+      {
+        source: "Pain / PubMed",
+        title: "Kim et al. — Safety and efficacy of pregabalin in patients with central post-stroke pain (2011)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/21316855/",
+      },
+      {
+        source: "Lancet Neurol / PubMed",
+        title: "Finnerup et al. — Pharmacotherapy for neuropathic pain in adults: systematic review and meta-analysis (NeuPSIG, 2015)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/25575710/",
+      },
+      {
+        source: "NIH / MedlinePlus",
+        title: "Stroke — patient information",
+        url: "https://medlineplus.gov/stroke.html",
+      },
+    ],
+    related: [
+      {
+        title: "Neuropathic pain",
+        href: "/conditions/neuropathic-pain",
+        blurb: "The wider nerve-pain family this condition belongs to.",
+      },
+      {
+        title: "How pain works",
+        href: "/understanding-pain/how-pain-works",
+        blurb: "The pathway the stroke damages, and the descending controls it removes.",
+      },
+      {
+        title: "Next-generation neuromodulation",
+        href: "/future-of-pain-medicine/neuromodulation",
+        blurb: "Motor cortex and magnetic stimulation for refractory central pain.",
+      },
+    ],
+  },
 ];

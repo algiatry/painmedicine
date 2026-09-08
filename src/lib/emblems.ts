@@ -79,6 +79,69 @@ export const EMBLEMS: Record<string, string> = {
       `<path stroke="${A}" d="M24 8.5v-4M35.3 12.7L38 10M39.5 24h4M12.7 12.7L10 10M8.5 24h-4M35.3 35.3L38 38M12.7 35.3L10 38M24 39.5v4" stroke-width="2.2"/>`,
   ),
 
+  // ——— Conditions (wave 3) ———
+
+  // Cervical stack with the signal at the top.
+  "neck-pain": g(
+    `<path stroke="${S}" d="M18 12h12M18 20h12M18 28h12M18 36h12"/>` +
+      `<path stroke="${T}" d="M24 6v36"/>` +
+      `<circle cx="24" cy="12" r="3" fill="${A}" stroke-width="0"/>`,
+  ),
+
+  // A canal that narrows around the nerve.
+  "spinal-stenosis": g(
+    `<path stroke="${S}" d="M12 6c0 12 6 14 6 18s-6 6-6 18M36 6c0 12-6 14-6 18s6 6 6 18"/>` +
+      `<path stroke="${T}" d="M24 6v36"/>` +
+      `<circle cx="24" cy="24" r="3" fill="${A}" stroke-width="0"/>`,
+  ),
+
+  // A foot with the signal at the toes.
+  "diabetic-neuropathy": g(
+    `<path stroke="${S}" d="M18 6v20c0 6-6 8-8 12h26c0-6-6-8-6-14V6"/>` +
+      `<path stroke="${A}" d="M10 42h28" stroke-width="3"/>` +
+      `<circle cx="14" cy="36" r="2.4" fill="${A}" stroke-width="0"/>`,
+  ),
+
+  // Lesions scattered beyond the uterus outline.
+  endometriosis: g(
+    `<path stroke="${S}" d="M16 16c-6 4-6 14 0 18s10 6 8 10M32 16c6 4 6 14 0 18s-10 6-8 10"/>` +
+      `<circle cx="10" cy="12" r="2.6" fill="${A}" stroke-width="0"/>` +
+      `<circle cx="38" cy="12" r="2.6" fill="${A}" stroke-width="0"/>` +
+      `<circle cx="24" cy="8" r="2.6" fill="${A}" stroke-width="0"/>` +
+      `<circle cx="40" cy="30" r="2.6" fill="${A}" stroke-width="0"/>`,
+  ),
+
+  // A healed incision line with the signal still present beside it.
+  "persistent-postsurgical-pain": g(
+    `<path stroke="${S}" d="M12 36L36 12"/>` +
+      `<path stroke="${S}" d="M16 26l4 4M22 20l4 4M28 14l4 4" stroke-width="2"/>` +
+      `<circle cx="34" cy="34" r="3" fill="${A}" stroke-width="0"/>` +
+      `<circle stroke="${A}" cx="34" cy="34" r="8" stroke-width="2"/>`,
+  ),
+
+  // A jaw hinge with the signal at the joint.
+  "tmj-disorders": g(
+    `<path stroke="${S}" d="M10 14c0-6 8-8 14-8s14 2 14 8"/>` +
+      `<path stroke="${T}" d="M14 18c0 10 4 16 10 22c6-6 10-12 10-22"/>` +
+      `<circle cx="36" cy="16" r="3" fill="${A}" stroke-width="0"/>` +
+      `<circle stroke="${A}" cx="36" cy="16" r="8" stroke-width="2"/>`,
+  ),
+
+  // A pelvic bowl with overlapping rings inside it.
+  "chronic-pelvic-pain": g(
+    `<path stroke="${S}" d="M8 14c4 18 10 26 16 28c6-2 12-10 16-28"/>` +
+      `<circle stroke="${T}" cx="19" cy="22" r="6"/>` +
+      `<circle stroke="${T}" cx="29" cy="22" r="6"/>` +
+      `<circle cx="24" cy="24" r="2.6" fill="${A}" stroke-width="0"/>`,
+  ),
+
+  // A brain relay with the break inside it and the signal below.
+  "central-post-stroke-pain": g(
+    `<path stroke="${T}" d="M12 20c0-8 6-12 12-12s12 4 12 12c0 6-4 8-4 12H16c0-4-4-6-4-12z"/>` +
+      `<path stroke="${A}" d="M20 18l8 8M28 18l-8 8" stroke-width="2.2"/>` +
+      `<path stroke="${A}" d="M24 34v8" stroke-width="2.2"/>`,
+  ),
+
   // ——— The future ———
 
   // Stages narrowing toward the one that gets through.
