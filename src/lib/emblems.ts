@@ -73,6 +73,12 @@ export const EMBLEMS: Record<string, string> = {
       `<path stroke="${A}" d="M24 4.5v4M38 8l-2.7 2.7M43.5 24h-4M10 8l2.7 2.7M4.5 24h4" stroke-width="2.2"/>`,
   ),
 
+  // The same empty capsule; the rays point inward — expectation of harm.
+  "the-nocebo-effect": g(
+    `<rect stroke="${T}" x="19" y="10" width="10" height="28" rx="5" stroke-dasharray="4 3.5" transform="rotate(45 24 24)"/>` +
+      `<path stroke="${A}" d="M24 8.5v-4M35.3 12.7L38 10M39.5 24h4M12.7 12.7L10 10M8.5 24h-4M35.3 35.3L38 38M12.7 35.3L10 38M24 39.5v4" stroke-width="2.2"/>`,
+  ),
+
   // ——— The future ———
 
   // Stages narrowing toward the one that gets through.

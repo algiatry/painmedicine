@@ -125,6 +125,12 @@ export const HUBS: Hub[] = [
           "Real, blockable-with-a-drug biology: expectation switching on the brain's own pain-relief chemistry — and the honest limits of what it can do.",
         href: "/understanding-pain/the-placebo-effect",
       },
+      {
+        title: "The nocebo effect",
+        blurb:
+          "Expectation running in reverse: the chemistry that turns pain up, the sentence that cancelled an opioid, and why side effects you were warned about arrive on schedule.",
+        href: "/understanding-pain/the-nocebo-effect",
+      },
     ],
   },
   {

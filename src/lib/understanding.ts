@@ -649,6 +649,131 @@ export const ARTICLES: Article[] = [
         href: "/understanding-pain/measuring-pain",
         blurb: "Why self-reported relief is real data — and how to give better data.",
       },
+      {
+        title: "The nocebo effect",
+        href: "/understanding-pain/the-nocebo-effect",
+        blurb: "The evil twin gets its own page: expectation running in reverse.",
+      },
+    ],
+  },
+  {
+    hub: HUB,
+    slug: "the-nocebo-effect",
+    title: "The Nocebo Effect",
+    description:
+      "What the nocebo effect is and how it works — expecting harm turning pain up through its own brain chemistry — the trials where a sentence cancelled an opioid or tripled side effects, and what you can do about it.",
+    status: "sourced",
+    lastUpdated: "2026-09-08",
+    answer:
+      "The nocebo effect is a real, measurable worsening of symptoms caused by expecting harm — the mirror image of the placebo effect. Warnings, labels, and past experiences set the expectation; the nervous system then produces more pain or more side effects to match. It has its own chemistry (anxiety and cholecystokinin), can be blocked with a drug, and can cancel out a real painkiller. The symptoms are not imagined — they are the body responding to the story it was given.",
+    faqs: [
+      {
+        question: "What is the nocebo effect, in plain terms?",
+        answer:
+          "It is a genuine increase in pain or side effects produced by expecting them, rather than by a treatment's ingredients. The name is Latin for 'I shall harm,' the opposite of placebo ('I shall please'). In pain it has a known pathway: expecting harm raises anxiety, which recruits the brain chemical cholecystokinin and turns pain signaling up. Blocking that chemical with proglumide erases the extra pain.",
+      },
+      {
+        question: "What is the difference between placebo and nocebo?",
+        answer:
+          "Both are the nervous system responding to expectation. Placebo relief runs on the body's own opioid chemistry and is blocked by naloxone; nocebo pain runs partly on anxiety and cholecystokinin and is blocked by proglumide. They are separate circuits pointed in opposite directions, and both produce real, measurable changes in what you feel.",
+      },
+      {
+        question: "Can expecting side effects really cause them?",
+        answer:
+          "Yes. Men warned about sexual side effects of finasteride reported them nearly three times as often (43.6% vs 15.3%). About 35% of people given only saline in COVID-19 vaccine trials reported systemic side effects. In the SAMSON statin trial, placebo months were nearly as symptomatic as statin months — about 90% of the symptom burden was present on an inert tablet.",
+      },
+      {
+        question: "Does nocebo mean my symptoms are all in my head?",
+        answer:
+          "No. A symptom produced by expectation is produced by the same nervous system as any other symptom and feels identical. In one study a sentence cancelled the relief from a real opioid infusion that was still running. That shows how powerful the system is, not that the symptoms are fake. Knowing where a symptom comes from can change what you do about it, which is why the science matters.",
+      },
+      {
+        question: "How can I reduce nocebo effects?",
+        answer:
+          "Ask how many people out of 100 get a side effect, so rare things are heard as rare. Ask what alarming words on a scan report actually mean. Tell your clinician if you have read frightening things about a treatment, so they can frame the plan honestly. And treat new symptoms during a medication change as data to record and discuss, not as a verdict. Informed consent stays intact — the evidence favors better framing, not less information.",
+      },
+    ],
+    references: [
+      {
+        source: "N Engl J Med / PubMed",
+        title: "Colloca & Barsky — Placebo and Nocebo Effects (2020 review)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/32023375/",
+      },
+      {
+        source: "PAIN / PubMed",
+        title:
+          "Benedetti et al. — Blockade of nocebo hyperalgesia by the cholecystokinin antagonist proglumide (1997)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/9211474/",
+      },
+      {
+        source: "Sci Transl Med / PubMed",
+        title:
+          "Bingel et al. — The effect of treatment expectation on drug efficacy: imaging the analgesic benefit of the opioid remifentanil (2011)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/21325618/",
+      },
+      {
+        source: "Anesth Analg / PubMed",
+        title:
+          "Varelmann et al. — Nocebo-induced hyperalgesia during local anesthetic injection (2010)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/20042440/",
+      },
+      {
+        source: "J Sex Med / PubMed",
+        title:
+          "Mondaini et al. — Finasteride 5 mg and sexual side effects: how many are related to a nocebo phenomenon? (2007)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/17655657/",
+      },
+      {
+        source: "N Engl J Med / PubMed",
+        title:
+          "Wood et al. — N-of-1 trial of a statin, placebo, or no treatment to assess side effects (SAMSON, 2020)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/33196154/",
+      },
+      {
+        source: "J Am Coll Cardiol / PubMed",
+        title:
+          "Howard et al. — Side effect patterns in a crossover trial of statin, placebo, and no treatment (2021)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/34531021/",
+      },
+      {
+        source: "JAMA Netw Open",
+        title:
+          "Haas et al. — Frequency of adverse events in the placebo arms of COVID-19 vaccine trials: systematic review and meta-analysis (2022)",
+        url: "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2788172",
+      },
+      {
+        source: "Psychother Psychosom / PubMed",
+        title:
+          "Evers et al. — Implications of placebo and nocebo effects for clinical practice: expert consensus (2018)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/29895014/",
+      },
+      {
+        source: "Int Rev Neurobiol / PubMed",
+        title: "Faasse & Martin — The power of labeling in nocebo effects (2018)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/30146055/",
+      },
+      {
+        source: "NIH / NCCIH",
+        title: "Placebo Effect — patient information (includes nocebo)",
+        url: "https://www.nccih.nih.gov/health/placebo-effect",
+      },
+    ],
+    related: [
+      {
+        title: "The placebo effect",
+        href: "/understanding-pain/the-placebo-effect",
+        blurb: "The same machinery pointed the other way: expectation as relief.",
+      },
+      {
+        title: "Pain and emotion",
+        href: "/understanding-pain/pain-and-emotion",
+        blurb: "The fear-avoidance loop is nocebo played out over months.",
+      },
+      {
+        title: "Low back pain",
+        href: "/conditions/low-back-pain",
+        blurb: "What the alarming words on an imaging report actually mean.",
+      },
     ],
   },
 ];

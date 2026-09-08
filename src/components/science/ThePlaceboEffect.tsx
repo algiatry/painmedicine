@@ -268,7 +268,14 @@ export default function ThePlaceboEffect() {
         reported after a first real dose. None of those symptoms were
         imaginary — headaches from expectation still ache. The lesson is that
         what you are told, and what you brace for, measurably shapes what your
-        body produces.
+        body produces. Nocebo has enough evidence of its own to deserve{" "}
+        <Link
+          href="/understanding-pain/the-nocebo-effect"
+          className="text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600"
+        >
+          its own page
+        </Link>
+        .
       </P>
 
       <H2 id="limits">What it can and cannot do</H2>

@@ -6,6 +6,7 @@ import MeasuringPain from "./science/MeasuringPain";
 import PainAndSleep from "./science/PainAndSleep";
 import PainAndEmotion from "./science/PainAndEmotion";
 import ThePlaceboEffect from "./science/ThePlaceboEffect";
+import TheNoceboEffect from "./science/TheNoceboEffect";
 import PipelineTracker from "./future/PipelineTracker";
 import Neuromodulation from "./future/Neuromodulation";
 import BiologicsGeneTherapy from "./future/BiologicsGeneTherapy";
@@ -49,6 +50,7 @@ export const ARTICLE_BODIES: Record<string, ComponentType> = {
   "pain-and-sleep": PainAndSleep,
   "pain-and-emotion": PainAndEmotion,
   "the-placebo-effect": ThePlaceboEffect,
+  "the-nocebo-effect": TheNoceboEffect,
   pipeline: PipelineTracker,
   neuromodulation: Neuromodulation,
   "biologics-and-gene-therapy": BiologicsGeneTherapy,

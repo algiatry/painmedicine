@@ -232,7 +232,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: "Nocebo effect",
     definition:
       "The placebo effect's evil twin: expecting harm produces real symptoms. In vaccine trials, about a third of people receiving only saline reported 'side effects' like headache and fatigue.",
-    href: "/understanding-pain/the-placebo-effect",
+    href: "/understanding-pain/the-nocebo-effect",
   },
   {
     term: "Nociceptive pain",
