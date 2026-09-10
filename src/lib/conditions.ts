@@ -186,6 +186,12 @@ export const CONDITION_ARTICLES: Article[] = [
           "The parent territory — and where sciatica fits among the causes of a hurting back.",
       },
       {
+        title: "Piriformis syndrome",
+        href: "/treatments/piriformis-syndrome",
+        blurb:
+          "The one-in-ten that does not start at the spine — and the deep-hip rehab built for it.",
+      },
+      {
         title: "The three types of pain",
         href: "/understanding-pain/types-of-pain",
         blurb: "Sciatica is the everyday face of neuropathic pain.",

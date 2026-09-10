@@ -23,6 +23,7 @@ import PhysicalBehavioralTherapies from "./treatments/PhysicalBehavioralTherapie
 import ComparingYourOptions from "./treatments/ComparingYourOptions";
 import MedicationOrganSafety from "./treatments/MedicationOrganSafety";
 import OpioidStewardship from "./treatments/OpioidStewardship";
+import PiriformisSyndrome from "./treatments/PiriformisSyndrome";
 import LowBackPain from "./conditions/LowBackPain";
 import Sciatica from "./conditions/Sciatica";
 import NeuropathicPain from "./conditions/NeuropathicPain";
@@ -70,6 +71,7 @@ export const ARTICLE_BODIES: Record<string, ComponentType> = {
   "comparing-your-options": ComparingYourOptions,
   "medication-organ-safety": MedicationOrganSafety,
   "opioid-stewardship": OpioidStewardship,
+  "piriformis-syndrome": PiriformisSyndrome,
   "low-back-pain": LowBackPain,
   sciatica: Sciatica,
   "neuropathic-pain": NeuropathicPain,

@@ -27,6 +27,7 @@ All components render a `<g>` in a nominal coordinate space (exported as
 | `SpineSide` | 200×440 | `highlight: "cervical"\|"thoracic"\|"lumbar"\|"sacrum"`, `bulgeAt: 1–4` (disc below L1–L4), `labels` |
 | `SynovialJoint` | 320×300 | `state: "healthy"\|"osteoarthritis"\|"inflamed"` |
 | `HeadProfile` | 240×280 | `marks` (temple, orbit, crown, occiput, neckTop, jaw, sinus), `children` overlay |
+| `PelvisPosterior` | 1000×1044 | `piriformis: "left"\|"right"\|"both"\|"none"`, `nerve` (same values; schematic sciatic in amber), `gluteusMedius: boolean` (ghost), `marks` (sacrum, sciaticNotchL/R, greaterTrochanterL/R, ischialTuberosityL/R, piriformisL/R), `children` overlay |
 | `SiteMarker` (`marks.tsx`) | — | `x`, `y`, `size: "sm"\|"md"` — for custom sites via `children` |
 
 Anchor names are typed (`FrontAnchor`, `BackAnchor`, `HeadAnchor`), so a typo
@@ -49,6 +50,18 @@ Side-by-side states (e.g. `SynovialJoint state="healthy"` next to
 `state="osteoarthritis"`) are the intended pattern for "what changes"
 figures. Animate with the `Figure animate` choreography (`fig-*` classes +
 `anim()`) like the flagship diagrams.
+
+## Projected anatomy (BodyParts3D)
+
+`PelvisPosterior` is the first component whose bone and muscle outlines are
+**projected from real geometry** rather than hand-drawn: BodyParts3D 4.0
+meshes (© The Database Center for Life Science, CC BY 4.0), flattened to
+SVG paths by `scripts/anatomy-project.mjs`. Keep the attribution line in
+any figure caption that uses it. The dataset carries **no peripheral
+nerves** (its nervous layer is cranial only), so nerves stay schematic and
+captions must say so. To add a new projected view, clone
+`ashemag/human-atlas` next to the repo and run the script with the mesh ids
+you need — see the script header.
 
 ## Intended first uses (launch queue)
 

@@ -249,6 +249,14 @@ export const EMBLEMS: Record<string, string> = {
       `<circle cx="43" cy="10" r="2.4" fill="${A}" stroke-width="0"/>`,
   ),
 
+  // The deep hip: a pear-shaped muscle lying over the amber nerve beneath it.
+  "piriformis-syndrome": g(
+    `<path stroke="${A}" d="M14 8c4 8 6 14 8 22s3 10 6 12" stroke-width="2.2"/>` +
+      `<path stroke="${T}" fill="#ccfbf1" d="M6 24c6-6 14-9 24-8 6 1 12 4 13 8-3 4-10 6-17 6C16 30 9 29 6 24z"/>` +
+      `<circle stroke="${A}" cx="24" cy="36" r="5" stroke-width="2.2"/>` +
+      `<circle cx="24" cy="36" r="1.8" fill="${A}" stroke-width="0"/>`,
+  ),
+
   // Crosshair on the target — precision delivered to an address.
   "interventional-procedures": g(
     `<circle stroke="${T}" cx="24" cy="24" r="14"/>` +
