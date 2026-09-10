@@ -700,4 +700,111 @@ export const TREATMENT_ARTICLES: Article[] = [
       },
     ],
   },
+  {
+    hub: HUB,
+    slug: "piriformis-syndrome",
+    title: "Piriformis Syndrome and the Deep Hip",
+    description:
+      "The sciatica that does not start at the spine: the small deep-hip muscle the sciatic nerve passes beneath, the four features that define piriformis syndrome, what the evidence honestly says, and what a physical therapy program for it is built to do.",
+    status: "sourced",
+    lastUpdated: "2026-09-10",
+    answer:
+      "Piriformis syndrome is buttock and leg pain caused when the piriformis — a small, deep hip muscle — presses on or irritates the sciatic nerve that passes beneath it. It is an uncommon but real cause of sciatica, recognized by a pattern of four features rather than any single test. First-line care is physical therapy aimed at the muscle, the hips around it, and the nerve; injections and, rarely, surgery are reserved for cases that do not settle.",
+    faqs: [
+      {
+        question: "How is piriformis syndrome different from ordinary sciatica?",
+        answer:
+          "Ordinary sciatica starts at the spine, where a disc or narrowing presses on a nerve root. Piriformis syndrome starts lower and further out, in the buttock, where the piriformis muscle irritates the sciatic nerve as it leaves the pelvis. The felt pain overlaps — buttock and back of the thigh — but the pattern differs: piriformis pain is centered in the buttock rather than the back, is worse with sitting, and is reproduced by pressing over the greater sciatic notch or by positions that tension the muscle. Clinicians must rule out the spine, hip joint, and sacroiliac joint before settling on it.",
+      },
+      {
+        question: "Is there a test that proves I have it?",
+        answer:
+          "No. There is no blood test or imaging finding that confirms piriformis syndrome, and the accuracy of the physical tests has not been established in properly designed studies. Clinicians diagnose it by the quartet of features found in two systematic reviews — buttock pain, worse with sitting, tenderness at the greater sciatic notch, and pain on maneuvers that tension the muscle — and by excluding other causes. A positive straight-leg raise does not rule it out.",
+      },
+      {
+        question: "What does physical therapy for piriformis syndrome involve?",
+        answer:
+          "A program typically works on three fronts: easing and lengthening the piriformis and neighboring hip rotators, strengthening the hip muscles whose weakness let it overwork — especially the gluteal abductors and rotators — and gently mobilizing the sciatic nerve, alongside changes to the sitting habits that provoke it. Reviews recommend physical therapy as first-line care; the specific exercises are chosen by the therapist for the person in front of them and progressed by plan rather than by pain.",
+      },
+      {
+        question: "Do I have the anatomical variant where the nerve goes through the muscle?",
+        answer:
+          "About one person in six does — a pooled analysis of more than six thousand cadavers found the variant in about 17%. But the same review found it no more common in people operated on for piriformis syndrome than in everyone else, so the variant is mostly not the cause. What the muscle is doing — spasm, thickening, shortening, irritation — matters more than the nerve's exact route.",
+      },
+      {
+        question: "Will I need an injection or surgery?",
+        answer:
+          "Most people do not. In the largest published series, 79% of patients treated with an injection plus physical therapy improved by half or more, and only about one in fifteen went on to surgery. Injections into the muscle — anesthetic with steroid, or botulinum toxin — are used when a well-run program stalls, and the treatment trials suggest their benefit is modest. Surgical release is reserved for chronic cases that have exhausted everything else.",
+      },
+    ],
+    references: [
+      {
+        source: "Eur Spine J / PubMed",
+        title:
+          "Hopayian et al. — The clinical features of the piriformis syndrome: a systematic review",
+        url: "https://pubmed.ncbi.nlm.nih.gov/20596735/",
+      },
+      {
+        source: "Eur J Orthop Surg Traumatol / PubMed",
+        title:
+          "Hopayian & Danielyan — Four symptoms define the piriformis syndrome: an updated systematic review of its clinical features",
+        url: "https://pubmed.ncbi.nlm.nih.gov/28836092/",
+      },
+      {
+        source: "J Bodyw Mov Ther / PubMed",
+        title:
+          "Hopayian et al. — A systematic review of conservative and surgical treatments for deep gluteal syndrome",
+        url: "https://pubmed.ncbi.nlm.nih.gov/37949567/",
+      },
+      {
+        source: "Arch Phys Med Rehabil / PubMed",
+        title:
+          "Fishman et al. — Piriformis syndrome: diagnosis, treatment, and outcome — a 10-year study",
+        url: "https://pubmed.ncbi.nlm.nih.gov/11887107/",
+      },
+      {
+        source: "Clin Anat / PubMed",
+        title:
+          "Smoll — Variations of the piriformis and sciatic nerve with clinical consequence: a review",
+        url: "https://pubmed.ncbi.nlm.nih.gov/19998490/",
+      },
+      {
+        source: "PM&R / PubMed",
+        title:
+          "Probst, Stout & Hunt — Piriformis syndrome: a narrative review of the anatomy, diagnosis, and treatment",
+        url: "https://pubmed.ncbi.nlm.nih.gov/31102324/",
+      },
+      {
+        source: "J Hip Preserv Surg / PubMed",
+        title: "Martin, Reddy & Gómez-Hoyos — Deep gluteal syndrome",
+        url: "https://pubmed.ncbi.nlm.nih.gov/27011826/",
+      },
+      {
+        source: "DBCLS",
+        title:
+          "BodyParts3D 4.0 — anatomy geometry used for the deep-hip figure (CC BY 4.0)",
+        url: "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html",
+      },
+    ],
+    related: [
+      {
+        title: "Sciatica",
+        href: "/conditions/sciatica",
+        blurb:
+          "The nine-in-ten story — where sciatica usually starts, and why the spine is checked first.",
+      },
+      {
+        title: "Physical & behavioral therapies",
+        href: "/treatments/physical-and-behavioral-therapies",
+        blurb:
+          "The active-care principles every deep-hip program is built on: graded, paced, yours.",
+      },
+      {
+        title: "Interventional procedures",
+        href: "/treatments/interventional-procedures",
+        blurb:
+          "The guided-injection layer, for when a well-run program stalls.",
+      },
+    ],
+  },
 ];

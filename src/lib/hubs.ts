@@ -139,7 +139,7 @@ export const HUBS: Hub[] = [
     description:
       "The full landscape of evidence-based pain treatment: medications, interventional procedures, and physical and behavioral therapies.",
     status: "sourced",
-    lastUpdated: "2026-09-08",
+    lastUpdated: "2026-09-10",
     heading: "Pain treatments today",
     intro: [
       "Pain medicine today offers far more than pills. Treatment spans medication classes with very different mechanisms, image-guided procedures, neuromodulation devices, and physical and psychological therapies with real evidence behind them.",
@@ -163,6 +163,12 @@ export const HUBS: Hub[] = [
         blurb:
           "The active half of pain medicine: movement as medicine, the pacing skill that ends the boom-bust cycle, and what CBT and mindfulness honestly deliver.",
         href: "/treatments/physical-and-behavioral-therapies",
+      },
+      {
+        title: "Piriformis syndrome and the deep hip",
+        blurb:
+          "The sciatica that does not start at the spine: the deep-hip muscle over the nerve, the four-feature diagnosis, and what a physical therapy program for it is built to do.",
+        href: "/treatments/piriformis-syndrome",
       },
       {
         title: "Comparing your options",
