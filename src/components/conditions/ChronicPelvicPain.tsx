@@ -6,7 +6,7 @@ const link =
   "text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600";
 
 /**
- * Figure 1 — one neighborhood, many tenants. The pelvis packs bladder,
+ * Figure 1 – one neighborhood, many tenants. The pelvis packs bladder,
  * bowel, reproductive organs, a muscular floor, and a dense nerve supply
  * into a small space, all reporting to overlapping spinal segments. That
  * convergence is why pelvic pain so often has more than one source.
@@ -20,7 +20,7 @@ const TENANTS = [
 
 function NeighborhoodFigure() {
   return (
-    <Figure caption="The pelvis is one small neighborhood with many tenants, and they share nerve lines. Bladder, bowel, reproductive organs, and the pelvic floor muscles all report to overlapping segments of the spinal cord, so pain from one is routinely felt as pain from another — and over time, several sources tend to hurt at once.">
+    <Figure caption="The pelvis is one small neighborhood with many tenants, and they share nerve lines. Bladder, bowel, reproductive organs, and the pelvic floor muscles all report to overlapping segments of the spinal cord, so pain from one is routinely felt as pain from another – and over time, several sources tend to hurt at once.">
       <svg
         role="img"
         aria-labelledby="pelvis-title pelvis-desc"
@@ -75,7 +75,7 @@ function NeighborhoodFigure() {
 }
 
 /**
- * Figure 2 — the six domains clinicians phenotype (UPOINT), generalized:
+ * Figure 2 – the six domains clinicians phenotype (UPOINT), generalized:
  * pain is sorted by which systems are contributing, not by one organ.
  */
 const DOMAINS = [
@@ -310,9 +310,9 @@ export default function ChronicPelvicPain() {
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
-            <strong>Psychological and pain-science care.</strong> Not because
-            the pain is psychological, but because a pelvis that has hurt for
-            years has trained the nervous system, and cognitive behavioral and
+            <strong>Psychological and pain-science care.</strong> The pain is not
+            psychological. A pelvis that has hurt for years has trained the
+            nervous system, and cognitive behavioral and
             pain-reprocessing approaches measurably retrain it. Sexual pain and
             the relationships around it deserve their own attention here.
           </span>

@@ -7,7 +7,7 @@ import { GLOSSARY, glossaryByLetter, termSlug } from "@/lib/glossary";
 export const metadata: Metadata = {
   title: "Glossary of Pain Terms",
   description:
-    "Plain-language definitions of the pain terms used across PainMedicine.com — from nociceptive and nociplastic pain to central sensitization, neuromodulation, and pharmacogenomics.",
+    "Plain-language definitions of the pain terms used across PainMedicine.com – from nociceptive and nociplastic pain to central sensitization, neuromodulation, and pharmacogenomics.",
   alternates: { canonical: "/glossary" },
 };
 
@@ -54,7 +54,7 @@ export default function GlossaryPage() {
         <p className="text-lg text-slate-700">
           Pain has a language of its own, and it can get in the way of
           understanding your options. Here are the terms used across this site,
-          in plain English — each linked to the page where it is explained in
+          in plain English – each linked to the page where it is explained in
           more depth.
         </p>
       </header>

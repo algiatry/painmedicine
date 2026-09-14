@@ -41,7 +41,7 @@ function chipLabel(name: string) {
 }
 
 /**
- * The pipeline board — a swimlane chart computed entirely from lib/pipeline.ts,
+ * The pipeline board – a swimlane chart computed entirely from lib/pipeline.ts,
  * so the quarterly data refresh redraws the art for free. Modality lanes ×
  * phase columns; every candidate is a plotted node; the dashed teal line is
  * FDA approval; halted candidates fall to a hatched siding below the board.
@@ -71,7 +71,7 @@ function LandscapeFigure() {
   return (
     <Figure
       animate
-      caption="The board, drawn live from the tracker data: each lane is a mechanism type, each column a development stage, and the dashed teal line is FDA approval. Halted candidates drop to the siding at the bottom — tanezumab fell at the line."
+      caption="The board, drawn live from the tracker data: each lane is a mechanism type, each column a development stage, and the dashed teal line is FDA approval. Halted candidates drop to the siding at the bottom – tanezumab fell at the line."
     >
       <svg
         role="img"
@@ -81,7 +81,7 @@ function LandscapeFigure() {
       >
         <title id="landscape-title">The pain-treatment pipeline board</title>
         <desc id="landscape-desc">
-          A swimlane chart. Rows are mechanism types — small molecule, biologic,
+          A swimlane chart. Rows are mechanism types – small molecule, biologic,
           device, gene therapy. Columns run Phase 1, Phase 2, Phase 3, then
           Approved, separated by a dashed line marking FDA approval. Each
           candidate is a dot in its lane and stage; halted candidates appear in
@@ -257,7 +257,7 @@ function LandscapeFigure() {
                     <circle cx={cx} cy={cy} r="6" fill={FIG.white} stroke={FIG.faint} strokeWidth="1.8" strokeDasharray="3 3" />
                     <text x={cx + 14} y={cy + 4} fontSize="11.5" fontWeight="600" fill={FIG.muted}>
                       {chipLabel(c.name)}
-                      <tspan dx="5" fill={FIG.faint} fontWeight="400">— {c.modality.toLowerCase()}</tspan>
+                      <tspan dx="5" fill={FIG.faint} fontWeight="400">– {c.modality.toLowerCase()}</tspan>
                     </text>
                   </g>
                 );
@@ -359,7 +359,7 @@ export default function PipelineTracker() {
 
       <P>
         For most of the last forty years, treating pain meant choosing among old
-        drug classes — opioids, anti-inflammatories, a handful of nerve-pain
+        drug classes – opioids, anti-inflammatories, a handful of nerve-pain
         medicines borrowed from other fields. That has started to change. Below
         is what is actually moving through development now: what each candidate
         is, how it works, and how far along it is.
@@ -368,7 +368,7 @@ export default function PipelineTracker() {
         A word on how to read it, because this is a page where honesty matters
         more than hype. A candidate in a trial is <strong>not</strong> an
         available treatment, and most investigational drugs never reach patients
-        at all. Only the entries marked <em>Approved</em> are cleared for use —
+        at all. Only the entries marked <em>Approved</em> are cleared for use –
         and even then only for the specific condition on their label. This is
         reporting on the science, not medical advice; decisions belong with your
         clinician.
@@ -401,7 +401,7 @@ export default function PipelineTracker() {
 
       <H2 id="method">How this tracker is maintained</H2>
       <P>
-        Every entry is dated and linked to a primary source — a regulator, a
+        Every entry is dated and linked to a primary source – a regulator, a
         trial registry, a peer-reviewed journal, or the sponsor&rsquo;s own
         release. Development is fast-moving, so this page is re-checked
         quarterly; the status shown was last reviewed on{" "}
@@ -419,7 +419,7 @@ export default function PipelineTracker() {
       </P>
       <p className="mt-4 text-sm text-slate-500">
         This tracker covers {CANDIDATES.length} notable candidates and is not
-        exhaustive — the full pain pipeline runs to hundreds of programs. It
+        exhaustive – the full pain pipeline runs to hundreds of programs. It
         favors candidates that are late-stage, first-in-class, or otherwise
         signal where the field is heading.
       </p>

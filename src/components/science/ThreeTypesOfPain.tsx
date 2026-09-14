@@ -56,7 +56,7 @@ function TypeIcon({ kind, accent }: { kind: string; accent: string }) {
       </g>
     );
   }
-  // nociplastic — concentric amplification ripples
+  // nociplastic – concentric amplification ripples
   return (
     <g fill="none" stroke={accent} strokeWidth="2.5">
       <circle cx="28" cy="28" r="5" fill={accent} stroke="none" />
@@ -128,37 +128,37 @@ export default function ThreeTypesOfPain() {
       <TypesFigure />
 
       <P>
-        Not all pain is the same kind of pain — and the difference is not just
+        Not all pain is the same kind of pain – and the difference is not just
         where it hurts, but <em>why</em>. Modern pain medicine sorts pain into
         three mechanism-based types. Knowing which one you have is one of the
         most useful things you and your clinician can work out, because
         different mechanisms respond to different treatments.
       </P>
 
-      <H2 id="nociceptive">1. Nociceptive pain — the familiar kind</H2>
+      <H2 id="nociceptive">1. Nociceptive pain – the familiar kind</H2>
       <P>
         This is the pain most people picture. It comes from{" "}
         <strong>actual or threatened damage to body tissue</strong>, detected by
         the nerve endings called nociceptors. A sprained ankle, a burn, a
         surgical wound, and the ache of arthritis are all nociceptive. It tends
-        to be well-localized and to make sense — it eases as the tissue heals,
+        to be well-localized and to make sense – it eases as the tissue heals,
         and it maps to something you can point to.
       </P>
 
-      <H2 id="neuropathic">2. Neuropathic pain — a fault in the wiring</H2>
+      <H2 id="neuropathic">2. Neuropathic pain – a fault in the wiring</H2>
       <P>
         Neuropathic pain is caused by{" "}
-        <strong>damage or disease in the nervous system itself</strong> — the
-        nerves, spinal cord, or brain — rather than in the tissue those nerves
+        <strong>damage or disease in the nervous system itself</strong> – the
+        nerves, spinal cord, or brain – rather than in the tissue those nerves
         report on. Because the wiring is the problem, it feels different:
         burning, shooting, electric, or stabbing, often with numbness, tingling,
         or a patch of skin that feels wrong to the touch. Sciatica, diabetic
         neuropathy, and the lingering pain after shingles are common examples.
       </P>
 
-      <H2 id="nociplastic">3. Nociplastic pain — the newest category</H2>
+      <H2 id="nociplastic">3. Nociplastic pain – the newest category</H2>
       <P>
-        The third type is the one most people — and many older resources — have
+        The third type is the one most people – and many older resources – have
         never heard named. In <strong>2017</strong> the International Association
         for the Study of Pain formally recognized{" "}
         <strong>nociplastic pain</strong>: real pain that arises from a{" "}
@@ -173,7 +173,7 @@ export default function ThreeTypesOfPain() {
         >
           how pain works
         </Link>{" "}
-        — the nervous system&rsquo;s gain turned up and stuck. Fibromyalgia is
+        – the nervous system&rsquo;s gain turned up and stuck. Fibromyalgia is
         the textbook example, and nociplastic mechanisms are thought to
         contribute to many cases of long-standing widespread pain. Naming it
         matters: for years these patients were told nothing was wrong because
@@ -187,7 +187,7 @@ export default function ThreeTypesOfPain() {
         <strong>more than one type at once</strong>. Chronic low back pain, for
         instance, can carry nociceptive features from the joints and discs,
         neuropathic features from an irritated nerve root, and nociplastic
-        features from a sensitized system — all together. That overlap is a big
+        features from a sensitized system – all together. That overlap is a big
         reason some pain is hard to treat and benefits from a specialist&rsquo;s
         assessment.
       </P>
@@ -203,7 +203,7 @@ export default function ThreeTypesOfPain() {
         pain-focused psychological therapies.
       </P>
       <P>
-        These are general patterns, not a prescription — the right plan depends
+        These are general patterns, not a prescription – the right plan depends
         on you, and it belongs with your own care team. What matters here is the
         idea: identifying the <em>kind</em> of pain is the doorway to treating it
         well.

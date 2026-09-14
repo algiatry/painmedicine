@@ -37,7 +37,7 @@ export default function PersistentPostsurgicalPain() {
         or reconstruct something deeper. Acute pain is therefore expected. The
         important signal is its direction: as healing advances, pain and
         interference should generally recede. When new or worsened pain remains
-        beyond three months, medicine recognizes a distinct condition — not a
+        beyond three months, medicine recognizes a distinct condition – not a
         character flaw, and not automatically a failed operation.
       </P>
 
@@ -46,16 +46,16 @@ export default function PersistentPostsurgicalPain() {
       <P>
         The ICD-11 definition requires pain that developed or increased after a
         surgical procedure, persists for at least three months, and sits in the
-        surgical field or a referred nerve territory. Other explanations —
+        surgical field or a referred nerve territory. Other explanations –
         infection, recurrent disease, an unstable implant, poor healing, or a
-        separate pain condition — must be considered. The three-month line is a
+        separate pain condition – must be considered. The three-month line is a
         definition, not permission to ignore severe or worsening pain before it.
       </P>
       <P>
         Persistent postsurgical pain affects roughly one person in ten after
         surgery, although risk varies widely by procedure and by how studies
-        define it. Operations near major nerves — including thoracic, breast,
-        hernia, amputation, and some joint procedures — carry recognizable risk.
+        define it. Operations near major nerves – including thoracic, breast,
+        hernia, amputation, and some joint procedures – carry recognizable risk.
         A substantial share has a neuropathic component, which changes both the
         symptoms and the treatment map.
       </P>
@@ -114,7 +114,7 @@ export default function PersistentPostsurgicalPain() {
         blocks or other procedures may clarify and treat a focal generator, but
         temporary numbness is not proof that repeated procedures will create
         durable recovery. The right outcome measures include function, sleep,
-        medication burden, and participation — not only the pain score.
+        medication burden, and participation – not only the pain score.
       </P>
 
       <H2 id="transitional">The missing bridge: transitional pain care</H2>
@@ -160,7 +160,7 @@ export default function PersistentPostsurgicalPain() {
       <H2 id="specialist">When to see a pain specialist</H2>
       <P>
         Ask for help early when pain is severe, neuropathic, requiring ongoing
-        high-risk medication, or blocking rehabilitation — there is no advantage
+        high-risk medication, or blocking rehabilitation – there is no advantage
         in waiting for exactly three months to plan better care. A pain
         specialist or transitional service can work alongside the surgeon to
         exclude complications, identify the dominant mechanism, and coordinate

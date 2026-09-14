@@ -7,7 +7,7 @@ const LEVELS = [
     anat: "Brain",
     yc: 70,
     title: "Non-invasive brain stimulation",
-    detail: "rTMS & tDCS — magnetic or electrical pulses through the scalp",
+    detail: "rTMS & tDCS – magnetic or electrical pulses through the scalp",
   },
   {
     anat: "Spinal cord",
@@ -31,7 +31,7 @@ const LEVELS = [
 
 function LevelsFigure() {
   return (
-    <Figure caption="Neuromodulation now acts at every level of the pain pathway — from the brain down to a single peripheral nerve.">
+    <Figure caption="Neuromodulation now acts at every level of the pain pathway – from the brain down to a single peripheral nerve.">
       <svg
         role="img"
         aria-labelledby="nm-title nm-desc"
@@ -40,8 +40,8 @@ function LevelsFigure() {
       >
         <title id="nm-title">Where neuromodulation acts</title>
         <desc id="nm-desc">
-          A vertical map of the nervous system — brain, spinal cord, dorsal root
-          ganglion, and peripheral nerve — each paired with the stimulation
+          A vertical map of the nervous system – brain, spinal cord, dorsal root
+          ganglion, and peripheral nerve – each paired with the stimulation
           technique that targets it.
         </desc>
 
@@ -82,7 +82,7 @@ export default function Neuromodulation() {
       <P>
         Some of the biggest advances in pain treatment are not drugs at all.
         Neuromodulation uses precisely placed electricity to change how pain
-        signals travel — and over the past decade it has gone from a blunt
+        signals travel – and over the past decade it has gone from a blunt
         instrument to something closer to a tuned one.
       </P>
 
@@ -99,7 +99,7 @@ export default function Neuromodulation() {
           how pain works
         </Link>
         : activity on large nerve fibers helps close the gate on pain signals.
-        It helps many people — but the tingling is a constant reminder, and the
+        It helps many people – but the tingling is a constant reminder, and the
         setting never changes as you move.
       </P>
 
@@ -107,8 +107,8 @@ export default function Neuromodulation() {
       <P>
         Newer <strong>high-frequency (10 kHz)</strong> stimulation relieves pain
         without producing any tingling at all. In 2021 the FDA approved a 10 kHz
-        system specifically for <strong>painful diabetic neuropathy</strong> —
-        the first spinal cord stimulator cleared for that condition — after a
+        system specifically for <strong>painful diabetic neuropathy</strong> –
+        the first spinal cord stimulator cleared for that condition – after a
         trial showed substantial, durable relief where medication had fallen
         short. Taking the paresthesia away also removed one of the therapy&rsquo;s
         least comfortable features.
@@ -118,7 +118,7 @@ export default function Neuromodulation() {
       <P>
         The bigger leap is <strong>closed-loop</strong> stimulation. An
         FDA-approved system now measures the spinal cord&rsquo;s own electrical
-        response to each pulse — a signal called an ECAP — and adjusts the next
+        response to each pulse – a signal called an ECAP – and adjusts the next
         pulse more than a hundred times a second. Instead of a fixed dose of
         electricity, the device keeps the stimulation on target as you move,
         cough, or shift position, and it outperformed conventional open-loop
@@ -131,7 +131,7 @@ export default function Neuromodulation() {
         Stimulation can also be pointed at exactly the right spot.{" "}
         <strong>Dorsal root ganglion (DRG) stimulation</strong>, FDA-approved in
         2016, targets the small bundle of nerve cell bodies that serves one
-        region of the body — which makes it valuable for focal, hard-to-treat
+        region of the body – which makes it valuable for focal, hard-to-treat
         pain such as complex regional pain syndrome, where it outperformed
         standard stimulation in the pivotal ACCURATE trial. Peripheral nerve
         stimulation goes further still, treating a single nerve near the source
@@ -141,8 +141,8 @@ export default function Neuromodulation() {
       <H2 id="no-surgery">No surgery required</H2>
       <P>
         Not every approach needs an implant. <strong>Non-invasive brain
-        stimulation</strong> — repetitive transcranial magnetic stimulation
-        (rTMS) and transcranial direct-current stimulation (tDCS) — sends
+        stimulation</strong> – repetitive transcranial magnetic stimulation
+        (rTMS) and transcranial direct-current stimulation (tDCS) – sends
         magnetic or electrical pulses through the scalp to the brain&rsquo;s
         motor cortex. Studies suggest it can ease some drug-resistant nerve pain
         and fibromyalgia, though the evidence is still mixed and the technique is

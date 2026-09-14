@@ -4,7 +4,7 @@ export type Hub = PageMeta & {
   heading: string;
   intro: string[];
   /**
-   * Spoke pages. A `href` marks a spoke that is live — the hub renders it as a
+   * Spoke pages. A `href` marks a spoke that is live – the hub renders it as a
    * link; items without `href` render as a roadmap of what is still coming.
    */
   planned: { title: string; blurb: string; href?: string }[];
@@ -13,7 +13,7 @@ export type Hub = PageMeta & {
 
 
 /**
- * Hub landing pages. Status is "pending-review" — structural/orientational
+ * Hub landing pages. Status is "pending-review" – structural/orientational
  * copy only, no clinical claims, until council reviewer credentials are
  * confirmed (see CONTENT-TEMPLATE.md gating rules).
  */
@@ -27,7 +27,7 @@ export const HUBS: Hub[] = [
     lastUpdated: "2026-08-27",
     heading: "What is pain medicine?",
     intro: [
-      "Pain medicine is a recognized medical specialty — physicians who complete additional fellowship training focused specifically on diagnosing and treating pain, then earn board certification in the field.",
+      "Pain medicine is a recognized medical specialty – physicians who complete additional fellowship training focused specifically on diagnosing and treating pain, then earn board certification in the field.",
       "Modern pain medicine is multidisciplinary. A pain specialist typically works alongside physical therapists, psychologists, and pharmacists, because chronic pain involves far more than the site where it hurts.",
       "This hub explains the specialty in plain language: how pain physicians train, how a pain clinic differs from primary care, what happens at a first appointment, and when it makes sense to ask for a referral.",
     ],
@@ -35,13 +35,13 @@ export const HUBS: Hub[] = [
       {
         title: "How pain physicians train",
         blurb:
-          "The nine-year road: six residency doors, one 12-month accredited fellowship, one shared board exam — and how to verify the credential.",
+          "The nine-year road: six residency doors, one 12-month accredited fellowship, one shared board exam – and how to verify the credential.",
         href: "/what-is-pain-medicine/how-pain-physicians-train",
       },
       {
         title: "The pain team",
         blurb:
-          "Why good pain care combines medical, physical, and behavioral expertise — the biopsychosocial model, and the evidence for team-based care.",
+          "Why good pain care combines medical, physical, and behavioral expertise – the biopsychosocial model, and the evidence for team-based care.",
         href: "/what-is-pain-medicine/the-pain-team",
       },
       {
@@ -79,20 +79,20 @@ export const HUBS: Hub[] = [
     lastUpdated: "2026-08-26",
     heading: "Understanding pain",
     intro: [
-      "Pain is not a simple alarm wire from body to brain. It is an experience the nervous system constructs — which is why two people with the same injury can hurt very differently, and why pain can persist after tissue has healed.",
+      "Pain is not a simple alarm wire from body to brain. It is an experience the nervous system constructs – which is why two people with the same injury can hurt very differently, and why pain can persist after tissue has healed.",
       "Understanding the kind of pain you have matters, because different kinds of pain respond to different treatments. These plain-language guides build that foundation, drawn from primary sources and cited on every page.",
     ],
     planned: [
       {
         title: "How pain works",
         blurb:
-          "Nociceptors, the spinal 'gate,' and central sensitization — the science of hurting, made readable.",
+          "Nociceptors, the spinal 'gate,' and central sensitization – the science of hurting, made readable.",
         href: "/understanding-pain/how-pain-works",
       },
       {
         title: "The three types of pain",
         blurb:
-          "Nociceptive, neuropathic, and nociplastic pain — the modern classification and why it guides treatment.",
+          "Nociceptive, neuropathic, and nociplastic pain – the modern classification and why it guides treatment.",
         href: "/understanding-pain/types-of-pain",
       },
       {
@@ -110,7 +110,7 @@ export const HUBS: Hub[] = [
       {
         title: "Pain and sleep",
         blurb:
-          "The cycle runs both ways — but sleep loss drives pain harder than pain drives sleep loss. What one bad night does, and what helps.",
+          "The cycle runs both ways – but sleep loss drives pain harder than pain drives sleep loss. What one bad night does, and what helps.",
         href: "/understanding-pain/pain-and-sleep",
       },
       {
@@ -122,7 +122,7 @@ export const HUBS: Hub[] = [
       {
         title: "The placebo effect",
         blurb:
-          "Real, blockable-with-a-drug biology: expectation switching on the brain's own pain-relief chemistry — and the honest limits of what it can do.",
+          "Real, blockable-with-a-drug biology: expectation switching on the brain's own pain-relief chemistry – and the honest limits of what it can do.",
         href: "/understanding-pain/the-placebo-effect",
       },
       {
@@ -143,19 +143,19 @@ export const HUBS: Hub[] = [
     heading: "Pain treatments today",
     intro: [
       "Pain medicine today offers far more than pills. Treatment spans medication classes with very different mechanisms, image-guided procedures, neuromodulation devices, and physical and psychological therapies with real evidence behind them.",
-      "This hub maps the whole landscape so you can understand what each option is, what the evidence says, and what questions to bring to your physician. It describes — it does not prescribe. Treatment decisions belong with you and your care team.",
+      "This hub maps the whole landscape so you can understand what each option is, what the evidence says, and what questions to bring to your physician. It describes – it does not prescribe. Treatment decisions belong with you and your care team.",
     ],
     planned: [
       {
         title: "Medications for pain",
         blurb:
-          "The complete map: anti-inflammatories and acetaminophen, topicals, the nerve-pain medications, opioids honestly, and the first new class in decades — matched to the pain types they actually treat.",
+          "The complete map: anti-inflammatories and acetaminophen, topicals, the nerve-pain medications, opioids honestly, and the first new class in decades – matched to the pain types they actually treat.",
         href: "/treatments/medications-for-pain",
       },
       {
         title: "Interventional procedures",
         blurb:
-          "The image-guided middle layer between pills and surgery: blocks, radiofrequency ablation, stimulators you can test-drive — and the window rule that makes them all work.",
+          "The image-guided middle layer between pills and surgery: blocks, radiofrequency ablation, stimulators you can test-drive – and the window rule that makes them all work.",
         href: "/treatments/interventional-procedures",
       },
       {
@@ -179,7 +179,7 @@ export const HUBS: Hub[] = [
       {
         title: "Pain medications & your organs",
         blurb:
-          "Liver, kidneys, heart, and gut: the established label limits printed as literacy — acetaminophen stacking, the kidney 'triple whammy,' and the 2015 FDA heart warning in plain terms.",
+          "Liver, kidneys, heart, and gut: the established label limits printed as literacy – acetaminophen stacking, the kidney 'triple whammy,' and the 2015 FDA heart warning in plain terms.",
         href: "/treatments/medication-organ-safety",
       },
       {
@@ -199,7 +199,7 @@ export const HUBS: Hub[] = [
     lastUpdated: "2026-09-08",
     heading: "Pain conditions",
     intro: [
-      "Every pain condition has its own mechanism, its own treatment ladder, and its own research pipeline. These guides connect all three — what it is, what helps today, and what science is working on next.",
+      "Every pain condition has its own mechanism, its own treatment ladder, and its own research pipeline. These guides connect all three – what it is, what helps today, and what science is working on next.",
       "Guides are written from cited primary sources (WHO, NIH, guideline bodies, peer-reviewed literature) and publish with an honest byline while independent physician review is arranged.",
     ],
     planned: [
@@ -224,13 +224,13 @@ export const HUBS: Hub[] = [
       {
         title: "Arthritis pain",
         blurb:
-          "One word, two diseases: osteoarthritis (not 'wear and tear') vs. the immune-driven arthritides — the day-pattern that tells them apart, and why one of them is a race.",
+          "One word, two diseases: osteoarthritis (not 'wear and tear') vs. the immune-driven arthritides – the day-pattern that tells them apart, and why one of them is a race.",
         href: "/conditions/arthritis-pain",
       },
       {
         title: "Fibromyalgia",
         blurb:
-          "The signature disease of a sensitized pain system: the measurable evidence it's real, and why gentleness — tai chi included — beats most pills.",
+          "The signature disease of a sensitized pain system: the measurable evidence it's real, and why gentleness – tai chi included – beats most pills.",
         href: "/conditions/fibromyalgia",
       },
       {
@@ -248,7 +248,7 @@ export const HUBS: Hub[] = [
       {
         title: "Complex regional pain syndrome (CRPS)",
         blurb:
-          "Rare, severe, and time-sensitive: pain out of proportion in a limb that visibly changes — the Budapest signs, the mirror-therapy science, and why the first months decide so much.",
+          "Rare, severe, and time-sensitive: pain out of proportion in a limb that visibly changes – the Budapest signs, the mirror-therapy science, and why the first months decide so much.",
         href: "/conditions/crps",
       },
       {
@@ -310,14 +310,14 @@ export const HUBS: Hub[] = [
     lastUpdated: "2026-08-26",
     heading: "The future of pain medicine",
     intro: [
-      "Pain science is in the middle of its most productive era in decades. After years in which pain relief meant choosing among old drug classes, new mechanisms are reaching patients — and a deep pipeline sits behind them.",
+      "Pain science is in the middle of its most productive era in decades. After years in which pain relief meant choosing among old drug classes, new mechanisms are reaching patients – and a deep pipeline sits behind them.",
       "This hub tracks where the field is going: new non-opioid drug classes, smarter neuromodulation, biologics, gene-targeted approaches, and precision medicine that matches treatment to your biology. Updated as the science moves.",
     ],
     planned: [
       {
-        title: "The pain treatment pipeline — live tracker",
+        title: "The pain treatment pipeline – live tracker",
         blurb:
-          "Every notable drug and device in development for pain — mechanism, phase, and what each one means. Updated quarterly.",
+          "Every notable drug and device in development for pain – mechanism, phase, and what each one means. Updated quarterly.",
         href: "/future-of-pain-medicine/pipeline",
       },
       {
@@ -341,7 +341,7 @@ export const HUBS: Hub[] = [
       {
         title: "Mind, brain, and new frontiers",
         blurb:
-          "Pain reprocessing science, virtual reality analgesia, and early-stage research — covered honestly.",
+          "Pain reprocessing science, virtual reality analgesia, and early-stage research – covered honestly.",
         href: "/future-of-pain-medicine/mind-and-brain",
       },
     ],

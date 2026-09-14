@@ -5,8 +5,8 @@ import { useEffect, useRef, type ReactNode } from "react";
 /**
  * Arms figure choreography (see globals.css "Figure choreography") when the
  * figure scrolls into view, once. The server-rendered state is the finished
- * figure; `data-animate` is only added client-side, so without JS — or with
- * prefers-reduced-motion — readers simply see the complete diagram.
+ * figure; `data-animate` is only added client-side, so without JS – or with
+ * prefers-reduced-motion – readers simply see the complete diagram.
  */
 export default function AnimateOnView({ children }: { children: ReactNode }) {
   const ref = useRef<HTMLDivElement>(null);

@@ -6,7 +6,7 @@ const link =
   "text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600";
 
 /**
- * Figure 1 — the pain pathway with the injury inside it. The
+ * Figure 1 – the pain pathway with the injury inside it. The
  * spinothalamic tract carries pain and temperature from body to thalamus
  * to cortex; a stroke anywhere along it can produce central pain. The
  * thalamus is the classic site.
@@ -15,7 +15,7 @@ function PathwayLesionFigure() {
   return (
     <Figure
       animate
-      caption="Central post-stroke pain is pain from an injury inside the pain pathway itself. Signals for pain and temperature travel from the body up the spinothalamic tract to the thalamus, the brain's relay, and on to the cortex. A stroke that damages any part of that line — the thalamus is the classic site — leaves a system that generates pain without input from the body."
+      caption="Central post-stroke pain is pain from an injury inside the pain pathway itself. Signals for pain and temperature travel from the body up the spinothalamic tract to the thalamus, the brain's relay, and on to the cortex. A stroke that damages any part of that line – the thalamus is the classic site – leaves a system that generates pain without input from the body."
     >
       <svg
         role="img"
@@ -38,7 +38,7 @@ function PathwayLesionFigure() {
         {/* stations */}
         {[
           ["Cortex", "where pain is felt", 40],
-          ["Thalamus", "the relay — classic stroke site", 128],
+          ["Thalamus", "the relay – classic stroke site", 128],
           ["Spinal cord", "the spinothalamic tract", 216],
           ["Body", "skin, muscle, the affected side", 296],
         ].map(([t, s, y], i) => (
@@ -89,7 +89,7 @@ function PathwayLesionFigure() {
 }
 
 /**
- * Figure 2 — the delay. CPSP usually arrives weeks to months after the
+ * Figure 2 – the delay. CPSP usually arrives weeks to months after the
  * stroke, which is why it is so often missed. Liampas 2020 pooled onset.
  */
 const ONSET = [

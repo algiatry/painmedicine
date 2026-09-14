@@ -127,7 +127,7 @@ export default function NeckPain() {
         rather than a simple worn-part problem.
       </P>
 
-      <H2 id="imaging">What an X-ray or MRI can — and cannot — settle</H2>
+      <H2 id="imaging">What an X-ray or MRI can – and cannot – settle</H2>
       <P>
         A scan answers a clinical question; it does not automatically discover
         the cause of pain. Age-related disc and joint changes are common, so
@@ -157,7 +157,7 @@ export default function NeckPain() {
       <P>
         Prompt assessment is also warranted for new clumsy hands, trouble
         walking, weakness affecting several limbs, or loss of bladder or bowel
-        control — a possible spinal-cord pattern. Fever, recent serious
+        control – a possible spinal-cord pattern. Fever, recent serious
         infection, immune suppression, a history of cancer, unexplained weight
         loss, or steadily worsening pain at night also change the picture.
         Red flags are not diagnoses by themselves: a 2024 review found poor
@@ -182,8 +182,8 @@ export default function NeckPain() {
         which class is safe depends on health history and belongs in a
         conversation with a clinician. Psychological or multidisciplinary pain
         care can help when sleep, fear, distress, and sensitization are keeping
-        disability high — not because the pain is imaginary, but because these
-        are real parts of the pain system. The broader{" "}
+        disability high. The pain is not imaginary. These are real parts of
+        the pain system. The broader{" "}
         <Link href="/treatments/physical-and-behavioral-therapies" className={link}>
           physical and behavioral treatment map
         </Link>{" "}

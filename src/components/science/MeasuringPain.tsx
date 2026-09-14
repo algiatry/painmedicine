@@ -13,7 +13,7 @@ const FACES = [
 function ScaleFigure() {
   const ticks = Array.from({ length: 11 }, (_, i) => i);
   return (
-    <Figure caption="The 0-to-10 numeric scale, paired with faces. Quick and useful — but a single number is only the beginning of the story.">
+    <Figure caption="The 0-to-10 numeric scale, paired with faces. Quick and useful – but a single number is only the beginning of the story.">
       <svg
         role="img"
         aria-labelledby="scale-title scale-desc"
@@ -73,14 +73,14 @@ function DolFigure() {
   for (let d = 0.5; d <= 10; d += 1) jnds.push(d);
   const evens = [0, 2, 4, 6, 8, 10];
   return (
-    <Figure caption="The dol scale of 1947 — one dol = two just-noticeable differences of pain, topping out at 10.5. Other laboratories couldn't reproduce it, and no unit of pain has entered practice since.">
+    <Figure caption="The dol scale of 1947 – one dol = two just-noticeable differences of pain, topping out at 10.5. Other laboratories couldn't reproduce it, and no unit of pain has entered practice since.">
       <svg
         role="img"
         aria-labelledby="dol-title dol-desc"
         viewBox="0 0 660 196"
         className="mx-auto block h-auto w-full max-w-2xl"
       >
-        <title id="dol-title">The dol scale, 1947 — a retired unit of pain</title>
+        <title id="dol-title">The dol scale, 1947 – a retired unit of pain</title>
         <desc id="dol-desc">
           A historical scale from 0 to 10.5 dols with a small tick at every
           half-dol, a bracket showing that one dol equals two just-noticeable
@@ -110,7 +110,7 @@ function DolFigure() {
         {/* ~8 dols: the stimulus starts damaging skin */}
         <line x1={x(8)} y1="62" x2={x(8)} y2="110" stroke={FIG.signalDark} strokeWidth="1.5" strokeDasharray="3 4" />
         <text x={x(8)} y="54" textAnchor="middle" fontSize="12" fill={FIG.signalText}>
-          ≈ 8 dols — skin damage begins
+          ≈ 8 dols – skin damage begins
         </text>
 
         {/* the scale bar */}
@@ -166,7 +166,7 @@ const PEOPLE = [
 
 function BeyondNumberFigure() {
   return (
-    <Figure caption="Two people both report a 7 — but the number hides how differently pain is shaping their days.">
+    <Figure caption="Two people both report a 7 – but the number hides how differently pain is shaping their days.">
       <svg
         role="img"
         aria-labelledby="beyond-title beyond-desc"
@@ -220,11 +220,11 @@ export default function MeasuringPain() {
       <P>
         &ldquo;On a scale of zero to ten, how bad is your pain?&rdquo; Almost
         everyone who has seen a clinician has been asked it. The number is
-        genuinely useful — but pain is one of the hardest things in medicine to
+        genuinely useful – but pain is one of the hardest things in medicine to
         measure, and knowing why helps you describe yours far better.
       </P>
 
-      <H2 id="subjective">Pain is subjective — and that is the point</H2>
+      <H2 id="subjective">Pain is subjective – and that is the point</H2>
       <P>
         There is no blood test, scan, or &ldquo;painometer&rdquo; that reads out
         how much something hurts. Pain is a personal experience, and the person
@@ -232,14 +232,14 @@ export default function MeasuringPain() {
         pain scientists build this right into their definition: a person&rsquo;s
         report of their own pain{" "}
         <strong>should be respected</strong>. Your account is not a soft
-        substitute for &ldquo;real&rdquo; data — for pain, it{" "}
+        substitute for &ldquo;real&rdquo; data – for pain, it{" "}
         <em>is</em> the data.
       </P>
 
       <H2 id="the-dol">The unit of pain that almost was</H2>
       <P>
-        Science did try to give pain a unit. In the 1940s a Cornell team —
-        James Hardy, Harold Wolff and Helen Goodell — built an instrument
+        Science did try to give pain a unit. In the 1940s a Cornell team –
+        James Hardy, Harold Wolff and Helen Goodell – built an instrument
         called the <strong>dolorimeter</strong>: a lamp that focused a precise
         dose of radiant heat onto a small patch of skin, usually the forehead,
         blackened with ink so that every complexion absorbed the same energy.
@@ -248,8 +248,8 @@ export default function MeasuringPain() {
         pain and the most a person could bear.
       </P>
       <P>
-        Two of those steps made one <strong>dol</strong> — from{" "}
-        <em>dolor</em>, the Latin word for pain — and the result was a scale
+        Two of those steps made one <strong>dol</strong> – from{" "}
+        <em>dolor</em>, the Latin word for pain – and the result was a scale
         from 0 to 10.5 dols. It was a serious, careful piece of science: at
         roughly 8 dols the heat was intense enough to start damaging skin,
         which tells you how far the method was willing to go in search of a
@@ -258,15 +258,15 @@ export default function MeasuringPain() {
       <DolFigure />
       <P>
         It didn&rsquo;t hold. Other laboratories couldn&rsquo;t reproduce the
-        results, and in the 1950s the anesthesiologist Henry Beecher — who had
+        results, and in the 1950s the anesthesiologist Henry Beecher – who had
         treated soldiers on World War II battlefields and seen badly wounded
-        men report strikingly little pain — put his finger on the deeper
+        men report strikingly little pain – put his finger on the deeper
         problem: how much something hurts depends on{" "}
         <strong>what the pain means to the person</strong>. A lamp can be
         calibrated. Meaning can&rsquo;t.
       </P>
       <P>
-        So there is no unit of pain — no dol, no degree, no decibel — and that
+        So there is no unit of pain – no dol, no degree, no decibel – and that
         failure is this whole page in miniature. Pain isn&rsquo;t a stimulus;
         it&rsquo;s an experience the brain assembles, shaped by{" "}
         <Link
@@ -276,33 +276,33 @@ export default function MeasuringPain() {
           attention, emotion and context
         </Link>
         . Medicine stopped trying to build a better lamp and started asking
-        better questions — which is exactly what the tools below are.
+        better questions – which is exactly what the tools below are.
       </P>
 
       <H2 id="tools">The tools clinicians use</H2>
       <P>
         Because pain can&rsquo;t be measured directly, clinicians use rating
-        tools to capture it and — most usefully — to track how it changes:
+        tools to capture it and – most usefully – to track how it changes:
       </P>
       <ul className="mt-4 space-y-3 text-slate-700">
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
-            <strong>The 0-to-10 numeric scale</strong> — fast, needs no props,
+            <strong>The 0-to-10 numeric scale</strong> – fast, needs no props,
             and works over the phone. The everyday workhorse.
           </span>
         </li>
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
-            <strong>Faces scales</strong> — a row of expressions, well suited to
+            <strong>Faces scales</strong> – a row of expressions, well suited to
             young children and to anyone who has trouble with numbers or words.
           </span>
         </li>
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
-            <strong>Questionnaires</strong> — tools like the McGill Pain
+            <strong>Questionnaires</strong> – tools like the McGill Pain
             Questionnaire and the Brief Pain Inventory go further, asking about
             the <em>quality</em> of pain and how much it interferes with your
             life.
@@ -332,7 +332,7 @@ export default function MeasuringPain() {
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
-            <strong>Quality</strong> — burning, aching, stabbing, throbbing,
+            <strong>Quality</strong> – burning, aching, stabbing, throbbing,
             electric? The words point toward the{" "}
             <Link
               href="/understanding-pain/types-of-pain"
@@ -346,28 +346,28 @@ export default function MeasuringPain() {
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
-            <strong>Pattern and triggers</strong> — constant or in flares? What
+            <strong>Pattern and triggers</strong> – constant or in flares? What
             makes it better or worse?
           </span>
         </li>
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
-            <strong>Function</strong> — what does it stop you from doing? This is
+            <strong>Function</strong> – what does it stop you from doing? This is
             often the most useful thing you can report.
           </span>
         </li>
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
-            <strong>Sleep and mood</strong> — these both feed back into pain, so
+            <strong>Sleep and mood</strong> – these both feed back into pain, so
             they are part of the picture, not a distraction from it.
           </span>
         </li>
       </ul>
       <P>
-        A simple pain diary over a week or two — numbers plus a few of these
-        notes — can turn a vague impression into something you and your clinician
+        A simple pain diary over a week or two – numbers plus a few of these
+        notes – can turn a vague impression into something you and your clinician
         can actually act on.
       </P>
     </div>

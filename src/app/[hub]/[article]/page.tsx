@@ -152,7 +152,7 @@ export default async function ArticlePage({
                 >
                   {ref.title}
                 </a>
-                <span className="text-slate-500"> — {ref.source}</span>
+                <span className="text-slate-500"> – {ref.source}</span>
               </span>
             </li>
           ))}

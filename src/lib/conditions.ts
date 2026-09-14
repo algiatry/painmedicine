@@ -6,7 +6,7 @@ import type { Article } from "./understanding";
  * Same model as the understanding/treatments modules: EDUCATIONAL pages
  * built from cited primary sources (WHO, NIH, IASP, guideline bodies,
  * peer-reviewed literature). A condition page explains what the condition
- * is, why it hurts, and how it is treated today — described, never
+ * is, why it hurts, and how it is treated today – described, never
  * prescribed. No dosing, no individualized recommendation; every treatment
  * mention routes decisions to the reader's own clinician. Ship as
  * `status: "sourced"` with the honest byline per CONTENT-TEMPLATE.md.
@@ -24,17 +24,17 @@ export const CONDITION_ARTICLES: Article[] = [
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
-      "Most low back pain — roughly nine cases in ten — is 'non-specific': it arises from the muscles, ligaments, discs, and joints of the back without one identifiable culprit, and it usually eases over days to weeks. Less often the pain comes from an irritated nerve root, and rarely from a serious underlying condition. It is also the world's leading cause of disability — if your back hurts, you are in vast company.",
+      "Most low back pain – roughly nine cases in ten – is 'non-specific': it arises from the muscles, ligaments, discs, and joints of the back without one identifiable culprit, and it usually eases over days to weeks. Less often the pain comes from an irritated nerve root, and rarely from a serious underlying condition. It is also the world's leading cause of disability – if your back hurts, you are in vast company.",
     faqs: [
       {
         question: "What causes pain in the lower back?",
         answer:
-          "The lower back is dense with structures that can generate pain: muscles and ligaments, the intervertebral discs, the small facet joints that link each vertebra, the sacroiliac joints, and the nerve roots that exit the spine. In roughly 90% of cases no single structure can be confidently blamed — clinicians call this non-specific low back pain. A minority of cases come from nerve-root irritation (such as sciatica), and a small fraction from serious causes like fracture, infection, inflammatory disease, or cancer.",
+          "The lower back is dense with structures that can generate pain: muscles and ligaments, the intervertebral discs, the small facet joints that link each vertebra, the sacroiliac joints, and the nerve roots that exit the spine. In roughly 90% of cases no single structure can be confidently blamed – clinicians call this non-specific low back pain. A minority of cases come from nerve-root irritation (such as sciatica), and a small fraction from serious causes like fracture, infection, inflammatory disease, or cancer.",
       },
       {
         question: "How do I know if my back pain is serious?",
         answer:
-          "Most back pain is not dangerous, but seek care urgently for the red flags: new numbness in the groin or inner thighs, trouble controlling bladder or bowels, or worsening leg weakness (possible cauda equina syndrome — an emergency); fever alongside back pain; pain after significant trauma; or back pain with a history of cancer, osteoporosis, or unexplained weight loss. When none of these are present and the pain is recent, serious causes are rare.",
+          "Most back pain is not dangerous, but seek care urgently for the red flags: new numbness in the groin or inner thighs, trouble controlling bladder or bowels, or worsening leg weakness (possible cauda equina syndrome – an emergency); fever alongside back pain; pain after significant trauma; or back pain with a history of cancer, osteoporosis, or unexplained weight loss. When none of these are present and the pain is recent, serious causes are rare.",
       },
       {
         question: "Should I get an MRI for low back pain?",
@@ -44,41 +44,41 @@ export const CONDITION_ARTICLES: Article[] = [
       {
         question: "Why does my back still hurt if my scan looks normal?",
         answer:
-          "Because pain is made by the nervous system, not by the scanner. Imaging shows structure, and structure correlates surprisingly loosely with pain in both directions: scans find 'damage' in people who feel fine, and find little in people who hurt badly. Persistent pain often involves a sensitized pain system layered on top of whatever started it. The pain is fully real — it is just not always visible.",
+          "Because pain is made by the nervous system, not by the scanner. Imaging shows structure, and structure correlates surprisingly loosely with pain in both directions: scans find 'damage' in people who feel fine, and find little in people who hurt badly. Persistent pain often involves a sensitized pain system layered on top of whatever started it. The pain is fully real – it is just not always visible.",
       },
       {
         question: "Is bed rest good for a bad back?",
         answer:
-          "No — this is one of the clearest reversals in modern back care. Staying gently active leads to faster recovery than bed rest, which weakens the muscles the spine relies on and tends to prolong the episode. Guidelines now advise continuing ordinary movement as much as the pain reasonably allows. If pain is stopping you from moving at all, that is worth a conversation with your clinician rather than a week in bed.",
+          "No – this is one of the clearest reversals in modern back care. Staying gently active leads to faster recovery than bed rest, which weakens the muscles the spine relies on and tends to prolong the episode. Guidelines now advise continuing ordinary movement as much as the pain reasonably allows. If pain is stopping you from moving at all, that is worth a conversation with your clinician rather than a week in bed.",
       },
     ],
     references: [
       {
         source: "WHO",
-        title: "Low back pain — fact sheet",
+        title: "Low back pain – fact sheet",
         url: "https://www.who.int/news-room/fact-sheets/detail/low-back-pain",
       },
       {
         source: "The Lancet / PubMed",
         title:
-          "Hartvigsen et al. — What low back pain is and why we need to pay attention (Lancet Low Back Pain Series)",
+          "Hartvigsen et al. – What low back pain is and why we need to pay attention (Lancet Low Back Pain Series)",
         url: "https://pubmed.ncbi.nlm.nih.gov/29573870/",
       },
       {
         source: "AJNR / PMC",
         title:
-          "Brinjikji et al. — Systematic literature review of imaging features of spinal degeneration in asymptomatic populations",
+          "Brinjikji et al. – Systematic literature review of imaging features of spinal degeneration in asymptomatic populations",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4464797/",
       },
       {
         source: "Annals of Internal Medicine",
         title:
-          "Qaseem et al. — Noninvasive treatments for acute, subacute, and chronic low back pain: ACP clinical practice guideline",
+          "Qaseem et al. – Noninvasive treatments for acute, subacute, and chronic low back pain: ACP clinical practice guideline",
         url: "https://www.acpjournals.org/doi/10.7326/M16-2367",
       },
       {
         source: "NIH / NINDS",
-        title: "Back pain — patient information",
+        title: "Back pain – patient information",
         url: "https://www.ninds.nih.gov/health-information/disorders/back-pain",
       },
       {
@@ -92,7 +92,7 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "The three types of pain",
         href: "/understanding-pain/types-of-pain",
         blurb:
-          "Chronic low back pain is the classic mixed-mechanism pain — often all three types at once.",
+          "Chronic low back pain is the classic mixed-mechanism pain – often all three types at once.",
       },
       {
         title: "Acute vs. chronic pain",
@@ -112,16 +112,16 @@ export const CONDITION_ARTICLES: Article[] = [
     slug: "sciatica",
     title: "Sciatica",
     description:
-      "What sciatica is and what causes it: the pinched nerve root behind most cases, why inflammation matters as much as pressure, the surprising science of herniated discs that vanish on their own, and how sciatica is treated today — including what surgery does and doesn't change.",
+      "What sciatica is and what causes it: the pinched nerve root behind most cases, why inflammation matters as much as pressure, the surprising science of herniated discs that vanish on their own, and how sciatica is treated today – including what surgery does and doesn't change.",
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
-      "Sciatica is nerve pain that runs from the lower back or buttock down the leg, along the path of the sciatic nerve. In roughly nine cases in ten the cause is a herniated disc pressing on — and inflaming — a nerve root in the lower spine. It can be severe, but its natural story is hopeful: most cases improve within weeks to a few months, and herniated discs often shrink away on their own.",
+      "Sciatica is nerve pain that runs from the lower back or buttock down the leg, along the path of the sciatic nerve. In roughly nine cases in ten the cause is a herniated disc pressing on – and inflaming – a nerve root in the lower spine. It can be severe, but its natural story is hopeful: most cases improve within weeks to a few months, and herniated discs often shrink away on their own.",
     faqs: [
       {
         question: "What causes sciatica?",
         answer:
-          "About 90% of sciatica comes from a herniated disc compressing and chemically irritating one of the nerve roots in the lower spine that merge to form the sciatic nerve. Less common causes include spinal stenosis (age-related narrowing of the nerve passages), spondylolisthesis (a slipped vertebra), and — rarely — irritation of the nerve further down its course. The pain is felt in the leg, but the problem almost always sits at the spine.",
+          "About 90% of sciatica comes from a herniated disc compressing and chemically irritating one of the nerve roots in the lower spine that merge to form the sciatic nerve. Less common causes include spinal stenosis (age-related narrowing of the nerve passages), spondylolisthesis (a slipped vertebra), and – rarely – irritation of the nerve further down its course. The pain is felt in the leg, but the problem almost always sits at the spine.",
       },
       {
         question: "How long does sciatica take to go away?",
@@ -131,7 +131,7 @@ export const CONDITION_ARTICLES: Article[] = [
       {
         question: "Can a herniated disc heal on its own?",
         answer:
-          "Yes — often. The immune system treats displaced disc material as debris to clear, and follow-up imaging shows herniations shrinking or vanishing over months. Counterintuitively, the dramatic-looking ones regress most: in a systematic review, free disc fragments resorbed in about 96% of cases and extrusions in about 70%, while mild bulges — the least alarming finding — changed least. A scary MRI report is not a life sentence.",
+          "Yes – often. The immune system treats displaced disc material as debris to clear, and follow-up imaging shows herniations shrinking or vanishing over months. Counterintuitively, the dramatic-looking ones regress most: in a systematic review, free disc fragments resorbed in about 96% of cases and extrusions in about 70%, while mild bulges – the least alarming finding – changed least. A scary MRI report is not a life sentence.",
       },
       {
         question: "Do I need surgery for sciatica?",
@@ -152,29 +152,29 @@ export const CONDITION_ARTICLES: Article[] = [
       },
       {
         source: "NEJM / PubMed",
-        title: "Ropper & Zafonte — Sciatica (review)",
+        title: "Ropper & Zafonte – Sciatica (review)",
         url: "https://pubmed.ncbi.nlm.nih.gov/25806916/",
       },
       {
         source: "NEJM / PubMed",
         title:
-          "Peul et al. — Surgery versus prolonged conservative treatment for sciatica",
+          "Peul et al. – Surgery versus prolonged conservative treatment for sciatica",
         url: "https://pubmed.ncbi.nlm.nih.gov/17538084/",
       },
       {
         source: "Clinical Rehabilitation / PubMed",
         title:
-          "Chiu et al. — The probability of spontaneous regression of lumbar herniated disc: a systematic review",
+          "Chiu et al. – The probability of spontaneous regression of lumbar herniated disc: a systematic review",
         url: "https://pubmed.ncbi.nlm.nih.gov/25009200/",
       },
       {
         source: "NEJM / PubMed",
-        title: "Mathieson et al. — Trial of Pregabalin for Acute and Chronic Sciatica",
+        title: "Mathieson et al. – Trial of Pregabalin for Acute and Chronic Sciatica",
         url: "https://pubmed.ncbi.nlm.nih.gov/28328324/",
       },
       {
         source: "NIH / MedlinePlus",
-        title: "Sciatica — patient information",
+        title: "Sciatica – patient information",
         url: "https://medlineplus.gov/sciatica.html",
       },
     ],
@@ -183,13 +183,13 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Low back pain",
         href: "/conditions/low-back-pain",
         blurb:
-          "The parent territory — and where sciatica fits among the causes of a hurting back.",
+          "The parent territory – and where sciatica fits among the causes of a hurting back.",
       },
       {
         title: "Piriformis syndrome",
         href: "/treatments/piriformis-syndrome",
         blurb:
-          "The one-in-ten that does not start at the spine — and the deep-hip rehab built for it.",
+          "The one-in-ten that does not start at the spine – and the deep-hip rehab built for it.",
       },
       {
         title: "The three types of pain",
@@ -200,7 +200,7 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Medications for pain",
         href: "/treatments/medications-for-pain",
         blurb:
-          "Why nerve pain gets different drugs — and what the sciatica trials honestly showed.",
+          "Why nerve pain gets different drugs – and what the sciatica trials honestly showed.",
       },
     ],
   },
@@ -210,65 +210,65 @@ export const CONDITION_ARTICLES: Article[] = [
     slug: "neuropathic-pain",
     title: "Neuropathic Pain",
     description:
-      "What neuropathic pain is and what causes it: how damaged nerves become the source of pain rather than its messenger, why feet burn first, the numb-yet-painful paradox, and the honest map of treatments for nerve pain — from the first-line medications to spinal cord stimulation.",
+      "What neuropathic pain is and what causes it: how damaged nerves become the source of pain rather than its messenger, why feet burn first, the numb-yet-painful paradox, and the honest map of treatments for nerve pain – from the first-line medications to spinal cord stimulation.",
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
-      "Neuropathic pain is pain caused by damage or disease in the nervous system itself — the wiring that normally reports pain becomes the thing generating it. It affects roughly 7–10% of adults, most often from diabetes, shingles, chemotherapy, or nerve injury. It feels different (burning, electric, shooting), behaves differently (numb yet painful), and responds to different treatments than ordinary pain.",
+      "Neuropathic pain is pain caused by damage or disease in the nervous system itself – the wiring that normally reports pain becomes the thing generating it. It affects roughly 7–10% of adults, most often from diabetes, shingles, chemotherapy, or nerve injury. It feels different (burning, electric, shooting), behaves differently (numb yet painful), and responds to different treatments than ordinary pain.",
     faqs: [
       {
         question: "What does neuropathic pain feel like?",
         answer:
-          "People reach for electrical and thermal words: burning, shooting, stabbing, electric shocks, pins and needles. Two signatures set it apart from ordinary pain. Allodynia — pain from things that should not hurt at all, like a bedsheet brushing the skin. And the numb-yet-painful paradox: the same territory can be both less sensitive to touch and the site of intense spontaneous pain, because the damaged wiring both loses signal and generates false ones.",
+          "People reach for electrical and thermal words: burning, shooting, stabbing, electric shocks, pins and needles. Two signatures set it apart from ordinary pain. Allodynia – pain from things that should not hurt at all, like a bedsheet brushing the skin. And the numb-yet-painful paradox: the same territory can be both less sensitive to touch and the site of intense spontaneous pain, because the damaged wiring both loses signal and generates false ones.",
       },
       {
         question: "What causes neuropathic pain?",
         answer:
-          "Anything that injures sensory nerves or their pathways. The most common causes are diabetes (the leading cause of peripheral neuropathy), shingles (postherpetic neuralgia), chemotherapy, nerve compression or injury — including sciatica — and alcohol-related and inherited neuropathies. Central causes include stroke, multiple sclerosis, and spinal cord injury. Sometimes no cause is found even after a careful workup; that is common and does not make the pain less real.",
+          "Anything that injures sensory nerves or their pathways. The most common causes are diabetes (the leading cause of peripheral neuropathy), shingles (postherpetic neuralgia), chemotherapy, nerve compression or injury – including sciatica – and alcohol-related and inherited neuropathies. Central causes include stroke, multiple sclerosis, and spinal cord injury. Sometimes no cause is found even after a careful workup; that is common and does not make the pain less real.",
       },
       {
         question: "Why do my feet burn at night?",
         answer:
-          "Burning feet — often worst in bed — is the classic voice of peripheral neuropathy, and there is a reason it starts there: the nerves serving the feet are the longest in the body, and nerves that are struggling metabolically tend to fail from their farthest tips backward. That is why symptoms typically begin in the toes and spread upward in a 'stocking' pattern, with hands joining later in a 'glove' pattern. New or worsening burning feet deserve a clinical evaluation — diabetes screening included.",
+          "Burning feet – often worst in bed – is the classic voice of peripheral neuropathy, and there is a reason it starts there: the nerves serving the feet are the longest in the body, and nerves that are struggling metabolically tend to fail from their farthest tips backward. That is why symptoms typically begin in the toes and spread upward in a 'stocking' pattern, with hands joining later in a 'glove' pattern. New or worsening burning feet deserve a clinical evaluation – diabetes screening included.",
       },
       {
         question: "Why don't normal painkillers work on nerve pain?",
         answer:
-          "Because they aim at the wrong mechanism. Ordinary painkillers work mostly by calming inflammation around injured tissue. In neuropathic pain the tissue is often fine — the nerve itself is misfiring, driven by overactive sodium channels and sensitized spinal circuits. The medications with the best evidence target that machinery instead: gabapentinoids calm the overexcited signaling, and certain antidepressants strengthen the spinal cord's own pain-dampening pathways. Different fault, different tools.",
+          "Because they aim at the wrong mechanism. Ordinary painkillers work mostly by calming inflammation around injured tissue. In neuropathic pain the tissue is often fine – the nerve itself is misfiring, driven by overactive sodium channels and sensitized spinal circuits. The medications with the best evidence target that machinery instead: gabapentinoids calm the overexcited signaling, and certain antidepressants strengthen the spinal cord's own pain-dampening pathways. Different fault, different tools.",
       },
       {
         question: "Can neuropathic pain be treated?",
         answer:
-          "Yes, with honest expectations. Treating the underlying cause matters most where possible — blood sugar control, relieving a compression, changing an offending drug. For the pain itself, first-line medications meaningfully help a substantial minority of patients, and clinicians often combine approaches or move to options like high-concentration capsaicin patches, lidocaine patches, or spinal cord stimulation, which showed strong results for painful diabetic neuropathy in a randomized trial. A realistic win is major relief, not always zero pain — and function often improves ahead of the numbers.",
+          "Yes, with honest expectations. Treating the underlying cause matters most where possible – blood sugar control, relieving a compression, changing an offending drug. For the pain itself, first-line medications meaningfully help a substantial minority of patients, and clinicians often combine approaches or move to options like high-concentration capsaicin patches, lidocaine patches, or spinal cord stimulation, which showed strong results for painful diabetic neuropathy in a randomized trial. A realistic win is major relief, not always zero pain – and function often improves ahead of the numbers.",
       },
     ],
     references: [
       {
         source: "NIH / NINDS",
-        title: "Peripheral Neuropathy — patient information",
+        title: "Peripheral Neuropathy – patient information",
         url: "https://www.ninds.nih.gov/health-information/disorders/peripheral-neuropathy",
       },
       {
         source: "Nat Rev Dis Primers / PMC",
-        title: "Colloca et al. — Neuropathic pain (primer)",
+        title: "Colloca et al. – Neuropathic pain (primer)",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5371025/",
       },
       {
         source: "PAIN / PubMed",
         title:
-          "van Hecke et al. — Neuropathic pain in the general population: a systematic review of epidemiological studies",
+          "van Hecke et al. – Neuropathic pain in the general population: a systematic review of epidemiological studies",
         url: "https://pubmed.ncbi.nlm.nih.gov/24291734/",
       },
       {
         source: "Lancet Neurology / PMC",
         title:
-          "Finnerup et al. — Pharmacotherapy for neuropathic pain in adults: systematic review, meta-analysis and updated NeuPSIG recommendations",
+          "Finnerup et al. – Pharmacotherapy for neuropathic pain in adults: systematic review, meta-analysis and updated NeuPSIG recommendations",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4493167/",
       },
       {
         source: "JAMA Neurology / PubMed",
         title:
-          "Petersen et al. — Effect of high-frequency (10-kHz) spinal cord stimulation in patients with painful diabetic neuropathy: a randomized clinical trial",
+          "Petersen et al. – Effect of high-frequency (10-kHz) spinal cord stimulation in patients with painful diabetic neuropathy: a randomized clinical trial",
         url: "https://pubmed.ncbi.nlm.nih.gov/33818600/",
       },
       {
@@ -278,7 +278,7 @@ export const CONDITION_ARTICLES: Article[] = [
       },
       {
         source: "IASP",
-        title: "IASP Terminology — neuropathic pain definition",
+        title: "IASP Terminology – neuropathic pain definition",
         url: "https://www.iasp-pain.org/resources/terminology/",
       },
     ],
@@ -287,7 +287,7 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Medications for pain",
         href: "/treatments/medications-for-pain",
         blurb:
-          "The nerve-pain medications explained — and why their names confuse everyone.",
+          "The nerve-pain medications explained – and why their names confuse everyone.",
       },
       {
         title: "Sciatica",
@@ -308,59 +308,59 @@ export const CONDITION_ARTICLES: Article[] = [
     slug: "migraine",
     title: "Migraine",
     description:
-      "What migraine actually is — an inherited neurological disease, not a bad headache: the four phases of an attack, the trigeminal-CGRP engine behind the pain, the medication-overuse trap, and the new generation of treatments designed for migraine's own biology.",
+      "What migraine actually is – an inherited neurological disease, not a bad headache: the four phases of an attack, the trigeminal-CGRP engine behind the pain, the medication-overuse trap, and the new generation of treatments designed for migraine's own biology.",
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
-      "Migraine is an inherited neurological disease, not a bad headache — the headache is one phase of a whole-brain attack that can begin a day before the pain and end a day after it. It affects roughly one person in seven, ranks second among the world's causes of disability — first among young women — and is now treatable with drugs designed for its specific biology.",
+      "Migraine is an inherited neurological disease, not a bad headache – the headache is one phase of a whole-brain attack that can begin a day before the pain and end a day after it. It affects roughly one person in seven, ranks second among the world's causes of disability – first among young women – and is now treatable with drugs designed for its specific biology.",
     faqs: [
       {
         question: "Is migraine just a bad headache?",
         answer:
-          "No. Migraine is a neurological disease with a strong genetic basis, and the headache is only one phase of an attack that also brings sensory amplification (light, sound, and smell become painful), nausea, thinking changes, and often a day of 'hangover' afterward. The Global Burden of Disease studies rank migraine second among all causes of disability worldwide — and first among young women. Taking it seriously is not dramatizing; it is reading the data.",
+          "No. Migraine is a neurological disease with a strong genetic basis, and the headache is only one phase of an attack that also brings sensory amplification (light, sound, and smell become painful), nausea, thinking changes, and often a day of 'hangover' afterward. The Global Burden of Disease studies rank migraine second among all causes of disability worldwide – and first among young women. Taking it seriously is not dramatizing; it is reading the data.",
       },
       {
         question: "What causes migraine?",
         answer:
-          "An inherited tendency toward a hypersensitive brain, plus an attack mechanism science can now trace: the trigeminal nerve — the head's main sensory nerve — activates and releases CGRP, a peptide that inflames the brain's pain-sensitive coverings and drives the throbbing pain. Attacks often begin in deep brain regions like the hypothalamus hours before any pain, which is why warning symptoms such as yawning and cravings arrive first. Triggers matter, but they act on this underlying biology — they are sparks, not the engine.",
+          "An inherited tendency toward a hypersensitive brain, plus an attack mechanism science can now trace: the trigeminal nerve – the head's main sensory nerve – activates and releases CGRP, a peptide that inflames the brain's pain-sensitive coverings and drives the throbbing pain. Attacks often begin in deep brain regions like the hypothalamus hours before any pain, which is why warning symptoms such as yawning and cravings arrive first. Triggers matter, but they act on this underlying biology – they are sparks, not the engine.",
       },
       {
-        question: "What is a migraine aura — and how do I know it isn't a stroke?",
+        question: "What is a migraine aura – and how do I know it isn't a stroke?",
         answer:
-          "Aura is a slow electrical wave moving across the brain's surface, experienced by about one in three people with migraine — most often as shimmering zigzags or blind spots that gradually spread over twenty to sixty minutes, then fade. The gradual march is the signature: stroke symptoms typically arrive suddenly and all at once. Any first-ever aura, aura that includes weakness or trouble speaking, or a sudden thunderclap headache deserves emergency evaluation — this is one place not to self-diagnose.",
+          "Aura is a slow electrical wave moving across the brain's surface, experienced by about one in three people with migraine – most often as shimmering zigzags or blind spots that gradually spread over twenty to sixty minutes, then fade. The gradual march is the signature: stroke symptoms typically arrive suddenly and all at once. Any first-ever aura, aura that includes weakness or trouble speaking, or a sudden thunderclap headache deserves emergency evaluation – this is one place not to self-diagnose.",
       },
       {
         question: "Can taking painkillers make migraine worse?",
         answer:
-          "Yes — this is the medication-overuse trap, and it is one of the most important facts in headache medicine. Using acute pain relievers on too many days per month, over months, can convert episodic migraine into a near-daily headache that the same medications no longer help. It happens with ordinary painkillers as well as migraine-specific ones. If you are reaching for relief more days than not, that is not a willpower problem — it is a recognized, treatable condition to bring to a clinician.",
+          "Yes – this is the medication-overuse trap, and it is one of the most important facts in headache medicine. Using acute pain relievers on too many days per month, over months, can convert episodic migraine into a near-daily headache that the same medications no longer help. It happens with ordinary painkillers as well as migraine-specific ones. If you are reaching for relief more days than not, that is not a willpower problem – it is a recognized, treatable condition to bring to a clinician.",
       },
       {
         question: "What are the new migraine treatments?",
         answer:
-          "Migraine is pain medicine's biggest recent success story. The CGRP era began in 2018: monoclonal antibodies given monthly or quarterly to prevent attacks, followed by gepants — CGRP-blocking tablets, some usable both to treat an attack and to prevent the next ones — and lasmiditan, an acute option without triptans' vascular constraints. None is universal, but for many people these drugs — the first ever designed from migraine's own mechanism to prevent it — have changed what living with migraine means. Whether one fits you is a conversation for your clinician.",
+          "Migraine is pain medicine's biggest recent success story. The CGRP era began in 2018: monoclonal antibodies given monthly or quarterly to prevent attacks, followed by gepants – CGRP-blocking tablets, some usable both to treat an attack and to prevent the next ones – and lasmiditan, an acute option without triptans' vascular constraints. None is universal, but for many people these drugs – the first ever designed from migraine's own mechanism to prevent it – have changed what living with migraine means. Whether one fits you is a conversation for your clinician.",
       },
     ],
     references: [
       {
         source: "ICHD-3 (IHS)",
-        title: "The International Classification of Headache Disorders, 3rd edition — migraine criteria",
+        title: "The International Classification of Headache Disorders, 3rd edition – migraine criteria",
         url: "https://ichd-3.org/",
       },
       {
         source: "J Headache Pain / PubMed",
         title:
-          "Steiner et al. — Migraine remains second among the world's causes of disability, and first among young women: findings from GBD2019",
+          "Steiner et al. – Migraine remains second among the world's causes of disability, and first among young women: findings from GBD2019",
         url: "https://pubmed.ncbi.nlm.nih.gov/33267788/",
       },
       {
         source: "NEJM / PubMed",
-        title: "Ashina — Migraine (review)",
+        title: "Ashina – Migraine (review)",
         url: "https://pubmed.ncbi.nlm.nih.gov/33211930/",
       },
       {
         source: "Lancet Neurology / PubMed",
         title:
-          "Charles — The pathophysiology of migraine: implications for clinical management",
+          "Charles – The pathophysiology of migraine: implications for clinical management",
         url: "https://pubmed.ncbi.nlm.nih.gov/29229375/",
       },
       {
@@ -370,7 +370,7 @@ export const CONDITION_ARTICLES: Article[] = [
       },
       {
         source: "NIH / MedlinePlus",
-        title: "Migraine — patient information",
+        title: "Migraine – patient information",
         url: "https://medlineplus.gov/migraine.html",
       },
     ],
@@ -379,7 +379,7 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Biologics & gene-targeted therapy",
         href: "/future-of-pain-medicine/biologics-and-gene-therapy",
         blurb:
-          "The CGRP antibody story in full — migraine as proof that designed pain drugs work.",
+          "The CGRP antibody story in full – migraine as proof that designed pain drugs work.",
       },
       {
         title: "The pain treatment pipeline",
@@ -400,59 +400,59 @@ export const CONDITION_ARTICLES: Article[] = [
     slug: "arthritis-pain",
     title: "Arthritis Pain",
     description:
-      "What arthritis actually is — one word covering two very different diseases: osteoarthritis (a whole-joint disease, not 'wear and tear') and inflammatory arthritis (rheumatoid, psoriatic, gout). How to tell the patterns apart, why the X-ray rarely matches the pain, and how each is treated today.",
+      "What arthritis actually is – one word covering two very different diseases: osteoarthritis (a whole-joint disease, not 'wear and tear') and inflammatory arthritis (rheumatoid, psoriatic, gout). How to tell the patterns apart, why the X-ray rarely matches the pain, and how each is treated today.",
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
-      "Arthritis is an umbrella word for over a hundred joint conditions, but two families cover most of it. Osteoarthritis — the most common by far — is a whole-joint disease of cartilage, bone, and lining, not simple 'wear and tear.' Inflammatory arthritis — rheumatoid, psoriatic, gout — is the immune system attacking the joint. Telling them apart matters, because one is managed and the other is a race.",
+      "Arthritis is an umbrella word for over a hundred joint conditions, but two families cover most of it. Osteoarthritis – the most common by far – is a whole-joint disease of cartilage, bone, and lining, not simple 'wear and tear.' Inflammatory arthritis – rheumatoid, psoriatic, gout – is the immune system attacking the joint. Telling them apart matters, because one is managed and the other is a race.",
     faqs: [
       {
         question: "What is the difference between osteoarthritis and rheumatoid arthritis?",
         answer:
-          "Different diseases sharing a word. Osteoarthritis is a gradual disease of the joint's own tissues — cartilage thins, bone remodels, the lining grumbles — typically in knees, hips, hands, and spine, hurting more with use. Rheumatoid arthritis is autoimmune: the immune system attacks the joint lining itself, classically in the small joints of both hands and feet symmetrically, with long morning stiffness, warm swelling, and whole-body fatigue. The distinction drives everything — including how urgently treatment should start.",
+          "Different diseases sharing a word. Osteoarthritis is a gradual disease of the joint's own tissues – cartilage thins, bone remodels, the lining grumbles – typically in knees, hips, hands, and spine, hurting more with use. Rheumatoid arthritis is autoimmune: the immune system attacks the joint lining itself, classically in the small joints of both hands and feet symmetrically, with long morning stiffness, warm swelling, and whole-body fatigue. The distinction drives everything – including how urgently treatment should start.",
       },
       {
         question: "Is osteoarthritis just wear and tear?",
         answer:
-          "No — and retiring that phrase changes how people treat their joints. Osteoarthritis is an active disease process involving the whole joint: cartilage biology, bone remodeling, and low-grade inflammation of the lining. Joints are living tissue, not brake pads. That is why loading them sensibly through exercise strengthens rather than erodes them, and why guidelines put movement — not rest — at the center of treatment.",
+          "No – and retiring that phrase changes how people treat their joints. Osteoarthritis is an active disease process involving the whole joint: cartilage biology, bone remodeling, and low-grade inflammation of the lining. Joints are living tissue, not brake pads. That is why loading them sensibly through exercise strengthens rather than erodes them, and why guidelines put movement – not rest – at the center of treatment.",
       },
       {
         question: "Why doesn't my X-ray match how much I hurt?",
         answer:
-          "Because imaging shows structure and pain is made by the nervous system. The mismatch is well documented in both directions: many people with significant joint changes on X-ray have little pain, and many with real, daily arthritis pain have modest films. Severity on a scan is one input, not a verdict — how your joint feels and functions matters more to treatment decisions than how it photographs.",
+          "Because imaging shows structure and pain is made by the nervous system. The mismatch is well documented in both directions: many people with significant joint changes on X-ray have little pain, and many with real, daily arthritis pain have modest films. Severity on a scan is one input, not a verdict – how your joint feels and functions matters more to treatment decisions than how it photographs.",
       },
       {
         question: "Does exercise make arthritis worse?",
         answer:
-          "The evidence says the opposite — exercise is the most strongly recommended treatment for osteoarthritis in major guidelines. Strengthening the muscles around a joint cushions its load, and moving cartilage nourishes it; motion is closer to lotion than to wear. Soreness after starting is common and usually settles as the joint adapts. The practical approach is gradual and guided — a physical therapist can tailor loading to your joint, which is exactly what guidelines suggest.",
+          "The evidence says the opposite – exercise is the most strongly recommended treatment for osteoarthritis in major guidelines. Strengthening the muscles around a joint cushions its load, and moving cartilage nourishes it; motion is closer to lotion than to wear. Soreness after starting is common and usually settles as the joint adapts. The practical approach is gradual and guided – a physical therapist can tailor loading to your joint, which is exactly what guidelines suggest.",
       },
       {
         question: "When should I see a rheumatologist quickly?",
         answer:
-          "When the inflammatory pattern shows itself: joints that are swollen, warm, and stiff for an hour or more in the morning — especially the small joints of both hands or feet — plus fatigue or feeling generally unwell. Modern rheumatology treats early inflammatory arthritis as a window of opportunity: disease-modifying treatment started promptly can prevent the joint damage that once defined rheumatoid arthritis. Months of watchful waiting is the one move the evidence argues against.",
+          "When the inflammatory pattern shows itself: joints that are swollen, warm, and stiff for an hour or more in the morning – especially the small joints of both hands or feet – plus fatigue or feeling generally unwell. Modern rheumatology treats early inflammatory arthritis as a window of opportunity: disease-modifying treatment started promptly can prevent the joint damage that once defined rheumatoid arthritis. Months of watchful waiting is the one move the evidence argues against.",
       },
     ],
     references: [
       {
         source: "Arthritis Care Res / PubMed",
         title:
-          "Kolasinski et al. — 2019 American College of Rheumatology/Arthritis Foundation Guideline for the Management of Osteoarthritis of the Hand, Hip, and Knee",
+          "Kolasinski et al. – 2019 American College of Rheumatology/Arthritis Foundation Guideline for the Management of Osteoarthritis of the Hand, Hip, and Knee",
         url: "https://pubmed.ncbi.nlm.nih.gov/31908163/",
       },
       {
         source: "The Lancet / PubMed",
-        title: "Smolen et al. — Rheumatoid arthritis (seminar)",
+        title: "Smolen et al. – Rheumatoid arthritis (seminar)",
         url: "https://pubmed.ncbi.nlm.nih.gov/27156434/",
       },
       {
         source: "BMC Musculoskelet Disord / PubMed",
         title:
-          "Bedson & Croft — The discordance between clinical and radiographic knee osteoarthritis: a systematic search and summary of the literature",
+          "Bedson & Croft – The discordance between clinical and radiographic knee osteoarthritis: a systematic search and summary of the literature",
         url: "https://pubmed.ncbi.nlm.nih.gov/18764949/",
       },
       {
         source: "NIH / NIAMS",
-        title: "Osteoarthritis — patient information",
+        title: "Osteoarthritis – patient information",
         url: "https://www.niams.nih.gov/health-topics/osteoarthritis",
       },
       {
@@ -462,7 +462,7 @@ export const CONDITION_ARTICLES: Article[] = [
       },
       {
         source: "NIH / MedlinePlus",
-        title: "Arthritis — patient information",
+        title: "Arthritis – patient information",
         url: "https://medlineplus.gov/arthritis.html",
       },
     ],
@@ -477,7 +477,7 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Medications for pain",
         href: "/treatments/medications-for-pain",
         blurb:
-          "Where NSAIDs and topicals genuinely earn their keep — inflamed, tissue-driven pain.",
+          "Where NSAIDs and topicals genuinely earn their keep – inflamed, tissue-driven pain.",
       },
       {
         title: "The pain treatment pipeline",
@@ -493,70 +493,70 @@ export const CONDITION_ARTICLES: Article[] = [
     slug: "fibromyalgia",
     title: "Fibromyalgia",
     description:
-      "What fibromyalgia actually is — the signature disease of a sensitized pain system: the measurable evidence that it is real, how it is diagnosed today, why exercise and sleep outperform most pills, and honest expectations for the three approved medications.",
+      "What fibromyalgia actually is – the signature disease of a sensitized pain system: the measurable evidence that it is real, how it is diagnosed today, why exercise and sleep outperform most pills, and honest expectations for the three approved medications.",
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
-      "Fibromyalgia is chronic widespread pain — both sides of the body, above and below the waist — traveling with fatigue, unrefreshing sleep, and thinking difficulties. It affects roughly 2–4% of people, and modern research locates the problem in a sensitized pain system: the nervous system's volume control turned up. That is measurable biology, not imagination — and it points to treatments that retrain the system rather than mask it.",
+      "Fibromyalgia is chronic widespread pain – both sides of the body, above and below the waist – traveling with fatigue, unrefreshing sleep, and thinking difficulties. It affects roughly 2–4% of people, and modern research locates the problem in a sensitized pain system: the nervous system's volume control turned up. That is measurable biology, not imagination – and it points to treatments that retrain the system rather than mask it.",
     faqs: [
       {
         question: "Is fibromyalgia a real disease or is it in my head?",
         answer:
-          "It is real, and the evidence is measurable. Brain imaging shows people with fibromyalgia producing the same pain-processing activation as controls at roughly half the pressure. Spinal fluid carries elevated levels of pain-transmitting chemicals. And the body's own pain-dampening reflexes underperform on testing. Fibromyalgia is the signature example of nociplastic pain — pain from a sensitized pain system — recognized by the international pain-science community. Being brain-involved does not make it imaginary; all pain is made by the nervous system.",
+          "It is real, and the evidence is measurable. Brain imaging shows people with fibromyalgia producing the same pain-processing activation as controls at roughly half the pressure. Spinal fluid carries elevated levels of pain-transmitting chemicals. And the body's own pain-dampening reflexes underperform on testing. Fibromyalgia is the signature example of nociplastic pain – pain from a sensitized pain system – recognized by the international pain-science community. Being brain-involved does not make it imaginary; all pain is made by the nervous system.",
       },
       {
         question: "What causes fibromyalgia?",
         answer:
-          "No single cause is known. The picture the evidence supports: an inherited tendency toward a sensitive pain system, often switched on or worsened by stressors — an illness, an injury, trauma, or a long stretch of poor sleep and stress. Once sensitized, the system amplifies signals that would not normally register as pain. Disrupted deep sleep appears to be both a symptom and a driver, which is one reason sleep is treated as a core target rather than a side issue.",
+          "No single cause is known. The picture the evidence supports: an inherited tendency toward a sensitive pain system, often switched on or worsened by stressors – an illness, an injury, trauma, or a long stretch of poor sleep and stress. Once sensitized, the system amplifies signals that would not normally register as pain. Disrupted deep sleep appears to be both a symptom and a driver, which is one reason sleep is treated as a core target rather than a side issue.",
       },
       {
         question: "How is fibromyalgia diagnosed?",
         answer:
-          "By modern criteria, not by pressing tender points — that method was retired. Clinicians assess how widespread the pain is and how severe the accompanying symptoms are (fatigue, unrefreshing sleep, cognitive difficulty) over at least three months, and run basic blood work to check for mimics like thyroid disease or inflammatory arthritis. There is no blood test for fibromyalgia itself, but it is a recognized diagnosis made on positive grounds — not a label of last resort, and a diagnosis you are allowed to have alongside other conditions.",
+          "By modern criteria, not by pressing tender points – that method was retired. Clinicians assess how widespread the pain is and how severe the accompanying symptoms are (fatigue, unrefreshing sleep, cognitive difficulty) over at least three months, and run basic blood work to check for mimics like thyroid disease or inflammatory arthritis. There is no blood test for fibromyalgia itself, but it is a recognized diagnosis made on positive grounds – not a label of last resort, and a diagnosis you are allowed to have alongside other conditions.",
       },
       {
         question: "What is fibro fog?",
         answer:
-          "The cognitive side of fibromyalgia: trouble concentrating, finding words, and holding a thread — often as disabling as the pain. It appears to arise from the same sources as the rest of the condition: a nervous system spending resources on amplified pain traffic, plus unrefreshing sleep compounding everything. It is not dementia and does not progress like one. The treatments that calm the overall condition — sleep, graded activity, pacing — are the ones that thin the fog.",
+          "The cognitive side of fibromyalgia: trouble concentrating, finding words, and holding a thread – often as disabling as the pain. It appears to arise from the same sources as the rest of the condition: a nervous system spending resources on amplified pain traffic, plus unrefreshing sleep compounding everything. It is not dementia and does not progress like one. The treatments that calm the overall condition – sleep, graded activity, pacing – are the ones that thin the fog.",
       },
       {
         question: "What actually helps fibromyalgia?",
         answer:
-          "The strongest evidence belongs to things that retrain the system: graded exercise — with tai chi performing as well as or better than aerobic exercise in a randomized trial — good sleep care, education about how the condition works, and cognitive behavioral approaches. Three medications are approved for fibromyalgia; honestly framed, each meaningfully helps a minority of the people who try it. Opioids are a specific poor fit and can worsen the underlying sensitivity. The realistic goal is a system turned down and a life built back up — most people can improve.",
+          "The strongest evidence belongs to things that retrain the system: graded exercise – with tai chi performing as well as or better than aerobic exercise in a randomized trial – good sleep care, education about how the condition works, and cognitive behavioral approaches. Three medications are approved for fibromyalgia; honestly framed, each meaningfully helps a minority of the people who try it. Opioids are a specific poor fit and can worsen the underlying sensitivity. The realistic goal is a system turned down and a life built back up – most people can improve.",
       },
     ],
     references: [
       {
         source: "JAMA / PubMed",
-        title: "Clauw — Fibromyalgia: a clinical review",
+        title: "Clauw – Fibromyalgia: a clinical review",
         url: "https://pubmed.ncbi.nlm.nih.gov/24737367/",
       },
       {
         source: "Semin Arthritis Rheum / PubMed",
         title:
-          "Wolfe et al. — 2016 revisions to the 2010/2011 fibromyalgia diagnostic criteria",
+          "Wolfe et al. – 2016 revisions to the 2010/2011 fibromyalgia diagnostic criteria",
         url: "https://pubmed.ncbi.nlm.nih.gov/27916278/",
       },
       {
         source: "Arthritis Rheum / PubMed",
         title:
-          "Gracely et al. — Functional magnetic resonance imaging evidence of augmented pain processing in fibromyalgia",
+          "Gracely et al. – Functional magnetic resonance imaging evidence of augmented pain processing in fibromyalgia",
         url: "https://pubmed.ncbi.nlm.nih.gov/12115241/",
       },
       {
         source: "BMJ / PubMed",
         title:
-          "Wang et al. — Effect of tai chi versus aerobic exercise for fibromyalgia: comparative effectiveness randomized controlled trial",
+          "Wang et al. – Effect of tai chi versus aerobic exercise for fibromyalgia: comparative effectiveness randomized controlled trial",
         url: "https://pubmed.ncbi.nlm.nih.gov/29563100/",
       },
       {
         source: "NIH / NIAMS",
-        title: "Fibromyalgia — patient information",
+        title: "Fibromyalgia – patient information",
         url: "https://www.niams.nih.gov/health-topics/fibromyalgia",
       },
       {
         source: "NIH / MedlinePlus",
-        title: "Fibromyalgia — patient information",
+        title: "Fibromyalgia – patient information",
         url: "https://medlineplus.gov/fibromyalgia.html",
       },
     ],
@@ -565,7 +565,7 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "The three types of pain",
         href: "/understanding-pain/types-of-pain",
         blurb:
-          "Fibromyalgia is the signature nociplastic condition — the third type, explained.",
+          "Fibromyalgia is the signature nociplastic condition – the third type, explained.",
       },
       {
         title: "Pain and sleep",
@@ -587,60 +587,60 @@ export const CONDITION_ARTICLES: Article[] = [
     slug: "cancer-pain",
     title: "Cancer Pain",
     description:
-      "Cancer pain is one of the most treatable parts of cancer — where it comes from (the disease, the treatment, and the years after), why opioids are a different conversation here, what palliative care actually is, and the full toolbox beyond the pill bottle.",
+      "Cancer pain is one of the most treatable parts of cancer – where it comes from (the disease, the treatment, and the years after), why opioids are a different conversation here, what palliative care actually is, and the full toolbox beyond the pill bottle.",
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
-      "Pain affects roughly half of people during cancer treatment and about two-thirds of those with advanced disease — and it is among the most treatable parts of cancer. With today's tools, most cancer pain can be brought under control. Treating it is part of cancer care, not an afterthought, and reporting it early is the step that makes everything else work.",
+      "Pain affects roughly half of people during cancer treatment and about two-thirds of those with advanced disease – and it is among the most treatable parts of cancer. With today's tools, most cancer pain can be brought under control. Treating it is part of cancer care, not an afterthought, and reporting it early is the step that makes everything else work.",
     faqs: [
       {
         question: "Is pain an inevitable part of cancer?",
         answer:
-          "No. Pain is common in cancer — studies find it in about 55% of people during treatment and 66% with advanced disease — but common is not the same as untreatable. With the modern toolbox, most cancer pain can be controlled well. The biggest obstacle is silence: pain that goes unreported goes untreated, and studies have long found a substantial minority of patients undertreated. Reporting pain early and specifically is not complaining — it is giving your team the information treatment runs on.",
+          "No. Pain is common in cancer – studies find it in about 55% of people during treatment and 66% with advanced disease – but common is not the same as untreatable. With the modern toolbox, most cancer pain can be controlled well. The biggest obstacle is silence: pain that goes unreported goes untreated, and studies have long found a substantial minority of patients undertreated. Reporting pain early and specifically is not complaining – it is giving your team the information treatment runs on.",
       },
       {
         question: "Will I get addicted to pain medicine during cancer treatment?",
         answer:
-          "For people taking opioids as prescribed for cancer pain, with a team monitoring, addiction is uncommon — and fear of it is one of the best-documented reasons cancer pain goes undertreated. Physical dependence (the body adapting, needing a taper to stop) and tolerance (needing adjustment over time) are expected biology, not addiction. Your team plans for both. If use ever feels like it is escaping the plan — yours or a loved one's — say so early; confidential help exists, including the SAMHSA helpline at 1-800-662-4357.",
+          "For people taking opioids as prescribed for cancer pain, with a team monitoring, addiction is uncommon – and fear of it is one of the best-documented reasons cancer pain goes undertreated. Physical dependence (the body adapting, needing a taper to stop) and tolerance (needing adjustment over time) are expected biology, not addiction. Your team plans for both. If use ever feels like it is escaping the plan – yours or a loved one's – say so early; confidential help exists, including the SAMHSA helpline at 1-800-662-4357.",
       },
       {
         question: "What is “breakthrough” pain?",
         answer:
-          "Pain that spikes through otherwise controlled background pain — typically fast-rising, severe, and short-lived, sometimes triggered by movement or an activity, sometimes arriving unprovoked. It is common in cancer and it is planned for: alongside regular, scheduled pain control, your team can provide a separate fast-acting rescue plan. Tracking when breakthrough episodes happen, what triggers them, and how long they last helps your team tune both halves of the plan.",
+          "Pain that spikes through otherwise controlled background pain – typically fast-rising, severe, and short-lived, sometimes triggered by movement or an activity, sometimes arriving unprovoked. It is common in cancer and it is planned for: alongside regular, scheduled pain control, your team can provide a separate fast-acting rescue plan. Tracking when breakthrough episodes happen, what triggers them, and how long they last helps your team tune both halves of the plan.",
       },
       {
         question: "Is palliative care the same as giving up?",
         answer:
-          "No — this is one of medicine's most costly misunderstandings. Palliative care is specialist care for symptoms and quality of life, delivered alongside cancer treatment, at any stage. In a landmark randomized trial in metastatic lung cancer, people who received palliative care from diagnosis had better quality of life, less depression — and lived longer than those receiving standard care alone. Asking for palliative care early is not surrender; it is choosing the version of treatment with more support in it.",
+          "No – this is one of medicine's most costly misunderstandings. Palliative care is specialist care for symptoms and quality of life, delivered alongside cancer treatment, at any stage. In a landmark randomized trial in metastatic lung cancer, people who received palliative care from diagnosis had better quality of life, less depression – and lived longer than those receiving standard care alone. Asking for palliative care early is not surrender; it is choosing the version of treatment with more support in it.",
       },
       {
         question: "Why do I still have pain years after beating cancer?",
         answer:
-          "Because treatment itself can leave durable marks: chemotherapy-induced nerve damage in the hands and feet, pain around surgical sites, joint pain from hormone-blocking therapy, and radiation's late effects. Millions of survivors live with pain after successful treatment — enough that oncology has its own guideline for it. Survivor pain is real, common, and treatable, usually with the same approaches used for other chronic pain. It deserves care, not gratitude-guilt about mentioning it.",
+          "Because treatment itself can leave durable marks: chemotherapy-induced nerve damage in the hands and feet, pain around surgical sites, joint pain from hormone-blocking therapy, and radiation's late effects. Millions of survivors live with pain after successful treatment – enough that oncology has its own guideline for it. Survivor pain is real, common, and treatable, usually with the same approaches used for other chronic pain. It deserves care, not gratitude-guilt about mentioning it.",
       },
     ],
     references: [
       {
         source: "J Pain Symptom Manage / PubMed",
         title:
-          "van den Beuken-van Everdingen et al. — Update on prevalence of pain in patients with cancer: systematic review and meta-analysis",
+          "van den Beuken-van Everdingen et al. – Update on prevalence of pain in patients with cancer: systematic review and meta-analysis",
         url: "https://pubmed.ncbi.nlm.nih.gov/27112310/",
       },
       {
         source: "NEJM / PubMed",
         title:
-          "Temel et al. — Early palliative care for patients with metastatic non-small-cell lung cancer",
+          "Temel et al. – Early palliative care for patients with metastatic non-small-cell lung cancer",
         url: "https://pubmed.ncbi.nlm.nih.gov/20818875/",
       },
       {
         source: "J Clin Oncol / PubMed",
-        title: "Kwon — Overcoming barriers in cancer pain management",
+        title: "Kwon – Overcoming barriers in cancer pain management",
         url: "https://pubmed.ncbi.nlm.nih.gov/24799490/",
       },
       {
         source: "J Clin Oncol / PubMed",
         title:
-          "Paice et al. — Management of chronic pain in survivors of adult cancers: ASCO clinical practice guideline",
+          "Paice et al. – Management of chronic pain in survivors of adult cancers: ASCO clinical practice guideline",
         url: "https://pubmed.ncbi.nlm.nih.gov/27458286/",
       },
       {
@@ -651,7 +651,7 @@ export const CONDITION_ARTICLES: Article[] = [
       },
       {
         source: "NIH / NCI",
-        title: "Cancer pain — patient information",
+        title: "Cancer pain – patient information",
         url: "https://www.cancer.gov/about-cancer/treatment/side-effects/pain",
       },
     ],
@@ -660,13 +660,13 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Neuropathic pain",
         href: "/conditions/neuropathic-pain",
         blurb:
-          "Chemotherapy-induced neuropathy is nerve pain — and it is treated as such.",
+          "Chemotherapy-induced neuropathy is nerve pain – and it is treated as such.",
       },
       {
         title: "Medications for pain",
         href: "/treatments/medications-for-pain",
         blurb:
-          "The full drug-class map — including where opioids genuinely belong.",
+          "The full drug-class map – including where opioids genuinely belong.",
       },
       {
         title: "Measuring pain",
@@ -722,17 +722,17 @@ export const CONDITION_ARTICLES: Article[] = [
     references: [
       {
         source: "PAIN / PubMed",
-        title: "Schug et al. — The IASP classification of chronic pain for ICD-11: chronic postsurgical or posttraumatic pain",
+        title: "Schug et al. – The IASP classification of chronic pain for ICD-11: chronic postsurgical or posttraumatic pain",
         url: "https://pubmed.ncbi.nlm.nih.gov/30586070/",
       },
       {
         source: "The Lancet / PubMed",
-        title: "Glare, Aubrey & Myles — Transition from acute to chronic pain after surgery",
+        title: "Glare, Aubrey & Myles – Transition from acute to chronic pain after surgery",
         url: "https://pubmed.ncbi.nlm.nih.gov/30983589/",
       },
       {
         source: "BJA Education / PMC",
-        title: "Chronic post-surgical pain — update on incidence, risk factors and preventive treatment options",
+        title: "Chronic post-surgical pain – update on incidence, risk factors and preventive treatment options",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9039436/",
       },
       {
@@ -742,12 +742,12 @@ export const CONDITION_ARTICLES: Article[] = [
       },
       {
         source: "PAIN / PubMed",
-        title: "Haroutiunian et al. — The neuropathic component in persistent postsurgical pain: systematic review",
+        title: "Haroutiunian et al. – The neuropathic component in persistent postsurgical pain: systematic review",
         url: "https://pubmed.ncbi.nlm.nih.gov/23273105/",
       },
       {
         source: "J Pain Research / PMC",
-        title: "Katz et al. — Toronto General Hospital Transitional Pain Service: development and implementation",
+        title: "Katz et al. – Toronto General Hospital Transitional Pain Service: development and implementation",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4670028/",
       },
     ],
@@ -815,7 +815,7 @@ export const CONDITION_ARTICLES: Article[] = [
     references: [
       {
         source: "American College of Obstetricians and Gynecologists",
-        title: "ACOG Clinical Practice Guideline No. 11 — Evaluation and Diagnosis of Endometriosis",
+        title: "ACOG Clinical Practice Guideline No. 11 – Evaluation and Diagnosis of Endometriosis",
         url: "https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2026/03/diagnosis-of-endometriosis",
       },
       {
@@ -825,22 +825,22 @@ export const CONDITION_ARTICLES: Article[] = [
       },
       {
         source: "American College of Obstetricians and Gynecologists",
-        title: "Chronic Pelvic Pain — Practice Bulletin No. 218, reaffirmed 2026",
+        title: "Chronic Pelvic Pain – Practice Bulletin No. 218, reaffirmed 2026",
         url: "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2020/03/chronic-pelvic-pain",
       },
       {
         source: "NEJM / PubMed",
-        title: "Taylor et al. — Treatment of endometriosis-associated pain with elagolix",
+        title: "Taylor et al. – Treatment of endometriosis-associated pain with elagolix",
         url: "https://pubmed.ncbi.nlm.nih.gov/28525302/",
       },
       {
         source: "NIH / NICHD",
-        title: "Endometriosis — condition information",
+        title: "Endometriosis – condition information",
         url: "https://www.nichd.nih.gov/health/topics/endometri",
       },
       {
         source: "WHO",
-        title: "Endometriosis — fact sheet",
+        title: "Endometriosis – fact sheet",
         url: "https://www.who.int/news-room/fact-sheets/detail/endometriosis",
       },
     ],
@@ -913,27 +913,27 @@ export const CONDITION_ARTICLES: Article[] = [
       },
       {
         source: "American Academy of Neurology / PubMed",
-        title: "Price et al. — Oral and topical treatment of painful diabetic polyneuropathy: practice guideline update",
+        title: "Price et al. – Oral and topical treatment of painful diabetic polyneuropathy: practice guideline update",
         url: "https://pubmed.ncbi.nlm.nih.gov/34965987/",
       },
       {
         source: "NIH / NIDDK",
-        title: "Peripheral neuropathy in diabetes — symptoms, diagnosis, and foot protection",
+        title: "Peripheral neuropathy in diabetes – symptoms, diagnosis, and foot protection",
         url: "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/nerve-damage-diabetic-neuropathies/peripheral-neuropathy",
       },
       {
         source: "Nature Reviews Disease Primers / PMC",
-        title: "Feldman et al. — Diabetic neuropathy",
+        title: "Feldman et al. – Diabetic neuropathy",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7096070/",
       },
       {
         source: "JAMA Neurology / PubMed",
-        title: "Petersen et al. — High-frequency spinal cord stimulation for painful diabetic neuropathy: randomized clinical trial",
+        title: "Petersen et al. – High-frequency spinal cord stimulation for painful diabetic neuropathy: randomized clinical trial",
         url: "https://pubmed.ncbi.nlm.nih.gov/33818600/",
       },
       {
         source: "NIH / MedlinePlus",
-        title: "Diabetic nerve problems — patient information",
+        title: "Diabetic nerve problems – patient information",
         url: "https://medlineplus.gov/diabeticnerveproblems.html",
       },
     ],
@@ -941,7 +941,7 @@ export const CONDITION_ARTICLES: Article[] = [
       {
         title: "Neuropathic pain",
         href: "/conditions/neuropathic-pain",
-        blurb: "The larger nerve-pain map — and why numbness and burning can coexist.",
+        blurb: "The larger nerve-pain map – and why numbness and burning can coexist.",
       },
       {
         title: "Medications for pain",
@@ -1001,12 +1001,12 @@ export const CONDITION_ARTICLES: Article[] = [
     references: [
       {
         source: "J Pain / PubMed",
-        title: "Bussières et al. — Non-surgical interventions for lumbar spinal stenosis leading to neurogenic claudication: clinical practice guideline",
+        title: "Bussières et al. – Non-surgical interventions for lumbar spinal stenosis leading to neurogenic claudication: clinical practice guideline",
         url: "https://pubmed.ncbi.nlm.nih.gov/33857615/",
       },
       {
         source: "BMJ Open / PMC",
-        title: "Ammendolia et al. — Non-operative treatment for lumbar spinal stenosis with neurogenic claudication: updated systematic review",
+        title: "Ammendolia et al. – Non-operative treatment for lumbar spinal stenosis with neurogenic claudication: updated systematic review",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8772406/",
       },
       {
@@ -1016,17 +1016,17 @@ export const CONDITION_ARTICLES: Article[] = [
       },
       {
         source: "JAMA / PMC",
-        title: "Suri et al. — Does this older adult with lower-extremity pain have lumbar spinal stenosis?",
+        title: "Suri et al. – Does this older adult with lower-extremity pain have lumbar spinal stenosis?",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3260477/",
       },
       {
         source: "Annals of Internal Medicine / PMC",
-        title: "Delitto et al. — Surgery versus nonsurgical treatment of lumbar spinal stenosis: randomized trial",
+        title: "Delitto et al. – Surgery versus nonsurgical treatment of lumbar spinal stenosis: randomized trial",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6252248/",
       },
       {
         source: "NIH / MedlinePlus",
-        title: "Spinal stenosis — patient information",
+        title: "Spinal stenosis – patient information",
         url: "https://medlineplus.gov/spinalstenosis.html",
       },
     ],
@@ -1034,7 +1034,7 @@ export const CONDITION_ARTICLES: Article[] = [
       {
         title: "Low back pain",
         href: "/conditions/low-back-pain",
-        blurb: "The larger territory — and why scan findings do not always identify the pain source.",
+        blurb: "The larger territory – and why scan findings do not always identify the pain source.",
       },
       {
         title: "Sciatica",
@@ -1094,17 +1094,17 @@ export const CONDITION_ARTICLES: Article[] = [
     references: [
       {
         source: "J Orthop Sports Phys Ther",
-        title: "Blanpied et al. — Neck Pain: Revision 2017 Clinical Practice Guidelines",
+        title: "Blanpied et al. – Neck Pain: Revision 2017 Clinical Practice Guidelines",
         url: "https://www.jospt.org/doi/10.2519/jospt.2017.0302",
       },
       {
         source: "European Journal of Pain / PMC",
-        title: "Corp et al. — Evidence-based treatment recommendations for neck and low back pain across Europe",
+        title: "Corp et al. – Evidence-based treatment recommendations for neck and low back pain across Europe",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7839780/",
       },
       {
         source: "Archives of Physiotherapy / PMC",
-        title: "Feller et al. — Red flags for potential serious pathologies in people with neck pain",
+        title: "Feller et al. – Red flags for potential serious pathologies in people with neck pain",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11618059/",
       },
       {
@@ -1114,12 +1114,12 @@ export const CONDITION_ARTICLES: Article[] = [
       },
       {
         source: "Mayo Clinic Proceedings / PubMed",
-        title: "Cohen & Hooten — Advances in the diagnosis and management of neck pain",
+        title: "Cohen & Hooten – Advances in the diagnosis and management of neck pain",
         url: "https://pubmed.ncbi.nlm.nih.gov/28645549/",
       },
       {
         source: "NIH / MedlinePlus",
-        title: "Neck injuries and disorders — patient information",
+        title: "Neck injuries and disorders – patient information",
         url: "https://medlineplus.gov/neckinjuriesanddisorders.html",
       },
     ],
@@ -1147,16 +1147,16 @@ export const CONDITION_ARTICLES: Article[] = [
     slug: "crps",
     title: "Complex Regional Pain Syndrome",
     description:
-      "CRPS explained: pain out of proportion after an injury, a limb that visibly changes, and why the first months matter most — the Budapest criteria, the brain-map science behind mirror therapy, and the treatments with real evidence, movement first.",
+      "CRPS explained: pain out of proportion after an injury, a limb that visibly changes, and why the first months matter most – the Budapest criteria, the brain-map science behind mirror therapy, and the treatments with real evidence, movement first.",
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
-      "Complex regional pain syndrome (CRPS) is severe, persistent limb pain out of proportion to the injury that started it — usually a fracture, surgery, or sprain — in a limb that visibly changes: color, temperature, swelling, sweating, movement. It is rare, real, and time-sensitive: recognized and treated early, with movement at the center, most people improve substantially.",
+      "Complex regional pain syndrome (CRPS) is severe, persistent limb pain out of proportion to the injury that started it – usually a fracture, surgery, or sprain – in a limb that visibly changes: color, temperature, swelling, sweating, movement. It is rare, real, and time-sensitive: recognized and treated early, with movement at the center, most people improve substantially.",
     faqs: [
       {
         question: "What is CRPS and what does it feel like?",
         answer:
-          "CRPS is a regional pain syndrome that usually follows an injury — most often a wrist fracture, surgery, or sprain — in which the pain outlives and outgrows the injury itself. It is typically burning or squeezing, spread beyond the original injury site, and severe out of proportion to what started it; light touch can be intensely painful. What sets CRPS apart is that the limb visibly changes too: color and temperature shifts, swelling, abnormal sweating, and over time changes in skin, hair, nails, and movement.",
+          "CRPS is a regional pain syndrome that usually follows an injury – most often a wrist fracture, surgery, or sprain – in which the pain outlives and outgrows the injury itself. It is typically burning or squeezing, spread beyond the original injury site, and severe out of proportion to what started it; light touch can be intensely painful. What sets CRPS apart is that the limb visibly changes too: color and temperature shifts, swelling, abnormal sweating, and over time changes in skin, hair, nails, and movement.",
       },
       {
         question: "What causes CRPS?",
@@ -1166,42 +1166,42 @@ export const CONDITION_ARTICLES: Article[] = [
       {
         question: "How is CRPS diagnosed?",
         answer:
-          "Clinically, using the Budapest criteria: continuing pain out of proportion to the injury, plus a required mix of symptoms and examination signs across four categories — sensory (like pain from light touch), vasomotor (color or temperature asymmetry), sweating and swelling, and motor or trophic changes (weakness, tremor, skin, hair, and nail changes). No blood test or scan makes the diagnosis, though tests are sometimes used to rule out mimics. If your limb pain fits this picture, ask the question directly — early recognition is the whole game.",
+          "Clinically, using the Budapest criteria: continuing pain out of proportion to the injury, plus a required mix of symptoms and examination signs across four categories – sensory (like pain from light touch), vasomotor (color or temperature asymmetry), sweating and swelling, and motor or trophic changes (weakness, tremor, skin, hair, and nail changes). No blood test or scan makes the diagnosis, though tests are sometimes used to rule out mimics. If your limb pain fits this picture, ask the question directly – early recognition is the whole game.",
       },
       {
         question: "Does CRPS go away?",
         answer:
-          "Often, substantially — especially when it is caught and treated in the first months. Many cases improve significantly within the first year with active rehabilitation; a minority persist and need long-term specialist care, and honest medicine holds both facts at once. The variable most within reach is time-to-treatment: the earlier the diagnosis is made and movement-based rehabilitation begins, the better the odds. CRPS caught early is a very different disease from CRPS found late.",
+          "Often, substantially – especially when it is caught and treated in the first months. Many cases improve significantly within the first year with active rehabilitation; a minority persist and need long-term specialist care, and honest medicine holds both facts at once. The variable most within reach is time-to-treatment: the earlier the diagnosis is made and movement-based rehabilitation begins, the better the odds. CRPS caught early is a very different disease from CRPS found late.",
       },
       {
         question: "Is it safe to move a limb with CRPS?",
         answer:
-          "Not only safe — movement is the cornerstone of treatment. The instinct to guard and immobilize the limb is understandable and counterproductive: disuse feeds the swelling, the bone loss, and the brain's shrinking map of the limb. Rehabilitation is built to make movement possible again in graded steps — desensitization, graded motor imagery, mirror therapy, then progressive loading — with pain control supporting the movement, not replacing it. In CRPS, hurt does not equal harm; guarding is the riskier path.",
+          "Not only safe – movement is the cornerstone of treatment. The instinct to guard and immobilize the limb is understandable and counterproductive: disuse feeds the swelling, the bone loss, and the brain's shrinking map of the limb. Rehabilitation is built to make movement possible again in graded steps – desensitization, graded motor imagery, mirror therapy, then progressive loading – with pain control supporting the movement, not replacing it. In CRPS, hurt does not equal harm; guarding is the riskier path.",
       },
     ],
     references: [
       {
         source: "PAIN / PubMed",
         title:
-          "Harden et al. — Validation of proposed diagnostic criteria (the 'Budapest criteria') for complex regional pain syndrome",
+          "Harden et al. – Validation of proposed diagnostic criteria (the 'Budapest criteria') for complex regional pain syndrome",
         url: "https://pubmed.ncbi.nlm.nih.gov/20493633/",
       },
       {
         source: "PAIN / PubMed",
         title:
-          "de Mos et al. — The incidence of complex regional pain syndrome: a population-based study",
+          "de Mos et al. – The incidence of complex regional pain syndrome: a population-based study",
         url: "https://pubmed.ncbi.nlm.nih.gov/17084977/",
       },
       {
         source: "NEJM / PubMed",
         title:
-          "Kemler et al. — Spinal cord stimulation in patients with chronic reflex sympathetic dystrophy",
+          "Kemler et al. – Spinal cord stimulation in patients with chronic reflex sympathetic dystrophy",
         url: "https://pubmed.ncbi.nlm.nih.gov/10965008/",
       },
       {
         source: "PAIN / PubMed",
         title:
-          "Deer et al. — Dorsal root ganglion stimulation yielded higher treatment success rate for complex regional pain syndrome and causalgia at 3 and 12 months (ACCURATE trial)",
+          "Deer et al. – Dorsal root ganglion stimulation yielded higher treatment success rate for complex regional pain syndrome and causalgia at 3 and 12 months (ACCURATE trial)",
         url: "https://pubmed.ncbi.nlm.nih.gov/28030470/",
       },
       {
@@ -1211,7 +1211,7 @@ export const CONDITION_ARTICLES: Article[] = [
       },
       {
         source: "NIH / MedlinePlus",
-        title: "Complex regional pain syndrome — patient information",
+        title: "Complex regional pain syndrome – patient information",
         url: "https://medlineplus.gov/complexregionalpainsyndrome.html",
       },
     ],
@@ -1220,19 +1220,19 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Neuropathic pain",
         href: "/conditions/neuropathic-pain",
         blurb:
-          "CRPS type II begins with a documented nerve injury — the family resemblance explained.",
+          "CRPS type II begins with a documented nerve injury – the family resemblance explained.",
       },
       {
         title: "Next-generation neuromodulation",
         href: "/future-of-pain-medicine/neuromodulation",
         blurb:
-          "DRG stimulation — the device therapy that proved itself in CRPS first.",
+          "DRG stimulation – the device therapy that proved itself in CRPS first.",
       },
       {
         title: "How pain works",
         href: "/understanding-pain/how-pain-works",
         blurb:
-          "The nervous-system plasticity that CRPS turns against a limb — and rehab turns back.",
+          "The nervous-system plasticity that CRPS turns against a limb – and rehab turns back.",
       },
     ],
   },
@@ -1281,28 +1281,28 @@ export const CONDITION_ARTICLES: Article[] = [
       },
       {
         source: "NIH / NIDCR",
-        title: "TMD (Temporomandibular Disorders) — patient information",
+        title: "TMD (Temporomandibular Disorders) – patient information",
         url: "https://www.nidcr.nih.gov/health-info/tmd",
       },
       {
         source: "J Oral Facial Pain Headache / PubMed",
         title:
-          "Schiffman et al. — Diagnostic Criteria for Temporomandibular Disorders (DC/TMD) for clinical and research applications (2014)",
+          "Schiffman et al. – Diagnostic Criteria for Temporomandibular Disorders (DC/TMD) for clinical and research applications (2014)",
         url: "https://pubmed.ncbi.nlm.nih.gov/24482784/",
       },
       {
         source: "J Dent Res / PubMed",
-        title: "Slade et al. — Painful temporomandibular disorder: decade of discovery from OPPERA studies (2016)",
+        title: "Slade et al. – Painful temporomandibular disorder: decade of discovery from OPPERA studies (2016)",
         url: "https://pubmed.ncbi.nlm.nih.gov/27339423/",
       },
       {
         source: "J Dent Res / PubMed",
-        title: "Harper, Schrepf & Clauw — Pain mechanisms and centralized pain in temporomandibular disorders (2016)",
+        title: "Harper, Schrepf & Clauw – Pain mechanisms and centralized pain in temporomandibular disorders (2016)",
         url: "https://pubmed.ncbi.nlm.nih.gov/27422858/",
       },
       {
         source: "J Dent Res / PubMed",
-        title: "Ohrbach & Dworkin — The evolution of TMD diagnosis: past, present, future (2016)",
+        title: "Ohrbach & Dworkin – The evolution of TMD diagnosis: past, present, future (2016)",
         url: "https://pubmed.ncbi.nlm.nih.gov/27313164/",
       },
     ],
@@ -1364,44 +1364,44 @@ export const CONDITION_ARTICLES: Article[] = [
     references: [
       {
         source: "Obstet Gynecol / PubMed",
-        title: "ACOG Practice Bulletin No. 218 — Chronic Pelvic Pain (2020)",
+        title: "ACOG Practice Bulletin No. 218 – Chronic Pelvic Pain (2020)",
         url: "https://pubmed.ncbi.nlm.nih.gov/32080051/",
       },
       {
         source: "JAMA / PubMed",
-        title: "Lamvu, Carrillo, Ouyang & Rapkin — Chronic pelvic pain in women: a review (2021)",
+        title: "Lamvu, Carrillo, Ouyang & Rapkin – Chronic pelvic pain in women: a review (2021)",
         url: "https://pubmed.ncbi.nlm.nih.gov/34128995/",
       },
       {
         source: "Pain Physician / PubMed",
-        title: "Ahangari — Prevalence of chronic pelvic pain among women: an updated review (2014)",
+        title: "Ahangari – Prevalence of chronic pelvic pain among women: an updated review (2014)",
         url: "https://pubmed.ncbi.nlm.nih.gov/24658485/",
       },
       {
         source: "J Urol / PubMed",
         title:
-          "FitzGerald et al. — Randomized multicenter clinical trial of myofascial physical therapy in women with interstitial cystitis/painful bladder syndrome (2012)",
+          "FitzGerald et al. – Randomized multicenter clinical trial of myofascial physical therapy in women with interstitial cystitis/painful bladder syndrome (2012)",
         url: "https://pubmed.ncbi.nlm.nih.gov/22503015/",
       },
       {
         source: "JAMA / PubMed",
-        title: "Krieger, Nyberg & Nickel — NIH consensus definition and classification of prostatitis (1999)",
+        title: "Krieger, Nyberg & Nickel – NIH consensus definition and classification of prostatitis (1999)",
         url: "https://pubmed.ncbi.nlm.nih.gov/10422990/",
       },
       {
         source: "Urology / PubMed",
         title:
-          "Shoskes et al. — Clinical phenotyping of patients with chronic prostatitis/chronic pelvic pain syndrome (UPOINT) and correlation with symptom severity (2009)",
+          "Shoskes et al. – Clinical phenotyping of patients with chronic prostatitis/chronic pelvic pain syndrome (UPOINT) and correlation with symptom severity (2009)",
         url: "https://pubmed.ncbi.nlm.nih.gov/19118880/",
       },
       {
         source: "NIH / NIDDK",
-        title: "Prostatitis: inflammation of the prostate — patient information",
+        title: "Prostatitis: inflammation of the prostate – patient information",
         url: "https://www.niddk.nih.gov/health-information/urologic-diseases/prostate-problems/prostatitis-inflammation-prostate",
       },
       {
         source: "ACOG",
-        title: "Chronic Pelvic Pain — patient FAQ",
+        title: "Chronic Pelvic Pain – patient FAQ",
         url: "https://www.acog.org/womens-health/faqs/chronic-pelvic-pain",
       },
     ],
@@ -1463,48 +1463,48 @@ export const CONDITION_ARTICLES: Article[] = [
     references: [
       {
         source: "Lancet Neurol / PubMed",
-        title: "Klit, Finnerup & Jensen — Central post-stroke pain: clinical characteristics, pathophysiology, and management (2009)",
+        title: "Klit, Finnerup & Jensen – Central post-stroke pain: clinical characteristics, pathophysiology, and management (2009)",
         url: "https://pubmed.ncbi.nlm.nih.gov/19679277/",
       },
       {
         source: "Adv Ther / PubMed",
         title:
-          "Liampas et al. — Prevalence and management challenges in central post-stroke neuropathic pain: systematic review and meta-analysis (2020)",
+          "Liampas et al. – Prevalence and management challenges in central post-stroke neuropathic pain: systematic review and meta-analysis (2020)",
         url: "https://pubmed.ncbi.nlm.nih.gov/32451951/",
       },
       {
         source: "Pain / PubMed",
-        title: "Andersen et al. — Incidence of central post-stroke pain (1995)",
+        title: "Andersen et al. – Incidence of central post-stroke pain (1995)",
         url: "https://pubmed.ncbi.nlm.nih.gov/7659428/",
       },
       {
         source: "Brain / PubMed",
-        title: "Sprenger et al. — Assessing the risk of central post-stroke pain of thalamic origin by lesion mapping (2012)",
+        title: "Sprenger et al. – Assessing the risk of central post-stroke pain of thalamic origin by lesion mapping (2012)",
         url: "https://pubmed.ncbi.nlm.nih.gov/22719000/",
       },
       {
         source: "Pain / PubMed",
-        title: "Leijon & Boivie — Central post-stroke pain: a controlled trial of amitriptyline and carbamazepine (1989)",
+        title: "Leijon & Boivie – Central post-stroke pain: a controlled trial of amitriptyline and carbamazepine (1989)",
         url: "https://pubmed.ncbi.nlm.nih.gov/2465530/",
       },
       {
         source: "Neurology / PubMed",
-        title: "Vestergaard et al. — Lamotrigine for central poststroke pain: a randomized controlled trial (2001)",
+        title: "Vestergaard et al. – Lamotrigine for central poststroke pain: a randomized controlled trial (2001)",
         url: "https://pubmed.ncbi.nlm.nih.gov/11160953/",
       },
       {
         source: "Pain / PubMed",
-        title: "Kim et al. — Safety and efficacy of pregabalin in patients with central post-stroke pain (2011)",
+        title: "Kim et al. – Safety and efficacy of pregabalin in patients with central post-stroke pain (2011)",
         url: "https://pubmed.ncbi.nlm.nih.gov/21316855/",
       },
       {
         source: "Lancet Neurol / PubMed",
-        title: "Finnerup et al. — Pharmacotherapy for neuropathic pain in adults: systematic review and meta-analysis (NeuPSIG, 2015)",
+        title: "Finnerup et al. – Pharmacotherapy for neuropathic pain in adults: systematic review and meta-analysis (NeuPSIG, 2015)",
         url: "https://pubmed.ncbi.nlm.nih.gov/25575710/",
       },
       {
         source: "NIH / MedlinePlus",
-        title: "Stroke — patient information",
+        title: "Stroke – patient information",
         url: "https://medlineplus.gov/stroke.html",
       },
     ],

@@ -7,7 +7,7 @@ const link =
   "text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600";
 
 /**
- * Figure 1 — the precision map: where the main procedures aim, on the
+ * Figure 1 – the precision map: where the main procedures aim, on the
  * spine's side view. SpineSide's first page use.
  */
 function TargetsFigure() {
@@ -58,7 +58,7 @@ function TargetsFigure() {
           <text x="330" y="300">Radiofrequency ablation</text>
         </g>
         <g fontSize="12" fill={FIG.textMid}>
-          <text x="330" y="103">in the epidural space, pulsing the cord —</text>
+          <text x="330" y="103">in the epidural space, pulsing the cord –</text>
           <text x="330" y="119">placed after a take-home trial</text>
           <text x="330" y="215">medication delivered around the</text>
           <text x="330" y="231">irritated nerve root</text>
@@ -76,14 +76,14 @@ function TargetsFigure() {
 }
 
 /**
- * Figure 2 — the window rule: what each procedure buys, honestly, and what
+ * Figure 2 – the window rule: what each procedure buys, honestly, and what
  * every window is for.
  */
 function WindowsFigure() {
   const rows = [
-    { label: "Steroid injection", w: 120, note: "weeks to a few months — a bridge" },
-    { label: "Radiofrequency ablation", w: 260, note: "many months to a year — repeatable" },
-    { label: "Stimulator (after a trial)", w: 430, note: "years — adjustable, reversible" },
+    { label: "Steroid injection", w: 120, note: "weeks to a few months – a bridge" },
+    { label: "Radiofrequency ablation", w: 260, note: "many months to a year – repeatable" },
+    { label: "Stimulator (after a trial)", w: 430, note: "years – adjustable, reversible" },
   ];
   return (
     <Figure caption="What each window honestly buys. The durations differ; the rule doesn't: a procedure lowers the pain so movement becomes possible, and the rehabilitation done inside the window is what holds the gains.">
@@ -130,7 +130,7 @@ export default function InterventionalProcedures() {
       <P>
         Between the pharmacy and the operating room sits a whole layer of
         pain medicine that most patients never hear about until they need
-        it: <strong>interventional procedures</strong> — treatments
+        it: <strong>interventional procedures</strong> – treatments
         delivered with imaging guidance to the exact structure generating
         the pain. Where a pill is mailed to the whole body, a procedure is
         delivered to an address. That precision is the field&rsquo;s craft
@@ -153,13 +153,13 @@ export default function InterventionalProcedures() {
           CRPS
         </Link>{" "}
         and upper-abdominal cancer pain; painful <strong>joints and
-        muscle trigger points</strong>; and — for the implanted devices —
+        muscle trigger points</strong>; and – for the implanted devices –
         the <strong>spinal cord and its nerve-root ganglia</strong>
         themselves. All of it happens under live X-ray or ultrasound,
         usually awake or lightly sedated, usually home the same day.
       </P>
 
-      <H2 id="blocks">Injections and blocks — and the question inside them</H2>
+      <H2 id="blocks">Injections and blocks – and the question inside them</H2>
       <P>
         The most familiar procedure is the <strong>epidural steroid
         injection</strong>, and it deserves the field&rsquo;s most honest
@@ -168,7 +168,7 @@ export default function InterventionalProcedures() {
           sciatica
         </Link>
         , the systematic-review evidence shows real but{" "}
-        <strong>modest, mostly short-term</strong> relief — and little
+        <strong>modest, mostly short-term</strong> relief – and little
         benefit for ordinary back pain. Used well, that is exactly enough:
         a bridge across the worst weeks while a disc resorbs, a doorway
         into rehab, sometimes a surgery deferred indefinitely. Used as a
@@ -176,22 +176,22 @@ export default function InterventionalProcedures() {
         schedule. The subtler value of blocks is diagnostic:{" "}
         <strong>a block is also a question</strong>. Numb a specific
         structure, and the pain&rsquo;s response tells you whether you
-        found the generator — information no scan can give, and the entire
+        found the generator – information no scan can give, and the entire
         foundation of what comes next.
       </P>
 
       <H2 id="rfa">Radiofrequency ablation: test, then treat</H2>
       <P>
-        For pain from the facet joints — the small paired joints{" "}
+        For pain from the facet joints – the small paired joints{" "}
         <Link href="/conditions/low-back-pain" className={link}>
           the low back
         </Link>{" "}
-        and neck rely on, and a common source of arthritic spine pain —
+        and neck rely on, and a common source of arthritic spine pain –
         the logic runs in two steps. A temporary <strong>medial branch
         block</strong> numbs the tiny nerves serving the suspect joints;
         meaningful relief marks them as the culprits. Then{" "}
         <strong>radiofrequency ablation</strong> applies precisely placed
-        heat to quiet those same nerves for the long haul — typically many
+        heat to quiet those same nerves for the long haul – typically many
         months to a year of relief. The nerves regrow in time, and the
         procedure can be repeated. Selection is everything: done after
         confirmatory blocks in the right patient, it is one of the
@@ -212,15 +212,15 @@ export default function InterventionalProcedures() {
         <Link href="/conditions/neuropathic-pain" className={link}>
           painful diabetic neuropathy
         </Link>{" "}
-        — about eight in ten patients achieving substantial relief versus
+        – about eight in ten patients achieving substantial relief versus
         one in twenty on medication alone. <strong>Dorsal root ganglion
         stimulation</strong> beat conventional stimulation head-to-head
         for focal nerve pain in the ACCURATE trial. And the therapy carries
         a feature almost nothing else in medicine offers:{" "}
-        <strong>a take-home trial</strong> — about a week with a temporary
+        <strong>a take-home trial</strong> – about a week with a temporary
         external system, so the decision to implant is made from your own
-        lived data, not a brochure. Where the hardware is headed —
-        closed-loop systems that listen to the cord and adjust themselves —
+        lived data, not a brochure. Where the hardware is headed –
+        closed-loop systems that listen to the cord and adjust themselves –
         is the story of{" "}
         <Link href="/future-of-pain-medicine/neuromodulation" className={link}>
           next-generation neuromodulation
@@ -236,9 +236,9 @@ export default function InterventionalProcedures() {
           cancer pain
         </Link>{" "}
         that outruns what pills can do. Around the edges of the field sit
-        procedures with more mixed report cards — cement augmentation of
+        procedures with more mixed report cards – cement augmentation of
         painful spinal fractures, for one, has randomized trials pointing
-        in both directions — and a good interventionalist will tell you
+        in both directions – and a good interventionalist will tell you
         so unprompted. A useful rule for any offered procedure: the
         clinician who volunteers the evidence&rsquo;s limits is the one
         to trust with the needle.
@@ -248,7 +248,7 @@ export default function InterventionalProcedures() {
       <WindowsFigure />
       <P>
         Here is the frame that makes the whole toolbox make sense.
-        Procedures rarely erase pain permanently — they{" "}
+        Procedures rarely erase pain permanently – they{" "}
         <strong>buy windows</strong>: weeks from an injection, months
         from an ablation, years from a stimulator. What fills the window
         decides what it was worth: the strengthening, the movement, the
@@ -266,13 +266,13 @@ export default function InterventionalProcedures() {
         <Link href="/what-is-pain-medicine" className={link}>
           fellowship-trained pain physicians
         </Link>{" "}
-        — the anesthesiology-and-beyond specialty built around exactly
+        – the anesthesiology-and-beyond specialty built around exactly
         this toolbox and the diagnostic thinking that aims it.{" "}
         <Link href="/find-help" className={link}>
           Finding pain care near you
         </Link>{" "}
         covers how to verify that training and what to ask at a first
-        visit — including, now, the three questions above.
+        visit – including, now, the three questions above.
       </P>
     </div>
   );

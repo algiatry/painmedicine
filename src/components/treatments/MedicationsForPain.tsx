@@ -6,7 +6,7 @@ const link =
   "text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600";
 
 /**
- * Figure 1 — the medication map: the pain pathway from tissue to brain, with
+ * Figure 1 – the medication map: the pain pathway from tissue to brain, with
  * each drug family attached at its site of action.
  */
 function MapFigure() {
@@ -44,7 +44,7 @@ function MapFigure() {
     </g>
   );
   return (
-    <Figure caption="Where pain medications act along the pathway from tissue to brain. Each family intervenes at a different point — which is why no single 'painkiller' covers every pain.">
+    <Figure caption="Where pain medications act along the pathway from tissue to brain. Each family intervenes at a different point – which is why no single 'painkiller' covers every pain.">
       <svg
         role="img"
         aria-labelledby="map-title map-desc"
@@ -53,8 +53,8 @@ function MapFigure() {
       >
         <title id="map-title">Where pain medications act</title>
         <desc id="map-desc">
-          The pain pathway drawn as four stations — tissue, nerve, spinal cord,
-          brain — joined by an amber signal line. Drug families are attached
+          The pain pathway drawn as four stations – tissue, nerve, spinal cord,
+          brain – joined by an amber signal line. Drug families are attached
           where they act: NSAIDs and topicals at the tissue, suzetrigine and
           topical lidocaine at the nerve, gabapentinoids and the
           brake-boosting antidepressants at the spinal cord, opioids and
@@ -83,7 +83,7 @@ function MapFigure() {
 
         {/* top callouts */}
         {callout(22, 60, 160, "NSAIDs · topical NSAIDs", "damp inflammatory chemistry")}
-        {callout(184, 24, 156, "Suzetrigine — new, 2025", "blocks the signal at its source", true)}
+        {callout(184, 24, 156, "Suzetrigine – new, 2025", "blocks the signal at its source", true)}
         {callout(352, 60, 140, "SNRIs · tricyclics", "strengthen the brakes")}
         {callout(506, 24, 156, "Opioids", "turn down the alarm centrally")}
 
@@ -121,7 +121,7 @@ function MapFigure() {
 }
 
 /**
- * Figure 2 — match the mechanism: which families fit which pain type,
+ * Figure 2 – match the mechanism: which families fit which pain type,
  * including the notable poor fit in each column.
  */
 function MatchFigure() {
@@ -149,7 +149,7 @@ function MatchFigure() {
     },
   ];
   return (
-    <Figure caption="Match the mechanism: what tends to help each pain type — and the famous poor fit in each column. Mixed pain is common, which is why real regimens are often combinations (Finnerup 2015; ACP; CDC 2022).">
+    <Figure caption="Match the mechanism: what tends to help each pain type – and the famous poor fit in each column. Mixed pain is common, which is why real regimens are often combinations (Finnerup 2015; ACP; CDC 2022).">
       <svg
         role="img"
         aria-labelledby="match-title match-desc"
@@ -188,7 +188,7 @@ function MatchFigure() {
               <line x1={c.x + 35} y1="239" x2={c.x + 25} y2="249" />
             </g>
             <text x={c.x + 44} y="248" fontSize="12.5" fill={FIG.muted}>
-              {c.miss} — poor fit
+              {c.miss} – poor fit
             </text>
           </g>
         ))}
@@ -208,8 +208,8 @@ export default function MedicationsForPain() {
         They are <strong>different tools that act at different points</strong>{" "}
         on the pathway between an injured tissue and the brain that feels it.
         A medication that transforms one person&rsquo;s arthritis can do
-        nothing for another person&rsquo;s nerve pain — not because either
-        pain is less real, but because the mechanisms differ. Match the tool
+        nothing for another person&rsquo;s nerve pain. Neither pain is less real.
+        The mechanisms differ. Match the tool
         to the mechanism and modest drugs work well; mismatch them and even
         potent ones fail.
       </P>
@@ -219,7 +219,7 @@ export default function MedicationsForPain() {
       <P>
         Reading the map from left to right: at the <strong>tissue</strong>,
         anti-inflammatory drugs blunt the chemical alarm of injury. At the{" "}
-        <strong>nerve</strong>, local anesthetics — and now a new drug class —
+        <strong>nerve</strong>, local anesthetics – and now a new drug class –
         quiet the signal in transit. At the <strong>spinal cord</strong>, some
         medications calm sensitized signaling while others strengthen the
         body&rsquo;s own descending &ldquo;brakes.&rdquo; And in the{" "}
@@ -228,31 +228,31 @@ export default function MedicationsForPain() {
         <Link href="/understanding-pain/how-pain-works" className={link}>
           how pain works
         </Link>{" "}
-        — every pain medication ever made is an intervention somewhere on that
+        – every pain medication ever made is an intervention somewhere on that
         pathway.
       </P>
 
       <H2 id="everyday">The everyday two: acetaminophen and the NSAIDs</H2>
       <P>
         <strong>Acetaminophen</strong> (Tylenol, paracetamol) is the world&rsquo;s
-        most-used pain reliever, and — remarkably — science is still debating
+        most-used pain reliever, and – remarkably – science is still debating
         exactly how it works; its action appears to be largely central, in the
         brain and spinal cord, with little effect on inflammation. Its
         defining safety boundary is the liver. On its own, at labeled doses,
         it is well tolerated; the danger is accumulation, because
         acetaminophen hides inside hundreds of combination cold, flu, sleep,
-        and prescription pain products. Overdose — often unintentional — is a
+        and prescription pain products. Overdose – often unintentional – is a
         leading cause of acute liver failure, which is why pharmacists ask
         what else you are taking.
       </P>
       <P>
-        The <strong>NSAIDs</strong> — ibuprofen, naproxen, aspirin,
+        The <strong>NSAIDs</strong> – ibuprofen, naproxen, aspirin,
         prescription relatives, and the anti-inflammatory medicines people
-        search for by name — work at the scene of the injury: they block the
+        search for by name – work at the scene of the injury: they block the
         prostaglandin chemistry that makes injured tissue swell, throb, and
         stay tender. That mechanism makes them genuinely effective for
-        inflammatory and tissue-driven pain — sprains, arthritis flares,
-        dental pain, menstrual pain — and it is why guidelines list them
+        inflammatory and tissue-driven pain – sprains, arthritis flares,
+        dental pain, menstrual pain – and it is why guidelines list them
         first-line for conditions like{" "}
         <Link href="/conditions/low-back-pain" className={link}>
           low back pain
@@ -260,7 +260,7 @@ export default function MedicationsForPain() {
         . The same mechanism sets their limits: prostaglandins also protect
         the stomach lining, support the kidneys, and balance cardiovascular
         function, so long-term or high-dose NSAID use carries stomach,
-        kidney, and heart cautions that deserve a clinician&rsquo;s eyes —
+        kidney, and heart cautions that deserve a clinician&rsquo;s eyes –
         especially past middle age or alongside blood thinners.
       </P>
 
@@ -271,13 +271,13 @@ export default function MedicationsForPain() {
         anti-inflammatory effect through the skin to a sore joint with a
         fraction of the systemic exposure. Lidocaine patches numb the nerve
         endings under them, useful for localized nerve pain such as
-        post-shingles pain. Capsaicin — the chili-pepper molecule — works by
+        post-shingles pain. Capsaicin – the chili-pepper molecule – works by
         overstimulating and then exhausting local pain fibers. For pain in
         one findable place, topicals are often worth asking about precisely
         because their risks stay local too.
       </P>
 
-      <H2 id="nerve-pain">The nerve-pain medications — and their confusing names</H2>
+      <H2 id="nerve-pain">The nerve-pain medications – and their confusing names</H2>
       <P>
         Here is where more pain-medication confusion lives than anywhere
         else. If your physician offers an &ldquo;antidepressant&rdquo; or a
@@ -286,11 +286,11 @@ export default function MedicationsForPain() {
         jobs, but they have a second, independent pharmacology.{" "}
         <strong>Duloxetine</strong> and the older{" "}
         <strong>tricyclics</strong> boost the descending pathways the spinal
-        cord uses to dampen pain traffic — the brakes in the figure above.{" "}
+        cord uses to dampen pain traffic – the brakes in the figure above.{" "}
         <strong>Gabapentin and pregabalin</strong> bind a calcium-channel
         subunit on overexcited neurons and turn sensitized signaling down.
-        For pain from damaged nerves — diabetic neuropathy, sciatica-type
-        pain, post-shingles pain — the international NeuPSIG evidence review
+        For pain from damaged nerves – diabetic neuropathy, sciatica-type
+        pain, post-shingles pain – the international NeuPSIG evidence review
         ranks exactly these families as first-line, ahead of any conventional
         painkiller. NSAIDs, for all their virtues, do little for this{" "}
         <Link href="/understanding-pain/types-of-pain" className={link}>
@@ -301,7 +301,7 @@ export default function MedicationsForPain() {
 
       <H2 id="muscle-relaxants">Muscle relaxants, briefly</H2>
       <P>
-        For painful muscle spasm — the seized-up back, the wry neck —
+        For painful muscle spasm – the seized-up back, the wry neck –
         clinicians sometimes add a short course of a muscle relaxant. The
         honest evidence summary: modest benefit for short-term use, with
         drowsiness as the common tax, and little support for staying on them
@@ -310,7 +310,7 @@ export default function MedicationsForPain() {
 
       <H2 id="opioids">Opioids: the honest picture</H2>
       <P>
-        Opioids — morphine and its descendants — work on the receptors of the
+        Opioids – morphine and its descendants – work on the receptors of the
         body&rsquo;s own pain-relief chemistry, turning down the alarm at the
         spinal cord and brain. For severe acute pain, surgical pain, cancer
         pain, and comfort at the end of life, they remain essential medicine,
@@ -319,10 +319,10 @@ export default function MedicationsForPain() {
         fade, physical dependence develops with sustained use, and for a
         subset of people use progresses to addiction. The CDC&rsquo;s 2022
         guideline reframed the field away from one-size-fits-all limits and
-        toward individualized decisions — maximizing non-opioid options
+        toward individualized decisions – maximizing non-opioid options
         first, starting low when opioids are used, and never abandoning
-        patients who are already on them. If opioid use — yours or a loved
-        one&rsquo;s — has become hard to control, confidential help exists
+        patients who are already on them. If opioid use – yours or a loved
+        one&rsquo;s – has become hard to control, confidential help exists
         and works: the SAMHSA helpline, 1-800-662-4357, is free and answers
         around the clock.
       </P>
@@ -331,13 +331,13 @@ export default function MedicationsForPain() {
       <P>
         For most of living memory, every pain pill belonged to a family your
         grandparents would recognize. That changed in January 2025, when the
-        FDA approved <strong>suzetrigine</strong> (Journavx) — the first
+        FDA approved <strong>suzetrigine</strong> (Journavx) – the first
         medication of a genuinely new class in over twenty years. It blocks
         NaV1.8, a sodium channel found on pain-sensing nerves outside the
         brain, muting the pain signal at its source: no opioid receptors, no
         euphoria, no dependence liability. Its approval covers
         moderate-to-severe acute pain, and its deeper significance is the
-        door it opens — a validated non-opioid mechanism with a pipeline of
+        door it opens – a validated non-opioid mechanism with a pipeline of
         successors behind it, tracked on our{" "}
         <Link href="/future-of-pain-medicine/pipeline" className={link}>
           pain treatment pipeline
@@ -349,18 +349,18 @@ export default function MedicationsForPain() {
       <MatchFigure />
       <P>
         The most searched question about pain relievers is which one is
-        strongest — and the figure above is the answer the question deserves.
+        strongest – and the figure above is the answer the question deserves.
         Potency measures grip on one receptor; relief comes from{" "}
         <strong>mechanism match</strong>. Nerve-pain drugs underwhelm for a
         sprained ankle. NSAIDs underwhelm for neuropathy. Opioids underwhelm
-        for the sensitized-system pain of fibromyalgia — where movement and
+        for the sensitized-system pain of fibromyalgia – where movement and
         brain-targeted care outperform them. And because long-lasting pain is
         so often{" "}
         <Link href="/understanding-pain/types-of-pain" className={link}>
           mixed-mechanism
         </Link>
         , real-world regimens are often thoughtful combinations of modest
-        tools rather than one powerful one. That is not settling for less —
+        tools rather than one powerful one. That is not settling for less –
         it is how the pharmacology actually works.
       </P>
 
@@ -368,12 +368,12 @@ export default function MedicationsForPain() {
       <P>
         This page describes; your clinician prescribes. The conversation goes
         further if you arrive with the right questions: <em>Which mechanism
-        do you think is driving my pain — and does this medication target
+        do you think is driving my pain – and does this medication target
         it? What should improve, by when, and how will we decide whether
         it&rsquo;s working? What are the risks with my other medications and
         my health history? Is a topical option worth trying first? What is
         the plan for stopping?</em> A medication trial with a defined goal
-        and an exit plan is modern pain medicine working as designed — and if
+        and an exit plan is modern pain medicine working as designed – and if
         your current regimen has grown without ever being re-examined, that
         review is exactly what{" "}
         <Link href="/what-is-pain-medicine" className={link}>

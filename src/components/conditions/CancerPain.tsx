@@ -6,12 +6,12 @@ const link =
   "text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600";
 
 /**
- * Figure 1 — the three sources of cancer pain: the disease, the treatment,
+ * Figure 1 – the three sources of cancer pain: the disease, the treatment,
  * and the years after.
  */
 function SourcesFigure() {
   return (
-    <Figure caption="Cancer pain has three sources, and they call for different tools: the disease itself, the treatments that fight it, and — for a growing population of survivors — the marks treatment leaves behind.">
+    <Figure caption="Cancer pain has three sources, and they call for different tools: the disease itself, the treatments that fight it, and – for a growing population of survivors – the marks treatment leaves behind.">
       <svg
         role="img"
         aria-labelledby="src-title src-desc"
@@ -23,7 +23,7 @@ function SourcesFigure() {
           Three panels. The disease: pain from bone involvement, pressed
           nerves, and stretched organs. The treatment: pain after surgery,
           nerve damage from chemotherapy, and radiation effects. The years
-          after: survivor pain — neuropathy, surgical sites, and joint pain
+          after: survivor pain – neuropathy, surgical sites, and joint pain
           from hormone therapy.
         </desc>
 
@@ -41,7 +41,7 @@ function SourcesFigure() {
           <circle cx="20" cy="26" r="4" fill={FIG.signal} />
         </g>
         <g fontSize="11.5" fill={FIG.textMid} textAnchor="middle">
-          <text x="116" y="158">bone involvement — the most common</text>
+          <text x="116" y="158">bone involvement – the most common</text>
           <text x="116" y="176">nerves pressed or invaded</text>
           <text x="116" y="194">organs stretched or blocked</text>
         </g>
@@ -63,7 +63,7 @@ function SourcesFigure() {
           <text x="340" y="194">radiation&rsquo;s local effects</text>
         </g>
         <text x="340" y="240" textAnchor="middle" fontSize="11" fill={FIG.muted}>
-          expected, monitored — and treatable
+          expected, monitored – and treatable
         </text>
 
         {/* the years after */}
@@ -81,7 +81,7 @@ function SourcesFigure() {
           <text x="564" y="194">joint pain from hormone therapy</text>
         </g>
         <text x="564" y="240" textAnchor="middle" fontSize="11" fill={FIG.muted}>
-          survivor pain — real, common, treatable
+          survivor pain – real, common, treatable
         </text>
       </svg>
     </Figure>
@@ -89,12 +89,12 @@ function SourcesFigure() {
 }
 
 /**
- * Figure 2 — palliative care is not giving up: the Temel 2010 randomized
+ * Figure 2 – palliative care is not giving up: the Temel 2010 randomized
  * trial, drawn soberly.
  */
 function PalliativeFigure() {
   return (
-    <Figure caption="The trial that changed the conversation: in metastatic lung cancer, palliative care added from diagnosis improved quality of life and mood — and patients lived longer (median 11.6 vs 8.9 months; Temel 2010, NEJM). Comfort care and cancer care belong together, early.">
+    <Figure caption="The trial that changed the conversation: in metastatic lung cancer, palliative care added from diagnosis improved quality of life and mood – and patients lived longer (median 11.6 vs 8.9 months; Temel 2010, NEJM). Comfort care and cancer care belong together, early.">
       <svg
         role="img"
         aria-labelledby="pal-title pal-desc"
@@ -105,7 +105,7 @@ function PalliativeFigure() {
         <desc id="pal-desc">
           Two horizontal bars comparing median survival: standard cancer care
           alone, 8.9 months; cancer care plus palliative care from diagnosis,
-          11.6 months — alongside better quality of life and less depression.
+          11.6 months – alongside better quality of life and less depression.
         </desc>
 
         <text x="40" y="52" fontSize="13.5" fontWeight="700" fill={FIG.ink}>
@@ -125,7 +125,7 @@ function PalliativeFigure() {
         </text>
 
         <text x="40" y="212" fontSize="12" fill={FIG.textMid}>
-          median survival — alongside better quality of life and less depression
+          median survival – alongside better quality of life and less depression
         </text>
       </svg>
     </Figure>
@@ -137,7 +137,7 @@ export default function CancerPain() {
     <div>
       <P>
         Two facts about cancer pain belong side by side, because either one
-        alone misleads. The first: pain is common — studies find it in about{" "}
+        alone misleads. The first: pain is common – studies find it in about{" "}
         <strong>55% of people during cancer treatment</strong> and{" "}
         <strong>66% of those with advanced disease</strong>. The second, and
         the one this page exists for: cancer pain is among the{" "}
@@ -145,7 +145,7 @@ export default function CancerPain() {
         The tools are strong, the evidence is deep, and the field&rsquo;s
         hardest-won lesson is organizational, not pharmacological: pain that
         goes unreported goes untreated, and for decades studies found a
-        substantial minority of patients undertreated — mostly for reasons
+        substantial minority of patients undertreated – mostly for reasons
         that dissolve once they are said out loud. Treating pain is part of
         treating cancer. You never have to earn relief by suffering first.
       </P>
@@ -154,21 +154,21 @@ export default function CancerPain() {
       <SourcesFigure />
       <P>
         Cancer pain is really three problems wearing one name. The{" "}
-        <strong>disease</strong> causes pain most often through bone —
+        <strong>disease</strong> causes pain most often through bone –
         metastases remodel and weaken bone, which aches deeply and can flare
-        sharply with movement — and by pressing on or invading nerves, or
+        sharply with movement – and by pressing on or invading nerves, or
         stretching organs and their coverings. The{" "}
         <strong>treatment</strong> causes its own: pain around surgical
-        sites, chemotherapy&rsquo;s nerve damage in the hands and feet —
+        sites, chemotherapy&rsquo;s nerve damage in the hands and feet –
         classic{" "}
         <Link href="/conditions/neuropathic-pain" className={link}>
           neuropathic pain
         </Link>
-        , glove-and-stocking included — and radiation&rsquo;s local
+        , glove-and-stocking included – and radiation&rsquo;s local
         effects. And the <strong>years after</strong> bring the newest
         chapter: a large and growing population of survivors whose cancer is
-        gone but whose pain is not. Most cancer pain mixes mechanisms —
-        tissue-driven and nerve-driven at once — which is exactly why the
+        gone but whose pain is not. Most cancer pain mixes mechanisms –
+        tissue-driven and nerve-driven at once – which is exactly why the
         toolbox below is wider than any single drug class.
       </P>
 
@@ -177,42 +177,42 @@ export default function CancerPain() {
         Modern cancer pain care descends from a genuinely great idea: the
         World Health Organization&rsquo;s 1986 cancer pain program, which
         taught the world that most cancer pain could be controlled with a
-        few principles — treat <strong>by the clock</strong> rather than
+        few principles – treat <strong>by the clock</strong> rather than
         chasing pain after it peaks, prefer simple routes, and match the
         strength of treatment to the severity of pain. Today&rsquo;s WHO
         guidance keeps the spirit and drops the rigidity: treatment is
         individualized from the start. Two practical habits carry most of
-        the value. Report pain early, specifically, and every visit — where
+        the value. Report pain early, specifically, and every visit – where
         it is, what it feels like, what it stops you doing (
         <Link href="/understanding-pain/measuring-pain" className={link}>
           how to describe pain
         </Link>{" "}
-        helps). And expect a plan for <strong>“breakthrough” pain</strong> —
+        helps). And expect a plan for <strong>“breakthrough” pain</strong> –
         the fast, sharp spikes through otherwise controlled background pain
-        — because scheduled control plus a rescue plan is the standard, and
-        you should have both halves.
+        – because scheduled control plus a rescue plan is the standard, and
+        a good plan includes both halves.
       </P>
 
-      <H2 id="opioids">About opioids — a different conversation here</H2>
+      <H2 id="opioids">About opioids – a different conversation here</H2>
       <P>
         Elsewhere on this site, opioids appear late in treatment ladders and
         wrapped in caution. Cancer pain is the context those medicines were
         made for: for moderate-to-severe cancer pain, opioids are the{" "}
         <strong>backbone of treatment</strong> and sit on the WHO&rsquo;s
         list of essential medicines. The distinctions that get blurred
-        everywhere else matter most here. <strong>Tolerance</strong> —
-        needing adjustment over time — and <strong>physical
-        dependence</strong> — the body adapting, needing a taper to stop —
+        everywhere else matter most here. <strong>Tolerance</strong> –
+        needing adjustment over time – and <strong>physical
+        dependence</strong> – the body adapting, needing a taper to stop –
         are expected biology that your team plans for.{" "}
-        <strong>Addiction</strong> — use escaping control despite harm — is
+        <strong>Addiction</strong> – use escaping control despite harm – is
         a different phenomenon, and it is uncommon in monitored cancer pain
         care. Research on undertreatment keeps finding the same barrier:
         fear of addiction, held by patients and families, quietly trading
         real relief for imagined safety. Take the medicine your pain
         actually requires; let your team manage the side effects
-        proactively — constipation, notably, is expected and treatable from
+        proactively – constipation, notably, is expected and treatable from
         day one. And if opioid use ever does feel like it is escaping the
-        plan — yours or a loved one&rsquo;s — say so early: the SAMHSA
+        plan – yours or a loved one&rsquo;s – say so early: the SAMHSA
         helpline, 1-800-662-4357, is free, confidential, and always open.
       </P>
 
@@ -223,15 +223,15 @@ export default function CancerPain() {
         <Link href="/treatments/medications-for-pain" className={link}>
           Nerve-pain medications
         </Link>{" "}
-        treat the neuropathic share — chemotherapy neuropathy especially.
+        treat the neuropathic share – chemotherapy neuropathy especially.
         Steroids shrink painful swelling around tumors and nerves.
         Bone-targeted drugs strengthen bone under attack, and{" "}
         <strong>radiation</strong> deserves special mention: for a painful
         bone metastasis, even a single treatment session relieves pain in
-        the majority of patients — one of oncology&rsquo;s quiet triumphs.
+        the majority of patients – one of oncology&rsquo;s quiet triumphs.
         Interventional pain medicine adds precision tools: nerve blocks
         such as the celiac plexus block for pancreatic and upper-abdominal
-        cancer pain — a procedure with decades of track record — and
+        cancer pain – a procedure with decades of track record – and
         implanted pumps that deliver medication directly to the spinal
         fluid when pills reach their limits. Psychology, physical therapy,
         and good sleep care round out a plan that treats the person, not
@@ -245,10 +245,10 @@ export default function CancerPain() {
         of the most valuable services in medicine, so the record needs
         stating plainly. Palliative care is <strong>specialist symptom and
         quality-of-life care delivered alongside cancer treatment, at any
-        stage</strong> — not instead of treatment, and not a signal about
+        stage</strong> – not instead of treatment, and not a signal about
         prognosis. In the landmark randomized trial above, patients with
         metastatic lung cancer who received palliative care from diagnosis
-        had better quality of life, less depression — and lived longer.
+        had better quality of life, less depression – and lived longer.
         Comfort turned out to be not the opposite of fighting, but part of
         how the fight goes better. If pain or symptoms are a daily
         presence, asking for a palliative care referral early is one of
@@ -263,7 +263,7 @@ export default function CancerPain() {
         therapy. Enough survivors live with pain that oncology publishes
         its own guideline for managing it. If your treatment ended years
         ago and pain remains, two things are true: it is common, and it is
-        treatable — generally with the same approaches used for other
+        treatable – generally with the same approaches used for other
         chronic pain, sized to the mechanism. Mentioning it to your care
         team is not ingratitude for your recovery; it is the next step of
         the same care.
@@ -277,7 +277,7 @@ export default function CancerPain() {
         <Link href="/what-is-pain-medicine" className={link}>
           pain medicine
         </Link>{" "}
-        for the interventional tools — blocks, pumps, and the management of
+        for the interventional tools – blocks, pumps, and the management of
         survivor pain.{" "}
         <Link href="/find-help" className={link}>
           Finding pain care near you

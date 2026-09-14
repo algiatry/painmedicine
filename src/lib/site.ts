@@ -18,7 +18,7 @@ export const NAV: NavItem[] = [
     label: "What Is Pain Medicine",
     href: "/what-is-pain-medicine",
     description:
-      "The medical specialty dedicated to diagnosing and treating pain — who pain specialists are and how they work.",
+      "The medical specialty dedicated to diagnosing and treating pain – who pain specialists are and how they work.",
   },
   {
     label: "Understanding Pain",
@@ -60,11 +60,11 @@ export const SUPPORT_LINKS = [
 export const HELP_LINES = [
   {
     name: "988 Suicide & Crisis Lifeline",
-    detail: "Call or text 988 — free, confidential, 24/7",
+    detail: "Call or text 988 – free, confidential, 24/7",
   },
   {
     name: "SAMHSA National Helpline",
     detail:
-      "1-800-662-HELP (4357) — treatment referral for substance use and mental health, 24/7",
+      "1-800-662-HELP (4357) – treatment referral for substance use and mental health, 24/7",
   },
 ] as const;

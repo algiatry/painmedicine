@@ -11,7 +11,7 @@ const GROUPS = [
     sub: "gene barely active",
     pct: 0.15,
     pctLabel: "little morphine",
-    out1: "Too little effect —",
+    out1: "Too little effect –",
     out2: "poor pain relief",
   },
   {
@@ -22,7 +22,7 @@ const GROUPS = [
     sub: "gene works as usual",
     pct: 0.55,
     pctLabel: "expected morphine",
-    out1: "The intended amount —",
+    out1: "The intended amount –",
     out2: "codeine works as designed",
   },
   {
@@ -33,21 +33,21 @@ const GROUPS = [
     sub: "gene overactive",
     pct: 0.95,
     pctLabel: "too much morphine",
-    out1: "Too much, too fast —",
+    out1: "Too much, too fast –",
     out2: "risk of dangerous toxicity",
   },
 ];
 
 function MetabolizerFigure() {
   return (
-    <Figure caption="The same dose of codeine, three different people. The CYP2D6 gene decides how much morphine each one makes — and whether the drug is useless, effective, or dangerous.">
+    <Figure caption="The same dose of codeine, three different people. The CYP2D6 gene decides how much morphine each one makes – and whether the drug is useless, effective, or dangerous.">
       <svg
         role="img"
         aria-labelledby="pgx-title pgx-desc"
         viewBox="0 0 780 250"
         className="mx-auto block h-auto w-full max-w-3xl"
       >
-        <title id="pgx-title">CYP2D6 and codeine — the metabolizer spectrum</title>
+        <title id="pgx-title">CYP2D6 and codeine – the metabolizer spectrum</title>
         <desc id="pgx-desc">
           Three cards for poor, normal, and ultrarapid metabolizers, each showing
           how much morphine the body makes from the same codeine dose and the
@@ -91,7 +91,7 @@ export default function PrecisionPainMedicine() {
 
       <P>
         Two people with the same injury can need completely different treatments
-        — and can react to the very same drug in opposite ways. Precision pain
+        – and can react to the very same drug in opposite ways. Precision pain
         medicine aims to use your biology to guide care, replacing trial and
         error with something closer to a fit.
       </P>
@@ -99,12 +99,12 @@ export default function PrecisionPainMedicine() {
       <H2 id="genes">Your genes and your painkillers</H2>
       <P>
         The clearest example is already in your medical record&rsquo;s reach.
-        Codeine does nothing on its own — your body has to convert it into
+        Codeine does nothing on its own – your body has to convert it into
         morphine, using an enzyme built by the gene{" "}
         <strong>CYP2D6</strong>. But people carry different versions of that
         gene. <strong>Poor metabolizers</strong> convert very little and get
         weak pain relief. <strong>Ultrarapid metabolizers</strong> convert too
-        much, too fast — enough that the FDA carries a boxed warning after
+        much, too fast – enough that the FDA carries a boxed warning after
         children died of respiratory depression following routine surgery.
       </P>
       <P>
@@ -112,7 +112,7 @@ export default function PrecisionPainMedicine() {
         <strong>avoiding codeine and tramadol entirely</strong> in poor and
         ultrarapid metabolizers, and pharmacogenomic testing for CYP2D6 exists to
         identify them in advance. It is precision pain medicine you can act on
-        today — the same dose, a different gene, a completely different outcome.
+        today – the same dose, a different gene, a completely different outcome.
       </P>
       <P>
         Because codeine and tramadol are opioids, one note belongs here as much
@@ -124,7 +124,7 @@ export default function PrecisionPainMedicine() {
       <H2 id="mechanism">Matching the drug to the mechanism</H2>
       <P>
         Precision is not only genetic. It also means matching the treatment to
-        the <em>kind</em> of pain you have — the nociceptive, neuropathic, and
+        the <em>kind</em> of pain you have – the nociceptive, neuropathic, and
         nociplastic distinction in{" "}
         <Link
           href="/understanding-pain/types-of-pain"
@@ -140,7 +140,7 @@ export default function PrecisionPainMedicine() {
 
       <H2 id="biomarkers">The search for an objective signal</H2>
       <P>
-        Pain has no blood test — and a great deal of research is trying to change
+        Pain has no blood test – and a great deal of research is trying to change
         that. Quantitative sensory testing, brain and nerve imaging, and
         candidate blood markers are all being studied as{" "}
         <strong>biomarkers</strong> that could confirm a pain mechanism, predict
@@ -149,12 +149,12 @@ export default function PrecisionPainMedicine() {
         rough objective signal would change how pain is diagnosed.
       </P>
 
-      <H2 id="ai">Where AI fits — carefully</H2>
+      <H2 id="ai">Where AI fits – carefully</H2>
       <P>
         Machine learning is being applied to some of these problems: reading
         imaging, spotting patterns across large datasets, and estimating the risk
         that acute pain will turn chronic. It is early, and it carries real risks
-        of bias if trained on incomplete data — pain has a long history of being
+        of bias if trained on incomplete data – pain has a long history of being
         under-recognized in some groups. Treated as a tool to support clinicians
         rather than replace judgment, it may help target care; oversold, it could
         entrench old inequities.
@@ -163,7 +163,7 @@ export default function PrecisionPainMedicine() {
       <H2 id="fit">From the average patient to you</H2>
       <P>
         The common thread is a shift away from treating an average patient and
-        toward treating <em>you</em> — your genes, your pain mechanism, your
+        toward treating <em>you</em> – your genes, your pain mechanism, your
         risk. Many of the new drugs in the{" "}
         <Link
           href="/future-of-pain-medicine/pipeline"
@@ -171,7 +171,7 @@ export default function PrecisionPainMedicine() {
         >
           pain treatment pipeline
         </Link>{" "}
-        are being built for specific patient groups from the start — precision by
+        are being built for specific patient groups from the start – precision by
         design.
       </P>
     </div>

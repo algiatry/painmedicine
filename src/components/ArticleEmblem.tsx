@@ -2,7 +2,7 @@ import { EMBLEMS, EMBLEM_VIEWBOX } from "@/lib/emblems";
 
 /**
  * Inline renderer for an article's signature emblem (see lib/emblems.ts).
- * Decorative — always paired with the article title it stands for.
+ * Decorative – always paired with the article title it stands for.
  */
 export default function ArticleEmblem({
   slug,

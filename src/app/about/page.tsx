@@ -43,8 +43,8 @@ export default function AboutPage() {
           </li>
           <li>
             <strong>Primary sources.</strong> Clinical claims cite primary and
-            authoritative sources — peer-reviewed research, government health
-            agencies, FDA labeling, and professional society guidelines — with
+            authoritative sources – peer-reviewed research, government health
+            agencies, FDA labeling, and professional society guidelines – with
             visible reference lists.
           </li>
           <li>
