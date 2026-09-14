@@ -8,7 +8,7 @@ import { SITE } from "./site";
  * - "sourced": full educational content built from cited primary sources
  *   (IASP, NIH, WHO, Cochrane, peer-reviewed literature) that makes no
  *   individualized clinical recommendation. Publishes with an HONEST byline
- *   ("written from primary sources — independent medical review pending"),
+ *   ("written from primary sources – independent medical review pending"),
  *   never a fabricated "reviewed by" credit.
  * - "reviewed": a named credentialed reviewer has signed off. ONLY then may a
  *   reviewer byline appear. See CONTENT-TEMPLATE.md.

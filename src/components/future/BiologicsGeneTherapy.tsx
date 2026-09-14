@@ -48,7 +48,7 @@ function PrecisionFigure() {
         <title id="bio-title">The precision ladder of pain treatments</title>
         <desc id="bio-desc">
           A rising three-step staircase: broad small-molecule drugs, then
-          single-target antibodies, then gene therapy — each step more precise
+          single-target antibodies, then gene therapy – each step more precise
           than the last.
         </desc>
 
@@ -89,7 +89,7 @@ export default function BiologicsGeneTherapy() {
 
       <P>
         Most familiar painkillers are small molecules that act broadly across the
-        nervous system — effective, but blunt. The frontier of pain treatment is
+        nervous system – effective, but blunt. The frontier of pain treatment is
         moving the other way: toward therapies precise enough to block a single
         molecule, or to reach the gene that makes it.
       </P>
@@ -98,7 +98,7 @@ export default function BiologicsGeneTherapy() {
       <P>
         The proof that precision works came from migraine. A protein called{" "}
         <strong>CGRP</strong> helps drive migraine attacks, and in{" "}
-        <strong>2018</strong> the FDA approved erenumab — the first antibody
+        <strong>2018</strong> the FDA approved erenumab – the first antibody
         designed to block the CGRP pathway and prevent migraine. It was the first
         approved antibody against its kind of receptor, and it worked: a whole
         class of CGRP antibodies and oral &ldquo;gepant&rdquo; drugs followed.
@@ -111,21 +111,21 @@ export default function BiologicsGeneTherapy() {
       <H2 id="ngf">Targeting the pain amplifiers</H2>
       <P>
         Some proteins act like fertilizer for pain signaling. The best-studied is{" "}
-        <strong>nerve growth factor (NGF)</strong>. Antibodies that block it —
-        led by tanezumab — clearly relieved osteoarthritis pain, but they also
+        <strong>nerve growth factor (NGF)</strong>. Antibodies that block it –
+        led by tanezumab – clearly relieved osteoarthritis pain, but they also
         raised the risk of rapidly progressive joint damage, and in 2021 the
         program was halted after an FDA panel voted against it. The story
         isn&rsquo;t over: a newer biologic, LEVI-04, targets a related
         neurotrophin and, in a 2026 trial, improved pain and function{" "}
         <em>without</em> the joint-damage signal that sank its predecessor. It is
-        a vivid example of how powerful — and how tricky — this target is.
+        a vivid example of how powerful – and how tricky – this target is.
       </P>
 
       <H2 id="gene">Editing the pain system itself</H2>
       <P>
         The most precise frontier is gene therapy. A gene called{" "}
         <strong>SCN9A</strong> builds the sodium channel <strong>NaV1.7</strong>,
-        a master switch near the start of the pain pathway — people born without
+        a master switch near the start of the pain pathway – people born without
         it feel almost no pain. Experimental therapies now use engineered
         proteins to <em>turn that gene down</em> in the sensory nerves, aiming
         for long-lasting relief from a single treatment. One such therapy,
@@ -141,14 +141,14 @@ export default function BiologicsGeneTherapy() {
         injections are widely advertised for joint pain, but the evidence that
         they meaningfully outperform simpler options remains mixed and
         contested. Genuine biologic breakthroughs and clinics selling hope are
-        both part of this space — telling them apart is exactly what a page like
+        both part of this space – telling them apart is exactly what a page like
         this is for.
       </P>
 
       <H2 id="ladder">Climbing the precision ladder</H2>
       <P>
         From broad drugs, to antibodies against one molecule, to therapies that
-        edit the pain gene — the direction is clear even where the science is
+        edit the pain gene – the direction is clear even where the science is
         young. Follow the specific candidates by trial phase in the{" "}
         <Link
           href="/future-of-pain-medicine/pipeline"

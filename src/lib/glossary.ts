@@ -20,12 +20,12 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Adjuvant analgesic",
     definition:
-      "A medicine whose original purpose is something else — such as an antidepressant or anti-seizure drug — but that also relieves certain kinds of pain, especially nerve pain.",
+      "A medicine whose original purpose is something else – such as an antidepressant or anti-seizure drug – but that also relieves certain kinds of pain, especially nerve pain.",
   },
   {
     term: "Allodynia",
     definition:
-      "Pain from something that should not hurt at all, such as light touch or clothing on the skin — a hallmark of a sensitized nervous system.",
+      "Pain from something that should not hurt at all, such as light touch or clothing on the skin – a hallmark of a sensitized nervous system.",
     href: "/understanding-pain/how-pain-works",
   },
   {
@@ -35,13 +35,13 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Biologic",
     definition:
-      "A large, precisely engineered medicine — often an antibody — designed to block one specific molecular target, unlike broad-acting small-molecule drugs.",
+      "A large, precisely engineered medicine – often an antibody – designed to block one specific molecular target, unlike broad-acting small-molecule drugs.",
     href: "/future-of-pain-medicine/biologics-and-gene-therapy",
   },
   {
     term: "Biopsychosocial model",
     definition:
-      "The modern understanding that pain is shaped by biological, psychological, and social factors together — not by tissue damage alone.",
+      "The modern understanding that pain is shaped by biological, psychological, and social factors together – not by tissue damage alone.",
     href: "/what-is-pain-medicine/the-pain-team",
   },
   {
@@ -53,7 +53,7 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Boom-bust cycle",
     definition:
-      "The pattern of overdoing activity on a good day, flaring, and losing the days that follow — which teaches a sensitized pain system that activity is dangerous. Pacing is its evidence-backed replacement.",
+      "The pattern of overdoing activity on a good day, flaring, and losing the days that follow – which teaches a sensitized pain system that activity is dangerous. Pacing is its evidence-backed replacement.",
     href: "/treatments/physical-and-behavioral-therapies",
   },
   {
@@ -65,7 +65,7 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Cauda equina syndrome",
     definition:
-      "A rare surgical emergency in which the nerve bundle at the base of the spine is compressed. Warning signs: new numbness in the groin or inner thighs, trouble controlling bladder or bowels, or progressive leg weakness — seek same-day care.",
+      "A rare surgical emergency in which the nerve bundle at the base of the spine is compressed. Warning signs: new numbness in the groin or inner thighs, trouble controlling bladder or bowels, or progressive leg weakness – seek same-day care.",
     href: "/conditions/low-back-pain",
   },
   {
@@ -112,13 +112,13 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "CYP2D6",
     definition:
-      "A liver enzyme, and the gene that builds it, that determines how quickly a person converts certain painkillers such as codeine into their active form — a cornerstone of pharmacogenomics.",
+      "A liver enzyme, and the gene that builds it, that determines how quickly a person converts certain painkillers such as codeine into their active form – a cornerstone of pharmacogenomics.",
     href: "/future-of-pain-medicine/precision-pain-medicine",
   },
   {
     term: "DMARD (disease-modifying antirheumatic drug)",
     definition:
-      "A medication that treats inflammatory arthritis at its source — suppressing the immune attack itself rather than only the pain. Started early, DMARDs prevent most of the joint destruction that once defined rheumatoid arthritis.",
+      "A medication that treats inflammatory arthritis at its source – suppressing the immune attack itself rather than only the pain. Started early, DMARDs prevent most of the joint destruction that once defined rheumatoid arthritis.",
     href: "/conditions/arthritis-pain",
   },
   {
@@ -130,7 +130,7 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Dorsal horn",
     definition:
-      "The region of the spinal cord where incoming pain signals are filtered before traveling on to the brain — home of the pain 'gate.'",
+      "The region of the spinal cord where incoming pain signals are filtered before traveling on to the brain – home of the pain 'gate.'",
     href: "/understanding-pain/how-pain-works",
   },
   {
@@ -142,7 +142,7 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Endogenous opioids",
     definition:
-      "Pain-relieving chemicals the body makes itself, such as endorphins, acting on the same receptors as opioid drugs. They are part of how the brain's own pain-relief system — including placebo analgesia — works.",
+      "Pain-relieving chemicals the body makes itself, such as endorphins, acting on the same receptors as opioid drugs. They are part of how the brain's own pain-relief system – including placebo analgesia – works.",
     href: "/understanding-pain/the-placebo-effect",
   },
   {
@@ -166,13 +166,13 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Graded motor imagery",
     definition:
-      "A staged rehabilitation approach for severe limb pain that begins below the threshold of movement — recognizing left from right in photos, imagining movement, then mirror therapy — to redraw the brain's map of the limb before loading it.",
+      "A staged rehabilitation approach for severe limb pain that begins below the threshold of movement – recognizing left from right in photos, imagining movement, then mirror therapy – to redraw the brain's map of the limb before loading it.",
     href: "/conditions/crps",
   },
   {
     term: "Hyperalgesia",
     definition:
-      "An exaggerated response to something that is genuinely painful — more pain than the stimulus would normally produce.",
+      "An exaggerated response to something that is genuinely painful – more pain than the stimulus would normally produce.",
     href: "/understanding-pain/how-pain-works",
   },
   {
@@ -184,18 +184,18 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Interventional pain procedure",
     definition:
-      "An image-guided procedure — such as a nerve block, injection, or radiofrequency treatment — used to diagnose or treat pain.",
+      "An image-guided procedure – such as a nerve block, injection, or radiofrequency treatment – used to diagnose or treat pain.",
   },
   {
     term: "Medication-overuse headache",
     definition:
-      "A near-daily headache caused by using acute pain relievers on too many days per month, over months — it can convert episodic migraine into constant headache that the same medications no longer help. Recognized, it is treatable.",
+      "A near-daily headache caused by using acute pain relievers on too many days per month, over months – it can convert episodic migraine into constant headache that the same medications no longer help. Recognized, it is treatable.",
     href: "/conditions/migraine",
   },
   {
     term: "Mirror therapy",
     definition:
-      "A rehabilitation technique in which the painful limb rests hidden behind a mirror while the healthy limb moves in front of it — the brain watches what looks like two healthy limbs, and its blurred map of the painful one begins to redraw.",
+      "A rehabilitation technique in which the painful limb rests hidden behind a mirror while the healthy limb moves in front of it – the brain watches what looks like two healthy limbs, and its blurred map of the painful one begins to redraw.",
     href: "/conditions/crps",
   },
   {
@@ -207,7 +207,7 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Naloxone",
     definition:
-      "A drug that blocks opioid receptors. It reverses opioid overdoses — and in research, its ability to blunt placebo pain relief showed that placebo analgesia runs on the body's own opioid chemistry.",
+      "A drug that blocks opioid receptors. It reverses opioid overdoses – and in research, its ability to blunt placebo pain relief showed that placebo analgesia runs on the body's own opioid chemistry.",
     href: "/understanding-pain/the-placebo-effect",
   },
   {
@@ -225,7 +225,7 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Neuropathic pain",
     definition:
-      "Pain caused by damage or disease in the nervous system itself — often described as burning, shooting, or electric.",
+      "Pain caused by damage or disease in the nervous system itself – often described as burning, shooting, or electric.",
     href: "/understanding-pain/types-of-pain",
   },
   {
@@ -243,7 +243,7 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Nociceptor",
     definition:
-      "A specialized nerve ending that detects potentially harmful heat, pressure, or chemicals — the body's threat detector.",
+      "A specialized nerve ending that detects potentially harmful heat, pressure, or chemicals – the body's threat detector.",
     href: "/understanding-pain/how-pain-works",
   },
   {
@@ -255,13 +255,13 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Numeric rating scale (NRS)",
     definition:
-      "The familiar 0-to-10 scale used to rate pain intensity — quick and useful, but only a starting point.",
+      "The familiar 0-to-10 scale used to rate pain intensity – quick and useful, but only a starting point.",
     href: "/understanding-pain/measuring-pain",
   },
   {
     term: "Open-label placebo",
     definition:
-      "A placebo given with full honesty — the patient knows it is inert. In small randomized trials it still improved symptoms such as chronic low back pain, suggesting the ritual and expectation of care carry real weight.",
+      "A placebo given with full honesty – the patient knows it is inert. In small randomized trials it still improved symptoms such as chronic low back pain, suggesting the ritual and expectation of care carry real weight.",
     href: "/understanding-pain/the-placebo-effect",
   },
   {
@@ -272,13 +272,13 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Pacing",
     definition:
-      "The activity skill at the center of chronic pain rehabilitation: find the amount you can do even on a bad day, do it consistently, and increase by plan rather than by how you feel — progress by schedule, not by symptoms.",
+      "The activity skill at the center of chronic pain rehabilitation: find the amount you can do even on a bad day, do it consistently, and increase by plan rather than by how you feel – progress by schedule, not by symptoms.",
     href: "/treatments/physical-and-behavioral-therapies",
   },
   {
     term: "Pain catastrophizing",
     definition:
-      "An automatic habit of worst-case thinking about pain ('this will never end'). It predicts worse pain and disability — and because it is a learned appraisal habit, not a character flaw, it can be retrained.",
+      "An automatic habit of worst-case thinking about pain ('this will never end'). It predicts worse pain and disability – and because it is a learned appraisal habit, not a character flaw, it can be retrained.",
     href: "/understanding-pain/pain-and-emotion",
   },
   {
@@ -296,19 +296,19 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "PDMP (prescription drug monitoring program)",
     definition:
-      "A state database of controlled-substance prescriptions. The CDC recommends clinicians review it before and during prescribing — a routine safety habit at careful practices, not an accusation.",
+      "A state database of controlled-substance prescriptions. The CDC recommends clinicians review it before and during prescribing – a routine safety habit at careful practices, not an accusation.",
     href: "/what-is-pain-medicine/your-first-visit",
   },
   {
     term: "Pharmacogenomics",
     definition:
-      "The study of how a person's genes affect their response to medicines — used to make pain prescribing safer and more effective.",
+      "The study of how a person's genes affect their response to medicines – used to make pain prescribing safer and more effective.",
     href: "/future-of-pain-medicine/precision-pain-medicine",
   },
   {
     term: "Placebo effect",
     definition:
-      "Real, measurable symptom relief produced by expectation and the context of care — in pain, it works through the brain's own opioid chemistry and descending pain control. It eases symptoms; it does not treat the underlying disease.",
+      "Real, measurable symptom relief produced by expectation and the context of care – in pain, it works through the brain's own opioid chemistry and descending pain control. It eases symptoms; it does not treat the underlying disease.",
     href: "/understanding-pain/the-placebo-effect",
   },
   {
@@ -320,7 +320,7 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Radicular pain",
     definition:
-      "Pain from an irritated or compressed nerve root at the spine, felt along that nerve's territory — a sharp, electric line down an arm or leg. Sciatica is the everyday name for its most common form.",
+      "Pain from an irritated or compressed nerve root at the spine, felt along that nerve's territory – a sharp, electric line down an arm or leg. Sciatica is the everyday name for its most common form.",
     href: "/conditions/sciatica",
   },
   {
@@ -331,7 +331,7 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Slow-wave sleep",
     definition:
-      "The deepest stage of sleep, when the body — including the pain system — does much of its restoration. Disrupting it, even without shortening sleep, lowers pain thresholds and produces widespread tenderness.",
+      "The deepest stage of sleep, when the body – including the pain system – does much of its restoration. Disrupting it, even without shortening sleep, lowers pain thresholds and produces widespread tenderness.",
     href: "/understanding-pain/pain-and-sleep",
   },
   {
@@ -343,7 +343,7 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Suzetrigine (Journavx)",
     definition:
-      "The first non-opioid painkiller of a new class in decades — a NaV1.8 blocker approved in 2025 for moderate-to-severe acute pain.",
+      "The first non-opioid painkiller of a new class in decades – a NaV1.8 blocker approved in 2025 for moderate-to-severe acute pain.",
     href: "/future-of-pain-medicine/pipeline",
   },
   {

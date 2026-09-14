@@ -4,7 +4,7 @@ import { FIG } from "@/lib/fig";
 
 function CycleFigure() {
   return (
-    <Figure caption="The pain-sleep cycle runs in both directions — but not equally. In prospective studies, poor sleep predicts future pain more strongly than pain predicts poor sleep.">
+    <Figure caption="The pain-sleep cycle runs in both directions – but not equally. In prospective studies, poor sleep predicts future pain more strongly than pain predicts poor sleep.">
       <svg
         role="img"
         aria-labelledby="cycle-title cycle-desc"
@@ -180,12 +180,12 @@ export default function PainAndSleep() {
       <P>
         Anyone who lives with pain knows the loop: pain makes it hard to sleep,
         and after a rough night everything hurts more. For a long time medicine
-        treated the sleep half of that loop as collateral damage — something to
+        treated the sleep half of that loop as collateral damage – something to
         fix after the pain was fixed. The research of the last two decades has
         turned that picture around.
       </P>
 
-      <H2 id="both-ways">A two-way street — with a heavier lane</H2>
+      <H2 id="both-ways">A two-way street – with a heavier lane</H2>
       <P>
         The relationship genuinely runs in both directions. But when researchers
         follow people over months and years, the two directions are not equal:
@@ -198,7 +198,7 @@ export default function PainAndSleep() {
       <P>
         That asymmetry matters, and it is quietly hopeful. If sleep were only a
         casualty of pain, there would be nothing to do but wait for the pain to
-        improve. Instead, sleep is upstream — a lever that you and your care
+        improve. Instead, sleep is upstream – a lever that you and your care
         team can actually pull.
       </P>
 
@@ -210,8 +210,8 @@ export default function PainAndSleep() {
         measurably more sensitive to heat pain. Their scans showed why: activity
         in the brain&rsquo;s pain-sensing cortex was{" "}
         <strong>amplified</strong>, while the deeper regions that normally
-        evaluate and dampen pain signals — the thalamus, the insula, and the
-        brain&rsquo;s reward circuitry — went <strong>quiet</strong>. The alarm
+        evaluate and dampen pain signals – the thalamus, the insula, and the
+        brain&rsquo;s reward circuitry – went <strong>quiet</strong>. The alarm
         got louder at the same moment the volume control failed.
       </P>
       <P>
@@ -234,14 +234,14 @@ export default function PainAndSleep() {
           how pain works
         </Link>
         . After 24 hours without sleep, that reflex essentially{" "}
-        <strong>stops working</strong> — in one experiment it was abolished
+        <strong>stops working</strong> – in one experiment it was abolished
         outright, while &ldquo;wind-up&rdquo; (pain building on repeated
         stimulation) got easier to trigger.
       </P>
       <P>
         The <em>kind</em> of sleep you lose matters too. In an earlier
         experiment, sleep broken by repeated forced awakenings knocked out the
-        same pain-inhibition system and increased spontaneous pain — while sleep
+        same pain-inhibition system and increased spontaneous pain – while sleep
         that was merely shortened by the same amount did not. And in a small
         early study, disrupting only deep slow-wave sleep for three nights
         lowered pain thresholds by about a quarter and produced the kind of
@@ -251,7 +251,7 @@ export default function PainAndSleep() {
 
       <H2 id="how-common">If this is you, you have company</H2>
       <P>
-        Sleep problems are not a side note in chronic pain — they are close to
+        Sleep problems are not a side note in chronic pain – they are close to
         universal. A meta-analysis across thousands of patients found that
         roughly <strong>three out of four</strong> people with chronic
         non-cancer pain have clinically significant sleep disturbance, and
@@ -265,7 +265,7 @@ export default function PainAndSleep() {
       <P>
         Because sleep sits upstream of pain, treating the sleep problem directly
         has become part of modern pain care. The best-studied approach is{" "}
-        <strong>cognitive behavioral therapy for insomnia (CBT-I)</strong> — a
+        <strong>cognitive behavioral therapy for insomnia (CBT-I)</strong> – a
         structured, non-drug program that retrains sleep habits and the racing
         thoughts that fuel insomnia. In people with chronic pain, meta-analyses
         show it reliably and durably improves sleep and mood; its direct effect
@@ -275,8 +275,8 @@ export default function PainAndSleep() {
         it gives you back the nights.
       </P>
       <P>
-        Basic sleep habits — consistent times, a dark and cool room, caution
-        with late caffeine and screens — are laid out well in the NIH&rsquo;s
+        Basic sleep habits – consistent times, a dark and cool room, caution
+        with late caffeine and screens – are laid out well in the NIH&rsquo;s
         patient guides. If pain is what keeps waking you, or you suspect a sleep
         disorder such as sleep apnea, raise it directly with your clinician:
         sleep is a legitimate treatment target in its own right, not a

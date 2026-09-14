@@ -16,7 +16,7 @@ const sourceSans = Source_Sans_3({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: `${SITE.shortName} — ${SITE.tagline}`,
+    default: `${SITE.shortName} – ${SITE.tagline}`,
     template: `%s | ${SITE.shortName}`,
   },
   description: SITE.description,

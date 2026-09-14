@@ -6,16 +6,16 @@ const link =
   "text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600";
 
 /**
- * Figure 1 — the mirror of the placebo pathway: expectation of harm runs
+ * Figure 1 – the mirror of the placebo pathway: expectation of harm runs
  * through anxiety and a different chemical (cholecystokinin) to turn the
  * pain signal UP. The blocking experiment (proglumide) sits where the
- * naloxone test sits on the placebo page — the same argument, inverted.
+ * naloxone test sits on the placebo page – the same argument, inverted.
  */
 function MirrorPathwayFigure() {
   return (
     <Figure
       animate
-      caption="Nocebo hyperalgesia has its own chemistry. Expecting harm raises anxiety, which recruits cholecystokinin (CCK), a brain chemical that amplifies pain signaling. Block CCK with proglumide and the extra pain disappears — while the anxiety itself does not. The relief system and the alarm system are different circuits."
+      caption="Nocebo hyperalgesia has its own chemistry. Expecting harm raises anxiety, which recruits cholecystokinin (CCK), a brain chemical that amplifies pain signaling. Block CCK with proglumide and the extra pain disappears – while the anxiety itself does not. The relief system and the alarm system are different circuits."
     >
       <svg
         role="img"
@@ -98,7 +98,7 @@ function MirrorPathwayFigure() {
 }
 
 /**
- * Figure 2 — Bingel 2011: one opioid infusion, three expectations. The
+ * Figure 2 – Bingel 2011: one opioid infusion, three expectations. The
  * drug never changed; what people were told did.
  */
 const EXPECT_BARS = [
@@ -147,7 +147,7 @@ function ExpectationFigure() {
 }
 
 /**
- * Figure 3 — SAMSON: the nocebo ratio. Symptom intensity on statin, on
+ * Figure 3 – SAMSON: the nocebo ratio. Symptom intensity on statin, on
  * placebo, and on no tablet, from the same people over a year.
  */
 const SAMSON = [

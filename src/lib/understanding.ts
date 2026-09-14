@@ -1,14 +1,14 @@
 import type { PageMeta } from "./schema";
 
 /**
- * "Understanding Pain" science explainers — spoke pages under the
+ * "Understanding Pain" science explainers – spoke pages under the
  * /understanding-pain hub.
  *
  * These are EDUCATIONAL science pages built from cited primary sources
  * (IASP, WHO ICD-11, NIH/NINDS, peer-reviewed literature). They describe how
  * pain works; they make no individualized clinical recommendation, give no
  * dosing, and name no "best" treatment. Per the review model they ship as
- * `status: "sourced"` with an honest byline — not a fabricated review credit,
+ * `status: "sourced"` with an honest byline – not a fabricated review credit,
  * and not the orientation-only hold used for clinical guidance pages.
  *
  * The prose + figures for each article live in a matching component under
@@ -18,7 +18,7 @@ import type { PageMeta } from "./schema";
  */
 
 export type Reference = {
-  /** Human label, e.g. "IASP — Terminology" */
+  /** Human label, e.g. "IASP – Terminology" */
   source: string;
   /** Title of the specific document/page */
   title: string;
@@ -45,21 +45,21 @@ export const ARTICLES: Article[] = [
     slug: "how-pain-works",
     title: "How Pain Works",
     description:
-      "How the body makes pain: the nerve endings that detect a threat, the spinal 'gate' that filters the signal, and why the brain — not the injury alone — decides how much it hurts.",
+      "How the body makes pain: the nerve endings that detect a threat, the spinal 'gate' that filters the signal, and why the brain – not the injury alone – decides how much it hurts.",
     status: "sourced",
     lastUpdated: LAST_UPDATED,
     answer:
-      "Pain begins when specialized nerve endings called nociceptors detect a threat — heat, pressure, or tissue damage — and send a signal up your nerves to the spinal cord and brain. But pain is not a simple readout of that signal. The spinal cord can turn the volume up or down, and the brain builds the final experience of hurting.",
+      "Pain begins when specialized nerve endings called nociceptors detect a threat – heat, pressure, or tissue damage – and send a signal up your nerves to the spinal cord and brain. But pain is not a simple readout of that signal. The spinal cord can turn the volume up or down, and the brain builds the final experience of hurting.",
     faqs: [
       {
         question: "Does more pain always mean more damage?",
         answer:
-          "No. Pain is the nervous system's protective response, not a direct meter of tissue damage. Serious injuries can hurt little at first, and very real pain can persist long after tissue has healed. How much you hurt reflects how much threat your nervous system perceives — which many things can influence.",
+          "No. Pain is the nervous system's protective response, not a direct meter of tissue damage. Serious injuries can hurt little at first, and very real pain can persist long after tissue has healed. How much you hurt reflects how much threat your nervous system perceives – which many things can influence.",
       },
       {
         question: "If the brain makes pain, is it 'all in my head'?",
         answer:
-          "No. All pain is produced by the nervous system, and it is completely real. 'Made by the brain' is not the same as 'imagined.' The brain constructs pain from real signals and real biology — describing that process explains how pain works, it does not mean the pain is fake.",
+          "No. All pain is produced by the nervous system, and it is completely real. 'Made by the brain' is not the same as 'imagined.' The brain constructs pain from real signals and real biology – describing that process explains how pain works, it does not mean the pain is fake.",
       },
       {
         question: "Why does rubbing a sore spot make it feel better?",
@@ -76,7 +76,7 @@ export const ARTICLES: Article[] = [
       {
         source: "Science / PMC",
         title:
-          "Melzack & Wall, gate control theory of pain — 50th-anniversary review",
+          "Melzack & Wall, gate control theory of pain – 50th-anniversary review",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4676495/",
       },
       {
@@ -91,7 +91,7 @@ export const ARTICLES: Article[] = [
       },
       {
         source: "NIH / NINDS",
-        title: "Pain — patient information",
+        title: "Pain – patient information",
         url: "https://www.ninds.nih.gov/health-information/disorders/pain",
       },
     ],
@@ -114,11 +114,11 @@ export const ARTICLES: Article[] = [
     slug: "types-of-pain",
     title: "The Three Types of Pain",
     description:
-      "Nociceptive, neuropathic, and nociplastic pain — the modern, mechanism-based way clinicians classify pain, and why the type you have shapes which treatments tend to help.",
+      "Nociceptive, neuropathic, and nociplastic pain – the modern, mechanism-based way clinicians classify pain, and why the type you have shapes which treatments tend to help.",
     status: "sourced",
     lastUpdated: LAST_UPDATED,
     answer:
-      "Clinicians group pain into three mechanism-based types. Nociceptive pain comes from actual or threatened tissue damage, like a sprain or arthritis. Neuropathic pain comes from damage or disease in the nervous system itself, like sciatica or diabetic neuropathy. Nociplastic pain — recognized by the IASP in 2017 — comes from a changed, over-sensitive pain system, as in fibromyalgia.",
+      "Clinicians group pain into three mechanism-based types. Nociceptive pain comes from actual or threatened tissue damage, like a sprain or arthritis. Neuropathic pain comes from damage or disease in the nervous system itself, like sciatica or diabetic neuropathy. Nociplastic pain – recognized by the IASP in 2017 – comes from a changed, over-sensitive pain system, as in fibromyalgia.",
     faqs: [
       {
         question: "What is nociplastic pain in simple terms?",
@@ -139,7 +139,7 @@ export const ARTICLES: Article[] = [
     references: [
       {
         source: "IASP",
-        title: "IASP Terminology — pain definitions (nociceptive / neuropathic / nociplastic)",
+        title: "IASP Terminology – pain definitions (nociceptive / neuropathic / nociplastic)",
         url: "https://www.iasp-pain.org/resources/terminology/",
       },
       {
@@ -168,12 +168,12 @@ export const ARTICLES: Article[] = [
       {
         title: "Neuropathic pain",
         href: "/conditions/neuropathic-pain",
-        blurb: "The second type in full — when the wiring becomes the alarm.",
+        blurb: "The second type in full – when the wiring becomes the alarm.",
       },
       {
         title: "Fibromyalgia",
         href: "/conditions/fibromyalgia",
-        blurb: "The signature nociplastic condition — the third type, lived.",
+        blurb: "The signature nociplastic condition – the third type, lived.",
       },
     ],
   },
@@ -187,12 +187,12 @@ export const ARTICLES: Article[] = [
     status: "sourced",
     lastUpdated: LAST_UPDATED,
     answer:
-      "Acute pain is short-term pain that warns you of injury or illness and usually fades as your body heals. Chronic pain is pain that lasts or keeps returning for more than three months — often past the point where tissue has healed. In 2019 the World Health Organization's ICD-11 recognized chronic pain as a health condition in its own right.",
+      "Acute pain is short-term pain that warns you of injury or illness and usually fades as your body heals. Chronic pain is pain that lasts or keeps returning for more than three months – often past the point where tissue has healed. In 2019 the World Health Organization's ICD-11 recognized chronic pain as a health condition in its own right.",
     faqs: [
       {
         question: "When does pain officially become 'chronic'?",
         answer:
-          "The widely used line is three months of pain that persists or keeps returning, the threshold adopted by the WHO's ICD-11. It is a practical marker, not a magic switch — the point is that pain lasting this long often behaves differently from fresh injury pain and deserves its own assessment.",
+          "The widely used line is three months of pain that persists or keeps returning, the threshold adopted by the WHO's ICD-11. It is a practical marker, not a magic switch – the point is that pain lasting this long often behaves differently from fresh injury pain and deserves its own assessment.",
       },
       {
         question: "Does chronic pain mean something is still damaged?",
@@ -202,7 +202,7 @@ export const ARTICLES: Article[] = [
       {
         question: "Can chronic pain actually be treated?",
         answer:
-          "Yes. A complete cure is not always possible, but many people meaningfully reduce their pain and regain function using a combination of approaches — physical, medical, and psychological. A pain specialist can help build a plan. Discuss the options that fit your situation with your own clinician.",
+          "Yes. A complete cure is not always possible, but many people meaningfully reduce their pain and regain function using a combination of approaches – physical, medical, and psychological. A pain specialist can help build a plan. Discuss the options that fit your situation with your own clinician.",
       },
     ],
     references: [
@@ -224,7 +224,7 @@ export const ARTICLES: Article[] = [
       },
       {
         source: "NIH / NINDS",
-        title: "Pain — patient information",
+        title: "Pain – patient information",
         url: "https://www.ninds.nih.gov/health-information/disorders/pain",
       },
     ],
@@ -232,7 +232,7 @@ export const ARTICLES: Article[] = [
       {
         title: "How pain works",
         href: "/understanding-pain/how-pain-works",
-        blurb: "Central sensitization — how the alarm gets stuck on.",
+        blurb: "Central sensitization – how the alarm gets stuck on.",
       },
       {
         title: "What is pain medicine?",
@@ -256,17 +256,17 @@ export const ARTICLES: Article[] = [
     status: "sourced",
     lastUpdated: "2026-08-31",
     answer:
-      "Pain is subjective — there is no blood test or scanner that measures it, and no unit: researchers proposed the 'dol' in 1947, but it never held up outside the lab. Clinicians use rating tools like the 0-to-10 numeric scale, the faces scale, and questionnaires to track it over time. A single number is useful shorthand, but describing your pain's quality, timing, and effect on your life tells your care team far more.",
+      "Pain is subjective – there is no blood test or scanner that measures it, and no unit: researchers proposed the 'dol' in 1947, but it never held up outside the lab. Clinicians use rating tools like the 0-to-10 numeric scale, the faces scale, and questionnaires to track it over time. A single number is useful shorthand, but describing your pain's quality, timing, and effect on your life tells your care team far more.",
     faqs: [
       {
         question: "Is a higher pain number always worse?",
         answer:
-          "The number reflects your own experience, not a comparison with anyone else — your '6' and another person's '6' are not the same thing. What is most useful is the trend over time for you: whether your own numbers, and what you can do, are improving or getting worse.",
+          "The number reflects your own experience, not a comparison with anyone else – your '6' and another person's '6' are not the same thing. What is most useful is the trend over time for you: whether your own numbers, and what you can do, are improving or getting worse.",
       },
       {
         question: "What's a better way to describe my pain than a number?",
         answer:
-          "Describe the quality (burning, aching, stabbing, electric), the pattern (constant or in flares), what makes it better or worse, and — most tellingly — what it stops you from doing. Concrete examples from daily life give your clinician far more to work with than a single score.",
+          "Describe the quality (burning, aching, stabbing, electric), the pattern (constant or in flares), what makes it better or worse, and – most tellingly – what it stops you from doing. Concrete examples from daily life give your clinician far more to work with than a single score.",
       },
       {
         question: "Why does my clinician ask about mood and sleep?",
@@ -276,18 +276,18 @@ export const ARTICLES: Article[] = [
       {
         question: "Can pain be measured in units, like temperature in degrees?",
         answer:
-          "No — there is no accepted unit of pain. Researchers tried: in 1947 a Cornell team proposed the 'dol' and built a 0-to-10.5 scale from controlled heat stimuli, but other laboratories could not reproduce the results and the unit was abandoned. Modern medicine measures pain by structured self-report instead, because your own report is the closest thing there is to the experience itself.",
+          "No – there is no accepted unit of pain. Researchers tried: in 1947 a Cornell team proposed the 'dol' and built a 0-to-10.5 scale from controlled heat stimuli, but other laboratories could not reproduce the results and the unit was abandoned. Modern medicine measures pain by structured self-report instead, because your own report is the closest thing there is to the experience itself.",
       },
       {
         question: "What is a 'dol' in pain measurement?",
         answer:
-          "The dol — from dolor, the Latin word for pain — was a proposed unit of pain intensity from the 1940s. One dol equalled two 'just noticeable differences' in pain, on a scale that ran from 0 to 10.5. It survives in the history of pain research and in trivia, but it was never adopted in clinical care, and none of the pain scales used today are built on it.",
+          "The dol – from dolor, the Latin word for pain – was a proposed unit of pain intensity from the 1940s. One dol equalled two 'just noticeable differences' in pain, on a scale that ran from 0 to 10.5. It survives in the history of pain research and in trivia, but it was never adopted in clinical care, and none of the pain scales used today are built on it.",
       },
     ],
     references: [
       {
         source: "IASP",
-        title: "IASP Announces Revised Definition of Pain — notes on personal report",
+        title: "IASP Announces Revised Definition of Pain – notes on personal report",
         url: "https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/",
       },
       {
@@ -302,23 +302,23 @@ export const ARTICLES: Article[] = [
       },
       {
         source: "NIH / NINDS",
-        title: "Pain — patient information",
+        title: "Pain – patient information",
         url: "https://www.ninds.nih.gov/health-information/disorders/pain",
       },
       {
         source: "J Clin Invest (1947)",
         title:
-          "Hardy, Wolff & Goodell — Discrimination of differences in intensity of a pain stimulus as a basis of a scale of pain intensity (the dol)",
+          "Hardy, Wolff & Goodell – Discrimination of differences in intensity of a pain stimulus as a basis of a scale of pain intensity (the dol)",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC439460/",
       },
       {
         source: "Pharmacol Rev (1957)",
-        title: "Beecher — The measurement of pain",
+        title: "Beecher – The measurement of pain",
         url: "https://pubmed.ncbi.nlm.nih.gov/13431416/",
       },
       {
         source: "Wellcome Collection",
-        title: "Getting the measure of pain — the dolorimeter's rise and fall",
+        title: "Getting the measure of pain – the dolorimeter's rise and fall",
         url: "https://wellcomecollection.org/stories/getting-the-measure-of-pain",
       },
     ],
@@ -336,7 +336,7 @@ export const ARTICLES: Article[] = [
       {
         title: "Pain and emotion",
         href: "/understanding-pain/pain-and-emotion",
-        blurb: "Why what pain means changes how much it hurts — the insight that retired the dol.",
+        blurb: "Why what pain means changes how much it hurts – the insight that retired the dol.",
       },
     ],
   },
@@ -345,21 +345,21 @@ export const ARTICLES: Article[] = [
     slug: "pain-and-sleep",
     title: "Pain and Sleep",
     description:
-      "Pain and sleep wreck each other — but not equally. Why a bad night raises tomorrow's pain, how sleep loss switches off the body's own pain brakes, and what the evidence says helps.",
+      "Pain and sleep wreck each other – but not equally. Why a bad night raises tomorrow's pain, how sleep loss switches off the body's own pain brakes, and what the evidence says helps.",
     status: "sourced",
     lastUpdated: "2026-08-27",
     answer:
-      "Pain and sleep affect each other in both directions, but research shows the sleep-to-pain direction is stronger: poor sleep predicts new and worsening pain more reliably than pain predicts poor sleep. Even one night of bad sleep lowers pain thresholds and weakens the brain's built-in pain-dampening systems — which is why sleep is a core target in modern pain care.",
+      "Pain and sleep affect each other in both directions, but prospective studies find the sleep-to-pain direction is stronger: poor sleep predicts new and worsening pain more reliably than pain predicts poor sleep. Even one night of bad sleep lowers pain thresholds and weakens the brain's built-in pain-dampening systems – which is why sleep is a core target in modern pain care.",
     faqs: [
       {
         question: "Does poor sleep cause pain, or does pain ruin sleep?",
         answer:
-          "Both — it is a genuine cycle. But when researchers follow people over time, sleep problems predict future pain more strongly and consistently than pain predicts future sleep problems. That is actually hopeful news: it means sleep is not just a victim of pain. It is a lever you and your care team can work on.",
+          "Both – it is a genuine cycle. But when researchers follow people over time, sleep problems predict future pain more strongly and consistently than pain predicts future sleep problems. That is actually hopeful news: it means sleep is not just a victim of pain. It is a lever you and your care team can work on.",
       },
       {
         question: "Can one bad night really make the next day's pain worse?",
         answer:
-          "Yes. In diary studies, night-to-night dips in sleep quality predicted next-day increases in pain — and quality mattered more than the number of hours slept. In the lab, a single night of sleep deprivation measurably lowered healthy people's pain thresholds and changed how their brains processed pain.",
+          "Yes. In diary studies, night-to-night dips in sleep quality predicted next-day increases in pain – and quality mattered more than the number of hours slept. In the lab, a single night of sleep deprivation measurably lowered healthy people's pain thresholds and changed how their brains processed pain.",
       },
       {
         question: "Is broken-up sleep as bad as short sleep?",
@@ -369,43 +369,43 @@ export const ARTICLES: Article[] = [
       {
         question: "Will fixing my insomnia fix my pain?",
         answer:
-          "Treating insomnia — for example with cognitive behavioral therapy for insomnia (CBT-I) — reliably improves sleep and mood in people with chronic pain. Its direct effect on pain intensity is modest on average, but better sleep restores the systems that regulate pain, and it improves the daily life pain has disrupted. Ask your clinician whether it fits your situation.",
+          "Treating insomnia – for example with cognitive behavioral therapy for insomnia (CBT-I) – reliably improves sleep and mood in people with chronic pain. Its direct effect on pain intensity is modest on average, but better sleep restores the systems that regulate pain, and it improves the daily life pain has disrupted. Ask your clinician whether it fits your situation.",
       },
     ],
     references: [
       {
         source: "J Pain / PMC",
         title:
-          "Finan, Goodin & Smith — The Association of Sleep and Pain: An Update and a Path Forward",
+          "Finan, Goodin & Smith – The Association of Sleep and Pain: An Update and a Path Forward",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4046588/",
       },
       {
         source: "J Neurosci / PMC",
         title:
-          "Krause et al. — The Pain of Sleep Loss: A Brain Characterization in Humans",
+          "Krause et al. – The Pain of Sleep Loss: A Brain Characterization in Humans",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6433768/",
       },
       {
         source: "Sleep Med Rev / PubMed",
         title:
-          "Sun et al. — Prevalence of sleep disturbances in patients with chronic non-cancer pain: systematic review and meta-analysis",
+          "Sun et al. – Prevalence of sleep disturbances in patients with chronic non-cancer pain: systematic review and meta-analysis",
         url: "https://pubmed.ncbi.nlm.nih.gov/33827029/",
       },
       {
         source: "PLoS One / PMC",
         title:
-          "Staffe et al. — Total sleep deprivation increases pain sensitivity, impairs conditioned pain modulation and facilitates temporal summation",
+          "Staffe et al. – Total sleep deprivation increases pain sensitivity, impairs conditioned pain modulation and facilitates temporal summation",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6892491/",
       },
       {
         source: "Sleep Med Rev / PubMed",
         title:
-          "Selvanathan et al. — Cognitive behavioral therapy for insomnia in patients with chronic pain: systematic review and meta-analysis",
+          "Selvanathan et al. – Cognitive behavioral therapy for insomnia in patients with chronic pain: systematic review and meta-analysis",
         url: "https://pubmed.ncbi.nlm.nih.gov/33610967/",
       },
       {
         source: "NIH / NHLBI",
-        title: "Sleep Deprivation and Deficiency — patient information",
+        title: "Sleep Deprivation and Deficiency – patient information",
         url: "https://www.nhlbi.nih.gov/health/sleep-deprivation",
       },
     ],
@@ -418,7 +418,7 @@ export const ARTICLES: Article[] = [
       {
         title: "Measuring pain",
         href: "/understanding-pain/measuring-pain",
-        blurb: "Why your clinician asks about sleep — it is part of the picture.",
+        blurb: "Why your clinician asks about sleep – it is part of the picture.",
       },
       {
         title: "Fibromyalgia",
@@ -433,26 +433,26 @@ export const ARTICLES: Article[] = [
     slug: "pain-and-emotion",
     title: "Pain and Emotion",
     description:
-      "Emotion is written into the definition of pain itself. How pain and feeling share brain circuitry, why stress and fear turn the volume up, and why therapy that helps is proof of biology — not proof it was in your head.",
+      "Emotion is written into the definition of pain itself. How pain and feeling share brain circuitry, why stress and fear turn the volume up, and why therapy that helps is proof of biology – not proof it was in your head.",
     status: "sourced",
     lastUpdated: "2026-08-27",
     answer:
-      "Pain is defined by the world's pain scientists as an unpleasant sensory and emotional experience — emotion is part of pain, not a contaminant of it. Brain regions that process pain overlap with those that process feeling, and the brain's own volume-control system can amplify or dampen pain signals. That is why stress worsens pain, and why brain-targeted therapies can genuinely help.",
+      "Pain is defined by the world's pain scientists as an unpleasant sensory and emotional experience – emotion is part of pain, not a contaminant of it. Brain regions that process pain overlap with those that process feeling, and the brain's own volume-control system can amplify or dampen pain signals. That is why stress worsens pain, and why brain-targeted therapies can genuinely help.",
     faqs: [
       {
         question: "Is my pain just depression in disguise?",
         answer:
-          "No. Pain and depression are distinct conditions that share brain machinery and feed each other — around 65% of people with depression report pain, and depression affects roughly half of patients in pain clinics. Having both does not make either less real, and good care takes both seriously at the same time.",
+          "No. Pain and depression are distinct conditions that share brain machinery and feed each other – around 65% of people with depression report pain, and depression affects roughly half of patients in pain clinics. Having both does not make either less real, and good care takes both seriously at the same time.",
       },
       {
         question: "Why does stress make my pain worse?",
         answer:
-          "Your brain runs a volume-control system that can amplify or suppress pain signals on their way through the spinal cord. Emotional state, anxiety, attention, and expectation all feed into it. Under stress the system tips toward amplification — the same signal genuinely hurts more. It is physiology, not weakness.",
+          "Your brain runs a volume-control system that can amplify or suppress pain signals on their way through the spinal cord. Emotional state, anxiety, attention, and expectation all feed into it. Under stress the system tips toward amplification – the same signal genuinely hurts more. It is physiology, not weakness.",
       },
       {
         question: "If therapy helps my pain, does that mean it was all in my head?",
         answer:
-          "No. Psychological therapies like CBT produce measurable — usually modest — reductions in pain and disability across dozens of randomized trials. They work because pain-processing and emotion-processing circuits overlap, so treatments that calm one can quiet the other. Using the brain's own machinery is working with real biology, not imagining things.",
+          "No. Psychological therapies like CBT produce measurable – usually modest – reductions in pain and disability across dozens of randomized trials. They work because pain-processing and emotion-processing circuits overlap, so treatments that calm one can quiet the other. Using the brain's own machinery is working with real biology, not imagining things.",
       },
     ],
     references: [
@@ -463,47 +463,47 @@ export const ARTICLES: Article[] = [
       },
       {
         source: "Arch Intern Med / JAMA",
-        title: "Bair et al. — Depression and pain comorbidity: a literature review",
+        title: "Bair et al. – Depression and pain comorbidity: a literature review",
         url: "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/216320",
       },
       {
         source: "Nat Rev Neurosci / PMC",
         title:
-          "Bushnell, Čeko & Low — Cognitive and emotional control of pain and its disruption in chronic pain",
+          "Bushnell, Čeko & Low – Cognitive and emotional control of pain and its disruption in chronic pain",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4465351/",
       },
       {
         source: "J Clin Invest / PMC",
-        title: "Ossipov, Dussor & Porreca — Central modulation of pain",
+        title: "Ossipov, Dussor & Porreca – Central modulation of pain",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2964993/",
       },
       {
         source: "Curr Opin Psychol / PMC",
         title:
-          "Zale & Ditre — Pain-related fear, disability, and the fear-avoidance model of chronic pain",
+          "Zale & Ditre – Pain-related fear, disability, and the fear-avoidance model of chronic pain",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4383173/",
       },
       {
         source: "Expert Rev Neurother / PMC",
-        title: "Quartana, Campbell & Edwards — Pain catastrophizing: a critical review",
+        title: "Quartana, Campbell & Edwards – Pain catastrophizing: a critical review",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2696024/",
       },
       {
         source: "Annu Rev Neurosci / PMC",
         title:
-          "Atlas — How Instructions, Learning, and Expectations Shape Pain and Neurobiological Responses",
+          "Atlas – How Instructions, Learning, and Expectations Shape Pain and Neurobiological Responses",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11793868/",
       },
       {
         source: "Psychosom Med / PMC",
         title:
-          "Eisenberger — The neural bases of social pain: evidence for shared representations with physical pain",
+          "Eisenberger – The neural bases of social pain: evidence for shared representations with physical pain",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3273616/",
       },
       {
         source: "Cochrane",
         title:
-          "Williams et al. — Psychological therapies for the management of chronic pain in adults (plain-language summary)",
+          "Williams et al. – Psychological therapies for the management of chronic pain in adults (plain-language summary)",
         url: "https://www.cochrane.org/CD007407/SYMPT_what-are-benefits-and-risks-psychological-therapies-adults-persistent-and-distressing-pain-neither",
       },
     ],
@@ -516,7 +516,7 @@ export const ARTICLES: Article[] = [
       {
         title: "Pain and sleep",
         href: "/understanding-pain/pain-and-sleep",
-        blurb: "The other everyday amplifier — and the same modulatory circuits.",
+        blurb: "The other everyday amplifier – and the same modulatory circuits.",
       },
       {
         title: "The mind and the brain",
@@ -535,101 +535,101 @@ export const ARTICLES: Article[] = [
     slug: "the-placebo-effect",
     title: "The Placebo Effect",
     description:
-      "What the placebo effect is and how it works — expectation switching on the brain's own pain-relief chemistry — how a placebo differs from the placebo effect, what it proves about your pain, and what it can't do.",
+      "What the placebo effect is and how it works – expectation switching on the brain's own pain-relief chemistry – how a placebo differs from the placebo effect, what it proves about your pain, and what it can't do.",
     status: "sourced",
     lastUpdated: "2026-08-31",
     answer:
-      "The placebo effect is a real, measurable response to the expectation of treatment — not imagination. A placebo is the inert treatment (a sugar pill, a saline shot); the placebo effect is your nervous system's genuine response to it. In pain, expectation activates the brain's own pain-modulation system, including its natural opioid chemistry — blocking that chemistry with a drug blocks placebo relief. Placebos can ease symptoms like pain and nausea, even when people know they're taking one, but they do not treat the underlying disease.",
+      "The placebo effect is a real, measurable response to the expectation of treatment – not imagination. A placebo is the inert treatment (a sugar pill, a saline shot); the placebo effect is your nervous system's genuine response to it. In pain, expectation activates the brain's own pain-modulation system, including its natural opioid chemistry – blocking that chemistry with a drug blocks placebo relief. Placebos can ease symptoms like pain and nausea, even when people know they're taking one, but they do not treat the underlying disease.",
     faqs: [
       {
         question: "What is the placebo effect, in plain terms?",
         answer:
-          "It is a real improvement in symptoms produced by the expectation and ritual of treatment rather than by the treatment's ingredients. In pain it has a known biological pathway: expecting relief engages the brain's descending pain-control system and its own opioid chemistry, and measured pain signaling genuinely drops — an effect strong enough to be blocked by an opioid-blocking drug.",
+          "It is a real improvement in symptoms produced by the expectation and ritual of treatment rather than by the treatment's ingredients. In pain it has a known biological pathway: expecting relief engages the brain's descending pain-control system and its own opioid chemistry, and measured pain signaling genuinely drops – an effect strong enough to be blocked by an opioid-blocking drug.",
       },
       {
         question: "What is the difference between a placebo and the placebo effect?",
         answer:
-          "A placebo is the inert thing — a sugar pill, a saline injection, a sham procedure. The placebo effect is your nervous system's real response to receiving it: measurable symptom change driven by expectation and context. Trials also speak of the 'placebo response,' which runs larger still because it adds natural recovery and symptoms drifting back from their worst. The pill is inert; the effect is not.",
+          "A placebo is the inert thing – a sugar pill, a saline injection, a sham procedure. The placebo effect is your nervous system's real response to receiving it: measurable symptom change driven by expectation and context. Trials also speak of the 'placebo response,' which runs larger still because it adds natural recovery and symptoms drifting back from their worst. The pill is inert; the effect is not.",
       },
       {
         question: "If a placebo helped me, does that mean my pain wasn't real?",
         answer:
-          "No — the opposite. Placebo pain relief can be blocked by naloxone, a drug that blocks opioids, which shows the relief runs on the body's own painkilling chemistry. Imaging even shows reduced pain signaling in the spinal cord. Responding to a placebo means your pain-relief system works, not that your pain was fake.",
+          "No – the opposite. Placebo pain relief can be blocked by naloxone, a drug that blocks opioids, which shows the relief runs on the body's own painkilling chemistry. Imaging even shows reduced pain signaling in the spinal cord. Responding to a placebo means your pain-relief system works, not that your pain was fake.",
       },
       {
         question: "Do placebos work if you know it's a placebo?",
         answer:
-          "Often, for symptoms — in randomized trials, 'open-label' placebos given with full honesty still outperformed no treatment in irritable bowel syndrome and outperformed usual care alone in chronic low back pain. The trials are small and short, but they suggest the ritual and expectation of care matter, with no deception required.",
+          "Often, for symptoms – in randomized trials, 'open-label' placebos given with full honesty still outperformed no treatment in irritable bowel syndrome and outperformed usual care alone in chronic low back pain. The trials are small and short, but they suggest the ritual and expectation of care matter, with no deception required.",
       },
       {
         question: "Can expecting side effects actually give me side effects?",
         answer:
-          "Yes — that is the nocebo effect. In COVID-19 vaccine trials, about a third of people who received only saline placebo reported 'systemic side effects' like headache and fatigue. Researchers estimated nocebo responses accounted for around three-quarters of such side effects reported after a first real vaccine dose.",
+          "Yes – that is the nocebo effect. In COVID-19 vaccine trials, about a third of people who received only saline placebo reported 'systemic side effects' like headache and fatigue. Researchers estimated nocebo responses accounted for around three-quarters of such side effects reported after a first real vaccine dose.",
       },
     ],
     references: [
       {
         source: "Lancet / PubMed",
-        title: "Levine, Gordon & Fields — The mechanism of placebo analgesia (1978)",
+        title: "Levine, Gordon & Fields – The mechanism of placebo analgesia (1978)",
         url: "https://pubmed.ncbi.nlm.nih.gov/80579/",
       },
       {
         source: "Nat Rev Neurosci / PMC",
         title:
-          "Wager & Atlas — The neuroscience of placebo effects: connecting context, learning and health",
+          "Wager & Atlas – The neuroscience of placebo effects: connecting context, learning and health",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6013051/",
       },
       {
         source: "Science / PubMed",
         title:
-          "Eippert et al. — Direct evidence for spinal cord involvement in placebo analgesia",
+          "Eippert et al. – Direct evidence for spinal cord involvement in placebo analgesia",
         url: "https://pubmed.ncbi.nlm.nih.gov/19833962/",
       },
       {
         source: "PLoS ONE",
         title:
-          "Kaptchuk et al. — Placebos without deception: a randomized controlled trial in irritable bowel syndrome",
+          "Kaptchuk et al. – Placebos without deception: a randomized controlled trial in irritable bowel syndrome",
         url: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0015591",
       },
       {
         source: "PAIN / PMC",
         title:
-          "Carvalho et al. — Open-label placebo treatment in chronic low back pain: a randomized controlled trial",
+          "Carvalho et al. – Open-label placebo treatment in chronic low back pain: a randomized controlled trial",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5113234/",
       },
       {
         source: "JAMA Netw Open",
         title:
-          "Haas et al. — Frequency of adverse events in the placebo arms of COVID-19 vaccine trials: systematic review and meta-analysis",
+          "Haas et al. – Frequency of adverse events in the placebo arms of COVID-19 vaccine trials: systematic review and meta-analysis",
         url: "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2788172",
       },
       {
         source: "Cochrane / PMC",
         title:
-          "Hróbjartsson & Gøtzsche — Placebo interventions for all clinical conditions",
+          "Hróbjartsson & Gøtzsche – Placebo interventions for all clinical conditions",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7156905/",
       },
       {
         source: "PAIN / PubMed",
         title:
-          "Tuttle et al. — Increasing placebo responses over time in U.S. clinical trials of neuropathic pain",
+          "Tuttle et al. – Increasing placebo responses over time in U.S. clinical trials of neuropathic pain",
         url: "https://pubmed.ncbi.nlm.nih.gov/26307858/",
       },
       {
         source: "NIH / NCCIH",
-        title: "Placebo Effect — patient information",
+        title: "Placebo Effect – patient information",
         url: "https://www.nccih.nih.gov/health/placebo-effect",
       },
       {
         source: "Psychother Psychosom (2018)",
         title:
-          "Evers et al. — Implications of placebo and nocebo effects for clinical practice: expert consensus (terminology)",
+          "Evers et al. – Implications of placebo and nocebo effects for clinical practice: expert consensus (terminology)",
         url: "https://pubmed.ncbi.nlm.nih.gov/29895014/",
       },
       {
         source: "AMA",
         title:
-          "AMA Code of Medical Ethics Opinion 2.1.4 — Use of Placebo in Clinical Practice",
+          "AMA Code of Medical Ethics Opinion 2.1.4 – Use of Placebo in Clinical Practice",
         url: "https://code-medical-ethics.ama-assn.org/ethics-opinions/use-placebo-clinical-practice",
       },
     ],
@@ -647,7 +647,7 @@ export const ARTICLES: Article[] = [
       {
         title: "Measuring pain",
         href: "/understanding-pain/measuring-pain",
-        blurb: "Why self-reported relief is real data — and how to give better data.",
+        blurb: "Why self-reported relief is real data – and how to give better data.",
       },
       {
         title: "The nocebo effect",
@@ -661,11 +661,11 @@ export const ARTICLES: Article[] = [
     slug: "the-nocebo-effect",
     title: "The Nocebo Effect",
     description:
-      "What the nocebo effect is and how it works — expecting harm turning pain up through its own brain chemistry — the trials where a sentence cancelled an opioid or tripled side effects, and what you can do about it.",
+      "What the nocebo effect is and how it works – expecting harm turning pain up through its own brain chemistry – the trials where a sentence cancelled an opioid or tripled side effects, and what you can do about it.",
     status: "sourced",
     lastUpdated: "2026-09-08",
     answer:
-      "The nocebo effect is a real, measurable worsening of symptoms caused by expecting harm — the mirror image of the placebo effect. Warnings, labels, and past experiences set the expectation; the nervous system then produces more pain or more side effects to match. It has its own chemistry (anxiety and cholecystokinin), can be blocked with a drug, and can cancel out a real painkiller. The symptoms are not imagined — they are the body responding to the story it was given.",
+      "The nocebo effect is a real, measurable worsening of symptoms caused by expecting harm – the mirror image of the placebo effect. Warnings, labels, and past experiences set the expectation; the nervous system then produces more pain or more side effects to match. It has its own chemistry (anxiety and cholecystokinin), can be blocked with a drug, and can cancel out a real painkiller. The symptoms are not imagined – they are the body responding to the story it was given.",
     faqs: [
       {
         question: "What is the nocebo effect, in plain terms?",
@@ -680,7 +680,7 @@ export const ARTICLES: Article[] = [
       {
         question: "Can expecting side effects really cause them?",
         answer:
-          "Yes. Men warned about sexual side effects of finasteride reported them nearly three times as often (43.6% vs 15.3%). About 35% of people given only saline in COVID-19 vaccine trials reported systemic side effects. In the SAMSON statin trial, placebo months were nearly as symptomatic as statin months — about 90% of the symptom burden was present on an inert tablet.",
+          "Yes. Men warned about sexual side effects of finasteride reported them nearly three times as often (43.6% vs 15.3%). About 35% of people given only saline in COVID-19 vaccine trials reported systemic side effects. In the SAMSON statin trial, placebo months were nearly as symptomatic as statin months – about 90% of the symptom burden was present on an inert tablet.",
       },
       {
         question: "Does nocebo mean my symptoms are all in my head?",
@@ -690,71 +690,71 @@ export const ARTICLES: Article[] = [
       {
         question: "How can I reduce nocebo effects?",
         answer:
-          "Ask how many people out of 100 get a side effect, so rare things are heard as rare. Ask what alarming words on a scan report actually mean. Tell your clinician if you have read frightening things about a treatment, so they can frame the plan honestly. And treat new symptoms during a medication change as data to record and discuss, not as a verdict. Informed consent stays intact — the evidence favors better framing, not less information.",
+          "Ask how many people out of 100 get a side effect, so rare things are heard as rare. Ask what alarming words on a scan report actually mean. Tell your clinician if you have read frightening things about a treatment, so they can frame the plan honestly. And treat new symptoms during a medication change as data to record and discuss, not as a verdict. Informed consent stays intact – the evidence favors better framing, not less information.",
       },
     ],
     references: [
       {
         source: "N Engl J Med / PubMed",
-        title: "Colloca & Barsky — Placebo and Nocebo Effects (2020 review)",
+        title: "Colloca & Barsky – Placebo and Nocebo Effects (2020 review)",
         url: "https://pubmed.ncbi.nlm.nih.gov/32023375/",
       },
       {
         source: "PAIN / PubMed",
         title:
-          "Benedetti et al. — Blockade of nocebo hyperalgesia by the cholecystokinin antagonist proglumide (1997)",
+          "Benedetti et al. – Blockade of nocebo hyperalgesia by the cholecystokinin antagonist proglumide (1997)",
         url: "https://pubmed.ncbi.nlm.nih.gov/9211474/",
       },
       {
         source: "Sci Transl Med / PubMed",
         title:
-          "Bingel et al. — The effect of treatment expectation on drug efficacy: imaging the analgesic benefit of the opioid remifentanil (2011)",
+          "Bingel et al. – The effect of treatment expectation on drug efficacy: imaging the analgesic benefit of the opioid remifentanil (2011)",
         url: "https://pubmed.ncbi.nlm.nih.gov/21325618/",
       },
       {
         source: "Anesth Analg / PubMed",
         title:
-          "Varelmann et al. — Nocebo-induced hyperalgesia during local anesthetic injection (2010)",
+          "Varelmann et al. – Nocebo-induced hyperalgesia during local anesthetic injection (2010)",
         url: "https://pubmed.ncbi.nlm.nih.gov/20042440/",
       },
       {
         source: "J Sex Med / PubMed",
         title:
-          "Mondaini et al. — Finasteride 5 mg and sexual side effects: how many are related to a nocebo phenomenon? (2007)",
+          "Mondaini et al. – Finasteride 5 mg and sexual side effects: how many are related to a nocebo phenomenon? (2007)",
         url: "https://pubmed.ncbi.nlm.nih.gov/17655657/",
       },
       {
         source: "N Engl J Med / PubMed",
         title:
-          "Wood et al. — N-of-1 trial of a statin, placebo, or no treatment to assess side effects (SAMSON, 2020)",
+          "Wood et al. – N-of-1 trial of a statin, placebo, or no treatment to assess side effects (SAMSON, 2020)",
         url: "https://pubmed.ncbi.nlm.nih.gov/33196154/",
       },
       {
         source: "J Am Coll Cardiol / PubMed",
         title:
-          "Howard et al. — Side effect patterns in a crossover trial of statin, placebo, and no treatment (2021)",
+          "Howard et al. – Side effect patterns in a crossover trial of statin, placebo, and no treatment (2021)",
         url: "https://pubmed.ncbi.nlm.nih.gov/34531021/",
       },
       {
         source: "JAMA Netw Open",
         title:
-          "Haas et al. — Frequency of adverse events in the placebo arms of COVID-19 vaccine trials: systematic review and meta-analysis (2022)",
+          "Haas et al. – Frequency of adverse events in the placebo arms of COVID-19 vaccine trials: systematic review and meta-analysis (2022)",
         url: "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2788172",
       },
       {
         source: "Psychother Psychosom / PubMed",
         title:
-          "Evers et al. — Implications of placebo and nocebo effects for clinical practice: expert consensus (2018)",
+          "Evers et al. – Implications of placebo and nocebo effects for clinical practice: expert consensus (2018)",
         url: "https://pubmed.ncbi.nlm.nih.gov/29895014/",
       },
       {
         source: "Int Rev Neurobiol / PubMed",
-        title: "Faasse & Martin — The power of labeling in nocebo effects (2018)",
+        title: "Faasse & Martin – The power of labeling in nocebo effects (2018)",
         url: "https://pubmed.ncbi.nlm.nih.gov/30146055/",
       },
       {
         source: "NIH / NCCIH",
-        title: "Placebo Effect — patient information (includes nocebo)",
+        title: "Placebo Effect – patient information (includes nocebo)",
         url: "https://www.nccih.nih.gov/health/placebo-effect",
       },
     ],

@@ -16,7 +16,7 @@ function TeamRingFigure() {
   const cy = 170;
   const r = 118;
   return (
-    <Figure caption="A pain team, arranged the way the care model intends: around the patient, not above them. Composition varies by program — these are the roles named by IASP, the CDC, and major academic centers.">
+    <Figure caption="A pain team, arranged the way the care model intends: around the patient, not above them. Composition varies by program – these are the roles named by IASP, the CDC, and major academic centers.">
       <svg
         role="img"
         aria-labelledby="team-title team-desc"
@@ -94,7 +94,7 @@ export default function ThePainTeam() {
       <TeamRingFigure />
 
       <P>
-        Walk into a serious pain program and you will not meet one clinician —
+        Walk into a serious pain program and you will not meet one clinician –
         you will meet a roster. That is not bureaucracy. It is the working
         conclusion of nearly fifty years of pain science: chronic pain lives in
         biology, psychology, and daily life at once, so treating it well takes
@@ -104,7 +104,7 @@ export default function ThePainTeam() {
       <H2 id="why-a-team">Why pain care became a team sport</H2>
       <P>
         In 1977, the physician George Engel argued in <em>Science</em> that
-        medicine needed a new model — one that treated illness as{" "}
+        medicine needed a new model – one that treated illness as{" "}
         <strong>biopsychosocial</strong>: biological, psychological, and social
         at the same time. No field took that idea further than pain medicine,
         because no condition demanded it more. As the research summarized in{" "}
@@ -121,7 +121,7 @@ export default function ThePainTeam() {
         >
           pain and sleep
         </Link>{" "}
-        shows, mood, fear, stress, and sleep are not side effects of pain —
+        shows, mood, fear, stress, and sleep are not side effects of pain –
         they are dials wired into the pain system itself. A treatment plan that
         ignores them is leaving dials untouched.
       </P>
@@ -136,49 +136,49 @@ export default function ThePainTeam() {
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
-            <strong>The pain physician</strong> — a fellowship-trained
+            <strong>The pain physician</strong> – a fellowship-trained
             specialist who leads the assessment and owns the overall plan.
           </span>
         </li>
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
-            <strong>Nurses</strong> — often your most frequent contact:
+            <strong>Nurses</strong> – often your most frequent contact:
             coordination, education, and follow-up between visits.
           </span>
         </li>
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
-            <strong>Physical and occupational therapists</strong> — rebuilding
+            <strong>Physical and occupational therapists</strong> – rebuilding
             movement, strength, and the daily activities pain has taken.
           </span>
         </li>
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
-            <strong>A pain psychologist</strong> — working the brain&rsquo;s own
+            <strong>A pain psychologist</strong> – working the brain&rsquo;s own
             dials: sleep, stress, pacing, and the fear-avoidance loop.
           </span>
         </li>
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
-            <strong>Pharmacists and social workers</strong> — medication
+            <strong>Pharmacists and social workers</strong> – medication
             expertise on one side; insurance, work, and life logistics on the
             other. Both named in the CDC&rsquo;s picture of collaborative care.
           </span>
         </li>
       </ul>
 
-      <H2 id="multi-vs-inter">Multidisciplinary vs. interdisciplinary — the wiring matters</H2>
+      <H2 id="multi-vs-inter">Multidisciplinary vs. interdisciplinary – the wiring matters</H2>
       <P>
         The IASP draws a distinction worth knowing when you evaluate a program.{" "}
-        <strong>Multidisciplinary</strong> means several disciplines treat you —
+        <strong>Multidisciplinary</strong> means several disciplines treat you –
         possibly in parallel, without talking much.{" "}
         <strong>Interdisciplinary</strong> means they function as one unit:
         meeting regularly, sharing a single biopsychosocial assessment, agreeing
-        on one set of goals, and — explicitly — including you in the decisions.
+        on one set of goals, and – explicitly – including you in the decisions.
         The IASP is candid that fully interdisciplinary programs are still more
         aspiration than norm. That honesty is useful: it tells you what to ask.
         Not just &ldquo;do you have a psychologist?&rdquo; but &ldquo;do your
@@ -187,7 +187,7 @@ export default function ThePainTeam() {
 
       <H2 id="evidence">Does it work?</H2>
       <P>
-        For chronic low back pain — the best-studied case — a systematic review
+        For chronic low back pain – the best-studied case – a systematic review
         of 41 randomized trials with nearly 7,000 participants found
         moderate-quality evidence that multidisciplinary biopsychosocial
         rehabilitation outperforms usual care on both pain and everyday
@@ -195,7 +195,7 @@ export default function ThePainTeam() {
         <strong>doubled the odds of being at work</strong>. The honest reading:
         the average effects are meaningful but modest. A team does not dissolve
         chronic pain. It reliably moves more of the dials than any single
-        discipline moves alone — and for a condition with this many dials, that
+        discipline moves alone – and for a condition with this many dials, that
         is exactly what you want.
       </P>
       <P>

@@ -42,7 +42,7 @@ function PathwayFigure() {
             Expectation of relief
           </text>
           <text x="235" y="74" textAnchor="middle" fontSize="12.5" fill={FIG.textMid}>
-            context, ritual, trust — the cortex
+            context, ritual, trust – the cortex
           </text>
         </g>
 
@@ -73,7 +73,7 @@ function PathwayFigure() {
           <line x1="235" y1="194" x2="235" y2="222" className="fig-draw fig-fade" style={anim(1.05, 34)} />
         </g>
 
-        {/* naloxone note — the blocking evidence arrives last */}
+        {/* naloxone note – the blocking evidence arrives last */}
         <g className="fig-fade" style={anim(1.9)}>
           <line
             x1="430"
@@ -108,7 +108,7 @@ const TRIAL_BARS = [
 
 function OpenLabelFigure() {
   return (
-    <Figure caption="Open-label placebo in chronic low back pain (randomized trial, 83 completers, 3 weeks): pain fell ~30% with an honestly-labeled placebo added to usual care, vs ~9% with usual care alone. A small, short trial — but nobody was deceived.">
+    <Figure caption="Open-label placebo in chronic low back pain (randomized trial, 83 completers, 3 weeks): pain fell ~30% with an honestly-labeled placebo added to usual care, vs ~9% with usual care alone. A small, short trial – but nobody was deceived.">
       <svg
         role="img"
         aria-labelledby="olp-title olp-desc"
@@ -156,9 +156,9 @@ export default function ThePlaceboEffect() {
     <div>
       <P>
         &ldquo;Placebo&rdquo; may be the most misunderstood word in medicine.
-        In everyday use it means <em>fake</em> — and if a placebo helped you,
+        In everyday use it means <em>fake</em> – and if a placebo helped you,
         the implication goes, your problem must not have been real. Pain
-        science says almost exactly the opposite. The placebo effect in pain is
+        trials say almost exactly the opposite. The placebo effect in pain is
         one of the best-documented phenomena in neuroscience, and what it
         actually demonstrates is that your brain owns a working pharmacy.
       </P>
@@ -172,7 +172,7 @@ export default function ThePlaceboEffect() {
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
-            <strong>A placebo</strong> — the thing itself: a sugar pill, a
+            <strong>A placebo</strong> – the thing itself: a sugar pill, a
             saline injection, a sham procedure. Inert by design; it contains
             nothing that acts on the body.
           </span>
@@ -180,7 +180,7 @@ export default function ThePlaceboEffect() {
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
-            <strong>The placebo effect</strong> — the genuine neurobiological
+            <strong>The placebo effect</strong> – the genuine neurobiological
             response: real changes in symptoms produced by expectation,
             context, and the ritual of care. This is what the rest of this page
             is about.
@@ -189,7 +189,7 @@ export default function ThePlaceboEffect() {
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
-            <strong>The placebo response</strong> — what a trial&rsquo;s
+            <strong>The placebo response</strong> – what a trial&rsquo;s
             placebo arm measures. It runs larger than the placebo effect,
             because it also sweeps in natural recovery and the statistical
             tendency of symptoms measured at their worst to drift back toward
@@ -199,7 +199,7 @@ export default function ThePlaceboEffect() {
       </ul>
       <P>
         The pill is inert. The effect is not. Keep those two apart and the
-        science below reads cleanly — and the phrase &ldquo;it was{" "}
+        science below reads cleanly – and the phrase &ldquo;it was{" "}
         <em>just</em> a placebo&rdquo; stops making sense.
       </P>
 
@@ -208,7 +208,7 @@ export default function ThePlaceboEffect() {
       <P>
         The pivotal experiment is nearly fifty years old. In 1978, researchers
         studied patients recovering from dental surgery and found that placebo
-        pain relief could be undone by <strong>naloxone</strong> — a drug whose
+        pain relief could be undone by <strong>naloxone</strong> – a drug whose
         only job is to block opioid receptors. If blocking the body&rsquo;s
         opioid system erases the relief, the relief was running on the
         body&rsquo;s <em>own</em> opioids. Imagination has no receptor to
@@ -216,7 +216,7 @@ export default function ThePlaceboEffect() {
       </P>
       <P>
         Modern imaging filled in the pathway. Expecting relief engages the
-        brain&rsquo;s descending pain-control system — the same
+        brain&rsquo;s descending pain-control system – the same
         &ldquo;volume control&rdquo; described in{" "}
         <Link
           href="/understanding-pain/pain-and-emotion"
@@ -224,7 +224,7 @@ export default function ThePlaceboEffect() {
         >
           pain and emotion
         </Link>{" "}
-        — and brain scans show pain-processing regions genuinely quieting down.
+        – and brain scans show pain-processing regions genuinely quieting down.
         In 2009, researchers imaging the spinal cord itself watched placebo
         treatment reduce pain-related activity in the cord&rsquo;s dorsal horn:
         the signal was being damped at the earliest stage of the central
@@ -244,12 +244,12 @@ export default function ThePlaceboEffect() {
       <P>
         The strangest finding in the field may be the most reassuring. In{" "}
         <strong>open-label</strong> trials, patients are told, plainly, that
-        they are receiving an inert pill — and some still improve. In
+        they are receiving an inert pill – and some still improve. In
         irritable bowel syndrome, 59% of patients on honestly-labeled placebo
         reported adequate relief versus 35% with no treatment. In chronic low
         back pain, adding an openly-labeled placebo to usual care roughly
         tripled the pain reduction patients reported. These are small, short
-        trials measuring self-reported symptoms, and they deserve that caveat —
+        trials measuring self-reported symptoms, and they deserve that caveat –
         but they suggest something important: the ritual of care, expectation,
         and a trusted explanation carry real therapeutic weight. Deception was
         never the active ingredient.
@@ -258,7 +258,7 @@ export default function ThePlaceboEffect() {
       <H2 id="nocebo">The evil twin: nocebo</H2>
       <P>
         Expectation cuts both ways. When people expect harm, they experience
-        harm — the <strong>nocebo</strong> effect. The cleanest demonstration
+        harm – the <strong>nocebo</strong> effect. The cleanest demonstration
         came from the COVID-19 vaccine trials: across twelve randomized trials
         with more than 45,000 participants, about{" "}
         <strong>35% of people who received only saline</strong> reported
@@ -266,7 +266,7 @@ export default function ThePlaceboEffect() {
         their first dose. Comparing arms, researchers estimated that nocebo
         responses accounted for roughly three-quarters of such side effects
         reported after a first real dose. None of those symptoms were
-        imaginary — headaches from expectation still ache. The lesson is that
+        imaginary – headaches from expectation still ache. The lesson is that
         what you are told, and what you brace for, measurably shapes what your
         body produces. Nocebo has enough evidence of its own to deserve{" "}
         <Link
@@ -282,20 +282,20 @@ export default function ThePlaceboEffect() {
       <P>
         Honesty about scope matters, because the placebo effect attracts hype
         in both directions. Across hundreds of trials, placebo effects show up
-        reliably for <strong>self-reported symptoms</strong> — pain and nausea
-        above all — and the average effects are modest, not miraculous. For
+        reliably for <strong>self-reported symptoms</strong> – pain and nausea
+        above all – and the average effects are modest, not miraculous. For
         objective disease outcomes, they show essentially nothing: placebos do
         not shrink tumors, heal fractures, or clear infections. Expectation has
         its hands on the nervous system&rsquo;s dials, and pain happens to be
         the most dial-controlled experience the body produces. That is exactly
-        why the effect is strongest there — and why it stops at the border of
+        why the effect is strongest there – and why it stops at the border of
         symptom and disease.
       </P>
       <P>
         The effect is strong enough to complicate science itself. In US
         clinical trials of nerve-pain drugs, placebo responses have climbed
-        steadily for decades — by 2013, placebo arms were averaging ~30% pain
-        reduction — making it genuinely harder for new drugs to prove their
+        steadily for decades – by 2013, placebo arms were averaging ~30% pain
+        reduction – making it genuinely harder for new drugs to prove their
         worth. An effect powerful enough to challenge the pharmaceutical
         industry is not &ldquo;nothing.&rdquo;
       </P>
@@ -303,17 +303,17 @@ export default function ThePlaceboEffect() {
       <H2 id="real-care">What this means in real care</H2>
       <P>
         Medical ethics is clear that a clinician should not slip you a placebo
-        without your knowledge — the AMA&rsquo;s code requires your cooperation
+        without your knowledge – the AMA&rsquo;s code requires your cooperation
         and consent, because trust is itself part of the medicine. The research
         frontier is instead the honest version: open-label placebos, and care
-        that deliberately harnesses expectation alongside real treatment —
+        that deliberately harnesses expectation alongside real treatment –
         clear explanations, credible plans, a clinician you trust.
       </P>
       <P>
         And if you have ever responded to a placebo, or wondered whether your
         relief &ldquo;counts,&rdquo; keep the naloxone experiment in mind. A
         placebo response is your descending pain-control system doing its job.
-        It is not evidence your pain was fake — it is evidence your brain&rsquo;s
+        It is not evidence your pain was fake – it is evidence your brain&rsquo;s
         own pain-relief machinery, the very system pain medicine works to
         recruit, is switched on and listening.
       </P>

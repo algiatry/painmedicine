@@ -17,7 +17,7 @@ const DIRECTORIES = [
       "The public tool from the American Board of Medical Specialties to check whether a doctor is board certified.",
   },
   {
-    name: "ABMS — Verify Certification",
+    name: "ABMS – Verify Certification",
     url: "https://www.abms.org/board-certification/verify-certification/",
     blurb: "Confirm a physician's board certification directly with ABMS.",
   },
@@ -28,7 +28,7 @@ const DIRECTORIES = [
       "Find physicians certified in physical medicine & rehabilitation, one common route into pain medicine.",
   },
   {
-    name: "SAMHSA — FindTreatment.gov",
+    name: "SAMHSA – FindTreatment.gov",
     url: "https://findtreatment.gov/",
     blurb:
       "A confidential federal locator for substance-use and mental-health treatment.",
@@ -37,8 +37,8 @@ const DIRECTORIES = [
 
 const QUESTIONS = [
   "Are you board-certified in pain medicine, and through which board?",
-  "Beyond medication, what does your approach include — physical therapy, procedures, psychological support?",
-  "How will we measure whether treatment is working — my function and daily life, not just a pain score?",
+  "Beyond medication, what does your approach include – physical therapy, procedures, psychological support?",
+  "How will we measure whether treatment is working – my function and daily life, not just a pain score?",
   "What is the plan if the first approach doesn't help enough?",
   "What are the risks, benefits, and alternatives for anything you recommend?",
 ];
@@ -74,7 +74,7 @@ export default function FindHelpPage() {
           Finding pain care you can trust
         </h1>
         <p className="text-lg text-slate-700">
-          Good pain care exists — but so do clinics that are not what they seem.
+          Good pain care exists – but so do clinics that are not what they seem.
           This page is about how to find a qualified specialist and how to tell
           the difference. It does not recommend individual providers; it gives
           you the tools to choose well.
@@ -87,7 +87,7 @@ export default function FindHelpPage() {
         </h2>
         <p className="mt-4 text-slate-700">
           Pain medicine is a recognized subspecialty. The strongest signal of a
-          qualified physician is <strong>board certification</strong> — completed
+          qualified physician is <strong>board certification</strong> – completed
           fellowship training and a passed certifying exam, most often entered
           through anesthesiology, physical medicine &amp; rehabilitation,
           neurology, or psychiatry. You can verify any doctor&rsquo;s
@@ -162,7 +162,7 @@ export default function FindHelpPage() {
         </h2>
         <p className="mt-4 text-slate-700">
           Pain and substance use can become tangled, and needing help with that
-          is common and treatable — not a moral failing. Confidential help is
+          is common and treatable – not a moral failing. Confidential help is
           available right now:
         </p>
         <ul className="mt-5 space-y-2">

@@ -48,7 +48,7 @@ export default function Endometriosis() {
     <div>
       <P>
         Endometriosis is defined by tissue similar to the lining of the uterus
-        growing elsewhere — commonly on the pelvic lining, ovaries, and tissue
+        growing elsewhere – commonly on the pelvic lining, ovaries, and tissue
         around pelvic organs. It is not simply &ldquo;bad periods.&rdquo; It can
         drive pain throughout the month, pain during sex, bowel or bladder pain,
         fatigue, and infertility. The amount seen at surgery does not reliably
@@ -74,8 +74,8 @@ export default function Endometriosis() {
 
       <H2 id="diagnosis">Diagnosis no longer has to begin with surgery</H2>
       <P>
-        Older care pathways treated laparoscopy — keyhole surgery to look inside
-        the pelvis — as the required diagnostic gate. Current ACOG and ESHRE
+        Older care pathways treated laparoscopy – keyhole surgery to look inside
+        the pelvis – as the required diagnostic gate. Current ACOG and ESHRE
         guidance has moved beyond that rule. A clinician can form a working
         diagnosis from symptoms, examination, and imaging, then discuss either
         empiric medical treatment or surgery according to the person&rsquo;s
@@ -98,7 +98,7 @@ export default function Endometriosis() {
         Lesions can bleed microscopically, inflame surrounding tissue, irritate
         nerves, and tether organs through fibrosis or adhesions. Repeated pain
         can also teach pelvic-floor muscles to guard. Over time, the spinal cord
-        and brain may become more responsive to pelvic signals — a real process
+        and brain may become more responsive to pelvic signals – a real process
         called sensitization. These layers explain why stage and pain often fail
         to match, and why removing lesions may help greatly without guaranteeing
         that every part of persistent pain disappears.

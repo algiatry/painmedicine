@@ -6,12 +6,12 @@ const link =
   "text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600";
 
 /**
- * Figure 1 — two levers on the same dial: physical therapies raise capacity,
+ * Figure 1 – two levers on the same dial: physical therapies raise capacity,
  * behavioral therapies turn down amplification, one pain system between them.
  */
 function LeversFigure() {
   return (
-    <Figure caption="Why one page covers both: physical and behavioral therapies pull two levers on the same pain system — movement rebuilds what the body can do, and brain-targeted work turns down the system's amplification. Most successful plans pull both.">
+    <Figure caption="Why one page covers both: physical and behavioral therapies pull two levers on the same pain system – movement rebuilds what the body can do, and brain-targeted work turns down the system's amplification. Most successful plans pull both.">
       <svg
         role="img"
         aria-labelledby="lev-title lev-desc"
@@ -21,8 +21,8 @@ function LeversFigure() {
         <title id="lev-title">Two levers on the same pain system</title>
         <desc id="lev-desc">
           A center box labeled the pain system, with a volume dial. An arrow
-          enters from the left from physical therapies — graded movement
-          raising capacity — and from the right from behavioral therapies —
+          enters from the left from physical therapies – graded movement
+          raising capacity – and from the right from behavioral therapies –
           retraining that turns down amplification.
         </desc>
 
@@ -72,7 +72,7 @@ function LeversFigure() {
         <path d="M438 143 L427 150 L438 157" fill="none" stroke={FIG.nerveDark} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
 
         <text x="340" y="256" textAnchor="middle" fontSize="12" fill={FIG.textMid}>
-          same system, two directions of attack — the plans that work usually pull both levers
+          same system, two directions of attack – the plans that work usually pull both levers
         </text>
       </svg>
     </Figure>
@@ -80,12 +80,12 @@ function LeversFigure() {
 }
 
 /**
- * Figure 2 — boom-bust vs pacing: the sawtooth that trains the system to
+ * Figure 2 – boom-bust vs pacing: the sawtooth that trains the system to
  * fear activity, and the staircase that retrains it.
  */
 function PacingFigure() {
   return (
-    <Figure caption="The boom-bust cycle vs. pacing. Left: a good day's overexertion triggers a flare and lost days, and the swings slowly trend downward. Right: pacing starts below the flare threshold and progresses by plan, not by pain — slower-feeling, faster-compounding.">
+    <Figure caption="The boom-bust cycle vs. pacing. Left: a good day's overexertion triggers a flare and lost days, and the swings slowly trend downward. Right: pacing starts below the flare threshold and progresses by plan, not by pain – slower-feeling, faster-compounding.">
       <svg
         role="img"
         aria-labelledby="pace-title pace-desc"
@@ -155,14 +155,14 @@ export default function PhysicalBehavioralTherapies() {
       <P>
         Here is a strange fact about chronic pain treatment: the approaches
         holding the <strong>strongest recommendations in guideline after
-        guideline</strong> — graded exercise, physical therapy, cognitive
-        behavioral therapy — are the ones patients are most likely to hear
+        guideline</strong> – graded exercise, physical therapy, cognitive
+        behavioral therapy – are the ones patients are most likely to hear
         offered as an afterthought, or receive as a photocopied sheet on
         the way out. This page gives the active therapies their real
         standing. They are not consolation prizes for pain that pills
         couldn&rsquo;t fix. They are the treatments that{" "}
         <strong>retrain the pain system rather than mask its output</strong>
-        — modest on average, durable, side-effect-free, and compounding —
+        – modest on average, durable, side-effect-free, and compounding –
         and for most chronic pain they are where the evidence says to
         start, not where to end up.
       </P>
@@ -176,8 +176,8 @@ export default function PhysicalBehavioralTherapies() {
           nervous-system volume problem
         </Link>{" "}
         as much as a tissue problem, and these therapies attack it from
-        both sides. Movement raises what the body can do — strength,
-        capacity, confidence — while brain-targeted work turns down the
+        both sides. Movement raises what the body can do – strength,
+        capacity, confidence – while brain-targeted work turns down the
         amplification that{" "}
         <Link href="/understanding-pain/pain-and-emotion" className={link}>
           stress, fear, and vigilance
@@ -192,7 +192,7 @@ export default function PhysicalBehavioralTherapies() {
         Exercise treats pain through mechanisms that have nothing to do
         with fitness culture. A bout of activity switches on the
         body&rsquo;s own pain-dampening chemistry. Progressive loading
-        rebuilds the muscle that cushions joints and spine — the core of
+        rebuilds the muscle that cushions joints and spine – the core of
         why guidelines put exercise first for{" "}
         <Link href="/conditions/low-back-pain" className={link}>
           back pain
@@ -202,18 +202,18 @@ export default function PhysicalBehavioralTherapies() {
           arthritis
         </Link>
         . And every safe repetition is data for a sensitized nervous
-        system: <em>this movement is not a threat</em> — the slow
+        system: <em>this movement is not a threat</em> – the slow
         unwinding of the fear-avoidance loop. The umbrella evidence,
         summarized across Cochrane reviews, is honest and encouraging:
         consistent, usually modest improvements in pain and function, with
-        a safety profile no drug can match. The menu is broad — therapist-
+        a safety profile no drug can match. The menu is broad – therapist-
         led exercise, tai chi (which{" "}
         <Link href="/conditions/fibromyalgia" className={link}>
           matched or beat aerobic exercise for fibromyalgia
         </Link>{" "}
         in a randomized trial), yoga, water-based programs for joints that
         need unloading first. Heat, massage, and manual therapy earn
-        supporting roles — genuine short-term relievers, at their best
+        supporting roles – genuine short-term relievers, at their best
         when they open the door to the active work rather than replace it.
       </P>
 
@@ -224,10 +224,10 @@ export default function PhysicalBehavioralTherapies() {
         common way active therapy fails is the <strong>boom-bust
         cycle</strong>: a good day arrives, everything postponed gets
         done, the sensitized system flares, and days are lost to the
-        crash — teaching the nervous system, flare by flare, that
+        crash – teaching the nervous system, flare by flare, that
         activity is dangerous. <strong>Pacing</strong> is the escape:
         find the baseline you can manage even on a bad day, do it with
-        boring consistency, and increase on a schedule —{" "}
+        boring consistency, and increase on a schedule –{" "}
         <strong>by plan, not by pain</strong>. Good days no longer
         trigger overdraft spending; bad days no longer stop the program.
         It feels slower than pushing through. It compounds incomparably
@@ -238,12 +238,12 @@ export default function PhysicalBehavioralTherapies() {
       <P>
         The behavioral therapies work the other lever, and their evidence
         deserves plain statement. <strong>Cognitive behavioral
-        therapy</strong> for pain — retraining the thoughts, fears, and
-        behaviors that amplify it — shows reliable, usually modest
+        therapy</strong> for pain – retraining the thoughts, fears, and
+        behaviors that amplify it – shows reliable, usually modest
         benefits for pain and disability across dozens of randomized
         trials in the Cochrane review. <strong>Mindfulness-based stress
         reduction</strong> went head-to-head with CBT for chronic low
-        back pain in a major trial and performed on par — both beating
+        back pain in a major trial and performed on par – both beating
         usual care, with gains lasting a year. Acceptance and commitment
         therapy takes a different road to the same territory:
         re-expanding a life that pain has shrunk, without waiting for
@@ -262,7 +262,7 @@ export default function PhysicalBehavioralTherapies() {
           mind, brain, and new frontiers
         </Link>
         . None of this implies your pain is psychological. It implies
-        your pain runs on circuitry — and circuitry trains.
+        your pain runs on circuitry – and circuitry trains.
       </P>
 
       <H2 id="together">When the levers pull together</H2>
@@ -271,7 +271,7 @@ export default function PhysicalBehavioralTherapies() {
         <strong>multidisciplinary rehabilitation</strong>, where physical
         therapy, psychology, and medical care run as one coordinated
         program. The Cochrane evidence for chronic low back pain shows
-        such programs beat usual care for pain and disability — and
+        such programs beat usual care for pain and disability – and
         nearly doubled the odds of returning to work compared with
         physical treatment alone. That is the model{" "}
         <Link href="/what-is-pain-medicine/the-pain-team" className={link}>
@@ -282,12 +282,12 @@ export default function PhysicalBehavioralTherapies() {
         confidence honest.
       </P>
 
-      <H2 id="expectations">Honest expectations — and the active ingredient</H2>
+      <H2 id="expectations">Honest expectations – and the active ingredient</H2>
       <P>
         Read the trials plainly and a pattern emerges: average effects
         are <strong>modest</strong>, durability is <strong>good</strong>,
         harms are <strong>near zero</strong>, and benefits{" "}
-        <strong>stack</strong> — with each other, with{" "}
+        <strong>stack</strong> – with each other, with{" "}
         <Link href="/treatments/medications-for-pain" className={link}>
           sensible medication
         </Link>
@@ -298,15 +298,15 @@ export default function PhysicalBehavioralTherapies() {
         . The catch is equally plain: these therapies only work performed.
         The dose is the doing, adherence is the active ingredient, and
         the honest promise is not a switch flipped but a trajectory
-        bent — usually the thing chronic pain care is actually trying to
+        bent – usually the thing chronic pain care is actually trying to
         achieve.
       </P>
 
       <H2 id="finding">Finding the good version</H2>
       <P>
         Quality varies, so know the marks of the real thing: a program
-        built around what <em>you do</em> — progressive, planned, with a
-        home program that advances and a graduation goal — rather than
+        built around what <em>you do</em> – progressive, planned, with a
+        home program that advances and a graduation goal – rather than
         passive treatments repeating indefinitely; a therapist
         comfortable with the words &ldquo;sensitized nervous
         system&rdquo;; a psychologist who treats pain specifically.

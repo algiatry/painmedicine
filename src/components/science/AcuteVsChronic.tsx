@@ -3,13 +3,13 @@ import { Figure, H2, P } from "./Figure";
 import { FIG } from "@/lib/fig";
 
 /**
- * Figure — two pain trajectories over time. Acute pain (amber) rises with an
+ * Figure – two pain trajectories over time. Acute pain (amber) rises with an
  * injury and fades as tissue heals; chronic pain (teal) persists past the
  * ~3-month line even after healing. Time on x, pain intensity on y.
  */
 function TimelineFigure() {
   return (
-    <Figure caption="Acute pain tracks healing and fades. Chronic pain persists past about three months — often after the tissue itself has healed.">
+    <Figure caption="Acute pain tracks healing and fades. Chronic pain persists past about three months – often after the tissue itself has healed.">
       <svg
         role="img"
         aria-labelledby="timeline-title timeline-desc"
@@ -62,11 +62,11 @@ function TimelineFigure() {
         <g>
           <line x1="96" y1="92" x2="128" y2="92" stroke={FIG.signal} strokeWidth="3.5" />
           <text x="136" y="96" fontSize="13.5" fill={FIG.text}>
-            Acute — protective, fades with healing
+            Acute – protective, fades with healing
           </text>
           <line x1="96" y1="116" x2="128" y2="116" stroke={FIG.nerve} strokeWidth="3.5" />
           <text x="136" y="120" fontSize="13.5" fill={FIG.text}>
-            Chronic — persists past ~3 months
+            Chronic – persists past ~3 months
           </text>
         </g>
       </svg>
@@ -82,7 +82,7 @@ export default function AcuteVsChronic() {
       <P>
         Not all pain means the same thing. The most important distinction in all
         of pain medicine is between pain that is doing its job and pain that has
-        outlived it — between <strong>acute</strong> and{" "}
+        outlived it – between <strong>acute</strong> and{" "}
         <strong>chronic</strong> pain.
       </P>
 
@@ -90,7 +90,7 @@ export default function AcuteVsChronic() {
       <P>
         Acute pain is the pain of a fresh injury or illness: a sprain, a burn, a
         broken bone, a surgical incision. It comes on with the problem, it is
-        usually in proportion to it, and — crucially — it{" "}
+        usually in proportion to it, and – crucially – it{" "}
         <strong>fades as you heal</strong>. This is pain doing exactly what it
         evolved to do: grab your attention, make you protect the part, and stand
         down once the danger has passed. An alarm that switches off when the fire
@@ -100,7 +100,7 @@ export default function AcuteVsChronic() {
       <H2 id="chronic">Chronic pain is an alarm that won&rsquo;t switch off</H2>
       <P>
         Chronic pain is pain that <strong>persists or keeps returning for more
-        than three months</strong> — often long after the original injury has
+        than three months</strong> – often long after the original injury has
         healed. That three-month line is the threshold the World Health
         Organization adopted when, in its 2019 ICD-11, it recognized chronic
         pain as a health condition in its own right for the first time. It is a
@@ -112,8 +112,8 @@ export default function AcuteVsChronic() {
       <P>
         The ICD-11 draws a useful split. In{" "}
         <strong>chronic secondary pain</strong>, the pain is a symptom of
-        something else that is ongoing — cancer, rheumatoid arthritis, a nerve
-        injury — and it is managed alongside that condition. In{" "}
+        something else that is ongoing – cancer, rheumatoid arthritis, a nerve
+        injury – and it is managed alongside that condition. In{" "}
         <strong>chronic primary pain</strong>, the pain{" "}
         <em>is</em> the condition: it no longer points to active damage
         elsewhere. Fibromyalgia, many cases of chronic low back pain, and chronic
@@ -124,20 +124,20 @@ export default function AcuteVsChronic() {
       <P>
         It is tempting to think chronic pain is simply acute pain that went on
         too long. It is usually something different. Over time, a pain system
-        that keeps firing can become sensitized — the{" "}
+        that keeps firing can become sensitized – the{" "}
         <Link
           href="/understanding-pain/how-pain-works"
           className="text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600"
         >
           central sensitization
         </Link>{" "}
-        described in how pain works — so the alarm grows louder and easier to
+        described in how pain works – so the alarm grows louder and easier to
         trip even as the tissue quiets down. That is why chronic pain can be very
         real while scans look normal, and why treating it often means calming the
         nervous system, not just chasing an injury that is no longer there.
       </P>
 
-      <H2 id="hope">This matters — because chronic pain is treatable</H2>
+      <H2 id="hope">This matters – because chronic pain is treatable</H2>
       <P>
         None of this means chronic pain is imaginary or permanent. Understanding
         that the mechanism has shifted is what opens the door to help: paced

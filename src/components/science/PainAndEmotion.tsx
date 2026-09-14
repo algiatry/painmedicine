@@ -4,7 +4,7 @@ import { FIG } from "@/lib/fig";
 
 function SharedCircuitryFigure() {
   return (
-    <Figure caption="Pain and emotion are processed by overlapping brain regions. The anterior cingulate cortex and insula sit at the heart of both — which is why each can turn the other's volume up or down.">
+    <Figure caption="Pain and emotion are processed by overlapping brain regions. The anterior cingulate cortex and insula sit at the heart of both – which is why each can turn the other's volume up or down.">
       <svg
         role="img"
         aria-labelledby="venn-title venn-desc"
@@ -153,7 +153,7 @@ function FearAvoidanceFigure() {
           </text>
         </g>
 
-        {/* nodes — rise in sequence around the loop */}
+        {/* nodes – rise in sequence around the loop */}
         {LOOP.map((n, i) => (
           <g key={n.label} className="fig-rise" style={anim(i * 0.4)}>
             <rect
@@ -192,7 +192,7 @@ export default function PainAndEmotion() {
         kept are telling: pain is &ldquo;an unpleasant{" "}
         <strong>sensory and emotional</strong> experience.&rdquo; Emotion is not
         something that contaminates pain, or a sign you are handling it badly.
-        It is half of what pain <em>is</em> — written into the definition
+        It is half of what pain <em>is</em> – written into the definition
         itself. The same document adds a note every person in pain deserves to
         hear: a person&rsquo;s report of their pain{" "}
         <strong>should be respected</strong>.
@@ -202,9 +202,9 @@ export default function PainAndEmotion() {
       <SharedCircuitryFigure />
       <P>
         Brain imaging shows why pain and feeling are inseparable. The regions
-        that light up when something hurts — especially the{" "}
+        that light up when something hurts – especially the{" "}
         <strong>anterior cingulate cortex</strong> and the{" "}
-        <strong>insula</strong> — are long-recognized parts of the
+        <strong>insula</strong> – are long-recognized parts of the
         brain&rsquo;s emotional machinery. They encode the{" "}
         <em>unpleasantness</em> of pain, the part that makes it matter, and
         they do double duty processing anxiety, sadness, and stress. The
@@ -217,8 +217,8 @@ export default function PainAndEmotion() {
       <H2 id="volume-control">The brain&rsquo;s volume control</H2>
       <P>
         The traffic also flows downward. Your brain runs a descending
-        volume-control system — from the cortex and amygdala through a
-        brainstem hub called the periaqueductal grey, down to the spinal cord —
+        volume-control system – from the cortex and amygdala through a
+        brainstem hub called the periaqueductal grey, down to the spinal cord –
         that can amplify or suppress pain signals before they are ever fully
         felt. It is the system described in{" "}
         <Link
@@ -237,7 +237,7 @@ export default function PainAndEmotion() {
       <P>
         This is the honest answer to why stress makes pain worse. It is not
         that you are exaggerating under pressure. It is that a stressed,
-        threatened nervous system tips its own dial toward amplification — and
+        threatened nervous system tips its own dial toward amplification – and
         the same signal genuinely hurts more.
       </P>
 
@@ -247,8 +247,8 @@ export default function PainAndEmotion() {
         Pain psychology&rsquo;s most useful map is the{" "}
         <strong>fear-avoidance model</strong>. It starts with a reasonable
         instinct: pain feels like damage, so you protect the part that hurts.
-        But when catastrophic interpretations take hold —{" "}
-        <em>this will never end, something must be badly wrong</em> — protection
+        But when catastrophic interpretations take hold –{" "}
+        <em>this will never end, something must be badly wrong</em> – protection
         hardens into fear of movement, fear into avoidance, and avoidance into
         deconditioning and a steadily smaller life. Each step feels sensible.
         Together they feed the pain they were meant to escape. Studies
@@ -259,7 +259,7 @@ export default function PainAndEmotion() {
       </P>
       <P>
         Read that carefully, because it is good news wearing a stern
-        expression. Catastrophizing is not a character flaw — it is a learned,
+        expression. Catastrophizing is not a character flaw – it is a learned,
         automatic appraisal habit, and habits of the brain can be retrained.
         The loop has an exit, and it is the one the evidence supports: a
         gradual, supported return to movement and activity, ideally guided by a
@@ -272,11 +272,11 @@ export default function PainAndEmotion() {
         pain are frequent companions. In a landmark review, around{" "}
         <strong>65%</strong> of people with depression reported pain symptoms,
         and depression affected roughly <strong>half</strong> of patients in
-        pain clinics — several times the rate in the general population. Each
+        pain clinics – several times the rate in the general population. Each
         condition deepens the other, and each can hide the other from a
         clinician who is only looking for one. None of this makes either
         condition less real. It makes treating them <em>together</em> the
-        scientifically sound move — and it is why a thorough pain evaluation
+        scientifically sound move – and it is why a thorough pain evaluation
         asks about mood without any implication that your pain is &ldquo;just&rdquo;
         psychological.
       </P>
@@ -285,7 +285,7 @@ export default function PainAndEmotion() {
       <P>
         Put the pieces together and something clicks into place. If pain and
         emotion share circuitry, then treatments that work through that
-        circuitry — cognitive behavioral therapy, mindfulness-based approaches,
+        circuitry – cognitive behavioral therapy, mindfulness-based approaches,
         the therapies described in{" "}
         <Link
           href="/future-of-pain-medicine/mind-and-brain"
@@ -293,10 +293,10 @@ export default function PainAndEmotion() {
         >
           the mind and the brain
         </Link>{" "}
-        — should be able to turn real dials on real pain. The trial evidence
+        – should be able to turn real dials on real pain. The trial evidence
         says they do: across dozens of randomized trials, psychological
         therapies produce measurable reductions in pain, disability, and
-        distress. The honest caveat is that the average effects are modest —
+        distress. The honest caveat is that the average effects are modest –
         these are tools in a plan, not the whole plan. Whether they fit{" "}
         <em>your</em> plan is a conversation for you and your clinician.
       </P>

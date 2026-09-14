@@ -60,7 +60,7 @@ export default function SpinalStenosis() {
         Spinal stenosis literally means a narrowing of space in the spine. In
         the lower back, discs can lose height, facet joints can enlarge, and
         ligaments can thicken as the spine ages. Those changes may crowd the
-        nerve roots — but the scan is only half the story. Many people have a
+        nerve roots – but the scan is only half the story. Many people have a
         narrow-looking canal without the walking-limited leg symptoms that make
         stenosis a clinical condition.
       </P>
@@ -71,7 +71,7 @@ export default function SpinalStenosis() {
         The signature is <strong>neurogenic claudication</strong>: pain,
         heaviness, tingling, numbness, or weakness in the buttocks or legs that
         builds with standing or walking. Sitting or bending forward brings
-        relief. People often discover this before they know its name — they can
+        relief. People often discover this before they know its name – they can
         walk farther leaning over a shopping cart, ride a bicycle more easily
         than they can stroll, or recover by sitting rather than merely standing
         still.
@@ -104,7 +104,7 @@ export default function SpinalStenosis() {
 
       <H2 id="why-it-hurts">Why standing and walking bring it on</H2>
       <P>
-        Extending the lower back — the posture used in upright standing — tends
+        Extending the lower back – the posture used in upright standing – tends
         to reduce space around already crowded nerves. Walking also raises the
         nerves&rsquo; demand for blood flow. The leading explanation combines
         mechanical crowding with impaired circulation around the nerve roots,
@@ -124,7 +124,7 @@ export default function SpinalStenosis() {
         training in tolerable positions, and sometimes manual therapy. Programs
         also work on leg and trunk strength, balance, pacing, and confidence.
         The goal is not to widen an MRI through exercise. It is to widen the
-        person&rsquo;s world — farther walking, steadier movement, and less
+        person&rsquo;s world – farther walking, steadier movement, and less
         disruption from symptoms.
       </P>
       <P>
@@ -139,7 +139,7 @@ export default function SpinalStenosis() {
         mechanism may lead to a different conversation.
       </P>
 
-      <H2 id="surgery">What decompression surgery can — and cannot — promise</H2>
+      <H2 id="surgery">What decompression surgery can – and cannot – promise</H2>
       <P>
         Decompression removes bone or ligament that is crowding the nerves. It
         is generally considered when walking and daily function remain severely
@@ -179,7 +179,7 @@ export default function SpinalStenosis() {
           neuromodulation
         </Link>{" "}
         continue to evolve, but each needs comparison against good rehabilitation
-        and standard decompression — not just against doing nothing.
+        and standard decompression – not just against doing nothing.
       </P>
 
       <H2 id="specialist">When to see a specialist</H2>

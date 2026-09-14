@@ -7,7 +7,7 @@ const link =
   "text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600";
 
 /**
- * Figure 1 — the broken alarm wiring: a healthy nerve that signals only when
+ * Figure 1 – the broken alarm wiring: a healthy nerve that signals only when
  * something happens vs. a damaged nerve firing on its own.
  */
 function WiringFigure() {
@@ -33,7 +33,7 @@ function WiringFigure() {
     </g>
   );
   return (
-    <Figure caption="The fault behind neuropathic pain: a healthy nerve carries signals only when something happens to it. A damaged nerve — its insulation patchy, its channels overactive — fires spontaneously, and fires at things that should not hurt.">
+    <Figure caption="The fault behind neuropathic pain: a healthy nerve carries signals only when something happens to it. A damaged nerve – its insulation patchy, its channels overactive – fires spontaneously, and fires at things that should not hurt.">
       <svg
         role="img"
         aria-labelledby="wire-title wire-desc"
@@ -75,7 +75,7 @@ function WiringFigure() {
           Damaged nerve
         </text>
         <text x="510" y="76" textAnchor="middle" fontSize="12" fill={FIG.textMid}>
-          fires on its own — and to a light touch
+          fires on its own – and to a light touch
         </text>
         <line x1="376" y1="166" x2="644" y2="166" stroke={FIG.nerve} strokeWidth="3.5" strokeLinecap="round" strokeDasharray="14 6" />
         {myelin(384, [1, 3, 4])}
@@ -83,7 +83,7 @@ function WiringFigure() {
         {spark(520, 152)}
         {spark(600, 152)}
         <text x="510" y="206" textAnchor="middle" fontSize="11.5" fill={FIG.signalText}>
-          spontaneous firing — no stimulus at all
+          spontaneous firing – no stimulus at all
         </text>
         <text x="510" y="240" textAnchor="middle" fontSize="11.5" fill={FIG.textMid}>
           overactive sodium channels + patchy insulation = false alarms
@@ -94,7 +94,7 @@ function WiringFigure() {
 }
 
 /**
- * Figure 2 — the glove-and-stocking pattern: longest nerves fail first,
+ * Figure 2 – the glove-and-stocking pattern: longest nerves fail first,
  * from the tips backward. First use of BodyFront's hand/foot anchors.
  */
 function StockingGloveFigure() {
@@ -142,7 +142,7 @@ function StockingGloveFigure() {
           <text x="330" y="150">…then the glove</text>
         </g>
         <g fontSize="12.5" fill={FIG.textMid}>
-          <text x="330" y="320">starts in the toes and soles —</text>
+          <text x="330" y="320">starts in the toes and soles –</text>
           <text x="330" y="337">the body&rsquo;s longest nerves fail first</text>
           <text x="330" y="170">hands join later, once the</text>
           <text x="330" y="187">damage reaches nerves of their length</text>
@@ -163,13 +163,13 @@ export default function NeuropathicPain() {
       <P>
         Every other pain on this site is a report: tissue in trouble, nerves
         carrying the news. Neuropathic pain is different in kind. It is pain
-        caused by damage or disease in the reporting system itself — the
+        caused by damage or disease in the reporting system itself – the
         International Association for the Study of Pain defines it as pain
         from a lesion or disease of the somatosensory nervous system. The
         messenger has become the message. That single fact explains nearly
         everything strange about it: why it feels electric, why it strikes
         without provocation, why a bedsheet can hurt, and why the usual
-        painkillers so often shrug. It is also common — studies put
+        painkillers so often shrug. It is also common – studies put
         neuropathic pain at roughly <strong>7 to 10% of adults</strong>,
         making it one of the largest and most under-recognized territories in
         pain medicine.
@@ -180,19 +180,19 @@ export default function NeuropathicPain() {
       <P>
         A healthy sensory nerve is disciplined: it fires when something
         happens to it, and otherwise keeps quiet. Injury and disease break
-        that discipline. Damaged fibers accumulate extra sodium channels —
-        the molecular triggers of nerve firing — and begin generating
+        that discipline. Damaged fibers accumulate extra sodium channels –
+        the molecular triggers of nerve firing – and begin generating
         impulses spontaneously, with no stimulus at all. Patches of lost
         insulation let signals leak and cross-excite neighboring fibers. And
         the spinal cord, bombarded by this traffic, amplifies: circuits
         sensitize, and touch fibers that never carried pain get rewired into
-        the alarm. The result is the neuropathic signature — spontaneous
+        the alarm. The result is the neuropathic signature – spontaneous
         burning and electric shocks, <strong>allodynia</strong> (pain from a
         light touch), and the paradox that bewilders almost every patient:
         a region that is <em>numb and in pain at the same time</em>, because
         the same damage that loses real signal also manufactures false
         signal. If that paradox describes you, nothing is contradictory
-        about your body — it is the textbook picture of{" "}
+        about your body – it is the textbook picture of{" "}
         <Link href="/understanding-pain/types-of-pain" className={link}>
           neuropathic pain
         </Link>
@@ -202,23 +202,23 @@ export default function NeuropathicPain() {
       <H2 id="feet-first">Why feet first</H2>
       <StockingGloveFigure />
       <P>
-        The nerves serving your toes are the longest cells in your body —
+        The nerves serving your toes are the longest cells in your body –
         single fibers running from the spine to the foot. Length is
         vulnerability: a nerve struggling metabolically fails from its
         farthest tip backward, the way a city&rsquo;s outermost suburbs lose
         power first. So peripheral neuropathy classically announces itself in
-        the toes and soles — burning, tingling, numbness, often worst at
-        night — and creeps upward, with the hands joining once the damage
+        the toes and soles – burning, tingling, numbness, often worst at
+        night – and creeps upward, with the hands joining once the damage
         reaches nerves of <em>their</em> length. <strong>Diabetes</strong> is
         the leading cause of this pattern in the developed world. But the
         list is long: shingles can leave lasting nerve pain in its wake
         (postherpetic neuralgia), chemotherapy agents injure nerve endings,
         alcohol and B-vitamin deficiency take their toll, compression does it
-        locally —{" "}
+        locally –{" "}
         <Link href="/conditions/sciatica" className={link}>
           sciatica
         </Link>{" "}
-        is neuropathic pain of a single nerve root — and central causes like
+        is neuropathic pain of a single nerve root – and central causes like
         stroke, multiple sclerosis, and spinal cord injury generate it from
         inside the cord and brain. And in a meaningful minority, a careful
         workup finds no cause at all. That is frustrating, common, and not a
@@ -227,14 +227,14 @@ export default function NeuropathicPain() {
 
       <H2 id="recognizing">How it&rsquo;s recognized</H2>
       <P>
-        The diagnosis starts with vocabulary — burning, shooting, electric,
-        pins and needles are pointing words — and with geography: neuropathic
+        The diagnosis starts with vocabulary – burning, shooting, electric,
+        pins and needles are pointing words – and with geography: neuropathic
         pain lives in nerve territory, whether a stocking, a single root&rsquo;s
         line down a leg, or a band of old shingles rash. The exam maps where
         sensation is heightened, lost, or both. Testing then works backward
         toward a cause: nerve-conduction studies assess the large, insulated
         fibers; a small skin biopsy can count the small fibers those studies
-        miss; and blood work screens the treatable drivers — glucose,
+        miss; and blood work screens the treatable drivers – glucose,
         vitamin B12, thyroid, and others. The cause hunt matters, because
         the most effective move against neuropathic pain is often aimed at the cause
         rather than the pain.
@@ -246,7 +246,7 @@ export default function NeuropathicPain() {
         prompt medical attention: weakness that is new or spreading,
         symptoms advancing over days rather than months, trouble with
         balance out of proportion to numbness, or autonomic signs like
-        fainting on standing. And numbness itself carries a quiet danger —
+        fainting on standing. And numbness itself carries a quiet danger –
         feet that cannot feel are feet that get injured without noticing,
         which is why foot care and regular checks are a standing part of
         diabetic neuropathy care, pain or no pain.
@@ -261,19 +261,20 @@ export default function NeuropathicPain() {
         what most people expect: <strong>gabapentinoids</strong> to calm
         overexcited signaling, and <strong>duloxetine, venlafaxine, or the
         tricyclics</strong> to strengthen the spinal cord&rsquo;s own
-        pain-dampening pathways —{" "}
+        pain-dampening pathways –{" "}
         <Link href="/treatments/medications-for-pain" className={link}>
           the nerve-pain medications
         </Link>
         , doing mechanism-matched work. Honesty about the numbers builds
         better plans than hype: even first-line drugs deliver meaningful
-        relief to a minority of the people who try them — roughly one in
-        four to eight — so finding your medication is often a sequence of
+        relief to a minority of the people who try them – roughly one in
+        four to eight – so finding your medication is often a sequence of
         fair trials, not a single prescription. For pain in one findable
         place, second-line topicals earn their keep: lidocaine patches, and
         high-concentration capsaicin applied in clinic. Opioids sit
-        deliberately late in the rankings — weakly recommended, a
+        deliberately late in the rankings – weakly recommended, a
         specialist-supervised option rather than a path.
+        If you or someone you love is struggling with opioid or other substance use, the SAMHSA National Helpline is free, confidential, and open 24/7 at 1-800-662-HELP (4357).
       </P>
       <P>
         When medications underwhelm, the field&rsquo;s hardware has matured.
@@ -281,7 +282,7 @@ export default function NeuropathicPain() {
         <strong>spinal cord stimulation</strong> was tested in a randomized
         trial against continued medical management: about eight in ten
         stimulator patients achieved substantial relief at six months,
-        versus roughly one in twenty with medication alone — among the
+        versus roughly one in twenty with medication alone – among the
         clearest device results in pain medicine, and the reason neuropathic
         pain is now a leading destination for{" "}
         <Link href="/future-of-pain-medicine/neuromodulation" className={link}>
@@ -296,7 +297,7 @@ export default function NeuropathicPain() {
         exciting science, because its mechanism names its target: the sodium
         channels that make damaged nerves fire. The first selective
         sodium-channel blocker reached patients in 2025 for acute pain, and
-        successors aimed squarely at nerve pain are in trials — alongside
+        successors aimed squarely at nerve pain are in trials – alongside
         gene-targeted approaches to the channel that, when mutated, can
         abolish or ignite pain on its own. The{" "}
         <Link href="/future-of-pain-medicine/pipeline" className={link}>
@@ -308,7 +309,7 @@ export default function NeuropathicPain() {
       <H2 id="specialist">When to bring in a specialist</H2>
       <P>
         If nerve pain is still running your nights after a cause hunt and a
-        fair first-line trial — or if the diagnosis itself is unclear — this
+        fair first-line trial – or if the diagnosis itself is unclear – this
         is core{" "}
         <Link href="/what-is-pain-medicine" className={link}>
           pain medicine

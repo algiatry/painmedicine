@@ -3,7 +3,7 @@ import { Figure, H2, P, anim } from "./Figure";
 import { FIG } from "@/lib/fig";
 
 /**
- * Figure 1 — the pain signal pathway, schematic. Skin → nerve → spinal
+ * Figure 1 – the pain signal pathway, schematic. Skin → nerve → spinal
  * "gate" → brain, four numbered stages. Warm amber = the signal; teal = the
  * nervous system that interprets it; slate = anatomy. Alarm reds avoided.
  */
@@ -50,7 +50,7 @@ function PathwayFigure() {
         style={anim(1.35, 215)}
       />
 
-      {/* Stage 1 — skin + nociceptor */}
+      {/* Stage 1 – skin + nociceptor */}
       <g>
         <rect x="34" y="132" width="84" height="40" rx="8" fill={FIG.ground} stroke={FIG.line} />
         {/* stimulus spark */}
@@ -66,7 +66,7 @@ function PathwayFigure() {
         <path d="M50 172 v14 M68 172 v18 M86 172 v14 M104 172 v18" stroke={FIG.faint} strokeWidth="2" fill="none" />
       </g>
 
-      {/* Stage 3 — spinal cord cross-section with gate */}
+      {/* Stage 3 – spinal cord cross-section with gate */}
       <g>
         <ellipse cx="404" cy="150" rx="40" ry="54" fill={FIG.white} stroke={FIG.faint} strokeWidth="2" />
         {/* butterfly gray matter */}
@@ -80,7 +80,7 @@ function PathwayFigure() {
         <line x1="363" y1="138" x2="363" y2="162" stroke={FIG.nerve} strokeWidth="1.5" />
       </g>
 
-      {/* Stage 4 — brain */}
+      {/* Stage 4 – brain */}
       <g>
         <path
           d="M636 104 C 628 84, 656 70, 676 78 C 692 68, 720 78, 718 98 C 732 104, 730 128, 712 132 C 706 148, 680 150, 672 138 C 652 146, 630 128, 636 104 Z"
@@ -98,7 +98,7 @@ function PathwayFigure() {
         />
       </g>
 
-      {/* numbered badges — each pops as its stage of the story arrives */}
+      {/* numbered badges – each pops as its stage of the story arrives */}
       {[
         { n: "1", x: 76, y: 210, d: 0.1 },
         { n: "2", x: 242, y: 118, d: 0.7 },
@@ -133,14 +133,14 @@ function PathwayFigure() {
 }
 
 /**
- * Figure 2 — central sensitization as a gain/volume metaphor. Same small
+ * Figure 2 – central sensitization as a gain/volume metaphor. Same small
  * input, amplifier turned up, large output.
  */
 function SensitizationFigure() {
   return (
     <Figure
       animate
-      caption="Central sensitization: the same small input, amplified. The nervous system can turn up its own gain — and leave it up."
+      caption="Central sensitization: the same small input, amplified. The nervous system can turn up its own gain – and leave it up."
     >
       <svg
         role="img"
@@ -151,7 +151,7 @@ function SensitizationFigure() {
       <title id="sensitize-title">Central sensitization turns up the gain</title>
       <desc id="sensitize-desc">
         The same small input signal passes through an amplifier turned to high,
-        producing a much larger pain output — the idea behind central
+        producing a much larger pain output – the idea behind central
         sensitization.
       </desc>
 
@@ -244,22 +244,22 @@ export default function HowPainWorks() {
 
       <P>
         It feels obvious that pain comes straight from the part of you that
-        hurts — that a stubbed toe sends &ldquo;toe pain&rdquo; up to the brain
+        hurts – that a stubbed toe sends &ldquo;toe pain&rdquo; up to the brain
         like a phone call. The real path is more interesting, and understanding
         it changes what you can do about pain.
       </P>
 
-      <H2 id="step-1">Step 1 — Nociceptors detect a threat</H2>
+      <H2 id="step-1">Step 1 – Nociceptors detect a threat</H2>
       <P>
         Scattered through your skin, muscles, joints, and organs are the free
         endings of specialized nerves called{" "}
         <strong>nociceptors</strong>. They are threat detectors. They fire when
         they sense something that could harm tissue: strong heat or cold, harsh
         pressure, or the chemicals released when cells are damaged. Firing a
-        nociceptor is not yet pain — it is the first link in a chain.
+        nociceptor is not yet pain – it is the first link in a chain.
       </P>
 
-      <H2 id="step-2">Step 2 — The signal travels</H2>
+      <H2 id="step-2">Step 2 – The signal travels</H2>
       <P>
         Two kinds of nerve fibers carry the message toward the spinal cord.
         Fast, insulated <strong>A-delta fibers</strong>{" "}
@@ -270,7 +270,7 @@ export default function HowPainWorks() {
         It is why a burn stings instantly and then throbs a moment later.
       </P>
 
-      <H2 id="step-3">Step 3 — The spinal gate</H2>
+      <H2 id="step-3">Step 3 – The spinal gate</H2>
       <P>
         The signal does not travel straight through. At the spinal cord&rsquo;s{" "}
         <strong>dorsal horn</strong>{" "}
@@ -280,25 +280,25 @@ export default function HowPainWorks() {
         the signal continues up to the brain.
       </P>
       <P>
-        This is not just theory — you use it every day. When you rub a banged
+        This is not just theory – you use it every day. When you rub a banged
         knee, you fire large, fast touch nerves that help{" "}
         <em>close</em> the gate, so fewer pain signals get through and the knee
         feels better. The same principle is behind TENS units and some other
         treatments. The signal is filtered and adjusted, not simply relayed.
       </P>
 
-      <H2 id="step-4">Step 4 — The brain builds the pain</H2>
+      <H2 id="step-4">Step 4 – The brain builds the pain</H2>
       <P>
         Only now does pain appear. The signal reaches the brain, which weighs it
-        against everything else it knows — where you are, what you expect,
-        whether you are afraid, what has hurt you before — and{" "}
+        against everything else it knows – where you are, what you expect,
+        whether you are afraid, what has hurt you before – and{" "}
         <em>constructs</em> the experience you feel. That is why the same injury
         can be agonizing on a bad day and barely register in the heat of a game.
       </P>
       <P>
         The world&rsquo;s pain scientists put this plainly. The International
         Association for the Study of Pain notes that pain and the raw nerve
-        signal, called nociception, are different things — pain{" "}
+        signal, called nociception, are different things – pain{" "}
         <strong>cannot be read off from nerve activity alone</strong>. This is
         also why &ldquo;the brain builds it&rdquo; never means &ldquo;you are
         imagining it.&rdquo; Constructed pain is real pain.
@@ -308,7 +308,7 @@ export default function HowPainWorks() {
       <SensitizationFigure />
       <P>
         Here is the twist that matters most for lasting pain. A pain system that
-        is asked to fire again and again can turn up its own gain — a process
+        is asked to fire again and again can turn up its own gain – a process
         called <strong>central sensitization</strong>. Nerves in the spinal cord
         and brain become more responsive, so the same input produces a louder
         output.
@@ -317,7 +317,7 @@ export default function HowPainWorks() {
         When that happens, light touch can hurt (<em>allodynia</em>) and painful
         things hurt more than expected (<em>hyperalgesia</em>). It is a normal
         property of the nervous system, but when it persists it becomes a
-        driver of long-term pain — the bridge from a passing injury to{" "}
+        driver of long-term pain – the bridge from a passing injury to{" "}
         <Link
           href="/understanding-pain/acute-vs-chronic-pain"
           className="text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600"
@@ -337,8 +337,8 @@ export default function HowPainWorks() {
       <H2 id="why-it-matters">Why this matters for you</H2>
       <P>
         If pain were only a damage readout, the only way to treat it would be to
-        fix tissue. Because pain is a nervous-system process — detected, filtered
-        at the gate, and built by the brain — there are many more points where it
+        fix tissue. Because pain is a nervous-system process – detected, filtered
+        at the gate, and built by the brain – there are many more points where it
         can be turned down: through the body, the nerves, and the brain
         together. That is the whole idea behind modern, multidisciplinary pain
         care, and it is the reason understanding pain is the first step toward

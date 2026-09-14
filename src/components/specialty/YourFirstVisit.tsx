@@ -5,13 +5,13 @@ import { FIG } from "@/lib/fig";
 const STEPS = [
   { n: 1, title: "Your story", sub: "a detailed history of the pain; and everything it touches", x: 105 },
   { n: 2, title: "The exam", sub: "physical & neurological exam,; records and imaging reviewed", x: 262 },
-  { n: 3, title: "The whole picture", sub: "sleep, mood, work, function; — the whole-person screen", x: 419 },
+  { n: 3, title: "The whole picture", sub: "sleep, mood, work, function; – the whole-person screen", x: 419 },
   { n: 4, title: "The plan", sub: "built with you, shared with; your primary care clinician", x: 576 },
 ];
 
 function VisitFlowFigure() {
   return (
-    <Figure caption="The shape of a first pain-medicine evaluation. It is longer than a routine appointment — often one to three hours — because working out the mechanism of your pain is the whole job.">
+    <Figure caption="The shape of a first pain-medicine evaluation. It is longer than a routine appointment – often one to three hours – because working out the mechanism of your pain is the whole job.">
       <svg
         role="img"
         aria-labelledby="visit-title visit-desc"
@@ -81,7 +81,7 @@ export default function YourFirstVisit() {
         A first appointment with a pain specialist is a different kind of
         medical visit, and knowing that in advance changes how well it goes.
         You are not there for a quick look at one body part. You are there so a
-        specialist can work out which pain mechanisms are in play — and that
+        specialist can work out which pain mechanisms are in play – and that
         takes time, records, and questions that may surprise you.
       </P>
 
@@ -89,7 +89,7 @@ export default function YourFirstVisit() {
       <P>
         Most pain centers require a <strong>referral</strong> from your primary
         care clinician or another physician, and many ask you to complete a
-        detailed questionnaire before or at the visit — expect questions about
+        detailed questionnaire before or at the visit – expect questions about
         your pain&rsquo;s history, past treatments, sleep, mood, and daily
         life. Filling it out carefully is not paperwork for its own sake; it is
         the first draft of your evaluation. Worth gathering ahead of time:
@@ -98,14 +98,14 @@ export default function YourFirstVisit() {
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
-            <strong>A complete medication list with doses</strong> — including
+            <strong>A complete medication list with doses</strong> – including
             everything already tried for this pain, and what happened with each.
           </span>
         </li>
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
-            <strong>Records and imaging</strong> — prior notes, MRI/CT results,
+            <strong>Records and imaging</strong> – prior notes, MRI/CT results,
             or the contact details of the clinicians who hold them so they can
             be sent ahead.
           </span>
@@ -120,7 +120,7 @@ export default function YourFirstVisit() {
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
-            <strong>A pain diary or notes</strong>, if you keep them — even a
+            <strong>A pain diary or notes</strong>, if you keep them – even a
             week of entries on flares, triggers, and what pain stops you from
             doing.{" "}
             <Link
@@ -137,7 +137,7 @@ export default function YourFirstVisit() {
       <H2 id="during">What happens in the room</H2>
       <P>
         Plan for an evaluation that is substantially longer than a routine
-        appointment — often <strong>one to three hours</strong>; major centers
+        appointment – often <strong>one to three hours</strong>; major centers
         tell patients to expect two to three when testing is involved. The
         visit typically moves through a long conversation about your pain and
         its history, a physical and neurological exam, and a careful review of
@@ -153,7 +153,7 @@ export default function YourFirstVisit() {
         evaluation measures the whole picture.
       </P>
       <P>
-        Along the way you may fill out standard assessment tools — a 0-to-10
+        Along the way you may fill out standard assessment tools – a 0-to-10
         scale, the McGill Pain Questionnaire, the Brief Pain Inventory, or the
         short PEG scale. Each is a validated way of turning your experience
         into something the team can track over time.
@@ -165,7 +165,7 @@ export default function YourFirstVisit() {
         the CDC&rsquo;s 2022 prescribing guideline: discussing risks and
         benefits openly, checking the state prescription-monitoring database,
         sometimes offering naloxone or using toxicology testing. These are{" "}
-        <strong>signs of a guideline-following practice</strong> — routine
+        <strong>signs of a guideline-following practice</strong> – routine
         safety habits applied to everyone, not suspicion aimed at you. And one
         line that belongs wherever opioids are mentioned: if you or someone you
         love is struggling with opioid or other substance use, the SAMHSA
@@ -177,14 +177,14 @@ export default function YourFirstVisit() {
       <P>
         A first visit should end with something concrete: a working assessment
         of what kind of pain you have, a treatment plan built{" "}
-        <em>with</em> you — often spanning several of the{" "}
+        <em>with</em> you – often spanning several of the{" "}
         <Link
           href="/what-is-pain-medicine/the-pain-team"
           className="text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600"
         >
           pain team&rsquo;s
         </Link>{" "}
-        disciplines — and a copy shared with your primary care clinician.
+        disciplines – and a copy shared with your primary care clinician.
         Bring your own questions too; the{" "}
         <Link
           href="/find-help"

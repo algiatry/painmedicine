@@ -7,7 +7,7 @@ const link =
   "text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600";
 
 /**
- * Figure 1 — one word, three joints: healthy, osteoarthritis, inflammatory.
+ * Figure 1 – one word, three joints: healthy, osteoarthritis, inflammatory.
  * First page use of the SynovialJoint anatomy component, side by side.
  */
 function JointsFigure() {
@@ -32,7 +32,7 @@ function JointsFigure() {
     },
   ];
   return (
-    <Figure caption="One word, two diseases. Osteoarthritis is the joint's own tissues changing — cartilage thinning, bone remodeling, a narrowed space. Inflammatory arthritis is different in kind: the immune system inflames the synovial lining itself (amber).">
+    <Figure caption="One word, two diseases. Osteoarthritis is the joint's own tissues changing – cartilage thinning, bone remodeling, a narrowed space. Inflammatory arthritis is different in kind: the immune system inflames the synovial lining itself (amber).">
       <svg
         role="img"
         aria-labelledby="joints-title joints-desc"
@@ -66,12 +66,12 @@ function JointsFigure() {
 }
 
 /**
- * Figure 2 — which pattern is yours: mechanical pain rises with the day's
+ * Figure 2 – which pattern is yours: mechanical pain rises with the day's
  * use; inflammatory pain is worst on waking and eases with movement.
  */
 function PatternsFigure() {
   return (
-    <Figure caption="The day tells the diagnosis. Mechanical (osteoarthritis) pain builds with use and eases with rest, after brief morning stiffness. Inflammatory pain is worst on waking — stiffness lasting an hour or more — and improves as the day moves. The second pattern deserves a prompt appointment.">
+    <Figure caption="The day tells the diagnosis. Mechanical (osteoarthritis) pain builds with use and eases with rest, after brief morning stiffness. Inflammatory pain is worst on waking – stiffness lasting an hour or more – and improves as the day moves. The second pattern deserves a prompt appointment.">
       <svg
         role="img"
         aria-labelledby="pat-title pat-desc"
@@ -94,7 +94,7 @@ function PatternsFigure() {
           The mechanical pattern
         </text>
         <text x="170" y="73" textAnchor="middle" fontSize="12" fill={FIG.textMid}>
-          osteoarthritis — pain follows use
+          osteoarthritis – pain follows use
         </text>
         <line x1="46" y1="200" x2="296" y2="200" stroke={FIG.faint} strokeWidth="1.5" />
         <path
@@ -107,7 +107,7 @@ function PatternsFigure() {
         <text x="46" y="222" fontSize="11" fill={FIG.muted}>morning</text>
         <text x="296" y="222" textAnchor="end" fontSize="11" fill={FIG.muted}>evening</text>
         <text x="171" y="244" textAnchor="middle" fontSize="11.5" fill={FIG.signalText}>
-          stiffness: minutes — eases with rest
+          stiffness: minutes – eases with rest
         </text>
 
         {/* inflammatory panel */}
@@ -115,7 +115,7 @@ function PatternsFigure() {
           The inflammatory pattern
         </text>
         <text x="510" y="73" textAnchor="middle" fontSize="12" fill={FIG.textMid}>
-          rheumatoid &amp; kin — worst on waking
+          rheumatoid &amp; kin – worst on waking
         </text>
         <line x1="386" y1="200" x2="636" y2="200" stroke={FIG.faint} strokeWidth="1.5" />
         <path
@@ -128,7 +128,7 @@ function PatternsFigure() {
         <text x="386" y="222" fontSize="11" fill={FIG.muted}>morning</text>
         <text x="636" y="222" textAnchor="end" fontSize="11" fill={FIG.muted}>evening</text>
         <text x="511" y="244" textAnchor="middle" fontSize="11.5" fill={FIG.signalText}>
-          stiffness: an hour or more — eases with movement
+          stiffness: an hour or more – eases with movement
         </text>
       </svg>
     </Figure>
@@ -140,13 +140,13 @@ export default function ArthritisPain() {
     <div>
       <P>
         &ldquo;Arthritis&rdquo; is one of medicine&rsquo;s most misleading
-        words — a single label stretched across more than a hundred joint
+        words – a single label stretched across more than a hundred joint
         conditions with different causes, different urgencies, and different
         treatments. For a person in pain, nearly everything worth knowing
         comes down to one distinction. <strong>Osteoarthritis</strong>, by
         far the most common, is a disease of the joint&rsquo;s own tissues.{" "}
-        <strong>Inflammatory arthritis</strong> — rheumatoid arthritis,
-        psoriatic arthritis, gout — is the immune system attacking the
+        <strong>Inflammatory arthritis</strong> – rheumatoid arthritis,
+        psoriatic arthritis, gout – is the immune system attacking the
         joint. One is managed over years; the other is, at its outset, a
         race. This page is about learning which story your joints are
         telling.
@@ -156,20 +156,20 @@ export default function ArthritisPain() {
       <JointsFigure />
       <P>
         A healthy joint is a beautifully engineered bearing: bone ends
-        capped in smooth cartilage, wrapped in a capsule whose thin lining —
-        the synovium — makes the lubricating fluid. In{" "}
+        capped in smooth cartilage, wrapped in a capsule whose thin lining –
+        the synovium – makes the lubricating fluid. In{" "}
         <strong>osteoarthritis</strong>, that whole system changes:
         cartilage thins, the bone beneath remodels and grows spurs, and the
         lining runs a low-grade inflammation. Note what that is <em>not</em>:
         the old &ldquo;wear and tear&rdquo; story of a tread wearing out.
         Joints are living tissue that responds to load, and osteoarthritis
-        is an active disease process — which is precisely why sensible
+        is an active disease process – which is precisely why sensible
         loading helps rather than harms, as we&rsquo;ll get to. In{" "}
         <strong>inflammatory arthritis</strong> the primary event is
         different in kind: the immune system targets the synovium itself,
         swelling it into an aggressive tissue that can erode cartilage and
         bone from within. Rheumatoid arthritis is the flagship; psoriatic
-        arthritis travels with skin disease; gout is its own drama — urate
+        arthritis travels with skin disease; gout is its own drama – urate
         crystals precipitating in a joint and igniting one of the most
         painful acute inflammations in medicine, classically overnight in a
         big toe.
@@ -184,7 +184,7 @@ export default function ArthritisPain() {
         accumulated load, eased by putting the joint up. Inflammatory pain
         runs the opposite schedule: <strong>worst on waking</strong>, with
         morning stiffness lasting an hour or more, joints that are visibly
-        swollen and warm, improvement with movement — and often a systemic
+        swollen and warm, improvement with movement – and often a systemic
         shadow of fatigue and feeling unwell, because the immune system is
         running hot everywhere. Distribution helps too: osteoarthritis
         favors knees, hips, the base of the thumb, and the finger ends;
@@ -198,7 +198,7 @@ export default function ArthritisPain() {
       <P>
         Arthritis is where imaging honesty matters as much as anywhere on
         this site. Studies comparing knee X-rays with knee pain find the
-        two <strong>discordant in both directions</strong> — plenty of
+        two <strong>discordant in both directions</strong> – plenty of
         rough-looking joints that feel fine, plenty of painful joints with
         modest films. Structure is one input into pain, not a verdict; the
         nervous system, sleep, mood, and a joint&rsquo;s inflammatory state
@@ -215,7 +215,7 @@ export default function ArthritisPain() {
       <H2 id="window">The window of opportunity</H2>
       <P>
         Here is why the mechanical-versus-inflammatory question carries
-        urgency. Untreated rheumatoid arthritis damages joints early — and
+        urgency. Untreated rheumatoid arthritis damages joints early – and
         modern rheumatology has learned that starting{" "}
         <strong>disease-modifying treatment promptly</strong>, then
         adjusting it until the inflammation is actually suppressed, prevents
@@ -223,7 +223,7 @@ export default function ArthritisPain() {
         deformities older generations associate with rheumatoid arthritis
         have become largely a story of the pre-treatment era. That
         transformation only works for people who get through the door in
-        months, not years — which is exactly what the inflammatory pattern
+        months, not years – which is exactly what the inflammatory pattern
         above is for. Swollen, warm, symmetric small joints with long
         morning stiffness are not a wait-and-see situation.
       </P>
@@ -232,29 +232,30 @@ export default function ArthritisPain() {
       <P>
         For <strong>osteoarthritis</strong>, the guideline hierarchy
         surprises almost everyone: the most strongly recommended treatment
-        is <strong>exercise</strong> — strengthening the muscles that
+        is <strong>exercise</strong> – strengthening the muscles that
         cushion the joint, with weight management close behind for knees and
         hips. Movement nourishes cartilage rather than grinding it; the
         soreness of starting is adaptation, not damage. Around that core:
         topical anti-inflammatories first for knees and hands (relief where
         the risks stay local), oral NSAIDs in sensible courses, steroid
-        injections for flares — honest about their short-term horizon — and
+        injections for flares – honest about their short-term horizon – and
         braces, canes, and activity tweaks that quietly earn their keep.
-        Opioids are specifically discouraged in the guidelines. And when a
+        Opioids are specifically discouraged in the guidelines.
+        If you or someone you love is struggling with opioid or other substance use, the SAMHSA National Helpline is free, confidential, and open 24/7 at 1-800-662-HELP (4357). And when a
         joint is truly end-stage, <strong>replacement</strong> is among the
-        most effective operations in all of surgery — a genuine finish line,
+        most effective operations in all of surgery – a genuine finish line,
         best timed with your surgeon.
       </P>
       <P>
         For <strong>inflammatory arthritis</strong>, the deepest pain
         relief is not a painkiller at all: it is turning off the
         inflammation. Methotrexate and the biologic revolution that
-        followed — TNF blockers and their successors — treat the disease,
+        followed – TNF blockers and their successors – treat the disease,
         and the pain follows it down; anti-inflammatories bridge flares
         while the disease-modifiers take hold. <strong>Gout</strong> is the
         happiest version of this logic: flares are quenched with
         anti-inflammatory treatment, and daily urate-lowering therapy can
-        make future flares — and the joint damage of untreated gout —
+        make future flares – and the joint damage of untreated gout –
         essentially preventable. Which medications, in which order, is
         rheumatology&rsquo;s craft and your clinician&rsquo;s call; the
         principle to hold onto is that in inflammatory disease,{" "}
@@ -265,9 +266,9 @@ export default function ArthritisPain() {
       <P>
         Inflammatory arthritis already had its revolution; osteoarthritis is
         still waiting for one. The field&rsquo;s open hunt is a{" "}
-        <strong>disease-modifying osteoarthritis drug</strong> — something
+        <strong>disease-modifying osteoarthritis drug</strong> – something
         that changes the joint&rsquo;s trajectory rather than muting its
-        signal — with candidates aimed at cartilage biology and at the
+        signal – with candidates aimed at cartilage biology and at the
         nerve-growth-factor pathway in trials now. The{" "}
         <Link href="/future-of-pain-medicine/pipeline" className={link}>
           pipeline tracker
@@ -283,7 +284,7 @@ export default function ArthritisPain() {
       <H2 id="specialist">When to bring in a specialist</H2>
       <P>
         The inflammatory pattern buys a prompt <strong>rheumatology</strong>{" "}
-        referral — that is the specialty that owns the window of
+        referral – that is the specialty that owns the window of
         opportunity. For osteoarthritis that keeps hurting despite
         exercise-first care, or arthritis pain that has outgrown its joint,{" "}
         <Link href="/what-is-pain-medicine" className={link}>

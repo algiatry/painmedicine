@@ -67,7 +67,7 @@ export default function Footer() {
           </nav>
         </div>
 
-        {/* Medical disclaimer — required on every page */}
+        {/* Medical disclaimer – required on every page */}
         <div className="border-t border-slate-200 pt-6">
           <p className="text-xs leading-relaxed text-slate-500">
             <strong>Medical disclaimer:</strong> The content on {SITE.name} is for

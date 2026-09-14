@@ -6,7 +6,7 @@ const link =
   "text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600";
 
 /**
- * Figure 1 — the four Budapest sign categories: what makes CRPS visible.
+ * Figure 1 – the four Budapest sign categories: what makes CRPS visible.
  */
 function SignsFigure() {
   const cards = [
@@ -36,7 +36,7 @@ function SignsFigure() {
     },
   ];
   return (
-    <Figure caption="The four sign categories of the Budapest diagnostic criteria. CRPS is pain out of proportion plus a limb that visibly changes — the diagnosis is made from the pattern, not from any single test.">
+    <Figure caption="The four sign categories of the Budapest diagnostic criteria. CRPS is pain out of proportion plus a limb that visibly changes – the diagnosis is made from the pattern, not from any single test.">
       <svg
         role="img"
         aria-labelledby="signs-title signs-desc"
@@ -52,7 +52,7 @@ function SignsFigure() {
         </desc>
 
         <text x="340" y="26" textAnchor="middle" fontSize="13" fontWeight="700" fill={FIG.textMid}>
-          Pain out of proportion — plus signs from these four families
+          Pain out of proportion – plus signs from these four families
         </text>
 
         {cards.map((c) => (
@@ -75,12 +75,12 @@ function SignsFigure() {
 }
 
 /**
- * Figure 2 — mirror therapy: showing the brain two healthy hands to redraw
+ * Figure 2 – mirror therapy: showing the brain two healthy hands to redraw
  * the limb's shrunken map.
  */
 function MirrorFigure() {
   return (
-    <Figure caption="Mirror therapy, from above: the painful hand rests hidden behind a mirror while the healthy hand moves in front of it. The brain watches what looks like two healthy hands moving — and the limb's blurred, shrunken cortical map begins to redraw.">
+    <Figure caption="Mirror therapy, from above: the painful hand rests hidden behind a mirror while the healthy hand moves in front of it. The brain watches what looks like two healthy hands moving – and the limb's blurred, shrunken cortical map begins to redraw.">
       <svg
         role="img"
         aria-labelledby="mir-title mir-desc"
@@ -130,7 +130,7 @@ function MirrorFigure() {
           </g>
         </g>
         <text x="227" y="292" textAnchor="middle" fontSize="12.5" fontWeight="700" fill={FIG.nerveDark}>
-          what the brain sees — its reflection
+          what the brain sees – its reflection
         </text>
 
         {/* the hidden painful hand, tucked just behind the mirror */}
@@ -154,16 +154,16 @@ export default function Crps() {
   return (
     <div>
       <P>
-        Complex regional pain syndrome is the rarest condition in this hub —
+        Complex regional pain syndrome is the rarest condition in this hub –
         population studies find roughly 26 new cases per 100,000 people each
-        year, most often in women, most often after a wrist fracture — and
+        year, most often in women, most often after a wrist fracture – and
         the one where early recognition changes the most. It used to go by
         two older names, reflex sympathetic dystrophy and causalgia, and it
         still comes in two types: <strong>type I</strong>, after an injury
         with no identifiable nerve damage (the large majority), and{" "}
         <strong>type II</strong>, after a documented nerve injury. Both
         share the same signature, and this page&rsquo;s one job is to make
-        that signature recognizable — because CRPS caught in its first
+        that signature recognizable – because CRPS caught in its first
         months is a very different disease from CRPS found late.
       </P>
 
@@ -174,14 +174,14 @@ export default function Crps() {
         <strong>pain out of proportion</strong>: a healed fracture or
         routine surgery whose pain does not fade on schedule but deepens,
         spreads beyond the injury, turns burning or squeezing, and makes
-        light touch — a sleeve, a bedsheet — genuinely painful. Second,{" "}
+        light touch – a sleeve, a bedsheet – genuinely painful. Second,{" "}
         <strong>a limb that visibly changes</strong>: color and temperature
         that differ from the other side, swelling, sweating that is simply
         wrong, and over time changes in skin, hair, nails, and movement.
         That visibility matters. If a limb weeks after injury is hurting
         far more than it should <em>and</em> looks different from its
         partner, say the letters C-R-P-S to your clinician out loud. The
-        diagnosis is clinical — the Budapest criteria above — and asking
+        diagnosis is clinical – the Budapest criteria above – and asking
         the question early is the single highest-value move available.
       </P>
 
@@ -192,25 +192,25 @@ export default function Crps() {
         should stand down after healing keeps running, driven partly by
         nerve endings themselves releasing inflammatory signals into the
         limb. The <strong>small-nerve regulation</strong> of blood vessels
-        and sweat glands goes haywire — hence the color, temperature, and
+        and sweat glands goes haywire – hence the color, temperature, and
         sweating changes. And upstream, the <strong>brain
         reorganizes</strong>: imaging studies show the affected
         limb&rsquo;s territory in the brain&rsquo;s sensory map shrinking
         and blurring, which tracks with the strange feelings patients
-        report — a hand that feels foreign, swollen beyond its true size,
+        report – a hand that feels foreign, swollen beyond its true size,
         hard to locate with eyes closed. None of this is psychological in
         origin, and none of it is the patient&rsquo;s doing. It is{" "}
         <Link href="/understanding-pain/how-pain-works" className={link}>
           the nervous system&rsquo;s plasticity
         </Link>{" "}
-        turned against a limb — which is exactly why treatment aims to
+        turned against a limb – which is exactly why treatment aims to
         turn that same plasticity back.
       </P>
 
       <H2 id="window">Why the first months matter</H2>
       <P>
         CRPS feeds on protection. Guarding the limb is the natural
-        response to pain this severe — and it is the disease&rsquo;s best
+        response to pain this severe – and it is the disease&rsquo;s best
         friend: disuse worsens the swelling and bone loss, and a limb that
         stops moving fades further from the brain&rsquo;s map, which
         deepens the pain, which invites more guarding. Breaking that
@@ -219,7 +219,7 @@ export default function Crps() {
         many cases improve substantially within the first year, while late
         diagnoses fight the entrenched version. The message patients most
         need to hear, and most doubt, is this one: in CRPS,{" "}
-        <strong>hurt does not equal harm — guarding is the riskier
+        <strong>hurt does not equal harm – guarding is the riskier
         path</strong>.
       </P>
 
@@ -230,41 +230,41 @@ export default function Crps() {
         in graded steps</strong>, run by therapists who know this
         condition. It often begins below the threshold of movement
         entirely: desensitization to touch, then{" "}
-        <strong>graded motor imagery</strong> — first recognizing left
-        from right hands in photos, then imagining movement — and then{" "}
+        <strong>graded motor imagery</strong> – first recognizing left
+        from right hands in photos, then imagining movement – and then{" "}
         <strong>mirror therapy</strong>, the elegant trick in the figure:
         the brain watches two healthy hands move, and the shrunken map
         begins to redraw. Only then does progressive loading of the real
         limb follow. Everything else supports that arc. Medications are
-        used case by case —{" "}
+        used case by case –{" "}
         <Link href="/treatments/medications-for-pain" className={link}>
           nerve-pain agents
         </Link>
         , short early anti-inflammatory strategies, bone-targeted drugs
-        with promising trial results — with honesty that no single pill
+        with promising trial results – with honesty that no single pill
         has proven itself the answer. Sympathetic nerve blocks can help
         selected patients, with mixed trial evidence. And for CRPS that
         resists all of it, neuromodulation has real receipts:{" "}
         <strong>spinal cord stimulation</strong> proved itself in CRPS in
         a randomized trial back in 2000, and{" "}
-        <strong>dorsal root ganglion stimulation</strong> — pinpoint
-        stimulation of the nerve cluster serving the painful territory —
+        <strong>dorsal root ganglion stimulation</strong> – pinpoint
+        stimulation of the nerve cluster serving the painful territory –
         beat conventional stimulation head-to-head in the ACCURATE trial,
         making CRPS the condition where{" "}
         <Link href="/future-of-pain-medicine/neuromodulation" className={link}>
           next-generation neuromodulation
         </Link>{" "}
         earned its reputation. Psychological support belongs in the plan
-        too — not because CRPS is psychological, but because pain this
-        severe deserves every ally, and fear of movement is a treatment
+        too. CRPS is not a psychological condition, but pain this severe
+        deserves every ally, and fear of movement is a treatment
         target in its own right.
       </P>
 
       <H2 id="whats-coming">What&rsquo;s coming</H2>
       <P>
-        CRPS research now runs along the neuroimmune frontier — the
+        CRPS research now runs along the neuroimmune frontier – the
         crosstalk between nerves and immune cells that keeps the limb
-        inflamed — alongside refinements in brain-retraining rehabilitation
+        inflamed – alongside refinements in brain-retraining rehabilitation
         and stimulation. The{" "}
         <Link href="/future-of-pain-medicine/mind-and-brain" className={link}>
           mind-and-brain frontier
@@ -283,8 +283,8 @@ export default function Crps() {
         <Link href="/what-is-pain-medicine" className={link}>
           pain medicine
         </Link>{" "}
-        early — for diagnosis by the Budapest criteria, coordinated
-        rehabilitation, and timely escalation if first-line care stalls —
+        early – for diagnosis by the Budapest criteria, coordinated
+        rehabilitation, and timely escalation if first-line care stalls –
         rather than after months of watch-and-wait.{" "}
         <Link href="/find-help" className={link}>
           Finding pain care near you

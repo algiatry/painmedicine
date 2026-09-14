@@ -6,13 +6,13 @@ const link =
   "text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600";
 
 /**
- * Figure 1 — the evidence map: certainty of evidence (x) against typical
+ * Figure 1 – the evidence map: certainty of evidence (x) against typical
  * average benefit (y), one dot per treatment family. Schematic synthesis of
- * the reviews cited across the site — positions approximate by design.
+ * the reviews cited across the site – positions approximate by design.
  */
 function EvidenceMapFigure() {
   return (
-    <Figure caption="The evidence map, drawn honestly: how certain the evidence is (left to right) against the typical average benefit in trials (bottom to top). Positions are a schematic synthesis of the reviews cited on this page and across this site — approximate by design, and averages hide wide individual variation. Teal = low-risk active care; slate = drugs and procedures; the red ring marks a high-risk option whose long-term evidence came up short.">
+    <Figure caption="The evidence map, drawn honestly: how certain the evidence is (left to right) against the typical average benefit in trials (bottom to top). Positions are a schematic synthesis of the reviews cited on this page and across this site – approximate by design, and averages hide wide individual variation. Teal = low-risk active care; slate = drugs and procedures; the red ring marks a high-risk option whose long-term evidence came up short.">
       <svg
         role="img"
         aria-labelledby="map2-title map2-desc"
@@ -53,31 +53,31 @@ function EvidenceMapFigure() {
         {/* slate: drugs & procedures */}
         <circle cx="390" cy="100" r="10" fill={FIG.muted} />
         <text x="390" y="78" textAnchor="middle" fontSize="12" fontWeight="700" fill={FIG.text}>
-          Stimulators — in selected patients
+          Stimulators – in selected patients
         </text>
         <circle cx="350" cy="185" r="10" fill={FIG.muted} />
         <text x="335" y="190" textAnchor="end" fontSize="12" fontWeight="700" fill={FIG.text}>
-          RFA — after confirming blocks
+          RFA – after confirming blocks
         </text>
         <circle cx="525" cy="150" r="10" fill={FIG.muted} />
         <text x="525" y="128" textAnchor="middle" fontSize="12" fontWeight="700" fill={FIG.text}>
-          Nerve-pain drugs — for nerve pain
+          Nerve-pain drugs – for nerve pain
         </text>
         <circle cx="612" cy="315" r="10" fill={FIG.muted} />
         <text x="597" y="320" textAnchor="end" fontSize="12" fontWeight="700" fill={FIG.text}>
-          Short-term relievers — real, brief
+          Short-term relievers – real, brief
         </text>
 
         {/* caution: long-term opioids */}
         <circle cx="430" cy="322" r="10" fill={FIG.white} stroke={FIG.caution} strokeWidth="3.5" />
         <text x="430" y="348" textAnchor="middle" fontSize="12" fontWeight="700" fill={FIG.cautionText}>
-          Long-term opioids — no advantage in SPACE
+          Long-term opioids – no advantage in SPACE
         </text>
 
         {/* low certainty */}
         <circle cx="150" cy="330" r="10" fill={FIG.soft} stroke={FIG.faint} strokeWidth="2" />
         <text x="150" y="308" textAnchor="middle" fontSize="12" fontWeight="700" fill={FIG.muted}>
-          Most supplements — unproven
+          Most supplements – unproven
         </text>
       </svg>
     </Figure>
@@ -85,7 +85,7 @@ function EvidenceMapFigure() {
 }
 
 /**
- * Figure 2 — the stacking strategy: serial single fixes each judged modest
+ * Figure 2 – the stacking strategy: serial single fixes each judged modest
  * and abandoned, versus matched modest wins stacked into a trajectory.
  */
 function StackingFigure() {
@@ -97,7 +97,7 @@ function StackingFigure() {
     { label: "pacing & skills", fill: FIG.nerveBright },
   ];
   return (
-    <Figure caption="The strategy the evidence actually supports. Left: treatments tried one at a time, each judged 'only modest' and abandoned. Right: the same modest effects, matched to mechanism and kept, stacking — because benefits from different mechanisms add, and their side effects mostly don't.">
+    <Figure caption="The strategy the evidence actually supports. Left: treatments tried one at a time, each judged 'only modest' and abandoned. Right: the same modest effects, matched to mechanism and kept, stacking – because benefits from different mechanisms add, and their side effects mostly don't.">
       <svg
         role="img"
         aria-labelledby="stk-title stk-desc"
@@ -107,7 +107,7 @@ function StackingFigure() {
         <title id="stk-title">Serial single fixes versus stacked modest wins</title>
         <desc id="stk-desc">
           Two panels. Left: five short bars in a row, each with a small cross
-          above it — treatments tried alone and abandoned. Right: the same
+          above it – treatments tried alone and abandoned. Right: the same
           five effects stacked into one tall column labeled a changed
           trajectory.
         </desc>
@@ -132,7 +132,7 @@ function StackingFigure() {
         })}
         <line x1="52" y1="250" x2="316" y2="250" stroke={FIG.faint} strokeWidth="1.5" />
         <text x="180" y="274" textAnchor="middle" fontSize="11.5" fill={FIG.textMid}>
-          one at a time — each &ldquo;only modest,&rdquo; each abandoned
+          one at a time – each &ldquo;only modest,&rdquo; each abandoned
         </text>
 
         {/* right: the stack */}
@@ -170,20 +170,20 @@ export default function ComparingYourOptions() {
     <div>
       <P>
         Every page in this hub ends at the same question, so this page
-        faces it directly: <em>of all of it — the drugs, the needles, the
-        devices, the therapies — what actually works?</em> The honest
+        faces it directly: <em>of all of it – the drugs, the needles, the
+        devices, the therapies – what actually works?</em> The honest
         answer is better than the marketing answer, but it requires a
         reframe. Read the trial literature whole and its clearest finding
         is that <strong>no treatment wins across the board</strong>:
         nearly everything helps modestly on average, and the real
-        differences between options lie elsewhere — in how{" "}
+        differences between options lie elsewhere – in how{" "}
         <em>certain</em> the evidence is, how <em>long</em> benefits
         last, how <em>safe</em> the option is, and which{" "}
         <Link href="/understanding-pain/types-of-pain" className={link}>
           pain mechanism
         </Link>{" "}
         it fits. This page maps those differences the way the field sees
-        them — and teaches the reading skills to weigh any option, or any
+        them – and teaches the reading skills to weigh any option, or any
         claim, yourself.
       </P>
 
@@ -195,7 +195,7 @@ export default function ComparingYourOptions() {
         <Link href="/treatments/physical-and-behavioral-therapies" className={link}>
           exercise, active rehabilitation, and the behavioral therapies
         </Link>{" "}
-        — benefits that are modest on average but proven across the most
+        – benefits that are modest on average but proven across the most
         trials, durable, and essentially risk-free, which is why
         guidelines start there. The{" "}
         <strong>selection-dependent heights</strong> in the upper middle
@@ -207,7 +207,7 @@ export default function ComparingYourOptions() {
         <Link href="/treatments/medications-for-pain" className={link}>
           nerve-pain drugs
         </Link>
-        : larger effects, but only in the right patient — a stimulator
+        : larger effects, but only in the right patient – a stimulator
         transforms a matched candidate and does nothing for anyone else.
         Everything about using this map well follows from one habit:
         never ask &ldquo;does it work?&rdquo; without adding{" "}
@@ -220,13 +220,13 @@ export default function ComparingYourOptions() {
         <strong>One: averages hide responders.</strong> A modest mean
         effect usually blends people who improved substantially with
         people who didn&rsquo;t improve at all. The average is not your
-        forecast — it is a reason to run fair trials and find your
+        forecast – it is a reason to run fair trials and find your
         responders&rsquo; list. <strong>Two: certainty and size are
         different axes.</strong> Exercise is certain and modest; plenty
         of heavily marketed options are uncertain and loud. When forced
-        to choose, the field chooses certainty — you can build on what
+        to choose, the field chooses certainty – you can build on what
         you can trust. <strong>Three: mechanism fit beats potency</strong>
-        — the lesson of the{" "}
+        – the lesson of the{" "}
         <Link href="/treatments/medications-for-pain" className={link}>
           medications map
         </Link>
@@ -272,7 +272,7 @@ export default function ComparingYourOptions() {
         opioid or non-opioid medication strategies and followed them for
         a year: the opioid arm ended <strong>no better on
         function, slightly worse on pain</strong>, with more side
-        effects. That is not a verdict on every use of these medicines —{" "}
+        effects. That is not a verdict on every use of these medicines –{" "}
         <Link href="/conditions/cancer-pain" className={link}>
           cancer pain
         </Link>{" "}
@@ -281,7 +281,7 @@ export default function ComparingYourOptions() {
         It is a verdict on the old assumption that the strongest
         painkiller must be the strongest treatment for chronic pain. For
         anyone whose use has come to feel like its own problem, the
-        SAMHSA helpline — 1-800-662-4357 — is free, confidential, and
+        SAMHSA helpline – 1-800-662-4357 – is free, confidential, and
         always open.
       </P>
 
@@ -289,13 +289,13 @@ export default function ComparingYourOptions() {
       <P>
         Complementary options divide cleanly on the certainty axis.{" "}
         <strong>Acupuncture</strong> has been examined about as
-        rigorously as a hands-on therapy can be — an individual-patient-
-        data meta-analysis of dozens of trials — and shows real benefits
+        rigorously as a hands-on therapy can be – an individual-patient-
+        data meta-analysis of dozens of trials – and shows real benefits
         beyond sham for several chronic pain conditions: small on
         average, persistent, low-risk. As an adjunct for someone drawn
         to it, that is a defensible bet. <strong>Supplements</strong> are
         mostly the opposite corner: unregulated products, thin trials,
-        and genuine interaction potential — worth naming to your
+        and genuine interaction potential – worth naming to your
         clinician and pharmacist rather than filing under harmless. The
         four claim-reading questions at the end of this page apply with
         extra force anywhere a product is sold outside medicine&rsquo;s
@@ -307,15 +307,15 @@ export default function ComparingYourOptions() {
         The map narrows your options; personal trials decide them. The
         method is simple and rarely followed: change{" "}
         <strong>one thing at a time</strong>; define success as a{" "}
-        <strong>functional target</strong> — the walk, the workday, the
-        night&rsquo;s sleep — not only a{" "}
+        <strong>functional target</strong> – the walk, the workday, the
+        night&rsquo;s sleep – not only a{" "}
         <Link href="/understanding-pain/measuring-pain" className={link}>
           pain score
         </Link>
         ; agree on a <strong>time window</strong> with your clinician;
         keep a simple diary; and decide <strong>in advance</strong> what
         result means continue versus stop. Done this way, even a
-        &ldquo;failed&rdquo; trial is a win — it retires an option with
+        &ldquo;failed&rdquo; trial is a win – it retires an option with
         confidence and clears the stage for the next.
       </P>
 
@@ -328,7 +328,7 @@ export default function ComparingYourOptions() {
         marketing: one remedy claimed to work for every kind of pain,
         testimonials doing the work of trials, mechanisms too secret to
         explain, and the language of certainty where medicine speaks in
-        probabilities. The green flags are just as consistent — and they
+        probabilities. The green flags are just as consistent – and they
         are this site&rsquo;s own standard: evidence named, limits
         volunteered, and a clear statement of who an option is for.
         Building your particular stack from this map is exactly the

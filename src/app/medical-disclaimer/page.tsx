@@ -39,7 +39,7 @@ export default function MedicalDisclaimerPage() {
           </li>
           <li>
             Descriptions of treatments, procedures, and research are
-            educational summaries — they are not recommendations for any
+            educational summaries – they are not recommendations for any
             individual, and they may not reflect the most recent findings at
             the moment you read them.
           </li>

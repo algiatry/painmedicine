@@ -13,7 +13,7 @@ const FEEDERS = [
 
 function PathwayFigure() {
   return (
-    <Figure caption="Many doors, one standard: six specialties feed the same 12-month accredited fellowship and one shared board exam — about nine years of training after college.">
+    <Figure caption="Many doors, one standard: six specialties feed the same 12-month accredited fellowship and one shared board exam – about nine years of training after college.">
       <svg
         role="img"
         aria-labelledby="train-title train-desc"
@@ -116,7 +116,7 @@ export default function HowPainPhysiciansTrain() {
 
       <P>
         Behind the title &ldquo;pain specialist&rdquo; sits one of
-        medicine&rsquo;s more distinctive training pathways — a specialty
+        medicine&rsquo;s more distinctive training pathways – a specialty
         physicians enter not through one door but through six, converging on a
         single fellowship and a single certifying standard. Knowing how the
         pathway works turns a vague title into something you can actually
@@ -126,30 +126,30 @@ export default function HowPainPhysiciansTrain() {
       <H2 id="the-road">The nine-year road</H2>
       <P>
         The arithmetic is straightforward. After a standard four-year medical
-        degree comes a <strong>four-year residency</strong> — most commonly
+        degree comes a <strong>four-year residency</strong> – most commonly
         anesthesiology or physical medicine &amp; rehabilitation, with
         neurology and psychiatry close behind. Only then comes the
         specialty&rsquo;s defining step: a{" "}
         <strong>12-month fellowship devoted entirely to pain medicine</strong>,
         accredited by the ACGME, the body that accredits US physician
-        training. Fellows spend that year across the full territory —
+        training. Fellows spend that year across the full territory –
         evaluation, medications, procedures, rehabilitation, and the
-        psychological dimensions of pain — before they can sit for boards.
+        psychological dimensions of pain – before they can sit for boards.
       </P>
 
       <H2 id="one-standard">Many doors, one standard</H2>
       <P>
         Certification has an unusual and rather elegant structure. Since{" "}
         <strong>1993</strong>, the American Board of Anesthesiology has
-        developed and administered the pain medicine exam — but it does not
+        developed and administered the pain medicine exam – but it does not
         keep the credential to itself. Today <strong>six</strong> member boards
-        of the American Board of Medical Specialties — anesthesiology, physical
+        of the American Board of Medical Specialties – anesthesiology, physical
         medicine &amp; rehabilitation, psychiatry &amp; neurology, emergency
-        medicine, family medicine, and radiology — send their physicians
+        medicine, family medicine, and radiology – send their physicians
         through the same exam and certify them to the same passing standard.
         The subspecialty was approved by the ABMS in 1991, accredited by the
         ACGME in 1992, and renamed from &ldquo;pain management&rdquo; to{" "}
-        <strong>pain medicine</strong> in 2002 — a small change of words that
+        <strong>pain medicine</strong> in 2002 – a small change of words that
         captured a real change of ambition, from managing symptoms to a full
         medical discipline.
       </P>
@@ -158,7 +158,7 @@ export default function HowPainPhysiciansTrain() {
         <strong>120 accredited fellowship programs</strong> train about{" "}
         <strong>400 fellows a year</strong> nationwide. When you meet a
         board-certified pain physician, you are meeting someone who chose this
-        field twice — once at residency, and again when they gave it a
+        field twice – once at residency, and again when they gave it a
         dedicated year and an exam.
       </P>
 
@@ -166,18 +166,18 @@ export default function HowPainPhysiciansTrain() {
       <P>
         Board certification in pain medicine is not a plaque earned once. The
         certificates are time-limited and maintained through continuing
-        assessment — ongoing question banks, education requirements, and
-        quality-improvement work — on cycles that the boards are moving from
+        assessment – ongoing question banks, education requirements, and
+        quality-improvement work – on cycles that the boards are moving from
         ten years to five. A currently certified pain physician is, by
         construction, one who has kept proving it.
       </P>
 
-      <H2 id="verify">How to verify — in minutes</H2>
+      <H2 id="verify">How to verify – in minutes</H2>
       <P>
         All of this exists so that you do not have to take anyone&rsquo;s word
-        for it. The ABMS runs a free public lookup —{" "}
+        for it. The ABMS runs a free public lookup –{" "}
         <strong>Is My Doctor Certified?</strong>, reached from
-        abms.org/verify-certification — that confirms a physician&rsquo;s
+        abms.org/verify-certification – that confirms a physician&rsquo;s
         board certification, including the pain medicine subspecialty. Your
         state medical board&rsquo;s website confirms the license and any
         disciplinary history; the NIH&rsquo;s National Library of Medicine
@@ -194,12 +194,12 @@ export default function HowPainPhysiciansTrain() {
       <H2 id="distinctions">Two distinctions worth knowing</H2>
       <P>
         First: pain medicine is not the same as{" "}
-        <strong>hospice and palliative medicine</strong> — a separate,
+        <strong>hospice and palliative medicine</strong> – a separate,
         similarly rigorous subspecialty centered on serious illness and
         end-of-life care. Second: not every &ldquo;board certification&rdquo;
         in pain is the ABMS credential described here. Independent
         certifying organizations exist outside the ABMS system with their own
-        exams and standards. That is a matter of fact rather than judgment —
+        exams and standards. That is a matter of fact rather than judgment –
         but when this site says <em>board-certified pain physician</em>, it
         means the ACGME-fellowship-plus-ABMS pathway, because that is the one
         with a single national standard behind it and a public registry you

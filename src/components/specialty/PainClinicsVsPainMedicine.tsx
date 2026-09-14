@@ -4,9 +4,9 @@ import { FIG } from "@/lib/fig";
 
 const SIGNALS = [
   { title: "Verifiable training", sub: "board-certified physicians you can look up in the ABMS registry" },
-  { title: "A real evaluation", sub: "a long, thorough first assessment — history, exam, records" },
+  { title: "A real evaluation", sub: "a long, thorough first assessment – history, exam, records" },
   { title: "A team, not a counter", sub: "multiple disciplines and non-drug options on the menu" },
-  { title: "Safety habits", sub: "risks discussed, databases checked — routine, not accusatory" },
+  { title: "Safety habits", sub: "risks discussed, databases checked – routine, not accusatory" },
   { title: "Open coordination", sub: "plans shared with your primary care clinician, referrals expected" },
 ];
 
@@ -59,7 +59,7 @@ export default function PainClinicsVsPainMedicine() {
       <P>
         &ldquo;Pain clinic&rdquo; is a phrase doing two very different jobs in
         American healthcare. It describes some of the most rigorous,
-        team-based programs in medicine — and it has also hung over storefronts
+        team-based programs in medicine – and it has also hung over storefronts
         that existed to move prescriptions. The words on the sign carry no
         licensing weight of their own. What separates the two is everything
         behind the sign, and all of it is checkable.
@@ -74,14 +74,14 @@ export default function PainClinicsVsPainMedicine() {
         through six ABMS member boards, and a public registry. None of that is
         conveyed by the phrase &ldquo;pain clinic,&rdquo; which anyone may
         use. So the productive question is never &ldquo;is this a pain
-        clinic?&rdquo; — it is &ldquo;<strong>who practices here, and what
+        clinic?&rdquo; – it is &ldquo;<strong>who practices here, and what
         happens inside?</strong>&rdquo; The five signals above are how that
         question gets answered.
       </P>
 
       <H2 id="training">Signal one: training you can verify</H2>
       <P>
-        The physicians should be board-certified — ideally in pain medicine,
+        The physicians should be board-certified – ideally in pain medicine,
         through the pathway described in{" "}
         <Link
           href="/what-is-pain-medicine/how-pain-physicians-train"
@@ -98,7 +98,7 @@ export default function PainClinicsVsPainMedicine() {
 
       <H2 id="evaluation">Signals two and three: the evaluation, and the menu</H2>
       <P>
-        A credentialed practice begins with a real evaluation — the long,
+        A credentialed practice begins with a real evaluation – the long,
         records-deep first visit described in{" "}
         <Link
           href="/what-is-pain-medicine/your-first-visit"
@@ -106,7 +106,7 @@ export default function PainClinicsVsPainMedicine() {
         >
           your first visit
         </Link>{" "}
-        — because treatment follows mechanism, and mechanism takes work to
+        – because treatment follows mechanism, and mechanism takes work to
         find. And its treatment menu is wide: the IASP&rsquo;s standards for
         pain treatment services expect physicians, mental-health
         professionals, and physical therapists working in concert, the model
@@ -117,8 +117,8 @@ export default function PainClinicsVsPainMedicine() {
         >
           the pain team
         </Link>
-        . A practice offering exactly one thing to every patient — whatever
-        that one thing is — is not practicing pain medicine in the
+        . A practice offering exactly one thing to every patient – whatever
+        that one thing is – is not practicing pain medicine in the
         specialty&rsquo;s sense.
       </P>
 
@@ -142,7 +142,7 @@ export default function PainClinicsVsPainMedicine() {
         Real pain medicine plugs into the rest of your care: referrals are
         normal or required, the treatment plan is shared with your primary
         care clinician, and insurance is the expected way to pay. Isolation is
-        the anti-signal — a practice that wants no records sent, no plan
+        the anti-signal – a practice that wants no records sent, no plan
         shared, and cash only is organized around something other than your
         long-term health. The{" "}
         <Link
@@ -151,13 +151,13 @@ export default function PainClinicsVsPainMedicine() {
         >
           find help
         </Link>{" "}
-        page carries the full checklist — verification steps, questions to
+        page carries the full checklist – verification steps, questions to
         ask, and the red flags in detail.
       </P>
       <P>
         The encouraging bottom line: the specialty built the tools for exactly
         this judgment. Five signals, two free lookups, one thorough first
-        visit — and the sign over the door stops mattering.
+        visit – and the sign over the door stops mattering.
       </P>
     </div>
   );

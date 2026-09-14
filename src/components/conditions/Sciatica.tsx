@@ -7,12 +7,12 @@ const link =
   "text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600";
 
 /**
- * Figure 1 — starts here, felt there: the back view with the sciatic path,
+ * Figure 1 – starts here, felt there: the back view with the sciatic path,
  * the pinch marked at the spine, and the pain radiating down the leg.
  */
 function PathFigure() {
   return (
-    <Figure caption="Sciatica's defining trick: the problem sits at the spine, where a nerve root is pinched and inflamed — but the pain is felt along the nerve's territory, down the buttock and leg, often past the knee.">
+    <Figure caption="Sciatica's defining trick: the problem sits at the spine, where a nerve root is pinched and inflamed – but the pain is felt along the nerve's territory, down the buttock and leg, often past the knee.">
       <svg
         role="img"
         aria-labelledby="path-title path-desc"
@@ -58,7 +58,7 @@ function PathFigure() {
         </g>
         <g fontSize="12.5" fill={FIG.textMid}>
           <text x="330" y="258">electric, shooting pain radiating</text>
-          <text x="330" y="275">down the leg — often past the knee,</text>
+          <text x="330" y="275">down the leg – often past the knee,</text>
           <text x="330" y="292">into the foot</text>
         </g>
         <path d="M322 250 Q220 252 142 246" fill="none" stroke={FIG.line} strokeWidth="1.5" />
@@ -68,7 +68,7 @@ function PathFigure() {
 }
 
 /**
- * Figure 2 — the disappearing disc: probability of spontaneous regression by
+ * Figure 2 – the disappearing disc: probability of spontaneous regression by
  * herniation type (Chiu 2015). Bar = pct of a 400px scale.
  */
 function ResorptionFigure() {
@@ -90,7 +90,7 @@ function ResorptionFigure() {
         <desc id="res-desc">
           Horizontal bar chart. Mild bulges regress in about 13 percent of
           cases, protrusions 41 percent, extrusions 70 percent, and free
-          fragments about 96 percent — the most dramatic-looking herniations
+          fragments about 96 percent – the most dramatic-looking herniations
           are the most likely to resolve on their own.
         </desc>
 
@@ -133,12 +133,12 @@ export default function Sciatica() {
   return (
     <div>
       <P>
-        Sciatica is not a disease — it is a description, and a precise one:
+        Sciatica is not a disease – it is a description, and a precise one:
         pain running along the territory of the sciatic nerve, the largest
         nerve in the body, from the lower back or buttock down the back of
         the leg. People who have had it rarely need the definition. The pain
-        has a character all its own — electric, shooting, sometimes
-        breathtaking — and it obeys a line, tracing the leg like a wire. That
+        has a character all its own – electric, shooting, sometimes
+        breathtaking – and it obeys a line, tracing the leg like a wire. That
         line is the clue to everything else on this page.
       </P>
 
@@ -150,8 +150,8 @@ export default function Sciatica() {
         leg. And that is where sciatica almost always begins: in roughly{" "}
         <strong>nine cases out of ten</strong>, a herniated disc is pressing
         on one of those roots where it leaves the spinal canal. Less often
-        the culprit is spinal stenosis — an age-related narrowing of the
-        nerve&rsquo;s exit passages — or a vertebra that has slipped forward
+        the culprit is spinal stenosis – an age-related narrowing of the
+        nerve&rsquo;s exit passages – or a vertebra that has slipped forward
         on its neighbor. Rarely, the nerve is irritated further along its
         course. The practical point is counterintuitive and important:{" "}
         <strong>the leg is where sciatica is felt, not where it lives</strong>.
@@ -160,20 +160,20 @@ export default function Sciatica() {
 
       <H2 id="pinch-plus-fire">Why it hurts: pinch plus fire</H2>
       <P>
-        For decades sciatica was explained as pure mechanics — a disc
+        For decades sciatica was explained as pure mechanics – a disc
         physically squashing a nerve. The modern picture is richer. Herniated
         disc material does press, but it also <em>leaks</em>: the disc&rsquo;s
         inner core is chemically inflammatory, and when it escapes it bathes
         the nerve root in irritant molecules that make the nerve fire at
         provocations it would normally ignore. This is why imaging finds disc
-        herniations in plenty of people with no pain at all — compression
-        without inflammation can be silent — and why a modest-looking
+        herniations in plenty of people with no pain at all – compression
+        without inflammation can be silent – and why a modest-looking
         herniation can hurt ferociously. It also explains sciatica&rsquo;s
         character: this is{" "}
         <Link href="/understanding-pain/types-of-pain" className={link}>
           neuropathic pain
         </Link>{" "}
-        — pain from an irritated nerve itself — which is why it burns and
+        – pain from an irritated nerve itself – which is why it burns and
         shoots rather than aches, and why it answers to different treatments
         than ordinary back pain.
       </P>
@@ -183,11 +183,11 @@ export default function Sciatica() {
         The diagnosis usually rests on the story and the exam, not the
         scanner. Leg-dominant pain radiating below the knee is the core
         feature; which line it follows tells the examiner which root is
-        involved — pain into the big toe and the top of the foot points to
+        involved – pain into the big toe and the top of the foot points to
         one level, pain along the outer foot and calf to another. Numbness
         and tingling trace the same map, coughing or sneezing can fire the
-        pain, and raising the straightened leg while lying down — the
-        straight-leg-raise test — stretches the inflamed root and reproduces
+        pain, and raising the straightened leg while lying down – the
+        straight-leg-raise test – stretches the inflamed root and reproduces
         it. Imaging is not needed to recognize sciatica; per the same logic
         as{" "}
         <Link href="/conditions/low-back-pain" className={link}>
@@ -203,10 +203,10 @@ export default function Sciatica() {
         Here is the most underappreciated fact in all of sciatica: herniated
         discs are not permanent fixtures. The body treats escaped disc
         material as debris, and immune cells move in to clear it. On
-        follow-up imaging, herniations shrink and often vanish over months —
+        follow-up imaging, herniations shrink and often vanish over months –
         and the pattern is beautifully backwards. In a systematic review of
-        the follow-up studies, free disc fragments — the most dramatic
-        finding a scan can show — resolved in about <strong>96%</strong> of
+        the follow-up studies, free disc fragments – the most dramatic
+        finding a scan can show – resolved in about <strong>96%</strong> of
         cases, and extrusions in about <strong>70%</strong>, while mild
         bulges barely changed. The angrier the herniation looks, the more of
         it there is for the immune system to eat. Clinically this matches the
@@ -221,10 +221,10 @@ export default function Sciatica() {
         Sciatica&rsquo;s warning signs are the same short list that governs
         all back pain, plus two of its own. Seek urgent, same-day care for
         new numbness in the groin or inner thighs, trouble controlling
-        bladder or bowels, or <strong>sciatica in both legs at once</strong> —
+        bladder or bowels, or <strong>sciatica in both legs at once</strong> –
         together these suggest cauda equina syndrome, a surgical emergency.
-        And treat <strong>progressive weakness</strong> — a foot that has
-        started to drag or slap, a leg that buckles — as a prompt-attention
+        And treat <strong>progressive weakness</strong> – a foot that has
+        started to drag or slap, a leg that buckles – as a prompt-attention
         problem even without the others: a nerve losing strength is a nerve
         asking for a decision, not for more patience.
       </P>
@@ -233,12 +233,12 @@ export default function Sciatica() {
       <P>
         The first-line playbook is patience with structure: stay as active as
         the pain reasonably allows, keep walking, and let the biology above
-        do its work — most sciatica is a condition you outlast, not one you
+        do its work – most sciatica is a condition you outlast, not one you
         defeat. The honest medication picture is humbler than most people
         expect. Ordinary anti-inflammatory painkillers help some people but
         have surprisingly thin trial evidence for sciatica specifically, and
-        in a rigorous randomized trial, pregabalin — a mainstay for other
-        nerve pain — worked no better than placebo for sciatica while causing
+        in a rigorous randomized trial, pregabalin – a mainstay for other
+        nerve pain – worked no better than placebo for sciatica while causing
         more dizziness. Clinicians still use{" "}
         <Link href="/treatments/medications-for-pain" className={link}>
           nerve-pain medications
@@ -248,27 +248,27 @@ export default function Sciatica() {
       </P>
       <P>
         When pain is severe or persistent, an epidural steroid injection can
-        deliver anti-inflammatory medication directly to the inflamed root —
+        deliver anti-inflammatory medication directly to the inflamed root –
         trials show modest, mostly short-term relief, which can still matter
         if it carries you through the worst weeks. And then there is surgery,
         where a landmark randomized trial produced one of the most useful
         results in spine medicine: early microdiscectomy relieved leg pain{" "}
         <strong>faster</strong> than continued conservative care, but by one
         year, <strong>both groups had recovered at essentially the same
-        rate</strong>. Surgery is not a different destination — it is an
+        rate</strong>. Surgery is not a different destination – it is an
         express ticket to the same one. That makes it a genuine option for
         disabling pain that will not yield, and clearly indicated for
         progressive weakness or cauda equina syndrome; for everyone else it
         is a preference-sensitive decision about time, risk, and what the
-        pain is costing you now — a decision to make with your surgeon and
+        pain is costing you now – a decision to make with your surgeon and
         physician, not from a page.
       </P>
 
       <H2 id="specialist">When to bring in a specialist</H2>
       <P>
         If leg-dominant pain is still running your days after four to six
-        weeks of first-line care — or sooner if weakness appears or the pain
-        is unmanageable —{" "}
+        weeks of first-line care – or sooner if weakness appears or the pain
+        is unmanageable –{" "}
         <Link href="/what-is-pain-medicine" className={link}>
           pain medicine
         </Link>{" "}

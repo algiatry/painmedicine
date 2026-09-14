@@ -1,10 +1,10 @@
 import type { Article } from "./understanding";
 
 /**
- * "What Is Pain Medicine?" specialty explainers — spoke pages under the
+ * "What Is Pain Medicine?" specialty explainers – spoke pages under the
  * /what-is-pain-medicine hub.
  *
- * These are NAVIGATIONAL/FACTUAL pages about the specialty itself — how
+ * These are NAVIGATIONAL/FACTUAL pages about the specialty itself – how
  * physicians train, how team-based care is organized, what a first visit
  * looks like, and how to recognize a credentialed practice. Like /find-help,
  * they contain no clinical guidance (no treatment recommendations, no
@@ -24,11 +24,11 @@ export const SPECIALTY_ARTICLES: Article[] = [
     slug: "how-pain-physicians-train",
     title: "How Pain Physicians Train",
     description:
-      "The nine-year road to pain medicine: medical school, a four-year residency through one of six specialties, a 12-month accredited fellowship, and a single shared board exam. How the credential works — and how to verify it.",
+      "The nine-year road to pain medicine: medical school, a four-year residency through one of six specialties, a 12-month accredited fellowship, and a single shared board exam. How the credential works – and how to verify it.",
     status: "sourced",
     lastUpdated: LAST_UPDATED,
     answer:
-      "A pain physician trains for about nine years after college: four years of medical school, a four-year residency — most often anesthesiology, physical medicine & rehabilitation, neurology, or psychiatry — then a 12-month ACGME-accredited pain medicine fellowship. Board certification runs through a single shared exam administered by the American Board of Anesthesiology since 1993, with six ABMS boards certifying to the same standard.",
+      "A pain physician trains for about nine years after college: four years of medical school, a four-year residency – most often anesthesiology, physical medicine & rehabilitation, neurology, or psychiatry – then a 12-month ACGME-accredited pain medicine fellowship. Board certification runs through a single shared exam administered by the American Board of Anesthesiology since 1993, with six ABMS boards certifying to the same standard.",
     faqs: [
       {
         question: "How many years does a pain specialist train?",
@@ -38,12 +38,12 @@ export const SPECIALTY_ARTICLES: Article[] = [
       {
         question: "How do I check whether a doctor is board-certified in pain medicine?",
         answer:
-          "Use the ABMS's free 'Is My Doctor Certified?' lookup, reached from abms.org/verify-certification, to confirm the pain medicine subspecialty certificate — and your state medical board's site to confirm the license and check disciplinary history. Both take minutes and are exactly what the credential system is built for.",
+          "Use the ABMS's free 'Is My Doctor Certified?' lookup, reached from abms.org/verify-certification, to confirm the pain medicine subspecialty certificate – and your state medical board's site to confirm the license and check disciplinary history. Both take minutes and are exactly what the credential system is built for.",
       },
       {
         question: "Is 'board-certified in pain medicine' a single credential?",
         answer:
-          "The ABMS-recognized version is one standard: a shared exam developed and administered by the American Board of Anesthesiology, with six ABMS member boards — anesthesiology, PM&R, psychiatry & neurology, emergency medicine, family medicine, and radiology — certifying their own physicians to the same passing bar. Other pain 'boards' exist outside the ABMS system; some institutions recognize them, some do not.",
+          "The ABMS-recognized version is one standard: a shared exam developed and administered by the American Board of Anesthesiology, with six ABMS member boards – anesthesiology, PM&R, psychiatry & neurology, emergency medicine, family medicine, and radiology – certifying their own physicians to the same passing bar. Other pain 'boards' exist outside the ABMS system; some institutions recognize them, some do not.",
       },
     ],
     references: [
@@ -60,7 +60,7 @@ export const SPECIALTY_ARTICLES: Article[] = [
       },
       {
         source: "American Board of Anesthesiology",
-        title: "Pain Medicine Exam — certification since 1993",
+        title: "Pain Medicine Exam – certification since 1993",
         url: "https://www.theaba.org/subspecialty-exam-type/pain-medicine-exam/",
       },
       {
@@ -71,17 +71,17 @@ export const SPECIALTY_ARTICLES: Article[] = [
       {
         source: "J Anesth Hist / PubMed",
         title:
-          "Owens & Abram — The Genesis of Pain Medicine as a Subspecialty in Anesthesiology",
+          "Owens & Abram – The Genesis of Pain Medicine as a Subspecialty in Anesthesiology",
         url: "https://pubmed.ncbi.nlm.nih.gov/32473761/",
       },
       {
         source: "ACGME",
-        title: "Data Resource Book, Academic Year 2023–2024 — program and fellow counts",
+        title: "Data Resource Book, Academic Year 2023–2024 – program and fellow counts",
         url: "https://www.acgme.org/globalassets/pfassets/publicationsbooks/dataresourcebook2023-2024.pdf",
       },
       {
         source: "ABMS",
-        title: "Verify Certification — Is My Doctor Certified?",
+        title: "Verify Certification – Is My Doctor Certified?",
         url: "https://www.abms.org/verify-certification/",
       },
       {
@@ -119,61 +119,61 @@ export const SPECIALTY_ARTICLES: Article[] = [
     status: "sourced",
     lastUpdated: LAST_UPDATED,
     answer:
-      "Modern pain care is built around a team — physician, nurse, physical therapist, pain psychologist, and often a pharmacist and social worker — because chronic pain involves biology, psychology, and life circumstances together. Randomized-trial evidence shows this coordinated, biopsychosocial approach improves pain and function more than usual care for chronic low back pain.",
+      "Modern pain care is built around a team – physician, nurse, physical therapist, pain psychologist, and often a pharmacist and social worker – because chronic pain involves biology, psychology, and life circumstances together. Randomized-trial evidence shows this coordinated, biopsychosocial approach improves pain and function more than usual care for chronic low back pain.",
     faqs: [
       {
         question: "Why does my pain clinic want me to see a psychologist?",
         answer:
-          "Because pain is defined as a sensory and emotional experience, and pain-processing and emotion-processing brain circuits overlap. A pain psychologist works on that circuitry — sleep, stress, fear of movement, pacing — with evidence-based tools. It is a standard part of good pain care, not a suggestion that your pain is imaginary.",
+          "Because pain is defined as a sensory and emotional experience, and pain-processing and emotion-processing brain circuits overlap. A pain psychologist works on that circuitry – sleep, stress, fear of movement, pacing – with evidence-based tools. It is a standard part of good pain care, not a suggestion that your pain is imaginary.",
       },
       {
         question: "Does team-based pain care actually work better?",
         answer:
-          "For chronic low back pain, a large systematic review found moderate-quality evidence that multidisciplinary biopsychosocial rehabilitation improves pain and day-to-day function more than usual care, and roughly doubles the odds of being at work compared with physical treatment alone. The effects are meaningful but modest — a team is an advantage, not a magic wand.",
+          "For chronic low back pain, a large systematic review found moderate-quality evidence that multidisciplinary biopsychosocial rehabilitation improves pain and day-to-day function more than usual care, and roughly doubles the odds of being at work compared with physical treatment alone. The effects are meaningful but modest – a team is an advantage, not a magic wand.",
       },
       {
         question: "What is the difference between 'multidisciplinary' and 'interdisciplinary' care?",
         answer:
-          "Same professions, different wiring. Multidisciplinary means several disciplines treat you, possibly separately. Interdisciplinary — the aspirational standard — means they meet regularly, share one biopsychosocial assessment and one set of goals, and include you in the decisions. When you're evaluating a program, it is fair to ask which one it really is.",
+          "Same professions, different wiring. Multidisciplinary means several disciplines treat you, possibly separately. Interdisciplinary – the aspirational standard – means they meet regularly, share one biopsychosocial assessment and one set of goals, and include you in the decisions. When you're evaluating a program, it is fair to ask which one it really is.",
       },
     ],
     references: [
       {
         source: "Science / PubMed",
-        title: "Engel — The need for a new medical model: a challenge for biomedicine (1977)",
+        title: "Engel – The need for a new medical model: a challenge for biomedicine (1977)",
         url: "https://pubmed.ncbi.nlm.nih.gov/847460/",
       },
       {
         source: "Psychol Bull / PubMed",
         title:
-          "Gatchel et al. — The biopsychosocial approach to chronic pain: scientific advances and future directions",
+          "Gatchel et al. – The biopsychosocial approach to chronic pain: scientific advances and future directions",
         url: "https://pubmed.ncbi.nlm.nih.gov/17592957/",
       },
       {
         source: "BMJ / PMC",
         title:
-          "Kamper et al. — Multidisciplinary biopsychosocial rehabilitation for chronic low back pain: Cochrane systematic review and meta-analysis",
+          "Kamper et al. – Multidisciplinary biopsychosocial rehabilitation for chronic low back pain: Cochrane systematic review and meta-analysis",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4353283/",
       },
       {
         source: "CDC / PMC",
         title:
-          "Dowell et al. — CDC Clinical Practice Guideline for Prescribing Opioids for Pain, 2022",
+          "Dowell et al. – CDC Clinical Practice Guideline for Prescribing Opioids for Pain, 2022",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9639433/",
       },
       {
         source: "IASP",
-        title: "IASP Terminology — multidisciplinary and interdisciplinary treatment",
+        title: "IASP Terminology – multidisciplinary and interdisciplinary treatment",
         url: "https://www.iasp-pain.org/resources/terminology/",
       },
       {
         source: "IASP",
-        title: "Pain Treatment Services — IASP guidelines",
+        title: "Pain Treatment Services – IASP guidelines",
         url: "https://www.iasp-pain.org/resources/guidelines/pain-treatment-services/",
       },
       {
         source: "Cleveland Clinic",
-        title: "Pain Management — who is on a pain management team",
+        title: "Pain Management – who is on a pain management team",
         url: "https://my.clevelandclinic.org/health/treatments/21514-pain-management",
       },
     ],
@@ -205,12 +205,12 @@ export const SPECIALTY_ARTICLES: Article[] = [
     status: "sourced",
     lastUpdated: LAST_UPDATED,
     answer:
-      "A first pain-medicine evaluation is longer and more thorough than a routine appointment — often one to three hours. Expect a detailed history, a physical and neurological exam, review of your records and imaging, and questions about sleep, mood, and daily function. It ends with a treatment plan built with you and shared with your primary care clinician.",
+      "A first pain-medicine evaluation is longer and more thorough than a routine appointment – often one to three hours. Expect a detailed history, a physical and neurological exam, review of your records and imaging, and questions about sleep, mood, and daily function. It ends with a treatment plan built with you and shared with your primary care clinician.",
     faqs: [
       {
         question: "How long will my first pain appointment take?",
         answer:
-          "Plan for substantially longer than a routine visit — often one to three hours. Major centers tell patients to expect two to three, especially if testing is involved. The length is the point: a thorough first evaluation is how a pain specialist works out which mechanisms are driving your pain.",
+          "Plan for substantially longer than a routine visit – often one to three hours. Major centers tell patients to expect two to three, especially if testing is involved. The length is the point: a thorough first evaluation is how a pain specialist works out which mechanisms are driving your pain.",
       },
       {
         question: "What should I bring to a pain clinic appointment?",
@@ -220,23 +220,23 @@ export const SPECIALTY_ARTICLES: Article[] = [
       {
         question: "Why did they check a prescription database and ask about a urine test?",
         answer:
-          "Those are safety practices recommended by the CDC's 2022 prescribing guideline — reviewing state prescription-monitoring data, discussing risks, offering naloxone, and sometimes toxicology testing. They are signs of a careful, guideline-following clinic and are applied as routine safety habits, not as accusations.",
+          "Those are safety practices recommended by the CDC's 2022 prescribing guideline – reviewing state prescription-monitoring data, discussing risks, offering naloxone, and sometimes toxicology testing. They are signs of a careful, guideline-following clinic and are applied as routine safety habits, not as accusations.",
       },
     ],
     references: [
       {
         source: "Cleveland Clinic",
-        title: "Pain Management — what to expect at your appointment",
+        title: "Pain Management – what to expect at your appointment",
         url: "https://my.clevelandclinic.org/departments/anesthesiology/depts/pain-management/patient-education/what-to-expect",
       },
       {
         source: "Cleveland Clinic",
-        title: "Pain Management — how pain is evaluated",
+        title: "Pain Management – how pain is evaluated",
         url: "https://my.clevelandclinic.org/health/treatments/21514-pain-management",
       },
       {
         source: "Stanford Medicine",
-        title: "Pain Management Center — planning your visit",
+        title: "Pain Management Center – planning your visit",
         url: "https://med.stanford.edu/pain/patients/planning-your-visit.html",
       },
       {
@@ -246,13 +246,13 @@ export const SPECIALTY_ARTICLES: Article[] = [
       },
       {
         source: "MD Anderson",
-        title: "The Brief Pain Inventory — symptom assessment tool",
+        title: "The Brief Pain Inventory – symptom assessment tool",
         url: "https://www.mdanderson.org/research/departments-labs-institutes/departments-divisions/symptom-research/symptom-assessment-tools/brief-pain-inventory.html",
       },
       {
         source: "CDC / PMC",
         title:
-          "Dowell et al. — CDC Clinical Practice Guideline for Prescribing Opioids for Pain, 2022",
+          "Dowell et al. – CDC Clinical Practice Guideline for Prescribing Opioids for Pain, 2022",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9639433/",
       },
     ],
@@ -270,7 +270,7 @@ export const SPECIALTY_ARTICLES: Article[] = [
       {
         title: "Find help",
         href: "/find-help",
-        blurb: "Questions worth asking — and how to verify credentials first.",
+        blurb: "Questions worth asking – and how to verify credentials first.",
       },
     ],
   },
@@ -280,11 +280,11 @@ export const SPECIALTY_ARTICLES: Article[] = [
     slug: "pain-clinics-vs-pain-medicine",
     title: "Pain Clinics vs. Pain Medicine",
     description:
-      "'Pain clinic' is a sign anyone can hang; pain medicine is a credentialed specialty. The five signals of the real thing — training, evaluation, team, safety habits, and coordination — and how to check each one.",
+      "'Pain clinic' is a sign anyone can hang; pain medicine is a credentialed specialty. The five signals of the real thing – training, evaluation, team, safety habits, and coordination – and how to check each one.",
     status: "sourced",
     lastUpdated: LAST_UPDATED,
     answer:
-      "'Pain clinic' is not a protected term — anyone can use it. Pain medicine is a board-certified specialty with verifiable credentials. The real thing shows five signals: fellowship-trained physicians you can verify through the ABMS, a thorough first evaluation, team-based multimodal care, guideline-following safety habits, and open coordination with your primary care clinician.",
+      "'Pain clinic' is not a protected term – anyone can use it. Pain medicine is a board-certified specialty with verifiable credentials. The real thing shows five signals: fellowship-trained physicians you can verify through the ABMS, a thorough first evaluation, team-based multimodal care, guideline-following safety habits, and open coordination with your primary care clinician.",
     faqs: [
       {
         question: "Is every 'pain clinic' run by a pain specialist?",
@@ -299,13 +299,13 @@ export const SPECIALTY_ARTICLES: Article[] = [
       {
         question: "What does careful prescribing look like at a good practice?",
         answer:
-          "Openness plus safety habits: risks and benefits discussed plainly, the state prescription-monitoring database checked, naloxone offered where appropriate, sometimes toxicology testing — the practices in the CDC's 2022 guideline, applied routinely to everyone. A practice that pairs careful prescribing with non-drug options and coordinates with your primary care clinician is showing you its quality.",
+          "Openness plus safety habits: risks and benefits discussed plainly, the state prescription-monitoring database checked, naloxone offered where appropriate, sometimes toxicology testing – the practices in the CDC's 2022 guideline, applied routinely to everyone. A practice that pairs careful prescribing with non-drug options and coordinates with your primary care clinician is showing you its quality.",
       },
     ],
     references: [
       {
         source: "ABMS",
-        title: "Verify Certification — Is My Doctor Certified?",
+        title: "Verify Certification – Is My Doctor Certified?",
         url: "https://www.abms.org/verify-certification/",
       },
       {
@@ -316,12 +316,12 @@ export const SPECIALTY_ARTICLES: Article[] = [
       {
         source: "CDC / PMC",
         title:
-          "Dowell et al. — CDC Clinical Practice Guideline for Prescribing Opioids for Pain, 2022",
+          "Dowell et al. – CDC Clinical Practice Guideline for Prescribing Opioids for Pain, 2022",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9639433/",
       },
       {
         source: "IASP",
-        title: "Pain Treatment Services — IASP guidelines",
+        title: "Pain Treatment Services – IASP guidelines",
         url: "https://www.iasp-pain.org/resources/guidelines/pain-treatment-services/",
       },
       {
@@ -334,7 +334,7 @@ export const SPECIALTY_ARTICLES: Article[] = [
       {
         title: "Find help",
         href: "/find-help",
-        blurb: "The full verification walkthrough — and the red flags in detail.",
+        blurb: "The full verification walkthrough – and the red flags in detail.",
       },
       {
         title: "How pain physicians train",

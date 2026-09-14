@@ -8,7 +8,7 @@ const link =
   "text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600";
 
 /**
- * Figure 1 — where TMD hurts: the joint in front of the ear, and the two
+ * Figure 1 – where TMD hurts: the joint in front of the ear, and the two
  * chewing muscles that account for most of the pain. HeadProfile's jaw
  * and temple anchors, plus a masseter/temporalis overlay via children.
  */
@@ -16,7 +16,7 @@ function JawMapFigure() {
   const ox = 40;
   const oy = 20;
   return (
-    <Figure caption="Three places a 'jaw problem' can live. The joint itself sits just in front of the ear. The masseter (cheek) and temporalis (temple) muscles do the chewing and clenching — and in most people with TMD, the muscles are the main source of pain, not the joint.">
+    <Figure caption="Three places a 'jaw problem' can live. The joint itself sits just in front of the ear. The masseter (cheek) and temporalis (temple) muscles do the chewing and clenching – and in most people with TMD, the muscles are the main source of pain, not the joint.">
       <svg
         role="img"
         aria-labelledby="tmj-map-title tmj-map-desc"
@@ -58,9 +58,9 @@ function JawMapFigure() {
           <text x={HEAD_W + 120} y="200">Masseter</text>
         </g>
         <g fontSize="12.5" fill={FIG.muted}>
-          <text x={HEAD_W + 120} y="88">temple muscle — clenching, headache</text>
+          <text x={HEAD_W + 120} y="88">temple muscle – clenching, headache</text>
           <text x={HEAD_W + 120} y="150">condyle, disc, and fossa in front of the ear</text>
-          <text x={HEAD_W + 120} y="218">cheek muscle — chewing, tension</text>
+          <text x={HEAD_W + 120} y="218">cheek muscle – chewing, tension</text>
         </g>
         <g stroke={FIG.line} strokeWidth="1.5" fill="none">
           <path d={`M${HEAD_W + 112} 66 L ${ox + 150} ${oy + 70}`} />
@@ -73,13 +73,13 @@ function JawMapFigure() {
 }
 
 /**
- * Figure 2 — the click is not the problem. Disc displacement with
+ * Figure 2 – the click is not the problem. Disc displacement with
  * reduction (the click) is common and usually painless; pain tracks with
  * muscles, sensitization, sleep and stress far more than with the disc.
  */
 function ClickFigure() {
   return (
-    <Figure caption="A clicking jaw usually means the cushioning disc slips forward and pops back as the mouth opens — 'disc displacement with reduction.' It is common, often lifelong, and by itself usually painless. Pain is a separate question, and it tracks with muscle overload, sleep, and a sensitized pain system more than with the click.">
+    <Figure caption="A clicking jaw usually means the cushioning disc slips forward and pops back as the mouth opens – 'disc displacement with reduction.' It is common, often lifelong, and by itself usually painless. Pain is a separate question, and it tracks with muscle overload, sleep, and a sensitized pain system more than with the click.">
       <svg
         role="img"
         aria-labelledby="click-title click-desc"
@@ -93,7 +93,7 @@ function ClickFigure() {
           joint surrounded by muscle, sleep and stress cues, labeled the pain,
           which has different drivers.
         </desc>
-        {/* left panel — the click */}
+        {/* left panel – the click */}
         <rect x="24" y="24" width="300" height="180" rx="14" fill={FIG.ground} />
         <text x="174" y="52" textAnchor="middle" fontSize="14" fontWeight="700" fill={FIG.ink}>
           The click
@@ -112,7 +112,7 @@ function ClickFigure() {
           common · usually painless
         </text>
 
-        {/* right panel — the pain */}
+        {/* right panel – the pain */}
         <rect x="356" y="24" width="300" height="180" rx="14" fill={FIG.signalGround} stroke={FIG.signalTint} />
         <text x="506" y="52" textAnchor="middle" fontSize="14" fontWeight="700" fill={FIG.ink}>
           The pain

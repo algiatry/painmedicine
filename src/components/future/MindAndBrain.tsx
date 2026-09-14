@@ -46,8 +46,8 @@ function BrainFigure() {
       >
         <title id="mb-title">Retraining the brain that builds pain</title>
         <desc id="mb-desc">
-          A brain at the top with three approaches below — pain reprocessing
-          therapy, virtual reality, and psychedelics research — each connected
+          A brain at the top with three approaches below – pain reprocessing
+          therapy, virtual reality, and psychedelics research – each connected
           upward to it.
         </desc>
 
@@ -105,7 +105,7 @@ export default function MindAndBrain() {
 
       <P>
         The single most important idea in modern pain science is that the brain{" "}
-        <em>builds</em> the experience of pain — it is not a simple readout from
+        <em>builds</em> the experience of pain – it is not a simple readout from
         the body, as{" "}
         <Link
           href="/understanding-pain/how-pain-works"
@@ -115,14 +115,14 @@ export default function MindAndBrain() {
         </Link>{" "}
         explains. That idea has a hopeful corollary: if the brain builds pain,
         the brain can be part of the treatment. This is some of the most
-        promising — and most misunderstood — territory in the field.
+        promising – and most misunderstood – territory in the field.
       </P>
 
       <H2 id="unlearn">Unlearning pain</H2>
       <P>
         <strong>Pain reprocessing therapy</strong> is built on a simple premise:
-        chronic pain can persist as a kind of false alarm — the brain keeps
-        signaling danger after the body is safe — and that alarm can be unlearned.
+        chronic pain can persist as a kind of false alarm – the brain keeps
+        signaling danger after the body is safe – and that alarm can be unlearned.
         In a landmark 2021 randomized trial, about{" "}
         <strong>two-thirds of people with chronic back pain became pain-free or
         nearly pain-free</strong> after four weeks, and most held onto that
@@ -134,7 +134,7 @@ export default function MindAndBrain() {
       <H2 id="vr">A prescription you wear</H2>
       <P>
         In 2021 the FDA authorized the first{" "}
-        <strong>virtual-reality program</strong> for chronic low back pain — a
+        <strong>virtual-reality program</strong> for chronic low back pain – a
         prescription device, not a game. Over eight weeks at home, a headset
         guides users through pain-science education, breathing training,
         mindfulness, and relaxation, essentially delivering cognitive behavioral
@@ -148,7 +148,7 @@ export default function MindAndBrain() {
         The most speculative frontier is <strong>psychedelics</strong>. Small
         early trials are testing whether a supervised dose of psilocybin,
         paired with therapy, can help conditions like fibromyalgia and
-        phantom-limb pain — the idea being that a temporary surge of brain
+        phantom-limb pain – the idea being that a temporary surge of brain
         plasticity might let a stuck, sensitized pain system be reset. The
         rationale is serious and the early safety signals are encouraging, but
         the honest summary is: this is <em>investigational</em>. The studies are
@@ -164,7 +164,7 @@ export default function MindAndBrain() {
         by the nervous system, so treatments aimed at the brain are aimed at the
         real machinery that generates it. Retraining that machinery is no more
         &ldquo;imaginary&rdquo; than physical therapy is imaginary for a muscle.
-        The mind is not separate from the medicine — it is part of it.
+        The mind is not separate from the medicine – it is part of it.
       </P>
     </div>
   );

@@ -4,7 +4,7 @@ import HubIcon from "@/components/HubIcon";
 
 /**
  * Section identity line for hub and article templates.
- * Icon sits on the type baseline — not a floating rounded-square topper.
+ * Icon sits on the type baseline – not a floating rounded-square topper.
  */
 export default function PageKicker({
   href,

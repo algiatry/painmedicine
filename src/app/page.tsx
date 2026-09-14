@@ -6,7 +6,7 @@ import HeroFigure from "@/components/HeroFigure";
 import HubIcon from "@/components/HubIcon";
 import ArticleEmblem from "@/components/ArticleEmblem";
 
-/** Curated flagship reads — keeps the site's strongest pages one click deep. */
+/** Curated flagship reads – keeps the site's strongest pages one click deep. */
 const FEATURED = [
   {
     eyebrow: "Conditions",
@@ -19,7 +19,7 @@ const FEATURED = [
     eyebrow: "Conditions",
     title: "Migraine",
     blurb:
-      "An inherited neurological disease, not a bad headache — the four-phase attack, and the designed drugs that changed everything.",
+      "An inherited neurological disease, not a bad headache – the four-phase attack, and the designed drugs that changed everything.",
     href: "/conditions/migraine",
   },
   {
@@ -33,14 +33,14 @@ const FEATURED = [
     eyebrow: "Understanding pain",
     title: "How pain works",
     blurb:
-      "Nociceptors, the spinal 'gate,' and why the brain — not the injury alone — decides how much it hurts.",
+      "Nociceptors, the spinal 'gate,' and why the brain – not the injury alone – decides how much it hurts.",
     href: "/understanding-pain/how-pain-works",
   },
   {
     eyebrow: "Understanding pain",
     title: "Pain and sleep",
     blurb:
-      "The cycle runs both ways — but a bad night drives pain harder than pain drives bad nights.",
+      "The cycle runs both ways – but a bad night drives pain harder than pain drives bad nights.",
     href: "/understanding-pain/pain-and-sleep",
   },
   {
@@ -72,7 +72,7 @@ export default function Home() {
                 {SITE.shortName} exists to answer two questions clearly and
                 honestly: what can pain medicine do for you <em>today</em>, and
                 what is medical science building for <em>tomorrow</em>? No hype,
-                no sales — just evidence-grounded education to help you have
+                no sales – just evidence-grounded education to help you have
                 better conversations with your care team.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
@@ -227,7 +227,7 @@ export default function Home() {
             Good first reads
           </h2>
           <p className="mt-2 max-w-2xl text-sm text-slate-600">
-            Written from primary sources, cited, and illustrated — a fair
+            Written from primary sources, cited, and illustrated – a fair
             sample of the standard the whole site holds itself to.
           </p>
           <ol className="mt-8 grid gap-x-12 sm:grid-cols-2">
