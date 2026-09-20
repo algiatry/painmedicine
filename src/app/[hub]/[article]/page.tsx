@@ -30,7 +30,7 @@ export async function generateMetadata({
   const a = getArticle(hub, article);
   if (!a) return {};
   return {
-    title: a.title,
+    title: a.seoTitle ?? a.title,
     description: a.description,
     alternates: { canonical: `/${a.hub}/${a.slug}` },
   };

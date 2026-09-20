@@ -27,6 +27,8 @@ export type Reviewer = {
 export type PageMeta = {
   slug: string;
   title: string;
+  /** Optional <title>-only override for query capture; the H1 stays `title`. */
+  seoTitle?: string;
   description: string;
   status: ReviewStatus;
   reviewer?: Reviewer;
