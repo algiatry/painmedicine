@@ -11,6 +11,8 @@
     "gsc": "node scripts/gsc-report.mjs",
     "bing": "node scripts/bing-keywords.mjs",
     "indexnow": "node scripts/indexnow.mjs",
+    "review:packet": "tsx scripts/review-packet.ts",
+    "review:apply": "tsx scripts/review-apply.ts",
     "brand": "python scripts/render-brand-assets.py"
   },
   "dependencies": {

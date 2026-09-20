@@ -5,6 +5,8 @@ export const SITE = {
   tagline: "Understand pain. Understand your options.",
   description:
     "Patient-first education on pain medicine: what the specialty is, how pain works, the treatment options that exist today, and the science shaping tomorrow's pain relief.",
+  /** Public inbox for reviewer applications and corrections. Empty = not shown. */
+  editorialEmail: "",
 } as const;
 
 export type NavItem = {
@@ -50,6 +52,7 @@ export const SUPPORT_LINKS = [
   { label: "Find Help", href: "/find-help" },
   { label: "Glossary", href: "/glossary" },
   { label: "About & Editorial Policy", href: "/about" },
+  { label: "Editorial Board", href: "/reviewers" },
   { label: "Medical Disclaimer", href: "/medical-disclaimer" },
   { label: "Privacy Policy", href: "/privacy" },
 ] as const;

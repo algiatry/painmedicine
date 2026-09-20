@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { SITE } from "@/lib/site";
 import { HUBS } from "@/lib/hubs";
 import { ALL_ARTICLES } from "@/lib/articles";
+import { REVIEWERS } from "@/lib/reviewers";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -12,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/medical-disclaimer",
     "/find-help",
     "/glossary",
+    "/reviewers",
     "/privacy",
     "/terms",
   ].map((path) => ({
@@ -32,5 +34,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "monthly" as const,
   }));
 
-  return [...staticEntries, ...hubEntries, ...articleEntries];
+  const reviewerEntries = REVIEWERS.map((r) => ({
+    url: `${SITE.url}/reviewers/${r.slug}`,
+    lastModified: new Date(r.joinedAt),
+    changeFrequency: "monthly" as const,
+  }));
+
+  return [...staticEntries, ...hubEntries, ...articleEntries, ...reviewerEntries];
 }

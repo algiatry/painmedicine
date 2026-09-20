@@ -57,7 +57,7 @@ export default async function ArticlePage({
           description: a.description,
           path: `/${a.hub}/${a.slug}`,
           lastUpdated: a.lastUpdated,
-          reviewer: a.reviewer,
+          review: a.review,
         })}
       />
       <JsonLd data={faqJsonLd(a.faqs)} />
@@ -101,8 +101,9 @@ export default async function ArticlePage({
         <p className="text-lg text-slate-700">{a.answer}</p>
         <ReviewByline
           status={a.status}
-          reviewer={a.reviewer}
+          review={a.review}
           lastUpdated={a.lastUpdated}
+          hub={a.hub}
         />
       </header>
 

@@ -46,7 +46,7 @@ export default async function HubPage({
           description: hub.description,
           path: `/${hub.slug}`,
           lastUpdated: hub.lastUpdated,
-          reviewer: hub.reviewer,
+          review: hub.review,
         })}
       />
       {hub.faqs && hub.faqs.length > 0 && <JsonLd data={faqJsonLd(hub.faqs)} />}
@@ -58,8 +58,9 @@ export default async function HubPage({
         </h1>
         <ReviewByline
           status={hub.status}
-          reviewer={hub.reviewer}
+          review={hub.review}
           lastUpdated={hub.lastUpdated}
+          hub={hub.slug}
         />
       </header>
 

@@ -12,7 +12,7 @@ explicit sign-off.**
    `ReviewByline`.
 2. A page may set `status: "reviewed"` ONLY when a named reviewer with
    publishable credentials (MD, DO, PharmD, DPT, PhD, etc.) has reviewed it.
-   The reviewer object (name, credentials, reviewedAt) is then required.
+   A `review` record (`reviewer` slug into src/lib/reviewers.ts, `reviewedAt`, optional `reviewDue` + public `note`) is then required, and the slug must resolve to a registered profile.
 3. Every page renders the footer disclaimer (automatic via layout). Opioid
    content additionally must include the SAMHSA helpline inline.
 
@@ -48,7 +48,7 @@ ladder (described, not recommended) → what's coming (link to
 
 - Future-science pages: re-review quarterly (FDA approvals move fast).
 - Condition/treatment pages: re-review annually or on major guideline changes.
-- Every re-review updates `lastUpdated` and (if clinical) `reviewer.reviewedAt`.
+- Every re-review updates `lastUpdated` and (if clinical) `review.reviewedAt`; `review.reviewDue` (default: quarterly for future-of-pain-medicine, annual elsewhere) drives the cadence check.
 
 ## Data model
 
