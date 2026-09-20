@@ -534,10 +534,11 @@ export const ARTICLES: Article[] = [
     hub: HUB,
     slug: "the-placebo-effect",
     title: "The Placebo Effect",
+    seoTitle: "The Placebo Effect: What It Is and How It Works",
     description:
-      "What the placebo effect is and how it works – expectation switching on the brain's own pain-relief chemistry – how a placebo differs from the placebo effect, what it proves about your pain, and what it can't do.",
+      "What the placebo effect is, how it works – expectation switching on the brain's own pain-relief chemistry – how long it lasts, how a placebo differs from the placebo effect, what it proves about your pain, and what it can't do.",
     status: "sourced",
-    lastUpdated: "2026-08-31",
+    lastUpdated: "2026-09-20",
     answer:
       "The placebo effect is a real, measurable response to the expectation of treatment – not imagination. A placebo is the inert treatment (a sugar pill, a saline shot); the placebo effect is your nervous system's genuine response to it. In pain, expectation activates the brain's own pain-modulation system, including its natural opioid chemistry – blocking that chemistry with a drug blocks placebo relief. Placebos can ease symptoms like pain and nausea, even when people know they're taking one, but they do not treat the underlying disease.",
     faqs: [
@@ -560,6 +561,11 @@ export const ARTICLES: Article[] = [
         question: "Do placebos work if you know it's a placebo?",
         answer:
           "Often, for symptoms – in randomized trials, 'open-label' placebos given with full honesty still outperformed no treatment in irritable bowel syndrome and outperformed usual care alone in chronic low back pain. The trials are small and short, but they suggest the ritual and expectation of care matter, with no deception required.",
+      },
+      {
+        question: "How long does the placebo effect last?",
+        answer:
+          "As long as the expectation and the context that built it hold – which can be longer than people assume. Within a single treatment it is measured in hours. Across a course it is measured in weeks: in chronic low back pain, three weeks of openly labelled placebo pills lowered pain and disability, and a five-year follow-up of those participants found the improvements had persisted. Placebo relief fades when the ritual and the belief behind it fade, and it never changes the underlying disease, so its duration measures how durable expectation can be, not how far the disease has moved.",
       },
       {
         question: "Can expecting side effects actually give me side effects?",
@@ -596,6 +602,12 @@ export const ARTICLES: Article[] = [
         title:
           "Carvalho et al. – Open-label placebo treatment in chronic low back pain: a randomized controlled trial",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5113234/",
+      },
+      {
+        source: "PAIN / PubMed",
+        title:
+          "Kaptchuk et al. – Open-label placebo for chronic low back pain: a 5-year follow-up",
+        url: "https://pubmed.ncbi.nlm.nih.gov/33259459/",
       },
       {
         source: "JAMA Netw Open",

@@ -38,10 +38,10 @@ const FEATURED = [
   },
   {
     eyebrow: "Understanding pain",
-    title: "Pain and sleep",
+    title: "The placebo effect",
     blurb:
-      "The cycle runs both ways – but a bad night drives pain harder than pain drives bad nights.",
-    href: "/understanding-pain/pain-and-sleep",
+      "Real relief from an inert pill, blockable by an opioid antagonist – and its mirror image, the nocebo effect.",
+    href: "/understanding-pain/the-placebo-effect",
   },
   {
     eyebrow: "The future",

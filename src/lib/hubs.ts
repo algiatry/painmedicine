@@ -305,7 +305,7 @@ export const HUBS: Hub[] = [
     slug: "future-of-pain-medicine",
     title: "The Future of Pain Medicine",
     description:
-      "The next generation of pain relief: non-opioid drug pipelines, advanced neuromodulation, biologics, precision pain medicine, and the science reshaping the field.",
+      "The future of pain management: the next generation of pain relief – non-opioid drug pipelines, advanced neuromodulation, biologics, precision pain medicine, and the science reshaping the field.",
     status: "sourced",
     lastUpdated: "2026-08-26",
     heading: "The future of pain medicine",
