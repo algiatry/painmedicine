@@ -163,7 +163,21 @@ Signature: __________________________     Date: ________________
 ```
 
 The site owner records the name, credential line, and review date into the
-page's typed record (the `Reviewer` object: `name`, `credentials`, `reviewedAt`).
+page's typed record. In practice:
+
+1. Add the reviewer's verified profile to `src/lib/reviewers.ts` (name, verbatim
+   credential line, bio, boards, affiliations, NPI / ABMS / institutional
+   `sameAs` links, disclosures). It renders publicly at `/reviewers/<slug>`.
+2. `npm run review:apply -- <hub>/<slug> --reviewer <slug> --date YYYY-MM-DD
+   [--due YYYY-MM-DD] [--note "one public sentence on what changed"]`
+   flips the page to `reviewed`, writes the `review` record, bumps `lastUpdated`.
+3. `npm run lint` — the content lint refuses any `reviewed` page whose
+   reviewer slug is not in the registry.
+
+To hand a page out for review: `npm run review:packet -- <hub>/<slug>` writes
+`reports/review/<hub>--<slug>.md` — the live prose flattened to Markdown, the
+FAQs, the references, this checklist, and the attestation, ready to send.
+`--queue` prints every page's status.
 
 ---
 

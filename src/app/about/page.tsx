@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -62,6 +63,50 @@ export default function AboutPage() {
             device manufacturers.
           </li>
         </ul>
+      </section>
+
+      <section className="space-y-4">
+        <h2 className="text-2xl font-semibold text-slate-900">
+          Join the editorial board
+        </h2>
+        <p className="text-slate-700">
+          Every clinical page on this site is written from primary sources and
+          then held to one further standard: sign-off by a credentialed
+          physician whose name, credentials, and review date are published on
+          the page and who keeps a public profile on our{" "}
+          <Link href="/reviewers" className="text-teal-700 underline underline-offset-2">
+            editorial board
+          </Link>
+          . Positions are open, paid, remote, and asynchronous. Reviewers
+          assess pre-drafted, pre-cited educational content against a written
+          checklist; they do not write from scratch and never give
+          individual medical advice.
+        </p>
+        <ul className="list-disc pl-6 space-y-2 text-slate-700">
+          <li>
+            <strong>Who.</strong> Board-certified physicians in pain medicine,
+            anesthesiology, physical medicine and rehabilitation, neurology, or
+            a closely related specialty, plus clinical pharmacists for
+            medication pages.
+          </li>
+          <li>
+            <strong>What.</strong> A short queue of condition and treatment
+            guides to start, each reviewed against our published checklist,
+            then re-reviewed on a set cadence.
+          </li>
+          <li>
+            <strong>Independence.</strong> Reviewers disclose conflicts of
+            interest, which are published on their profile, and may withdraw
+            their name from any page at any time.
+          </li>
+        </ul>
+        <p className="text-slate-700">
+          Interested? See the{" "}
+          <Link href="/reviewers" className="text-teal-700 underline underline-offset-2">
+            editorial board page
+          </Link>{" "}
+          for the standard we review against and how to get in touch.
+        </p>
       </section>
 
       <section className="space-y-4">

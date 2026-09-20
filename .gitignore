@@ -47,3 +47,6 @@ next-env.d.ts
 
 # brand raster scratch
 /brand/_preview/
+
+# reviewer packets (contain nothing secret, but are generated + returned signed)
+reports/review/

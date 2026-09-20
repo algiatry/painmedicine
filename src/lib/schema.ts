@@ -1,4 +1,5 @@
 import { SITE } from "./site";
+import { getReviewer, type Reviewer } from "./reviewers";
 
 /**
  * Review status gates how a page presents its credibility.
@@ -18,10 +19,19 @@ import { SITE } from "./site";
  */
 export type ReviewStatus = "draft" | "pending-review" | "sourced" | "reviewed";
 
-export type Reviewer = {
-  name: string;
-  credentials: string; // e.g. "MD, board-certified in Pain Medicine (ABA)"
-  reviewedAt: string; // ISO date
+/**
+ * A page's review record. `reviewer` is a slug into REVIEWERS
+ * (src/lib/reviewers.ts) – the profile owns the name and credentials so a
+ * byline can never drift from the verified record.
+ */
+export type PageReview = {
+  reviewer: string;
+  /** ISO date of sign-off. */
+  reviewedAt: string;
+  /** ISO date the next review is due; defaults to policy (see reviewers.ts). */
+  reviewDue?: string;
+  /** Public, one-sentence "what changed in review" note. */
+  note?: string;
 };
 
 export type PageMeta = {
@@ -31,7 +41,7 @@ export type PageMeta = {
   seoTitle?: string;
   description: string;
   status: ReviewStatus;
-  reviewer?: Reviewer;
+  review?: PageReview;
   lastUpdated: string; // ISO date
 };
 
@@ -52,8 +62,9 @@ export function medicalWebPageJsonLd(meta: {
   description: string;
   path: string;
   lastUpdated: string;
-  reviewer?: Reviewer;
+  review?: PageReview;
 }) {
+  const profile = meta.review ? getReviewer(meta.review.reviewer) : undefined;
   return {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
@@ -61,14 +72,10 @@ export function medicalWebPageJsonLd(meta: {
     description: meta.description,
     url: `${SITE.url}${meta.path}`,
     dateModified: meta.lastUpdated,
-    ...(meta.reviewer
+    ...(meta.review && profile
       ? {
-          reviewedBy: {
-            "@type": "Person",
-            name: meta.reviewer.name,
-            description: meta.reviewer.credentials,
-          },
-          lastReviewed: meta.reviewer.reviewedAt,
+          reviewedBy: personJsonLd(profile),
+          lastReviewed: meta.review.reviewedAt,
         }
       : {}),
     publisher: {
@@ -77,6 +84,33 @@ export function medicalWebPageJsonLd(meta: {
       url: SITE.url,
       logo: `${SITE.url}/icon-512.png`,
     },
+  };
+}
+
+/** schema.org Person for a reviewer profile (reviewedBy + /reviewers/[slug]). */
+export function personJsonLd(r: Reviewer) {
+  return {
+    "@type": "Person",
+    "@id": `${SITE.url}/reviewers/${r.slug}#person`,
+    name: r.name,
+    honorificSuffix: r.credentials,
+    jobTitle: r.headline,
+    description: r.bio[0],
+    url: `${SITE.url}/reviewers/${r.slug}`,
+    ...(r.photo ? { image: `${SITE.url}${r.photo}` } : {}),
+    ...(r.affiliations?.length
+      ? { affiliation: r.affiliations.map((name) => ({ "@type": "Organization", name })) }
+      : {}),
+    ...(r.npi
+      ? {
+          identifier: {
+            "@type": "PropertyValue",
+            propertyID: "NPI",
+            value: r.npi,
+          },
+        }
+      : {}),
+    sameAs: r.sameAs,
   };
 }
 

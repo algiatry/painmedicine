@@ -19,6 +19,7 @@ import * as path from "node:path";
 import { HUBS } from "../src/lib/hubs";
 import { ALL_ARTICLES } from "../src/lib/articles";
 import type { PageMeta } from "../src/lib/schema";
+import { defaultReviewDue, getReviewer } from "../src/lib/reviewers";
 
 const REPO = path.resolve(__dirname, "..");
 const COMPONENT_DIRS = ["science", "future", "specialty", "conditions", "treatments"].map(
@@ -116,15 +117,33 @@ function scanText(page: string, text: string, origin: string) {
 
 /* ------------------------------------------------------- review status */
 
-function checkReviewModel(page: string, meta: PageMeta) {
+function checkReviewModel(page: string, meta: PageMeta, hub: string) {
   if (meta.status === "reviewed") {
-    const r = meta.reviewer;
-    if (!r || !r.name || !r.credentials || !r.reviewedAt)
-      err(page, `status "reviewed" without complete reviewer (name, credentials, reviewedAt) — the gate forbids this`);
-    else if (!isoDate.test(r.reviewedAt))
-      err(page, `reviewer.reviewedAt is not an ISO date: "${r.reviewedAt}"`);
-  } else if (meta.reviewer) {
-    err(page, `reviewer object present but status is "${meta.status}" — a byline may only appear on reviewed pages`);
+    const r = meta.review;
+    if (!r || !r.reviewer || !r.reviewedAt)
+      err(page, `status "reviewed" without a review record (reviewer slug + reviewedAt) — the gate forbids this`);
+    else {
+      const profile = getReviewer(r.reviewer);
+      if (!profile)
+        err(page, `review.reviewer "${r.reviewer}" is not in REVIEWERS (src/lib/reviewers.ts) — a byline may only name a verified, registered reviewer`);
+      else {
+        for (const k of ["name", "credentials", "headline", "disclosures", "joinedAt"] as const)
+          if (!profile[k]) err(page, `reviewer profile "${r.reviewer}" is missing ${k}`);
+        if (!profile.bio?.length) err(page, `reviewer profile "${r.reviewer}" has no bio`);
+        if (!profile.boards?.length) err(page, `reviewer profile "${r.reviewer}" lists no board certification`);
+        if (!profile.sameAs?.length) warn(page, `reviewer profile "${r.reviewer}" has no sameAs identity links — add NPI/ABMS/institutional URLs`);
+      }
+      if (!isoDate.test(r.reviewedAt))
+        err(page, `review.reviewedAt is not an ISO date: "${r.reviewedAt}"`);
+      if (r.reviewDue && !isoDate.test(r.reviewDue))
+        err(page, `review.reviewDue is not an ISO date: "${r.reviewDue}"`);
+      const due = r.reviewDue ?? defaultReviewDue(hub, r.reviewedAt);
+      if (due < r.reviewedAt) err(page, `review.reviewDue (${due}) precedes reviewedAt (${r.reviewedAt})`);
+      if (r.reviewedAt > meta.lastUpdated)
+        warn(page, `reviewedAt (${r.reviewedAt}) is after lastUpdated (${meta.lastUpdated}) — bump lastUpdated on sign-off`);
+    }
+  } else if (meta.review) {
+    err(page, `review record present but status is "${meta.status}" — a byline may only appear on reviewed pages`);
   }
   if (!isoDate.test(meta.lastUpdated))
     err(page, `lastUpdated is not an ISO date: "${meta.lastUpdated}"`);
@@ -139,10 +158,15 @@ function cadenceCheck(): string[] {
   const overdue: string[] = [];
   const now = Date.now();
   for (const a of ALL_ARTICLES) {
-    const anchor = a.reviewer?.reviewedAt ?? a.lastUpdated;
+    const anchor = a.review?.reviewedAt ?? a.lastUpdated;
     const ageDays = Math.floor((now - new Date(anchor).getTime()) / DAY);
     const limit = a.hub === "future-of-pain-medicine" ? 92 : 366; // quarterly vs annual
-    if (ageDays > limit)
+    if (a.review) {
+      // Reviewed pages: the explicit (or policy-default) reviewDue date governs.
+      const due = a.review.reviewDue ?? defaultReviewDue(a.hub, a.review.reviewedAt);
+      if (new Date(due).getTime() < now)
+        overdue.push(`OVERDUE re-review: /${a.hub}/${a.slug} — due ${due}, reviewed ${anchor} (${ageDays}d ago)`);
+    } else if (ageDays > limit)
       overdue.push(
         `OVERDUE re-review: /${a.hub}/${a.slug} — last ${anchor} (${ageDays}d ago; policy: ${limit <= 92 ? "quarterly" : "annual"})`
       );
@@ -175,7 +199,7 @@ for (const h of HUBS) {
   const page = `/${h.slug}`;
   if (hubSlugs.has(h.slug)) err(page, "duplicate hub slug");
   hubSlugs.add(h.slug);
-  checkReviewModel(page, h);
+  checkReviewModel(page, h, h.slug);
   scanText(page, allStrings(h).join("\n"), "hubs.ts");
 }
 
@@ -186,7 +210,7 @@ for (const a of ALL_ARTICLES) {
   if (seen.has(page)) err(page, "duplicate article (hub+slug)");
   seen.add(page);
   if (!hubSlugs.has(a.hub)) err(page, `article hub "${a.hub}" has no matching hub in hubs.ts`);
-  checkReviewModel(page, a);
+  checkReviewModel(page, a, a.hub);
 
   // Required sections (CONTENT-TEMPLATE.md)
   if (!a.answer?.trim()) err(page, "missing plain-English answer (AEO first-60-words rule)");

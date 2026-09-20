@@ -1,11 +1,15 @@
-import type { Reviewer, ReviewStatus } from "@/lib/schema";
+import Link from "next/link";
+import type { PageReview, ReviewStatus } from "@/lib/schema";
+import { defaultReviewDue, getReviewer } from "@/lib/reviewers";
 
 /**
  * Credibility line for a page. Renders one of three things, matched to the
  * page's review status – and never fabricates a review that did not happen:
  *
- * 1. A reviewer credit – ONLY when a named credentialed reviewer object is
- *    present (status "reviewed").
+ * 1. A reviewer credit – ONLY when status is "reviewed" AND the review record
+ *    resolves to a profile in the reviewer registry. The name links to the
+ *    reviewer's public profile; the next-review date and an optional
+ *    "what changed" note render alongside.
  * 2. An honest "sourced" line – full content built from primary sources,
  *    independent medical review still pending. No credit claimed.
  * 3. The in-review notice – orientation-only pages held for review.
@@ -14,23 +18,37 @@ import type { Reviewer, ReviewStatus } from "@/lib/schema";
  */
 export default function ReviewByline({
   status,
-  reviewer,
+  review,
   lastUpdated,
+  hub,
 }: {
   status: ReviewStatus;
-  reviewer?: Reviewer;
+  review?: PageReview;
   lastUpdated: string;
+  /** Owning hub slug – sets the default re-review cadence. */
+  hub?: string;
 }) {
-  if (reviewer && status === "reviewed") {
+  const profile = review ? getReviewer(review.reviewer) : undefined;
+
+  if (review && profile && status === "reviewed") {
+    const due = review.reviewDue ?? defaultReviewDue(hub ?? "", review.reviewedAt);
     return (
-      <p className="text-sm text-slate-500">
-        Medically reviewed by{" "}
-        <span className="font-medium text-slate-700">
-          {reviewer.name}, {reviewer.credentials}
-        </span>{" "}
-        on {formatDate(reviewer.reviewedAt)} · Last updated{" "}
-        {formatDate(lastUpdated)}
-      </p>
+      <div className="flex flex-col gap-1 border-l-2 border-teal-600 pl-4 text-sm text-slate-500">
+        <p>
+          Medically reviewed by{" "}
+          <Link
+            href={`/reviewers/${profile.slug}`}
+            className="font-medium text-slate-700 underline decoration-teal-600/40 underline-offset-2 hover:text-teal-700"
+          >
+            {profile.name}, {profile.credentials}
+          </Link>{" "}
+          on {formatDate(review.reviewedAt)}
+        </p>
+        {review.note && <p className="text-slate-600">In review: {review.note}</p>}
+        <p>
+          Last updated {formatDate(lastUpdated)} · Next review by {formatDate(due)}
+        </p>
+      </div>
     );
   }
 
@@ -60,7 +78,7 @@ export default function ReviewByline({
   );
 }
 
-function formatDate(iso: string) {
+export function formatDate(iso: string) {
   return new Date(iso + "T00:00:00").toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
