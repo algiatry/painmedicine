@@ -265,9 +265,9 @@ export const FUTURE_ARTICLES: Article[] = [
     slug: "mind-and-brain",
     title: "Mind, Brain & New Frontiers",
     description:
-      "Because the brain constructs pain, treatments that retrain the brain are real medicine: pain reprocessing therapy, an FDA-authorized virtual-reality program, and the early, honest science of psychedelics for chronic pain.",
+      "Because the brain constructs pain, treatments that retrain the brain are real medicine: pain reprocessing therapy, an FDA-authorized virtual-reality program, nature and sound as low-risk adjuncts, and the early, honest science of psychedelics for chronic pain.",
     status: "sourced",
-    lastUpdated: LAST_REVIEWED,
+    lastUpdated: "2026-10-04",
     answer:
       "If the brain builds the experience of pain, then the brain can be part of the treatment – and that is no longer just a metaphor. Pain reprocessing therapy helped most patients in a landmark trial become pain-free by unlearning a false alarm. An FDA-authorized virtual-reality program treats chronic back pain at home. And early research is testing whether psychedelics can help reset a sensitized pain system.",
     faqs: [
@@ -280,6 +280,11 @@ export const FUTURE_ARTICLES: Article[] = [
         question: "Is virtual reality for pain a real medical treatment?",
         answer:
           "Yes. In 2021 the FDA authorized a prescription virtual-reality program (RelieVRx) for chronic low back pain – an eight-week, at-home course of pain education, breathing, and mindfulness delivered through a VR headset.",
+      },
+      {
+        question: "Does nature or being outdoors help with chronic pain?",
+        answer:
+          "Modestly, and the evidence is early. Time in nature is linked to lower chronic pain symptoms, and immersive 'nature' virtual reality engages the brain's own top-down pain-dampening systems in experimental studies. But the randomized trials are small and short: in one 2025 trial, thirty minutes of nature sounds during burn-dressing changes eased pain within the group, yet the difference against usual care was not statistically significant. Treat it as a low-risk addition to a plan, not a replacement for one.",
       },
       {
         question: "Are psychedelics used to treat pain?",
@@ -299,6 +304,18 @@ export const FUTURE_ARTICLES: Article[] = [
         title:
           "FDA authorizes RelieVRx – first VR therapeutic for chronic low back pain",
         url: "https://www.prnewswire.com/news-releases/fda-grants-appliedvr-approval-for-first-virtual-reality-therapeutic-to-treat-chronic-low-back-pain-301426221.html",
+      },
+      {
+        source: "Burns / PubMed",
+        title:
+          "Zarei et al. – Effect of nature-based sounds on pain and anxiety during dressing changes in hospitalized burn patients: a randomized controlled trial (2025)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/41066932/",
+      },
+      {
+        source: "Curr Opin Support Palliat Care / PubMed",
+        title:
+          "Hughes – Immersive nature-based virtual reality for chronic pain: from analgesia to accessibility (2025)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/40679918/",
       },
       {
         source: "Frontiers in Pain Research",

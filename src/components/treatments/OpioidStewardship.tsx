@@ -114,6 +114,20 @@ export default function OpioidStewardship() {
         as owning a fire extinguisher.
       </P>
 
+      <P>
+        The wider picture is, for the first time in a generation, improving.
+        CDC&rsquo;s provisional counts showed overdose deaths falling by
+        nearly a quarter over the twelve months to September 2024, and the
+        decline has continued in the releases since. The agency credits
+        exactly the unglamorous measures on this page: naloxone distributed
+        widely, easier access to buprenorphine and other treatment after
+        prescribing restrictions were lifted, and shifts in the illegal
+        supply. Overdose is still the leading cause of death for Americans
+        under 45, so none of this is a reason to relax – but it is proof
+        that the safety habits work at the scale of a country, not only a
+        household.
+      </P>
+
       <H2 id="storage">Storage, disposal, and the medicine cabinet</H2>
       <P>
         Most diverted prescription opioids do not come from strangers – they

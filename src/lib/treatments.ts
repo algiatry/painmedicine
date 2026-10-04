@@ -254,7 +254,7 @@ export const TREATMENT_ARTICLES: Article[] = [
     description:
       "The image-guided middle layer between pills and surgery: epidural injections, nerve blocks, radiofrequency ablation, spinal cord and DRG stimulators, and pumps – what each one actually does, the honest evidence, and the window rule that makes them work.",
     status: "sourced",
-    lastUpdated: "2026-08-28",
+    lastUpdated: "2026-10-04",
     answer:
       "Interventional pain procedures are the middle layer between medication and surgery: image-guided treatments delivered to the exact structure generating pain – an injection around an irritated nerve root, heat treatment of the tiny nerves serving an arthritic joint, or an implanted stimulator talking directly to the spinal cord. Their honest promise is not permanence: a well-chosen procedure buys a window of relief, and rehabilitation is what furnishes it.",
     faqs: [
@@ -277,6 +277,11 @@ export const TREATMENT_ARTICLES: Article[] = [
         question: "What is a spinal cord stimulator and who is it for?",
         answer:
           "An implanted device that delivers electrical pulses to the spinal cord, changing how pain signals are processed. Candidates are people with persistent nerve-related pain – painful diabetic neuropathy, complex regional pain syndrome, and pain persisting after spine surgery are the territories with the strongest trial evidence. Its most patient-friendly feature is unique in medicine: a temporary externally-worn trial lets you test-drive the therapy for about a week before deciding on the implant. Newer variants – high-frequency, closed-loop, and dorsal-root-ganglion stimulation – have strong randomized-trial results.",
+      },
+      {
+        question: "What percentage of people get relief from a spinal cord stimulator, and does it wear off?",
+        answer:
+          "In trials, 'relief' usually means pain cut by at least half, and most well-selected candidates with nerve-type pain reach that during the temporary trial – which is why the trial comes first. Over years, benefit can fade for some people and a minority have the device removed. A 2026 meta-analysis of 669 patients found newer 'burst' stimulation beat conventional stimulation by about 1.3 points on a 10-point pain scale, with no clear difference in quality of life – a real but modest edge. The honest predictor of your result is your own trial week, not the brochure.",
       },
       {
         question: "Are procedures a substitute for physical therapy?",
@@ -318,6 +323,12 @@ export const TREATMENT_ARTICLES: Article[] = [
         title:
           "Deer et al. – Dorsal root ganglion stimulation yielded higher treatment success rate for complex regional pain syndrome and causalgia (ACCURATE trial)",
         url: "https://pubmed.ncbi.nlm.nih.gov/28030470/",
+      },
+      {
+        source: "Neuromodulation / PubMed",
+        title:
+          "Aldehri et al. – Burst vs Tonic Spinal Cord Stimulation for Chronic Neuropathic Pain: A Systematic Review and Meta-Analysis (2026)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/42742508/",
       },
       {
         source: "NIH / MedlinePlus",
@@ -544,7 +555,7 @@ export const TREATMENT_ARTICLES: Article[] = [
     description:
       "The mind-and-brain side of pain medication safety: how opioids actually work, the difference between dependence and addiction, tolerance and opioid-induced hyperalgesia, the overdose combinations that kill, naloxone, safe storage and disposal, and what the CDC guideline really says.",
     status: "sourced",
-    lastUpdated: "2026-09-05",
+    lastUpdated: "2026-10-04",
     answer:
       "Opioids are powerful pain relievers that act on the brain's own opioid system – the same system that governs reward, breathing, and mood – which is why their benefits and their risks travel together. Physical dependence (the body adapts; stopping causes withdrawal) is normal physiology, not addiction; opioid use disorder is a separate, treatable medical condition. Modern guidelines place opioids late in the treatment ladder for chronic non-cancer pain, and the safety essentials are knowable: never combine with sedatives or alcohol, keep naloxone on hand, store securely, and taper rather than stop suddenly.",
     faqs: [
@@ -591,6 +602,16 @@ export const TREATMENT_ARTICLES: Article[] = [
         title:
           "Drug Safety Communication: FDA warns about serious risks and death when combining opioid pain or cough medicines with benzodiazepines",
         url: "https://www.fda.gov/drugs/drug-safety-and-availability/fda-drug-safety-communication-fda-warns-about-serious-risks-and-death-when-combining-opioid-pain-or-cough",
+      },
+      {
+        source: "CDC Newsroom",
+        title: "CDC Reports Nearly 24% Decline in U.S. Drug Overdose Deaths (provisional data, 2025)",
+        url: "https://www.cdc.gov/media/releases/2025/2025-cdc-reports-decline-in-us-drug-overdose-deaths.html",
+      },
+      {
+        source: "CDC National Center for Health Statistics",
+        title: "Provisional Drug Overdose Death Counts (Vital Statistics Rapid Release)",
+        url: "https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm",
       },
       {
         source: "SAMHSA",
