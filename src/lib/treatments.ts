@@ -957,4 +957,113 @@ export const TREATMENT_ARTICLES: Article[] = [
       },
     ],
   },
+
+  {
+    hub: HUB,
+    slug: "ketamine",
+    title: "Ketamine",
+    seoTitle:
+      "Ketamine for Chronic Pain: What the Evidence Says and Why At-Home Use Is Different",
+    description:
+      "What ketamine is, how blocking the NMDA receptor turns down amplified pain signals, what the trials and the 2025 Cochrane review honestly show, why a monitored infusion differs from a mailed lozenge, and what the ASA and FDA are asking for.",
+    status: "sourced",
+    lastUpdated: "2026-10-04",
+    answer:
+      "Ketamine is a surgical anesthetic, approved since 1970, that blocks NMDA receptors – the docking sites that help pain signals grow louder in the spinal cord. Monitored IV infusions can bring short-term relief in some neuropathic and CRPS pain, but long-term evidence is weak and it is not FDA-approved for pain. At-home lozenges carry the same effects without anyone watching.",
+    faqs: [
+      {
+        question: "Is ketamine used for chronic pain?",
+        answer:
+          "Yes, off-label. Pain specialists sometimes give ketamine as a monitored IV infusion for pain that has not responded to other treatments – most often complex regional pain syndrome (CRPS) and some nerve pain. The FDA has approved ketamine only as an anesthetic, so every use for chronic pain is outside its label, and professional guidelines describe it as a specialist option rather than a routine one.",
+      },
+      {
+        question: "Does ketamine infusion work for pain?",
+        answer:
+          "Sometimes, for a while. A 2019 meta-analysis of seven small trials found a modest drop in pain – about 1.8 points on a 10-point scale – lasting up to two weeks after infusion. The 2025 Cochrane review was more cautious, finding no clear evidence of benefit and rating the studies low to very low certainty. Durable relief has not been shown, and responses vary a great deal between people.",
+      },
+      {
+        question: "Is ketamine addictive?",
+        answer:
+          "It can be. Ketamine is a Schedule III controlled substance with recognized misuse potential; tolerance builds with repeated use, and some people come to seek its dissociative effects. Frequent use is also linked to bladder injury. A short, supervised course for pain is very different from daily use at home. If use has become hard to control, the SAMHSA helpline (1-800-662-4357) is free and confidential.",
+      },
+      {
+        question: "Is at-home ketamine safe?",
+        answer:
+          "Regulators and anesthesiologists say the setting is the problem. Ketamine causes sedation, dissociation, and blood-pressure rises whether it arrives by IV or by mail; at home there is no monitor, no trained clinician, and no rescue equipment. The FDA warned in 2023 that compounded at-home ketamine carries added risk for exactly that reason, and in 2026 the ASA asked states to require in-person physician supervision.",
+      },
+      {
+        question: "What conditions is ketamine infusion used for?",
+        answer:
+          "The 2018 consensus guidelines found the clearest support for complex regional pain syndrome (CRPS) and some neuropathic pain, with weaker evidence for fibromyalgia, headache, and spinal pain. Separately, a ketamine-derived nasal spray (esketamine) is FDA-approved for treatment-resistant depression under supervision in certified clinics – a different indication with its own rules.",
+      },
+    ],
+    references: [
+      {
+        source: "American Society of Anesthesiologists",
+        title:
+          "Boom in Ketamine Clinics and At-Home Delivery Sparks Safety Concerns (news release, June 22, 2026)",
+        url: "https://www.asahq.org/about-asa/newsroom/news-releases/2026/06/boom-in-ketamine-clinics-and-at-home-delivery-sparks-safety-concerns",
+      },
+      {
+        source: "American Society of Anesthesiologists",
+        title:
+          "Guidance on the Safe Use of Ketamine Outside of Acute Pain Management and Procedural Sedation (updated June 2026)",
+        url: "https://www.asahq.org/advocating-for-you/guidance/ketamine-safe-use",
+      },
+      {
+        source: "Regional Anesthesia & Pain Medicine",
+        title:
+          "Cohen et al. – Consensus Guidelines on the Use of Intravenous Ketamine Infusions for Chronic Pain from ASRA, AAPM, and ASA (2018)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/29870458/",
+      },
+      {
+        source: "Anesthesia & Analgesia",
+        title:
+          "Orhurhu et al. – Ketamine Infusions for Chronic Pain: A Systematic Review and Meta-analysis of Randomized Controlled Trials (2019)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/31082965/",
+      },
+      {
+        source: "Cochrane Database of Systematic Reviews",
+        title:
+          "Ferraro et al. – Ketamine and other NMDA receptor antagonists for chronic pain (2025)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/40819842/",
+      },
+      {
+        source: "FDA",
+        title:
+          "Compounding Risk Alerts – including the October 10, 2023 warning on compounded ketamine products for psychiatric disorders",
+        url: "https://www.fda.gov/drugs/human-drug-compounding/compounding-risk-alerts",
+      },
+      {
+        source: "DEA Diversion Control Division",
+        title: "Controlled Substances – Alphabetical Order (ketamine, Schedule III)",
+        url: "https://www.deadiversion.usdoj.gov/schedules/orangebook/c_cs_alpha.pdf",
+      },
+      {
+        source: "NIH / NIDA",
+        title: "Ketamine – research topic overview",
+        url: "https://nida.nih.gov/research-topics/ketamine",
+      },
+    ],
+    related: [
+      {
+        title: "Complex regional pain syndrome",
+        href: "/conditions/crps",
+        blurb:
+          "The condition with the clearest – still limited – evidence for ketamine infusion, and why catching it early matters more.",
+      },
+      {
+        title: "Neuropathic pain",
+        href: "/conditions/neuropathic-pain",
+        blurb:
+          "Nerve-damage pain and the amplified signaling that NMDA blockers aim at.",
+      },
+      {
+        title: "Medications for pain",
+        href: "/treatments/medications-for-pain",
+        blurb:
+          "The first-line and nerve-pain medications ketamine is usually tried after.",
+      },
+    ],
+  },
 ];

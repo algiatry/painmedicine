@@ -200,6 +200,12 @@ export const HUBS: Hub[] = [
           "What the largest evidence overview found: real relief after procedures and in abdominal emergencies, very little for sprains and strains, none for acute back or neck pain – and why ibuprofen is often the evidence working.",
         href: "/treatments/opioids-for-acute-pain",
       },
+      {
+        title: "Ketamine",
+        blurb:
+          "The anesthetic now sold by mail: what blocking NMDA receptors does to amplified pain, what infusion trials honestly show, and why a monitored clinic differs from a lozenge at home.",
+        href: "/treatments/ketamine",
+      },
     ],
   },
   {

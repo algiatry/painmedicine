@@ -394,6 +394,16 @@ export const EMBLEMS: Record<string, string> = {
       `<path stroke="${T}" d="M19 25c3-5 10-7 16-4"/>` +
       `<circle cx="24" cy="17" r="2.4" fill="${A}" stroke-width="0"/>`,
   ),
+
+  // A vial forking into two settings: a monitored trace on the left, a flat
+  // dashed line (no monitor) on the right, with the signal pulse at the vial.
+  ketamine: g(
+    `<path stroke="${T}" d="M19 5h10v4h-10zM17 9h14v16a2 2 0 0 1-2 2H19a2 2 0 0 1-2-2z"/>` +
+      `<path stroke="${S}" d="M20 29l-10 8M28 29l10 8" stroke-width="2.2"/>` +
+      `<path stroke="${T}" d="M3 43h4l2-5 2 9 2-7 1.5 3H18" stroke-width="2.2"/>` +
+      `<path stroke="${S}" d="M30 43h15" stroke-dasharray="1.5 4" stroke-width="2.2"/>` +
+      `<circle cx="24" cy="21" r="2.6" fill="${A}" stroke-width="0"/>`,
+  ),
 };
 
 /** Full standalone SVG document for a slug (share cards, tooling). */
