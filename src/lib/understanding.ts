@@ -788,6 +788,118 @@ export const ARTICLES: Article[] = [
       },
     ],
   },
+
+  {
+    hub: HUB,
+    slug: "attention-and-distraction",
+    title: "Attention and Distraction",
+    seoTitle: "Why Distraction Reduces Pain: The Science of Attention and Pain",
+    description:
+      "Why distraction reduces pain: attention is a dial on the brain's descending pain-control pathway – cortex to periaqueductal grey to spinal cord – caught on brain scans. Why a child's cartoon and an adult's absorbing task work, why focusing on pain turns the dial up, and the honest limits for persistent pain.",
+    status: "sourced",
+    lastUpdated: "2026-10-04",
+    answer:
+      "Distraction reduces pain because attention is a real dial on the pain system, not a trick. Focusing elsewhere activates the periaqueductal grey, the brainstem's pain-control hub, which damps incoming signals at the spinal cord – brain scans show pain regions quieting as reported pain falls. The effect is strongest for brief, procedural pain like needles and dressing changes, and it cuts both ways: watching for pain turns the dial up.",
+    faqs: [
+      {
+        question: "Does distraction really reduce pain?",
+        answer:
+          "Yes, measurably. In imaging studies, people rate the same painful heat as less intense when absorbed in a demanding task, and activity across the brain's pain-processing regions falls in step. A 2018 Cochrane review of 59 trials found distraction lowered children's self-reported pain and distress during needle procedures, though most trials were small and the evidence quality was low. The effect is moderate, real, and strongest for brief pain.",
+      },
+      {
+        question: "How does attention change pain?",
+        answer:
+          "Through the descending pain-modulation pathway. Signals from the cortex reach the periaqueductal grey in the brainstem, which sends fibers down to the spinal cord's dorsal horn and adjusts how much incoming pain signal is passed upward. A 2002 Oxford study showed periaqueductal grey activity rising during distraction, and the more it rose, the more reported pain fell. Attention is one input to that dial.",
+      },
+      {
+        question: "Why does music help with pain?",
+        answer:
+          "Music pulls on two dials at once. It occupies attention – more when you chose it and follow it closely – and it shifts mood. Research separating the two found attention mainly lowers how intense pain feels, while mood mainly lowers how unpleasant it feels, through partly different brain circuits. That is also why the effect is personal: music that bores you barely distracts at all.",
+      },
+      {
+        question: "Can focusing on pain make it worse?",
+        answer:
+          "It can. The same volunteers who felt less pain while distracted felt more when asked to focus on the heat. Persistent pain tends to train vigilance – scanning, bracing, checking – which is understandable but holds the dial up. Warnings and expectations work the same way, which is the nocebo effect. This does not mean attention causes pain; it means the pain system has an amplifier, and attention feeds it in both directions.",
+      },
+      {
+        question: "Does distraction work for chronic pain?",
+        answer:
+          "Less well. Distraction is strongest for brief, predictable pain, because the absorbing task has to last as long as the pain does. For pain lasting months, it can help through the worst hours but is not a plan. The more useful descendant of this science is attention retraining – structured approaches taught in cognitive-behavioral, acceptance-based, and mindfulness programs – which work the same dial with more patience. A pain psychologist or your clinician can match the approach to your pain.",
+      },
+    ],
+    references: [
+      {
+        source: "J Neurosci / PubMed",
+        title:
+          "Tracey et al. – Imaging attentional modulation of pain in the periaqueductal gray in humans (2002)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/11923440/",
+      },
+      {
+        source: "Brain / PubMed",
+        title:
+          "Bantick et al. – Imaging how attention modulates pain in humans using functional MRI (2002)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/11844731/",
+      },
+      {
+        source: "Pain / PubMed",
+        title:
+          "Villemure & Bushnell – Cognitive modulation of pain: how do attention and emotion influence pain processing? (2002)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/11839418/",
+      },
+      {
+        source: "J Neurosci / PubMed",
+        title:
+          "Villemure & Bushnell – Mood influences supraspinal pain processing separately from attention (2009)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/19158297/",
+      },
+      {
+        source: "Cochrane / PubMed",
+        title:
+          "Birnie et al. – Psychological interventions for needle-related procedural pain and distress in children and adolescents (2018)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/30284240/",
+      },
+      {
+        source: "Pain Management Nursing",
+        title:
+          "Tavakolnia et al. – Efficacy of distraction techniques on pre-school children's pain and physiological indicators during venipuncture: a randomized controlled trial (2026)",
+        url: "https://doi.org/10.1016/j.pmn.2026.09.020",
+      },
+      {
+        source: "Pain / PubMed",
+        title:
+          "Hoffman et al. – Virtual reality as an adjunctive pain control during burn wound care in adolescent patients (2000)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/10692634/",
+      },
+      {
+        source: "Front Virtual Real / PubMed",
+        title:
+          "Hoffman et al. – Virtual reality analgesia for children with large severe burn wounds during burn wound debridement (2020)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/33585833/",
+      },
+      {
+        source: "NCBI StatPearls",
+        title: "Pain Theory (gate control and descending modulation)",
+        url: "https://www.ncbi.nlm.nih.gov/books/NBK545194/",
+      },
+    ],
+    related: [
+      {
+        title: "How pain works",
+        href: "/understanding-pain/how-pain-works",
+        blurb: "The spinal gate this dial is wired into.",
+      },
+      {
+        title: "The nocebo effect",
+        href: "/understanding-pain/the-nocebo-effect",
+        blurb: "What happens when attention and expectation turn the dial up.",
+      },
+      {
+        title: "Physical & behavioral therapies",
+        href: "/treatments/physical-and-behavioral-therapies",
+        blurb: "Attention retraining for pain that persists.",
+      },
+    ],
+  },
 ];
 
 export function getArticle(hub: string, slug: string): Article | undefined {

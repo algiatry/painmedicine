@@ -856,4 +856,105 @@ export const TREATMENT_ARTICLES: Article[] = [
       },
     ],
   },
+
+  {
+    hub: HUB,
+    slug: "opioids-for-acute-pain",
+    title: "Opioids for Acute Pain",
+    seoTitle: "Do Opioids Work for Acute Pain? What the Largest Evidence Review Found",
+    description:
+      "What the 2026 University of Sydney overview of 59 systematic reviews actually found about opioids for short-term pain: real benefit after painful procedures and in acute abdominal pain, very small benefit for sprains and strains, none for acute back and neck pain – and why an ibuprofen-and-acetaminophen prescription is often the evidence working.",
+    status: "sourced",
+    lastUpdated: "2026-10-04",
+    answer:
+      "Sometimes, and less than most people expect. The largest overview of the evidence found opioids clearly reduce pain after painful procedures and in acute abdominal pain, but give only very small relief for sprains and strains – with about one extra person in ten getting side effects. For acute back and neck pain, a short course did no better than placebo. After surgery or major injury they remain essential.",
+    faqs: [
+      {
+        question: "Do opioids work for acute pain?",
+        answer:
+          "For some kinds, yes. A 2026 overview of 59 systematic reviews found opioids lowered pain by roughly 15–20 points on a 100-point scale in the first hours after dental surgery, ear-tube surgery, and in acute abdominal pain. For acute musculoskeletal pain – sprains, strains, back and neck injuries – oral opioids gave only about 9 points of relief between six and 48 hours, which the authors called very small, and raised the risk of side effects. The honest summary is the authors' own: opioids are effective in some acute conditions, not all.",
+      },
+      {
+        question: "Are opioids stronger than ibuprofen?",
+        answer:
+          "Not for most injury pain, when ibuprofen is paired with acetaminophen. In a 2017 randomized emergency-department trial of more than 400 adults with fractures, sprains, and other arm or leg injuries, a single dose of ibuprofen plus acetaminophen relieved pain as much at two hours as oxycodone, hydrocodone, or codeine combined with acetaminophen. Injury pain is largely inflammatory, and NSAIDs act on that inflammation at its source; opioids do not. Strength on paper and relief in practice are different things.",
+      },
+      {
+        question: "Why did my doctor only give me ibuprofen after my injury?",
+        answer:
+          "Most likely because the evidence says it works as well for your kind of pain with fewer side effects. For sprains, strains, and non-specific back or neck pain, trials show an NSAID with acetaminophen matches opioid combinations, while opioids add nausea, drowsiness, constipation, and a small but real risk of longer-term use. If an NSAID is not safe for you – because of your stomach, kidneys, heart, or other medications – your clinician or pharmacist can explain the alternatives. If your pain is not controlled, say so; that is information they need.",
+      },
+      {
+        question: "When are opioids appropriate for short-term pain?",
+        answer:
+          "When pain is severe and non-opioid options are not enough or not possible: after major surgery, serious trauma or burns, in acute abdominal emergencies, sickle-cell crises, and cancer pain. The CDC's 2022 guideline supports opioids in those settings and states its recommendations should never be used to deny needed relief. It asks prescribers to use non-opioid treatments first where they work at least as well, to prescribe the lowest effective dose for no longer than severe pain is expected to last, and to reassess rather than renew automatically.",
+      },
+      {
+        question: "What are the risks of a short opioid prescription?",
+        answer:
+          "Common and usually mild: constipation, nausea, drowsiness, dizziness, itching, and impaired driving. Rare and serious: slowed breathing, especially combined with alcohol, benzodiazepines, sleep medications, or gabapentinoids, and a higher risk in older adults and people with sleep apnea or lung disease. A few days of use can also be where long-term use begins, and leftover tablets are the main source of misused prescription opioids. If opioid use has become a problem for you or someone close to you, the SAMHSA helpline (1-800-662-4357) is free and confidential, any hour.",
+      },
+    ],
+    references: [
+      {
+        source: "Drugs (Mathieson, Zadro, et al., 2026)",
+        title:
+          "Efficacy and Harms of Opioid Analgesics for Acute Pain: Overview of Systematic Reviews and Meta-analyses",
+        url: "https://pubmed.ncbi.nlm.nih.gov/41739420/",
+      },
+      {
+        source: "The Lancet (Jones et al., 2023)",
+        title:
+          "Opioid analgesia for acute low back pain and neck pain (the OPAL trial): a randomised placebo-controlled trial",
+        url: "https://pubmed.ncbi.nlm.nih.gov/37392748/",
+      },
+      {
+        source: "JAMA (Chang et al., 2017)",
+        title:
+          "Effect of a Single Dose of Oral Opioid and Nonopioid Analgesics on Acute Extremity Pain in the Emergency Department: A Randomized Clinical Trial",
+        url: "https://pubmed.ncbi.nlm.nih.gov/29114833/",
+      },
+      {
+        source: "CDC MMWR",
+        title:
+          "CDC Clinical Practice Guideline for Prescribing Opioids for Pain – United States, 2022",
+        url: "https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm",
+      },
+      {
+        source: "FDA",
+        title: "Opioid Medications – information by drug class",
+        url: "https://www.fda.gov/drugs/information-drug-class/opioid-medications",
+      },
+      {
+        source: "NIH / MedlinePlus",
+        title: "Pain Relievers",
+        url: "https://medlineplus.gov/painrelievers.html",
+      },
+      {
+        source: "SAMHSA",
+        title: "National Helpline – 1-800-662-HELP (4357)",
+        url: "https://www.samhsa.gov/find-help/helplines/national-helpline",
+      },
+    ],
+    related: [
+      {
+        title: "Medications for pain",
+        href: "/treatments/medications-for-pain",
+        blurb:
+          "The class map behind this page – why NSAIDs act on injury pain at its source and what each family is matched to.",
+      },
+      {
+        title: "Opioids, honestly",
+        href: "/treatments/opioid-stewardship",
+        blurb:
+          "Dependence versus addiction, the combinations that kill, naloxone, safe storage, and disposal – the safety side of any opioid prescription.",
+      },
+      {
+        title: "Persistent postsurgical pain",
+        href: "/conditions/persistent-postsurgical-pain",
+        blurb:
+          "Why pain can outlast an operation, and how a planned multimodal approach prevents a short prescription from becoming a long one.",
+      },
+    ],
+  },
 ];

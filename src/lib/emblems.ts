@@ -366,6 +366,24 @@ export const EMBLEMS: Record<string, string> = {
       `<path stroke="${T}" d="M17 15c0 7 6 9 6 15s-4 8-4 13"/>` +
       `<path stroke="${S}" d="M28 20l4-4M31 29h5M28 38l4 4" stroke-width="2.2"/>`,
   ),
+
+  // Three benefit bars shrinking to nothing – the evidence strip, condition
+  // by condition – under one neutral ruled line.
+  "opioids-for-acute-pain": g(
+    `<path stroke="${S}" d="M8 7v34" stroke-width="2.2"/>` +
+      `<path stroke="${A}" d="M8 14h30" stroke-width="4"/>` +
+      `<path stroke="${A}" d="M8 24h14" stroke-width="4"/>` +
+      `<path stroke="${T}" d="M8 34h2.5" stroke-width="4"/>` +
+      `<path stroke="${S}" d="M8 41h34" stroke-width="2.2"/>`,
+  ),
+
+  // A dial turned low; the signal below it shrinks to a short bar.
+  "attention-and-distraction": g(
+    `<circle stroke="${T}" cx="24" cy="19" r="12"/>` +
+      `<path stroke="${T}" d="M24 19l-6.5-7.5"/>` +
+      `<path stroke="${S}" d="M8 41h32" stroke-width="3.4"/>` +
+      `<path stroke="${A}" d="M8 41h11" stroke-width="3.4"/>`,
+  ),
 };
 
 /** Full standalone SVG document for a slug (share cards, tooling). */
