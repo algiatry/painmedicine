@@ -334,6 +334,7 @@ function datasetJsonLd() {
     url: `${SITE.url}/future-of-pain-medicine/pipeline`,
     dateModified: LAST_REVIEWED,
     isAccessibleForFree: true,
+    license: `${SITE.url}/terms`,
     creator: { "@type": "Organization", name: SITE.name, url: SITE.url },
     keywords: [
       "non-opioid analgesics",
