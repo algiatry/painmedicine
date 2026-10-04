@@ -311,6 +311,12 @@ export const HUBS: Hub[] = [
           "Pain from inside the pathway: the thalamic lesion science, why it starts months after the stroke and gets missed, and the honest state of treatment.",
         href: "/conditions/central-post-stroke-pain",
       },
+      {
+        title: "Shoulder pain",
+        blurb:
+          "Rotator cuff, bursa, frozen shoulder, or the neck in disguise: why a cortisone shot works faster but exercise tends to hold, what a scan can mislead about, and the signs that need urgent care.",
+        href: "/conditions/shoulder-pain",
+      },
     ],
   },
   {

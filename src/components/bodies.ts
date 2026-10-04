@@ -42,6 +42,7 @@ import ChronicPelvicPain from "./conditions/ChronicPelvicPain";
 import CentralPostStrokePain from "./conditions/CentralPostStrokePain";
 import OpioidsForAcutePain from "./treatments/OpioidsForAcutePain";
 import AttentionAndDistraction from "./science/AttentionAndDistraction";
+import ShoulderPain from "./conditions/ShoulderPain";
 
 /**
  * Maps an article slug to the component that renders its illustrated body.
@@ -92,4 +93,5 @@ export const ARTICLE_BODIES: Record<string, ComponentType> = {
   "central-post-stroke-pain": CentralPostStrokePain,
   "opioids-for-acute-pain": OpioidsForAcutePain,
   "attention-and-distraction": AttentionAndDistraction,
+  "shoulder-pain": ShoulderPain,
 };

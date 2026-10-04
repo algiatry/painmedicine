@@ -384,6 +384,16 @@ export const EMBLEMS: Record<string, string> = {
       `<path stroke="${S}" d="M8 41h32" stroke-width="3.4"/>` +
       `<path stroke="${A}" d="M8 41h11" stroke-width="3.4"/>`,
   ),
+
+  // Ball in a shallow socket under a bony roof, the cuff wrapping the ball,
+  // the signal in the narrow space beneath the roof.
+  "shoulder-pain": g(
+    `<path stroke="${S}" d="M8 16c8-7 20-8 32-3"/>` +
+      `<path stroke="${S}" d="M14 22c-4 5-4 12 0 18"/>` +
+      `<circle stroke="${T}" cx="28" cy="31" r="10"/>` +
+      `<path stroke="${T}" d="M19 25c3-5 10-7 16-4"/>` +
+      `<circle cx="24" cy="17" r="2.4" fill="${A}" stroke-width="0"/>`,
+  ),
 };
 
 /** Full standalone SVG document for a slug (share cards, tooling). */
