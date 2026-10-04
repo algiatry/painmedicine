@@ -44,6 +44,7 @@ import OpioidsForAcutePain from "./treatments/OpioidsForAcutePain";
 import AttentionAndDistraction from "./science/AttentionAndDistraction";
 import ShoulderPain from "./conditions/ShoulderPain";
 import Ketamine from "./treatments/Ketamine";
+import BuprenorphineForPain from "./treatments/BuprenorphineForPain";
 
 /**
  * Maps an article slug to the component that renders its illustrated body.
@@ -96,4 +97,5 @@ export const ARTICLE_BODIES: Record<string, ComponentType> = {
   "attention-and-distraction": AttentionAndDistraction,
   "shoulder-pain": ShoulderPain,
   "ketamine": Ketamine,
+  "buprenorphine-for-pain": BuprenorphineForPain,
 };

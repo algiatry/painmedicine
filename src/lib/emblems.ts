@@ -404,6 +404,15 @@ export const EMBLEMS: Record<string, string> = {
       `<path stroke="${S}" d="M30 43h15" stroke-dasharray="1.5 4" stroke-width="2.2"/>` +
       `<circle cx="24" cy="21" r="2.6" fill="${A}" stroke-width="0"/>`,
   ),
+
+  // Two dose–effect curves: the full agonist keeps climbing, buprenorphine
+  // bends and levels off under its ceiling.
+  "buprenorphine-for-pain": g(
+    `<path stroke="${S}" d="M6 42V8M6 42h36" stroke-width="2"/>` +
+      `<path stroke="${A}" d="M8 40c9-2 17-10 24-20s7-11 10-13"/>` +
+      `<path stroke="${T}" d="M8 40c8-1 13-7 17-13s9-7 17-7"/>` +
+      `<path stroke="${T}" d="M22 20h20" stroke-dasharray="1.5 4" stroke-width="2"/>`,
+  ),
 };
 
 /** Full standalone SVG document for a slug (share cards, tooling). */

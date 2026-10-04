@@ -206,6 +206,12 @@ export const HUBS: Hub[] = [
           "The anesthetic now sold by mail: what blocking NMDA receptors does to amplified pain, what infusion trials honestly show, and why a monitored clinic differs from a lozenge at home.",
         href: "/treatments/ketamine",
       },
+      {
+        title: "Buprenorphine for chronic pain",
+        blurb:
+          "Not only the addiction drug: a partial-agonist opioid with a ceiling on breathing suppression, its pain-specific products, and what the 2025 trial of switching from high-dose opioids honestly found.",
+        href: "/treatments/buprenorphine-for-pain",
+      },
     ],
   },
   {

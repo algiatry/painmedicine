@@ -1066,4 +1066,128 @@ export const TREATMENT_ARTICLES: Article[] = [
       },
     ],
   },
+
+  {
+    hub: HUB,
+    slug: "buprenorphine-for-pain",
+    title: "Buprenorphine for Chronic Pain",
+    seoTitle:
+      "Buprenorphine for Chronic Pain: What It Is and What the Trial Showed",
+    description:
+      "Buprenorphine is not only the addiction drug: a partial-agonist opioid with a ceiling on breathing suppression, approved for pain in its own products, and what the 2025 JAMA Internal Medicine trial of switching from high-dose opioids honestly showed – a large drop in opioid dose, a small gain in pain, and no difference between the groups.",
+    status: "sourced",
+    lastUpdated: "2026-10-04",
+    answer:
+      "Buprenorphine is an opioid that only partly switches on the mu-opioid receptor, so its effect on breathing reaches a ceiling that morphine and oxycodone lack. It is FDA-approved for pain in its own patch and buccal-film products, separate from the addiction formulations. In a 2025 randomized trial, people on high-dose opioids offered a switch cut their dose about 40 percent with slightly less pain – but so did those not offered it.",
+    faqs: [
+      {
+        question: "Is buprenorphine only for addiction?",
+        answer:
+          "No. Buprenorphine is one of the three FDA-approved medications for opioid use disorder, and that is the role most people know. But the same molecule has been an approved pain medication in the United States for decades, in its own products: the Butrans seven-day skin patch and the Belbuca buccal film are both labeled for severe, persistent pain that needs an opioid and cannot be managed with other options. The 2022 CDC guideline also describes transitioning patients from high-dose full-agonist opioids to buprenorphine for pain. A physician who suggests it is thinking about your safety profile, not accusing you of anything.",
+      },
+      {
+        question: "How is buprenorphine different from other opioids?",
+        answer:
+          "Morphine, oxycodone, and fentanyl are full agonists: they switch the opioid receptor fully on, and more drug means more effect without a natural limit. Buprenorphine is a partial agonist: it binds the receptor very tightly but activates it only part way. In controlled volunteer studies, its suppression of breathing leveled off past a certain amount – a ceiling – while fentanyl's kept rising. Its pain relief did not show the same plateau. That ceiling is the single biggest difference, though it can be overwhelmed by alcohol or sedatives, and buprenorphine still carries the full opioid class warnings.",
+      },
+      {
+        question: "Does buprenorphine work for chronic pain?",
+        answer:
+          "It relieves pain – that is why it carries an FDA pain indication – but the evidence does not show it relieves chronic pain better than the opioids people are already taking. In the 2025 JAMA Internal Medicine trial, veterans on high-dose opioids who were offered a switch saw their Brief Pain Inventory score fall from 6.8 to 6.1 over a year while their opioid dose fell from about 157 to 94 morphine milligram equivalents. The group not offered buprenorphine improved almost identically. The encouraging part is that pain did not get worse as the full-agonist dose dropped substantially.",
+      },
+      {
+        question: "What happens when you switch from oxycodone or morphine to buprenorphine?",
+        answer:
+          "Because buprenorphine grips the receptor so tightly, it can push a full agonist off and trigger sudden, unpleasant precipitated withdrawal if the previous opioid is still present in quantity. Clinicians avoid this in one of two general ways: a planned gap in which the old opioid wears off and mild withdrawal begins before buprenorphine starts, or a slow overlap in which very small amounts of buprenorphine are introduced while the old opioid is reduced. The right approach, timing, and amounts depend on which opioid you take and your health, so they belong with your prescriber. Expect close follow-up either way.",
+      },
+      {
+        question: "Is buprenorphine safer than other opioids?",
+        answer:
+          "In one specific and important way, yes: its ceiling on breathing suppression lowers the risk that defines opioid overdose, and the CDC guideline notes it causes less respiratory depression than full agonists. But safer is not safe. Buprenorphine carries the same boxed warnings as other opioids, the ceiling does not protect against combinations with alcohol, benzodiazepines, or sleep medicines, it can affect heart rhythm, and naloxone may take more effort to reverse it. If anyone taking an opioid cannot be woken or is breathing slowly, call 911 and give naloxone. For worries about opioid use, the SAMHSA helpline, 1-800-662-4357, is free and answers around the clock.",
+      },
+    ],
+    references: [
+      {
+        source: "JAMA Internal Medicine / PubMed",
+        title:
+          "Becker et al. – Buprenorphine, Pain, and Opioid Use in Patients Taking High-Dose Long-Term Opioids: A Randomized Clinical Trial (2025)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/39960730/",
+      },
+      {
+        source: "CDC MMWR",
+        title:
+          "CDC Clinical Practice Guideline for Prescribing Opioids for Pain – United States, 2022 (transition to buprenorphine)",
+        url: "https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm",
+      },
+      {
+        source: "FDA label via DailyMed",
+        title: "Butrans (buprenorphine) transdermal system – prescribing information",
+        url: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=794aa355-66de-41b8-aedf-f2c40f6bc664",
+      },
+      {
+        source: "FDA label via DailyMed",
+        title: "Belbuca (buprenorphine) buccal film – prescribing information",
+        url: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bc2b7a3d-72cf-497c-95b0-ba2b71f63c64",
+      },
+      {
+        source: "SAMHSA",
+        title: "Buprenorphine – medications for opioid use disorder",
+        url: "https://www.samhsa.gov/medications-substance-use-disorders/medications-counseling-related-conditions/buprenorphine",
+      },
+      {
+        source: "British Journal of Anaesthesia / PubMed",
+        title:
+          "Dahan et al. – Buprenorphine induces ceiling in respiratory depression but not in analgesia (2006)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/16547090/",
+      },
+      {
+        source: "British Journal of Anaesthesia / PubMed",
+        title:
+          "Dahan et al. – Comparison of the respiratory effects of intravenous buprenorphine and fentanyl in humans and rats (2005)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/15833777/",
+      },
+      {
+        source: "Clinical Pharmacokinetics / PubMed",
+        title:
+          "Yassen et al. – Reversal of buprenorphine-induced respiratory depression by naloxone: a study in healthy volunteers (2007)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/17922561/",
+      },
+      {
+        source: "DEA",
+        title:
+          "Dear Registrant letter – elimination of the DATA-Waiver (X-Waiver) program, January 12, 2023",
+        url: "https://www.deadiversion.usdoj.gov/pubs/docs/A-23-0020-Dear-Registrant-Letter-Signed.pdf",
+      },
+      {
+        source: "SAMHSA",
+        title: "Waiver Elimination (MAT Act)",
+        url: "https://www.samhsa.gov/substance-use/treatment/resources/mat-act",
+      },
+      {
+        source: "SAMHSA",
+        title: "National Helpline – 1-800-662-HELP (4357)",
+        url: "https://www.samhsa.gov/find-help/national-helpline",
+      },
+    ],
+    related: [
+      {
+        title: "Opioids, honestly",
+        href: "/treatments/opioid-stewardship",
+        blurb:
+          "Dependence vs. addiction, tolerance and hyperalgesia, the combinations that kill, naloxone, and how tapers succeed – the context this page assumes.",
+      },
+      {
+        title: "Medications for pain",
+        href: "/treatments/medications-for-pain",
+        blurb:
+          "The full class map – where every long-term opioid, buprenorphine included, sits relative to the non-opioid classes that come first.",
+      },
+      {
+        title: "Kratom",
+        href: "/treatments/kratom",
+        blurb:
+          "Another partial agonist at the same receptor – but unregulated, untested in chronic pain, and the subject of a 2026 federal scheduling action.",
+      },
+    ],
+  },
 ];

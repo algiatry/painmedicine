@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Figure, H2, P } from "@/components/science/Figure";
 import { FIG } from "@/lib/fig";
 
@@ -120,8 +121,15 @@ export default function OpioidStewardship() {
         nearly a quarter over the twelve months to September 2024, and the
         decline has continued in the releases since. The agency credits
         exactly the unglamorous measures on this page: naloxone distributed
-        widely, easier access to buprenorphine and other treatment after
-        prescribing restrictions were lifted, and shifts in the illegal
+        widely, easier access to{" "}
+        <Link
+          href="/treatments/buprenorphine-for-pain"
+          className="text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600"
+        >
+          buprenorphine
+        </Link>{" "}
+        and other treatment after prescribing restrictions were lifted, and
+        shifts in the illegal
         supply. Overdose is still the leading cause of death for Americans
         under 45, so none of this is a reason to relax – but it is proof
         that the safety habits work at the scale of a country, not only a
