@@ -149,7 +149,7 @@ export const HUBS: Hub[] = [
       {
         title: "Medications for pain",
         blurb:
-          "The complete map: anti-inflammatories and acetaminophen, topicals, the nerve-pain medications, opioids honestly, and the first new class in decades – matched to the pain types they actually treat.",
+          "What pain medications are and the different types of pain relievers – acetaminophen and the NSAIDs, topicals, the nerve-pain medications, opioids honestly, and the first new class in decades – and how to tell which one is right for you.",
         href: "/treatments/medications-for-pain",
       },
       {

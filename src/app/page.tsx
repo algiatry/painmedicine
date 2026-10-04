@@ -24,10 +24,10 @@ const FEATURED = [
   },
   {
     eyebrow: "Treatments",
-    title: "Comparing your options",
+    title: "Medications for pain",
     blurb:
-      "The honest evidence map: why almost everything helps 'modestly,' and why modest wins stack.",
-    href: "/treatments/comparing-your-options",
+      "The different types of pain relievers, what makes one 'good,' and how to tell which is right for you – by mechanism, not 'strength.'",
+    href: "/treatments/medications-for-pain",
   },
   {
     eyebrow: "Understanding pain",
