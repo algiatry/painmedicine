@@ -13,7 +13,7 @@
  * and each affected entry's `updated` when you re-check.
  */
 
-export const LAST_REVIEWED = "2026-08-26";
+export const LAST_REVIEWED = "2026-10-04";
 
 export type Phase =
   | "Approved"
@@ -72,8 +72,8 @@ export const CANDIDATES: Candidate[] = [
     indication: "Moderate-to-severe acute pain",
     phase: "Approved",
     why: "The first non-opioid painkiller of a genuinely new class in decades – it blocks pain signals in the peripheral nerves rather than acting on the brain, so it carries no opioid addiction risk.",
-    note: "FDA-approved for acute pain (Jan 2025). Phase 3 trials in diabetic nerve pain and lumbosacral radiculopathy are ongoing – those chronic-pain uses are not yet approved.",
-    updated: "2026-08",
+    note: "FDA-approved for acute pain (Jan 2025); 2026 reports describe it inside opioid-free multimodal recovery plans after keyhole surgery. Phase 3 trials in diabetic nerve pain and lumbosacral radiculopathy are ongoing – those chronic-pain uses are not yet approved.",
+    updated: "2026-10",
     source: {
       label: "Vertex – FDA approval of Journavx",
       url: "https://news.vrtx.com/news-releases/news-release-details/vertex-announces-fda-approval-journavxtm-suzetrigine-first-class",
@@ -104,8 +104,8 @@ export const CANDIDATES: Candidate[] = [
     indication: "Moderate-to-severe acute pain",
     phase: "Phase 3",
     why: "Aims to keep opioid-level pain relief while lowering abuse potential – in human abuse-potential studies it was reported less abusable than oxycodone and tramadol.",
-    note: "Positive topline results from two Phase 3 trials (ALLEVIATE-1 and -2). It still engages the µ-opioid receptor, so it is opioid-adjacent, not opioid-free; not yet FDA-filed or approved.",
-    updated: "2026-03",
+    note: "Positive topline results from two Phase 3 trials (ALLEVIATE-1 and -2). A 2026 healthy-volunteer study in Anesthesiology compared its breathing effects head-to-head with oxycodone. It still engages the µ-opioid receptor, so it is opioid-adjacent, not opioid-free; not yet FDA-approved.",
+    updated: "2026-10",
     source: {
       label: "Tris Pharma – ALLEVIATE-2 Phase 3 results",
       url: "https://www.trispharma.com/tris-pharma-announces-positive-results-from-alleviate-2-phase-3-pivotal-trial-for-cebranopadol-an-investigational-first-in-class-oral-dual-nmr-agonist-for-the-treatment-of-moderate-to-severe-acute-p/",

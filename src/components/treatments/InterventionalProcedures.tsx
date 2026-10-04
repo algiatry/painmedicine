@@ -228,6 +228,28 @@ export default function InterventionalProcedures() {
         .
       </P>
 
+      <H2 id="scs-results">What the stimulator numbers honestly say</H2>
+      <P>
+        Two questions deserve plain answers before anyone agrees to an
+        implant. <em>How many people get relief?</em> In trials the usual
+        yardstick is a &ldquo;responder&rdquo; – someone whose pain falls by
+        at least half – and across the modern randomized studies most
+        well-selected candidates with nerve-type pain clear that bar during
+        the trial period, which is exactly what the take-home test is for.{" "}
+        <em>Does it wear off?</em> Sometimes. Relief can fade over years, and
+        a minority of people have the device removed; honest programs track
+        this and say so. The newest comparison, a 2026 meta-analysis of 17
+        studies and 669 patients, found that &ldquo;burst&rdquo; stimulation
+        lowered pain by about 1.3 points more than conventional stimulation
+        on a 10-point scale – a real, consistent edge that patients
+        preferred, but one the authors note may fall short of what counts as
+        clinically meaningful, with no clear difference in quality of life or
+        disability. Read that as the field reads it: stimulation is a proven
+        tool for the right candidate, the waveform matters less than the
+        selection, and the trial week is the most honest predictor you will
+        get.
+      </P>
+
       <H2 id="pumps">Pumps, and the honest periphery</H2>
       <P>
         <strong>Intrathecal pumps</strong> deliver medication directly

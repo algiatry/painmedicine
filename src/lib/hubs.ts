@@ -131,6 +131,12 @@ export const HUBS: Hub[] = [
           "Expectation running in reverse: the chemistry that turns pain up, the sentence that cancelled an opioid, and why side effects you were warned about arrive on schedule.",
         href: "/understanding-pain/the-nocebo-effect",
       },
+      {
+        title: "Attention and distraction",
+        blurb:
+          "Why a cartoon helps a child through a blood draw: attention is a real dial on the brainstem's pain-control pathway, caught on brain scans – and it turns both ways.",
+        href: "/understanding-pain/attention-and-distraction",
+      },
     ],
   },
   {
@@ -187,6 +193,24 @@ export const HUBS: Hub[] = [
         blurb:
           "Dependence vs. addiction, tolerance and the trap at the end of it, the combinations that kill, naloxone, safe storage, and how tapers actually succeed.",
         href: "/treatments/opioid-stewardship",
+      },
+      {
+        title: "Opioids for acute pain",
+        blurb:
+          "What the largest evidence overview found: real relief after procedures and in abdominal emergencies, very little for sprains and strains, none for acute back or neck pain – and why ibuprofen is often the evidence working.",
+        href: "/treatments/opioids-for-acute-pain",
+      },
+      {
+        title: "Ketamine",
+        blurb:
+          "The anesthetic now sold by mail: what blocking NMDA receptors does to amplified pain, what infusion trials honestly show, and why a monitored clinic differs from a lozenge at home.",
+        href: "/treatments/ketamine",
+      },
+      {
+        title: "Buprenorphine for chronic pain",
+        blurb:
+          "Not only the addiction drug: a partial-agonist opioid with a ceiling on breathing suppression, its pain-specific products, and what the 2025 trial of switching from high-dose opioids honestly found.",
+        href: "/treatments/buprenorphine-for-pain",
       },
     ],
   },
@@ -298,6 +322,12 @@ export const HUBS: Hub[] = [
         blurb:
           "Pain from inside the pathway: the thalamic lesion science, why it starts months after the stroke and gets missed, and the honest state of treatment.",
         href: "/conditions/central-post-stroke-pain",
+      },
+      {
+        title: "Shoulder pain",
+        blurb:
+          "Rotator cuff, bursa, frozen shoulder, or the neck in disguise: why a cortisone shot works faster but exercise tends to hold, what a scan can mislead about, and the signs that need urgent care.",
+        href: "/conditions/shoulder-pain",
       },
     ],
   },

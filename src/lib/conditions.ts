@@ -1526,4 +1526,118 @@ export const CONDITION_ARTICLES: Article[] = [
       },
     ],
   },
+
+  {
+    hub: HUB,
+    slug: "shoulder-pain",
+    title: "Shoulder Pain",
+    seoTitle: "Shoulder Pain: Causes, Cortisone Shot vs Physical Therapy, and When to Worry",
+    description:
+      "What shoulder pain means: the rotator cuff, bursa, frozen shoulder, arthritis, and pain referred from the neck; what one-year trials say about a cortisone shot versus exercise therapy; why a scan can mislead; and the signs that need urgent care.",
+    status: "sourced",
+    lastUpdated: "2026-10-04",
+    answer:
+      "Most shoulder pain comes from the rotator cuff tendons and bursa under the shoulder's bony roof, from a stiff joint capsule (frozen shoulder), or from worn joint surfaces; some is referred from the neck. It is rarely dangerous. A cortisone shot tends to ease pain faster; exercise therapy tends to hold better over a year. Trauma, deformity, fever, or chest symptoms need urgent care.",
+    faqs: [
+      {
+        question: "What causes shoulder pain?",
+        answer:
+          "The most common source is the subacromial space, where the rotator cuff tendons and a cushioning bursa pass under the bony acromion; labels such as tendinopathy, impingement, and bursitis overlap and describe the same region. Other causes are frozen shoulder (a tight, inflamed joint capsule), osteoarthritis of the joint surfaces, instability after a dislocation, and pain referred from a nerve root in the neck. Rarely, the heart, lungs, or abdomen refer pain to the shoulder, which is why clinicians ask about chest and breathing symptoms.",
+      },
+      {
+        question: "Is a cortisone shot or physical therapy better for shoulder pain?",
+        answer:
+          "It depends on what you need from the next few weeks versus the next year. In a one-year pragmatic trial in general practice, people given a corticosteroid injection improved more by six weeks, while people who completed twelve sessions of exercise therapy were doing better at six, nine, and twelve months, with wide uncertainty around the size of the difference. The larger GRASP trial found no long-term benefit from adding an injection. The honest summary is faster versus more durable, and the evidence cannot yet say who should start with which; that is a decision to make with your clinician.",
+      },
+      {
+        question: "How long does a cortisone shot last in the shoulder?",
+        answer:
+          "Trials show the advantage of a corticosteroid injection is clearest in the first several weeks and then fades. In the SIX-Shoulder Study the injection group was ahead at six weeks but behind the exercise group from six months onward, and in the GRASP trial an injection added no benefit when measured over a year. How long any one person feels relief varies, and repeated injections carry their own cautions, so timing and number are questions for your clinician.",
+      },
+      {
+        question: "Do I need an MRI for shoulder pain?",
+        answer:
+          "Usually not at first. The American College of Radiology does not recommend early imaging for non-traumatic shoulder pain without suspicious features, because scans find changes that are common in pain-free shoulders: in a population screening study, about one in five adults had a full-thickness rotator cuff tear and two-thirds of those tears caused no symptoms, with tears far more common after sixty. Imaging becomes useful after significant trauma, when a dislocation, fracture, infection, or cancer is suspected, when the diagnosis is unclear, or when surgery is being planned.",
+      },
+      {
+        question: "What is a frozen shoulder?",
+        answer:
+          "Frozen shoulder, or adhesive capsulitis, is inflammation and thickening of the joint capsule that makes the shoulder painful and then stiff in every direction, even when someone else moves the arm. It is more common in middle age and in people with diabetes, and symptoms can last months or years. The old teaching that it passes through three phases and fully resolves on its own is not well supported by a 2017 systematic review, so it is worth an active plan; a joint injection for the painful phase and movement work afterwards are commonly discussed with a clinician.",
+      },
+      {
+        question: "When is shoulder pain serious?",
+        answer:
+          "Seek emergency care if shoulder pain comes with chest pressure, breathlessness, sweating, or nausea, because the heart can refer pain to the shoulder. Get urgent help after a fall or accident if you cannot move the arm, the shoulder has changed shape or is badly swollen, or the hand is numb, cold, or pale. A hot, swollen shoulder with fever, severe new pain in both shoulders, steadily worsening night pain with weight loss or a cancer history, or weakness and pins and needles that do not settle also need prompt assessment.",
+      },
+    ],
+    references: [
+      {
+        source: "Musculoskeletal Science and Practice / PubMed",
+        title: "Versloot et al. – Effectiveness of a corticosteroid injection versus exercise therapy for shoulder pain in general practice (SIX-Shoulder Study): a randomized controlled trial (2026)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/41534300/",
+      },
+      {
+        source: "The Lancet / PMC",
+        title: "Hopewell et al. – Progressive exercise compared with best practice advice, with or without corticosteroid injection, for rotator cuff disorders (GRASP) (2021)",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8343092/",
+      },
+      {
+        source: "JAMA Internal Medicine / PubMed",
+        title: "Haas, Ibounig & Buchbinder – Management of Shoulder Pain in Primary Care: A Review (2026)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/42606850/",
+      },
+      {
+        source: "Cochrane Database of Systematic Reviews",
+        title: "Karjalainen et al. – Subacromial decompression surgery for rotator cuff disease (2019)",
+        url: "https://www.cochrane.org/evidence/CD005619_subacromial-decompression-surgery-rotator-cuff-disease",
+      },
+      {
+        source: "The Lancet / PubMed",
+        title: "Beard et al. – Arthroscopic subacromial decompression for subacromial shoulder pain (CSAW): a multicentre, pragmatic, placebo-controlled randomised surgical trial (2018)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/29169668/",
+      },
+      {
+        source: "Journal of the American College of Radiology / PubMed",
+        title: "ACR Appropriateness Criteria: Shoulder Pain – Atraumatic (2018)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/30392607/",
+      },
+      {
+        source: "Journal of Orthopaedics / PMC",
+        title: "Minagawa et al. – Prevalence of symptomatic and asymptomatic rotator cuff tears in the general population: from mass-screening in one village (2013)",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3768248/",
+      },
+      {
+        source: "Physiotherapy / PubMed",
+        title: "Wong et al. – Natural history of frozen shoulder: fact or fiction? A systematic review (2017)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/27641499/",
+      },
+      {
+        source: "NHS",
+        title: "Shoulder pain – when to get urgent help",
+        url: "https://www.nhs.uk/conditions/shoulder-pain/",
+      },
+      {
+        source: "NIH / MedlinePlus",
+        title: "Shoulder injuries and disorders – patient information",
+        url: "https://medlineplus.gov/shoulderinjuriesanddisorders.html",
+      },
+    ],
+    related: [
+      {
+        title: "Neck pain",
+        href: "/conditions/neck-pain",
+        blurb: "The nerve-root pattern that can send pain into the shoulder and arm.",
+      },
+      {
+        title: "Comparing your options",
+        href: "/treatments/comparing-your-options",
+        blurb: "Fast-but-short versus slow-but-durable, across the treatment map.",
+      },
+      {
+        title: "Physical and behavioral therapies",
+        href: "/treatments/physical-and-behavioral-therapies",
+        blurb: "How graded exercise and advice rebuild a shoulder's tolerance for load.",
+      },
+    ],
+  },
 ];

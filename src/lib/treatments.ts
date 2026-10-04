@@ -254,7 +254,7 @@ export const TREATMENT_ARTICLES: Article[] = [
     description:
       "The image-guided middle layer between pills and surgery: epidural injections, nerve blocks, radiofrequency ablation, spinal cord and DRG stimulators, and pumps – what each one actually does, the honest evidence, and the window rule that makes them work.",
     status: "sourced",
-    lastUpdated: "2026-08-28",
+    lastUpdated: "2026-10-04",
     answer:
       "Interventional pain procedures are the middle layer between medication and surgery: image-guided treatments delivered to the exact structure generating pain – an injection around an irritated nerve root, heat treatment of the tiny nerves serving an arthritic joint, or an implanted stimulator talking directly to the spinal cord. Their honest promise is not permanence: a well-chosen procedure buys a window of relief, and rehabilitation is what furnishes it.",
     faqs: [
@@ -277,6 +277,11 @@ export const TREATMENT_ARTICLES: Article[] = [
         question: "What is a spinal cord stimulator and who is it for?",
         answer:
           "An implanted device that delivers electrical pulses to the spinal cord, changing how pain signals are processed. Candidates are people with persistent nerve-related pain – painful diabetic neuropathy, complex regional pain syndrome, and pain persisting after spine surgery are the territories with the strongest trial evidence. Its most patient-friendly feature is unique in medicine: a temporary externally-worn trial lets you test-drive the therapy for about a week before deciding on the implant. Newer variants – high-frequency, closed-loop, and dorsal-root-ganglion stimulation – have strong randomized-trial results.",
+      },
+      {
+        question: "What percentage of people get relief from a spinal cord stimulator, and does it wear off?",
+        answer:
+          "In trials, 'relief' usually means pain cut by at least half, and most well-selected candidates with nerve-type pain reach that during the temporary trial – which is why the trial comes first. Over years, benefit can fade for some people and a minority have the device removed. A 2026 meta-analysis of 669 patients found newer 'burst' stimulation beat conventional stimulation by about 1.3 points on a 10-point pain scale, with no clear difference in quality of life – a real but modest edge. The honest predictor of your result is your own trial week, not the brochure.",
       },
       {
         question: "Are procedures a substitute for physical therapy?",
@@ -318,6 +323,12 @@ export const TREATMENT_ARTICLES: Article[] = [
         title:
           "Deer et al. – Dorsal root ganglion stimulation yielded higher treatment success rate for complex regional pain syndrome and causalgia (ACCURATE trial)",
         url: "https://pubmed.ncbi.nlm.nih.gov/28030470/",
+      },
+      {
+        source: "Neuromodulation / PubMed",
+        title:
+          "Aldehri et al. – Burst vs Tonic Spinal Cord Stimulation for Chronic Neuropathic Pain: A Systematic Review and Meta-Analysis (2026)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/42742508/",
       },
       {
         source: "NIH / MedlinePlus",
@@ -544,7 +555,7 @@ export const TREATMENT_ARTICLES: Article[] = [
     description:
       "The mind-and-brain side of pain medication safety: how opioids actually work, the difference between dependence and addiction, tolerance and opioid-induced hyperalgesia, the overdose combinations that kill, naloxone, safe storage and disposal, and what the CDC guideline really says.",
     status: "sourced",
-    lastUpdated: "2026-09-05",
+    lastUpdated: "2026-10-04",
     answer:
       "Opioids are powerful pain relievers that act on the brain's own opioid system – the same system that governs reward, breathing, and mood – which is why their benefits and their risks travel together. Physical dependence (the body adapts; stopping causes withdrawal) is normal physiology, not addiction; opioid use disorder is a separate, treatable medical condition. Modern guidelines place opioids late in the treatment ladder for chronic non-cancer pain, and the safety essentials are knowable: never combine with sedatives or alcohol, keep naloxone on hand, store securely, and taper rather than stop suddenly.",
     faqs: [
@@ -591,6 +602,16 @@ export const TREATMENT_ARTICLES: Article[] = [
         title:
           "Drug Safety Communication: FDA warns about serious risks and death when combining opioid pain or cough medicines with benzodiazepines",
         url: "https://www.fda.gov/drugs/drug-safety-and-availability/fda-drug-safety-communication-fda-warns-about-serious-risks-and-death-when-combining-opioid-pain-or-cough",
+      },
+      {
+        source: "CDC Newsroom",
+        title: "CDC Reports Nearly 24% Decline in U.S. Drug Overdose Deaths (provisional data, 2025)",
+        url: "https://www.cdc.gov/media/releases/2025/2025-cdc-reports-decline-in-us-drug-overdose-deaths.html",
+      },
+      {
+        source: "CDC National Center for Health Statistics",
+        title: "Provisional Drug Overdose Death Counts (Vital Statistics Rapid Release)",
+        url: "https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm",
       },
       {
         source: "SAMHSA",
@@ -832,6 +853,340 @@ export const TREATMENT_ARTICLES: Article[] = [
         href: "/treatments/interventional-procedures",
         blurb:
           "The guided-injection layer, for when a well-run program stalls.",
+      },
+    ],
+  },
+
+  {
+    hub: HUB,
+    slug: "opioids-for-acute-pain",
+    title: "Opioids for Acute Pain",
+    seoTitle: "Do Opioids Work for Acute Pain? What the Largest Evidence Review Found",
+    description:
+      "What the 2026 University of Sydney overview of 59 systematic reviews actually found about opioids for short-term pain: real benefit after painful procedures and in acute abdominal pain, very small benefit for sprains and strains, none for acute back and neck pain – and why an ibuprofen-and-acetaminophen prescription is often the evidence working.",
+    status: "sourced",
+    lastUpdated: "2026-10-04",
+    answer:
+      "Sometimes, and less than most people expect. The largest overview of the evidence found opioids clearly reduce pain after painful procedures and in acute abdominal pain, but give only very small relief for sprains and strains – with about one extra person in ten getting side effects. For acute back and neck pain, a short course did no better than placebo. After surgery or major injury they remain essential.",
+    faqs: [
+      {
+        question: "Do opioids work for acute pain?",
+        answer:
+          "For some kinds, yes. A 2026 overview of 59 systematic reviews found opioids lowered pain by roughly 15–20 points on a 100-point scale in the first hours after dental surgery, ear-tube surgery, and in acute abdominal pain. For acute musculoskeletal pain – sprains, strains, back and neck injuries – oral opioids gave only about 9 points of relief between six and 48 hours, which the authors called very small, and raised the risk of side effects. The honest summary is the authors' own: opioids are effective in some acute conditions, not all.",
+      },
+      {
+        question: "Are opioids stronger than ibuprofen?",
+        answer:
+          "Not for most injury pain, when ibuprofen is paired with acetaminophen. In a 2017 randomized emergency-department trial of more than 400 adults with fractures, sprains, and other arm or leg injuries, a single dose of ibuprofen plus acetaminophen relieved pain as much at two hours as oxycodone, hydrocodone, or codeine combined with acetaminophen. Injury pain is largely inflammatory, and NSAIDs act on that inflammation at its source; opioids do not. Strength on paper and relief in practice are different things.",
+      },
+      {
+        question: "Why did my doctor only give me ibuprofen after my injury?",
+        answer:
+          "Most likely because the evidence says it works as well for your kind of pain with fewer side effects. For sprains, strains, and non-specific back or neck pain, trials show an NSAID with acetaminophen matches opioid combinations, while opioids add nausea, drowsiness, constipation, and a small but real risk of longer-term use. If an NSAID is not safe for you – because of your stomach, kidneys, heart, or other medications – your clinician or pharmacist can explain the alternatives. If your pain is not controlled, say so; that is information they need.",
+      },
+      {
+        question: "When are opioids appropriate for short-term pain?",
+        answer:
+          "When pain is severe and non-opioid options are not enough or not possible: after major surgery, serious trauma or burns, in acute abdominal emergencies, sickle-cell crises, and cancer pain. The CDC's 2022 guideline supports opioids in those settings and states its recommendations should never be used to deny needed relief. It asks prescribers to use non-opioid treatments first where they work at least as well, to prescribe the lowest effective dose for no longer than severe pain is expected to last, and to reassess rather than renew automatically.",
+      },
+      {
+        question: "What are the risks of a short opioid prescription?",
+        answer:
+          "Common and usually mild: constipation, nausea, drowsiness, dizziness, itching, and impaired driving. Rare and serious: slowed breathing, especially combined with alcohol, benzodiazepines, sleep medications, or gabapentinoids, and a higher risk in older adults and people with sleep apnea or lung disease. A few days of use can also be where long-term use begins, and leftover tablets are the main source of misused prescription opioids. If opioid use has become a problem for you or someone close to you, the SAMHSA helpline (1-800-662-4357) is free and confidential, any hour.",
+      },
+    ],
+    references: [
+      {
+        source: "Drugs (Mathieson, Zadro, et al., 2026)",
+        title:
+          "Efficacy and Harms of Opioid Analgesics for Acute Pain: Overview of Systematic Reviews and Meta-analyses",
+        url: "https://pubmed.ncbi.nlm.nih.gov/41739420/",
+      },
+      {
+        source: "The Lancet (Jones et al., 2023)",
+        title:
+          "Opioid analgesia for acute low back pain and neck pain (the OPAL trial): a randomised placebo-controlled trial",
+        url: "https://pubmed.ncbi.nlm.nih.gov/37392748/",
+      },
+      {
+        source: "JAMA (Chang et al., 2017)",
+        title:
+          "Effect of a Single Dose of Oral Opioid and Nonopioid Analgesics on Acute Extremity Pain in the Emergency Department: A Randomized Clinical Trial",
+        url: "https://pubmed.ncbi.nlm.nih.gov/29114833/",
+      },
+      {
+        source: "CDC MMWR",
+        title:
+          "CDC Clinical Practice Guideline for Prescribing Opioids for Pain – United States, 2022",
+        url: "https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm",
+      },
+      {
+        source: "FDA",
+        title: "Opioid Medications – information by drug class",
+        url: "https://www.fda.gov/drugs/information-drug-class/opioid-medications",
+      },
+      {
+        source: "NIH / MedlinePlus",
+        title: "Pain Relievers",
+        url: "https://medlineplus.gov/painrelievers.html",
+      },
+      {
+        source: "SAMHSA",
+        title: "National Helpline – 1-800-662-HELP (4357)",
+        url: "https://www.samhsa.gov/find-help/helplines/national-helpline",
+      },
+    ],
+    related: [
+      {
+        title: "Medications for pain",
+        href: "/treatments/medications-for-pain",
+        blurb:
+          "The class map behind this page – why NSAIDs act on injury pain at its source and what each family is matched to.",
+      },
+      {
+        title: "Opioids, honestly",
+        href: "/treatments/opioid-stewardship",
+        blurb:
+          "Dependence versus addiction, the combinations that kill, naloxone, safe storage, and disposal – the safety side of any opioid prescription.",
+      },
+      {
+        title: "Persistent postsurgical pain",
+        href: "/conditions/persistent-postsurgical-pain",
+        blurb:
+          "Why pain can outlast an operation, and how a planned multimodal approach prevents a short prescription from becoming a long one.",
+      },
+    ],
+  },
+
+  {
+    hub: HUB,
+    slug: "ketamine",
+    title: "Ketamine",
+    seoTitle:
+      "Ketamine for Chronic Pain: What the Evidence Says and Why At-Home Use Is Different",
+    description:
+      "What ketamine is, how blocking the NMDA receptor turns down amplified pain signals, what the trials and the 2025 Cochrane review honestly show, why a monitored infusion differs from a mailed lozenge, and what the ASA and FDA are asking for.",
+    status: "sourced",
+    lastUpdated: "2026-10-04",
+    answer:
+      "Ketamine is a surgical anesthetic, approved since 1970, that blocks NMDA receptors – the docking sites that help pain signals grow louder in the spinal cord. Monitored IV infusions can bring short-term relief in some neuropathic and CRPS pain, but long-term evidence is weak and it is not FDA-approved for pain. At-home lozenges carry the same effects without anyone watching.",
+    faqs: [
+      {
+        question: "Is ketamine used for chronic pain?",
+        answer:
+          "Yes, off-label. Pain specialists sometimes give ketamine as a monitored IV infusion for pain that has not responded to other treatments – most often complex regional pain syndrome (CRPS) and some nerve pain. The FDA has approved ketamine only as an anesthetic, so every use for chronic pain is outside its label, and professional guidelines describe it as a specialist option rather than a routine one.",
+      },
+      {
+        question: "Does ketamine infusion work for pain?",
+        answer:
+          "Sometimes, for a while. A 2019 meta-analysis of seven small trials found a modest drop in pain – about 1.8 points on a 10-point scale – lasting up to two weeks after infusion. The 2025 Cochrane review was more cautious, finding no clear evidence of benefit and rating the studies low to very low certainty. Durable relief has not been shown, and responses vary a great deal between people.",
+      },
+      {
+        question: "Is ketamine addictive?",
+        answer:
+          "It can be. Ketamine is a Schedule III controlled substance with recognized misuse potential; tolerance builds with repeated use, and some people come to seek its dissociative effects. Frequent use is also linked to bladder injury. A short, supervised course for pain is very different from daily use at home. If use has become hard to control, the SAMHSA helpline (1-800-662-4357) is free and confidential.",
+      },
+      {
+        question: "Is at-home ketamine safe?",
+        answer:
+          "Regulators and anesthesiologists say the setting is the problem. Ketamine causes sedation, dissociation, and blood-pressure rises whether it arrives by IV or by mail; at home there is no monitor, no trained clinician, and no rescue equipment. The FDA warned in 2023 that compounded at-home ketamine carries added risk for exactly that reason, and in 2026 the ASA asked states to require in-person physician supervision.",
+      },
+      {
+        question: "What conditions is ketamine infusion used for?",
+        answer:
+          "The 2018 consensus guidelines found the clearest support for complex regional pain syndrome (CRPS) and some neuropathic pain, with weaker evidence for fibromyalgia, headache, and spinal pain. Separately, a ketamine-derived nasal spray (esketamine) is FDA-approved for treatment-resistant depression under supervision in certified clinics – a different indication with its own rules.",
+      },
+    ],
+    references: [
+      {
+        source: "American Society of Anesthesiologists",
+        title:
+          "Boom in Ketamine Clinics and At-Home Delivery Sparks Safety Concerns (news release, June 22, 2026)",
+        url: "https://www.asahq.org/about-asa/newsroom/news-releases/2026/06/boom-in-ketamine-clinics-and-at-home-delivery-sparks-safety-concerns",
+      },
+      {
+        source: "American Society of Anesthesiologists",
+        title:
+          "Guidance on the Safe Use of Ketamine Outside of Acute Pain Management and Procedural Sedation (updated June 2026)",
+        url: "https://www.asahq.org/advocating-for-you/guidance/ketamine-safe-use",
+      },
+      {
+        source: "Regional Anesthesia & Pain Medicine",
+        title:
+          "Cohen et al. – Consensus Guidelines on the Use of Intravenous Ketamine Infusions for Chronic Pain from ASRA, AAPM, and ASA (2018)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/29870458/",
+      },
+      {
+        source: "Anesthesia & Analgesia",
+        title:
+          "Orhurhu et al. – Ketamine Infusions for Chronic Pain: A Systematic Review and Meta-analysis of Randomized Controlled Trials (2019)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/31082965/",
+      },
+      {
+        source: "Cochrane Database of Systematic Reviews",
+        title:
+          "Ferraro et al. – Ketamine and other NMDA receptor antagonists for chronic pain (2025)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/40819842/",
+      },
+      {
+        source: "FDA",
+        title:
+          "Compounding Risk Alerts – including the October 10, 2023 warning on compounded ketamine products for psychiatric disorders",
+        url: "https://www.fda.gov/drugs/human-drug-compounding/compounding-risk-alerts",
+      },
+      {
+        source: "DEA Diversion Control Division",
+        title: "Controlled Substances – Alphabetical Order (ketamine, Schedule III)",
+        url: "https://www.deadiversion.usdoj.gov/schedules/orangebook/c_cs_alpha.pdf",
+      },
+      {
+        source: "NIH / NIDA",
+        title: "Ketamine – research topic overview",
+        url: "https://nida.nih.gov/research-topics/ketamine",
+      },
+    ],
+    related: [
+      {
+        title: "Complex regional pain syndrome",
+        href: "/conditions/crps",
+        blurb:
+          "The condition with the clearest – still limited – evidence for ketamine infusion, and why catching it early matters more.",
+      },
+      {
+        title: "Neuropathic pain",
+        href: "/conditions/neuropathic-pain",
+        blurb:
+          "Nerve-damage pain and the amplified signaling that NMDA blockers aim at.",
+      },
+      {
+        title: "Medications for pain",
+        href: "/treatments/medications-for-pain",
+        blurb:
+          "The first-line and nerve-pain medications ketamine is usually tried after.",
+      },
+    ],
+  },
+
+  {
+    hub: HUB,
+    slug: "buprenorphine-for-pain",
+    title: "Buprenorphine for Chronic Pain",
+    seoTitle:
+      "Buprenorphine for Chronic Pain: What It Is and What the Trial Showed",
+    description:
+      "Buprenorphine is not only the addiction drug: a partial-agonist opioid with a ceiling on breathing suppression, approved for pain in its own products, and what the 2025 JAMA Internal Medicine trial of switching from high-dose opioids honestly showed – a large drop in opioid dose, a small gain in pain, and no difference between the groups.",
+    status: "sourced",
+    lastUpdated: "2026-10-04",
+    answer:
+      "Buprenorphine is an opioid that only partly switches on the mu-opioid receptor, so its effect on breathing reaches a ceiling that morphine and oxycodone lack. It is FDA-approved for pain in its own patch and buccal-film products, separate from the addiction formulations. In a 2025 randomized trial, people on high-dose opioids offered a switch cut their dose about 40 percent with slightly less pain – but so did those not offered it.",
+    faqs: [
+      {
+        question: "Is buprenorphine only for addiction?",
+        answer:
+          "No. Buprenorphine is one of the three FDA-approved medications for opioid use disorder, and that is the role most people know. But the same molecule has been an approved pain medication in the United States for decades, in its own products: the Butrans seven-day skin patch and the Belbuca buccal film are both labeled for severe, persistent pain that needs an opioid and cannot be managed with other options. The 2022 CDC guideline also describes transitioning patients from high-dose full-agonist opioids to buprenorphine for pain. A physician who suggests it is thinking about your safety profile, not accusing you of anything.",
+      },
+      {
+        question: "How is buprenorphine different from other opioids?",
+        answer:
+          "Morphine, oxycodone, and fentanyl are full agonists: they switch the opioid receptor fully on, and more drug means more effect without a natural limit. Buprenorphine is a partial agonist: it binds the receptor very tightly but activates it only part way. In controlled volunteer studies, its suppression of breathing leveled off past a certain amount – a ceiling – while fentanyl's kept rising. Its pain relief did not show the same plateau. That ceiling is the single biggest difference, though it can be overwhelmed by alcohol or sedatives, and buprenorphine still carries the full opioid class warnings.",
+      },
+      {
+        question: "Does buprenorphine work for chronic pain?",
+        answer:
+          "It relieves pain – that is why it carries an FDA pain indication – but the evidence does not show it relieves chronic pain better than the opioids people are already taking. In the 2025 JAMA Internal Medicine trial, veterans on high-dose opioids who were offered a switch saw their Brief Pain Inventory score fall from 6.8 to 6.1 over a year while their opioid dose fell from about 157 to 94 morphine milligram equivalents. The group not offered buprenorphine improved almost identically. The encouraging part is that pain did not get worse as the full-agonist dose dropped substantially.",
+      },
+      {
+        question: "What happens when you switch from oxycodone or morphine to buprenorphine?",
+        answer:
+          "Because buprenorphine grips the receptor so tightly, it can push a full agonist off and trigger sudden, unpleasant precipitated withdrawal if the previous opioid is still present in quantity. Clinicians avoid this in one of two general ways: a planned gap in which the old opioid wears off and mild withdrawal begins before buprenorphine starts, or a slow overlap in which very small amounts of buprenorphine are introduced while the old opioid is reduced. The right approach, timing, and amounts depend on which opioid you take and your health, so they belong with your prescriber. Expect close follow-up either way.",
+      },
+      {
+        question: "Is buprenorphine safer than other opioids?",
+        answer:
+          "In one specific and important way, yes: its ceiling on breathing suppression lowers the risk that defines opioid overdose, and the CDC guideline notes it causes less respiratory depression than full agonists. But safer is not safe. Buprenorphine carries the same boxed warnings as other opioids, the ceiling does not protect against combinations with alcohol, benzodiazepines, or sleep medicines, it can affect heart rhythm, and naloxone may take more effort to reverse it. If anyone taking an opioid cannot be woken or is breathing slowly, call 911 and give naloxone. For worries about opioid use, the SAMHSA helpline, 1-800-662-4357, is free and answers around the clock.",
+      },
+    ],
+    references: [
+      {
+        source: "JAMA Internal Medicine / PubMed",
+        title:
+          "Becker et al. – Buprenorphine, Pain, and Opioid Use in Patients Taking High-Dose Long-Term Opioids: A Randomized Clinical Trial (2025)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/39960730/",
+      },
+      {
+        source: "CDC MMWR",
+        title:
+          "CDC Clinical Practice Guideline for Prescribing Opioids for Pain – United States, 2022 (transition to buprenorphine)",
+        url: "https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm",
+      },
+      {
+        source: "FDA label via DailyMed",
+        title: "Butrans (buprenorphine) transdermal system – prescribing information",
+        url: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=794aa355-66de-41b8-aedf-f2c40f6bc664",
+      },
+      {
+        source: "FDA label via DailyMed",
+        title: "Belbuca (buprenorphine) buccal film – prescribing information",
+        url: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bc2b7a3d-72cf-497c-95b0-ba2b71f63c64",
+      },
+      {
+        source: "SAMHSA",
+        title: "Buprenorphine – medications for opioid use disorder",
+        url: "https://www.samhsa.gov/medications-substance-use-disorders/medications-counseling-related-conditions/buprenorphine",
+      },
+      {
+        source: "British Journal of Anaesthesia / PubMed",
+        title:
+          "Dahan et al. – Buprenorphine induces ceiling in respiratory depression but not in analgesia (2006)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/16547090/",
+      },
+      {
+        source: "British Journal of Anaesthesia / PubMed",
+        title:
+          "Dahan et al. – Comparison of the respiratory effects of intravenous buprenorphine and fentanyl in humans and rats (2005)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/15833777/",
+      },
+      {
+        source: "Clinical Pharmacokinetics / PubMed",
+        title:
+          "Yassen et al. – Reversal of buprenorphine-induced respiratory depression by naloxone: a study in healthy volunteers (2007)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/17922561/",
+      },
+      {
+        source: "DEA",
+        title:
+          "Dear Registrant letter – elimination of the DATA-Waiver (X-Waiver) program, January 12, 2023",
+        url: "https://www.deadiversion.usdoj.gov/pubs/docs/A-23-0020-Dear-Registrant-Letter-Signed.pdf",
+      },
+      {
+        source: "SAMHSA",
+        title: "Waiver Elimination (MAT Act)",
+        url: "https://www.samhsa.gov/substance-use/treatment/resources/mat-act",
+      },
+      {
+        source: "SAMHSA",
+        title: "National Helpline – 1-800-662-HELP (4357)",
+        url: "https://www.samhsa.gov/find-help/national-helpline",
+      },
+    ],
+    related: [
+      {
+        title: "Opioids, honestly",
+        href: "/treatments/opioid-stewardship",
+        blurb:
+          "Dependence vs. addiction, tolerance and hyperalgesia, the combinations that kill, naloxone, and how tapers succeed – the context this page assumes.",
+      },
+      {
+        title: "Medications for pain",
+        href: "/treatments/medications-for-pain",
+        blurb:
+          "The full class map – where every long-term opioid, buprenorphine included, sits relative to the non-opioid classes that come first.",
+      },
+      {
+        title: "Kratom",
+        href: "/treatments/kratom",
+        blurb:
+          "Another partial agonist at the same receptor – but unregulated, untested in chronic pain, and the subject of a 2026 federal scheduling action.",
       },
     ],
   },

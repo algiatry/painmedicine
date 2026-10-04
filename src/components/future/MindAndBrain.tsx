@@ -143,6 +143,23 @@ export default function MindAndBrain() {
         brain less room to build pain in the first place.
       </P>
 
+      <H2 id="nature">Nature, sound, and the senses</H2>
+      <P>
+        A quieter line of research asks what the <em>surroundings</em> do to a
+        pain system. Time in green space is linked to lower chronic pain
+        symptoms, and immersive &ldquo;nature&rdquo; virtual reality has been
+        shown in experimental studies to engage the same top-down circuits –
+        attention, emotion, the body&rsquo;s own calming reflexes – that
+        reduce sensitization in the spinal cord. The honest size of the effect
+        is small and the trials are short. In a 2025 randomized trial, thirty
+        minutes of nature sounds during burn-dressing changes lowered pain
+        within the group that heard them, but the difference against usual
+        care did not reach statistical significance. The useful reading: a
+        low-risk, low-cost addition that some people find genuinely helpful,
+        with the special virtue of reaching those whose pain keeps them from
+        the real thing – and not a treatment on its own.
+      </P>
+
       <H2 id="psychedelics">The psychedelic question</H2>
       <P>
         The most speculative frontier is <strong>psychedelics</strong>. Small

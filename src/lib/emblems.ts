@@ -366,6 +366,53 @@ export const EMBLEMS: Record<string, string> = {
       `<path stroke="${T}" d="M17 15c0 7 6 9 6 15s-4 8-4 13"/>` +
       `<path stroke="${S}" d="M28 20l4-4M31 29h5M28 38l4 4" stroke-width="2.2"/>`,
   ),
+
+  // Three benefit bars shrinking to nothing – the evidence strip, condition
+  // by condition – under one neutral ruled line.
+  "opioids-for-acute-pain": g(
+    `<path stroke="${S}" d="M8 7v34" stroke-width="2.2"/>` +
+      `<path stroke="${A}" d="M8 14h30" stroke-width="4"/>` +
+      `<path stroke="${A}" d="M8 24h14" stroke-width="4"/>` +
+      `<path stroke="${T}" d="M8 34h2.5" stroke-width="4"/>` +
+      `<path stroke="${S}" d="M8 41h34" stroke-width="2.2"/>`,
+  ),
+
+  // A dial turned low; the signal below it shrinks to a short bar.
+  "attention-and-distraction": g(
+    `<circle stroke="${T}" cx="24" cy="19" r="12"/>` +
+      `<path stroke="${T}" d="M24 19l-6.5-7.5"/>` +
+      `<path stroke="${S}" d="M8 41h32" stroke-width="3.4"/>` +
+      `<path stroke="${A}" d="M8 41h11" stroke-width="3.4"/>`,
+  ),
+
+  // Ball in a shallow socket under a bony roof, the cuff wrapping the ball,
+  // the signal in the narrow space beneath the roof.
+  "shoulder-pain": g(
+    `<path stroke="${S}" d="M8 16c8-7 20-8 32-3"/>` +
+      `<path stroke="${S}" d="M14 22c-4 5-4 12 0 18"/>` +
+      `<circle stroke="${T}" cx="28" cy="31" r="10"/>` +
+      `<path stroke="${T}" d="M19 25c3-5 10-7 16-4"/>` +
+      `<circle cx="24" cy="17" r="2.4" fill="${A}" stroke-width="0"/>`,
+  ),
+
+  // A vial forking into two settings: a monitored trace on the left, a flat
+  // dashed line (no monitor) on the right, with the signal pulse at the vial.
+  ketamine: g(
+    `<path stroke="${T}" d="M19 5h10v4h-10zM17 9h14v16a2 2 0 0 1-2 2H19a2 2 0 0 1-2-2z"/>` +
+      `<path stroke="${S}" d="M20 29l-10 8M28 29l10 8" stroke-width="2.2"/>` +
+      `<path stroke="${T}" d="M3 43h4l2-5 2 9 2-7 1.5 3H18" stroke-width="2.2"/>` +
+      `<path stroke="${S}" d="M30 43h15" stroke-dasharray="1.5 4" stroke-width="2.2"/>` +
+      `<circle cx="24" cy="21" r="2.6" fill="${A}" stroke-width="0"/>`,
+  ),
+
+  // Two dose–effect curves: the full agonist keeps climbing, buprenorphine
+  // bends and levels off under its ceiling.
+  "buprenorphine-for-pain": g(
+    `<path stroke="${S}" d="M6 42V8M6 42h36" stroke-width="2"/>` +
+      `<path stroke="${A}" d="M8 40c9-2 17-10 24-20s7-11 10-13"/>` +
+      `<path stroke="${T}" d="M8 40c8-1 13-7 17-13s9-7 17-7"/>` +
+      `<path stroke="${T}" d="M22 20h20" stroke-dasharray="1.5 4" stroke-width="2"/>`,
+  ),
 };
 
 /** Full standalone SVG document for a slug (share cards, tooling). */
