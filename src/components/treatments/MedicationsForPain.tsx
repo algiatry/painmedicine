@@ -214,6 +214,88 @@ export default function MedicationsForPain() {
         potent ones fail.
       </P>
 
+      <H2 id="what-are-pain-medications">What are pain medications?</H2>
+      <P>
+        Pain medications – pain relievers, or <em>analgesics</em> in the
+        clinic – are drugs that reduce pain by acting at some point on the
+        pathway that carries a pain signal from injured tissue, through the
+        nerves and spinal cord, to the brain. Some are sold over the counter:
+        acetaminophen, the anti-inflammatory NSAIDs such as ibuprofen and
+        naproxen, aspirin, and the gels and patches applied to the skin. Others
+        require a prescription: the nerve-pain medications, muscle relaxants,
+        opioids, and the new sodium-channel blocker approved in 2025. What
+        every one of them has in common is that it treats the{" "}
+        <em>symptom</em>. A pain reliever turns the alarm down; it does not
+        repair what set the alarm off. That is why medications work best as
+        one part of a plan that also addresses the cause – and why{" "}
+        <Link href="/treatments/comparing-your-options" className={link}>
+          almost every pain treatment, drugs included, helps &ldquo;modestly&rdquo; on its own
+        </Link>
+        .
+      </P>
+
+      <H2 id="types">The different types of pain relievers, at a glance</H2>
+      <P>Seven groups cover nearly everything on the shelf and the prescription pad:</P>
+      <ul className="mt-4 mb-6 space-y-3 text-slate-700">
+        <li className="flex gap-3">
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span>
+          <strong>Acetaminophen</strong> (Tylenol, paracetamol) – works mostly
+          centrally; little effect on inflammation; the liver is its safety
+          boundary.
+          </span>
+        </li>
+        <li className="flex gap-3">
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span>
+          <strong>NSAIDs</strong> (ibuprofen, naproxen, aspirin, prescription
+          relatives) – damp the inflammatory chemistry at the site of injury;
+          stomach, kidney, and heart cautions with longer use.
+          </span>
+        </li>
+        <li className="flex gap-3">
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span>
+          <strong>Topicals</strong> (NSAID gels, lidocaine, capsaicin) – act
+          where they are applied with little reaching the bloodstream.
+          </span>
+        </li>
+        <li className="flex gap-3">
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span>
+          <strong>Nerve-pain medications</strong> (gabapentin, pregabalin,
+          duloxetine, the tricyclics) – calm sensitized nerves or strengthen
+          the body&rsquo;s own pain brakes; first-line for nerve pain.
+          </span>
+        </li>
+        <li className="flex gap-3">
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span>
+          <strong>Muscle relaxants</strong> – a short bridge through painful
+          spasm; drowsiness is the common tax.
+          </span>
+        </li>
+        <li className="flex gap-3">
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span>
+          <strong>Opioids</strong> – turn the alarm down at the spinal cord and
+          brain; essential for severe acute, surgical, and cancer pain; late
+          in modern guidelines for long-term non-cancer pain.
+          </span>
+        </li>
+        <li className="flex gap-3">
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span>
+          <strong>Suzetrigine</strong> – the first drug of a new non-opioid
+          class (2025); blocks a sodium channel on pain-sensing nerves.
+          </span>
+        </li>
+      </ul>
+      <P>
+        Each group is covered in its own section below. First, the picture
+        that makes the list make sense.
+      </P>
+
       <H2 id="the-map">The map: where each family acts</H2>
       <MapFigure />
       <P>
@@ -343,6 +425,102 @@ export default function MedicationsForPain() {
           pain treatment pipeline
         </Link>
         .
+      </P>
+
+      <H2 id="good-pain-reliever">What is a good pain reliever?</H2>
+      <P>
+        A good pain reliever is defined by three things, and none of them is
+        potency. It <strong>matches the mechanism</strong> of your pain: for a
+        sprain, a sore joint, a dental ache, or a back strain, that is usually
+        acetaminophen or an NSAID – the American College of Physicians lists
+        them first among medications for low back pain, and nothing stronger
+        does that job better. For burning, shooting, or electric nerve pain it
+        is usually a nerve-pain medication, and the everyday painkillers
+        underperform. It carries the <strong>lowest risk for your body</strong>{" "}
+        – which depends on your liver, kidneys, heart, stomach, and the other
+        medicines you take, not on the drug alone. And it is used{" "}
+        <strong>for a defined purpose and period</strong>, with a plan for
+        what &ldquo;working&rdquo; looks like and when to stop. A modest drug
+        that fits all three beats a powerful one that fits none.
+      </P>
+
+      <H2 id="right-for-you">Which pain reliever is right for you?</H2>
+      <P>
+        This page can describe the match; only a clinician or pharmacist who
+        knows your history can make it. But the questions they will ask are
+        knowable in advance, and arriving with the answers makes the
+        conversation better.
+      </P>
+      <ul className="mt-4 mb-6 space-y-3 text-slate-700">
+        <li className="flex gap-3">
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span>
+          <strong>What kind of pain is it?</strong> Aching, throbbing,
+          swollen, worse with use – that points to tissue and inflammation,
+          where acetaminophen and the NSAIDs fit. Burning, shooting, electric,
+          with numbness or tingling – that points to{" "}
+          <Link href="/conditions/neuropathic-pain" className={link}>
+            nerve pain
+          </Link>
+          , where the nerve-pain medications fit. Widespread, exhausting,
+          worse with poor sleep – that points to a{" "}
+          <Link href="/understanding-pain/types-of-pain" className={link}>
+            sensitized pain system
+          </Link>
+          , where movement and brain-targeted care outperform any pill.
+          </span>
+        </li>
+        <li className="flex gap-3">
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span>
+          <strong>What does your health history rule out?</strong> Liver
+          disease or regular alcohol use argues for caution with
+          acetaminophen. Kidney disease, heart disease, high blood pressure,
+          a history of ulcers or stomach bleeding, or a blood thinner argues
+          for caution with NSAIDs. Age past the mid-sixties raises both sets of
+          cautions. The organ-by-organ detail is on our{" "}
+          <Link href="/treatments/medication-organ-safety" className={link}>
+            medication safety page
+          </Link>
+          .
+          </span>
+        </li>
+        <li className="flex gap-3">
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span>
+          <strong>Where is the pain?</strong> One findable place – a knee, a
+          patch of post-shingles skin – may suit a topical, which keeps the
+          risk local. Pain that is everywhere does not.
+          </span>
+        </li>
+        <li className="flex gap-3">
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span>
+          <strong>What else are you taking?</strong> Acetaminophen hides in
+          hundreds of combination products; NSAIDs interact with blood
+          pressure medicines, blood thinners, and each other. A pharmacist
+          can check this in minutes.
+          </span>
+        </li>
+        <li className="flex gap-3">
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span>
+          <strong>How long has it hurt?</strong> A short course for a new
+          injury and a plan for a problem that has lasted months are different
+          decisions. Pain that persists past three months deserves a
+          mechanism-based look, not a longer prescription of the same thing.
+          </span>
+        </li>
+      </ul>
+      <P>
+        If the answers point in different directions – nerve-type pain in
+        someone who cannot use NSAIDs and has not responded to a first
+        nerve-pain drug, for example – that is not a dead end. It is the
+        situation a{" "}
+        <Link href="/what-is-pain-medicine" className={link}>
+          pain physician
+        </Link>{" "}
+        exists to work through.
       </P>
 
       <H2 id="strongest">&ldquo;Strongest&rdquo; is the wrong question</H2>

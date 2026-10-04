@@ -129,17 +129,33 @@ export const TREATMENT_ARTICLES: Article[] = [
     hub: HUB,
     slug: "medications-for-pain",
     title: "Medications for Pain",
+    seoTitle: "Pain Medications: Types of Pain Relievers and Which Is Right for You",
     description:
-      "The complete map of pain medications: anti-inflammatory drugs and acetaminophen, topicals, the nerve-pain medications, muscle relaxants, opioids, and the first genuinely new class in decades – what each one actually does, and why matching the drug to the pain type matters more than 'strength.'",
+      "What pain medications are, the different types of pain relievers – acetaminophen, NSAIDs, topicals, the nerve-pain medications, muscle relaxants, opioids, and the first new class in decades – what makes a pain reliever 'good,' and how to tell which one is right for you by matching the drug to the pain type rather than its 'strength.'",
     status: "sourced",
-    lastUpdated: "2026-08-28",
+    lastUpdated: "2026-10-04",
     answer:
-      "Pain medications are not one ladder from weak to strong – they are different tools for different mechanisms. Anti-inflammatory drugs (NSAIDs) and acetaminophen treat everyday tissue-driven pain; a separate group of nerve-pain medications treats pain from damaged nerves; opioids act on the brain's own opioid system and now sit late in modern guidelines; and a new non-opioid class arrived in 2025. The right question is not which painkiller is strongest, but which one matches your pain's mechanism.",
+      "Pain medications (pain relievers, or analgesics) are drugs that reduce pain by acting somewhere on the pathway between an injured tissue and the brain. They are not one ladder from weak to strong but different tools for different mechanisms: acetaminophen and anti-inflammatory NSAIDs for everyday tissue-driven pain, a separate group of nerve-pain medications for damaged nerves, opioids for severe acute and cancer pain, and a new non-opioid class approved in 2025. The right pain reliever is the one that matches your pain's mechanism and your health history – a decision to make with your clinician.",
     faqs: [
       {
-        question: "What are the main types of pain medication?",
+        question: "What are pain medications?",
         answer:
-          "Six groups cover nearly everything: acetaminophen; NSAIDs (anti-inflammatory painkillers such as ibuprofen and naproxen); topical treatments applied to the skin; the nerve-pain medications (gabapentinoids, certain antidepressants used for their pain effects); muscle relaxants for short-term use; and opioids. A seventh arrived in 2025: suzetrigine, the first drug of a new non-opioid class that quiets pain-signaling nerves directly. Which group fits a given pain depends on its mechanism – a conversation for you and your clinician.",
+          "Pain medications – also called pain relievers or analgesics – are drugs that reduce pain by acting at some point on the pathway that carries a pain signal from injured tissue, through the nerves and spinal cord, to the brain. Some are sold over the counter (acetaminophen, ibuprofen, naproxen, aspirin, and topical gels and patches); others require a prescription (the nerve-pain medications, muscle relaxants, opioids, and the new sodium-channel blocker suzetrigine). They treat the symptom of pain, not its cause, which is why they work alongside – not instead of – treating what is driving the pain.",
+      },
+      {
+        question: "What are the different types of pain relievers?",
+        answer:
+          "Seven groups cover nearly everything: acetaminophen; NSAIDs (anti-inflammatory painkillers such as ibuprofen, naproxen, and aspirin); topical treatments applied to the skin (NSAID gels, lidocaine, capsaicin); the nerve-pain medications (gabapentinoids and certain antidepressants used for their pain effects); muscle relaxants for short-term spasm; opioids; and, since 2025, suzetrigine, the first drug of a new non-opioid class that quiets pain-signaling nerves directly. Each acts at a different point on the pain pathway, which is why no single type fits every pain.",
+      },
+      {
+        question: "What is a good pain reliever?",
+        answer:
+          "A good pain reliever is the one whose mechanism matches your pain's mechanism, carries the lowest risk for your particular body, and is used for a defined purpose and period. For a sprain, a sore joint, or a dental ache, that is usually acetaminophen or an NSAID – guidelines list them first-line, and they are as effective as anything for that kind of pain. For burning or shooting nerve pain, it is usually a nerve-pain medication, and the everyday painkillers underperform. 'Good' is defined by the fit, not by potency: a modest drug that matches the pain beats a powerful one that does not.",
+      },
+      {
+        question: "Which pain reliever is right for you?",
+        answer:
+          "It depends on three things your clinician or pharmacist can help you work through. First, the type of pain: tissue and inflammation point toward acetaminophen or an NSAID; nerve damage points toward the nerve-pain medications; a sensitized pain system such as fibromyalgia responds better to movement and brain-targeted care than to any painkiller. Second, your health history: liver disease and regular alcohol use argue for caution with acetaminophen, while kidney disease, heart disease, stomach ulcers, high blood pressure, and blood thinners argue for caution with NSAIDs. Third, the location: pain in one findable place may suit a topical, which keeps the risk local. No page can make that match for you – describe your pain and your other medications to a pharmacist or physician and let them do it.",
       },
       {
         question: "What is the strongest painkiller?",
@@ -151,22 +167,28 @@ export const TREATMENT_ARTICLES: Article[] = [
         answer:
           "Because those labels describe the drug's first job, not its only one. Duloxetine and the tricyclics strengthen the spinal cord's own pain-dampening pathways; gabapentin and pregabalin calm the excitable signaling of damaged nerves. Both effects are independent of mood – the doses and timelines differ from psychiatric use, and international guidelines rank these drugs as first-line treatments for nerve pain. It is mechanism-matching, not a comment on your mental health.",
       },
-      {
-        question: "What is the difference between acetaminophen and ibuprofen?",
-        answer:
-          "Acetaminophen (Tylenol) relieves pain and lowers fever but has little effect on inflammation, and its main safety boundary is the liver – especially because it hides inside many combination cold and pain products. Ibuprofen is an NSAID: it works by damping the body's inflammatory prostaglandin chemistry, which makes it useful for inflamed tissue but brings stomach, kidney, and cardiovascular cautions with longer use. Different mechanisms, different risks – which is why pharmacists ask what else you are taking.",
-      },
-      {
-        question: "Are there new pain medications that are not opioids?",
-        answer:
-          "Yes – and this is the most hopeful development in years. In January 2025 the FDA approved suzetrigine (Journavx), the first drug of a genuinely new pain-medication class in more than two decades. It blocks a sodium channel found on pain-sensing nerves outside the brain, relieving moderate-to-severe acute pain without opioid receptors, euphoria, or dependence potential. Behind it sits a deep pipeline of non-opioid candidates – tracked on our pipeline page.",
-      },
     ],
     references: [
       {
         source: "NIH / MedlinePlus",
         title: "Pain relievers – patient information",
         url: "https://medlineplus.gov/painrelievers.html",
+      },
+      {
+        source: "NIH / MedlinePlus Medical Encyclopedia",
+        title: "Over-the-counter pain relievers",
+        url: "https://medlineplus.gov/ency/article/002123.htm",
+      },
+      {
+        source: "FDA Consumer Update",
+        title: "Don't Double Up on Acetaminophen",
+        url: "https://www.fda.gov/consumers/consumer-updates/dont-double-acetaminophen",
+      },
+      {
+        source: "Annals of Internal Medicine / PubMed",
+        title:
+          "Qaseem et al. – Noninvasive Treatments for Acute, Subacute, and Chronic Low Back Pain: A Clinical Practice Guideline From the American College of Physicians (2017)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/28192789/",
       },
       {
         source: "NCBI StatPearls",
@@ -209,6 +231,12 @@ export const TREATMENT_ARTICLES: Article[] = [
         href: "/future-of-pain-medicine/pipeline",
         blurb:
           "Every notable non-opioid drug and device in development, by phase.",
+      },
+      {
+        title: "Pain medications & your organs",
+        href: "/treatments/medication-organ-safety",
+        blurb:
+          "Liver, kidneys, heart, and gut – the health-history half of choosing a pain reliever.",
       },
       {
         title: "Low back pain",
