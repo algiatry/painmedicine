@@ -168,14 +168,14 @@ export default async function ArticlePage({
           >
             Keep reading
           </h2>
-          <div className="mt-6 divide-y divide-slate-200 border-y border-slate-200">
+          <div className="mt-6 flex flex-col gap-2">
             {a.related.map((r) => (
               <Link
                 key={r.href}
                 href={r.href}
-                className="group flex gap-4 py-4 sm:py-5"
+                className="group flex gap-4 rounded-xl border border-transparent px-3 py-4 transition-colors hover:border-slate-200 hover:bg-paper/70 sm:px-4"
               >
-                <span className="mt-0.5 flex size-11 shrink-0 items-center justify-center rounded-lg border border-slate-200/70 bg-paper/70">
+                <span className="mt-0.5 flex size-11 shrink-0 items-center justify-center rounded-lg border border-slate-200/70 bg-paper/70 transition-colors group-hover:border-teal-300 group-hover:bg-white">
                   <ArticleEmblem
                     slug={r.href.split("/").filter(Boolean).pop() ?? ""}
                     className="size-7"

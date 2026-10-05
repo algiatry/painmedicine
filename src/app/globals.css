@@ -35,6 +35,43 @@ body {
   color: var(--ink);
 }
 
+/*
+ * Shared surface polish. `.card-lift` gives any bordered surface a resting
+ * shadow and a gentle rise on hover/focus-within — used across the homepage
+ * and hub/article link cards so the whole site shares one tactile language.
+ */
+.card-lift {
+  box-shadow: var(--shadow-card);
+  transition:
+    box-shadow 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s cubic-bezier(0.33, 1, 0.68, 1);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .card-lift:hover,
+  .card-lift:focus-within {
+    transform: translateY(-2px);
+  }
+}
+.card-lift:hover,
+.card-lift:focus-within {
+  box-shadow: var(--shadow-card-hover);
+}
+
+/*
+ * Hero backdrop — a soft teal glow with a faint amber warmth and a whisper of
+ * dotted grid, layered behind the hero content. Pure CSS, no extra markup, and
+ * it degrades to the plain paper gradient on older engines.
+ */
+.hero-aura {
+  background-image:
+    radial-gradient(42rem 26rem at 78% -10%, rgb(20 184 166 / 0.12), transparent 60%),
+    radial-gradient(34rem 22rem at 6% 8%, rgb(245 158 11 / 0.07), transparent 55%),
+    radial-gradient(rgb(15 118 110 / 0.05) 1px, transparent 1px);
+  background-size: auto, auto, 22px 22px;
+  background-position: center, center, center;
+}
+
 /* One consistent, visible focus ring site-wide (keyboard users only). */
 :focus-visible {
   outline: 2px solid var(--brand);
