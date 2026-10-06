@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "../science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const TEAM = [
@@ -100,6 +100,27 @@ export default function ThePainTeam() {
         biology, psychology, and daily life at once, so treating it well takes
         more than one kind of expertise.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>
+            Chronic pain lives in <strong>biology, psychology, and daily life</strong> at
+            once, so good care takes more than one kind of expertise.
+          </>,
+          <>
+            A pain team typically includes a <strong>physician, nurses, therapists, a pain
+            psychologist, a pharmacist, and a social worker</strong>.
+          </>,
+          <>
+            <strong>Interdisciplinary</strong> programs work as one unit and include you in
+            decisions; multidisciplinary ones may not talk much.
+          </>,
+          <>
+            For chronic low back pain, team rehab <strong>roughly doubled the odds of being at
+            work</strong> compared with physical treatment alone.
+          </>,
+        ]}
+      />
 
       <H2 id="why-a-team">Why pain care became a team sport</H2>
       <P>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "../science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const STEPS = [
@@ -84,6 +84,27 @@ export default function YourFirstVisit() {
         specialist can work out which pain mechanisms are in play – and that
         takes time, records, and questions that may surprise you.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>
+            Expect an evaluation of <strong>one to three hours</strong>, substantially longer
+            than a routine appointment.
+          </>,
+          <>
+            Most centers require a <strong>referral</strong>; bring your medication list,
+            records and imaging, and any pain diary.
+          </>,
+          <>
+            Questions about sleep, mood, and work are part of the <strong>whole-picture</strong>{" "}
+            evaluation, not detours.
+          </>,
+          <>
+            You should leave with a <strong>plan built with you</strong>, shared with your
+            primary care clinician.
+          </>,
+        ]}
+      />
 
       <H2 id="before">Before you go</H2>
       <P>

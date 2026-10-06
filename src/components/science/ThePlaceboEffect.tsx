@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P, anim } from "./Figure";
+import { Figure, H2, KeyTakeaways, P, anim } from "./Figure";
 import { FIG } from "@/lib/fig";
 
 function PathwayFigure() {
@@ -162,6 +162,28 @@ export default function ThePlaceboEffect() {
         one of the best-documented phenomena in neuroscience, and what it
         actually demonstrates is that your brain owns a working pharmacy.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>
+            The pill is inert, but the <strong>placebo effect is a real
+            neurobiological response</strong>.
+          </>,
+          <>
+            Placebo relief can be <strong>blocked by naloxone</strong>, so it
+            runs on the body&rsquo;s own chemistry.
+          </>,
+          <>
+            It can work even when patients are <strong>told it is a
+            placebo</strong>, though the trials are small and short.
+          </>,
+          <>
+            Effects are modest and show up for{" "}
+            <strong>self-reported symptoms</strong>, not objective disease
+            outcomes.
+          </>,
+        ]}
+      />
 
       <H2 id="placebo-vs-placebo-effect">The pill, the effect, the response</H2>
       <P>

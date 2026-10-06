@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "@/components/science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "@/components/science/Figure";
 import { FIG } from "@/lib/fig";
 
 /**
@@ -11,6 +11,23 @@ import { FIG } from "@/lib/fig";
 export default function MedicationOrganSafety() {
   return (
     <div>
+      <KeyTakeaways
+        items={[
+          <>
+            Each medication class concentrates its risk in a specific organ: acetaminophen in the <strong>liver</strong>, NSAIDs in the kidneys, heart, and stomach.
+          </>,
+          <>
+            The established FDA adult ceiling is <strong>4,000 milligrams of acetaminophen in 24 hours</strong> from all products combined – a ceiling, not a target.
+          </>,
+          <>
+            Injuries come from <strong>stacking</strong>: hidden acetaminophen, the NSAID &ldquo;triple whammy,&rdquo; and opioids or sedatives combined with benzodiazepines, sleep aids, or alcohol.
+          </>,
+          <>
+            A pharmacist&rsquo;s <strong>interaction and duplication check</strong> takes minutes and catches these patterns early.
+          </>,
+        ]}
+      />
+
       <OrganMapFigure />
 
       <H2 id="the-map">Every pain reliever has a home organ</H2>
@@ -23,6 +40,7 @@ export default function MedicationOrganSafety() {
         you know the map, the safety rules stop being arbitrary warnings and
         start being obvious.
       </P>
+
       <P>
         <strong>Acetaminophen</strong> (Tylenol and hundreds of generics) is
         processed almost entirely by the liver. <strong>NSAIDs</strong> –

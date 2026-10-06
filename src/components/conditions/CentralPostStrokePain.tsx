@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P, anim } from "../science/Figure";
+import { Figure, H2, KeyTakeaways, P, anim } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
@@ -151,6 +151,15 @@ export default function CentralPostStrokePain() {
         nobody, including the patient, is expecting the stroke to produce
         something new.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>It affects roughly <strong>1 in 10 stroke survivors</strong> and often begins months after the stroke.</>,
+          <>The pain is felt on the affected side, in the same territory where <strong>sensation changed</strong> – not in a joint or a muscle.</>,
+          <>Any new or worsening symptom after a stroke deserves a call to the stroke team first, to <strong>rule out a new event</strong>.</>,
+          <>It is among the <strong>harder pains to treat</strong>, and the trials are small.</>,
+        ]}
+      />
 
       <H2 id="what-it-is">Pain from inside the pathway</H2>
       <PathwayLesionFigure />

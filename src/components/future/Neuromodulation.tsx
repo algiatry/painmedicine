@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "@/components/science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "@/components/science/Figure";
 import { FIG } from "@/lib/fig";
 
 const LEVELS = [
@@ -85,6 +85,28 @@ export default function Neuromodulation() {
         signals travel – and over the past decade it has gone from a blunt
         instrument to something closer to a tuned one.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>
+            <strong>High-frequency (10 kHz)</strong> stimulation relieves pain
+            without any tingling.
+          </>,
+          <>
+            <strong>Closed-loop</strong> systems adjust each pulse more than a
+            hundred times a second as you move.
+          </>,
+          <>
+            <strong>DRG and peripheral nerve stimulation</strong> aim at the
+            exact spot – one nerve cluster or a single nerve – for focal pain
+            such as CRPS.
+          </>,
+          <>
+            <strong>Non-invasive brain stimulation</strong> needs no implant,
+            but the evidence is still mixed.
+          </>,
+        ]}
+      />
 
       <H2 id="old-idea">The old idea: cover the pain</H2>
       <P>

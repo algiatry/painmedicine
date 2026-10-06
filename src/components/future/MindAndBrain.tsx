@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "@/components/science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "@/components/science/Figure";
 import { FIG } from "@/lib/fig";
 
 const APPROACHES = [
@@ -117,6 +117,28 @@ export default function MindAndBrain() {
         the brain can be part of the treatment. This is some of the most
         promising – and most misunderstood – territory in the field.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>
+            In a 2021 trial of pain reprocessing therapy,{" "}
+            <strong>about two-thirds</strong> of people with chronic back pain
+            became pain-free or nearly so.
+          </>,
+          <>
+            The FDA authorized the first <strong>virtual-reality program</strong>{" "}
+            for chronic low back pain in 2021.
+          </>,
+          <>
+            <strong>Psychedelics</strong> remain investigational, with tiny
+            studies and enthusiasm ahead of the evidence.
+          </>,
+          <>
+            Brain-based treatments do <strong>not</strong> mean pain is
+            imaginary.
+          </>,
+        ]}
+      />
 
       <H2 id="unlearn">Unlearning pain</H2>
       <P>

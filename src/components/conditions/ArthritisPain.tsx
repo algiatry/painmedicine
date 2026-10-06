@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "../science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 import { SynovialJoint } from "../anatomy/SynovialJoint";
 
@@ -151,6 +151,15 @@ export default function ArthritisPain() {
         race. This page is about learning which story your joints are
         telling.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <><strong>Osteoarthritis</strong> is a disease of the joint&rsquo;s own tissues; <strong>inflammatory arthritis</strong> is the immune system attacking the joint.</>,
+          <>Mechanical pain <strong>follows use</strong>; inflammatory pain is <strong>worst on waking</strong>, with morning stiffness lasting an hour or more.</>,
+          <>Starting <strong>disease-modifying treatment promptly</strong> prevents most of the destruction that once defined rheumatoid arthritis.</>,
+          <>For osteoarthritis, the most strongly recommended treatment is <strong>exercise</strong>.</>,
+        ]}
+      />
 
       <H2 id="two-diseases">One word, two diseases</H2>
       <JointsFigure />

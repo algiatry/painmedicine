@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "@/components/science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "@/components/science/Figure";
 import { FIG } from "@/lib/fig";
 
 /**
@@ -10,6 +10,23 @@ import { FIG } from "@/lib/fig";
 export default function OpioidStewardship() {
   return (
     <div>
+      <KeyTakeaways
+        items={[
+          <>
+            Opioids act on one receptor system with three jobs: it dampens pain, regulates <strong>breathing</strong>, and marks experiences as rewarding.
+          </>,
+          <>
+            <strong>Physical dependence</strong> happens to essentially everyone on sustained therapy and is not the same as opioid use disorder, which is a treatable medical condition.
+          </>,
+          <>
+            Overdose is rarely one drug: opioids combined with <strong>benzodiazepines</strong>, alcohol, or sleep medications suppress breathing, and naloxone is the antidote.
+          </>,
+          <>
+            Long-term opioids can be tapered successfully – <strong>gradually, and with support</strong> – while rapid or forced tapers are warned against.
+          </>,
+        ]}
+      />
+
       <DependenceVsAddictionFigure />
 
       <H2 id="how-they-work">One system, three jobs</H2>
@@ -23,6 +40,7 @@ export default function OpioidStewardship() {
         and the reward signal is why a drug prescribed for a knee can end up
         mattering to the brain far beyond the knee.
       </P>
+
       <P>
         This is not an argument that opioids are always wrong. For severe
         acute pain, after surgery and major injury, at the end of life, and in

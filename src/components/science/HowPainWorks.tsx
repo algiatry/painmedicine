@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P, anim } from "./Figure";
+import { Figure, H2, KeyTakeaways, P, anim } from "./Figure";
 import { FIG } from "@/lib/fig";
 
 /**
@@ -248,6 +248,27 @@ export default function HowPainWorks() {
         like a phone call. The real path is more interesting, and understanding
         it changes what you can do about pain.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>
+            Pain is <strong>built by the brain</strong>, not read straight off
+            nerve activity.
+          </>,
+          <>
+            The <strong>spinal gate</strong> filters the signal before it
+            reaches the brain.
+          </>,
+          <>
+            <strong>Central sensitization</strong> can turn up the nervous
+            system&rsquo;s gain, so the same input hurts more.
+          </>,
+          <>
+            Because pain is a nervous-system process, there are{" "}
+            <strong>many more points</strong> where it can be turned down.
+          </>,
+        ]}
+      />
 
       <H2 id="step-1">Step 1 – Nociceptors detect a threat</H2>
       <P>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "../science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
@@ -166,6 +166,15 @@ export default function Crps() {
         that signature recognizable – because CRPS caught in its first
         months is a very different disease from CRPS found late.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>CRPS is the rarest condition in this hub – roughly <strong>26 new cases per 100,000 people</strong> each year, most often after a wrist fracture.</>,
+          <>The signature is <strong>pain out of proportion</strong> plus a limb that visibly changes in color, temperature, and swelling.</>,
+          <>Early recognition matters: treated actively in the first months, many cases improve substantially within the first year.</>,
+          <>The cornerstone of treatment is <strong>rehabilitation that restores movement in graded steps</strong> – hurt does not equal harm.</>,
+        ]}
+      />
 
       <H2 id="signature">What it looks like</H2>
       <SignsFigure />

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "../science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
@@ -149,6 +149,15 @@ export default function CancerPain() {
         that dissolve once they are said out loud. Treating pain is part of
         treating cancer. You never have to earn relief by suffering first.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>Pain affects about <strong>55% of people during cancer treatment</strong> and <strong>66% of those with advanced disease</strong>.</>,
+          <>Cancer pain is among the <strong>most treatable</strong> problems in all of pain medicine.</>,
+          <>Pain that goes unreported goes untreated – <strong>say when it hurts</strong>, early and exactly.</>,
+          <>Palliative care is specialist symptom care delivered <strong>alongside cancer treatment, at any stage</strong>.</>,
+        ]}
+      />
 
       <H2 id="sources">Where cancer pain comes from</H2>
       <SourcesFigure />

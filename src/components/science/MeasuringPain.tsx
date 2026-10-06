@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "./Figure";
+import { Figure, H2, KeyTakeaways, P } from "./Figure";
 import { FIG } from "@/lib/fig";
 
 const FACES = [
@@ -223,6 +223,26 @@ export default function MeasuringPain() {
         genuinely useful – but pain is one of the hardest things in medicine to
         measure, and knowing why helps you describe yours far better.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>
+            Pain is subjective: your own report of it <strong>should be respected</strong>.
+          </>,
+          <>
+            There is <strong>no unit of pain</strong> – the 1940s dol scale could
+            not be reproduced.
+          </>,
+          <>
+            A single number flattens pain, and <strong>your 7 is not someone
+            else&rsquo;s 7</strong>.
+          </>,
+          <>
+            Describe quality, pattern, <strong>function</strong>, and sleep and
+            mood, not just a score.
+          </>,
+        ]}
+      />
 
       <H2 id="subjective">Pain is subjective – and that is the point</H2>
       <P>

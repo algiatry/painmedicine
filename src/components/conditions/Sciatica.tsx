@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "../science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 import { BodyBack } from "../anatomy/BodyOutline";
 
@@ -141,6 +141,15 @@ export default function Sciatica() {
         breathtaking – and it obeys a line, tracing the leg like a wire. That
         line is the clue to everything else on this page.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>In roughly <strong>nine cases out of ten</strong>, a herniated disc presses on a nerve root where it leaves the spinal canal.</>,
+          <>The leg is where sciatica is felt, <strong>not where it lives</strong> – treating the leg misses the address.</>,
+          <>Herniated discs often shrink on their own: free fragments resolved in about <strong>96%</strong> of cases, extrusions in about <strong>70%</strong>.</>,
+          <>Most episodes improve substantially within <strong>four to six weeks</strong> and resolve within about three months.</>,
+        ]}
+      />
 
       <H2 id="where-it-starts">Where sciatica actually starts</H2>
       <PathFigure />

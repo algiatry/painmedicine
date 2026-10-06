@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "../science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 import { HeadProfile, HEAD_W, HEAD_H } from "../anatomy/HeadProfile";
 import { SiteMarker } from "../anatomy/marks";
@@ -153,6 +153,15 @@ export default function TmjDisorders() {
         about 1 in 20 US adults, more than 11 million people, live with it,
         roughly twice as many women as men.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>About <strong>1 in 20 US adults</strong> live with temporomandibular disorders, which involve the joint, the chewing muscles, or both.</>,
+          <>A click without pain or locking <strong>does not need treatment</strong>.</>,
+          <>Muscle pain is by far the most common type, and <strong>prior pain elsewhere, worsening sleep, and distress</strong> predicted who developed TMD.</>,
+          <>Start with the <strong>least invasive, most reversible options</strong> – most TMD improves with them, and irreversible options have a poor track record.</>,
+        ]}
+      />
 
       <H2 id="three-places">Three places it can hurt</H2>
       <JawMapFigure />

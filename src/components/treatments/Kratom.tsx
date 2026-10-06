@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "@/components/science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "@/components/science/Figure";
 import { FIG } from "@/lib/fig";
 
 function LeafForkFigure() {
@@ -112,6 +112,23 @@ function LeafForkFigure() {
 export default function Kratom() {
   return (
     <div>
+      <KeyTakeaways
+        items={[
+          <>
+            Kratom&rsquo;s main compound, mitragynine, is a <strong>partial agonist at mu-opioid receptors</strong> – which is why researchers call it an &ldquo;atypical opioid.&rdquo;
+          </>,
+          <>
+            No large randomized trial has tested kratom in chronic pain; the best human trial <strong>doubled pain tolerance</strong> in an ice-water test but enrolled only 26 long-term users.
+          </>,
+          <>
+            Regular use can cause <strong>physical dependence</strong> and opioid-like withdrawal, and danger concentrates in mixing it with opioids, benzodiazepines, or alcohol.
+          </>,
+          <>
+            Concentrated 7-OH pills are <strong>not kratom</strong> in any traditional sense, and natural leaf kratom remains federally unscheduled.
+          </>,
+        ]}
+      />
+
       <LeafForkFigure />
 
       <H2 id="what-it-is">A tree in the coffee family</H2>
@@ -125,6 +142,7 @@ export default function Kratom() {
         federal survey data suggest roughly <strong>two million Americans</strong>{" "}
         use it in a given year – with pain the most commonly reported reason.
       </P>
+
 
       <H2 id="how-it-works">How it works in the body</H2>
       <P>

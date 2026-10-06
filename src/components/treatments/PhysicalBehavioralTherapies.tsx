@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "../science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
@@ -166,6 +166,23 @@ export default function PhysicalBehavioralTherapies() {
         and for most chronic pain they are where the evidence says to
         start, not where to end up.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>
+            Graded exercise, physical therapy, and cognitive behavioral therapy hold the <strong>strongest recommendations in guideline after guideline</strong>.
+          </>,
+          <>
+            These therapies <strong>retrain the pain system</strong> rather than mask its output – modest on average, durable, and side-effect-free.
+          </>,
+          <>
+            Pacing – increasing activity <strong>by plan, not by pain</strong> – is the escape from the boom-bust cycle.
+          </>,
+          <>
+            <strong>Multidisciplinary rehabilitation</strong> beat usual care and nearly doubled the odds of returning to work versus physical treatment alone.
+          </>,
+        ]}
+      />
 
       <H2 id="two-levers">Two levers on the same dial</H2>
       <LeversFigure />

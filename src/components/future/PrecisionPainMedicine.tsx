@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "@/components/science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "@/components/science/Figure";
 import { FIG } from "@/lib/fig";
 
 const GROUPS = [
@@ -95,6 +95,27 @@ export default function PrecisionPainMedicine() {
         medicine aims to use your biology to guide care, replacing trial and
         error with something closer to a fit.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>
+            Your <strong>CYP2D6 gene</strong> changes how your body converts
+            codeine, so the same dose can have very different effects.
+          </>,
+          <>
+            Guidelines advise <strong>avoiding codeine and tramadol</strong> in
+            poor and ultrarapid metabolizers.
+          </>,
+          <>
+            Matching treatment to the <strong>kind of pain</strong> you have
+            helps cut trial and error.
+          </>,
+          <>
+            Biomarkers and AI are <strong>not yet ready</strong> for routine
+            clinic use.
+          </>,
+        ]}
+      />
 
       <H2 id="genes">Your genes and your painkillers</H2>
       <P>
