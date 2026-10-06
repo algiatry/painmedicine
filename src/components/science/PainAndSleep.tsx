@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "./Figure";
+import { Figure, H2, KeyTakeaways, P } from "./Figure";
 import { FIG } from "@/lib/fig";
 
 function CycleFigure() {
@@ -184,6 +184,27 @@ export default function PainAndSleep() {
         fix after the pain was fixed. The research of the last two decades has
         turned that picture around.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>
+            Poor sleep predicts chronic pain <strong>more strongly</strong> than
+            pain predicts poor sleep.
+          </>,
+          <>
+            <strong>One night</strong> of sleep loss made healthy adults more
+            sensitive to heat pain.
+          </>,
+          <>
+            Roughly <strong>three out of four</strong> people with chronic
+            non-cancer pain have clinically significant sleep disturbance.
+          </>,
+          <>
+            <strong>CBT-I</strong> reliably improves sleep and mood, though its
+            direct effect on pain intensity is more modest.
+          </>,
+        ]}
+      />
 
       <H2 id="both-ways">A two-way street – with a heavier lane</H2>
       <P>

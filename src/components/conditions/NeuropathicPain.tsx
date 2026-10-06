@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "../science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 import { BodyFront } from "../anatomy/BodyOutline";
 
@@ -174,6 +174,15 @@ export default function NeuropathicPain() {
         making it one of the largest and most under-recognized territories in
         pain medicine.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>Neuropathic pain is caused by damage or disease in the nervous system itself, and affects roughly <strong>7 to 10% of adults</strong>.</>,
+          <>Damaged nerves fire <strong>spontaneously</strong> – which is why a region can be numb and in pain at the same time.</>,
+          <>Peripheral neuropathy classically starts in the <strong>toes and soles</strong> and creeps upward; diabetes is the leading cause of this pattern in the developed world.</>,
+          <>Even first-line drugs deliver meaningful relief to a minority – roughly <strong>one in four to eight</strong> – so finding your medication is often a sequence of fair trials.</>,
+        ]}
+      />
 
       <H2 id="broken-wiring">The wiring becomes the alarm</H2>
       <WiringFigure />

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "../science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 import { HeadProfile } from "../anatomy/HeadProfile";
 
@@ -137,6 +137,15 @@ export default function Migraine() {
         which is why migraine has become pain medicine&rsquo;s biggest
         recent success story.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>Migraine affects roughly <strong>one person in seven</strong> and ranks second among all causes of disability on Earth.</>,
+          <>An attack is a sequence – prodrome, aura (about one in three people), headache, postdrome – not just a <strong>headache</strong>.</>,
+          <>The trigeminal nerve releases <strong>CGRP</strong>, and blocking it works.</>,
+          <>Acute medications work best taken <strong>early</strong>; use on too many days a month can cause medication-overuse headache.</>,
+        ]}
+      />
 
       <H2 id="phases">An attack is more than a headache</H2>
       <PhasesFigure />

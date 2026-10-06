@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "./Figure";
+import { Figure, H2, KeyTakeaways, P } from "./Figure";
 import { FIG } from "@/lib/fig";
 
 const TYPES = [
@@ -134,6 +134,26 @@ export default function ThreeTypesOfPain() {
         most useful things you and your clinician can work out, because
         different mechanisms respond to different treatments.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>
+            Pain falls into <strong>three mechanism-based types</strong>:
+            nociceptive, neuropathic, and nociplastic.
+          </>,
+          <>
+            Nociplastic pain, recognized in <strong>2017</strong>, is real pain
+            from a changed, over-sensitive pain system.
+          </>,
+          <>
+            Many people have <strong>more than one type at once</strong>.
+          </>,
+          <>
+            The type points toward <strong>what tends to help</strong>, because
+            different mechanisms respond to different treatments.
+          </>,
+        ]}
+      />
 
       <H2 id="nociceptive">1. Nociceptive pain – the familiar kind</H2>
       <P>

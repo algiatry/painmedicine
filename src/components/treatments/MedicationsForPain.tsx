@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "../science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
@@ -213,6 +213,23 @@ export default function MedicationsForPain() {
         to the mechanism and modest drugs work well; mismatch them and even
         potent ones fail.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>
+            Painkillers are not a ladder from weak to strong – they are <strong>different tools that act at different points</strong> on the pain pathway.
+          </>,
+          <>
+            Relief comes from <strong>mechanism match</strong>, not potency: a modest drug that fits beats a powerful one that does not.
+          </>,
+          <>
+            Pain medications treat the symptom, so they work best as one part of a plan that also addresses the cause.
+          </>,
+          <>
+            A good pain reliever is used <strong>for a defined purpose and period</strong>, with a plan for what &ldquo;working&rdquo; looks like and when to stop.
+          </>,
+        ]}
+      />
 
       <H2 id="what-are-pain-medications">What are pain medications?</H2>
       <P>

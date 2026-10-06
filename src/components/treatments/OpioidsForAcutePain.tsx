@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "../science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
@@ -15,6 +15,23 @@ const link =
 export default function OpioidsForAcutePain() {
   return (
     <div>
+      <KeyTakeaways
+        items={[
+          <>
+            For some acute conditions opioids help modestly, for others the benefit is very small, and <strong>the harms are not small</strong>.
+          </>,
+          <>
+            For acute musculoskeletal pain, oral opioids lowered pain by only about <strong>9 points on a 100-point scale</strong> while raising side effects by roughly 10 percentage points.
+          </>,
+          <>
+            In the OPAL trial, opioids gave <strong>no significant benefit</strong> for acute low back or neck pain at six weeks.
+          </>,
+          <>
+            For acute abdominal pain and after painful procedures, the same evidence says opioids <strong>earn their place</strong>.
+          </>,
+        ]}
+      />
+
       <H2 id="the-question">A fair question, finally answered at scale</H2>
       <P>
         If you have ever left an urgent care or emergency department with a
@@ -31,6 +48,7 @@ export default function OpioidsForAcutePain() {
         some acute conditions they help, modestly; for others the benefit is
         very small; and the harms are not small.
       </P>
+
       <P>
         This page walks through what that overview and the two trials behind
         its most-quoted findings actually report. It describes; it does not

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P, anim } from "./Figure";
+import { Figure, H2, KeyTakeaways, P, anim } from "./Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
@@ -212,6 +212,27 @@ export default function TheNoceboEffect() {
         understanding for a practical reason: it is one of the few pain
         amplifiers that changes when the information around you changes.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>
+            Expecting harm can make pain worse – the{" "}
+            <strong>nocebo effect</strong> is biology, not attitude.
+          </>,
+          <>
+            Across twelve trials, about <strong>35%</strong> of people who
+            received only saline reported systemic side effects.
+          </>,
+          <>
+            Nocebo symptoms are <strong>real</strong>; the body does not label
+            the source.
+          </>,
+          <>
+            Framing matters: asking <strong>how many people out of 100</strong>{" "}
+            get a side effect can help.
+          </>,
+        ]}
+      />
 
       <H2 id="what-it-is">Expectation, running in reverse</H2>
       <P>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "../science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
@@ -40,6 +40,15 @@ export default function PersistentPostsurgicalPain() {
         beyond three months, medicine recognizes a distinct condition – not a
         character flaw, and not automatically a failed operation.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>New or worsened pain that remains <strong>beyond three months</strong> is a recognized condition, not a character flaw.</>,
+          <>It affects roughly <strong>one person in ten</strong> after surgery, with risk varying widely by procedure.</>,
+          <>Risk factors are information, <strong>not blame</strong> – they do not mean the pain is psychological.</>,
+          <>Ask for help early: there is <strong>no advantage in waiting</strong> for exactly three months to plan better care.</>,
+        ]}
+      />
 
       <H2 id="transition">When recovery takes a different path</H2>
       <TransitionFigure />

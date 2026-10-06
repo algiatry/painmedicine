@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "../science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
@@ -186,6 +186,23 @@ export default function ComparingYourOptions() {
         them – and teaches the reading skills to weigh any option, or any
         claim, yourself.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>
+            <strong>No treatment wins across the board</strong> – nearly everything helps modestly, and the real differences lie in certainty, durability, safety, and mechanism fit.
+          </>,
+          <>
+            Exercise, active rehabilitation, and behavioral therapies sit on the high-certainty shore: modest on average, durable, and essentially risk-free, which is why guidelines start there.
+          </>,
+          <>
+            The strategy is to <strong>stack modest wins</strong>: effects from different mechanisms add, while their side effects mostly don&rsquo;t.
+          </>,
+          <>
+            In the SPACE trial, the opioid arm ended <strong>no better on function, slightly worse on pain</strong>, with more side effects.
+          </>,
+        ]}
+      />
 
       <H2 id="the-map">The map</H2>
       <EvidenceMapFigure />

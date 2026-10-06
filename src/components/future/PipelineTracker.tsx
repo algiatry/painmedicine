@@ -1,5 +1,5 @@
 import JsonLd from "@/components/JsonLd";
-import { Figure, H2, P, anim } from "@/components/science/Figure";
+import { Figure, H2, KeyTakeaways, P, anim } from "@/components/science/Figure";
 import { SITE } from "@/lib/site";
 import {
   CANDIDATES,
@@ -365,6 +365,21 @@ export default function PipelineTracker() {
         is what is actually moving through development now: what each candidate
         is, how it works, and how far along it is.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>
+            A candidate in a trial is <strong>not an available treatment</strong>.
+          </>,
+          <>
+            Most investigational drugs <strong>never reach patients</strong>.
+          </>,
+          <>
+            Only entries marked <strong>Approved</strong> are cleared for use,
+            and only for the condition on their label.
+          </>,
+        ]}
+      />
       <P>
         A word on how to read it, because this is a page where honesty matters
         more than hype. A candidate in a trial is <strong>not</strong> an

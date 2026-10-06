@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "@/components/science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "@/components/science/Figure";
 import { FIG } from "@/lib/fig";
 
 const STEPS = [
@@ -93,6 +93,27 @@ export default function BiologicsGeneTherapy() {
         moving the other way: toward therapies precise enough to block a single
         molecule, or to reach the gene that makes it.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>
+            Migraine proved precision works: the FDA approved the first{" "}
+            <strong>CGRP antibody</strong> in 2018.
+          </>,
+          <>
+            <strong>NGF-blocking antibodies</strong> relieved osteoarthritis
+            pain but raised the risk of joint damage.
+          </>,
+          <>
+            <strong>Gene therapy</strong> aimed at SCN9A has entered its first
+            human trial – the earliest of early days.
+          </>,
+          <>
+            Evidence for regenerative treatments such as platelet-rich plasma
+            and stem-cell injections remains <strong>mixed</strong>.
+          </>,
+        ]}
+      />
 
       <H2 id="migraine">The migraine breakthrough</H2>
       <P>

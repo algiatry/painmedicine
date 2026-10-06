@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "./Figure";
+import { Figure, H2, KeyTakeaways, P } from "./Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
@@ -158,6 +158,28 @@ export default function AttentionAndDistraction() {
         three angles: <strong>attention is a dial on the pain system</strong>,
         and the dial is wired into your brainstem and spinal cord.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>
+            Attention is a <strong>dial on the pain system</strong>, wired into
+            the brainstem and spinal cord.
+          </>,
+          <>
+            Distraction changes what the scanner measures, so easing pain when
+            your mind is elsewhere is <strong>not imagined</strong>.
+          </>,
+          <>
+            The <strong>more demanding</strong> the competing task, the larger
+            the effect.
+          </>,
+          <>
+            Distraction is strongest for <strong>brief, predictable</strong>{" "}
+            pain, and it is a tool for the worst hours, not a plan for
+            persistent pain.
+          </>,
+        ]}
+      />
 
       <H2 id="dial">The dial is real: brain to brainstem to spinal cord</H2>
       <DialFigure />

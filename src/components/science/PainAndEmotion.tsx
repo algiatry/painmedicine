@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P, anim } from "./Figure";
+import { Figure, H2, KeyTakeaways, P, anim } from "./Figure";
 import { FIG } from "@/lib/fig";
 
 function SharedCircuitryFigure() {
@@ -197,6 +197,29 @@ export default function PainAndEmotion() {
         hear: a person&rsquo;s report of their pain{" "}
         <strong>should be respected</strong>.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>
+            Pain is defined as a <strong>sensory and emotional</strong>{" "}
+            experience – emotion is half of what pain is.
+          </>,
+          <>
+            Stress and fear can tip the brain&rsquo;s volume control toward{" "}
+            <strong>amplification</strong>, so the same signal genuinely hurts
+            more.
+          </>,
+          <>
+            Catastrophic thinking <strong>predicts</strong> future pain
+            intensity and disability, but the fear-avoidance loop has an exit:
+            gradual, supported return to movement.
+          </>,
+          <>
+            Psychological therapies produce <strong>measurable reductions</strong>{" "}
+            in pain, though the average effects are modest.
+          </>,
+        ]}
+      />
 
       <H2 id="wired-together">Wired together</H2>
       <SharedCircuitryFigure />

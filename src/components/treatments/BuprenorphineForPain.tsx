@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "@/components/science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "@/components/science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
@@ -130,6 +130,23 @@ function CeilingFigure() {
 export default function BuprenorphineForPain() {
   return (
     <div>
+      <KeyTakeaways
+        items={[
+          <>
+            Buprenorphine is an opioid and a <strong>partial agonist</strong>; its effect on breathing reaches a ceiling in controlled studies, though a ceiling is not a guarantee of safety.
+          </>,
+          <>
+            It has been an approved <strong>pain medication</strong> in the United States for more than four decades, with Butrans and Belbuca as the pain products.
+          </>,
+          <>
+            In the 2025 VOICE trial, the difference between the group offered buprenorphine and the group not offered it was <strong>essentially zero</strong> for pain and opioid dose.
+          </>,
+          <>
+            Combining it with alcohol, benzodiazepines, or other sedatives can overwhelm the ceiling.
+          </>,
+        ]}
+      />
+
       <H2 id="stigma">&ldquo;Isn&rsquo;t that the addiction drug?&rdquo;</H2>
       <P>
         If your physician has mentioned buprenorphine and your first thought
@@ -143,6 +160,7 @@ export default function BuprenorphineForPain() {
         breathing and your long-term safety – not about a diagnosis you do not
         have.
       </P>
+
       <P>
         That double life is why the stigma sticks. For years, a federal
         &ldquo;X-waiver&rdquo; was required to prescribe buprenorphine for

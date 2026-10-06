@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "../science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
@@ -144,6 +144,15 @@ export default function ChronicPelvicPain() {
         prostatitis / chronic pelvic pain syndrome, a name that itself admits
         the prostate is usually not infected.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>Chronic pelvic pain has lasted <strong>six months or more</strong> and is routinely blamed on a single organ.</>,
+          <>Among women, the origin is <strong>not gynecologic in about 80% of cases</strong>, and musculoskeletal dysfunction is found in 50% to 90% of patients.</>,
+          <>A normal scan or scope does not mean nothing is wrong – the pain is usually coming from a structure those tests <strong>do not see</strong>.</>,
+          <>Because the sources are plural, treatment is too: <strong>pelvic floor physical therapy</strong> produced a moderate-or-better response in 59%, versus 26% with general massage.</>,
+        ]}
+      />
 
       <H2 id="neighborhood">One neighborhood, many tenants</H2>
       <NeighborhoodFigure />

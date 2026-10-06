@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "../science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 import { SpineSide } from "../anatomy/SpineSide";
 
@@ -139,6 +139,23 @@ export default function InterventionalProcedures() {
         world&rsquo;s steadiest needle accomplishes nothing. Which is why
         everything below begins with diagnosis, not equipment.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>
+            Procedures deliver treatment to the exact structure generating the pain, so <strong>everything begins with diagnosis</strong>, not equipment.
+          </>,
+          <>
+            Epidural steroid injections give <strong>modest, mostly short-term</strong> relief for radiating nerve-root pain like sciatica.
+          </>,
+          <>
+            Spinal cord stimulation offers a <strong>take-home trial</strong> of about a week before any implant decision.
+          </>,
+          <>
+            Procedures rarely erase pain permanently – they <strong>buy windows</strong>, and what fills the window decides what it was worth.
+          </>,
+        ]}
+      />
 
       <H2 id="the-map">The precision map</H2>
       <TargetsFigure />

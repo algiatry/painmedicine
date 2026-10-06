@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "../science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
@@ -83,6 +83,15 @@ export default function NeckPain() {
         &ldquo;which bone is damaged?&rdquo; but &ldquo;which clinical pattern is
         this?&rdquo;
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>The first useful question is <strong>which clinical pattern</strong> this is: local or non-specific, cervical radiculopathy, or myelopathy.</>,
+          <>Non-specific does not mean imagined – the pain is real while the <strong>anatomical label</strong> is less certain.</>,
+          <>Your posture is not a diagnosis, and a scan answers a clinical question rather than <strong>automatically finding the cause</strong>.</>,
+          <>The center of care is <strong>active</strong>: clear explanation, staying engaged with ordinary activity, and exercise-based rehabilitation.</>,
+        ]}
+      />
 
       <H2 id="patterns">Three patterns hidden inside one phrase</H2>
       <PatternFigure />

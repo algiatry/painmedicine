@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "../science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
@@ -54,6 +54,15 @@ export default function Endometriosis() {
         fatigue, and infertility. The amount seen at surgery does not reliably
         predict how much a person hurts.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>It is not simply &ldquo;bad periods&rdquo;: it can drive pain <strong>throughout the month</strong>, pain during sex, bowel or bladder pain, fatigue, and infertility.</>,
+          <>Diagnosis <strong>no longer has to begin with surgery</strong> – a working diagnosis can come from symptoms, examination, and imaging.</>,
+          <>Pain can outgrow the visible lesions because of layers such as nerve involvement, muscle guarding, and <strong>sensitization</strong>.</>,
+          <>Hormonal suppression can control pain but <strong>prevents conception during treatment</strong>, so pain and fertility plans need coordination.</>,
+        ]}
+      />
 
       <H2 id="pattern">The symptom pattern matters</H2>
       <P>

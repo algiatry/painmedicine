@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "../science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const SIGNALS = [
@@ -64,6 +64,27 @@ export default function PainClinicsVsPainMedicine() {
         licensing weight of their own. What separates the two is everything
         behind the sign, and all of it is checkable.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>
+            The words &ldquo;pain clinic&rdquo; carry <strong>no licensing weight</strong>;
+            anyone may use them.
+          </>,
+          <>
+            Ask <strong>who practices here, and what happens inside</strong>, rather than
+            whether it is a pain clinic.
+          </>,
+          <>
+            Look for <strong>five signals</strong>: verifiable training, a real evaluation, a
+            team, safety habits, and open coordination.
+          </>,
+          <>
+            Board certification can be checked in minutes with the ABMS&rsquo;s{" "}
+            <strong>free lookup</strong>.
+          </>,
+        ]}
+      />
 
       <SignalsFigure />
 

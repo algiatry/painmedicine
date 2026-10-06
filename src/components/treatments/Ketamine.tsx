@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "@/components/science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "@/components/science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
@@ -137,6 +137,23 @@ function InfusionVersusHomeFigure() {
 export default function Ketamine() {
   return (
     <div>
+      <KeyTakeaways
+        items={[
+          <>
+            Ketamine is <strong>not FDA-approved for any pain condition</strong>; every use for pain is off-label, and its only FDA-approved use is as a surgical anesthetic.
+          </>,
+          <>
+            The 2025 Cochrane review found <strong>&ldquo;no clear evidence&rdquo;</strong> that ketamine reduces chronic pain intensity, with low to very low certainty.
+          </>,
+          <>
+            For some people with stubborn neuropathic or CRPS pain, a <strong>monitored infusion</strong> can bring relief for days to a few weeks.
+          </>,
+          <>
+            Home ketamine lacks the monitoring of a clinic, and regular use can injure the <strong>bladder</strong> and cause dependence.
+          </>,
+        ]}
+      />
+
       <InfusionVersusHomeFigure />
 
       <H2 id="what-it-is">An anesthetic with a second life</H2>
@@ -152,6 +169,7 @@ export default function Ketamine() {
         controlled substance with accepted medical uses and a real potential
         for misuse.
       </P>
+
       <P>
         If you have been living with pain that nothing seems to touch, it is
         natural to wonder about it. This page explains what ketamine does in

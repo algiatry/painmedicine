@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "../science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 import { BodyFront } from "../anatomy/BodyOutline";
 
@@ -159,6 +159,15 @@ export default function Fibromyalgia() {
         message is the site&rsquo;s founding one: you are not imagining your
         pain. The evidence agrees with you.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>Fibromyalgia affects roughly <strong>2 to 4% of people</strong> and is the signature example of nociplastic pain – an over-sensitive pain system.</>,
+          <>Brain imaging shows the <strong>same pain-processing activation at roughly half the pressure</strong>, and substance P in spinal fluid is about three times higher.</>,
+          <>Pain rarely travels alone: profound fatigue, unrefreshing sleep, and &ldquo;fibro fog&rdquo; are part of the picture.</>,
+          <>Understanding the condition is itself a treatment, and the strongest evidence belongs to <strong>gentle, gradual movement</strong>.</>,
+        ]}
+      />
 
       <H2 id="the-map">Pain without a postcode</H2>
       <WidespreadFigure />

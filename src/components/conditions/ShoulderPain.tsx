@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "../science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 import { SiteMarker } from "../anatomy/marks";
 
@@ -246,6 +246,15 @@ export default function ShoulderPain() {
         third most common musculoskeletal reason people see a primary-care
         clinician, and most of it is not dangerous.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>Shoulder pain is the <strong>third most common</strong> musculoskeletal reason people see a primary-care clinician, and most of it is not dangerous.</>,
+          <>An injection buys <strong>speed</strong>; structured exercise or good advice tends to <strong>hold</strong>.</>,
+          <>Rotator cuff tears are common without symptoms – <strong>two-thirds</strong> of those found in one village screening caused no symptoms at all.</>,
+          <>Chest pressure, breathlessness, or sweating with shoulder pain needs <strong>emergency care</strong>, because the heart can refer pain here.</>,
+        ]}
+      />
 
       <H2 id="what-hurts">What can hurt in a shoulder</H2>
       <ShoulderFigure />

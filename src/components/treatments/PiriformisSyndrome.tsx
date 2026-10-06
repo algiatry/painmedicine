@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "../science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 import {
   PelvisPosterior,
@@ -141,6 +141,23 @@ export default function PiriformisSyndrome() {
         buttock can hurt. What the evidence does agree on is worth knowing,
         because it changes what a physical therapy plan is built to do.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>
+            Piriformis syndrome is recognized by <strong>pattern</strong>, not a single test: buttock pain, worse with sitting, notch tenderness, and pain reproduced by stretching or contracting the muscle.
+          </>,
+          <>
+            It is a diagnosis of pattern <em>and</em> exclusion, so a careful clinician checks the spine, sacroiliac joint, hip joint, and hamstring tendons first.
+          </>,
+          <>
+            The first-line answer across every review is <strong>conservative care led by physical therapy</strong>, aimed at the muscle, the hips around it, and the nerve.
+          </>,
+          <>
+            Injections are positioned as a way to let the exercise work rather than as a plan in themselves, and surgery is reserved for a rare chronic minority.
+          </>,
+        ]}
+      />
 
       <H2 id="where-it-lives">Where it lives</H2>
       <DeepHipFigure />

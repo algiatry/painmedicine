@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "../science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
@@ -62,6 +62,15 @@ export default function DiabeticNeuropathy() {
         sensation. A foot can therefore burn at night and still fail to feel a
         blister the next morning.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>The most common form, <strong>distal symmetric polyneuropathy</strong>, begins at the far ends of the longest nerves – the toes first.</>,
+          <>Numbness removes the alarm that protects skin, so <strong>daily visual foot checks</strong> and properly fitting footwear are part of medical prevention.</>,
+          <>Treatment has two jobs: <strong>reducing future damage</strong>, with glucose management central, and controlling symptoms.</>,
+          <>The American Diabetes Association recommends neuropathy assessment <strong>at least annually</strong> after the initial assessment.</>,
+        ]}
+      />
 
       <H2 id="toes-first">Why it starts in the toes</H2>
       <LengthFigure />

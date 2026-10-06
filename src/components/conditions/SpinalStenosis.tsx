@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "../science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
@@ -64,6 +64,15 @@ export default function SpinalStenosis() {
         narrow-looking canal without the walking-limited leg symptoms that make
         stenosis a clinical condition.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>The signature is <strong>neurogenic claudication</strong>: leg or buttock symptoms that build with standing or walking and ease with sitting or bending forward.</>,
+          <>A narrow MRI is not the diagnosis – <strong>anatomical narrowing and the matching symptom pattern</strong> must line up.</>,
+          <>The strongest nonsurgical evidence supports a <strong>multimodal rehabilitation plan</strong>.</>,
+          <>Decompression is generally considered when walking and daily function remain <strong>severely limited</strong> after a well-run nonsurgical plan and the imaging matches the symptoms.</>,
+        ]}
+      />
 
       <H2 id="claudication">The shopping-cart sign</H2>
       <PostureFigure />

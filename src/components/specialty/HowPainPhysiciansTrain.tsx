@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "../science/Figure";
+import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const FEEDERS = [
@@ -122,6 +122,27 @@ export default function HowPainPhysiciansTrain() {
         pathway works turns a vague title into something you can actually
         check.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>
+            Training is a four-year residency plus a <strong>12-month ACGME-accredited
+            fellowship</strong> devoted to pain medicine.
+          </>,
+          <>
+            <strong>Six</strong> ABMS member boards send physicians through the same exam to
+            the same passing standard.
+          </>,
+          <>
+            Certification is time-limited and <strong>kept current</strong> through continuing
+            assessment.
+          </>,
+          <>
+            You can verify a physician for free with the ABMS <strong>Is My Doctor
+            Certified?</strong> lookup.
+          </>,
+        ]}
+      />
 
       <H2 id="the-road">The nine-year road</H2>
       <P>

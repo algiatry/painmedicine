@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "./Figure";
+import { Figure, H2, KeyTakeaways, P } from "./Figure";
 import { FIG } from "@/lib/fig";
 
 /**
@@ -85,6 +85,26 @@ export default function AcuteVsChronic() {
         outlived it – between <strong>acute</strong> and{" "}
         <strong>chronic</strong> pain.
       </P>
+
+      <KeyTakeaways
+        items={[
+          <>
+            Acute pain is a working alarm that <strong>fades as you heal</strong>.
+          </>,
+          <>
+            Chronic pain <strong>persists past three months</strong>, often after
+            the injury has healed.
+          </>,
+          <>
+            Chronic pain is usually not just acute pain that lasted, because a
+            pain system can become <strong>sensitized</strong>.
+          </>,
+          <>
+            Chronic pain is <strong>treatable</strong> – many people
+            substantially reduce their pain and rebuild their lives.
+          </>,
+        ]}
+      />
 
       <H2 id="acute">Acute pain is a working alarm</H2>
       <P>
