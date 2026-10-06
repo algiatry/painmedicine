@@ -148,13 +148,13 @@ export default function PiriformisSyndrome() {
             Piriformis syndrome is recognized by <strong>pattern</strong>, not a single test: buttock pain, worse with sitting, notch tenderness, and pain reproduced by stretching or contracting the muscle.
           </>,
           <>
-            It is a diagnosis of pattern <em>and</em> exclusion, so a careful clinician checks the spine, sacroiliac joint, hip joint, and hamstring tendons first.
+            It is a diagnosis of <strong>pattern and exclusion</strong>, so a careful clinician checks the spine, sacroiliac joint, hip joint, and hamstring tendons first.
           </>,
           <>
             The first-line answer across every review is <strong>conservative care led by physical therapy</strong>, aimed at the muscle, the hips around it, and the nerve.
           </>,
           <>
-            Injections are positioned as a way to let the exercise work rather than as a plan in themselves, and surgery is reserved for a rare chronic minority.
+            Injections are positioned as a way to <strong>let the exercise work</strong> rather than as a plan in themselves, and surgery is reserved for a rare chronic minority.
           </>,
         ]}
       />

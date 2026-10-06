@@ -157,7 +157,7 @@ export default function CentralPostStrokePain() {
           <>It affects roughly <strong>1 in 10 stroke survivors</strong> and often begins months after the stroke.</>,
           <>The pain is felt on the affected side, in the same territory where <strong>sensation changed</strong> – not in a joint or a muscle.</>,
           <>Any new or worsening symptom after a stroke deserves a call to the stroke team first, to <strong>rule out a new event</strong>.</>,
-          <>It is among the harder pains to treat, and the trials are small.</>,
+          <>It is among the <strong>harder pains to treat</strong>, and the trials are small.</>,
         ]}
       />
 

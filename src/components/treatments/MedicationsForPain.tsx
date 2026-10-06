@@ -223,7 +223,7 @@ export default function MedicationsForPain() {
             Relief comes from <strong>mechanism match</strong>, not potency: a modest drug that fits beats a powerful one that does not.
           </>,
           <>
-            Pain medications treat the symptom, so they work best as one part of a plan that also addresses the cause.
+            Pain medications treat the <strong>symptom, not the cause</strong>, so they work best as one part of a plan that also addresses what set the pain off.
           </>,
           <>
             A good pain reliever is used <strong>for a defined purpose and period</strong>, with a plan for what &ldquo;working&rdquo; looks like and when to stop.

@@ -142,7 +142,7 @@ export default function BuprenorphineForPain() {
             In the 2025 VOICE trial, the difference between the group offered buprenorphine and the group not offered it was <strong>essentially zero</strong> for pain and opioid dose.
           </>,
           <>
-            Combining it with alcohol, benzodiazepines, or other sedatives can overwhelm the ceiling.
+            Combining it with alcohol, benzodiazepines, or other sedatives can <strong>overwhelm the ceiling</strong>.
           </>,
         ]}
       />

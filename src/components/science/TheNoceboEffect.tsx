@@ -216,8 +216,9 @@ export default function TheNoceboEffect() {
       <KeyTakeaways
         items={[
           <>
-            Expecting harm can make pain worse – the{" "}
-            <strong>nocebo effect</strong> is biology, not attitude.
+            Expecting harm can genuinely amplify pain – blocking its brain
+            chemical (CCK) erases the extra pain, so{" "}
+            <strong>nocebo is biology, not attitude</strong>.
           </>,
           <>
             Across twelve trials, about <strong>35%</strong> of people who

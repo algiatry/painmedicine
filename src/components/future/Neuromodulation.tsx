@@ -98,7 +98,8 @@ export default function Neuromodulation() {
           </>,
           <>
             <strong>DRG and peripheral nerve stimulation</strong> aim at the
-            exact spot, such as focal pain like CRPS.
+            exact spot – one nerve cluster or a single nerve – for focal pain
+            such as CRPS.
           </>,
           <>
             <strong>Non-invasive brain stimulation</strong> needs no implant,

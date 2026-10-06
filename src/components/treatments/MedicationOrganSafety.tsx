@@ -20,7 +20,7 @@ export default function MedicationOrganSafety() {
             The established FDA adult ceiling is <strong>4,000 milligrams of acetaminophen in 24 hours</strong> from all products combined – a ceiling, not a target.
           </>,
           <>
-            Injuries come from stacking: hidden acetaminophen, the NSAID &ldquo;triple whammy,&rdquo; and opioids or sedatives combined with benzodiazepines, sleep aids, or alcohol.
+            Injuries come from <strong>stacking</strong>: hidden acetaminophen, the NSAID &ldquo;triple whammy,&rdquo; and opioids or sedatives combined with benzodiazepines, sleep aids, or alcohol.
           </>,
           <>
             A pharmacist&rsquo;s <strong>interaction and duplication check</strong> takes minutes and catches these patterns early.

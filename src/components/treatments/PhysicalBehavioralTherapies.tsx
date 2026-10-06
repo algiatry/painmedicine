@@ -179,7 +179,7 @@ export default function PhysicalBehavioralTherapies() {
             Pacing – increasing activity <strong>by plan, not by pain</strong> – is the escape from the boom-bust cycle.
           </>,
           <>
-            Multidisciplinary rehabilitation beat usual care and nearly doubled the odds of returning to work compared with physical treatment alone.
+            <strong>Multidisciplinary rehabilitation</strong> beat usual care and nearly doubled the odds of returning to work versus physical treatment alone.
           </>,
         ]}
       />
