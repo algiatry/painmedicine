@@ -255,7 +255,7 @@ export default function PainAndEmotion() {
         either enhance or diminish the pain experience.&rdquo; The effect is
         measurable: in controlled experiments, changing only what people{" "}
         <em>expected</em> changed how painful an identical heat stimulus felt
-        by around 20%.
+        by roughly 15 to 30%, depending on the study.
       </P>
       <P>
         This is the honest answer to why stress makes pain worse. It is not

@@ -147,9 +147,10 @@ export default function HowPainPhysiciansTrain() {
       <H2 id="the-road">The nine-year road</H2>
       <P>
         The arithmetic is straightforward. After a standard four-year medical
-        degree comes a <strong>four-year residency</strong> – most commonly
-        anesthesiology or physical medicine &amp; rehabilitation, with
-        neurology and psychiatry close behind. Only then comes the
+        degree comes a <strong>four-year residency</strong> for the most common
+        routes – anesthesiology or physical medicine &amp; rehabilitation, with
+        neurology and psychiatry close behind – though across the six feeder
+        specialties residency runs three to five years. Only then comes the
         specialty&rsquo;s defining step: a{" "}
         <strong>12-month fellowship devoted entirely to pain medicine</strong>,
         accredited by the ACGME, the body that accredits US physician
@@ -176,7 +177,7 @@ export default function HowPainPhysiciansTrain() {
       </P>
       <P>
         The pipeline is substantial but selective: roughly{" "}
-        <strong>120 accredited fellowship programs</strong> train about{" "}
+        <strong>over 100 accredited fellowship programs</strong> train about{" "}
         <strong>400 fellows a year</strong> nationwide. When you meet a
         board-certified pain physician, you are meeting someone who chose this
         field twice – once at residency, and again when they gave it a

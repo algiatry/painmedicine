@@ -16,7 +16,7 @@ function TeamRingFigure() {
   const cy = 170;
   const r = 118;
   return (
-    <Figure caption="A pain team, arranged the way the care model intends: around the patient, not above them. Composition varies by program – these are the roles named by IASP, the CDC, and major academic centers.">
+    <Figure caption="A pain team, arranged the way the care model intends: around the patient, not above them. Composition varies by program – these are the roles named by IASP and major academic centers.">
       <svg
         role="img"
         aria-labelledby="team-title team-desc"
@@ -150,8 +150,9 @@ export default function ThePainTeam() {
       <H2 id="who">Who&rsquo;s on the team</H2>
       <P>
         Composition varies by program, but the roles are consistent across the
-        IASP&rsquo;s guidelines for pain treatment services, the CDC&rsquo;s
-        2022 guideline, and major academic centers:
+        IASP&rsquo;s guidelines for pain treatment services and major academic
+        centers – and reflect the coordinated, multidisciplinary care the
+        CDC&rsquo;s 2022 guideline calls for:
       </P>
       <ul className="mt-4 space-y-3 text-slate-700">
         <li className="flex gap-3">
@@ -187,7 +188,7 @@ export default function ThePainTeam() {
           <span>
             <strong>Pharmacists and social workers</strong> – medication
             expertise on one side; insurance, work, and life logistics on the
-            other. Both named in the CDC&rsquo;s picture of collaborative care.
+            other. Both part of the coordinated care these models describe.
           </span>
         </li>
       </ul>

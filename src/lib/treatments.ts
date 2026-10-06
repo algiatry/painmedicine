@@ -24,7 +24,7 @@ export const TREATMENT_ARTICLES: Article[] = [
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
-      "Kratom is a Southeast Asian tree whose leaves contain mitragynine, a compound that acts on the same opioid receptors as prescription painkillers – though not in the same way. Roughly two million Americans use it each year, many for pain. It is not FDA-approved, the products are largely unregulated, and the evidence for pain relief, while real, is early and thin.",
+      "Kratom is a Southeast Asian tree whose leaves contain mitragynine, a compound that acts on the same opioid receptors as prescription painkillers – though not in the same way. Roughly 1.7 million Americans use it each year, many for pain. It is not FDA-approved, the products are largely unregulated, and the evidence for pain relief, while real, is early and thin.",
     faqs: [
       {
         question: "Is kratom an opioid?",

@@ -139,7 +139,7 @@ export default function Kratom() {
         leaf or brewed it as tea for centuries: small amounts for energy
         through a workday, larger amounts for pain and rest at the end of one.
         In the United States it arrives as powder, capsules, and extracts, and
-        federal survey data suggest roughly <strong>two million Americans</strong>{" "}
+        federal survey data suggest roughly <strong>1.7 million Americans</strong>{" "}
         use it in a given year – with pain the most commonly reported reason.
       </P>
 
