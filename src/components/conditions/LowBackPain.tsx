@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Figure, H2, P } from "../science/Figure";
+import { Callout, Figure, H2, KeyTakeaways, P, PullQuote } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
@@ -177,6 +177,29 @@ export default function LowBackPain() {
         us were taught.
       </P>
 
+      <KeyTakeaways
+        items={[
+          <>
+            In roughly <strong>90% of cases</strong>, no test can pin low back
+            pain on a single structure – and that is a normal finding, not a
+            missed one.
+          </>,
+          <>
+            Scans often show &ldquo;degeneration&rdquo; in people with no pain
+            at all, so an early MRI usually changes nothing but your worry.
+          </>,
+          <>
+            For most backs the evidence favors{" "}
+            <strong>movement over rest</strong>: staying gently active speeds
+            recovery.
+          </>,
+          <>
+            A short list of red flags – and persistent or nerve-type pain – is
+            what tells you when to seek care.
+          </>,
+        ]}
+      />
+
       <H2 id="what-can-hurt">What can actually hurt in the lower back</H2>
       <GeneratorsFigure />
       <P>
@@ -205,6 +228,11 @@ export default function LowBackPain() {
         people a precise anatomical diagnosis is neither possible nor necessary
         for good care.
       </P>
+      <PullQuote>
+        Low back pain is a symptom, not a disease – and for most people, a
+        precise anatomical diagnosis is neither possible nor necessary for good
+        care.
+      </PullQuote>
       <P>
         Non-specific also does not mean mild. It simply means the useful
         questions change – from &ldquo;which structure?&rdquo; to &ldquo;is
@@ -261,6 +289,13 @@ export default function LowBackPain() {
       </P>
 
       <H2 id="red-flags">The red flags: when to seek care now</H2>
+      <Callout tone="caution" title="Seek same-day care for these">
+        New <strong>numbness in the groin or inner thighs</strong>,{" "}
+        <strong>trouble controlling bladder or bowels</strong>, or{" "}
+        <strong>progressive leg weakness</strong> together can signal cauda
+        equina syndrome – a rare nerve-compression emergency. Don&rsquo;t wait
+        it out; go to urgent care.
+      </Callout>
       <P>
         A short list of warning signs matters far more than any scan. Seek
         urgent care – same day – for new <strong>numbness in the groin or

@@ -14,6 +14,7 @@ import { ARTICLE_BODIES } from "@/components/bodies";
 import { SITE } from "@/lib/site";
 import PageKicker from "@/components/PageKicker";
 import ArticleEmblem from "@/components/ArticleEmblem";
+import ArticleToc from "@/components/ArticleToc";
 
 export const dynamicParams = false;
 
@@ -50,7 +51,8 @@ export default async function ArticlePage({
   const Body = ARTICLE_BODIES[a.slug];
 
   return (
-    <article className="mx-auto max-w-3xl px-4 sm:px-6 py-10 sm:py-14">
+    <div className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-14 xl:grid xl:grid-cols-[minmax(0,1fr)_15rem] xl:gap-12">
+      <article data-toc-root className="max-w-3xl">
       <JsonLd
         data={medicalWebPageJsonLd({
           title: a.title,
@@ -106,6 +108,8 @@ export default async function ArticlePage({
           hub={a.hub}
         />
       </header>
+
+      <ArticleToc variant="inline" />
 
       {Body && (
         <div className="mt-10">
@@ -199,6 +203,11 @@ export default async function ArticlePage({
         situation. {SITE.shortName} does not provide treatment or dosing
         guidance.
       </p>
-    </article>
+      </article>
+
+      <aside className="hidden xl:block">
+        <ArticleToc variant="rail" />
+      </aside>
+    </div>
   );
 }
