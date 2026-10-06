@@ -231,8 +231,8 @@ export default function PainAndSleep() {
         measurably more sensitive to heat pain. Their scans showed why: activity
         in the brain&rsquo;s pain-sensing cortex was{" "}
         <strong>amplified</strong>, while the deeper regions that normally
-        evaluate and dampen pain signals – the thalamus, the insula, and the
-        brain&rsquo;s reward circuitry – went <strong>quiet</strong>. The alarm
+        evaluate and dampen pain signals – the insula and the brain&rsquo;s
+        reward circuitry – went <strong>quiet</strong>. The alarm
         got louder at the same moment the volume control failed.
       </P>
       <P>
@@ -265,7 +265,7 @@ export default function PainAndSleep() {
         same pain-inhibition system and increased spontaneous pain – while sleep
         that was merely shortened by the same amount did not. And in a small
         early study, disrupting only deep slow-wave sleep for three nights
-        lowered pain thresholds by about a quarter and produced the kind of
+        lowered pain thresholds and produced the kind of
         widespread tenderness seen in fibromyalgia. Deep, unbroken sleep appears
         to be when the pain system resets.
       </P>

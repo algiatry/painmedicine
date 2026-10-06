@@ -104,7 +104,7 @@ export const CANDIDATES: Candidate[] = [
     indication: "Moderate-to-severe acute pain",
     phase: "Phase 3",
     why: "Aims to keep opioid-level pain relief while lowering abuse potential – in human abuse-potential studies it was reported less abusable than oxycodone and tramadol.",
-    note: "Positive topline results from two Phase 3 trials (ALLEVIATE-1 and -2). A 2026 healthy-volunteer study in Anesthesiology compared its breathing effects head-to-head with oxycodone. It still engages the µ-opioid receptor, so it is opioid-adjacent, not opioid-free; not yet FDA-approved.",
+    note: "Positive topline results from two Phase 3 trials (ALLEVIATE-1 and -2). A 2026 healthy-volunteer study in Anesthesiology compared its breathing effects head-to-head with oxycodone. It still engages the µ-opioid receptor, so it is opioid-adjacent, not opioid-free; not yet FDA-approved. Now developed by Adneuris Therapeutics, a Tris Pharma company.",
     updated: "2026-10",
     source: {
       label: "Tris Pharma – ALLEVIATE-2 Phase 3 results",
@@ -136,8 +136,8 @@ export const CANDIDATES: Candidate[] = [
     indication: "Diabetic peripheral neuropathic pain",
     phase: "Phase 2",
     why: "A once-daily pill hitting a brand-new, non-opioid target for nerve pain. Its Phase 2b study met its goals at the 10 mg dose, which is moving toward Phase 3.",
-    note: "Holds FDA Fast Track designation; Phase 3 planned.",
-    updated: "2025-03",
+    note: "Holds FDA Fast Track designation; FDA cleared Phase 3 development in early 2026.",
+    updated: "2026-04",
     source: {
       label: "Lexicon – PROGRESS Phase 2b topline results",
       url: "https://investors.lexpharma.com/news-releases/news-release-details/lexicon-pharmaceuticals-announces-topline-results-phase-2b",
@@ -182,10 +182,10 @@ export const CANDIDATES: Candidate[] = [
     indication: "Idiopathic small fiber neuropathy",
     phase: "Phase 1",
     why: "The frontier's edge: a one-time gene therapy that turns down the body's master pain gene at its source in the sensory nerves, aiming for durable relief. First-in-human.",
-    note: "Entering a Phase 1 trial (NCT06980948) after primate data published in 2026; earliest-stage and unproven in people.",
+    note: "Entering a Phase 1/2 trial (NCT06980948) after primate data published in 2026; earliest-stage and unproven in people.",
     updated: "2026-03",
     source: {
-      label: "ClinicalTrials.gov – ST-503 Phase 1 (NCT06980948)",
+      label: "ClinicalTrials.gov – ST-503 Phase 1/2 (NCT06980948)",
       url: "https://clinicaltrials.gov/study/NCT06980948",
     },
   },

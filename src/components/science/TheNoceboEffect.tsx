@@ -158,7 +158,7 @@ const SAMSON = [
 
 function SamsonFigure() {
   return (
-    <Figure caption="The SAMSON trial: 60 people who had quit statins because of side effects each spent months on a statin, months on placebo, and months on no tablet, in random order, rating symptoms daily. Placebo months felt almost exactly as bad as statin months. About 90% of the symptom burden was present on an inert tablet, the trial's 'nocebo ratio' of 0.90.">
+    <Figure caption="The SAMSON trial: 60 people (49 completed the protocol) who had quit statins because of side effects each spent months on a statin, months on placebo, and months on no tablet, in random order, rating symptoms daily. Placebo months felt almost exactly as bad as statin months. About 90% of the symptom burden was present on an inert tablet, the trial's 'nocebo ratio' of 0.90.">
       <svg
         role="img"
         aria-labelledby="samson-title samson-desc"

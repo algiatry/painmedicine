@@ -130,8 +130,8 @@ export default function Migraine() {
         seven</strong> – about a billion people – runs strongly in families,
         and in the Global Burden of Disease studies ranks{" "}
         <strong>second among all causes of disability on Earth, and first
-        among young women</strong>, who live with it at three times the rate
-        of men. None of that describes &ldquo;a bad headache.&rdquo; It
+        among young women</strong>, who live with it at two to three times the
+        rate of men. None of that describes &ldquo;a bad headache.&rdquo; It
         describes a neurological disease with its own machinery – machinery
         that science has now traced well enough to build drugs against,
         which is why migraine has become pain medicine&rsquo;s biggest

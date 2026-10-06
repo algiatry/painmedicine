@@ -95,7 +95,7 @@ function PathwayLesionFigure() {
 const ONSET = [
   { label: "Within the first month", pct: 31, accent: FIG.signal },
   { label: "Between 1 month and 1 year", pct: 41, accent: FIG.signalDark },
-  { label: "After the first year", pct: 28, accent: FIG.faint },
+  { label: "After the first year", pct: 5, accent: FIG.faint },
 ];
 
 function OnsetFigure() {
@@ -111,7 +111,7 @@ function OnsetFigure() {
         <desc id="onset-desc">
           Three horizontal bars: about 31 percent of cases begin within the
           first month, about 41 percent between one month and one year, and
-          the remainder after the first year.
+          about 5 percent after the first year.
         </desc>
         {ONSET.map((b, i) => {
           const y = 40 + i * 58;
@@ -130,7 +130,7 @@ function OnsetFigure() {
           );
         })}
         <text x="40" y="208" fontSize="11.5" fill={FIG.muted}>
-          Liampas et al. 2020, pooled onset timing; remainder estimated from the two reported windows
+          Liampas et al. 2020, pooled onset timing; onset after the first year is uncommon
         </text>
       </svg>
     </Figure>
@@ -193,8 +193,8 @@ export default function CentralPostStrokePain() {
       <OnsetFigure />
       <P>
         A 2020 meta-analysis pooled the available studies and found central
-        pain in about 11% of stroke survivors overall, rising above 50% in
-        those whose strokes had caused sensory loss or hit the thalamus. Only
+        pain in about 11% of stroke survivors overall, rising above 50% after
+        strokes that struck the thalamus or the brainstem. Only
         a third of cases began in the first month. Most started between one
         month and a year, and some later still. By then, follow-up visits are
         spaced out, rehabilitation has often ended, and a new burning pain is

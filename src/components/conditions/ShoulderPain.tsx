@@ -320,7 +320,7 @@ export default function ShoulderPain() {
       <P>
         Both options sit in current guidelines, and both are reasonable. What
         the evidence can now describe is the shape of each. In the SIX-Shoulder
-        Study, a pragmatic one-year trial run in Dutch general practice, 200
+        Study, a pragmatic one-year trial run in Dutch general practice, 183
         people with a new episode of shoulder pain were randomly assigned to a
         single corticosteroid injection or to twelve sessions of
         physiotherapist-led exercise. At six weeks the injection group had

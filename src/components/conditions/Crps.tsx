@@ -155,8 +155,9 @@ export default function Crps() {
     <div>
       <P>
         Complex regional pain syndrome is the rarest condition in this hub –
-        population studies find roughly 26 new cases per 100,000 people each
-        year, most often in women, most often after a wrist fracture – and
+        a large Dutch population study found roughly 26 new cases per 100,000
+        people each year (other studies report fewer), most often in women,
+        most often after a wrist fracture – and
         the one where early recognition changes the most. It used to go by
         two older names, reflex sympathetic dystrophy and causalgia, and it
         still comes in two types: <strong>type I</strong>, after an injury
