@@ -67,14 +67,14 @@ export default async function ReviewerPage({
         ])}
       />
 
-      <nav aria-label="Breadcrumb" className="text-sm text-slate-500">
-        <Link href="/reviewers" className="hover:text-teal-700">
+      <nav aria-label="Breadcrumb" className="text-sm text-slate-500 dark:text-slate-400">
+        <Link href="/reviewers" className="hover:text-teal-700 dark:hover:text-teal-300">
           Editorial board
         </Link>
-        <span aria-hidden="true" className="mx-2 text-slate-300">
+        <span aria-hidden="true" className="mx-2 text-slate-300 dark:text-slate-600">
           /
         </span>
-        <span className="text-slate-700">{r.name}</span>
+        <span className="text-slate-700 dark:text-slate-300">{r.name}</span>
       </nav>
 
       <header className="flex flex-col gap-5 sm:flex-row sm:items-start">
@@ -89,14 +89,14 @@ export default async function ReviewerPage({
           />
         )}
         <div className="space-y-2">
-          <p className="text-sm font-semibold uppercase tracking-widest text-teal-700">
+          <p className="text-sm font-semibold uppercase tracking-widest text-teal-700 dark:text-teal-300">
             Medical reviewer
           </p>
-          <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900">
+          <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
             {r.name}, {r.credentials}
           </h1>
-          <p className="text-lg text-slate-700">{r.headline}</p>
-          <p className="text-sm text-slate-500">
+          <p className="text-lg text-slate-700 dark:text-slate-300">{r.headline}</p>
+          <p className="text-sm text-slate-500 dark:text-slate-400">
             On the board since {formatDate(r.joinedAt)}
           </p>
         </div>
@@ -104,7 +104,7 @@ export default async function ReviewerPage({
 
       <section className="space-y-4">
         {r.bio.map((p) => (
-          <p key={p} className="text-slate-700">
+          <p key={p} className="text-slate-700 dark:text-slate-300">
             {p}
           </p>
         ))}
@@ -112,10 +112,10 @@ export default async function ReviewerPage({
 
       <section className="grid gap-8 sm:grid-cols-2">
         <div>
-          <h2 className="text-lg font-semibold text-slate-900">
+          <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
             Board certification
           </h2>
-          <ul className="mt-2 list-disc pl-5 space-y-1 text-slate-700">
+          <ul className="mt-2 list-disc pl-5 space-y-1 text-slate-700 dark:text-slate-300">
             {r.boards.map((b) => (
               <li key={b}>{b}</li>
             ))}
@@ -123,10 +123,10 @@ export default async function ReviewerPage({
         </div>
         {r.affiliations && r.affiliations.length > 0 && (
           <div>
-            <h2 className="text-lg font-semibold text-slate-900">
+            <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
               Affiliations
             </h2>
-            <ul className="mt-2 list-disc pl-5 space-y-1 text-slate-700">
+            <ul className="mt-2 list-disc pl-5 space-y-1 text-slate-700 dark:text-slate-300">
               {r.affiliations.map((a) => (
                 <li key={a}>{a}</li>
               ))}
@@ -136,10 +136,10 @@ export default async function ReviewerPage({
       </section>
 
       <section className="space-y-2">
-        <h2 className="text-lg font-semibold text-slate-900">
+        <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
           Verified records
         </h2>
-        <p className="text-sm text-slate-500">
+        <p className="text-sm text-slate-500 dark:text-slate-400">
           Public registries and profiles we checked before publishing this
           byline.{r.npi ? ` NPI ${r.npi}.` : ""}
         </p>
@@ -150,7 +150,7 @@ export default async function ReviewerPage({
                 href={u}
                 rel="noopener noreferrer me"
                 target="_blank"
-                className="break-all text-teal-700 underline underline-offset-2"
+                className="break-all text-teal-700 dark:text-teal-300 underline underline-offset-2"
               >
                 {u.replace(/^https?:\/\//, "")}
               </a>
@@ -160,20 +160,20 @@ export default async function ReviewerPage({
       </section>
 
       <section className="space-y-2">
-        <h2 className="text-lg font-semibold text-slate-900">Disclosures</h2>
-        <p className="text-slate-700">{r.disclosures}</p>
+        <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">Disclosures</h2>
+        <p className="text-slate-700 dark:text-slate-300">{r.disclosures}</p>
       </section>
 
       <section className="space-y-3">
-        <h2 className="text-lg font-semibold text-slate-900">
+        <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
           Pages reviewed ({reviewed.length})
         </h2>
         {reviewed.length === 0 ? (
-          <p className="text-slate-700">
+          <p className="text-slate-700 dark:text-slate-300">
             No pages carry this reviewer&rsquo;s sign-off yet.
           </p>
         ) : (
-          <ul className="divide-y divide-slate-200 rounded-lg border border-slate-200 bg-white">
+          <ul className="divide-y divide-slate-200 dark:divide-slate-800 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
             {reviewed.map((p) => (
               <li
                 key={p.href}
@@ -181,11 +181,11 @@ export default async function ReviewerPage({
               >
                 <Link
                   href={p.href}
-                  className="font-medium text-slate-800 hover:text-teal-700"
+                  className="font-medium text-slate-800 dark:text-slate-200 hover:text-teal-700 dark:hover:text-teal-300"
                 >
                   {p.title}
                 </Link>
-                <span className="shrink-0 text-sm text-slate-500">
+                <span className="shrink-0 text-sm text-slate-500 dark:text-slate-400">
                   {formatDate(p.reviewedAt)}
                 </span>
               </li>
@@ -194,7 +194,7 @@ export default async function ReviewerPage({
         )}
       </section>
 
-      <p className="text-sm text-slate-500">
+      <p className="text-sm text-slate-500 dark:text-slate-400">
         Reviewer profiles describe qualifications; they are not an offer of
         care. {SITE.name} does not provide medical advice.
       </p>

@@ -142,7 +142,7 @@ export default function OpioidStewardship() {
         widely, easier access to{" "}
         <Link
           href="/treatments/buprenorphine-for-pain"
-          className="text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600"
+          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
         >
           buprenorphine
         </Link>{" "}

@@ -4,7 +4,7 @@ import { FIG } from "@/lib/fig";
 import { SiteMarker } from "../anatomy/marks";
 
 const link =
-  "text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600";
+  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
 
 /**
  * Figure 1 – a schematic shoulder in front view: the ball (humeral head)

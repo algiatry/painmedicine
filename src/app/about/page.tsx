@@ -12,29 +12,29 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-14 space-y-8">
-      <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900">
+      <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
         About {SITE.name}
       </h1>
 
       <section className="space-y-4">
-        <p className="text-lg text-slate-700">
+        <p className="text-lg text-slate-700 dark:text-slate-300">
           {SITE.name} is an independent educational resource for people seeking
           to understand pain and the medical specialty devoted to treating it.
           Our goal is simple: give people in pain clear, honest,
           evidence-grounded information so they can have better conversations
           with their own clinicians.
         </p>
-        <p className="text-slate-700">
+        <p className="text-slate-700 dark:text-slate-300">
           We are not a clinic, we do not sell treatments, and we do not offer
           medical advice.
         </p>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">
+        <h2 className="text-2xl font-semibold text-slate-900 dark:text-slate-100">
           Editorial policy
         </h2>
-        <ul className="list-disc pl-6 space-y-2 text-slate-700">
+        <ul className="list-disc pl-6 space-y-2 text-slate-700 dark:text-slate-300">
           <li>
             <strong>Medical review.</strong> Clinical content publishes only
             after review by a credentialed medical reviewer, whose name,
@@ -66,15 +66,15 @@ export default function AboutPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">
+        <h2 className="text-2xl font-semibold text-slate-900 dark:text-slate-100">
           Join the editorial board
         </h2>
-        <p className="text-slate-700">
+        <p className="text-slate-700 dark:text-slate-300">
           Every clinical page on this site is written from primary sources and
           then held to one further standard: sign-off by a credentialed
           physician whose name, credentials, and review date are published on
           the page and who keeps a public profile on our{" "}
-          <Link href="/reviewers" className="text-teal-700 underline underline-offset-2">
+          <Link href="/reviewers" className="text-teal-700 dark:text-teal-300 underline underline-offset-2">
             editorial board
           </Link>
           . Positions are open, paid, remote, and asynchronous. Reviewers
@@ -82,7 +82,7 @@ export default function AboutPage() {
           checklist; they do not write from scratch and never give
           individual medical advice.
         </p>
-        <ul className="list-disc pl-6 space-y-2 text-slate-700">
+        <ul className="list-disc pl-6 space-y-2 text-slate-700 dark:text-slate-300">
           <li>
             <strong>Who.</strong> Board-certified physicians in pain medicine,
             anesthesiology, physical medicine and rehabilitation, neurology, or
@@ -100,9 +100,9 @@ export default function AboutPage() {
             their name from any page at any time.
           </li>
         </ul>
-        <p className="text-slate-700">
+        <p className="text-slate-700 dark:text-slate-300">
           Interested? See the{" "}
-          <Link href="/reviewers" className="text-teal-700 underline underline-offset-2">
+          <Link href="/reviewers" className="text-teal-700 dark:text-teal-300 underline underline-offset-2">
             editorial board page
           </Link>{" "}
           for the standard we review against and how to get in touch.
@@ -110,8 +110,8 @@ export default function AboutPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">Corrections</h2>
-        <p className="text-slate-700">
+        <h2 className="text-2xl font-semibold text-slate-900 dark:text-slate-100">Corrections</h2>
+        <p className="text-slate-700 dark:text-slate-300">
           If you believe something on this site is inaccurate or out of date,
           we want to know. Corrections are reviewed against primary sources
           and applied with an updated review date.

@@ -15,13 +15,13 @@ export default function PrivacyPage() {
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-14 space-y-8">
       <header className="space-y-2">
-        <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900">
+        <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
           Privacy policy
         </h1>
-        <p className="text-sm text-slate-500">Last updated {LAST_UPDATED}</p>
+        <p className="text-sm text-slate-500 dark:text-slate-400">Last updated {LAST_UPDATED}</p>
       </header>
 
-      <section className="space-y-4 text-slate-700">
+      <section className="space-y-4 text-slate-700 dark:text-slate-300">
         <p className="text-lg">
           {SITE.name} is a reading site. There are no accounts, no logins, no
           comment sections, no newsletters, and no forms. You cannot type
@@ -35,8 +35,8 @@ export default function PrivacyPage() {
         </p>
       </section>
 
-      <section className="space-y-4 text-slate-700">
-        <h2 className="text-xl font-semibold tracking-tight text-slate-900">
+      <section className="space-y-4 text-slate-700 dark:text-slate-300">
+        <h2 className="text-xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
           What the site does see
         </h2>
         <ul className="list-disc pl-6 space-y-2">
@@ -56,7 +56,7 @@ export default function PrivacyPage() {
             handling of that data is described in the{" "}
             <a
               href="https://vercel.com/legal/privacy-policy"
-              className="underline hover:text-teal-700"
+              className="underline hover:text-teal-700 dark:hover:text-teal-300"
               rel="noopener noreferrer"
             >
               Vercel privacy policy
@@ -66,8 +66,8 @@ export default function PrivacyPage() {
         </ul>
       </section>
 
-      <section className="space-y-4 text-slate-700">
-        <h2 className="text-xl font-semibold tracking-tight text-slate-900">
+      <section className="space-y-4 text-slate-700 dark:text-slate-300">
+        <h2 className="text-xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
           What the site never does
         </h2>
         <ul className="list-disc pl-6 space-y-2">
@@ -83,8 +83,8 @@ export default function PrivacyPage() {
         </ul>
       </section>
 
-      <section className="space-y-4 text-slate-700">
-        <h2 className="text-xl font-semibold tracking-tight text-slate-900">
+      <section className="space-y-4 text-slate-700 dark:text-slate-300">
+        <h2 className="text-xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
           External links
         </h2>
         <p>
@@ -96,8 +96,8 @@ export default function PrivacyPage() {
         </p>
       </section>
 
-      <section className="space-y-4 text-slate-700">
-        <h2 className="text-xl font-semibold tracking-tight text-slate-900">
+      <section className="space-y-4 text-slate-700 dark:text-slate-300">
+        <h2 className="text-xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
           Not a covered health entity
         </h2>
         <p>
@@ -106,19 +106,19 @@ export default function PrivacyPage() {
           subject to HIPAA because it never handles protected health
           information – by design, it has none to handle. For what the
           content is and is not, see the{" "}
-          <Link href="/medical-disclaimer" className="underline hover:text-teal-700">
+          <Link href="/medical-disclaimer" className="underline hover:text-teal-700 dark:hover:text-teal-300">
             medical disclaimer
           </Link>{" "}
           and the{" "}
-          <Link href="/about" className="underline hover:text-teal-700">
+          <Link href="/about" className="underline hover:text-teal-700 dark:hover:text-teal-300">
             editorial policy
           </Link>
           .
         </p>
       </section>
 
-      <section className="space-y-4 text-slate-700">
-        <h2 className="text-xl font-semibold tracking-tight text-slate-900">
+      <section className="space-y-4 text-slate-700 dark:text-slate-300">
+        <h2 className="text-xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
           Changes to this policy
         </h2>
         <p>

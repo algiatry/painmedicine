@@ -115,7 +115,7 @@ export default function YourFirstVisit() {
         life. Filling it out carefully is not paperwork for its own sake; it is
         the first draft of your evaluation. Worth gathering ahead of time:
       </P>
-      <ul className="mt-4 space-y-3 text-slate-700">
+      <ul className="mt-4 space-y-3 text-slate-700 dark:text-slate-300">
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
@@ -146,7 +146,7 @@ export default function YourFirstVisit() {
             doing.{" "}
             <Link
               href="/understanding-pain/measuring-pain"
-              className="text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600"
+              className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
             >
               Measuring pain
             </Link>{" "}
@@ -166,7 +166,7 @@ export default function YourFirstVisit() {
         and relationships. Those are not detours: as the science in{" "}
         <Link
           href="/understanding-pain/pain-and-emotion"
-          className="text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600"
+          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
         >
           pain and emotion
         </Link>{" "}
@@ -201,7 +201,7 @@ export default function YourFirstVisit() {
         <em>with</em> you – often spanning several of the{" "}
         <Link
           href="/what-is-pain-medicine/the-pain-team"
-          className="text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600"
+          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
         >
           pain team&rsquo;s
         </Link>{" "}
@@ -209,7 +209,7 @@ export default function YourFirstVisit() {
         Bring your own questions too; the{" "}
         <Link
           href="/find-help"
-          className="text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600"
+          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
         >
           find help
         </Link>{" "}

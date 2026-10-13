@@ -37,10 +37,10 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-40 border-b bg-white/85 backdrop-blur transition-shadow ${
+      className={`sticky top-0 z-40 border-b bg-white/85 backdrop-blur transition-shadow dark:bg-slate-950/85 ${
         scrolled
-          ? "border-slate-200 shadow-[0_1px_12px_-4px_rgb(15_23_42/0.12)]"
-          : "border-slate-200/70"
+          ? "border-slate-200 shadow-[0_1px_12px_-4px_rgb(15_23_42/0.12)] dark:border-slate-800 dark:shadow-[0_1px_12px_-4px_rgb(0_0_0/0.5)]"
+          : "border-slate-200/70 dark:border-slate-800/70"
       }`}
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -53,13 +53,13 @@ export default function Header() {
             <BrandMark
               variant="signal"
               size={22}
-              className="shrink-0 text-teal-700"
+              className="shrink-0 text-teal-700 dark:text-teal-400"
             />
             <span className="flex items-baseline gap-1.5">
-              <span className="text-xl font-semibold tracking-tight text-slate-900">
+              <span className="text-xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
                 {SITE.shortName}
               </span>
-              <span className="hidden sm:inline text-[11px] font-semibold uppercase tracking-[0.16em] text-teal-700">
+              <span className="hidden sm:inline text-[11px] font-semibold uppercase tracking-[0.16em] text-teal-700 dark:text-teal-400">
                 .com
               </span>
             </span>
@@ -77,7 +77,7 @@ export default function Header() {
             aria-expanded={open}
             aria-controls="mobile-menu"
             aria-label={open ? "Close menu" : "Open menu"}
-            className="-mr-1 inline-flex size-11 items-center justify-center rounded-md text-slate-700 transition-colors hover:bg-slate-100 hover:text-teal-700 lg:hidden"
+            className="-mr-1 inline-flex size-11 items-center justify-center rounded-md text-slate-700 transition-colors hover:bg-slate-100 hover:text-teal-700 lg:hidden dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-teal-400"
           >
             <svg
               aria-hidden="true"
@@ -106,7 +106,7 @@ export default function Header() {
       {open && (
         <div
           id="mobile-menu"
-          className="lg:hidden border-t border-slate-200 bg-white"
+          className="lg:hidden border-t border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-950"
         >
           <nav
             aria-label="Primary mobile"
@@ -125,12 +125,12 @@ export default function Header() {
                       aria-current={active ? "page" : undefined}
                       className={`flex items-center justify-between rounded-lg px-3 py-3 text-[15px] transition-colors ${
                         active
-                          ? "bg-teal-50 font-semibold text-teal-800"
-                          : "font-medium text-slate-700 hover:bg-slate-50 hover:text-teal-700"
+                          ? "bg-teal-50 font-semibold text-teal-800 dark:bg-teal-950/50 dark:text-teal-300"
+                          : "font-medium text-slate-700 hover:bg-slate-50 hover:text-teal-700 dark:text-slate-300 dark:hover:bg-slate-800/60 dark:hover:text-teal-400"
                       }`}
                     >
                       {item.label}
-                      <span aria-hidden="true" className="text-slate-300">
+                      <span aria-hidden="true" className="text-slate-300 dark:text-slate-600">
                         →
                       </span>
                     </Link>
@@ -138,13 +138,13 @@ export default function Header() {
                 );
               })}
             </ul>
-            <ul className="mt-2 flex flex-wrap gap-x-5 gap-y-2 border-t border-slate-200 px-3 pt-3">
+            <ul className="mt-2 flex flex-wrap gap-x-5 gap-y-2 border-t border-slate-200 px-3 pt-3 dark:border-slate-800">
               {MOBILE_UTILITY.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
                     onClick={() => setOpen(false)}
-                    className="text-sm font-medium text-slate-500 hover:text-teal-700"
+                    className="text-sm font-medium text-slate-500 hover:text-teal-700 dark:text-slate-400 dark:hover:text-teal-400"
                   >
                     {item.label}
                   </Link>

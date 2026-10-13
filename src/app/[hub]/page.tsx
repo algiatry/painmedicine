@@ -53,7 +53,7 @@ export default async function HubPage({
 
       <header className="space-y-4">
         <PageKicker iconHref={`/${hub.slug}`}>{hub.title}</PageKicker>
-        <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900">
+        <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
           {hub.heading}
         </h1>
         <ReviewByline
@@ -66,7 +66,7 @@ export default async function HubPage({
 
       <div className="mt-8 space-y-5">
         {hub.intro.map((p, i) => (
-          <p key={i} className="text-lg text-slate-700">
+          <p key={i} className="text-lg text-slate-700 dark:text-slate-300">
             {p}
           </p>
         ))}
@@ -75,7 +75,7 @@ export default async function HubPage({
       <section aria-labelledby={`${hub.slug}-coverage`} className="mt-12">
         <h2
           id={`${hub.slug}-coverage`}
-          className="text-xl font-semibold text-slate-900"
+          className="text-xl font-semibold text-slate-900 dark:text-slate-100"
         >
           {hub.planned.some((p) => p.href)
             ? "Explore this section"
@@ -87,25 +87,25 @@ export default async function HubPage({
               <li key={item.title}>
                 <Link
                   href={item.href}
-                  className="card-lift group flex items-start gap-4 rounded-xl border border-slate-200 bg-white p-5 hover:border-teal-600/70"
+                  className="card-lift group flex items-start gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 hover:border-teal-600/70"
                 >
-                  <span className="flex size-12 shrink-0 items-center justify-center rounded-lg border border-slate-200/70 bg-paper/70">
+                  <span className="flex size-12 shrink-0 items-center justify-center rounded-lg border border-slate-200/70 dark:border-slate-700 bg-paper/70 dark:bg-slate-200">
                     <ArticleEmblem
                       slug={item.href.split("/").filter(Boolean).pop() ?? ""}
                       className="size-8"
                     />
                   </span>
                   <span className="flex-1">
-                    <span className="block font-semibold text-slate-900 group-hover:text-teal-700">
+                    <span className="block font-semibold text-slate-900 dark:text-slate-100 group-hover:text-teal-700 dark:group-hover:text-teal-300">
                       {item.title}
                     </span>
-                    <span className="mt-1 block text-sm text-slate-600">
+                    <span className="mt-1 block text-sm text-slate-600 dark:text-slate-400">
                       {item.blurb}
                     </span>
                   </span>
                   <span
                     aria-hidden="true"
-                    className="mt-0.5 text-slate-300 transition-colors group-hover:text-teal-600"
+                    className="mt-0.5 text-slate-300 dark:text-slate-600 transition-colors group-hover:text-teal-600 dark:group-hover:text-teal-400"
                   >
                     →
                   </span>
@@ -114,10 +114,10 @@ export default async function HubPage({
             ) : (
               <li
                 key={item.title}
-                className="rounded-xl border border-dashed border-slate-300 bg-slate-50/60 p-5"
+                className="rounded-xl border border-dashed border-slate-300 dark:border-slate-700 bg-slate-50/60 dark:bg-slate-900/40 p-5"
               >
-                <h3 className="font-semibold text-slate-900">{item.title}</h3>
-                <p className="mt-1 text-sm text-slate-600">{item.blurb}</p>
+                <h3 className="font-semibold text-slate-900 dark:text-slate-100">{item.title}</h3>
+                <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">{item.blurb}</p>
               </li>
             ),
           )}
@@ -128,15 +128,15 @@ export default async function HubPage({
         <section aria-labelledby={`${hub.slug}-faq`} className="mt-12">
           <h2
             id={`${hub.slug}-faq`}
-            className="text-xl font-semibold text-slate-900"
+            className="text-xl font-semibold text-slate-900 dark:text-slate-100"
           >
             Frequently asked questions
           </h2>
           <dl className="mt-5 space-y-6">
             {hub.faqs.map((f) => (
               <div key={f.question}>
-                <dt className="font-semibold text-slate-900">{f.question}</dt>
-                <dd className="mt-1 text-slate-700">{f.answer}</dd>
+                <dt className="font-semibold text-slate-900 dark:text-slate-100">{f.question}</dt>
+                <dd className="mt-1 text-slate-700 dark:text-slate-300">{f.answer}</dd>
               </div>
             ))}
           </dl>

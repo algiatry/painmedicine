@@ -75,8 +75,8 @@ export default function ArticleToc({
               aria-current={active ? "location" : undefined}
               className={`block border-l-2 py-1 pl-3 transition-colors ${
                 active
-                  ? "border-teal-600 font-semibold text-teal-800"
-                  : "border-slate-200 text-slate-500 hover:border-slate-400 hover:text-teal-700"
+                  ? "border-teal-600 font-semibold text-teal-800 dark:text-teal-300"
+                  : "border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-400 hover:border-slate-400 hover:text-teal-700 dark:hover:text-teal-300"
               }`}
             >
               {h.text}
@@ -89,13 +89,13 @@ export default function ArticleToc({
 
   if (variant === "inline") {
     return (
-      <details className="group mt-6 rounded-xl border border-slate-200 bg-paper/60 xl:hidden">
-        <summary className="flex cursor-pointer list-none items-center justify-between gap-2 px-4 py-3 text-sm font-semibold text-slate-900">
+      <details className="group mt-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-paper/60 xl:hidden">
+        <summary className="flex cursor-pointer list-none items-center justify-between gap-2 px-4 py-3 text-sm font-semibold text-slate-900 dark:text-slate-100">
           On this page
           <svg
             aria-hidden="true"
             viewBox="0 0 20 20"
-            className="size-4 text-slate-400 transition-transform group-open:rotate-180"
+            className="size-4 text-slate-400 dark:text-slate-500 transition-transform group-open:rotate-180"
             fill="currentColor"
           >
             <path
@@ -105,14 +105,14 @@ export default function ArticleToc({
             />
           </svg>
         </summary>
-        <div className="border-t border-slate-200 px-4 py-3">{list}</div>
+        <div className="border-t border-slate-200 dark:border-slate-800 px-4 py-3">{list}</div>
       </details>
     );
   }
 
   return (
     <nav aria-label="On this page" className="sticky top-24">
-      <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-slate-400">
+      <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500">
         On this page
       </p>
       {list}

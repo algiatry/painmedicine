@@ -4,7 +4,7 @@ import { FIG } from "@/lib/fig";
 import { BodyFront } from "../anatomy/BodyOutline";
 
 const link =
-  "text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600";
+  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
 
 /**
  * Figure 1 – pain without a postcode: the widespread pattern, both sides,

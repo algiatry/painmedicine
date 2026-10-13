@@ -149,7 +149,7 @@ export default function PrecisionPainMedicine() {
         nociplastic distinction in{" "}
         <Link
           href="/understanding-pain/types-of-pain"
-          className="text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600"
+          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
         >
           the three types of pain
         </Link>
@@ -188,7 +188,7 @@ export default function PrecisionPainMedicine() {
         risk. Many of the new drugs in the{" "}
         <Link
           href="/future-of-pain-medicine/pipeline"
-          className="text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600"
+          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
         >
           pain treatment pipeline
         </Link>{" "}

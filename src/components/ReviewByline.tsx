@@ -33,18 +33,18 @@ export default function ReviewByline({
   if (review && profile && status === "reviewed") {
     const due = review.reviewDue ?? defaultReviewDue(hub ?? "", review.reviewedAt);
     return (
-      <div className="flex flex-col gap-1 border-l-2 border-teal-600 pl-4 text-sm text-slate-500">
+      <div className="flex flex-col gap-1 border-l-2 border-teal-600 pl-4 text-sm text-slate-500 dark:text-slate-400">
         <p>
           Medically reviewed by{" "}
           <Link
             href={`/reviewers/${profile.slug}`}
-            className="font-medium text-slate-700 underline decoration-teal-600/40 underline-offset-2 hover:text-teal-700"
+            className="font-medium text-slate-700 dark:text-slate-300 underline decoration-teal-600/40 underline-offset-2 hover:text-teal-700 dark:hover:text-teal-300"
           >
             {profile.name}, {profile.credentials}
           </Link>{" "}
           on {formatDate(review.reviewedAt)}
         </p>
-        {review.note && <p className="text-slate-600">In review: {review.note}</p>}
+        {review.note && <p className="text-slate-600 dark:text-slate-400">In review: {review.note}</p>}
         <p>
           Last updated {formatDate(lastUpdated)} · Next review by {formatDate(due)}
         </p>
@@ -54,9 +54,9 @@ export default function ReviewByline({
 
   if (status === "sourced") {
     return (
-      <div className="flex flex-col gap-1 border-l-2 border-teal-600 pl-4 text-sm text-slate-500">
+      <div className="flex flex-col gap-1 border-l-2 border-teal-600 pl-4 text-sm text-slate-500 dark:text-slate-400">
         <p>
-          <span className="font-medium text-slate-700">
+          <span className="font-medium text-slate-700 dark:text-slate-300">
             Written from primary sources.
           </span>{" "}
           Built from the cited references below – independent medical review is
@@ -68,8 +68,8 @@ export default function ReviewByline({
   }
 
   return (
-    <div className="rounded-md border border-amber-200 bg-amber-50 px-4 py-3">
-      <p className="text-sm text-amber-900">
+    <div className="rounded-md border border-amber-200 dark:border-amber-900/50 bg-amber-50 dark:bg-amber-950/30 px-4 py-3">
+      <p className="text-sm text-amber-900 dark:text-amber-200">
         <strong>In editorial review.</strong> This page is being prepared with
         our medical review board and currently provides general orientation
         only. Detailed clinical content publishes after physician review.
