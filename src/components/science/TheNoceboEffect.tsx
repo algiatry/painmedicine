@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P, anim } from "./Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600";
+  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
 
 /**
  * Figure 1 – the mirror of the placebo pathway: expectation of harm runs
@@ -286,7 +286,7 @@ export default function TheNoceboEffect() {
         Nocebo does its most visible work in side effects. Three trials show
         the shape of it:
       </P>
-      <ul className="mt-4 space-y-3 text-slate-700">
+      <ul className="mt-4 space-y-3 text-slate-700 dark:text-slate-300">
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-500" />
           <span>
@@ -385,7 +385,7 @@ export default function TheNoceboEffect() {
         about optical illusions makes them vanish. But a few things measurably
         help, and all of them are about information rather than willpower:
       </P>
-      <ul className="mt-4 space-y-3 text-slate-700">
+      <ul className="mt-4 space-y-3 text-slate-700 dark:text-slate-300">
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>

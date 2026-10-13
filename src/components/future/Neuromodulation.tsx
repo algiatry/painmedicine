@@ -116,7 +116,7 @@ export default function Neuromodulation() {
         spinal &ldquo;gate&rdquo; described in{" "}
         <Link
           href="/understanding-pain/how-pain-works"
-          className="text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600"
+          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
         >
           how pain works
         </Link>
@@ -180,7 +180,7 @@ export default function Neuromodulation() {
         it. See where each device sits among everything in development in the{" "}
         <Link
           href="/future-of-pain-medicine/pipeline"
-          className="text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600"
+          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
         >
           pain treatment pipeline
         </Link>

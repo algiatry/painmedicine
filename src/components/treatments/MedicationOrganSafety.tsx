@@ -158,7 +158,7 @@ export default function MedicationOrganSafety() {
         depth on the{" "}
         <Link
           href="/treatments/opioid-stewardship"
-          className="text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600"
+          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
         >
           opioid safety page
         </Link>

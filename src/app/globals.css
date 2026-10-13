@@ -9,6 +9,25 @@
   --ink: #0f172a;
 }
 
+/*
+ * Dark theme. Follows the OS preference — no toggle. We remap the semantic
+ * tokens (used by `body` and the `bg-paper` surface) and brighten the brand
+ * so teal keeps AA contrast on dark surfaces. Literal slate/white utilities
+ * across the site are handled with Tailwind `dark:` variants; the hand-drawn
+ * SVG figures stay on a light "plate" (see .figure-plate) rather than being
+ * recolored.
+ */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0b1120;
+    --foreground: #cbd5e1;
+    --brand: #2dd4bf;
+    --brand-dark: #5eead4;
+    --paper: #111a2e;
+    --ink: #e2e8f0;
+  }
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -32,7 +51,31 @@ body {
 
 ::selection {
   background: #99f6e4; /* teal-200 — brand-consistent text selection */
-  color: var(--ink);
+  color: #0f172a;
+}
+@media (prefers-color-scheme: dark) {
+  ::selection {
+    background: #115e59; /* teal-800 — readable highlight on dark */
+    color: #f0fdfa;
+  }
+}
+
+/*
+ * Figure plate — the hand-drawn SVG figures use a light-palette legend
+ * (teal/amber/slate inks on pale grounds). Rather than recolor every figure
+ * for dark mode, we keep their frame light so the illustrations stay legible,
+ * and let the surrounding page go dark around them.
+ */
+.figure-plate {
+  background: #f4f8f7;
+  border-color: rgb(226 232 240); /* slate-200 */
+}
+@media (prefers-color-scheme: dark) {
+  .figure-plate {
+    background: #eef2f6;
+    border-color: rgb(51 65 85); /* slate-700 */
+    box-shadow: 0 0 0 1px rgb(2 6 23 / 0.4);
+  }
 }
 
 /*
@@ -70,6 +113,14 @@ body {
     radial-gradient(rgb(15 118 110 / 0.05) 1px, transparent 1px);
   background-size: auto, auto, 22px 22px;
   background-position: center, center, center;
+}
+@media (prefers-color-scheme: dark) {
+  .hero-aura {
+    background-image:
+      radial-gradient(42rem 26rem at 78% -10%, rgb(45 212 191 / 0.12), transparent 60%),
+      radial-gradient(34rem 22rem at 6% 8%, rgb(245 158 11 / 0.06), transparent 55%),
+      radial-gradient(rgb(94 234 212 / 0.05) 1px, transparent 1px);
+  }
 }
 
 /* One consistent, visible focus ring site-wide (keyboard users only). */

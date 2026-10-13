@@ -19,11 +19,11 @@ export default function PageKicker({
     <HubIcon href={iconHref} className="size-3.5" />
   ) : null;
   const className =
-    "inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-teal-700";
+    "inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-teal-700 dark:text-teal-400";
 
   if (href) {
     return (
-      <Link href={href} className={`${className} hover:text-teal-800`}>
+      <Link href={href} className={`${className} hover:text-teal-800 dark:hover:text-teal-300`}>
         {icon}
         {children}
       </Link>

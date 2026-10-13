@@ -11,11 +11,11 @@ export const metadata: Metadata = {
 export default function MedicalDisclaimerPage() {
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-14 space-y-8">
-      <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900">
+      <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
         Medical disclaimer
       </h1>
 
-      <section className="space-y-4 text-slate-700">
+      <section className="space-y-4 text-slate-700 dark:text-slate-300">
         <p className="text-lg">
           All content on {SITE.name} is provided for general educational and
           informational purposes only. It is <strong>not medical advice</strong>,
@@ -46,14 +46,14 @@ export default function MedicalDisclaimerPage() {
         </ul>
       </section>
 
-      <section className="rounded-lg border border-teal-200 bg-teal-50 p-5 space-y-2">
-        <h2 className="text-base font-semibold text-teal-900">
+      <section className="rounded-lg border border-teal-200 dark:border-teal-900/60 bg-teal-50 dark:bg-teal-950/40 p-5 space-y-2">
+        <h2 className="text-base font-semibold text-teal-900 dark:text-teal-200">
           If you need help now
         </h2>
-        <p className="text-sm text-teal-900">
+        <p className="text-sm text-teal-900 dark:text-teal-200">
           If you are experiencing a medical emergency, call 911 immediately.
         </p>
-        <ul className="space-y-1 text-sm text-teal-900">
+        <ul className="space-y-1 text-sm text-teal-900 dark:text-teal-200">
           {HELP_LINES.map((line) => (
             <li key={line.name}>
               <span className="font-medium">{line.name}:</span> {line.detail}

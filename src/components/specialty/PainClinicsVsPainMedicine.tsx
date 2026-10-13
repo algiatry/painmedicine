@@ -106,7 +106,7 @@ export default function PainClinicsVsPainMedicine() {
         through the pathway described in{" "}
         <Link
           href="/what-is-pain-medicine/how-pain-physicians-train"
-          className="text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600"
+          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
         >
           how pain physicians train
         </Link>
@@ -123,7 +123,7 @@ export default function PainClinicsVsPainMedicine() {
         records-deep first visit described in{" "}
         <Link
           href="/what-is-pain-medicine/your-first-visit"
-          className="text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600"
+          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
         >
           your first visit
         </Link>{" "}
@@ -134,7 +134,7 @@ export default function PainClinicsVsPainMedicine() {
         laid out in{" "}
         <Link
           href="/what-is-pain-medicine/the-pain-team"
-          className="text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600"
+          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
         >
           the pain team
         </Link>
@@ -168,7 +168,7 @@ export default function PainClinicsVsPainMedicine() {
         long-term health. The{" "}
         <Link
           href="/find-help"
-          className="text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600"
+          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
         >
           find help
         </Link>{" "}

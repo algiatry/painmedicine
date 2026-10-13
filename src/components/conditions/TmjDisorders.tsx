@@ -5,7 +5,7 @@ import { HeadProfile, HEAD_W, HEAD_H } from "../anatomy/HeadProfile";
 import { SiteMarker } from "../anatomy/marks";
 
 const link =
-  "text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600";
+  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
 
 /**
  * Figure 1 – where TMD hurts: the joint in front of the ear, and the two
@@ -247,7 +247,7 @@ export default function TmjDisorders() {
         because most TMD improves with them and because the irreversible
         options have a poor track record. The described ladder:
       </P>
-      <ul className="mt-4 space-y-3 text-slate-700">
+      <ul className="mt-4 space-y-3 text-slate-700 dark:text-slate-300">
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>

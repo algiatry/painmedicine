@@ -71,25 +71,25 @@ export default async function ArticlePage({
         ])}
       />
 
-      <nav aria-label="Breadcrumb" className="text-sm text-slate-500">
+      <nav aria-label="Breadcrumb" className="text-sm text-slate-500 dark:text-slate-400">
         <ol className="flex flex-wrap items-center gap-x-2 gap-y-1">
           <li>
-            <Link href="/" className="hover:text-teal-700">
+            <Link href="/" className="hover:text-teal-700 dark:hover:text-teal-300">
               Home
             </Link>
           </li>
-          <li aria-hidden="true" className="text-slate-300">
+          <li aria-hidden="true" className="text-slate-300 dark:text-slate-600">
             /
           </li>
           <li>
-            <Link href={`/${a.hub}`} className="hover:text-teal-700">
+            <Link href={`/${a.hub}`} className="hover:text-teal-700 dark:hover:text-teal-300">
               {parentTitle}
             </Link>
           </li>
-          <li aria-hidden="true" className="text-slate-300">
+          <li aria-hidden="true" className="text-slate-300 dark:text-slate-600">
             /
           </li>
-          <li className="text-slate-700">{a.title}</li>
+          <li className="text-slate-700 dark:text-slate-300">{a.title}</li>
         </ol>
       </nav>
 
@@ -97,10 +97,10 @@ export default async function ArticlePage({
         <PageKicker href={`/${a.hub}`} iconHref={`/${a.hub}`}>
           {parentTitle}
         </PageKicker>
-        <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900">
+        <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
           {a.title}
         </h1>
-        <p className="text-lg text-slate-700">{a.answer}</p>
+        <p className="text-lg text-slate-700 dark:text-slate-300">{a.answer}</p>
         <ReviewByline
           status={a.status}
           review={a.review}
@@ -119,19 +119,19 @@ export default async function ArticlePage({
 
       <section
         aria-labelledby="faq-heading"
-        className="mt-14 border-t border-slate-200 pt-10"
+        className="mt-14 border-t border-slate-200 dark:border-slate-800 pt-10"
       >
         <h2
           id="faq-heading"
-          className="text-2xl font-semibold text-slate-900"
+          className="text-2xl font-semibold text-slate-900 dark:text-slate-100"
         >
           Frequently asked questions
         </h2>
         <dl className="mt-6 space-y-6">
           {a.faqs.map((f) => (
             <div key={f.question}>
-              <dt className="font-semibold text-slate-900">{f.question}</dt>
-              <dd className="mt-1.5 text-slate-700">{f.answer}</dd>
+              <dt className="font-semibold text-slate-900 dark:text-slate-100">{f.question}</dt>
+              <dd className="mt-1.5 text-slate-700 dark:text-slate-300">{f.answer}</dd>
             </div>
           ))}
         </dl>
@@ -140,24 +140,24 @@ export default async function ArticlePage({
       <section aria-labelledby="refs-heading" className="mt-12">
         <h2
           id="refs-heading"
-          className="text-2xl font-semibold text-slate-900"
+          className="text-2xl font-semibold text-slate-900 dark:text-slate-100"
         >
           References
         </h2>
         <ol className="mt-6 space-y-3 text-sm">
           {a.references.map((ref, i) => (
             <li key={ref.url} className="flex gap-3">
-              <span className="text-slate-400 tabular-nums">{i + 1}.</span>
+              <span className="text-slate-400 dark:text-slate-500 tabular-nums">{i + 1}.</span>
               <span>
                 <a
                   href={ref.url}
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  className="text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600"
+                  className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
                 >
                   {ref.title}
                 </a>
-                <span className="text-slate-500"> – {ref.source}</span>
+                <span className="text-slate-500 dark:text-slate-400"> – {ref.source}</span>
               </span>
             </li>
           ))}
@@ -168,7 +168,7 @@ export default async function ArticlePage({
         <section aria-labelledby="related-heading" className="mt-12">
           <h2
             id="related-heading"
-            className="text-2xl font-semibold text-slate-900"
+            className="text-2xl font-semibold text-slate-900 dark:text-slate-100"
           >
             Keep reading
           </h2>
@@ -177,19 +177,19 @@ export default async function ArticlePage({
               <Link
                 key={r.href}
                 href={r.href}
-                className="group flex gap-4 rounded-xl border border-transparent px-3 py-4 transition-colors hover:border-slate-200 hover:bg-paper/70 sm:px-4"
+                className="group flex gap-4 rounded-xl border border-transparent px-3 py-4 transition-colors hover:border-slate-200 dark:hover:border-slate-800 hover:bg-paper/70 sm:px-4"
               >
-                <span className="mt-0.5 flex size-11 shrink-0 items-center justify-center rounded-lg border border-slate-200/70 bg-paper/70 transition-colors group-hover:border-teal-300 group-hover:bg-white">
+                <span className="mt-0.5 flex size-11 shrink-0 items-center justify-center rounded-lg border border-slate-200/70 dark:border-slate-700 bg-paper/70 dark:bg-slate-200 transition-colors group-hover:border-teal-300 group-hover:bg-white dark:group-hover:border-teal-400/60">
                   <ArticleEmblem
                     slug={r.href.split("/").filter(Boolean).pop() ?? ""}
                     className="size-7"
                   />
                 </span>
                 <span className="flex flex-col gap-1">
-                  <span className="font-semibold text-slate-900 group-hover:text-teal-700">
+                  <span className="font-semibold text-slate-900 dark:text-slate-100 group-hover:text-teal-700 dark:group-hover:text-teal-300">
                     {r.title}
                   </span>
-                  <span className="text-sm text-slate-600">{r.blurb}</span>
+                  <span className="text-sm text-slate-600 dark:text-slate-400">{r.blurb}</span>
                 </span>
               </Link>
             ))}
@@ -197,7 +197,7 @@ export default async function ArticlePage({
         </section>
       )}
 
-      <p className="mt-12 border-t border-slate-200 pt-6 text-sm text-slate-500">
+      <p className="mt-12 border-t border-slate-200 dark:border-slate-800 pt-6 text-sm text-slate-500 dark:text-slate-400">
         This page is educational and is not a substitute for professional
         medical advice. Talk with a qualified clinician about your own
         situation. {SITE.shortName} does not provide treatment or dosing

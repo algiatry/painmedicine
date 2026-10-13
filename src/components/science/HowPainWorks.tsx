@@ -341,14 +341,14 @@ export default function HowPainWorks() {
         driver of long-term pain – the bridge from a passing injury to{" "}
         <Link
           href="/understanding-pain/acute-vs-chronic-pain"
-          className="text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600"
+          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
         >
           chronic pain
         </Link>
         , and the core of the third pain type,{" "}
         <Link
           href="/understanding-pain/types-of-pain"
-          className="text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600"
+          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
         >
           nociplastic pain
         </Link>

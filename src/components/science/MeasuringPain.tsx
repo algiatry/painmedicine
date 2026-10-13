@@ -291,7 +291,7 @@ export default function MeasuringPain() {
         it&rsquo;s an experience the brain assembles, shaped by{" "}
         <Link
           href="/understanding-pain/pain-and-emotion"
-          className="text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600"
+          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
         >
           attention, emotion and context
         </Link>
@@ -304,7 +304,7 @@ export default function MeasuringPain() {
         Because pain can&rsquo;t be measured directly, clinicians use rating
         tools to capture it and – most usefully – to track how it changes:
       </P>
-      <ul className="mt-4 space-y-3 text-slate-700">
+      <ul className="mt-4 space-y-3 text-slate-700 dark:text-slate-300">
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
@@ -348,7 +348,7 @@ export default function MeasuringPain() {
         You can give your care team far more to work with than a score. When you
         describe your pain, try to include:
       </P>
-      <ul className="mt-4 space-y-3 text-slate-700">
+      <ul className="mt-4 space-y-3 text-slate-700 dark:text-slate-300">
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
@@ -356,7 +356,7 @@ export default function MeasuringPain() {
             electric? The words point toward the{" "}
             <Link
               href="/understanding-pain/types-of-pain"
-              className="text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600"
+              className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
             >
               type of pain
             </Link>

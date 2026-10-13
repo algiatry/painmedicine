@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600";
+  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
 
 /**
  * Figure 1 – one neighborhood, many tenants. The pelvis packs bladder,
@@ -184,7 +184,7 @@ export default function ChronicPelvicPain() {
         with long-standing pelvic pain have more than one, and the best
         evaluations look for all of them:
       </P>
-      <ul className="mt-4 space-y-3 text-slate-700">
+      <ul className="mt-4 space-y-3 text-slate-700 dark:text-slate-300">
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
@@ -268,7 +268,7 @@ export default function ChronicPelvicPain() {
         Because the sources are plural, the treatment is too. Described, not
         prescribed, the pieces a pain team draws on:
       </P>
-      <ul className="mt-4 space-y-3 text-slate-700">
+      <ul className="mt-4 space-y-3 text-slate-700 dark:text-slate-300">
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>

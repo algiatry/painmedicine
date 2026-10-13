@@ -4,22 +4,22 @@ import BrandMark from "@/components/BrandMark";
 
 export default function Footer() {
   return (
-    <footer className="mt-auto border-t border-slate-200 bg-slate-50">
+    <footer className="mt-auto border-t border-slate-200 bg-slate-50 dark:border-slate-800 dark:bg-slate-950">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-12 space-y-8">
         {/* Crisis / help lines */}
-        <div className="rounded-lg border border-teal-200 bg-teal-50 p-5">
-          <h2 className="text-sm font-semibold text-teal-900">
+        <div className="rounded-lg border border-teal-200 bg-teal-50 p-5 dark:border-teal-900/60 dark:bg-teal-950/40">
+          <h2 className="text-sm font-semibold text-teal-900 dark:text-teal-200">
             If you need help now
           </h2>
           <ul className="mt-2 space-y-1">
             {HELP_LINES.map((line) => (
-              <li key={line.name} className="text-sm text-teal-900">
+              <li key={line.name} className="text-sm text-teal-900 dark:text-teal-100">
                 <span className="font-medium">{line.name}:</span>{" "}
                 {line.detail}
               </li>
             ))}
           </ul>
-          <p className="mt-2 text-sm text-teal-900">
+          <p className="mt-2 text-sm text-teal-900 dark:text-teal-100">
             If you are experiencing a medical emergency, call 911.
           </p>
         </div>
@@ -29,24 +29,24 @@ export default function Footer() {
             <BrandMark
               variant="signal"
               size={20}
-              className="shrink-0 mt-1 text-teal-700"
+              className="shrink-0 mt-1 text-teal-700 dark:text-teal-400"
             />
             <div>
-              <p className="text-base font-semibold tracking-tight text-slate-900">
+              <p className="text-base font-semibold tracking-tight text-slate-900 dark:text-slate-100">
                 {SITE.shortName}
-                <span className="ml-1.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-teal-700">
+                <span className="ml-1.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-teal-700 dark:text-teal-400">
                   .com
                 </span>
               </p>
-              <p className="mt-0.5 text-sm text-slate-600">{SITE.tagline}</p>
+              <p className="mt-0.5 text-sm text-slate-600 dark:text-slate-400">{SITE.tagline}</p>
             </div>
           </div>
           <nav aria-label="Footer sections">
-            <p className="text-sm font-semibold text-slate-900">Explore</p>
+            <p className="text-sm font-semibold text-slate-900 dark:text-slate-100">Explore</p>
             <ul className="mt-2 space-y-1">
               {NAV.map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="text-sm text-slate-600 hover:text-teal-700">
+                  <Link href={item.href} className="text-sm text-slate-600 hover:text-teal-700 dark:text-slate-400 dark:hover:text-teal-400">
                     {item.label}
                   </Link>
                 </li>
@@ -54,11 +54,11 @@ export default function Footer() {
             </ul>
           </nav>
           <nav aria-label="Footer policies">
-            <p className="text-sm font-semibold text-slate-900">Site</p>
+            <p className="text-sm font-semibold text-slate-900 dark:text-slate-100">Site</p>
             <ul className="mt-2 space-y-1">
               {SUPPORT_LINKS.map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="text-sm text-slate-600 hover:text-teal-700">
+                  <Link href={item.href} className="text-sm text-slate-600 hover:text-teal-700 dark:text-slate-400 dark:hover:text-teal-400">
                     {item.label}
                   </Link>
                 </li>
@@ -68,20 +68,20 @@ export default function Footer() {
         </div>
 
         {/* Medical disclaimer – required on every page */}
-        <div className="border-t border-slate-200 pt-6">
-          <p className="text-xs leading-relaxed text-slate-500">
+        <div className="border-t border-slate-200 pt-6 dark:border-slate-800">
+          <p className="text-xs leading-relaxed text-slate-500 dark:text-slate-400">
             <strong>Medical disclaimer:</strong> The content on {SITE.name} is for
             educational purposes only. It is not medical advice, and it is not a
             substitute for diagnosis, treatment, or guidance from a licensed
             clinician. Never disregard professional medical advice or delay
             seeking it because of something you read here. Always talk to your
             physician before starting, stopping, or changing any treatment.{" "}
-            <Link href="/medical-disclaimer" className="underline hover:text-teal-700">
+            <Link href="/medical-disclaimer" className="underline hover:text-teal-700 dark:hover:text-teal-400">
               Read the full disclaimer
             </Link>
             .
           </p>
-          <p className="mt-3 text-xs text-slate-400">
+          <p className="mt-3 text-xs text-slate-400 dark:text-slate-500">
             © {new Date().getFullYear()} {SITE.name}. Educational content only.
           </p>
         </div>

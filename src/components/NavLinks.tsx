@@ -23,8 +23,8 @@ export default function NavLinks({ className }: { className?: string }) {
               aria-current={active ? "true" : undefined}
               className={`${className ?? ""} border-b-2 pb-1 text-sm transition-colors ${
                 active
-                  ? "border-teal-600 font-semibold text-teal-800"
-                  : "border-transparent font-medium text-slate-600 hover:border-slate-300 hover:text-teal-700"
+                  ? "border-teal-600 font-semibold text-teal-800 dark:border-teal-400 dark:text-teal-300"
+                  : "border-transparent font-medium text-slate-600 hover:border-slate-300 hover:text-teal-700 dark:text-slate-400 dark:hover:border-slate-600 dark:hover:text-teal-400"
               }`}
             >
               {item.label}

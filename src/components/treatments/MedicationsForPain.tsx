@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600";
+  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
 
 /**
  * Figure 1 – the medication map: the pain pathway from tissue to brain, with
@@ -253,7 +253,7 @@ export default function MedicationsForPain() {
 
       <H2 id="types">The different types of pain relievers, at a glance</H2>
       <P>Seven groups cover nearly everything on the shelf and the prescription pad:</P>
-      <ul className="mt-4 mb-6 space-y-3 text-slate-700">
+      <ul className="mt-4 mb-6 space-y-3 text-slate-700 dark:text-slate-300">
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
@@ -468,7 +468,7 @@ export default function MedicationsForPain() {
         knowable in advance, and arriving with the answers makes the
         conversation better.
       </P>
-      <ul className="mt-4 mb-6 space-y-3 text-slate-700">
+      <ul className="mt-4 mb-6 space-y-3 text-slate-700 dark:text-slate-300">
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>

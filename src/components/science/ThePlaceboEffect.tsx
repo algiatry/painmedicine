@@ -190,7 +190,7 @@ export default function ThePlaceboEffect() {
         Three terms do different jobs here, and telling them apart clears up
         most of the confusion:
       </P>
-      <ul className="mt-4 space-y-3 text-slate-700">
+      <ul className="mt-4 space-y-3 text-slate-700 dark:text-slate-300">
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
@@ -242,7 +242,7 @@ export default function ThePlaceboEffect() {
         &ldquo;volume control&rdquo; described in{" "}
         <Link
           href="/understanding-pain/pain-and-emotion"
-          className="text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600"
+          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
         >
           pain and emotion
         </Link>{" "}
@@ -293,7 +293,7 @@ export default function ThePlaceboEffect() {
         body produces. Nocebo has enough evidence of its own to deserve{" "}
         <Link
           href="/understanding-pain/the-nocebo-effect"
-          className="text-teal-700 underline decoration-slate-300 underline-offset-2 hover:decoration-teal-600"
+          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
         >
           its own page
         </Link>

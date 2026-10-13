@@ -19,10 +19,10 @@ export function Figure({
 }) {
   return (
     <figure className="my-8">
-      <div className="overflow-x-auto rounded-xl border border-slate-200 bg-paper/60 p-4 sm:p-6">
+      <div className="figure-plate overflow-x-auto rounded-xl border p-4 sm:p-6">
         {animate ? <AnimateOnView>{children}</AnimateOnView> : children}
       </div>
-      <figcaption className="mt-2.5 text-sm text-slate-500">
+      <figcaption className="mt-2.5 text-sm text-slate-500 dark:text-slate-400">
         {caption}
       </figcaption>
     </figure>
@@ -47,7 +47,7 @@ export function H2({ id, children }: { id: string; children: ReactNode }) {
   return (
     <h2
       id={id}
-      className="mt-12 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-900"
+      className="mt-12 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100"
     >
       {children}
     </h2>
@@ -56,7 +56,7 @@ export function H2({ id, children }: { id: string; children: ReactNode }) {
 
 /** Body paragraph shared by the explainer bodies. */
 export function P({ children }: { children: ReactNode }) {
-  return <p className="mt-4 text-slate-700">{children}</p>;
+  return <p className="mt-4 text-slate-700 dark:text-slate-300">{children}</p>;
 }
 
 /**
@@ -68,18 +68,18 @@ export function KeyTakeaways({ items }: { items: ReactNode[] }) {
   return (
     <aside
       aria-label="Key takeaways"
-      className="my-8 rounded-2xl border border-teal-600/15 bg-gradient-to-b from-paper to-white p-6 shadow-card sm:p-7"
+      className="my-8 rounded-2xl border border-teal-600/15 bg-gradient-to-b from-paper to-white p-6 shadow-card sm:p-7 dark:border-teal-400/15 dark:to-background"
     >
-      <p className="text-xs font-semibold uppercase tracking-widest text-teal-700">
+      <p className="text-xs font-semibold uppercase tracking-widest text-teal-700 dark:text-teal-400">
         Key takeaways
       </p>
       <ul className="mt-4 space-y-3">
         {items.map((item, i) => (
-          <li key={i} className="flex gap-3 text-slate-700">
+          <li key={i} className="flex gap-3 text-slate-700 dark:text-slate-300">
             <svg
               aria-hidden="true"
               viewBox="0 0 20 20"
-              className="mt-1 size-4 shrink-0 text-teal-600"
+              className="mt-1 size-4 shrink-0 text-teal-600 dark:text-teal-400"
               fill="currentColor"
             >
               <path
@@ -104,7 +104,7 @@ export function KeyTakeaways({ items }: { items: ReactNode[] }) {
 export function PullQuote({ children }: { children: ReactNode }) {
   return (
     <figure className="my-10">
-      <blockquote className="border-l-4 border-teal-600 pl-5 text-xl font-medium leading-snug text-slate-800 sm:pl-6 sm:text-2xl">
+      <blockquote className="border-l-4 border-teal-600 pl-5 text-xl font-medium leading-snug text-slate-800 sm:pl-6 sm:text-2xl dark:border-teal-400 dark:text-slate-200">
         {children}
       </blockquote>
     </figure>
@@ -113,12 +113,12 @@ export function PullQuote({ children }: { children: ReactNode }) {
 
 const CALLOUT_TONES = {
   note: {
-    wrap: "border-teal-600/20 bg-teal-50/60",
-    label: "text-teal-800",
+    wrap: "border-teal-600/20 bg-teal-50/60 dark:border-teal-400/20 dark:bg-teal-950/30",
+    label: "text-teal-800 dark:text-teal-300",
   },
   caution: {
-    wrap: "border-amber-500/30 bg-amber-50/70",
-    label: "text-amber-800",
+    wrap: "border-amber-500/30 bg-amber-50/70 dark:border-amber-500/25 dark:bg-amber-950/25",
+    label: "text-amber-800 dark:text-amber-300",
   },
 } as const;
 
@@ -139,7 +139,7 @@ export function Callout({
   const t = CALLOUT_TONES[tone];
   return (
     <aside
-      className={`my-7 rounded-xl border px-5 py-4 text-slate-700 ${t.wrap}`}
+      className={`my-7 rounded-xl border px-5 py-4 text-slate-700 dark:text-slate-300 ${t.wrap}`}
     >
       {title && (
         <p className={`text-sm font-semibold ${t.label}`}>{title}</p>
