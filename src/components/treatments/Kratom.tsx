@@ -229,16 +229,21 @@ export default function Kratom() {
       </P>
       <P>
         In July 2026 the DEA filed notice of intent to temporarily place 7-OH
-        above that natural threshold – along with three related synthetic
-        compounds – into <strong>Schedule I</strong>. The first half of that
-        action has now landed: on <strong>August 26, 2026</strong>, a temporary
-        order took effect placing the three synthetics – mitragynine
-        pseudoindoxyl, MGM-15, and MGM-16 – in Schedule I. The order for 7-OH
-        itself is still pending, with public comment on the proposed threshold
-        open through September 10, 2026 – and natural leaf kratom remains
-        federally unscheduled throughout. However the rest resolves, the
-        direction is clear: regulators are drawing a line between the
-        traditional leaf and the isolated compound.
+        above a natural threshold – along with three related synthetic
+        compounds – into <strong>Schedule I</strong>. The first part of that
+        action landed on <strong>August 26, 2026</strong>, when a temporary
+        order placed three of those synthetics – mitragynine pseudoindoxyl,
+        MGM-15, and MGM-16 – into Schedule I; that order remains in effect.
+        The 7-OH piece has since been reworked. In October 2026, acting on an
+        updated recommendation from HHS, the DEA withdrew its original July
+        notice (which had used a 0.05%-dry-weight cutoff) and filed a new one
+        for 7-OH and mitragynine pseudoindoxyl together, this time defined by
+        concentration – above 1 mg per gram in solid products or 1 mg per
+        milliliter in liquids – or by dilution relative to mitragynine, a
+        ratio below 100 to 1. Under that timeline, a temporary order could not
+        take effect before mid-November 2026 at the earliest. Throughout,
+        natural leaf kratom remains federally unscheduled – the target, as
+        before, is concentrated or synthetic 7-OH, not the traditional leaf.
       </P>
 
       <H2 id="legal-status">Where the law stands</H2>

@@ -22,7 +22,7 @@ export const TREATMENT_ARTICLES: Article[] = [
     description:
       "What kratom is, how mitragynine acts on opioid receptors, what the evidence says about pain relief, the real risks – dependence, interactions, unregulated products – and where the law stands on concentrated 7-OH.",
     status: "sourced",
-    lastUpdated: "2026-08-28",
+    lastUpdated: "2026-10-10",
     answer:
       "Kratom is a Southeast Asian tree whose leaves contain mitragynine, a compound that acts on the same opioid receptors as prescription painkillers – though not in the same way. Roughly 1.7 million Americans use it each year, many for pain. It is not FDA-approved, the products are largely unregulated, and the evidence for pain relief, while real, is early and thin.",
     faqs: [
@@ -39,7 +39,7 @@ export const TREATMENT_ARTICLES: Article[] = [
       {
         question: "Is kratom legal in the United States?",
         answer:
-          "Leaf kratom is not a federally controlled substance, but it is not FDA-approved for any use, and a handful of states ban it while others regulate it under Kratom Consumer Protection Acts. In 2026 the DEA began temporarily scheduling the concentrated-7-OH corner of the market: three synthetic 7-OH-related compounds entered Schedule I on August 26, 2026, and an order covering concentrated 7-hydroxymitragynine itself is still pending – moves aimed at potent extracts and tablets, not the traditional leaf.",
+          "Leaf kratom is not a federally controlled substance, but it is not FDA-approved for any use, and a handful of states ban it while others regulate it under Kratom Consumer Protection Acts. In 2026 the DEA began temporarily scheduling the concentrated-7-OH corner of the market: three synthetic 7-OH-related compounds entered Schedule I on August 26, 2026 and remain there, and in October 2026 the DEA filed a revised proposal to schedule concentrated 7-hydroxymitragynine itself, using a new concentration/dilution threshold – moves aimed at potent extracts and tablets, not the traditional leaf.",
       },
       {
         question: "Is kratom addictive?",
@@ -49,7 +49,7 @@ export const TREATMENT_ARTICLES: Article[] = [
       {
         question: "What is 7-OH, and why is it treated differently?",
         answer:
-          "7-hydroxymitragynine (7-OH) is a minor alkaloid in kratom leaf – present only in traces, but far more potent at opioid receptors than mitragynine. Manufacturers began selling concentrated or synthetic 7-OH tablets that the FDA says are 'not kratom' but effectively novel opioid products, and in 2026 the DEA moved against them: three synthetic 7-OH relatives entered Schedule I on August 26, 2026, and a temporary order for high-concentration 7-OH itself is still pending.",
+          "7-hydroxymitragynine (7-OH) is a minor alkaloid in kratom leaf – present only in traces, but far more potent at opioid receptors than mitragynine. Manufacturers began selling concentrated or synthetic 7-OH tablets that the FDA says are 'not kratom' but effectively novel opioid products, and in 2026 the DEA moved against them: three synthetic 7-OH relatives entered Schedule I on August 26, 2026 and remain scheduled, while a revised proposal for high-concentration 7-OH itself – now defined by a concentration and dilution threshold rather than a flat percentage – was filed in October 2026 and has not yet taken effect.",
       },
       {
         question: "Can I use kratom alongside my pain medications?",
@@ -90,6 +90,12 @@ export const TREATMENT_ARTICLES: Article[] = [
         title:
           "Temporary Placement of Mitragynine Pseudoindoxyl, MGM-15, and MGM-16 in Schedule I (temporary order, effective August 26, 2026)",
         url: "https://www.federalregister.gov/documents/2026/08/26/2026-17429/schedules-of-controlled-substances-temporary-placement-of-mitragynine-pseudoindoxyl-mgm-15-and",
+      },
+      {
+        source: "Federal Register",
+        title:
+          "Schedules of Controlled Substances: Temporary Placement of 7-Hydroxymitragynine and Mitragynine Pseudoindoxyl Above a Specified Threshold in Schedule I (revised notice of intent, Docket No. DEA-1570, publication scheduled October 14, 2026)",
+        url: "https://www.federalregister.gov/d/2026-20943",
       },
       {
         source: "Yale Journal of Biology and Medicine",
