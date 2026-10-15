@@ -231,14 +231,24 @@ export default function Kratom() {
         In July 2026 the DEA filed notice of intent to temporarily place 7-OH
         above that natural threshold – along with three related synthetic
         compounds – into <strong>Schedule I</strong>. The first half of that
-        action has now landed: on <strong>August 26, 2026</strong>, a temporary
-        order took effect placing the three synthetics – mitragynine
-        pseudoindoxyl, MGM-15, and MGM-16 – in Schedule I. The order for 7-OH
-        itself is still pending, with public comment on the proposed threshold
-        open through September 10, 2026 – and natural leaf kratom remains
-        federally unscheduled throughout. However the rest resolves, the
-        direction is clear: regulators are drawing a line between the
-        traditional leaf and the isolated compound.
+        action landed on <strong>August 26, 2026</strong>, when a temporary
+        order took effect placing three synthetics – mitragynine
+        pseudoindoxyl, MGM-15, and MGM-16 – in Schedule I; 7-OH itself was not
+        part of that order. On <strong>October 14, 2026</strong>, the DEA
+        withdrew its original July proposal for 7-OH after the Department of
+        Health and Human Services recommended a different, science-based
+        threshold, and issued a revised notice of intent that would control
+        7-OH together with mitragynine pseudoindoxyl: both would move into
+        Schedule I when either substance, or their combined amount, exceeds
+        1 milligram per gram (1 mg per milliliter for liquids), or when the
+        ratio of mitragynine to those compounds falls below 100 to 1. That
+        revised plan is still only a proposal – by DEA&rsquo;s own timeline,
+        the actual temporary order cannot be published before{" "}
+        <strong>November 13, 2026</strong> at the earliest, and the existing
+        August 26 order stays in force until a new one replaces it. Natural
+        leaf kratom remains federally unscheduled throughout. However the
+        rest resolves, the direction is clear: regulators are drawing a line
+        between the traditional leaf and the isolated compound.
       </P>
 
       <H2 id="legal-status">Where the law stands</H2>
