@@ -16,14 +16,67 @@ explicit sign-off.**
 3. Every page renders the footer disclaimer (automatic via layout). Opioid
    content additionally must include the SAMHSA helpline inline.
 
-## Voice
+## Voice & tone
 
 - Compassionate, plain-English, evidence-cited. Target ~8th-grade reading level.
-- The emotional spine: "You are not imagining your pain."
+- The emotional spine: **"You are not imagining your pain — and you are not powerless over it."**
 - Describe, never prescribe. Always route decisions to "discuss with your physician."
 
+### Default to the optimistic take — opportunity over anxiety
+
+Pain content tends to catastrophize. We do the opposite. When the evidence
+supports hope, we lead with it in plain, confident language. The reader
+should leave each page knowing what they *can* do next, not just what might
+go wrong. Opportunity over anxiety, every time the science allows.
+
+This is not spin — it is honest prognosis, stated with the confidence the
+evidence earns. The discipline is **calibrating the promise to the
+condition**, never promising more than the science, and never promising less:
+
+- **Recovery-realistic (lead boldly with recovery).** Acute musculoskeletal
+  and orthopedic injury, most post-surgical pain, many sports injuries — the
+  large ortho audience where full recovery is the *expected* outcome. Say so
+  directly: "Most people make a complete recovery." Pessimism here is its own
+  inaccuracy. Frame healing as the default and the reader as its active
+  participant (movement, rehab, pacing).
+- **Momentum-realistic (lead with a field that is winning).** Migraine and
+  conditions where the science is visibly improving — newer targeted
+  preventives, clearer hormone-cycle and perimenopausal management, nerve
+  blocks and procedures that can now target close to the source. The honest
+  message is forward motion: "This is one of the fastest-moving areas in
+  medicine, and the options keep getting better." Hope anchored to a named,
+  citable advance — never to a vague someday.
+- **Management-realistic (lead with agency, not cure).** Chronic and
+  neuropathic pain where the honest goal is *less pain, more life* rather than
+  zero pain. Here optimism means control and self-efficacy — neuroplasticity,
+  the brain's gate, the real relief in the placebo page — not a finish line
+  that may never come.
+
+### Agency without blame (hard rule)
+
+Never imply that remaining pain is a failure of will, effort, or attitude.
+No "where there's a will there's a way," no "beat it / rise above it / mind
+over matter." The enemy is the mystery and the pain, never the patient.
+Agency language ("here's your next move," "here's what to ask your doctor")
+lifts; willpower framing blames the sick for being sick.
+
+### Charisma on a medical site = credibility, not mystique
+
+Our authority is "built from primary sources, not other websites." Keep it.
+No esoteric, hidden-knowledge, or mystical framing — "no secrets, no
+miracles, just the truth told kindly" is a stronger voice than any guru's.
+Coach *beside* the reader (companion), never *above* them (guru).
+
 ### Banned phrasings
-- "cure," "best treatment," "guaranteed relief," "miracle," "breakthrough" (unless quoting)
+- "cure," "best treatment," "guaranteed relief," "miracle," "breakthrough" (unless quoting).
+  Note: these are superlative *marketing* claims, not the word "recovery."
+  Honest prognosis — "most people recover fully," "a complete recovery is the
+  usual outcome" — is encouraged where the evidence supports it and is cited.
+- Willpower-as-treatment framing ("where there's a will there's a way,"
+  "rise above / beat / conquer your pain," "mind over matter") — see
+  *Agency without blame* above.
+- Esoteric / hidden-knowledge / mystical framing ("unlock the secret,"
+  "ancient wisdom they don't want you to know").
 - Any dosing instruction to the reader (established regulator/label safety
   limits printed as harm-reduction literacy — "the FDA ceiling is…" — are
   allowed per CONTENT-INTAKE.md §2, never framed as the reader's dose)
