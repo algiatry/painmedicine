@@ -93,9 +93,36 @@ Coach *beside* the reader (companion), never *above* them (guru).
 
 ## Condition page template
 
-what it is → why it hurts (mechanism, patient-level) → today's treatment
-ladder (described, not recommended) → what's coming (link to
-/future-of-pain-medicine) → when to seek a specialist → FAQ → references.
+what it is → why it hurts (mechanism, patient-level) → **prognosis register
+(see below)** → today's treatment ladder (described, not recommended) → what's
+coming (link to /future-of-pain-medicine) → when to seek a specialist → FAQ →
+references.
+
+### Prognosis register cue (every clinical page)
+
+Before drafting, pick the page's register from *Voice & tone → Default to the
+optimistic take* and set the honest-hope note accordingly. It belongs in the
+opening plain answer and in the transition into the treatment ladder — not as a
+disclaimer bolted on at the end. Calibrate to the condition, cite the claim,
+default to the optimistic take the evidence supports:
+
+- **Condition pages → choose one register per page:**
+  - *Recovery-realistic* (acute ortho, post-surgical, most sports injury):
+    lead with recovery as the expected outcome — "most people recover fully" —
+    and frame the reader as its active participant.
+  - *Momentum-realistic* (migraine, fast-moving areas): lead with a field that
+    is winning, anchored to a named, citable advance; never a vague someday.
+  - *Management-realistic* (chronic/neuropathic): lead with agency and control
+    — *less pain, more life* — not a cure finish line.
+- **Treatment pages:** set expectations by mechanism and honest response rates
+  — "works well for many, here's who it helps and how we'll know" — opportunity
+  over anxiety, never "strength" or "best."
+- **Science / future pages:** optimism anchored to evidence stage (trial phase,
+  approval status). Excitement is fine; it must carry its citation and its
+  timeline, and must not read as available-today.
+
+In every register, honor *Agency without blame*: remaining pain is never
+framed as a failure of will.
 
 ## Update cadence
 
