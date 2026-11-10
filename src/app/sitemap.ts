@@ -4,21 +4,25 @@ import { HUBS } from "@/lib/hubs";
 import { ALL_ARTICLES } from "@/lib/articles";
 import { REVIEWERS } from "@/lib/reviewers";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
+/**
+ * Static routes. lastModified is the last commit that touched the page file
+ * (2026-10-13). Bump the date when that copy changes — do not stamp build time.
+ */
+const STATIC_PAGES: { path: string; lastModified: string }[] = [
+  { path: "", lastModified: "2026-10-13" },
+  { path: "/about", lastModified: "2026-10-13" },
+  { path: "/medical-disclaimer", lastModified: "2026-10-13" },
+  { path: "/find-help", lastModified: "2026-10-13" },
+  { path: "/glossary", lastModified: "2026-10-13" },
+  { path: "/reviewers", lastModified: "2026-10-13" },
+  { path: "/privacy", lastModified: "2026-10-13" },
+  { path: "/terms", lastModified: "2026-10-13" },
+];
 
-  const staticEntries = [
-    "",
-    "/about",
-    "/medical-disclaimer",
-    "/find-help",
-    "/glossary",
-    "/reviewers",
-    "/privacy",
-    "/terms",
-  ].map((path) => ({
-    url: `${SITE.url}${path}`,
-    lastModified: now,
+export default function sitemap(): MetadataRoute.Sitemap {
+  const staticEntries = STATIC_PAGES.map((page) => ({
+    url: `${SITE.url}${page.path}`,
+    lastModified: new Date(page.lastModified),
     changeFrequency: "monthly" as const,
   }));
 
