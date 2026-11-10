@@ -13,7 +13,7 @@
  * and each affected entry's `updated` when you re-check.
  */
 
-export const LAST_REVIEWED = "2026-10-04";
+export const LAST_REVIEWED = "2026-11-09";
 
 export type Phase =
   | "Approved"
@@ -72,11 +72,11 @@ export const CANDIDATES: Candidate[] = [
     indication: "Moderate-to-severe acute pain",
     phase: "Approved",
     why: "The first non-opioid painkiller of a genuinely new class in decades – it blocks pain signals in the peripheral nerves rather than acting on the brain, so it carries no opioid addiction risk.",
-    note: "FDA-approved for acute pain (Jan 2025); 2026 reports describe it inside opioid-free multimodal recovery plans after keyhole surgery. Phase 3 trials in diabetic nerve pain and lumbosacral radiculopathy are ongoing – those chronic-pain uses are not yet approved.",
-    updated: "2026-10",
+    note: "FDA-approved for moderate-to-severe acute pain (January 2025). Chronic-pain uses are not approved. On 2 November 2026 Vertex said both Phase 3 diabetic-neuropathy studies are on track to finish enrollment by the end of 2026, with results in mid-2027. A lumbosacral radiculopathy program has also been described as ongoing; that update did not mention it. Vertex said that, as of August 2026, JOURNAVX was the most prescribed branded oral pain medicine in the U.S. Earlier 2026 reports describe it inside opioid-free recovery plans after keyhole surgery.",
+    updated: "2026-11",
     source: {
-      label: "Vertex – FDA approval of Journavx",
-      url: "https://news.vrtx.com/news-releases/news-release-details/vertex-announces-fda-approval-journavxtm-suzetrigine-first-class",
+      label: "Vertex – third-quarter 2026 results (2 Nov 2026)",
+      url: "https://news.vrtx.com/news-releases/news-release-details/vertex-reports-third-quarter-2026-financial-results",
     },
   },
   {
@@ -98,17 +98,17 @@ export const CANDIDATES: Candidate[] = [
   },
   {
     name: "Cebranopadol",
-    sponsor: "Tris Pharma",
+    sponsor: "Adneuris Therapeutics (Tris Pharma)",
     mechanism: "Dual NOP + µ-opioid receptor agonist",
     modality: "Small molecule",
     indication: "Moderate-to-severe acute pain",
     phase: "Phase 3",
     why: "Aims to keep opioid-level pain relief while lowering abuse potential – in human abuse-potential studies it was reported less abusable than oxycodone and tramadol.",
-    note: "Positive topline results from two Phase 3 trials (ALLEVIATE-1 and -2). A 2026 healthy-volunteer study in Anesthesiology compared its breathing effects head-to-head with oxycodone. It still engages the µ-opioid receptor, so it is opioid-adjacent, not opioid-free; not yet FDA-approved. Now developed by Adneuris Therapeutics, a Tris Pharma company.",
-    updated: "2026-10",
+    note: "Not approved. Adneuris submitted a New Drug Application on 9 November 2026 for moderate-to-severe acute pain in adults. The FDA has about 60 days to decide whether to accept the file. Phase 3 trials ALLEVIATE-1 and ALLEVIATE-2 met their primary endpoints. It still engages the µ-opioid receptor, so it is opioid-adjacent, not opioid-free.",
+    updated: "2026-11",
     source: {
-      label: "Tris Pharma – ALLEVIATE-2 Phase 3 results",
-      url: "https://www.trispharma.com/tris-pharma-announces-positive-results-from-alleviate-2-phase-3-pivotal-trial-for-cebranopadol-an-investigational-first-in-class-oral-dual-nmr-agonist-for-the-treatment-of-moderate-to-severe-acute-p/",
+      label: "Adneuris – NDA submission for cebranopadol (9 Nov 2026)",
+      url: "https://www.biospace.com/press-releases/adneuris-therapeutics-reaches-key-regulatory-milestone-with-fda-submission-of-new-drug-application-for-cebranopadol-in-moderate-to-severe-acute-pain",
     },
   },
   {
@@ -166,11 +166,11 @@ export const CANDIDATES: Candidate[] = [
     indication: "Diabetic neuropathy (acute-pain arm halted)",
     phase: "Phase 2",
     why: "A reminder that even a hot new class stumbles: its acute-pain Phase 2 missed the primary endpoint in 2025, so Vertex dropped that use – but the chronic nerve-pain program continues.",
-    note: "Not advancing as an acute-pain monotherapy; Phase 2 continues in diabetic peripheral neuropathy.",
-    updated: "2025-08",
+    note: "Not advancing as an acute-pain monotherapy after the August 2025 Phase 2 miss. The diabetic-neuropathy program continues: on 2 November 2026 Vertex said the Phase 2 study is on track to finish enrollment by the end of 2026, with results in mid-2027.",
+    updated: "2026-11",
     source: {
-      label: "Vertex – VX-993 Phase 2 acute-pain results",
-      url: "https://news.vrtx.com/news-releases/news-release-details/vertex-announces-results-phase-2-study-vx-993-treatment-acute",
+      label: "Vertex – third-quarter 2026 results (2 Nov 2026)",
+      url: "https://news.vrtx.com/news-releases/news-release-details/vertex-reports-third-quarter-2026-financial-results",
     },
   },
   {
