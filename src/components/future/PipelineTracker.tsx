@@ -337,6 +337,8 @@ function datasetJsonLd() {
     license: `${SITE.url}/terms`,
     creator: { "@type": "Organization", name: SITE.name, url: SITE.url },
     keywords: [
+      "VX-993",
+      "cebranopadol",
       "non-opioid analgesics",
       "pain drug pipeline",
       "NaV1.8 inhibitor",
