@@ -13,17 +13,34 @@ export const FUTURE_ARTICLES: Article[] = [
     hub: "future-of-pain-medicine",
     slug: "pipeline",
     title: "The Pain Treatment Pipeline",
+    seoTitle: "Which Companies Are Researching Non-Opioid Pain Treatments?",
     description:
-      "A running tracker of the drugs and devices in development to treat pain – mechanism, trial phase, and what each one means – from the first new non-opioid class in decades to first-in-human gene therapy.",
+      "Who is developing new pain treatments: Vertex (suzetrigine, VX-993), Adneuris/Tris (cebranopadol), Grünenthal, Lexicon, Levicept, Sangamo, and Saluda – trial phase, mechanism, and what is actually approved.",
     status: "sourced",
     lastUpdated: LAST_REVIEWED,
     answer:
-      "After decades with few genuinely new options, pain treatment is moving again. This tracker follows the notable drugs and devices in development – what each one is, how it works, and how far along it is – from suzetrigine, the first non-opioid painkiller of a new class in decades, to gene therapies just entering human trials. It is reporting on the science, updated as it moves; it is not medical advice.",
+      "After decades with few genuinely new options, pain treatment is moving again. This tracker follows the notable drugs and devices in development – what each one is, how it works, and how far along it is. Cebranopadol is not approved: its developer submitted an FDA application on 9 November 2026. This is reporting on the science, not medical advice.",
     faqs: [
+      {
+        question: "Is cebranopadol FDA approved?",
+        answer:
+          "No. On 9 November 2026 Adneuris Therapeutics, a Tris Pharma company, submitted a New Drug Application for moderate-to-severe acute pain in adults. The FDA has about 60 days to decide whether to accept that file. A submitted application is not an approval, and the drug is not a prescription treatment. It still acts on the µ-opioid receptor, so it is opioid-adjacent, not opioid-free.",
+      },
+      {
+        question: "What is VX-993?",
+        answer:
+          "VX-993 is Vertex's next selective NaV1.8 blocker, in the same class as suzetrigine. It is not approved. Vertex stopped developing it as an acute-pain monotherapy after a Phase 2 study missed its primary endpoint in August 2025. A Phase 2 study in diabetic peripheral neuropathy is on track to finish enrollment by the end of 2026, with results expected in mid-2027, according to Vertex's 2 November 2026 update.",
+      },
+      {
+        question:
+          "Which companies are researching new approaches to non-opioid pain treatment?",
+        answer:
+          "On this page: Vertex (suzetrigine and VX-993), Grünenthal (resiniferatoxin), Lexicon (pilavapadin), Levicept (LEVI-04), Sangamo (ST-503), and Saluda Medical (the Evoke stimulator). Adneuris Therapeutics, a Tris Pharma company, is developing cebranopadol, which is opioid-adjacent rather than opioid-free, and is not approved. Pfizer and Lilly's tanezumab was discontinued in 2021. Only suzetrigine and Evoke are FDA-approved, and only for the uses on their labels. This is not every company in the field.",
+      },
       {
         question: "Does a drug being 'in the pipeline' mean I can get it?",
         answer:
-          "Usually no. Most entries here are still in clinical trials and are not available as prescription treatments – and most investigational drugs never reach the market at all. Only entries marked 'Approved' are cleared for use, and even then only for the specific condition on their label. Ask your clinician what is actually available for your situation.",
+          "Usually no. Most entries here are still in clinical trials and are not available as prescription treatments – and most investigational drugs never reach the market at all. Only entries marked 'Approved' are cleared for use, and even then only for the specific condition on their label. A filed application, such as cebranopadol's, is not an approval. Ask your clinician what is actually available for your situation.",
       },
       {
         question: "What do the trial phases mean?",
@@ -54,6 +71,17 @@ export const FUTURE_ARTICLES: Article[] = [
           "FDA Approves Non-Opioid Treatment for Moderate-to-Severe Acute Pain",
         url: "https://www.iasp-pain.org/publications/iasp-news/fda-approves-non-opioid-treatment-for-moderate-to-severe-acute-pain/",
       },
+      {
+        source: "Adneuris Therapeutics",
+        title:
+          "NDA submission for cebranopadol in moderate-to-severe acute pain (9 Nov 2026)",
+        url: "https://www.biospace.com/press-releases/adneuris-therapeutics-reaches-key-regulatory-milestone-with-fda-submission-of-new-drug-application-for-cebranopadol-in-moderate-to-severe-acute-pain",
+      },
+      {
+        source: "Vertex Pharmaceuticals",
+        title: "Third-quarter 2026 results – JOURNAVX and VX-993 (2 Nov 2026)",
+        url: "https://news.vrtx.com/news-releases/news-release-details/vertex-reports-third-quarter-2026-financial-results",
+      },
     ],
     related: [
       {
@@ -76,7 +104,7 @@ export const FUTURE_ARTICLES: Article[] = [
     description:
       "Treating pain with electricity is becoming a precision tool: paresthesia-free high-frequency stimulation, closed-loop devices that read the spinal cord and self-adjust, dorsal-root-ganglion targeting, and non-invasive brain stimulation.",
     status: "sourced",
-    lastUpdated: LAST_REVIEWED,
+    lastUpdated: "2026-10-04",
     answer:
       "Neuromodulation treats pain with carefully placed electricity instead of drugs – and it is getting far more precise. Newer systems can stimulate without the old tingling sensation, read the spinal cord's own signals and adjust themselves in real time, target a single cluster of nerves, or work entirely from outside the skull. The shared idea is stimulation matched to the person, not a fixed setting.",
     faqs: [
@@ -142,7 +170,7 @@ export const FUTURE_ARTICLES: Article[] = [
     description:
       "The most precise pain treatments yet: antibodies that block a single pain molecule – as CGRP drugs did for migraine – and gene therapies that turn down the body's pain genes at their source.",
     status: "sourced",
-    lastUpdated: LAST_REVIEWED,
+    lastUpdated: "2026-10-04",
     answer:
       "Instead of broadly dialing down the nervous system, a new generation of treatments targets single, specific molecules in the pain pathway. Antibodies against the CGRP protein transformed migraine prevention – proof that blocking one pain signal can work. Now that precision is reaching further: drugs aimed at nerve-growth factors, and gene therapies designed to quiet the master pain gene, NaV1.7, at its source.",
     faqs: [
@@ -207,7 +235,7 @@ export const FUTURE_ARTICLES: Article[] = [
     description:
       "Matching the treatment to the patient: pharmacogenomics (why codeine is dangerous for some people and useless for others), mechanism-based treatment, biomarkers, and the end of one-size-fits-all pain care.",
     status: "sourced",
-    lastUpdated: LAST_REVIEWED,
+    lastUpdated: "2026-10-04",
     answer:
       "Two people with the same pain can need completely different treatments – and get very different results from the same drug. Precision pain medicine uses your biology to guide care: genetic testing that flags who will be harmed or unhelped by a drug like codeine, matching medicines to your specific pain mechanism, and emerging biomarkers – replacing trial-and-error with something closer to a fit.",
     faqs: [
