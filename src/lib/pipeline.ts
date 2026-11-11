@@ -13,7 +13,7 @@
  * and each affected entry's `updated` when you re-check.
  */
 
-export const LAST_REVIEWED = "2026-11-09";
+export const LAST_REVIEWED = "2026-11-11";
 
 export type Phase =
   | "Approved"
@@ -136,11 +136,11 @@ export const CANDIDATES: Candidate[] = [
     indication: "Diabetic peripheral neuropathic pain",
     phase: "Phase 2",
     why: "A once-daily pill hitting a brand-new, non-opioid target for nerve pain. Its Phase 2b study met its goals at the 10 mg dose, which is moving toward Phase 3.",
-    note: "Holds FDA Fast Track designation; FDA cleared Phase 3 development in early 2026.",
-    updated: "2026-04",
+    note: "Holds FDA Fast Track designation. On 5 November 2026 Lexicon said the FDA has raised no objections to Phase 3 (two 12-week studies of 10 mg versus placebo) and described those studies as the plan, not as started.",
+    updated: "2026-11",
     source: {
-      label: "Lexicon – PROGRESS Phase 2b topline results",
-      url: "https://investors.lexpharma.com/news-releases/news-release-details/lexicon-pharmaceuticals-announces-topline-results-phase-2b",
+      label: "Lexicon – third-quarter 2026 results (5 Nov 2026)",
+      url: "https://investors.lexpharma.com/news-releases/news-release-details/lexicon-pharmaceuticals-reports-third-quarter-2026-financial/",
     },
   },
   {
@@ -151,11 +151,11 @@ export const CANDIDATES: Candidate[] = [
     indication: "Knee osteoarthritis pain",
     phase: "Phase 2",
     why: "Targets the same neurotrophin pain pathway as earlier anti-NGF drugs but appears to spare the joint – its Phase 2 trial improved pain and function without the joint-damage signal that sank tanezumab.",
-    note: "Phase 2 results published in The Lancet (2026); Phase 3 in planning.",
-    updated: "2026-03",
+    note: "Phase 2 results were published in The Lancet in March 2026. In early 2026 the FDA accepted Levicept's IND. The company says it is preparing further clinical development and has no studies open to new patients.",
+    updated: "2026-11",
     source: {
-      label: "The Lancet – LEVI-04 Phase 2 trial",
-      url: "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00131-5/fulltext",
+      label: "Levicept – LEVI-04 trials and IND status",
+      url: "https://levicept.com/trials/",
     },
   },
   {
@@ -182,11 +182,11 @@ export const CANDIDATES: Candidate[] = [
     indication: "Idiopathic small fiber neuropathy",
     phase: "Phase 1",
     why: "The frontier's edge: a one-time gene therapy that turns down the body's master pain gene at its source in the sensory nerves, aiming for durable relief. First-in-human.",
-    note: "Entering a Phase 1/2 trial (NCT06980948) after primate data published in 2026; earliest-stage and unproven in people.",
-    updated: "2026-03",
+    note: "Not approved. Seven sites are activated in the Phase 1/2 STAND study (NCT06980948). On 13 October 2026 Sangamo said the sale of this program is expected to finish in the fourth quarter of 2026; the company is in Chapter 11. Fast Track designation. Primate data were published in 2026; still unproven in people.",
+    updated: "2026-11",
     source: {
-      label: "ClinicalTrials.gov – ST-503 Phase 1/2 (NCT06980948)",
-      url: "https://clinicaltrials.gov/study/NCT06980948",
+      label: "Sangamo – ST-503 sale-process update (13 Oct 2026)",
+      url: "https://investor.sangamo.com/news-releases/news-release-details/sangamo-therapeutics-launches-auction-process-clinical-stage",
     },
   },
   {
