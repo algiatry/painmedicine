@@ -421,8 +421,9 @@ export default function PipelineTracker() {
       <P>
         Every entry is dated and linked to a primary source – a regulator, a
         trial registry, a peer-reviewed journal, or the sponsor&rsquo;s own
-        release. Development is fast-moving, so this page is re-checked
-        quarterly; the status shown was last reviewed on{" "}
+        release. Development is fast-moving, so entries are re-checked
+        quarterly. Each card is dated with the month its status was last
+        checked. This page was last updated on{" "}
         <strong>{formatReviewed(LAST_REVIEWED)}</strong>. For anything you plan
         to act on, confirm the current status on{" "}
         <a

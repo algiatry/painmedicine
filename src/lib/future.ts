@@ -13,7 +13,7 @@ export const FUTURE_ARTICLES: Article[] = [
     hub: "future-of-pain-medicine",
     slug: "pipeline",
     title: "The Pain Treatment Pipeline",
-    seoTitle: "Which Companies Are Researching Non-Opioid Pain Treatments?",
+    seoTitle: "VX-993: Which Companies Are Researching Non-Opioid Pain Treatments?",
     description:
       "Who is developing new pain treatments: Vertex (suzetrigine, VX-993), Adneuris/Tris (cebranopadol), Grünenthal, Lexicon, Levicept, Sangamo, and Saluda – trial phase, mechanism, and what is actually approved.",
     status: "sourced",
@@ -35,7 +35,7 @@ export const FUTURE_ARTICLES: Article[] = [
         question:
           "Which companies are researching new approaches to non-opioid pain treatment?",
         answer:
-          "On this page: Vertex (suzetrigine and VX-993), Grünenthal (resiniferatoxin), Lexicon (pilavapadin), Levicept (LEVI-04), Sangamo (ST-503), and Saluda Medical (the Evoke stimulator). Adneuris Therapeutics, a Tris Pharma company, is developing cebranopadol, which is opioid-adjacent rather than opioid-free, and is not approved. Pfizer and Lilly's tanezumab was discontinued in 2021. Only suzetrigine and Evoke are FDA-approved, and only for the uses on their labels. This is not every company in the field.",
+          "On this page: Vertex (suzetrigine and VX-993), Grünenthal (resiniferatoxin), Lexicon (pilavapadin), Levicept (LEVI-04), Sangamo (ST-503; the company said in October 2026 it expects to sell that program in the fourth quarter, while a Phase 1/2 study continues), and Saluda Medical (the Evoke stimulator). Adneuris Therapeutics, a Tris Pharma company, is developing cebranopadol, which is opioid-adjacent rather than opioid-free, and is not approved. Pfizer and Lilly's tanezumab was discontinued in 2021. Only suzetrigine and Evoke are FDA-approved, and only for the uses on their labels. This is not every company in the field.",
       },
       {
         question: "Does a drug being 'in the pipeline' mean I can get it?",
@@ -93,6 +93,12 @@ export const FUTURE_ARTICLES: Article[] = [
         title: "The three types of pain",
         href: "/understanding-pain/types-of-pain",
         blurb: "Why new drugs target specific pain mechanisms.",
+      },
+      {
+        title: "Diabetic neuropathy",
+        href: "/conditions/diabetic-neuropathy",
+        blurb:
+          "The nerve pain VX-993 and pilavapadin are being studied for, and what is available now.",
       },
     ],
   },
