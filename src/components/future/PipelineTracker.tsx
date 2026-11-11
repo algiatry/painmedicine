@@ -41,238 +41,228 @@ function chipLabel(name: string) {
 }
 
 /**
- * The pipeline board – a swimlane chart computed entirely from lib/pipeline.ts,
- * so the quarterly data refresh redraws the art for free. Modality lanes ×
- * phase columns; every candidate is a plotted node; the dashed teal line is
- * FDA approval; halted candidates fall to a hatched siding below the board.
+ * The pipeline board, computed from lib/pipeline.ts so a quarterly data
+ * refresh redraws the art. HTML, not a scaled SVG, so the type stays at
+ * reading size. Rows are mechanism types, columns are stages, and the teal
+ * rule is FDA approval. Halted candidates sit off the board.
  */
+function BoardChip({
+  c,
+  halted = false,
+}: {
+  c: Candidate;
+  halted?: boolean;
+}) {
+  const label = chipLabel(c.name);
+  const ink = MODALITY_TINT[c.modality].text;
+  const rule = MODALITY_COLOR[c.modality];
+
+  if (halted) {
+    return (
+      <span className="inline-flex items-baseline gap-1.5 rounded-md border border-dashed border-slate-300 bg-white px-2 py-1.5 text-[12.5px] font-semibold leading-none tracking-tight text-slate-500">
+        {label}
+        <span className="text-[11px] font-medium text-slate-400">
+          {c.modality.toLowerCase()}
+        </span>
+      </span>
+    );
+  }
+
+  if (c.phase === "Approved") {
+    return (
+      <span
+        className="inline-flex rounded-md px-2 py-1.5 text-[12.5px] font-semibold leading-none tracking-tight text-white"
+        style={{ backgroundColor: ink }}
+      >
+        {label}
+      </span>
+    );
+  }
+
+  return (
+    <span
+      className="inline-flex items-stretch overflow-hidden rounded-md bg-white"
+      style={{ boxShadow: `inset 0 0 0 1px ${rule}66` }}
+    >
+      <span className="w-1 shrink-0" style={{ backgroundColor: rule }} aria-hidden="true" />
+      <span
+        className="px-2 py-1.5 text-[12.5px] font-semibold leading-none tracking-tight"
+        style={{ color: ink }}
+      >
+        {label}
+      </span>
+    </span>
+  );
+}
+
 function LandscapeFigure() {
   const STAGES: Phase[] = ["Phase 1", "Phase 2", "Phase 3", "Approved"];
   const MODALITIES = Object.keys(MODALITY_COLOR) as Modality[];
   const halted = candidatesByPhase("Discontinued");
 
-  // geometry
-  const GUTTER = 122; // lane labels
-  const COL_W = 156;
-  const COL_GAP = 8;
-  const colX0 = (i: number) => GUTTER + 6 + i * (COL_W + COL_GAP);
-  const LANE_Y0 = 68;
-  const LANE_H = 64;
-  const boardBottom = LANE_Y0 + MODALITIES.length * LANE_H;
-  const approvalX = colX0(3) - COL_GAP / 2; // between Phase 3 and Approved
-  const stripY = boardBottom + 28;
-  const H = halted.length > 0 ? stripY + 52 + 14 : boardBottom + 20;
-  const W = 800;
-  const boardRight = colX0(3) + COL_W;
-
-  // node stagger: columns light up left to right
-  const colDelay = [0.9, 1.15, 1.4, 2.0];
-
   return (
     <Figure
       animate
-      caption="The board, drawn live from the tracker data: each lane is a mechanism type, each column a development stage, and the dashed teal line is FDA approval. Halted candidates drop to the siding at the bottom – tanezumab fell at the line."
+      caption="The board, drawn live from the tracker data. Each row is a mechanism type and each column a development stage. Approved candidates sit past the teal rule. Halted candidates are set aside below – tanezumab fell at that line."
     >
-      <svg
-        role="img"
-        aria-labelledby="landscape-title landscape-desc"
-        viewBox={`0 0 ${W} ${H}`}
-        className="mx-auto block h-auto w-full max-w-3xl"
-      >
-        <title id="landscape-title">The pain-treatment pipeline board</title>
-        <desc id="landscape-desc">
-          A swimlane chart. Rows are mechanism types – small molecule, biologic,
-          device, gene therapy. Columns run Phase 1, Phase 2, Phase 3, then
-          Approved, separated by a dashed line marking FDA approval. Each
-          candidate is a dot in its lane and stage; halted candidates appear in
-          a separate siding at the bottom.
-        </desc>
-
-        <defs>
-          <marker id="pl-arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
-            <path d="M0 0 L 9 4.5 L 0 9 z" fill={FIG.line} />
-          </marker>
-        </defs>
-
-        {/* progression axis */}
-        <line
-          x1={GUTTER}
-          y1="24"
-          x2={boardRight - 8}
-          y2="24"
-          stroke={FIG.soft}
-          strokeWidth="2"
-          markerEnd="url(#pl-arrow)"
-          className="fig-draw"
-          style={anim(0.15, 670)}
-        />
-        <text x={boardRight - 14} y="16" textAnchor="end" fontSize="12" fill={FIG.faint} className="fig-fade" style={anim(0.5)}>
-          closer to patients →
-        </text>
-
-        {/* modality lanes */}
-        {MODALITIES.map((m, li) => {
-          const y = LANE_Y0 + li * LANE_H;
-          return (
-            <g key={m} className="fig-fade" style={anim(0.1 + li * 0.12)}>
-              <rect
-                x={GUTTER}
-                y={y}
-                width={boardRight - GUTTER}
-                height={LANE_H}
-                fill={MODALITY_COLOR[m]}
-                fillOpacity={0.055}
-              />
-              <line x1={GUTTER} y1={y} x2={boardRight} y2={y} stroke={FIG.soft} strokeWidth="1" />
-              <text
-                x={GUTTER - 12}
-                y={y + LANE_H / 2 + 4}
-                textAnchor="end"
-                fontSize="12.5"
-                fontWeight="600"
-                fill={MODALITY_TINT[m].text}
-              >
-                {m}
-              </text>
-            </g>
-          );
-        })}
-        <line x1={GUTTER} y1={boardBottom} x2={boardRight} y2={boardBottom} stroke={FIG.soft} strokeWidth="1" className="fig-fade" style={anim(0.5)} />
-
-        {/* column headers */}
-        {STAGES.map((stage, ci) => (
-          <text
-            key={stage}
-            x={colX0(ci) + COL_W / 2}
-            y="52"
-            textAnchor="middle"
-            fontSize="13.5"
-            fontWeight="700"
-            fill={stage === "Approved" ? FIG.nerveDark : FIG.text}
-            className="fig-fade"
-            style={anim(0.35 + ci * 0.12)}
-          >
-            {stage}
-            <tspan dx="5" fill={FIG.faint} fontWeight="400">{`(${candidatesByPhase(stage).length})`}</tspan>
-          </text>
-        ))}
-
-        {/* approved zone + the approval line */}
-        <rect
-          x={approvalX + COL_GAP / 2}
-          y={LANE_Y0}
-          width={COL_W}
-          height={boardBottom - LANE_Y0}
-          fill={FIG.nerveTint}
-          fillOpacity="0.3"
-          className="fig-fade"
-          style={anim(1.7)}
-        />
-        <line
-          x1={approvalX}
-          y1={LANE_Y0 - 6}
-          x2={approvalX}
-          y2={boardBottom + 6}
-          stroke={FIG.nerveDark}
-          strokeWidth="2"
-          strokeDasharray="6 5"
-          strokeLinecap="round"
-          className="fig-draw"
-          style={anim(1.65, 290)}
-        />
-        <text
-          x={approvalX}
-          y={boardBottom + 20}
-          textAnchor="middle"
-          fontSize="11.5"
-          fontWeight="700"
-          fill={FIG.nerveDark}
-          className="fig-fade"
-          style={anim(1.85)}
+      <div className="min-w-[43rem]">
+        <p
+          className="fig-fade mb-3 text-right text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-400"
+          style={anim(0.05)}
         >
-          FDA approval
-        </text>
-
-        {/* candidate nodes, stacked per (lane, column) cell */}
-        {MODALITIES.map((m, li) =>
-          STAGES.map((stage, ci) => {
-            const cell = CANDIDATES.filter((c) => c.modality === m && c.phase === stage);
-            return cell.map((c, i) => {
-              const cx = colX0(ci) + 18;
-              const cy = LANE_Y0 + li * LANE_H + LANE_H / 2 + (i - (cell.length - 1) / 2) * 26;
-              const approved = stage === "Approved";
-              return (
-                <g key={c.name} className="fig-pop" style={anim(colDelay[ci] + i * 0.15)}>
-                  {approved && (
-                    <circle cx={cx} cy={cy} r="11" fill="none" stroke={MODALITY_COLOR[m]} strokeWidth="1.5" strokeOpacity="0.5" />
-                  )}
-                  <circle cx={cx} cy={cy} r={approved ? 7 : 6} fill={MODALITY_COLOR[m]} />
-                  <text
-                    x={cx + 15}
-                    y={cy + 4}
-                    fontSize="11.5"
-                    fontWeight={approved ? 700 : 600}
-                    fill={MODALITY_TINT[m].text}
-                  >
-                    {chipLabel(c.name)}
-                  </text>
-                </g>
-              );
-            });
-          }),
-        )}
-
-        {/* the halted siding */}
-        {halted.length > 0 && (
-          <>
-            <path
-              d={`M${approvalX} ${LANE_Y0 + 1.5 * LANE_H} C ${approvalX} ${boardBottom + 10}, ${approvalX - 60} ${stripY - 6}, ${approvalX - 90} ${stripY + 24}`}
-              fill="none"
-              stroke={FIG.faint}
-              strokeWidth="1.8"
-              strokeDasharray="4 5"
-              markerEnd="url(#pl-arrow)"
-              className="fig-draw fig-fade"
-              style={anim(2.5, 220)}
-            />
-            <g className="fig-fade" style={anim(2.7)}>
-              <rect
-                x={GUTTER}
-                y={stripY}
-                width={boardRight - GUTTER}
-                height={48}
-                rx={10}
-                fill={FIG.paper}
-                stroke={FIG.line}
-                strokeDasharray="7 5"
-              />
-              <text x={GUTTER - 12} y={stripY + 28} textAnchor="end" fontSize="12.5" fontWeight="600" fill={FIG.faint}>
-                Halted
-              </text>
-              {halted.map((c, i) => {
-                const cx = approvalX - 74 + i * 190;
-                const cy = stripY + 24;
+          closer to patients <span aria-hidden="true">→</span>
+        </p>
+        <table className="w-full border-collapse text-left">
+          <caption className="sr-only">
+            Pain-treatment pipeline. Rows are mechanism types. Columns run from
+            Phase 1 to Approved. The teal rule before Approved is FDA approval.
+            Halted candidates are listed below the board.
+          </caption>
+          <thead>
+            <tr className="fig-fade" style={anim(0.12)}>
+              <th className="w-[7.25rem] pb-3" scope="col">
+                <span className="sr-only">Mechanism type</span>
+              </th>
+              {STAGES.map((stage) => {
+                const approved = stage === "Approved";
+                const n = candidatesByPhase(stage).length;
                 return (
-                  <g key={c.name}>
-                    <circle cx={cx} cy={cy} r="6" fill={FIG.white} stroke={FIG.faint} strokeWidth="1.8" strokeDasharray="3 3" />
-                    <text x={cx + 14} y={cy + 4} fontSize="11.5" fontWeight="600" fill={FIG.muted}>
-                      {chipLabel(c.name)}
-                      <tspan dx="5" fill={FIG.faint} fontWeight="400">– {c.modality.toLowerCase()}</tspan>
-                    </text>
-                  </g>
+                  <th
+                    key={stage}
+                    scope="col"
+                    className="px-1.5 pb-3 text-center align-bottom"
+                    style={
+                      approved
+                        ? {
+                            borderLeft: `2px solid ${FIG.nerveDark}`,
+                            backgroundColor: FIG.nerveGround,
+                          }
+                        : undefined
+                    }
+                  >
+                    <span
+                      className="block text-[11px] font-semibold uppercase tracking-[0.14em]"
+                      style={{ color: approved ? FIG.nerveDark : FIG.textMid }}
+                    >
+                      {stage}
+                    </span>
+                    {approved && (
+                      <span
+                        className="mt-1 block text-[10px] font-semibold uppercase tracking-[0.16em]"
+                        style={{ color: FIG.nerve }}
+                      >
+                        FDA approval
+                      </span>
+                    )}
+                    <span
+                      className="mt-1 block text-[11px] font-medium tabular-nums"
+                      style={{ color: FIG.faint }}
+                    >
+                      {n}
+                    </span>
+                  </th>
                 );
               })}
-            </g>
-          </>
-        )}
-      </svg>
+            </tr>
+          </thead>
+          <tbody>
+            {MODALITIES.map((m, li) => {
+              const edge = `1px solid ${FIG.soft}`;
+              const last = li === MODALITIES.length - 1;
+              return (
+                <tr key={m} className="fig-fade" style={anim(0.18 + li * 0.06)}>
+                  <th
+                    scope="row"
+                    className="pr-3 text-right align-middle text-[12px] font-semibold leading-tight"
+                    style={{
+                      color: MODALITY_TINT[m].text,
+                      borderTop: edge,
+                      borderBottom: last ? edge : undefined,
+                    }}
+                  >
+                    <span className="inline-flex items-center justify-end gap-2">
+                      <span>{m}</span>
+                      <span
+                        className="size-1.5 shrink-0 rounded-full"
+                        style={{ backgroundColor: MODALITY_COLOR[m] }}
+                        aria-hidden="true"
+                      />
+                    </span>
+                  </th>
+                  {STAGES.map((stage) => {
+                    const cell = CANDIDATES.filter(
+                      (c) => c.modality === m && c.phase === stage,
+                    );
+                    const approved = stage === "Approved";
+                    return (
+                      <td
+                        key={stage}
+                        className="px-1.5 py-2.5 text-center align-middle"
+                        style={{
+                          borderTop: edge,
+                          borderBottom: last ? edge : undefined,
+                          borderLeft: approved
+                            ? `2px solid ${FIG.nerveDark}`
+                            : edge,
+                          backgroundColor: approved ? FIG.nerveGround : undefined,
+                        }}
+                      >
+                        {cell.length > 0 && (
+                          <ul className="flex flex-col items-center gap-1.5">
+                            {cell.map((c) => (
+                              <li key={c.name}>
+                                <BoardChip c={c} />
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </td>
+                    );
+                  })}
+                </tr>
+              );
+            })}
+          </tbody>
+          {halted.length > 0 && (
+            <tbody>
+              <tr className="fig-fade" style={anim(0.55)}>
+                <th
+                  scope="row"
+                  className="pt-5 pr-3 text-right align-middle text-[12px] font-semibold text-slate-400"
+                >
+                  Halted
+                </th>
+                <td colSpan={4} className="pt-5">
+                  <div
+                    className="flex flex-wrap items-center gap-2 border-t border-dashed pt-3"
+                    style={{ borderColor: FIG.line }}
+                  >
+                    {halted.map((c) => (
+                      <BoardChip key={c.name} c={c} halted />
+                    ))}
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          )}
+        </table>
+      </div>
     </Figure>
   );
 }
-
 function CandidateCard({ c }: { c: Candidate }) {
   return (
-    <li className="rounded-xl border border-slate-200 dark:border-slate-800 p-5">
+    <li className="overflow-hidden rounded-xl border border-slate-200 dark:border-slate-800">
+      <div className="flex">
+        <span
+          aria-hidden="true"
+          className="w-1 shrink-0"
+          style={{
+            backgroundColor:
+              c.phase === "Discontinued" ? FIG.line : MODALITY_COLOR[c.modality],
+          }}
+        />
+        <div className="min-w-0 flex-1 p-5">
       <div className="flex items-start justify-between gap-4">
         <div>
           <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100">{c.name}</h3>
@@ -319,6 +309,8 @@ function CandidateCard({ c }: { c: Candidate }) {
           {c.source.label}
         </a>
         <span className="text-slate-400 dark:text-slate-500">· status checked {c.updated}</span>
+      </div>
+        </div>
       </div>
     </li>
   );
