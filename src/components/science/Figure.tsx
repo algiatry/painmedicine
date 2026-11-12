@@ -11,19 +11,33 @@ export function Figure({
   caption,
   children,
   animate = false,
+  label,
 }: {
   caption: string;
   children: ReactNode;
   /** Play this figure's choreography (fig-* classes) when scrolled into view. */
   animate?: boolean;
+  /** Optional short lead, set in teal before the caption (e.g. "Figure 1"). */
+  label?: string;
 }) {
   return (
     <figure className="my-8">
       <div className="figure-plate overflow-x-auto rounded-xl border p-4 sm:p-6">
         {animate ? <AnimateOnView>{children}</AnimateOnView> : children}
       </div>
-      <figcaption className="mt-2.5 text-sm text-slate-500 dark:text-slate-400">
-        {caption}
+      <figcaption className="mt-3 flex gap-2.5 text-sm leading-relaxed text-slate-500 dark:text-slate-400">
+        <span
+          aria-hidden="true"
+          className="mt-[0.4em] h-3 w-0.5 shrink-0 rounded-full bg-teal-600/70 dark:bg-teal-400/70"
+        />
+        <span>
+          {label ? (
+            <span className="font-semibold text-teal-700 dark:text-teal-300">
+              {label}.{" "}
+            </span>
+          ) : null}
+          {caption}
+        </span>
       </figcaption>
     </figure>
   );

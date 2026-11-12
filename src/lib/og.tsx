@@ -75,6 +75,8 @@ export async function brandCard({
           display: "flex",
           flexDirection: "column",
           background: BRAND.paper,
+          backgroundImage:
+            "radial-gradient(1100px 520px at 82% -8%, rgba(20,184,166,0.10), transparent 60%), radial-gradient(760px 420px at 2% 4%, rgba(245,158,11,0.05), transparent 55%)",
           fontFamily: "Source Sans 3",
           position: "relative",
         }}
