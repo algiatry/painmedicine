@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { SITE, NAV, SUPPORT_LINKS } from "@/lib/site";
 import BrandMark from "@/components/BrandMark";
 import NavLinks from "@/components/NavLinks";
+import SiteSearch from "@/components/SiteSearch";
 
 /** Quick links surfaced in the mobile menu footer. */
 const MOBILE_UTILITY = SUPPORT_LINKS.filter((l) =>
@@ -65,12 +66,14 @@ export default function Header() {
             </span>
           </Link>
 
-          <nav aria-label="Primary" className="hidden lg:block">
+          <nav aria-label="Primary" className="ml-auto hidden lg:block">
             <ul className="flex items-center gap-5">
               <NavLinks />
             </ul>
           </nav>
 
+          <div className="ml-auto flex items-center lg:ml-0">
+          <SiteSearch />
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
@@ -99,6 +102,7 @@ export default function Header() {
               )}
             </svg>
           </button>
+          </div>
         </div>
       </div>
 

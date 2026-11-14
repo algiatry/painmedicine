@@ -221,7 +221,7 @@ export default function NeckPain() {
         <Link href="/future-of-pain-medicine/pipeline" className={link}>
           pain-treatment pipeline
         </Link>{" "}
-        follows the non-opioid drugs and devices moving through trials.
+        follows the new drugs and devices moving through trials.
       </P>
 
       <H2 id="specialist">When to see a pain specialist</H2>

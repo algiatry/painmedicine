@@ -23,3 +23,13 @@ cannot merge while any of those steps is red. Keep changes passing locally
 before you push — run `npm run lint` and `npm run build`, and resolve any
 high/critical `npm audit` finding (bump the dependency; don't silence it).
 Don't weaken the audit gate or skip/disable a failing check to get green.
+
+# Reference check (monthly, not part of verify)
+
+`.github/workflows/reference-check.yml` runs `npm run check:refs`
+(`scripts/check-references.ts`) on the 3rd of each month and on demand. It
+confirms every article reference and pipeline source still resolves, and that
+each PubMed/PMC ID points at the paper the citation names. Dead or mismatched
+citations fail the run and open (or update) one GitHub issue. It is kept out
+of **verify** on purpose so a publisher outage cannot block a merge. Run it
+locally after adding or editing references.

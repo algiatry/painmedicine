@@ -20,6 +20,7 @@ import { HUBS } from "../src/lib/hubs";
 import { ALL_ARTICLES } from "../src/lib/articles";
 import type { PageMeta } from "../src/lib/schema";
 import { defaultReviewDue, getReviewer } from "../src/lib/reviewers";
+import { ALIASES as SEARCH_ALIASES } from "../src/lib/search";
 
 const REPO = path.resolve(__dirname, "..");
 const COMPONENT_DIRS = ["science", "future", "specialty", "conditions", "treatments"].map(
@@ -240,6 +241,51 @@ for (const a of ALL_ARTICLES) {
     err(page, `substantive opioid content (${opioidMentions} mentions) without inline SAMHSA helpline`);
   else if (opioidMentions > 0 && opioidMentions < 3 && !hasSamhsa)
     warn(page, `mentions opioids (${opioidMentions}×) without inline SAMHSA — verify context (site-wide footer helpline still renders)`);
+}
+
+// -- cross-links: the condition → treatment → science → future triangle
+// (CONTENT-INTAKE.md §7). A condition guide must hand the reader on to at
+// least one page in each of the other three hubs; a treatment page must link
+// back to a condition it serves.
+const TRIANGLE = ["treatments", "understanding-pain", "future-of-pain-medicine"];
+// Substance profiles rather than treatments for a named condition.
+const NO_CONDITION_LINK = new Set(["kratom", "buprenorphine-for-pain"]);
+for (const a of ALL_ARTICLES) {
+  const page = `/${a.hub}/${a.slug}`;
+  const linksTo = (hub: string) => a.related.some((r) => r.href.startsWith(`/${hub}/`));
+  if (a.related.some((r) => r.href === page)) err(page, "related links include the page itself");
+  if (a.hub === "conditions")
+    for (const hub of TRIANGLE)
+      if (!linksTo(hub)) err(page, `related links have no page under /${hub} — every condition guide links into all three`);
+  if (a.hub === "treatments" && !NO_CONDITION_LINK.has(a.slug) && !linksTo("conditions"))
+    err(page, "related links have no page under /conditions — a treatment page links back to a condition it serves");
+}
+
+// -- internal links: every site-relative href in content and components must
+// resolve to a page that exists, so a renamed slug cannot leave a dead link.
+const STATIC_ROUTES = ["/", "/about", "/find-help", "/glossary", "/medical-disclaimer", "/privacy", "/reviewers", "/terms", "/llms.txt"];
+const routes = new Set<string>([
+  ...STATIC_ROUTES,
+  ...HUBS.map((h) => `/${h.slug}`),
+  ...ALL_ARTICLES.map((a) => `/${a.hub}/${a.slug}`),
+]);
+function sourceFiles(dir: string): string[] {
+  return fs.readdirSync(dir, { withFileTypes: true }).flatMap((e) => {
+    const full = path.join(dir, e.name);
+    if (e.isDirectory()) return sourceFiles(full);
+    return /\.tsx?$/.test(e.name) ? [full] : [];
+  });
+}
+for (const key of Object.keys(SEARCH_ALIASES))
+  if (!routes.has(key)) err("src/lib/search.ts", `search alias for ${key}, which is not a page on the site`);
+for (const file of sourceFiles(path.join(REPO, "src"))) {
+  const src = fs.readFileSync(file, "utf8");
+  for (const m of src.matchAll(/\bhref(?:=|:\s*)["'](\/[^"'#?]*)/g)) {
+    const target = m[1].length > 1 ? m[1].replace(/\/$/, "") : m[1];
+    if (target.startsWith("/reviewers/") || target.startsWith("/brand/")) continue;
+    if (!routes.has(target))
+      err(path.relative(REPO, file), `internal link to ${target}, which is not a page on the site`);
+  }
 }
 
 // -- cadence (as warnings in full mode)

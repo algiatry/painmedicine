@@ -243,7 +243,8 @@ export default function AttentionAndDistraction() {
         is why immersive virtual reality has become a research tool in burn
         care, where daily dressing changes are among the most painful
         procedures in medicine. In the first published cases, two teenagers
-        who had struggled through wound care on opioids alone reported steep
+        who had struggled through wound care on strong pain medicines alone
+        reported steep
         drops in pain, anxiety, and &ldquo;time spent thinking about the
         pain&rdquo; when the same procedure was done inside a headset rather
         than with an ordinary video game. Later trials in children with large

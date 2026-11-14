@@ -1,0 +1,54 @@
+name: Reference check
+
+# Once a month, confirm every citation on the site still resolves and still
+# points at the paper it claims to (scripts/check-references.ts). Kept out of
+# the verify job on purpose: a publisher outage must not block a merge.
+on:
+  schedule:
+    - cron: "17 14 3 * *" # 3rd of each month, 14:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  references:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies (clean, from lockfile)
+        run: npm ci
+
+      - name: Check citations
+        id: check
+        continue-on-error: true
+        run: npm run check:refs -- --report=reference-report.md
+
+      # One open issue at a time: a new failure adds a comment to it instead
+      # of opening a duplicate.
+      - name: Report dead or mismatched citations
+        if: steps.check.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          title="Reference check: citations need fixing"
+          existing=$(gh issue list --state open --search "in:title \"$title\"" --json number --jq '.[0].number // empty')
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body-file reference-report.md
+          else
+            gh issue create --title "$title" --body-file reference-report.md
+          fi
+
+      - name: Fail the run if anything needs fixing
+        if: steps.check.outcome == 'failure'
+        run: exit 1
