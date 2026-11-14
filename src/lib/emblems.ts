@@ -102,6 +102,13 @@ export const EMBLEMS: Record<string, string> = {
       `<circle cx="14" cy="36" r="2.4" fill="${A}" stroke-width="0"/>`,
   ),
 
+  // A torso with a one-sided band.
+  "shingles-pain": g(
+    `<path stroke="${S}" d="M12 8c8-4 16-4 24 0l-2 34H14z"/>` +
+      `<path stroke="${T}" d="M24 8v34" stroke-dasharray="1 5"/>` +
+      `<path stroke="${A}" d="M24 24h11" stroke-width="5"/>`,
+  ),
+
   // Lesions scattered beyond the uterus outline.
   endometriosis: g(
     `<path stroke="${S}" d="M16 16c-6 4-6 14 0 18s10 6 8 10M32 16c6 4 6 14 0 18s-10 6-8 10"/>` +

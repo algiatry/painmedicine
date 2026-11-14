@@ -43,6 +43,7 @@ import CentralPostStrokePain from "./conditions/CentralPostStrokePain";
 import OpioidsForAcutePain from "./treatments/OpioidsForAcutePain";
 import AttentionAndDistraction from "./science/AttentionAndDistraction";
 import ShoulderPain from "./conditions/ShoulderPain";
+import ShinglesPain from "./conditions/ShinglesPain";
 import Ketamine from "./treatments/Ketamine";
 import BuprenorphineForPain from "./treatments/BuprenorphineForPain";
 
@@ -96,6 +97,7 @@ export const ARTICLE_BODIES: Record<string, ComponentType> = {
   "opioids-for-acute-pain": OpioidsForAcutePain,
   "attention-and-distraction": AttentionAndDistraction,
   "shoulder-pain": ShoulderPain,
+  "shingles-pain": ShinglesPain,
   "ketamine": Ketamine,
   "buprenorphine-for-pain": BuprenorphineForPain,
 };
