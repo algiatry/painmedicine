@@ -512,8 +512,8 @@ export const TREATMENT_ARTICLES: Article[] = [
       {
         source: "FDA",
         title:
-          "Drug Safety Communication: FDA strengthens warning that non-aspirin NSAIDs can cause heart attacks or strokes (2015)",
-        url: "https://www.fda.gov/drugs/drug-safety-and-availability/fda-drug-safety-communication-fda-strengthens-warning-non-aspirin-nonsteroidal-anti-inflammatory",
+          "Drug Safety Communication: FDA strengthens warning that non-aspirin NSAIDs can cause heart attacks or strokes (2015; FDA-archived page)",
+        url: "https://web.archive.org/web/20260305090700/https://www.fda.gov/drugs/drug-safety-and-availability/fda-drug-safety-communication-fda-strengthens-warning-non-aspirin-nonsteroidal-anti-inflammatory",
       },
       {
         source: "NCBI StatPearls",
@@ -522,8 +522,8 @@ export const TREATMENT_ARTICLES: Article[] = [
       },
       {
         source: "NIH / NIDDK",
-        title: "Your Kidneys & How They Work – analgesic nephropathy and NSAID effects",
-        url: "https://www.niddk.nih.gov/health-information/kidney-disease/analgesic-nephropathy",
+        title: "Keeping Kidneys Safe: Smart Choices about Medicines",
+        url: "https://www.niddk.nih.gov/health-information/kidney-disease/keeping-kidneys-safe",
       },
       {
         source: "Merck Manual",
@@ -550,6 +550,12 @@ export const TREATMENT_ARTICLES: Article[] = [
         href: "/understanding-pain/types-of-pain",
         blurb:
           "Why the safest drug is the one matched to the mechanism – the foundation of every choice on this page.",
+      },
+      {
+        title: "Arthritis pain",
+        href: "/conditions/arthritis-pain",
+        blurb:
+          "Where months of daily anti-inflammatories most often begin, and the options beyond them.",
       },
     ],
   },
@@ -606,8 +612,8 @@ export const TREATMENT_ARTICLES: Article[] = [
       {
         source: "FDA",
         title:
-          "Drug Safety Communication: FDA warns about serious risks and death when combining opioid pain or cough medicines with benzodiazepines",
-        url: "https://www.fda.gov/drugs/drug-safety-and-availability/fda-drug-safety-communication-fda-warns-about-serious-risks-and-death-when-combining-opioid-pain-or-cough",
+          "Drug Safety Communication: FDA warns about serious risks and death when combining opioid pain or cough medicines with benzodiazepines (2016; FDA-archived page)",
+        url: "https://web.archive.org/web/20251214114458/https://www.fda.gov/drugs/drug-safety-and-availability/fda-drug-safety-communication-fda-warns-about-serious-risks-and-death-when-combining-opioid-pain-or",
       },
       {
         source: "CDC Newsroom",
@@ -659,6 +665,12 @@ export const TREATMENT_ARTICLES: Article[] = [
         href: "/treatments/kratom",
         blurb:
           "The unregulated opioid-reactor at the edge of the market – and the 2026 federal scheduling action.",
+      },
+      {
+        title: "Cancer pain",
+        href: "/conditions/cancer-pain",
+        blurb:
+          "Where opioids remain essential tools, and why that conversation is different.",
       },
     ],
   },
@@ -752,6 +764,12 @@ export const TREATMENT_ARTICLES: Article[] = [
         title: "Interventional procedures",
         href: "/treatments/interventional-procedures",
         blurb: "The selection-dependent corner – and the window rule.",
+      },
+      {
+        title: "Low back pain",
+        href: "/conditions/low-back-pain",
+        blurb:
+          "The world's most common pain condition – and the one where this evidence map gets used most.",
       },
     ],
   },

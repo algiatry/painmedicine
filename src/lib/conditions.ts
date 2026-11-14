@@ -104,6 +104,18 @@ export const CONDITION_ARTICLES: Article[] = [
         href: "/what-is-pain-medicine/your-first-visit",
         blurb: "What actually happens when back pain reaches a specialist.",
       },
+      {
+        title: "Physical and behavioral therapies",
+        href: "/treatments/physical-and-behavioral-therapies",
+        blurb:
+          "Movement, pacing, and cognitive behavioral approaches – the active care that retrains pain rather than masking it.",
+      },
+      {
+        title: "Mind, brain, and new frontiers",
+        href: "/future-of-pain-medicine/mind-and-brain",
+        blurb:
+          "Pain reprocessing therapy and an FDA-authorized virtual-reality program, both tested in chronic back pain.",
+      },
     ],
   },
 
@@ -201,6 +213,12 @@ export const CONDITION_ARTICLES: Article[] = [
         href: "/treatments/medications-for-pain",
         blurb:
           "Why nerve pain gets different drugs – and what the sciatica trials honestly showed.",
+      },
+      {
+        title: "The pain treatment pipeline",
+        href: "/future-of-pain-medicine/pipeline",
+        blurb:
+          "The new drugs and devices moving through trials, each with its real status.",
       },
     ],
   },
@@ -300,6 +318,12 @@ export const CONDITION_ARTICLES: Article[] = [
         blurb:
           "Where spinal cord stimulation is headed for pain that medications miss.",
       },
+      {
+        title: "The three types of pain",
+        href: "/understanding-pain/types-of-pain",
+        blurb:
+          "Where neuropathic pain sits beside nociceptive and nociplastic pain, and why the type shapes treatment.",
+      },
     ],
   },
 
@@ -391,6 +415,12 @@ export const CONDITION_ARTICLES: Article[] = [
         href: "/understanding-pain/pain-and-sleep",
         blurb:
           "Why sleep regularity is a migraine treatment, not a platitude.",
+      },
+      {
+        title: "Pain medications & your organs",
+        href: "/treatments/medication-organ-safety",
+        blurb:
+          "What the everyday painkillers ask of the liver, kidneys, heart, and stomach when they are used often.",
       },
     ],
   },
@@ -485,6 +515,12 @@ export const CONDITION_ARTICLES: Article[] = [
         blurb:
           "The hunt for osteoarthritis drugs that modify the disease, not just the pain.",
       },
+      {
+        title: "The three types of pain",
+        href: "/understanding-pain/types-of-pain",
+        blurb:
+          "Nociceptive, neuropathic, nociplastic – where joint pain sits on the mechanism map.",
+      },
     ],
   },
 
@@ -578,6 +614,12 @@ export const CONDITION_ARTICLES: Article[] = [
         href: "/future-of-pain-medicine/mind-and-brain",
         blurb:
           "The retraining therapies being built for exactly this kind of pain.",
+      },
+      {
+        title: "Physical and behavioral therapies",
+        href: "/treatments/physical-and-behavioral-therapies",
+        blurb:
+          "Graded movement, pacing, and cognitive behavioral approaches, and what each honestly delivers.",
       },
     ],
   },
@@ -674,6 +716,12 @@ export const CONDITION_ARTICLES: Article[] = [
         blurb:
           "How to report pain so your team can actually act on it.",
       },
+      {
+        title: "Precision pain medicine",
+        href: "/future-of-pain-medicine/precision-pain-medicine",
+        blurb:
+          "Why the same pain medicine can work differently from one person to the next – pharmacogenomics, explained.",
+      },
     ],
   },
 
@@ -748,7 +796,7 @@ export const CONDITION_ARTICLES: Article[] = [
       {
         source: "J Pain Research / PMC",
         title: "Katz et al. – Toronto General Hospital Transitional Pain Service: development and implementation",
-        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4670028/",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4610888/",
       },
     ],
     related: [
@@ -766,6 +814,12 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Physical and behavioral therapies",
         href: "/treatments/physical-and-behavioral-therapies",
         blurb: "The rehabilitation and pain-skills side of postsurgical recovery.",
+      },
+      {
+        title: "The pain treatment pipeline",
+        href: "/future-of-pain-medicine/pipeline",
+        blurb:
+          "The first new-class non-opioid approved for acute pain, and what else is in trials.",
       },
     ],
   },
@@ -836,7 +890,7 @@ export const CONDITION_ARTICLES: Article[] = [
       {
         source: "NIH / NICHD",
         title: "Endometriosis – condition information",
-        url: "https://www.nichd.nih.gov/health/topics/endometri",
+        url: "https://www.nichd.nih.gov/health/topics/endometriosis",
       },
       {
         source: "WHO",
@@ -859,6 +913,12 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Pain and emotion",
         href: "/understanding-pain/pain-and-emotion",
         blurb: "Why distress changes pain without making it psychological or imagined.",
+      },
+      {
+        title: "Precision pain medicine",
+        href: "/future-of-pain-medicine/precision-pain-medicine",
+        blurb:
+          "Matching treatment to the mechanism of the pain, not the diagnosis alone – where the field is heading.",
       },
     ],
   },
@@ -953,6 +1013,12 @@ export const CONDITION_ARTICLES: Article[] = [
         href: "/future-of-pain-medicine/neuromodulation",
         blurb: "The device evidence for carefully selected refractory diabetic nerve pain.",
       },
+      {
+        title: "The three types of pain",
+        href: "/understanding-pain/types-of-pain",
+        blurb:
+          "Neuropathic pain is one of three mechanism types – why that label shapes which treatments tend to help.",
+      },
     ],
   },
 
@@ -1046,6 +1112,18 @@ export const CONDITION_ARTICLES: Article[] = [
         href: "/treatments/interventional-procedures",
         blurb: "The evidence and limits behind injections and spine procedures.",
       },
+      {
+        title: "How pain works",
+        href: "/understanding-pain/how-pain-works",
+        blurb:
+          "Why pain is not a simple readout of what a scan shows.",
+      },
+      {
+        title: "Next-generation neuromodulation",
+        href: "/future-of-pain-medicine/neuromodulation",
+        blurb:
+          "Closed-loop and high-frequency spinal cord stimulation – where implanted devices are heading.",
+      },
     ],
   },
 
@@ -1113,9 +1191,9 @@ export const CONDITION_ARTICLES: Article[] = [
         url: "https://pubmed.ncbi.nlm.nih.gov/31054759/",
       },
       {
-        source: "Mayo Clinic Proceedings / PubMed",
+        source: "BMJ / PubMed",
         title: "Cohen & Hooten – Advances in the diagnosis and management of neck pain",
-        url: "https://pubmed.ncbi.nlm.nih.gov/28645549/",
+        url: "https://pubmed.ncbi.nlm.nih.gov/28807894/",
       },
       {
         source: "NIH / MedlinePlus",
@@ -1138,6 +1216,12 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Your first visit to a pain physician",
         href: "/what-is-pain-medicine/your-first-visit",
         blurb: "What happens when persistent neck or arm pain reaches a specialist.",
+      },
+      {
+        title: "Next-generation neuromodulation",
+        href: "/future-of-pain-medicine/neuromodulation",
+        blurb:
+          "The more adaptive stimulation devices being studied for carefully selected nerve-related pain.",
       },
     ],
   },
@@ -1234,6 +1318,12 @@ export const CONDITION_ARTICLES: Article[] = [
         blurb:
           "The nervous-system plasticity that CRPS turns against a limb – and rehab turns back.",
       },
+      {
+        title: "Interventional procedures",
+        href: "/treatments/interventional-procedures",
+        blurb:
+          "Nerve blocks and spinal cord and DRG stimulation – what each does, and the honest evidence.",
+      },
     ],
   },
   {
@@ -1321,6 +1411,18 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Physical and behavioral therapies",
         href: "/treatments/physical-and-behavioral-therapies",
         blurb: "The evidence-supported foundation for muscle-predominant TMD.",
+      },
+      {
+        title: "The three types of pain",
+        href: "/understanding-pain/types-of-pain",
+        blurb:
+          "Nociceptive, neuropathic, nociplastic – the mechanism map behind jaw pain that persists.",
+      },
+      {
+        title: "Mind, brain, and new frontiers",
+        href: "/future-of-pain-medicine/mind-and-brain",
+        blurb:
+          "Treatments that work by retraining how the brain constructs pain.",
       },
     ],
   },
@@ -1420,6 +1522,18 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Physical and behavioral therapies",
         href: "/treatments/physical-and-behavioral-therapies",
         blurb: "Where pelvic floor physical therapy fits in the broader toolkit.",
+      },
+      {
+        title: "The three types of pain",
+        href: "/understanding-pain/types-of-pain",
+        blurb:
+          "Why pelvic pain is often more than one mechanism at once.",
+      },
+      {
+        title: "Precision pain medicine",
+        href: "/future-of-pain-medicine/precision-pain-medicine",
+        blurb:
+          "Matching treatment to the mechanism of the pain, not the diagnosis alone.",
       },
     ],
   },
@@ -1523,6 +1637,12 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Next-generation neuromodulation",
         href: "/future-of-pain-medicine/neuromodulation",
         blurb: "Motor cortex and magnetic stimulation for refractory central pain.",
+      },
+      {
+        title: "Medications for pain",
+        href: "/treatments/medications-for-pain",
+        blurb:
+          "The drug-class map, including the nerve-pain medicines used here.",
       },
     ],
   },
@@ -1637,6 +1757,18 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Physical and behavioral therapies",
         href: "/treatments/physical-and-behavioral-therapies",
         blurb: "How graded exercise and advice rebuild a shoulder's tolerance for load.",
+      },
+      {
+        title: "How pain works",
+        href: "/understanding-pain/how-pain-works",
+        blurb:
+          "Why pain is not a simple readout of what a scan shows.",
+      },
+      {
+        title: "Precision pain medicine",
+        href: "/future-of-pain-medicine/precision-pain-medicine",
+        blurb:
+          "Matching treatment to the person rather than the average – where the field is heading.",
       },
     ],
   },
