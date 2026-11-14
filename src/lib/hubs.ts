@@ -137,6 +137,12 @@ export const HUBS: Hub[] = [
           "Why a cartoon helps a child through a blood draw: attention is a real dial on the brainstem's pain-control pathway, caught on brain scans – and it turns both ways.",
         href: "/understanding-pain/attention-and-distraction",
       },
+      {
+        title: "Central sensitization",
+        blurb:
+          "When the amplifier is the problem: how the nervous system turns up its own gain, what that feels like, and why it changes which treatments help.",
+        href: "/understanding-pain/central-sensitization",
+      },
     ],
   },
   {
@@ -211,6 +217,18 @@ export const HUBS: Hub[] = [
         blurb:
           "Not only the addiction drug: a partial-agonist opioid with a ceiling on breathing suppression, its pain-specific products, and what the 2025 trial of switching from high-dose opioids honestly found.",
         href: "/treatments/buprenorphine-for-pain",
+      },
+      {
+        title: "Cannabis and cannabinoids for pain",
+        blurb:
+          "Neither wonder drug nor nothing: the small average benefit in trials, the common side effects, and what the FDA has and has not approved.",
+        href: "/treatments/cannabis-and-cannabinoids",
+      },
+      {
+        title: "Tapering opioids safely",
+        blurb:
+          "Slow and agreed, never abrupt: what the CDC's 2022 guideline says, what withdrawal means, and why forced tapers proved dangerous.",
+        href: "/treatments/tapering-opioids",
       },
     ],
   },
@@ -340,6 +358,18 @@ export const HUBS: Hub[] = [
         blurb:
           "Electric-shock facial pain set off by a touch: the blood vessel behind most cases, why ordinary painkillers fail, and what surgery offers.",
         href: "/conditions/trigeminal-neuralgia",
+      },
+      {
+        title: "Tension-type and cluster headache",
+        blurb:
+          "The world's most common headache and one of its most severe: how to tell them apart, the medication-overuse trap, and why oxygen treats a cluster attack.",
+        href: "/conditions/tension-and-cluster-headache",
+      },
+      {
+        title: "Knee and hip osteoarthritis",
+        blurb:
+          "The treatment ladder, honestly: why exercise is the base, how long a steroid injection lasts, which injections guidelines recommend against, and how long a new knee lasts.",
+        href: "/conditions/knee-and-hip-osteoarthritis",
       },
     ],
   },

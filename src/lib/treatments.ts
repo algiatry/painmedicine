@@ -128,6 +128,11 @@ export const TREATMENT_ARTICLES: Article[] = [
         blurb:
           "The receptors and pathways any analgesic – plant or pharmaceutical – has to work through.",
       },
+      {
+        title: "Cannabis and cannabinoids for pain",
+        href: "/treatments/cannabis-and-cannabinoids",
+        blurb: "The other widely used plant product: what the trials show, and what they don't.",
+      },
     ],
   },
 
@@ -672,6 +677,11 @@ export const TREATMENT_ARTICLES: Article[] = [
         blurb:
           "Where opioids remain essential tools, and why that conversation is different.",
       },
+      {
+        title: "Tapering opioids safely",
+        href: "/treatments/tapering-opioids",
+        blurb: "Why slow and agreed is the standard, and what the evidence says about forced tapers.",
+      },
     ],
   },
 
@@ -1211,6 +1221,195 @@ export const TREATMENT_ARTICLES: Article[] = [
         href: "/treatments/kratom",
         blurb:
           "Another partial agonist at the same receptor – but unregulated, untested in chronic pain, and the subject of a 2026 federal scheduling action.",
+      },
+    ],
+  },
+  {
+    hub: HUB,
+    slug: "cannabis-and-cannabinoids",
+    title: "Cannabis and Cannabinoids for Pain",
+    description:
+      "What the trials actually show about cannabis, THC, and CBD for chronic pain: a small average benefit, common side effects, thin long-term data, what the FDA has and has not approved, and what a leading guideline recommends.",
+    status: "sourced",
+    lastUpdated: "2026-11-14",
+    answer:
+      "In pooled clinical trials, cannabis-based medicines give a small to very small improvement in chronic pain, physical function, and sleep, with common side effects such as dizziness and drowsiness. The FDA has not approved cannabis for any condition. A leading guideline gives a weak recommendation for a trial alongside standard care when that care has not been enough.",
+    faqs: [
+      {
+        question: "Does cannabis help chronic pain?",
+        answer:
+          "On average, a little. A 2021 review of 32 trials found that non-inhaled medical cannabis or cannabinoids gave a small improvement in pain: about 10 more people in every 100 reached a noticeable improvement than with placebo. A separate review for the International Association for the Study of Pain judged the trials too weak to support or refute claims of efficacy. Most trials were in nerve pain and lasted under six months.",
+      },
+      {
+        question: "What are the side effects of cannabis-based medicines?",
+        answer:
+          "Dizziness, drowsiness, nausea, and trouble with attention or thinking are the most common. In a Cochrane review of nerve-pain trials, nervous-system side effects affected 61% of people on cannabis-based medicines compared with 29% on placebo, and psychiatric side effects 17% compared with 5%. Long-term risks were not measured in those trials.",
+      },
+      {
+        question: "Is CBD by itself effective for pain?",
+        answer:
+          "There is little good trial evidence either way. Most of the studied pain effect comes from products containing THC. CBD does not cause a high, but it is not risk-free: the NIH notes it has been associated with liver injury and with interactions with other medicines. CBD products sold in shops are not FDA-approved, so mention them to your pharmacist or clinician.",
+      },
+      {
+        question: "Is medical cannabis FDA-approved for pain?",
+        answer:
+          "No. The FDA has not approved cannabis for the treatment of any disease or condition. It has approved one purified CBD medicine and three synthetic cannabinoid medicines, none of them for pain. Products from dispensaries and shops have not passed the purity, strength, and consistency testing an approved medicine requires. State laws differ and continue to change.",
+      },
+      {
+        question: "Can you become dependent on cannabis?",
+        answer:
+          "Yes. Some people who use cannabis develop cannabis use disorder, with craving, withdrawal, and loss of control over use. Cannabis has also been linked to a higher risk of motor vehicle crashes, falls and injuries in older adults, and psychosis in people predisposed to it. If use is becoming hard to control, the SAMHSA National Helpline is 1-800-662-HELP (4357).",
+      },
+    ],
+    references: [
+      {
+        source: "The BMJ / PubMed",
+        title: "Wang et al. – Medical cannabis or cannabinoids for chronic non-cancer and cancer related pain: a systematic review and meta-analysis of randomised clinical trials",
+        url: "https://pubmed.ncbi.nlm.nih.gov/34497047/",
+      },
+      {
+        source: "The BMJ / PubMed",
+        title: "Busse et al. – Medical cannabis or cannabinoids for chronic pain: a clinical practice guideline",
+        url: "https://pubmed.ncbi.nlm.nih.gov/34497062/",
+      },
+      {
+        source: "Pain (IASP) / PubMed",
+        title: "Fisher et al. – Cannabinoids, cannabis, and cannabis-based medicine for pain management: a systematic review of randomised controlled trials",
+        url: "https://pubmed.ncbi.nlm.nih.gov/32804836/",
+      },
+      {
+        source: "Cochrane / PubMed",
+        title: "Mücke et al. – Cannabis-based medicines for chronic neuropathic pain in adults",
+        url: "https://pubmed.ncbi.nlm.nih.gov/29513392/",
+      },
+      {
+        source: "Annals of Internal Medicine / PubMed",
+        title: "McDonagh et al. – Cannabis-based products for chronic pain: a systematic review",
+        url: "https://pubmed.ncbi.nlm.nih.gov/35667066/",
+      },
+      {
+        source: "FDA",
+        title: "FDA and Cannabis: Research and Drug Approval Process",
+        url: "https://www.fda.gov/news-events/public-health-focus/fda-and-cannabis-research-and-drug-approval-process",
+      },
+      {
+        source: "NIH / NCCIH",
+        title: "Cannabis (Marijuana) and Cannabinoids: What You Need To Know",
+        url: "https://www.nccih.nih.gov/health/cannabis-marijuana-and-cannabinoids-what-you-need-to-know",
+      },
+    ],
+    related: [
+      {
+        title: "Kratom",
+        href: "/treatments/kratom",
+        blurb: "Another plant product widely used for pain, with thinner evidence and its own risks.",
+      },
+      {
+        title: "Comparing your options",
+        href: "/treatments/comparing-your-options",
+        blurb: "Why almost every pain treatment helps modestly on average, and how to read a claim.",
+      },
+      {
+        title: "Neuropathic pain",
+        href: "/conditions/neuropathic-pain",
+        blurb: "The condition most cannabis trials studied, and its established treatments.",
+      },
+      {
+        title: "The pain treatment pipeline",
+        href: "/future-of-pain-medicine/pipeline",
+        blurb: "The new drugs and devices moving through trials, each with its real status.",
+      },
+    ],
+  },
+  {
+    hub: HUB,
+    slug: "tapering-opioids",
+    title: "Tapering Opioids Safely",
+    description:
+      "What the evidence and the CDC's 2022 guideline say about lowering long-term opioid doses: why slow and agreed is the standard, why abrupt or forced tapers are dangerous, what withdrawal means, and what to expect for pain afterwards.",
+    status: "sourced",
+    lastUpdated: "2026-11-14",
+    answer:
+      "Long-term opioids should never be stopped suddenly. The CDC's 2022 guideline says they should not be discontinued abruptly or reduced rapidly, and that a taper should be a shared plan – gradual, individualized, often lasting months to years, with room to pause. Rapid or forced tapers have been linked to withdrawal, overdose, and mental health crises.",
+    faqs: [
+      {
+        question: "Is it dangerous to stop opioids suddenly?",
+        answer:
+          "Yes, after long-term use. Sudden discontinuation can cause severe withdrawal, and the CDC says opioids should not be stopped abruptly or reduced rapidly unless there is a life-threatening issue such as signs of impending overdose. Large studies have linked tapering and stopping, especially when fast, with higher rates of overdose, mental health crisis, and suicide. Any change should be planned with the prescriber.",
+      },
+      {
+        question: "How long does an opioid taper take?",
+        answer:
+          "It varies widely. The CDC says tapers can take several months to years depending on the dose, and should be individualized. For people who have taken opioids for a year or more, it describes reductions of about 10% a month or slower as likely to be better tolerated. That is a benchmark for clinicians, not a schedule to follow alone; your own pace is set with your prescriber.",
+      },
+      {
+        question: "Does withdrawal during a taper mean I am addicted?",
+        answer:
+          "No. Withdrawal reflects physical dependence, the body's expected adaptation to long-term opioid use. Addiction, or opioid use disorder, is a different condition defined by loss of control and continued use despite harm. The CDC's first response to withdrawal during a taper is to slow down or pause, so report symptoms early.",
+      },
+      {
+        question: "Will my pain get worse if I taper?",
+        answer:
+          "Pain can flare temporarily during a taper. Over the longer term, a review of 67 studies found that pain, function, and quality of life improved in the better-quality studies of supported dose reduction – though the evidence was rated very low quality, because most of the studies had no comparison group.",
+      },
+      {
+        question: "Can my doctor force me to taper?",
+        answer:
+          "The CDC says clinicians should not insist on tapering when the benefits of opioids outweigh the risks, that its recommendations are voluntary rather than rigid standards, and that patients should not be abandoned. It says insurers and health systems should not use the guideline to force rapid tapers. You can ask for the reasons, a slower pace, a pause, or a second opinion.",
+      },
+      {
+        question: "Why is overdose a risk after tapering?",
+        answer:
+          "Because tolerance falls along with the dose. An amount the body once handled can become dangerous after a taper. The CDC advises clinicians to warn patients about returning abruptly to a previous higher dose, to provide overdose education, and to offer naloxone. If opioid use is becoming hard to control, the SAMHSA National Helpline is 1-800-662-HELP (4357).",
+      },
+    ],
+    references: [
+      {
+        source: "CDC / PMC",
+        title: "Dowell et al. – CDC Clinical Practice Guideline for Prescribing Opioids for Pain – United States, 2022",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9639433/",
+      },
+      {
+        source: "JAMA / PubMed",
+        title: "Agnoli et al. – Association of dose tapering with overdose or mental health crisis among patients prescribed long-term opioids",
+        url: "https://pubmed.ncbi.nlm.nih.gov/34342618/",
+      },
+      {
+        source: "The BMJ / PubMed",
+        title: "Oliva et al. – Associations between stopping prescriptions for opioids, length of opioid treatment, and overdose or suicide deaths in US veterans",
+        url: "https://pubmed.ncbi.nlm.nih.gov/32131996/",
+      },
+      {
+        source: "Annals of Internal Medicine / PubMed",
+        title: "Frank et al. – Patient outcomes in dose reduction or discontinuation of long-term opioid therapy: a systematic review",
+        url: "https://pubmed.ncbi.nlm.nih.gov/28715848/",
+      },
+      {
+        source: "The Journal of Pain / PubMed",
+        title: "Sullivan et al. – Prescription opioid taper support for outpatients with chronic pain: a randomized controlled trial",
+        url: "https://pubmed.ncbi.nlm.nih.gov/27908840/",
+      },
+    ],
+    related: [
+      {
+        title: "Opioids, honestly",
+        href: "/treatments/opioid-stewardship",
+        blurb: "Dependence, tolerance, overdose risk, and naloxone – the background to any taper.",
+      },
+      {
+        title: "Buprenorphine for pain",
+        href: "/treatments/buprenorphine-for-pain",
+        blurb: "The option the CDC points to when a taper stalls.",
+      },
+      {
+        title: "Physical & behavioral therapies",
+        href: "/treatments/physical-and-behavioral-therapies",
+        blurb: "The pain care that is meant to grow as the dose shrinks.",
+      },
+      {
+        title: "Cancer pain",
+        href: "/conditions/cancer-pain",
+        blurb: "Where the CDC guideline does not apply, and opioids are a different conversation.",
       },
     ],
   },

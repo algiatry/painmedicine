@@ -900,6 +900,108 @@ export const ARTICLES: Article[] = [
       },
     ],
   },
+  {
+    hub: HUB,
+    slug: "central-sensitization",
+    title: "Central Sensitization",
+    description:
+      "Why pain can be far greater than any injury explains: how the spinal cord and brain turn up their own gain, what that feels like, how it relates to nociplastic pain, and why it changes which treatments help.",
+    status: "sourced",
+    lastUpdated: "2026-11-14",
+    answer:
+      "Central sensitization is a state in which the spinal cord and brain become more responsive to incoming signals, so the same input produces more pain. Light touch can hurt, pain can spread beyond the original site, and it can outlast its cause. It is a real, measurable change in the nervous system – and researchers describe it as reversible.",
+    faqs: [
+      {
+        question: "Does central sensitization mean the pain is in my head?",
+        answer:
+          "No. It means the pain system itself has become more sensitive – a physical change in how nerve cells in the spinal cord and brain respond, which can be detected with electrical recordings and brain imaging. The pain is as real as pain from an injury. What differs is where the problem sits: in the amplifier rather than only at the source.",
+      },
+      {
+        question: "What are the signs of central sensitization?",
+        answer:
+          "Pain from things that should not hurt, such as light touch or clothing; stronger pain than expected from things that do hurt; tenderness that spreads beyond the original area; and pain that lingers after a stimulus has stopped. It often comes with fatigue and poor sleep. There is no single test – clinicians recognize it from the overall pattern.",
+      },
+      {
+        question: "Is central sensitization the same as nociplastic pain?",
+        answer:
+          "Not quite. Central sensitization is a mechanism: nerve cells in the central nervous system becoming more excitable. Nociplastic pain is a clinical category for pain that arises from altered pain processing rather than from tissue damage or nerve injury. Sensitization is thought to be a major contributor to nociplastic pain, but researchers say the mechanisms are not fully understood.",
+      },
+      {
+        question: "Can central sensitization be reversed?",
+        answer:
+          "The original scientific definition describes it as a prolonged but reversible increase in nerve-cell excitability, and in healthy volunteers it can be switched on briefly and fades again. In long-standing pain the realistic picture is gradual improvement rather than a switch being flipped. Reviews find that both medicines and non-drug approaches can reduce sensitization and improve outcomes in several conditions.",
+      },
+      {
+        question: "What helps a sensitized pain system?",
+        answer:
+          "Approaches that act on the nervous system as a whole rather than on one sore spot: regular movement and exercise, understanding how pain works, and certain medicines that act on pain processing. The evidence shows modest average benefits. Treatments aimed only at the tissues, including anti-inflammatory drugs, opioids, injections, and surgery, tend to help less with this kind of pain. If opioid use is becoming hard to control, the SAMHSA National Helpline is 1-800-662-HELP (4357).",
+      },
+    ],
+    references: [
+      {
+        source: "IASP",
+        title: "IASP Terminology – pain definitions (central sensitization, nociplastic pain)",
+        url: "https://www.iasp-pain.org/resources/terminology/",
+      },
+      {
+        source: "Pain / PubMed",
+        title: "Woolf – Central sensitization: implications for the diagnosis and treatment of pain",
+        url: "https://pubmed.ncbi.nlm.nih.gov/20961685/",
+      },
+      {
+        source: "The Lancet / PubMed",
+        title: "Fitzcharles et al. – Nociplastic pain: towards an understanding of prevalent pain conditions",
+        url: "https://pubmed.ncbi.nlm.nih.gov/34062144/",
+      },
+      {
+        source: "The Lancet Rheumatology / PubMed",
+        title: "Nijs et al. – Central sensitisation in chronic pain conditions: latest discoveries and their potential for precision medicine",
+        url: "https://pubmed.ncbi.nlm.nih.gov/38279393/",
+      },
+      {
+        source: "Pain / PubMed",
+        title: "Kosek et al. – Chronic nociplastic pain affecting the musculoskeletal system: clinical criteria and grading system",
+        url: "https://pubmed.ncbi.nlm.nih.gov/33974577/",
+      },
+      {
+        source: "Cochrane / PubMed",
+        title: "Geneen et al. – Physical activity and exercise for chronic pain in adults: an overview of Cochrane Reviews",
+        url: "https://pubmed.ncbi.nlm.nih.gov/28436583/",
+      },
+      {
+        source: "The Journal of Pain / PubMed",
+        title: "Watson et al. – Pain neuroscience education for adults with chronic musculoskeletal pain: a mixed-methods systematic review and meta-analysis",
+        url: "https://pubmed.ncbi.nlm.nih.gov/30831273/",
+      },
+    ],
+    related: [
+      {
+        title: "How pain works",
+        href: "/understanding-pain/how-pain-works",
+        blurb: "The signal, the spinal gate, and the brain – the system that sensitization turns up.",
+      },
+      {
+        title: "The three types of pain",
+        href: "/understanding-pain/types-of-pain",
+        blurb: "Nociceptive, neuropathic, nociplastic: where a sensitized system fits.",
+      },
+      {
+        title: "Fibromyalgia",
+        href: "/conditions/fibromyalgia",
+        blurb: "The condition where a sensitized pain system is the main event.",
+      },
+      {
+        title: "Physical & behavioral therapies",
+        href: "/treatments/physical-and-behavioral-therapies",
+        blurb: "The treatments that retrain pain rather than mask it.",
+      },
+      {
+        title: "Precision pain medicine",
+        href: "/future-of-pain-medicine/precision-pain-medicine",
+        blurb: "Matching treatment to the mechanism, not just the diagnosis.",
+      },
+    ],
+  },
 ];
 
 export function getArticle(hub: string, slug: string): Article | undefined {

@@ -17,6 +17,8 @@ import YourFirstVisit from "./specialty/YourFirstVisit";
 import HowPainPhysiciansTrain from "./specialty/HowPainPhysiciansTrain";
 import PainClinicsVsPainMedicine from "./specialty/PainClinicsVsPainMedicine";
 import Kratom from "./treatments/Kratom";
+import TaperingOpioids from "./treatments/TaperingOpioids";
+import CannabisAndCannabinoids from "./treatments/CannabisAndCannabinoids";
 import MedicationsForPain from "./treatments/MedicationsForPain";
 import InterventionalProcedures from "./treatments/InterventionalProcedures";
 import PhysicalBehavioralTherapies from "./treatments/PhysicalBehavioralTherapies";
@@ -42,8 +44,11 @@ import ChronicPelvicPain from "./conditions/ChronicPelvicPain";
 import CentralPostStrokePain from "./conditions/CentralPostStrokePain";
 import OpioidsForAcutePain from "./treatments/OpioidsForAcutePain";
 import AttentionAndDistraction from "./science/AttentionAndDistraction";
+import CentralSensitization from "./science/CentralSensitization";
 import ShoulderPain from "./conditions/ShoulderPain";
 import ShinglesPain from "./conditions/ShinglesPain";
+import KneeAndHipOsteoarthritis from "./conditions/KneeAndHipOsteoarthritis";
+import TensionAndClusterHeadache from "./conditions/TensionAndClusterHeadache";
 import TrigeminalNeuralgia from "./conditions/TrigeminalNeuralgia";
 import Ketamine from "./treatments/Ketamine";
 import BuprenorphineForPain from "./treatments/BuprenorphineForPain";
@@ -72,6 +77,8 @@ export const ARTICLE_BODIES: Record<string, ComponentType> = {
   "how-pain-physicians-train": HowPainPhysiciansTrain,
   "pain-clinics-vs-pain-medicine": PainClinicsVsPainMedicine,
   kratom: Kratom,
+  "tapering-opioids": TaperingOpioids,
+  "cannabis-and-cannabinoids": CannabisAndCannabinoids,
   "medications-for-pain": MedicationsForPain,
   "interventional-procedures": InterventionalProcedures,
   "physical-and-behavioral-therapies": PhysicalBehavioralTherapies,
@@ -97,8 +104,11 @@ export const ARTICLE_BODIES: Record<string, ComponentType> = {
   "central-post-stroke-pain": CentralPostStrokePain,
   "opioids-for-acute-pain": OpioidsForAcutePain,
   "attention-and-distraction": AttentionAndDistraction,
+  "central-sensitization": CentralSensitization,
   "shoulder-pain": ShoulderPain,
   "shingles-pain": ShinglesPain,
+  "knee-and-hip-osteoarthritis": KneeAndHipOsteoarthritis,
+  "tension-and-cluster-headache": TensionAndClusterHeadache,
   "trigeminal-neuralgia": TrigeminalNeuralgia,
   "ketamine": Ketamine,
   "buprenorphine-for-pain": BuprenorphineForPain,

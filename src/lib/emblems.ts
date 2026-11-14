@@ -109,6 +109,20 @@ export const EMBLEMS: Record<string, string> = {
       `<circle cx="12" cy="26" r="3.4" fill="${A}" stroke-width="0"/>`,
   ),
 
+  // A head circle with a band across it and a point at the eye.
+  "tension-and-cluster-headache": g(
+    `<circle stroke="${S}" cx="24" cy="24" r="16"/>` +
+      `<path stroke="${T}" d="M9 19c10-5 20-5 30 0"/>` +
+      `<circle cx="16" cy="28" r="3.4" fill="${A}" stroke-width="0"/>`,
+  ),
+
+  // A bent knee joint with the signal at the joint line.
+  "knee-and-hip-osteoarthritis": g(
+    `<path stroke="${S}" d="M16 4v16M30 4v16M14 28l-4 16M28 28l6 16"/>` +
+      `<path stroke="${T}" d="M13 20h20M11 28h20"/>` +
+      `<circle cx="22" cy="24" r="2.8" fill="${A}" stroke-width="0"/>`,
+  ),
+
   // A torso with a one-sided band.
   "shingles-pain": g(
     `<path stroke="${S}" d="M12 8c8-4 16-4 24 0l-2 34H14z"/>` +
@@ -389,6 +403,27 @@ export const EMBLEMS: Record<string, string> = {
       `<path stroke="${A}" d="M8 24h14" stroke-width="4"/>` +
       `<path stroke="${T}" d="M8 34h2.5" stroke-width="4"/>` +
       `<path stroke="${S}" d="M8 41h34" stroke-width="2.2"/>`,
+  ),
+
+  // A staircase stepping down, with one flat pause.
+  "tapering-opioids": g(
+    `<path stroke="${T}" d="M6 10h8v7h8v7h10v7h6v7h6"/>` +
+      `<path stroke="${A}" d="M6 10v28" stroke-dasharray="1 5"/>`,
+  ),
+
+  // A leaf beside a balance: small benefit, real harms.
+  "cannabis-and-cannabinoids": g(
+    `<path stroke="${T}" d="M14 34V12M14 22c-5-1-8-4-9-8M14 22c5-1 8-4 9-8M14 28c-4 0-7-2-9-5M14 28c4 0 7-2 9-5"/>` +
+      `<path stroke="${S}" d="M28 20h16M36 20v18M30 38h12"/>` +
+      `<circle cx="29" cy="26" r="2.6" fill="${A}" stroke-width="0"/>` +
+      `<circle cx="43" cy="24" r="2" fill="${T}" stroke-width="0"/>`,
+  ),
+
+  // A small signal enters an amplifier and leaves as a large one.
+  "central-sensitization": g(
+    `<path stroke="${T}" d="M6 30h10"/>` +
+      `<path stroke="${S}" d="M18 16l12 8-12 8z"/>` +
+      `<path stroke="${A}" d="M32 24h3l2.5-12 3 22 2.5-10h1" stroke-width="2.8"/>`,
   ),
 
   // A dial turned low; the signal below it shrinks to a short bar.

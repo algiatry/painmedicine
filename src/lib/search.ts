@@ -34,11 +34,15 @@ const SECTION: Record<string, string> = {
  * covers – this is a ranking aid, never a promise of content that isn't there.
  */
 export const ALIASES: Record<string, string> = {
+  "/understanding-pain/central-sensitization": "sensitisation nociplastic amplified pain hypersensitivity pain with normal scan",
   "/conditions/low-back-pain": "backache back ache lumbar spine",
   "/conditions/sciatica": "pinched nerve leg pain herniated disc slipped disc radiculopathy",
   "/conditions/neuropathic-pain": "nerve pain neuropathy burning tingling numbness",
   "/conditions/migraine": "headache headaches",
-  "/conditions/arthritis-pain": "osteoarthritis rheumatoid joint pain knee hip",
+  "/conditions/tension-and-cluster-headache":
+    "headache headaches tension headache stress headache rebound headache medication overuse",
+  "/conditions/arthritis-pain": "osteoarthritis rheumatoid joint pain",
+  "/conditions/knee-and-hip-osteoarthritis": "knee pain hip pain knee arthritis hip arthritis knee replacement cortisone shot glucosamine prp",
   "/conditions/fibromyalgia": "fibro widespread pain",
   "/conditions/persistent-postsurgical-pain": "pain after surgery operation postoperative",
   "/conditions/diabetic-neuropathy": "diabetes nerve pain feet peripheral neuropathy",
@@ -51,13 +55,15 @@ export const ALIASES: Record<string, string> = {
   "/conditions/trigeminal-neuralgia": "facial pain face pain tic douloureux electric shock",
   "/conditions/shingles-pain": "herpes zoster phn nerve pain after shingles rash vaccine shingrix",
   "/conditions/neck-pain": "cervical spine pinched nerve arm",
+  "/treatments/cannabis-and-cannabinoids": "marijuana weed thc cbd cbd oil medical marijuana hemp",
   "/treatments/medications-for-pain":
     "painkillers pain relievers medicine drugs pills nsaids ibuprofen acetaminophen tylenol gabapentin",
   "/treatments/medication-organ-safety": "side effects liver kidney stomach tylenol ibuprofen nsaids",
   "/treatments/interventional-procedures":
     "injections epidural steroid nerve block radiofrequency ablation spinal cord stimulator",
   "/treatments/physical-and-behavioral-therapies": "physical therapy exercise cbt mindfulness pacing",
-  "/treatments/opioid-stewardship": "addiction dependence overdose naloxone tapering",
+  "/treatments/opioid-stewardship": "addiction dependence overdose naloxone",
+  "/treatments/tapering-opioids": "taper tapering withdrawal coming off opioids stopping reduce dose wean weaning",
   "/treatments/buprenorphine-for-pain": "butrans belbuca suboxone",
   "/future-of-pain-medicine/pipeline": "new drugs clinical trials suzetrigine journavx",
   "/future-of-pain-medicine/neuromodulation": "spinal cord stimulator scs brain stimulation",
