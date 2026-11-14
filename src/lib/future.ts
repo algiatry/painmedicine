@@ -151,7 +151,7 @@ export const FUTURE_ARTICLES: Article[] = [
       {
         source: "NCBI / PMC",
         title:
-          "rTMS for neuropathic pain – mechanisms and clinical evidence (review)",
+          "Bai et al. – Repetitive transcranial magnetic stimulation regulates neuroinflammation in neuropathic pain (review)",
         url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10167032/",
       },
     ],
@@ -200,7 +200,7 @@ export const FUTURE_ARTICLES: Article[] = [
       {
         source: "NCBI / PMC",
         title:
-          "Discovery of Aimovig (erenumab), the first FDA-approved anti-CGRP antibody",
+          "King et al. – Discovery of the migraine prevention therapeutic Aimovig (erenumab), the first FDA-approved antibody against a G-protein-coupled receptor",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7088995/",
       },
       {

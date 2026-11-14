@@ -55,8 +55,8 @@ export const SPECIALTY_ARTICLES: Article[] = [
       {
         source: "ABMS",
         title:
-          "ABMS Member Board Requirements for Initial Certification in a Subspecialty (2025)",
-        url: "https://www.abms.org/wp-content/uploads/2025/06/Requirements-for-Initial-Certification-Subspecialty_V2_20250613.pdf",
+          "ABMS Member Board Requirements for Initial Certification in a Subspecialty (2025; archived copy)",
+        url: "https://web.archive.org/web/20260821214518/https://www.abms.org/wp-content/uploads/2025/06/Requirements-for-Initial-Certification-Subspecialty_V2_20250613.pdf",
       },
       {
         source: "American Board of Anesthesiology",
