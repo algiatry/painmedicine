@@ -34,6 +34,7 @@ const SECTION: Record<string, string> = {
  * covers – this is a ranking aid, never a promise of content that isn't there.
  */
 export const ALIASES: Record<string, string> = {
+  "/understanding-pain/central-sensitization": "sensitisation nociplastic amplified pain hypersensitivity pain with normal scan",
   "/conditions/low-back-pain": "backache back ache lumbar spine",
   "/conditions/sciatica": "pinched nerve leg pain herniated disc slipped disc radiculopathy",
   "/conditions/neuropathic-pain": "nerve pain neuropathy burning tingling numbness",

@@ -137,6 +137,12 @@ export const HUBS: Hub[] = [
           "Why a cartoon helps a child through a blood draw: attention is a real dial on the brainstem's pain-control pathway, caught on brain scans – and it turns both ways.",
         href: "/understanding-pain/attention-and-distraction",
       },
+      {
+        title: "Central sensitization",
+        blurb:
+          "When the amplifier is the problem: how the nervous system turns up its own gain, what that feels like, and why it changes which treatments help.",
+        href: "/understanding-pain/central-sensitization",
+      },
     ],
   },
   {

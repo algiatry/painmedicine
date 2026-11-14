@@ -78,7 +78,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: "Central sensitization",
     definition:
       "A state in which the spinal cord and brain become more responsive to pain signals, so the same input produces more pain. A key driver of chronic pain.",
-    href: "/understanding-pain/how-pain-works",
+    href: "/understanding-pain/central-sensitization",
   },
   {
     term: "CGRP (calcitonin gene-related peptide)",

@@ -398,6 +398,13 @@ export const EMBLEMS: Record<string, string> = {
       `<path stroke="${S}" d="M8 41h34" stroke-width="2.2"/>`,
   ),
 
+  // A small signal enters an amplifier and leaves as a large one.
+  "central-sensitization": g(
+    `<path stroke="${T}" d="M6 30h10"/>` +
+      `<path stroke="${S}" d="M18 16l12 8-12 8z"/>` +
+      `<path stroke="${A}" d="M32 24h3l2.5-12 3 22 2.5-10h1" stroke-width="2.8"/>`,
+  ),
+
   // A dial turned low; the signal below it shrinks to a short bar.
   "attention-and-distraction": g(
     `<circle stroke="${T}" cx="24" cy="19" r="12"/>` +
