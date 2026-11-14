@@ -324,6 +324,11 @@ export const CONDITION_ARTICLES: Article[] = [
         blurb:
           "Where neuropathic pain sits beside nociceptive and nociplastic pain, and why the type shapes treatment.",
       },
+      {
+        title: "Shingles pain and postherpetic neuralgia",
+        href: "/conditions/shingles-pain",
+        blurb: "The nerve pain that can follow shingles, and how well the vaccine prevents it.",
+      },
     ],
   },
 
@@ -1424,6 +1429,11 @@ export const CONDITION_ARTICLES: Article[] = [
         blurb:
           "Treatments that work by retraining how the brain constructs pain.",
       },
+      {
+        title: "Trigeminal neuralgia",
+        href: "/conditions/trigeminal-neuralgia",
+        blurb: "Brief, shock-like facial pain set off by touch – a different condition with different treatment.",
+      },
     ],
   },
   {
@@ -1769,6 +1779,220 @@ export const CONDITION_ARTICLES: Article[] = [
         href: "/future-of-pain-medicine/precision-pain-medicine",
         blurb:
           "Matching treatment to the person rather than the average – where the field is heading.",
+      },
+    ],
+  },
+  {
+    hub: HUB,
+    slug: "shingles-pain",
+    title: "Shingles Pain and Postherpetic Neuralgia",
+    description:
+      "Why shingles hurts and why the pain sometimes stays: the reactivated chickenpox virus, the 72-hour treatment window, what postherpetic neuralgia is, how it is treated today, and how well the vaccine prevents it.",
+    status: "sourced",
+    lastUpdated: "2026-11-14",
+    answer:
+      "Shingles is a painful rash caused by the chickenpox virus reactivating in a single nerve, so it appears in one band on one side of the body. For most people the pain fades as the skin heals. When it lasts about three months or more, it is called postherpetic neuralgia – nerve pain that can be treated, and that vaccination largely prevents.",
+    faqs: [
+      {
+        question: "How long does shingles pain last?",
+        answer:
+          "Most cases of shingles run their course in three to five weeks, and the pain usually fades as the rash heals. In some people it continues. Pain still present about three months after the rash began is called postherpetic neuralgia. For most people it lessens over time, though that can take months, and treatment can make that time more bearable.",
+      },
+      {
+        question: "What is postherpetic neuralgia?",
+        answer:
+          "It is nerve pain that persists in the area of a shingles rash after the skin has healed. The virus injures the nerve it travels along, and the damaged nerve keeps sending pain signals. People describe burning, stabbing, or electric jolts, and skin so sensitive that clothing hurts. The older a person is when they get shingles, the more likely it is.",
+      },
+      {
+        question: "Why do I need to see a doctor within three days of the rash?",
+        answer:
+          "Antiviral medicines can help the blisters clear faster and limit severe pain, and the CDC notes they are most effective within 72 hours of the first symptoms. Early treatment matters most for the attack itself; trials have not shown that it reliably prevents postherpetic neuralgia. Blisters on the face or near the eye need same-day care because they can damage vision.",
+      },
+      {
+        question: "What helps postherpetic neuralgia?",
+        answer:
+          "Treatment uses nerve-pain medicines rather than ordinary painkillers. The 2025 international evidence review gives its strongest recommendation to tricyclic antidepressants, gabapentinoids, and serotonin-norepinephrine reuptake inhibitors, followed by treatments applied to the skin: lidocaine patches and capsaicin. Benefits are real but modest, and finding the right approach often takes adjustment with a clinician. Opioid pain medicines carry only a weak, third-line recommendation; if opioid use is becoming hard to control, the SAMHSA National Helpline is 1-800-662-HELP (4357).",
+      },
+      {
+        question: "Does the shingles vaccine prevent postherpetic neuralgia?",
+        answer:
+          "Largely, yes. In pooled trial data from more than 16,000 adults aged 70 and older, the recombinant shingles vaccine was 91% effective against shingles and 89% effective against postherpetic neuralgia. The CDC recommends two doses, two to six months apart, for adults 50 and older and for adults 19 and older with weakened immune systems.",
+      },
+      {
+        question: "Is shingles contagious?",
+        answer:
+          "You cannot catch shingles from someone else. But fluid from active shingles blisters can pass the varicella-zoster virus to a person who has never had chickenpox or the chickenpox vaccine, who would then develop chickenpox. The CDC advises covering the rash and avoiding contact with susceptible people until the blisters have dried and scabbed.",
+      },
+    ],
+    references: [
+      {
+        source: "CDC",
+        title: "Clinical Overview of Shingles (Herpes Zoster)",
+        url: "https://www.cdc.gov/shingles/hcp/clinical-overview/index.html",
+      },
+      {
+        source: "CDC",
+        title: "Shingles Vaccine Recommendations and Clinical Considerations",
+        url: "https://www.cdc.gov/shingles/hcp/vaccine-considerations/index.html",
+      },
+      {
+        source: "NIH / National Institute on Aging",
+        title: "Shingles – symptoms, long-term pain, and treatment",
+        url: "https://www.nia.nih.gov/health/shingles/shingles",
+      },
+      {
+        source: "New England Journal of Medicine / PubMed",
+        title: "Johnson & Rice – Clinical practice: Postherpetic neuralgia",
+        url: "https://pubmed.ncbi.nlm.nih.gov/25317872/",
+      },
+      {
+        source: "Pain / PubMed",
+        title: "Forbes et al. – A systematic review and meta-analysis of risk factors for postherpetic neuralgia",
+        url: "https://pubmed.ncbi.nlm.nih.gov/26218719/",
+      },
+      {
+        source: "Cochrane / PubMed",
+        title: "Chen et al. – Antiviral treatment for preventing postherpetic neuralgia",
+        url: "https://pubmed.ncbi.nlm.nih.gov/24500927/",
+      },
+      {
+        source: "New England Journal of Medicine / PubMed",
+        title: "Cunningham et al. – Efficacy of the herpes zoster subunit vaccine in adults 70 years of age or older (ZOE-70)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/27626517/",
+      },
+      {
+        source: "The Lancet Neurology / PubMed",
+        title: "Soliman et al. – Pharmacotherapy and non-invasive neuromodulation for neuropathic pain: a systematic review and meta-analysis (NeuPSIG, 2025)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/40252663/",
+      },
+      {
+        source: "Cochrane / PubMed",
+        title: "Derry et al. – Topical capsaicin (high concentration) for chronic neuropathic pain in adults",
+        url: "https://pubmed.ncbi.nlm.nih.gov/28085183/",
+      },
+    ],
+    related: [
+      {
+        title: "Neuropathic pain",
+        href: "/conditions/neuropathic-pain",
+        blurb: "The wider family this pain belongs to, and why nerve pain is treated differently.",
+      },
+      {
+        title: "Medications for pain",
+        href: "/treatments/medications-for-pain",
+        blurb: "The drug-class map, including the nerve-pain medicines and topical treatments used here.",
+      },
+      {
+        title: "The three types of pain",
+        href: "/understanding-pain/types-of-pain",
+        blurb: "Why pain from an injured nerve behaves differently from pain from injured tissue.",
+      },
+      {
+        title: "Next-generation neuromodulation",
+        href: "/future-of-pain-medicine/neuromodulation",
+        blurb: "Non-invasive brain stimulation and the device approaches being refined for nerve pain.",
+      },
+    ],
+  },
+  {
+    hub: HUB,
+    slug: "trigeminal-neuralgia",
+    title: "Trigeminal Neuralgia",
+    description:
+      "What trigeminal neuralgia is: the electric-shock facial pain set off by a touch, the blood vessel pressing on a nerve behind most cases, why ordinary painkillers fail, the medicines that work, and what surgery offers when they stop working.",
+    status: "sourced",
+    lastUpdated: "2026-11-14",
+    answer:
+      "Trigeminal neuralgia causes sudden, shock-like attacks of severe pain on one side of the face, lasting seconds and set off by light touch, eating, or talking. In most cases a blood vessel is pressing on the trigeminal nerve. Ordinary painkillers rarely help, but specific anti-seizure medicines often do, and surgery is a standard option when they fail.",
+    faqs: [
+      {
+        question: "What does trigeminal neuralgia feel like?",
+        answer:
+          "Most people describe a sudden electric shock or stabbing pain on one side of the face, usually in the cheek, teeth, gums, or jaw. Each attack typically lasts a few seconds, though it can last up to two minutes, and attacks may repeat many times a day. Some people also have a dull ache or burning between attacks.",
+      },
+      {
+        question: "What triggers an attack?",
+        answer:
+          "Light touch and ordinary movements of the face: washing, shaving, applying makeup, brushing teeth, eating, drinking, talking, blowing the nose, or wind on the cheek. This is the hallmark of the condition – the trigger is something that should not hurt at all. Attacks rarely happen during sleep.",
+      },
+      {
+        question: "What causes trigeminal neuralgia?",
+        answer:
+          "In the most common form, a blood vessel presses on the trigeminal nerve root near the brainstem, which is thought to wear away the nerve's insulating coat so that it misfires. About 15% of cases are secondary to another condition such as multiple sclerosis or a tumor. When no cause is found after a full workup, it is called idiopathic.",
+      },
+      {
+        question: "Why don't normal painkillers work?",
+        answer:
+          "Because the pain comes from a misfiring nerve, not from inflamed or injured tissue. NINDS notes that common painkillers such as aspirin and ibuprofen, and opioid medicines, are not usually helpful. The medicines that help are anti-seizure drugs that calm overactive nerve fibers; guidelines name carbamazepine or oxcarbazepine as the first choice.",
+      },
+      {
+        question: "Do I need an MRI?",
+        answer:
+          "The European Academy of Neurology guideline recommends an MRI for everyone with trigeminal neuralgia, because symptoms alone cannot rule out a secondary cause. A blood vessel touching the nerve on the scan does not by itself confirm the diagnosis; its main use is in deciding whether surgery to move the vessel is worth considering.",
+      },
+      {
+        question: "Is surgery worth considering?",
+        answer:
+          "Guidelines recommend offering surgery when medicine does not control the pain or is poorly tolerated. Microvascular decompression, which moves the blood vessel off the nerve, has the best long-term record: in a series of 1,185 people, 70% were pain-free without medication ten years later. It is open surgery with uncommon but serious risks. Less invasive procedures exist; they cause some facial numbness and tend to last a few years.",
+      },
+    ],
+    references: [
+      {
+        source: "NIH / NINDS",
+        title: "Trigeminal neuralgia – symptoms, types, diagnosis, and treatment",
+        url: "https://www.ninds.nih.gov/health-information/disorders/trigeminal-neuralgia",
+      },
+      {
+        source: "European Journal of Neurology / PubMed",
+        title: "Bendtsen et al. – European Academy of Neurology guideline on trigeminal neuralgia",
+        url: "https://pubmed.ncbi.nlm.nih.gov/30860637/",
+      },
+      {
+        source: "New England Journal of Medicine / PubMed",
+        title: "Cruccu, Di Stefano & Truini – Trigeminal neuralgia (review)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/32813951/",
+      },
+      {
+        source: "Cephalalgia / PubMed",
+        title: "Maarbjerg et al. – Trigeminal neuralgia: diagnosis and treatment",
+        url: "https://pubmed.ncbi.nlm.nih.gov/28076964/",
+      },
+      {
+        source: "Cochrane / PubMed",
+        title: "Wiffen et al. – Carbamazepine for chronic neuropathic pain and fibromyalgia in adults",
+        url: "https://pubmed.ncbi.nlm.nih.gov/24719027/",
+      },
+      {
+        source: "New England Journal of Medicine / PubMed",
+        title: "Barker et al. – The long-term outcome of microvascular decompression for trigeminal neuralgia",
+        url: "https://pubmed.ncbi.nlm.nih.gov/8598865/",
+      },
+    ],
+    related: [
+      {
+        title: "Neuropathic pain",
+        href: "/conditions/neuropathic-pain",
+        blurb: "The wider family of pain that comes from the nervous system itself.",
+      },
+      {
+        title: "TMJ pain and jaw disorders (TMD)",
+        href: "/conditions/tmj-disorders",
+        blurb: "The far more common cause of jaw and face pain, and how it differs.",
+      },
+      {
+        title: "Medications for pain",
+        href: "/treatments/medications-for-pain",
+        blurb: "The drug-class map, and why nerve pain calls for different medicines.",
+      },
+      {
+        title: "The three types of pain",
+        href: "/understanding-pain/types-of-pain",
+        blurb: "Why pain from a misfiring nerve behaves differently from pain from injured tissue.",
+      },
+      {
+        title: "The pain treatment pipeline",
+        href: "/future-of-pain-medicine/pipeline",
+        blurb: "The new drugs and devices moving through trials, each with its real status.",
       },
     ],
   },

@@ -329,6 +329,18 @@ export const HUBS: Hub[] = [
           "Rotator cuff, bursa, frozen shoulder, or the neck in disguise: why a cortisone shot works faster but exercise tends to hold, what a scan can mislead about, and the signs that need urgent care.",
         href: "/conditions/shoulder-pain",
       },
+      {
+        title: "Shingles pain and postherpetic neuralgia",
+        blurb:
+          "One nerve, one side: the 72-hour treatment window, the nerve pain that can outlast the rash, and a vaccine that prevents about nine cases in ten.",
+        href: "/conditions/shingles-pain",
+      },
+      {
+        title: "Trigeminal neuralgia",
+        blurb:
+          "Electric-shock facial pain set off by a touch: the blood vessel behind most cases, why ordinary painkillers fail, and what surgery offers.",
+        href: "/conditions/trigeminal-neuralgia",
+      },
     ],
   },
   {

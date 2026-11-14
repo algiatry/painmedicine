@@ -48,6 +48,8 @@ export const ALIASES: Record<string, string> = {
   "/conditions/chronic-pelvic-pain": "pelvis pelvic floor",
   "/conditions/central-post-stroke-pain": "stroke thalamic pain",
   "/conditions/shoulder-pain": "rotator cuff frozen shoulder",
+  "/conditions/trigeminal-neuralgia": "facial pain face pain tic douloureux electric shock",
+  "/conditions/shingles-pain": "herpes zoster phn nerve pain after shingles rash vaccine shingrix",
   "/conditions/neck-pain": "cervical spine pinched nerve arm",
   "/treatments/medications-for-pain":
     "painkillers pain relievers medicine drugs pills nsaids ibuprofen acetaminophen tylenol gabapentin",

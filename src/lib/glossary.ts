@@ -312,6 +312,12 @@ export const GLOSSARY: GlossaryTerm[] = [
     href: "/understanding-pain/the-placebo-effect",
   },
   {
+    term: "Postherpetic neuralgia (PHN)",
+    definition:
+      "Nerve pain that continues in the area of a shingles rash for about three months or more after the rash began. The risk rises with age, and the shingles vaccine prevents most cases.",
+    href: "/conditions/shingles-pain",
+  },
+  {
     term: "Quantitative sensory testing (QST)",
     definition:
       "A structured way of measuring how a person responds to controlled sensations, used to help characterize their pain mechanism.",
@@ -350,6 +356,12 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: "TENS (transcutaneous electrical nerve stimulation)",
     definition:
       "A small external device that sends mild electrical currents through the skin to reduce pain, working on the gate-control principle.",
+  },
+  {
+    term: "Trigeminal neuralgia",
+    definition:
+      "Sudden, shock-like attacks of severe pain on one side of the face, set off by light touch or ordinary movements such as eating or talking. Most often caused by a blood vessel pressing on the trigeminal nerve.",
+    href: "/conditions/trigeminal-neuralgia",
   },
 ];
 
