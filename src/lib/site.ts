@@ -9,6 +9,17 @@ export const SITE = {
   editorialEmail: "",
 } as const;
 
+/**
+ * mailto: link for reporting a correction, or null until an editorial inbox
+ * is configured. Pass the page path so the report arrives naming its page.
+ */
+export function correctionHref(path?: string): string | null {
+  const email: string = SITE.editorialEmail;
+  if (!email) return null;
+  const subject = path ? `Correction: ${SITE.url}${path}` : "Correction";
+  return `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+}
+
 export type NavItem = {
   label: string;
   href: string;
