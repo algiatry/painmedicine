@@ -44,6 +44,7 @@ import OpioidsForAcutePain from "./treatments/OpioidsForAcutePain";
 import AttentionAndDistraction from "./science/AttentionAndDistraction";
 import ShoulderPain from "./conditions/ShoulderPain";
 import ShinglesPain from "./conditions/ShinglesPain";
+import TrigeminalNeuralgia from "./conditions/TrigeminalNeuralgia";
 import Ketamine from "./treatments/Ketamine";
 import BuprenorphineForPain from "./treatments/BuprenorphineForPain";
 
@@ -98,6 +99,7 @@ export const ARTICLE_BODIES: Record<string, ComponentType> = {
   "attention-and-distraction": AttentionAndDistraction,
   "shoulder-pain": ShoulderPain,
   "shingles-pain": ShinglesPain,
+  "trigeminal-neuralgia": TrigeminalNeuralgia,
   "ketamine": Ketamine,
   "buprenorphine-for-pain": BuprenorphineForPain,
 };

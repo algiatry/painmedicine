@@ -357,6 +357,12 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "A small external device that sends mild electrical currents through the skin to reduce pain, working on the gate-control principle.",
   },
+  {
+    term: "Trigeminal neuralgia",
+    definition:
+      "Sudden, shock-like attacks of severe pain on one side of the face, set off by light touch or ordinary movements such as eating or talking. Most often caused by a blood vessel pressing on the trigeminal nerve.",
+    href: "/conditions/trigeminal-neuralgia",
+  },
 ];
 
 /** Groups terms by their uppercase first letter, in alphabetical order. */

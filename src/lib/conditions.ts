@@ -1429,6 +1429,11 @@ export const CONDITION_ARTICLES: Article[] = [
         blurb:
           "Treatments that work by retraining how the brain constructs pain.",
       },
+      {
+        title: "Trigeminal neuralgia",
+        href: "/conditions/trigeminal-neuralgia",
+        blurb: "Brief, shock-like facial pain set off by touch – a different condition with different treatment.",
+      },
     ],
   },
   {
@@ -1886,6 +1891,108 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Next-generation neuromodulation",
         href: "/future-of-pain-medicine/neuromodulation",
         blurb: "Non-invasive brain stimulation and the device approaches being refined for nerve pain.",
+      },
+    ],
+  },
+  {
+    hub: HUB,
+    slug: "trigeminal-neuralgia",
+    title: "Trigeminal Neuralgia",
+    description:
+      "What trigeminal neuralgia is: the electric-shock facial pain set off by a touch, the blood vessel pressing on a nerve behind most cases, why ordinary painkillers fail, the medicines that work, and what surgery offers when they stop working.",
+    status: "sourced",
+    lastUpdated: "2026-11-14",
+    answer:
+      "Trigeminal neuralgia causes sudden, shock-like attacks of severe pain on one side of the face, lasting seconds and set off by light touch, eating, or talking. In most cases a blood vessel is pressing on the trigeminal nerve. Ordinary painkillers rarely help, but specific anti-seizure medicines often do, and surgery is a standard option when they fail.",
+    faqs: [
+      {
+        question: "What does trigeminal neuralgia feel like?",
+        answer:
+          "Most people describe a sudden electric shock or stabbing pain on one side of the face, usually in the cheek, teeth, gums, or jaw. Each attack typically lasts a few seconds, though it can last up to two minutes, and attacks may repeat many times a day. Some people also have a dull ache or burning between attacks.",
+      },
+      {
+        question: "What triggers an attack?",
+        answer:
+          "Light touch and ordinary movements of the face: washing, shaving, applying makeup, brushing teeth, eating, drinking, talking, blowing the nose, or wind on the cheek. This is the hallmark of the condition – the trigger is something that should not hurt at all. Attacks rarely happen during sleep.",
+      },
+      {
+        question: "What causes trigeminal neuralgia?",
+        answer:
+          "In the most common form, a blood vessel presses on the trigeminal nerve root near the brainstem, which is thought to wear away the nerve's insulating coat so that it misfires. About 15% of cases are secondary to another condition such as multiple sclerosis or a tumor. When no cause is found after a full workup, it is called idiopathic.",
+      },
+      {
+        question: "Why don't normal painkillers work?",
+        answer:
+          "Because the pain comes from a misfiring nerve, not from inflamed or injured tissue. NINDS notes that common painkillers such as aspirin and ibuprofen, and opioid medicines, are not usually helpful. The medicines that help are anti-seizure drugs that calm overactive nerve fibers; guidelines name carbamazepine or oxcarbazepine as the first choice.",
+      },
+      {
+        question: "Do I need an MRI?",
+        answer:
+          "The European Academy of Neurology guideline recommends an MRI for everyone with trigeminal neuralgia, because symptoms alone cannot rule out a secondary cause. A blood vessel touching the nerve on the scan does not by itself confirm the diagnosis; its main use is in deciding whether surgery to move the vessel is worth considering.",
+      },
+      {
+        question: "Is surgery worth considering?",
+        answer:
+          "Guidelines recommend offering surgery when medicine does not control the pain or is poorly tolerated. Microvascular decompression, which moves the blood vessel off the nerve, has the best long-term record: in a series of 1,185 people, 70% were pain-free without medication ten years later. It is open surgery with uncommon but serious risks. Less invasive procedures exist; they cause some facial numbness and tend to last a few years.",
+      },
+    ],
+    references: [
+      {
+        source: "NIH / NINDS",
+        title: "Trigeminal neuralgia – symptoms, types, diagnosis, and treatment",
+        url: "https://www.ninds.nih.gov/health-information/disorders/trigeminal-neuralgia",
+      },
+      {
+        source: "European Journal of Neurology / PubMed",
+        title: "Bendtsen et al. – European Academy of Neurology guideline on trigeminal neuralgia",
+        url: "https://pubmed.ncbi.nlm.nih.gov/30860637/",
+      },
+      {
+        source: "New England Journal of Medicine / PubMed",
+        title: "Cruccu, Di Stefano & Truini – Trigeminal neuralgia (review)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/32813951/",
+      },
+      {
+        source: "Cephalalgia / PubMed",
+        title: "Maarbjerg et al. – Trigeminal neuralgia: diagnosis and treatment",
+        url: "https://pubmed.ncbi.nlm.nih.gov/28076964/",
+      },
+      {
+        source: "Cochrane / PubMed",
+        title: "Wiffen et al. – Carbamazepine for chronic neuropathic pain and fibromyalgia in adults",
+        url: "https://pubmed.ncbi.nlm.nih.gov/24719027/",
+      },
+      {
+        source: "New England Journal of Medicine / PubMed",
+        title: "Barker et al. – The long-term outcome of microvascular decompression for trigeminal neuralgia",
+        url: "https://pubmed.ncbi.nlm.nih.gov/8598865/",
+      },
+    ],
+    related: [
+      {
+        title: "Neuropathic pain",
+        href: "/conditions/neuropathic-pain",
+        blurb: "The wider family of pain that comes from the nervous system itself.",
+      },
+      {
+        title: "TMJ pain and jaw disorders (TMD)",
+        href: "/conditions/tmj-disorders",
+        blurb: "The far more common cause of jaw and face pain, and how it differs.",
+      },
+      {
+        title: "Medications for pain",
+        href: "/treatments/medications-for-pain",
+        blurb: "The drug-class map, and why nerve pain calls for different medicines.",
+      },
+      {
+        title: "The three types of pain",
+        href: "/understanding-pain/types-of-pain",
+        blurb: "Why pain from a misfiring nerve behaves differently from pain from injured tissue.",
+      },
+      {
+        title: "The pain treatment pipeline",
+        href: "/future-of-pain-medicine/pipeline",
+        blurb: "The new drugs and devices moving through trials, each with its real status.",
       },
     ],
   },

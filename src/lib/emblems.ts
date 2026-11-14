@@ -102,6 +102,13 @@ export const EMBLEMS: Record<string, string> = {
       `<circle cx="14" cy="36" r="2.4" fill="${A}" stroke-width="0"/>`,
   ),
 
+  // Three nerve branches fanning from one point, a spark on the middle one.
+  "trigeminal-neuralgia": g(
+    `<path stroke="${T}" d="M38 26C28 18 18 12 8 10M38 26H8M38 26C28 32 18 38 10 40"/>` +
+      `<circle stroke="${T}" cx="38" cy="26" r="3.2"/>` +
+      `<circle cx="12" cy="26" r="3.4" fill="${A}" stroke-width="0"/>`,
+  ),
+
   // A torso with a one-sided band.
   "shingles-pain": g(
     `<path stroke="${S}" d="M12 8c8-4 16-4 24 0l-2 34H14z"/>` +
