@@ -398,6 +398,12 @@ export const EMBLEMS: Record<string, string> = {
       `<path stroke="${S}" d="M8 41h34" stroke-width="2.2"/>`,
   ),
 
+  // A staircase stepping down, with one flat pause.
+  "tapering-opioids": g(
+    `<path stroke="${T}" d="M6 10h8v7h8v7h10v7h6v7h6"/>` +
+      `<path stroke="${A}" d="M6 10v28" stroke-dasharray="1 5"/>`,
+  ),
+
   // A leaf beside a balance: small benefit, real harms.
   "cannabis-and-cannabinoids": g(
     `<path stroke="${T}" d="M14 34V12M14 22c-5-1-8-4-9-8M14 22c5-1 8-4 9-8M14 28c-4 0-7-2-9-5M14 28c4 0 7-2 9-5"/>` +

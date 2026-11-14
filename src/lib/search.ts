@@ -61,7 +61,8 @@ export const ALIASES: Record<string, string> = {
   "/treatments/interventional-procedures":
     "injections epidural steroid nerve block radiofrequency ablation spinal cord stimulator",
   "/treatments/physical-and-behavioral-therapies": "physical therapy exercise cbt mindfulness pacing",
-  "/treatments/opioid-stewardship": "addiction dependence overdose naloxone tapering",
+  "/treatments/opioid-stewardship": "addiction dependence overdose naloxone",
+  "/treatments/tapering-opioids": "taper tapering withdrawal coming off opioids stopping reduce dose wean weaning",
   "/treatments/buprenorphine-for-pain": "butrans belbuca suboxone",
   "/future-of-pain-medicine/pipeline": "new drugs clinical trials suzetrigine journavx",
   "/future-of-pain-medicine/neuromodulation": "spinal cord stimulator scs brain stimulation",

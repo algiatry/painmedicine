@@ -17,6 +17,7 @@ import YourFirstVisit from "./specialty/YourFirstVisit";
 import HowPainPhysiciansTrain from "./specialty/HowPainPhysiciansTrain";
 import PainClinicsVsPainMedicine from "./specialty/PainClinicsVsPainMedicine";
 import Kratom from "./treatments/Kratom";
+import TaperingOpioids from "./treatments/TaperingOpioids";
 import CannabisAndCannabinoids from "./treatments/CannabisAndCannabinoids";
 import MedicationsForPain from "./treatments/MedicationsForPain";
 import InterventionalProcedures from "./treatments/InterventionalProcedures";
@@ -75,6 +76,7 @@ export const ARTICLE_BODIES: Record<string, ComponentType> = {
   "how-pain-physicians-train": HowPainPhysiciansTrain,
   "pain-clinics-vs-pain-medicine": PainClinicsVsPainMedicine,
   kratom: Kratom,
+  "tapering-opioids": TaperingOpioids,
   "cannabis-and-cannabinoids": CannabisAndCannabinoids,
   "medications-for-pain": MedicationsForPain,
   "interventional-procedures": InterventionalProcedures,

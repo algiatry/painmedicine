@@ -224,6 +224,12 @@ export const HUBS: Hub[] = [
           "Neither wonder drug nor nothing: the small average benefit in trials, the common side effects, and what the FDA has and has not approved.",
         href: "/treatments/cannabis-and-cannabinoids",
       },
+      {
+        title: "Tapering opioids safely",
+        blurb:
+          "Slow and agreed, never abrupt: what the CDC's 2022 guideline says, what withdrawal means, and why forced tapers proved dangerous.",
+        href: "/treatments/tapering-opioids",
+      },
     ],
   },
   {

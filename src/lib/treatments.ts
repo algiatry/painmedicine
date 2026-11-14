@@ -677,6 +677,11 @@ export const TREATMENT_ARTICLES: Article[] = [
         blurb:
           "Where opioids remain essential tools, and why that conversation is different.",
       },
+      {
+        title: "Tapering opioids safely",
+        href: "/treatments/tapering-opioids",
+        blurb: "Why slow and agreed is the standard, and what the evidence says about forced tapers.",
+      },
     ],
   },
 
@@ -1313,6 +1318,98 @@ export const TREATMENT_ARTICLES: Article[] = [
         title: "The pain treatment pipeline",
         href: "/future-of-pain-medicine/pipeline",
         blurb: "The new drugs and devices moving through trials, each with its real status.",
+      },
+    ],
+  },
+  {
+    hub: HUB,
+    slug: "tapering-opioids",
+    title: "Tapering Opioids Safely",
+    description:
+      "What the evidence and the CDC's 2022 guideline say about lowering long-term opioid doses: why slow and agreed is the standard, why abrupt or forced tapers are dangerous, what withdrawal means, and what to expect for pain afterwards.",
+    status: "sourced",
+    lastUpdated: "2026-11-14",
+    answer:
+      "Long-term opioids should never be stopped suddenly. The CDC's 2022 guideline says they should not be discontinued abruptly or reduced rapidly, and that a taper should be a shared plan – gradual, individualized, often lasting months to years, with room to pause. Rapid or forced tapers have been linked to withdrawal, overdose, and mental health crises.",
+    faqs: [
+      {
+        question: "Is it dangerous to stop opioids suddenly?",
+        answer:
+          "Yes, after long-term use. Sudden discontinuation can cause severe withdrawal, and the CDC says opioids should not be stopped abruptly or reduced rapidly unless there is a life-threatening issue such as signs of impending overdose. Large studies have linked tapering and stopping, especially when fast, with higher rates of overdose, mental health crisis, and suicide. Any change should be planned with the prescriber.",
+      },
+      {
+        question: "How long does an opioid taper take?",
+        answer:
+          "It varies widely. The CDC says tapers can take several months to years depending on the dose, and should be individualized. For people who have taken opioids for a year or more, it describes reductions of about 10% a month or slower as likely to be better tolerated. That is a benchmark for clinicians, not a schedule to follow alone; your own pace is set with your prescriber.",
+      },
+      {
+        question: "Does withdrawal during a taper mean I am addicted?",
+        answer:
+          "No. Withdrawal reflects physical dependence, the body's expected adaptation to long-term opioid use. Addiction, or opioid use disorder, is a different condition defined by loss of control and continued use despite harm. The CDC's first response to withdrawal during a taper is to slow down or pause, so report symptoms early.",
+      },
+      {
+        question: "Will my pain get worse if I taper?",
+        answer:
+          "Pain can flare temporarily during a taper. Over the longer term, a review of 67 studies found that pain, function, and quality of life improved in the better-quality studies of supported dose reduction – though the evidence was rated very low quality, because most of the studies had no comparison group.",
+      },
+      {
+        question: "Can my doctor force me to taper?",
+        answer:
+          "The CDC says clinicians should not insist on tapering when the benefits of opioids outweigh the risks, that its recommendations are voluntary rather than rigid standards, and that patients should not be abandoned. It says insurers and health systems should not use the guideline to force rapid tapers. You can ask for the reasons, a slower pace, a pause, or a second opinion.",
+      },
+      {
+        question: "Why is overdose a risk after tapering?",
+        answer:
+          "Because tolerance falls along with the dose. An amount the body once handled can become dangerous after a taper. The CDC advises clinicians to warn patients about returning abruptly to a previous higher dose, to provide overdose education, and to offer naloxone. If opioid use is becoming hard to control, the SAMHSA National Helpline is 1-800-662-HELP (4357).",
+      },
+    ],
+    references: [
+      {
+        source: "CDC / PMC",
+        title: "Dowell et al. – CDC Clinical Practice Guideline for Prescribing Opioids for Pain – United States, 2022",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9639433/",
+      },
+      {
+        source: "JAMA / PubMed",
+        title: "Agnoli et al. – Association of dose tapering with overdose or mental health crisis among patients prescribed long-term opioids",
+        url: "https://pubmed.ncbi.nlm.nih.gov/34342618/",
+      },
+      {
+        source: "The BMJ / PubMed",
+        title: "Oliva et al. – Associations between stopping prescriptions for opioids, length of opioid treatment, and overdose or suicide deaths in US veterans",
+        url: "https://pubmed.ncbi.nlm.nih.gov/32131996/",
+      },
+      {
+        source: "Annals of Internal Medicine / PubMed",
+        title: "Frank et al. – Patient outcomes in dose reduction or discontinuation of long-term opioid therapy: a systematic review",
+        url: "https://pubmed.ncbi.nlm.nih.gov/28715848/",
+      },
+      {
+        source: "The Journal of Pain / PubMed",
+        title: "Sullivan et al. – Prescription opioid taper support for outpatients with chronic pain: a randomized controlled trial",
+        url: "https://pubmed.ncbi.nlm.nih.gov/27908840/",
+      },
+    ],
+    related: [
+      {
+        title: "Opioids, honestly",
+        href: "/treatments/opioid-stewardship",
+        blurb: "Dependence, tolerance, overdose risk, and naloxone – the background to any taper.",
+      },
+      {
+        title: "Buprenorphine for pain",
+        href: "/treatments/buprenorphine-for-pain",
+        blurb: "The option the CDC points to when a taper stalls.",
+      },
+      {
+        title: "Physical & behavioral therapies",
+        href: "/treatments/physical-and-behavioral-therapies",
+        blurb: "The pain care that is meant to grow as the dose shrinks.",
+      },
+      {
+        title: "Cancer pain",
+        href: "/conditions/cancer-pain",
+        blurb: "Where the CDC guideline does not apply, and opioids are a different conversation.",
       },
     ],
   },
