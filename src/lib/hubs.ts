@@ -365,6 +365,12 @@ export const HUBS: Hub[] = [
           "The world's most common headache and one of its most severe: how to tell them apart, the medication-overuse trap, and why oxygen treats a cluster attack.",
         href: "/conditions/tension-and-cluster-headache",
       },
+      {
+        title: "Knee and hip osteoarthritis",
+        blurb:
+          "The treatment ladder, honestly: why exercise is the base, how long a steroid injection lasts, which injections guidelines recommend against, and how long a new knee lasts.",
+        href: "/conditions/knee-and-hip-osteoarthritis",
+      },
     ],
   },
   {

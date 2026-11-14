@@ -47,6 +47,7 @@ import AttentionAndDistraction from "./science/AttentionAndDistraction";
 import CentralSensitization from "./science/CentralSensitization";
 import ShoulderPain from "./conditions/ShoulderPain";
 import ShinglesPain from "./conditions/ShinglesPain";
+import KneeAndHipOsteoarthritis from "./conditions/KneeAndHipOsteoarthritis";
 import TensionAndClusterHeadache from "./conditions/TensionAndClusterHeadache";
 import TrigeminalNeuralgia from "./conditions/TrigeminalNeuralgia";
 import Ketamine from "./treatments/Ketamine";
@@ -106,6 +107,7 @@ export const ARTICLE_BODIES: Record<string, ComponentType> = {
   "central-sensitization": CentralSensitization,
   "shoulder-pain": ShoulderPain,
   "shingles-pain": ShinglesPain,
+  "knee-and-hip-osteoarthritis": KneeAndHipOsteoarthritis,
   "tension-and-cluster-headache": TensionAndClusterHeadache,
   "trigeminal-neuralgia": TrigeminalNeuralgia,
   "ketamine": Ketamine,

@@ -116,6 +116,13 @@ export const EMBLEMS: Record<string, string> = {
       `<circle cx="16" cy="28" r="3.4" fill="${A}" stroke-width="0"/>`,
   ),
 
+  // A bent knee joint with the signal at the joint line.
+  "knee-and-hip-osteoarthritis": g(
+    `<path stroke="${S}" d="M16 4v16M30 4v16M14 28l-4 16M28 28l6 16"/>` +
+      `<path stroke="${T}" d="M13 20h20M11 28h20"/>` +
+      `<circle cx="22" cy="24" r="2.8" fill="${A}" stroke-width="0"/>`,
+  ),
+
   // A torso with a one-sided band.
   "shingles-pain": g(
     `<path stroke="${S}" d="M12 8c8-4 16-4 24 0l-2 34H14z"/>` +

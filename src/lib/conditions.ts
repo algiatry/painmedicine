@@ -531,6 +531,11 @@ export const CONDITION_ARTICLES: Article[] = [
         blurb:
           "Nociceptive, neuropathic, nociplastic – where joint pain sits on the mechanism map.",
       },
+      {
+        title: "Knee and hip osteoarthritis",
+        href: "/conditions/knee-and-hip-osteoarthritis",
+        blurb: "The treatment ladder for the two joints that limit daily life most.",
+      },
     ],
   },
 
@@ -2115,6 +2120,108 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Biologics & gene-targeted therapy",
         href: "/future-of-pain-medicine/biologics-and-gene-therapy",
         blurb: "The antibody drugs built for migraine, now being tested in cluster headache.",
+      },
+    ],
+  },
+  {
+    hub: HUB,
+    slug: "knee-and-hip-osteoarthritis",
+    title: "Knee and Hip Osteoarthritis",
+    description:
+      "What helps knee and hip osteoarthritis, in the order guidelines suggest: exercise and weight loss, anti-inflammatory gels and tablets, what steroid injections can and cannot do, the injections guidelines recommend against, and when joint replacement makes sense.",
+    status: "sourced",
+    lastUpdated: "2026-11-14",
+    answer:
+      "Knee and hip osteoarthritis is a disease of the whole joint that causes pain, stiffness, and loss of function. Exercise, weight loss where relevant, and education are the foundation of treatment at every stage. Anti-inflammatory medicines and steroid injections add shorter-term relief, and joint replacement effectively relieves pain when the disease is advanced.",
+    faqs: [
+      {
+        question: "Is exercise safe for an arthritic knee or hip?",
+        answer:
+          "Yes, and it is the treatment guidelines recommend most strongly. A 2024 Cochrane review of 139 trials found exercise probably improves pain, function, and quality of life in knee osteoarthritis, with no one type of exercise better than another. The average benefit is modest. A physical therapist can tailor a program to your joint.",
+      },
+      {
+        question: "How long does a cortisone injection last for knee arthritis?",
+        answer:
+          "Weeks rather than months. A Cochrane review of 27 trials found a moderate benefit one to two weeks after a steroid injection, a small benefit at about three months, and no evidence of an effect at six months. Guidelines recommend them for knee and hip osteoarthritis as short-term relief, not as long-term control.",
+      },
+      {
+        question: "Do glucosamine, PRP, or stem cell injections work?",
+        answer:
+          "The American College of Rheumatology recommends against all three. It strongly recommends against glucosamine because the most reliable trials show no important benefit over placebo, and strongly against platelet-rich plasma and stem cell injections for knee and hip osteoarthritis because the preparations are not standardized. It also recommends against hyaluronic acid injections.",
+      },
+      {
+        question: "Does losing weight help knee osteoarthritis?",
+        answer:
+          "For people who are overweight, yes – it is strongly recommended. The guideline describes a dose-response: losing 5% or more of body weight can improve symptoms, and benefits continue to increase with larger losses. Weight loss works better when combined with an exercise program.",
+      },
+      {
+        question: "When should I consider a knee or hip replacement?",
+        answer:
+          "When pain and loss of function remain significant despite a real trial of exercise, weight management, and medicines, and imaging shows advanced joint damage. In a randomized trial, knee replacement improved pain and function about twice as much as non-surgical care alone, with more serious adverse events. About 82% of total knee replacements last 25 years.",
+      },
+      {
+        question: "Are opioids used for osteoarthritis?",
+        answer:
+          "Rarely. A major review advises avoiding them, and guidelines describe very modest benefit from long-term use against a high risk of harm and dependence. Tramadol carries a conditional recommendation; other opioids are conditionally recommended against and reserved for when alternatives have been exhausted. If opioid use is becoming hard to control, the SAMHSA National Helpline is 1-800-662-HELP (4357).",
+      },
+    ],
+    references: [
+      {
+        source: "Arthritis & Rheumatology / PubMed",
+        title: "Kolasinski et al. – 2019 American College of Rheumatology/Arthritis Foundation guideline for the management of osteoarthritis of the hand, hip, and knee",
+        url: "https://pubmed.ncbi.nlm.nih.gov/31908163/",
+      },
+      {
+        source: "JAMA / PubMed",
+        title: "Katz, Arant & Loeser – Diagnosis and treatment of hip and knee osteoarthritis: a review",
+        url: "https://pubmed.ncbi.nlm.nih.gov/33560326/",
+      },
+      {
+        source: "Cochrane / PubMed",
+        title: "Lawford et al. – Exercise for osteoarthritis of the knee (2024)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/39625083/",
+      },
+      {
+        source: "Cochrane / PubMed",
+        title: "Jüni et al. – Intra-articular corticosteroid for knee osteoarthritis",
+        url: "https://pubmed.ncbi.nlm.nih.gov/26490760/",
+      },
+      {
+        source: "New England Journal of Medicine / PubMed",
+        title: "Skou et al. – A randomized, controlled trial of total knee replacement",
+        url: "https://pubmed.ncbi.nlm.nih.gov/26488691/",
+      },
+      {
+        source: "The Lancet / PubMed",
+        title: "Evans et al. – How long does a knee replacement last? A systematic review and meta-analysis",
+        url: "https://pubmed.ncbi.nlm.nih.gov/30782341/",
+      },
+    ],
+    related: [
+      {
+        title: "Arthritis pain",
+        href: "/conditions/arthritis-pain",
+        blurb: "The wider picture: osteoarthritis and inflammatory arthritis, and how to tell them apart.",
+      },
+      {
+        title: "Physical & behavioral therapies",
+        href: "/treatments/physical-and-behavioral-therapies",
+        blurb: "Why movement is treatment for a painful joint, and what a good program looks like.",
+      },
+      {
+        title: "Pain medications & your organs",
+        href: "/treatments/medication-organ-safety",
+        blurb: "What long-term anti-inflammatories ask of the stomach, kidneys, and heart.",
+      },
+      {
+        title: "Central sensitization",
+        href: "/understanding-pain/central-sensitization",
+        blurb: "Why the same X-ray can come with very different amounts of pain.",
+      },
+      {
+        title: "The pain treatment pipeline",
+        href: "/future-of-pain-medicine/pipeline",
+        blurb: "The knee osteoarthritis treatments now in trials, each with its real status.",
       },
     ],
   },

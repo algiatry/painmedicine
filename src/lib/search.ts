@@ -41,7 +41,8 @@ export const ALIASES: Record<string, string> = {
   "/conditions/migraine": "headache headaches",
   "/conditions/tension-and-cluster-headache":
     "headache headaches tension headache stress headache rebound headache medication overuse",
-  "/conditions/arthritis-pain": "osteoarthritis rheumatoid joint pain knee hip",
+  "/conditions/arthritis-pain": "osteoarthritis rheumatoid joint pain",
+  "/conditions/knee-and-hip-osteoarthritis": "knee pain hip pain knee arthritis hip arthritis knee replacement cortisone shot glucosamine prp",
   "/conditions/fibromyalgia": "fibro widespread pain",
   "/conditions/persistent-postsurgical-pain": "pain after surgery operation postoperative",
   "/conditions/diabetic-neuropathy": "diabetes nerve pain feet peripheral neuropathy",
