@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { SITE } from "@/lib/site";
+import { SITE, correctionHref } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About & Editorial Policy",
@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
+  const correction = correctionHref();
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-14 space-y-8">
       <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
@@ -115,6 +116,19 @@ export default function AboutPage() {
           If you believe something on this site is inaccurate or out of date,
           we want to know. Corrections are reviewed against primary sources
           and applied with an updated review date.
+          {correction && (
+            <>
+              {" "}
+              Write to{" "}
+              <a
+                href={correction}
+                className="text-teal-700 underline underline-offset-2 dark:text-teal-300"
+              >
+                {SITE.editorialEmail}
+              </a>{" "}
+              with the page address and the source you are relying on.
+            </>
+          )}
         </p>
       </section>
     </article>

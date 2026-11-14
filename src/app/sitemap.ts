@@ -10,12 +10,12 @@ import { REVIEWERS } from "@/lib/reviewers";
  */
 const STATIC_PAGES: { path: string; lastModified: string }[] = [
   { path: "", lastModified: "2026-10-13" },
-  { path: "/about", lastModified: "2026-10-13" },
+  { path: "/about", lastModified: "2026-11-14" },
   { path: "/medical-disclaimer", lastModified: "2026-10-13" },
   { path: "/find-help", lastModified: "2026-10-13" },
   { path: "/glossary", lastModified: "2026-10-13" },
   { path: "/reviewers", lastModified: "2026-10-13" },
-  { path: "/privacy", lastModified: "2026-10-13" },
+  { path: "/privacy", lastModified: "2026-11-14" },
   { path: "/terms", lastModified: "2026-10-13" },
 ];
 

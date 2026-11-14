@@ -11,7 +11,7 @@ import {
 import { getHub } from "@/lib/hubs";
 import { ALL_ARTICLES, getArticle } from "@/lib/articles";
 import { ARTICLE_BODIES } from "@/components/bodies";
-import { SITE } from "@/lib/site";
+import { SITE, correctionHref } from "@/lib/site";
 import PageKicker from "@/components/PageKicker";
 import ArticleEmblem from "@/components/ArticleEmblem";
 import ArticleToc from "@/components/ArticleToc";
@@ -49,6 +49,7 @@ export default async function ArticlePage({
   const parentHub = getHub(a.hub);
   const parentTitle = parentHub?.title ?? "Understanding Pain";
   const Body = ARTICLE_BODIES[a.slug];
+  const correction = correctionHref(`/${a.hub}/${a.slug}`);
 
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-14 xl:grid xl:grid-cols-[minmax(0,1fr)_15rem] xl:gap-12">
@@ -202,6 +203,19 @@ export default async function ArticlePage({
         medical advice. Talk with a qualified clinician about your own
         situation. {SITE.shortName} does not provide treatment or dosing
         guidance.
+        {correction && (
+          <>
+            {" "}
+            Spotted something inaccurate or out of date?{" "}
+            <a
+              href={correction}
+              className="font-medium text-teal-700 underline underline-offset-2 dark:text-teal-300"
+            >
+              Report a correction
+            </a>
+            .
+          </>
+        )}
       </p>
       </article>
 

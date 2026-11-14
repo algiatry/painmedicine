@@ -5,11 +5,11 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "PainMedicine.com has no accounts, no forms, no ad tracking, and no data to sell. What little the site sees, and what it never collects.",
+    "PainMedicine.com has no accounts, no forms, no ad tracking, and no data to sell. Site search runs in your browser. What little the site sees, and what it never collects.",
   alternates: { canonical: "/privacy" },
 };
 
-const LAST_UPDATED = "August 30, 2026";
+const LAST_UPDATED = "November 14, 2026";
 
 export default function PrivacyPage() {
   return (
@@ -24,9 +24,9 @@ export default function PrivacyPage() {
       <section className="space-y-4 text-slate-700 dark:text-slate-300">
         <p className="text-lg">
           {SITE.name} is a reading site. There are no accounts, no logins, no
-          comment sections, no newsletters, and no forms. You cannot type
-          anything into this site, which means you cannot give it personal
-          information – and it never asks for any.
+          comment sections, no newsletters, and no forms. The only thing you
+          can type into is the search box, and what you type there never
+          leaves your device. The site never asks for personal information.
         </p>
         <p>
           That is a deliberate design choice, not an oversight. Health reading
@@ -64,6 +64,27 @@ export default function PrivacyPage() {
             .
           </li>
         </ul>
+      </section>
+
+      <section className="space-y-4 text-slate-700 dark:text-slate-300">
+        <h2 className="text-xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
+          Site search
+        </h2>
+        <p>
+          Search works entirely in your browser. When you open it, your
+          browser downloads one file listing the site&apos;s pages and
+          glossary terms – the same file for every visitor – and matches what
+          you type against it on your own device. Your search terms are not
+          sent to this site, to its host, or to anyone else, and they are not
+          stored. Choosing a result opens that page like any other link.
+        </p>
+        {SITE.editorialEmail && (
+          <p>
+            If you choose to email the editorial address to report a
+            correction, the site receives your email address and whatever you
+            write. That is used only to read and answer your message.
+          </p>
+        )}
       </section>
 
       <section className="space-y-4 text-slate-700 dark:text-slate-300">
@@ -122,8 +143,8 @@ export default function PrivacyPage() {
           Changes to this policy
         </h2>
         <p>
-          If the site&apos;s practices ever change – for example, if a search
-          feature or newsletter is added – this page will be updated first,
+          If the site&apos;s practices ever change – for example, if a
+          newsletter is added – this page will be updated first,
           with the date above revised to match. The commitment that will not
           change: no ad tracking, and no sale of data.
         </p>
