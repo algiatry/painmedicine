@@ -109,6 +109,13 @@ export const EMBLEMS: Record<string, string> = {
       `<circle cx="12" cy="26" r="3.4" fill="${A}" stroke-width="0"/>`,
   ),
 
+  // A head circle with a band across it and a point at the eye.
+  "tension-and-cluster-headache": g(
+    `<circle stroke="${S}" cx="24" cy="24" r="16"/>` +
+      `<path stroke="${T}" d="M9 19c10-5 20-5 30 0"/>` +
+      `<circle cx="16" cy="28" r="3.4" fill="${A}" stroke-width="0"/>`,
+  ),
+
   // A torso with a one-sided band.
   "shingles-pain": g(
     `<path stroke="${S}" d="M12 8c8-4 16-4 24 0l-2 34H14z"/>` +

@@ -427,6 +427,11 @@ export const CONDITION_ARTICLES: Article[] = [
         blurb:
           "What the everyday painkillers ask of the liver, kidneys, heart, and stomach when they are used often.",
       },
+      {
+        title: "Tension-type and cluster headache",
+        href: "/conditions/tension-and-cluster-headache",
+        blurb: "The other two primary headaches, and how to tell them from migraine.",
+      },
     ],
   },
 
@@ -1993,6 +1998,123 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "The pain treatment pipeline",
         href: "/future-of-pain-medicine/pipeline",
         blurb: "The new drugs and devices moving through trials, each with its real status.",
+      },
+    ],
+  },
+  {
+    hub: HUB,
+    slug: "tension-and-cluster-headache",
+    title: "Tension-Type and Cluster Headache",
+    description:
+      "The two headaches beyond migraine: tension-type headache, the most common headache in the world, and cluster headache, among the most severe – how to tell them apart, what treats each, the medication-overuse trap, and the warning signs that need urgent care.",
+    status: "sourced",
+    lastUpdated: "2026-11-14",
+    answer:
+      "Tension-type headache is a mild-to-moderate pressure on both sides of the head, the most common headache there is. Cluster headache is rare and excruciating: one-sided pain around the eye, in attacks of 15 minutes to three hours that return daily for weeks. They are treated very differently, so naming the headache correctly is the first step.",
+    faqs: [
+      {
+        question: "What does a tension-type headache feel like?",
+        answer:
+          "Like constant pressure or a tight band around the head, usually on both sides and mild to moderate in strength. It can last from 30 minutes to seven days. Unlike migraine, it does not bring nausea, vomiting, or an aura, and it does not get worse with ordinary activity such as walking or climbing stairs.",
+      },
+      {
+        question: "How is cluster headache different from migraine?",
+        answer:
+          "Cluster attacks are shorter – 15 minutes to three hours – strictly one-sided around the eye, and come with a red, watering eye or blocked nose on that side. People feel restless and agitated rather than wanting to lie still. Attacks arrive in runs, often at the same time each day or night, for weeks at a time, followed by months without any.",
+      },
+      {
+        question: "Can taking painkillers too often cause headaches?",
+        answer:
+          "Yes. Regular or frequent use of pain relievers and migraine medicines can make headaches more frequent and turn occasional headaches into chronic ones. This is called medication-overuse headache and affects 1–2% of people each year. Treatment starts with education and cutting back on acute medicines, guided by a clinician; some people also need preventive treatment.",
+      },
+      {
+        question: "What helps tension-type headache?",
+        answer:
+          "For occasional attacks, guidelines recommend simple pain relievers and anti-inflammatory medicines. For frequent or chronic headaches, the focus moves to prevention: amitriptyline is the first-choice medicine, and biofeedback, cognitive behavioral therapy, and relaxation training are recommended non-drug options. Guidelines say triptans, muscle relaxants, and opioids should not be used. If opioid use is becoming hard to control, the SAMHSA National Helpline is 1-800-662-HELP (4357).",
+      },
+      {
+        question: "Why is oxygen used for cluster headache?",
+        answer:
+          "Because cluster attacks peak within minutes and tablets act too slowly. High-flow oxygen breathed through a mask at the start of an attack is one of three treatments with the American Headache Society's highest recommendation. In a randomized trial, people were pain-free at 15 minutes in 78% of attacks treated with oxygen, compared with 20% treated with air.",
+      },
+      {
+        question: "When is a headache an emergency?",
+        answer:
+          "Seek care right away for a sudden, severe headache, especially with a stiff neck; a severe headache with fever; a first or worst headache with confusion, weakness, double vision, or loss of consciousness; a headache with numbness or weakness in the body, which could be a stroke; or a headache after a head injury or with convulsions.",
+      },
+    ],
+    references: [
+      {
+        source: "NIH / NINDS",
+        title: "Headache – types, warning signs, and treatment",
+        url: "https://www.ninds.nih.gov/health-information/disorders/headache",
+      },
+      {
+        source: "Nature Reviews Disease Primers / PubMed",
+        title: "Ashina et al. – Tension-type headache",
+        url: "https://pubmed.ncbi.nlm.nih.gov/33767185/",
+      },
+      {
+        source: "European Journal of Neurology / PubMed",
+        title: "Bendtsen et al. – EFNS guideline on the treatment of tension-type headache",
+        url: "https://pubmed.ncbi.nlm.nih.gov/20482606/",
+      },
+      {
+        source: "The Journal of Headache and Pain / PubMed",
+        title: "Stovner et al. – The global prevalence of headache: an update",
+        url: "https://pubmed.ncbi.nlm.nih.gov/35410119/",
+      },
+      {
+        source: "The Lancet Neurology / PubMed",
+        title: "Diener et al. – Pathophysiology, prevention, and treatment of medication overuse headache",
+        url: "https://pubmed.ncbi.nlm.nih.gov/31174999/",
+      },
+      {
+        source: "Nature Reviews Disease Primers / PubMed",
+        title: "May et al. – Cluster headache",
+        url: "https://pubmed.ncbi.nlm.nih.gov/29493566/",
+      },
+      {
+        source: "Headache / PubMed",
+        title: "Robbins et al. – Treatment of cluster headache: the American Headache Society evidence-based guidelines",
+        url: "https://pubmed.ncbi.nlm.nih.gov/27432623/",
+      },
+      {
+        source: "JAMA / PubMed",
+        title: "Cohen, Burns & Goadsby – High-flow oxygen for treatment of cluster headache: a randomized trial",
+        url: "https://pubmed.ncbi.nlm.nih.gov/19996400/",
+      },
+      {
+        source: "New England Journal of Medicine / PubMed",
+        title: "Goadsby et al. – Trial of galcanezumab in prevention of episodic cluster headache",
+        url: "https://pubmed.ncbi.nlm.nih.gov/31291515/",
+      },
+    ],
+    related: [
+      {
+        title: "Migraine",
+        href: "/conditions/migraine",
+        blurb: "The third major primary headache, and the one with the most new treatments.",
+      },
+      {
+        title: "Pain medications & your organs",
+        href: "/treatments/medication-organ-safety",
+        blurb: "What the everyday painkillers ask of the liver, kidneys, heart, and stomach when they are used often.",
+      },
+      {
+        title: "Physical & behavioral therapies",
+        href: "/treatments/physical-and-behavioral-therapies",
+        blurb: "Relaxation, cognitive behavioral approaches, and what each honestly delivers.",
+      },
+      {
+        title: "How pain works",
+        href: "/understanding-pain/how-pain-works",
+        blurb: "Sensitization: how a pain system can turn its own volume up.",
+      },
+      {
+        title: "Biologics & gene-targeted therapy",
+        href: "/future-of-pain-medicine/biologics-and-gene-therapy",
+        blurb: "The antibody drugs built for migraine, now being tested in cluster headache.",
       },
     ],
   },

@@ -38,6 +38,8 @@ export const ALIASES: Record<string, string> = {
   "/conditions/sciatica": "pinched nerve leg pain herniated disc slipped disc radiculopathy",
   "/conditions/neuropathic-pain": "nerve pain neuropathy burning tingling numbness",
   "/conditions/migraine": "headache headaches",
+  "/conditions/tension-and-cluster-headache":
+    "headache headaches tension headache stress headache rebound headache medication overuse",
   "/conditions/arthritis-pain": "osteoarthritis rheumatoid joint pain knee hip",
   "/conditions/fibromyalgia": "fibro widespread pain",
   "/conditions/persistent-postsurgical-pain": "pain after surgery operation postoperative",

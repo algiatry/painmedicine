@@ -341,6 +341,12 @@ export const HUBS: Hub[] = [
           "Electric-shock facial pain set off by a touch: the blood vessel behind most cases, why ordinary painkillers fail, and what surgery offers.",
         href: "/conditions/trigeminal-neuralgia",
       },
+      {
+        title: "Tension-type and cluster headache",
+        blurb:
+          "The world's most common headache and one of its most severe: how to tell them apart, the medication-overuse trap, and why oxygen treats a cluster attack.",
+        href: "/conditions/tension-and-cluster-headache",
+      },
     ],
   },
   {
