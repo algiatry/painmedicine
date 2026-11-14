@@ -218,6 +218,12 @@ export const HUBS: Hub[] = [
           "Not only the addiction drug: a partial-agonist opioid with a ceiling on breathing suppression, its pain-specific products, and what the 2025 trial of switching from high-dose opioids honestly found.",
         href: "/treatments/buprenorphine-for-pain",
       },
+      {
+        title: "Cannabis and cannabinoids for pain",
+        blurb:
+          "Neither wonder drug nor nothing: the small average benefit in trials, the common side effects, and what the FDA has and has not approved.",
+        href: "/treatments/cannabis-and-cannabinoids",
+      },
     ],
   },
   {

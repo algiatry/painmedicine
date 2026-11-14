@@ -54,6 +54,7 @@ export const ALIASES: Record<string, string> = {
   "/conditions/trigeminal-neuralgia": "facial pain face pain tic douloureux electric shock",
   "/conditions/shingles-pain": "herpes zoster phn nerve pain after shingles rash vaccine shingrix",
   "/conditions/neck-pain": "cervical spine pinched nerve arm",
+  "/treatments/cannabis-and-cannabinoids": "marijuana weed thc cbd cbd oil medical marijuana hemp",
   "/treatments/medications-for-pain":
     "painkillers pain relievers medicine drugs pills nsaids ibuprofen acetaminophen tylenol gabapentin",
   "/treatments/medication-organ-safety": "side effects liver kidney stomach tylenol ibuprofen nsaids",

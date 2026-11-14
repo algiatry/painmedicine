@@ -398,6 +398,14 @@ export const EMBLEMS: Record<string, string> = {
       `<path stroke="${S}" d="M8 41h34" stroke-width="2.2"/>`,
   ),
 
+  // A leaf beside a balance: small benefit, real harms.
+  "cannabis-and-cannabinoids": g(
+    `<path stroke="${T}" d="M14 34V12M14 22c-5-1-8-4-9-8M14 22c5-1 8-4 9-8M14 28c-4 0-7-2-9-5M14 28c4 0 7-2 9-5"/>` +
+      `<path stroke="${S}" d="M28 20h16M36 20v18M30 38h12"/>` +
+      `<circle cx="29" cy="26" r="2.6" fill="${A}" stroke-width="0"/>` +
+      `<circle cx="43" cy="24" r="2" fill="${T}" stroke-width="0"/>`,
+  ),
+
   // A small signal enters an amplifier and leaves as a large one.
   "central-sensitization": g(
     `<path stroke="${T}" d="M6 30h10"/>` +
