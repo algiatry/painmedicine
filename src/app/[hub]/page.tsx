@@ -87,7 +87,7 @@ export default async function HubPage({
                   href={item.href}
                   className="card-lift group flex items-start gap-4 rounded-xl border border-line bg-surface p-5 hover:border-teal-600/70"
                 >
-                  <span className="flex size-12 shrink-0 items-center justify-center rounded-lg border border-slate-200/70 dark:border-slate-700 bg-paper/70 dark:bg-slate-200">
+                  <span className="flex size-12 shrink-0 items-center justify-center rounded-lg border border-edge bg-plate">
                     <ArticleEmblem
                       slug={item.href.split("/").filter(Boolean).pop() ?? ""}
                       className="size-8"
@@ -112,7 +112,7 @@ export default async function HubPage({
             ) : (
               <li
                 key={item.title}
-                className="rounded-xl border border-dashed border-slate-300 dark:border-slate-700 bg-slate-50/60 dark:bg-slate-900/40 p-5"
+                className="rounded-xl border border-dashed border-edge bg-well/60 p-5"
               >
                 <h3 className="font-semibold text-ink">{item.title}</h3>
                 <p className="mt-1 text-sm text-muted">{item.blurb}</p>

@@ -17,7 +17,7 @@ pain               →  understanding        →  options
 | Paper | `#f4f8f7` | share cards |
 | Type | Source Sans 3 | site + wordmark |
 
-On the site these are semantic tokens in `src/app/globals.css` (`ink`, `body`, `muted`, `subtle`, `faint`, `line`, `surface`, `sunken`, `paper`, `brand`, `brand-strong`). Components use `text-ink`, `border-line`, `bg-surface` and so on; dark mode is a remap of the tokens, so new markup should not need `dark:` variants. Figures keep their own light palette on `.figure-plate`.
+On the site these are semantic tokens in `src/app/globals.css` (`ink`, `body`, `muted`, `subtle`, `faint`, `line`, `surface`, `sunken`, `paper`, `brand`, `brand-strong`, plus `note-*` and `caution-*` for callouts). Components use `text-ink`, `border-line`, `bg-surface` and so on; dark mode is a remap of the tokens, so new markup should not need `dark:` variants. Figures keep their own light palette on `.figure-plate`.
 
 Canonical path lives in `src/lib/brand.ts`. Raster pipeline: `npm run brand` (`scripts/render-brand-assets.py`). Keep those two in sync.
 

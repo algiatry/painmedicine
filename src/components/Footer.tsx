@@ -4,22 +4,22 @@ import BrandMark from "@/components/BrandMark";
 
 export default function Footer() {
   return (
-    <footer className="mt-auto border-t border-line bg-slate-50 dark:bg-slate-950">
+    <footer className="mt-auto border-t border-line bg-well">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-12 space-y-8">
         {/* Crisis / help lines */}
-        <div className="rounded-lg border border-teal-200 bg-teal-50 p-5 dark:border-teal-900/60 dark:bg-teal-950/40">
-          <h2 className="text-sm font-semibold text-teal-900 dark:text-teal-200">
+        <div className="rounded-lg border border-note-line bg-note p-5">
+          <h2 className="text-sm font-semibold text-note-ink">
             If you need help now
           </h2>
           <ul className="mt-2 space-y-1">
             {HELP_LINES.map((line) => (
-              <li key={line.name} className="text-sm text-teal-900 dark:text-teal-100">
+              <li key={line.name} className="text-sm text-note-ink">
                 <span className="font-medium">{line.name}:</span>{" "}
                 {line.detail}
               </li>
             ))}
           </ul>
-          <p className="mt-2 text-sm text-teal-900 dark:text-teal-100">
+          <p className="mt-2 text-sm text-note-ink">
             If you are experiencing a medical emergency, call 911.
           </p>
         </div>

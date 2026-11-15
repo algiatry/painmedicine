@@ -15,6 +15,16 @@
   --subtle: #64748b; /* captions, meta: still AA on white */
   --faint: #cbd5e1; /* decorative only: arrows, underlines, separators */
   --line: #e2e8f0; /* hairlines */
+  --edge: #e2e8f0; /* borders on raised surfaces */
+  --well: #f8fafc; /* footer, quiet panels */
+  --chrome: #ffffff; /* header and menus */
+  --plate: #f4f8f7; /* emblem tiles: stays light in dark mode */
+  --note: #f0fdfa; /* teal callout ground / line / text */
+  --note-line: #99f6e4;
+  --note-ink: #134e4a;
+  --caution: #fffbeb; /* amber callout ground / line / text */
+  --caution-line: #fde68a;
+  --caution-ink: #78350f;
   --brand: #0f766e;
   --brand-strong: #115e59;
   --brand-dark: #115e59;
@@ -40,6 +50,16 @@
     --subtle: #94a3b8;
     --faint: #475569;
     --line: #1e293b;
+    --edge: #334155;
+    --well: #0f172a;
+    --chrome: #020617;
+    --plate: #e2e8f0;
+    --note: #0b2b2c;
+    --note-line: #134e4a;
+    --note-ink: #99f6e4;
+    --caution: #2a1a0b;
+    --caution-line: #5c3310;
+    --caution-ink: #fde68a;
     --brand: #5eead4;
     --brand-strong: #99f6e4;
     --brand-dark: #99f6e4;
@@ -60,6 +80,16 @@
   --color-subtle: var(--subtle);
   --color-faint: var(--faint);
   --color-line: var(--line);
+  --color-edge: var(--edge);
+  --color-well: var(--well);
+  --color-chrome: var(--chrome);
+  --color-plate: var(--plate);
+  --color-note: var(--note);
+  --color-note-line: var(--note-line);
+  --color-note-ink: var(--note-ink);
+  --color-caution: var(--caution);
+  --color-caution-line: var(--caution-line);
+  --color-caution-ink: var(--caution-ink);
   --color-brand: var(--brand);
   --color-brand-strong: var(--brand-strong);
   --color-brand-dark: var(--brand-dark);

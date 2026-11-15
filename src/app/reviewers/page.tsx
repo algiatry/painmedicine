@@ -72,11 +72,11 @@ export default function ReviewersPage() {
           Medical reviewers
         </h2>
         {REVIEWERS.length === 0 ? (
-          <div className="rounded-md border border-line bg-slate-50 dark:bg-slate-900 px-5 py-4 text-body">
+          <div className="rounded-md border border-line bg-well px-5 py-4 text-body">
             <p>
               The board is being formed. Until a reviewer has signed off, every
-              page carries an honest &ldquo;written from primary sources,
-              review pending&rdquo; line rather than a borrowed credential.
+              page carries a &ldquo;not yet medically reviewed&rdquo; notice
+              rather than a borrowed credential.
               Positions are open; see below.
             </p>
           </div>
@@ -130,7 +130,7 @@ export default function ReviewersPage() {
           </Link>{" "}
           are re-reviewed quarterly, everything else annually. A reviewer may
           withdraw their name from any page at any time, which returns it to
-          &ldquo;review pending.&rdquo;
+          &ldquo;not yet medically reviewed.&rdquo;
         </p>
       </section>
 

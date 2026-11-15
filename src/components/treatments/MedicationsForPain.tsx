@@ -53,8 +53,8 @@ function MapFigure() {
       >
         <title id="map-title">Where pain medications act</title>
         <desc id="map-desc">
-          The pain pathway drawn as four stations – tissue, nerve, spinal cord,
-          brain – joined by an amber signal line. Drug families are attached
+          The pain pathway drawn as four stations (tissue, nerve, spinal cord,
+          brain) joined by an amber signal line. Drug families are attached
           where they act: NSAIDs and topicals at the tissue, suzetrigine and
           topical lidocaine at the nerve, gabapentinoids and the
           brake-boosting antidepressants at the spinal cord, opioids and
@@ -345,9 +345,9 @@ export default function MedicationsForPain() {
         what else you are taking.
       </P>
       <P>
-        The <strong>NSAIDs</strong> – ibuprofen, naproxen, aspirin,
+        The <strong>NSAIDs</strong> (ibuprofen, naproxen, aspirin,
         prescription relatives, and the anti-inflammatory medicines people
-        search for by name – work at the scene of the injury: they block the
+        search for by name) work at the scene of the injury: they block the
         prostaglandin chemistry that makes injured tissue swell, throb, and
         stay tender. That mechanism makes them genuinely effective for
         inflammatory and tissue-driven pain – sprains, arthritis flares,
@@ -387,8 +387,8 @@ export default function MedicationsForPain() {
         cord uses to dampen pain traffic – the brakes in the figure above.{" "}
         <strong>Gabapentin and pregabalin</strong> bind a calcium-channel
         subunit on overexcited neurons and turn sensitized signaling down.
-        For pain from damaged nerves – diabetic neuropathy, sciatica-type
-        pain, post-shingles pain – the international NeuPSIG evidence review
+        For pain from damaged nerves (diabetic neuropathy, sciatica-type
+        pain, post-shingles pain) the international NeuPSIG evidence review
         ranks exactly these families as first-line, ahead of any conventional
         painkiller. NSAIDs, for all their virtues, do little for this{" "}
         <Link href="/understanding-pain/types-of-pain" className={link}>
@@ -399,7 +399,7 @@ export default function MedicationsForPain() {
 
       <H2 id="muscle-relaxants">Muscle relaxants, briefly</H2>
       <P>
-        For painful muscle spasm – the seized-up back, the wry neck –
+        For painful muscle spasm (the seized-up back, the wry neck)
         clinicians sometimes add a short course of a muscle relaxant. The
         honest evidence summary: modest benefit for short-term use, with
         drowsiness as the common tax, and little support for staying on them
@@ -504,8 +504,8 @@ export default function MedicationsForPain() {
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
-          <strong>Where is the pain?</strong> One findable place – a knee, a
-          patch of post-shingles skin – may suit a topical, which keeps the
+          <strong>Where is the pain?</strong> One findable place (a knee, a
+          patch of post-shingles skin) may suit a topical, which keeps the
           risk local. Pain that is everywhere does not.
           </span>
         </li>
@@ -529,9 +529,9 @@ export default function MedicationsForPain() {
         </li>
       </ul>
       <P>
-        If the answers point in different directions – nerve-type pain in
+        If the answers point in different directions (nerve-type pain in
         someone who cannot use NSAIDs and has not responded to a first
-        nerve-pain drug, for example – that is not a dead end. It is the
+        nerve-pain drug, for example) that is not a dead end. It is the
         situation a{" "}
         <Link href="/what-is-pain-medicine" className={link}>
           pain physician

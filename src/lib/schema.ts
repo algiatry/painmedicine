@@ -9,7 +9,7 @@ import { getReviewer, type Reviewer } from "./reviewers";
  * - "sourced": full educational content built from cited primary sources
  *   (IASP, NIH, WHO, Cochrane, peer-reviewed literature) that makes no
  *   individualized clinical recommendation. Publishes with an HONEST byline
- *   ("written from primary sources – independent medical review pending"),
+ *   ("not yet medically reviewed – written from primary sources"),
  *   never a fabricated "reviewed by" credit.
  * - "reviewed": a named credentialed reviewer has signed off. ONLY then may a
  *   reviewer byline appear. See CONTENT-TEMPLATE.md.

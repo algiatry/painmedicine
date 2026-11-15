@@ -154,9 +154,8 @@ export default function HowPainPhysiciansTrain() {
         specialty&rsquo;s defining step: a{" "}
         <strong>12-month fellowship devoted entirely to pain medicine</strong>,
         accredited by the ACGME, the body that accredits US physician
-        training. Fellows spend that year across the full territory –
-        evaluation, medications, procedures, rehabilitation, and the
-        psychological dimensions of pain – before they can sit for boards.
+        training. Fellows spend that year across the full territory (evaluation, medications, procedures, rehabilitation, and the
+        psychological dimensions of pain) before they can sit for boards.
       </P>
 
       <H2 id="one-standard">Many doors, one standard</H2>
@@ -188,8 +187,8 @@ export default function HowPainPhysiciansTrain() {
       <P>
         Board certification in pain medicine is not a plaque earned once. The
         certificates are time-limited and maintained through continuing
-        assessment – ongoing question banks, education requirements, and
-        quality-improvement work – on cycles that the boards are moving from
+        assessment (ongoing question banks, education requirements, and
+        quality-improvement work) on cycles that the boards are moving from
         ten years to five. A currently certified pain physician is, by
         construction, one who has kept proving it.
       </P>

@@ -127,12 +127,12 @@ export function PullQuote({ children }: { children: ReactNode }) {
 
 const CALLOUT_TONES = {
   note: {
-    wrap: "border-brand/20 bg-teal-50/60 dark:bg-teal-950/30",
+    wrap: "border-brand/20 bg-note",
     label: "text-brand-strong",
   },
   caution: {
-    wrap: "border-amber-500/30 bg-amber-50/70 dark:border-amber-500/25 dark:bg-amber-950/25",
-    label: "text-amber-800 dark:text-amber-300",
+    wrap: "border-caution-line bg-caution",
+    label: "text-caution-ink",
   },
 } as const;
 

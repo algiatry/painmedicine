@@ -32,7 +32,7 @@ export default function MedicationOrganSafety() {
 
       <H2 id="the-map">Every pain reliever has a home organ</H2>
       <P>
-        The everyday pain medications are among the safest drugs ever made –
+        The everyday pain medications are among the safest drugs ever made,
         at their label limits, in the bodies they were studied in. Injuries
         happen at the edges: above the limit, in an organ that was already
         working hard, or in combinations nobody deliberately chose. Each
@@ -43,8 +43,7 @@ export default function MedicationOrganSafety() {
 
       <P>
         <strong>Acetaminophen</strong> (Tylenol and hundreds of generics) is
-        processed almost entirely by the liver. <strong>NSAIDs</strong> –
-        ibuprofen, naproxen, and their prescription relatives – work by
+        processed almost entirely by the liver. <strong>NSAIDs</strong> (ibuprofen, naproxen, and their prescription relatives) work by
         damping prostaglandin chemistry, which is exactly why they touch so
         many organs: prostaglandins maintain the stomach lining, regulate
         kidney blood flow, and influence blood pressure and clotting. One
@@ -95,7 +94,7 @@ export default function MedicationOrganSafety() {
         losartan and relatives) plus a diuretic (a water pill). Each drug
         narrows kidney blood flow through a different route; together they can
         push a vulnerable kidney into acute injury, particularly during
-        dehydration. Millions of people take two of the three safely – the
+        dehydration. Millions of people take two of the three safely; the
         danger is the unexamined third. If your medication list includes a
         blood-pressure pill and a water pill, an NSAID is not an
         over-the-counter decision anymore; it is a question for the prescriber.
@@ -116,11 +115,11 @@ export default function MedicationOrganSafety() {
       </P>
       <P>
         Context keeps this honest. A few days of ibuprofen for a sprained
-        ankle in a healthy 30-year-old is a small, time-limited exposure – the
+        ankle in a healthy 30-year-old is a small, time-limited exposure; the
         warning is not about that. It is about the quiet default of daily
         NSAIDs for months of arthritis or back pain, especially past 60,
         especially with hypertension, cholesterol, diabetes, or smoking in the
-        picture. Daily use deserves to be a deliberate, reviewed decision –
+        picture. Daily use deserves to be a deliberate, reviewed decision,
         the kind a clinician can only make if they know you are taking it.
         (Aspirin is the exception that proves the rule: it is an NSAID, but at
         the low doses used for heart protection its antiplatelet effect
@@ -167,8 +166,8 @@ export default function MedicationOrganSafety() {
       <H2 id="practical">The five-minute safety review</H2>
       <P>
         The single highest-value step costs nothing and embarrasses no one:
-        bring everything you take – prescriptions, OTC products, supplements,
-        sleep aids, the gummy, all of it – to a pharmacist and ask for an
+        bring everything you take (prescriptions, OTC products, supplements,
+        sleep aids, the gummy, all of it) to a pharmacist and ask for an
         interaction and duplication check. Pharmacists are trained for exactly
         this, it takes minutes, and it catches the stacking patterns above
         before they become lab results. Beyond that: read the Drug Facts
@@ -215,7 +214,7 @@ function OrganMapFigure() {
           Organ-by-organ safety map for common pain medications
         </title>
         <desc id="organ-map-desc">
-          Four stacked cards – liver, kidneys, heart and vessels, stomach –
+          Four stacked cards (liver, kidneys, heart and vessels, stomach)
           showing which medication class stresses each organ and its key
           safety boundary.
         </desc>

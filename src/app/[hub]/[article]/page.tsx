@@ -176,7 +176,7 @@ export default async function ArticlePage({
                 href={r.href}
                 className="group flex gap-4 rounded-xl border border-transparent px-3 py-4 transition-colors hover:border-line hover:bg-paper/70 sm:px-4"
               >
-                <span className="mt-0.5 flex size-11 shrink-0 items-center justify-center rounded-lg border border-slate-200/70 dark:border-slate-700 bg-paper/70 dark:bg-slate-200 transition-colors group-hover:border-teal-300 group-hover:bg-white dark:group-hover:border-teal-400/60">
+                <span className="mt-0.5 flex size-11 shrink-0 items-center justify-center rounded-lg border border-edge bg-plate transition-colors group-hover:border-brand/50 group-hover:bg-white">
                   <ArticleEmblem
                     slug={r.href.split("/").filter(Boolean).pop() ?? ""}
                     className="size-7"

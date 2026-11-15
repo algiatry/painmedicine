@@ -55,7 +55,12 @@ function proseFor(slug: string): string {
       .find((f) =>
         f.toLowerCase().replace(/[^a-z0-9]/g, "").includes(key)
       );
-    if (hit) return fs.readFileSync(path.join(dir, hit), "utf8");
+    // Comments are not reader-facing; drop them so they are not scanned.
+    if (hit)
+      return fs
+        .readFileSync(path.join(dir, hit), "utf8")
+        .replace(/\/\*[\s\S]*?\*\//g, "")
+        .replace(/^\s*\/\/.*$/gm, "");
   }
   return "";
 }
@@ -118,7 +123,7 @@ function scanText(page: string, text: string, origin: string) {
 
 /* ------------------------------------------------------ house-style tics */
 
-const TIC_CAPS = { dashesPer1000: 15, honest: 5, actually: 1 } as const;
+const TIC_CAPS = { dashesPer1000: 10, honest: 5, actually: 1 } as const;
 
 /* ------------------------------------------------------- review status */
 

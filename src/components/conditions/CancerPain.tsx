@@ -137,7 +137,7 @@ export default function CancerPain() {
     <div>
       <P>
         Two facts about cancer pain belong side by side, because either one
-        alone misleads. The first: pain is common – studies find it in about{" "}
+        alone misleads. The first: pain is common: studies find it in about{" "}
         <strong>55% of people during cancer treatment</strong> and{" "}
         <strong>66% of those with advanced disease</strong>. The second, and
         the one this page exists for: cancer pain is among the{" "}
@@ -145,7 +145,7 @@ export default function CancerPain() {
         The tools are strong, the evidence is deep, and the field&rsquo;s
         hardest-won lesson is organizational, not pharmacological: pain that
         goes unreported goes untreated, and for decades studies found a
-        substantial minority of patients undertreated – mostly for reasons
+        substantial minority of patients undertreated, mostly for reasons
         that dissolve once they are said out loud. Treating pain is part of
         treating cancer. You never have to earn relief by suffering first.
       </P>
@@ -154,7 +154,7 @@ export default function CancerPain() {
         items={[
           <>Pain affects about <strong>55% of people during cancer treatment</strong> and <strong>66% of those with advanced disease</strong>.</>,
           <>Cancer pain is among the <strong>most treatable</strong> problems in all of pain medicine.</>,
-          <>Pain that goes unreported goes untreated – <strong>say when it hurts</strong>, early and exactly.</>,
+          <>Pain that goes unreported goes untreated: <strong>say when it hurts</strong>, early and exactly.</>,
           <>Palliative care is specialist symptom care delivered <strong>alongside cancer treatment, at any stage</strong>.</>,
         ]}
       />
@@ -185,7 +185,7 @@ export default function CancerPain() {
         Modern cancer pain care descends from a genuinely great idea: the
         World Health Organization&rsquo;s 1986 cancer pain program, which
         taught the world that most cancer pain could be controlled with a
-        few principles – treat <strong>by the clock</strong> rather than
+        few principles: treat <strong>by the clock</strong> rather than
         chasing pain after it peaks, prefer simple routes, and match the
         strength of treatment to the severity of pain. Today&rsquo;s WHO
         guidance keeps the spirit and drops the rigidity: treatment is
@@ -201,7 +201,7 @@ export default function CancerPain() {
         a good plan includes both halves.
       </P>
 
-      <H2 id="opioids">About opioids – a different conversation here</H2>
+      <H2 id="opioids">About opioids: a different conversation here</H2>
       <P>
         Elsewhere on this site, opioids appear late in treatment ladders and
         wrapped in caution. Cancer pain is the context those medicines were
@@ -210,7 +210,7 @@ export default function CancerPain() {
         list of essential medicines. The distinctions that get blurred
         everywhere else matter most here. <strong>Tolerance</strong> –
         needing adjustment over time, and <strong>physical
-        dependence</strong> – the body adapting, needing a taper to stop –
+        dependence</strong> (the body adapting, needing a taper to stop)
         are expected biology that your team plans for.{" "}
         <strong>Addiction</strong> – use escaping control despite harm – is
         a different phenomenon, and it is uncommon in monitored cancer pain
@@ -218,7 +218,7 @@ export default function CancerPain() {
         fear of addiction, held by patients and families, quietly trading
         real relief for imagined safety. Take the medicine your pain
         requires; let your team manage the side effects
-        proactively – constipation, notably, is expected and treatable from
+        proactively; constipation, notably, is expected and treatable from
         day one. And if opioid use ever does feel like it is escaping the
         plan – yours or a loved one&rsquo;s – say so early: the SAMHSA
         helpline, 1-800-662-4357, is free, confidential, and always open.
@@ -231,12 +231,12 @@ export default function CancerPain() {
         <Link href="/treatments/medications-for-pain" className={link}>
           Nerve-pain medications
         </Link>{" "}
-        treat the neuropathic share – chemotherapy neuropathy especially.
+        treat the neuropathic share, chemotherapy neuropathy especially.
         Steroids shrink painful swelling around tumors and nerves.
         Bone-targeted drugs strengthen bone under attack, and{" "}
         <strong>radiation</strong> deserves special mention: for a painful
         bone metastasis, even a single treatment session relieves pain in
-        the majority of patients – one of oncology&rsquo;s quiet triumphs.
+        the majority of patients, one of oncology&rsquo;s quiet triumphs.
         Interventional pain medicine adds precision tools: nerve blocks
         such as the celiac plexus block for pancreatic and upper-abdominal
         cancer pain, a procedure with decades of track record, and
@@ -271,7 +271,7 @@ export default function CancerPain() {
         therapy. Enough survivors live with pain that oncology publishes
         its own guideline for managing it. If your treatment ended years
         ago and pain remains, two things are true: it is common, and it is
-        treatable – generally with the same approaches used for other
+        treatable, generally with the same approaches used for other
         chronic pain, sized to the mechanism. Mentioning it to your care
         team is not ingratitude for your recovery; it is the next step of
         the same care.

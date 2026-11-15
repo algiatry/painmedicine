@@ -68,7 +68,7 @@ export default function GlossaryPage() {
           <a
             key={g.letter}
             href={`#letter-${g.letter}`}
-            className="flex h-8 w-8 items-center justify-center rounded-md border border-line text-sm font-semibold text-brand hover:border-teal-600 hover:bg-teal-50 dark:hover:bg-teal-950/40"
+            className="flex h-8 w-8 items-center justify-center rounded-md border border-line text-sm font-semibold text-brand hover:border-teal-600 hover:bg-note"
           >
             {g.letter}
           </a>
