@@ -68,8 +68,8 @@ export default function ReviewByline({
   }
 
   return (
-    <div className="rounded-md border border-amber-200 dark:border-amber-900/50 bg-amber-50 dark:bg-amber-950/30 px-4 py-3">
-      <p className="text-sm text-amber-900 dark:text-amber-200">
+    <div className="rounded-md border border-caution-line bg-caution px-4 py-3">
+      <p className="text-sm text-caution-ink">
         <strong>In editorial review.</strong> This page is being prepared with
         our medical review board and currently provides general orientation
         only. Detailed clinical content publishes after physician review.

@@ -96,9 +96,9 @@ export default function SiteSearch() {
         }}
         // A click on the backdrop lands on the dialog element itself.
         onClick={(e) => e.target === e.currentTarget && close()}
-        className="m-0 mx-auto mt-[8vh] w-[calc(100%-1.5rem)] max-w-xl rounded-2xl border border-slate-200 bg-surface p-0 text-ink shadow-2xl backdrop:bg-slate-900/50 backdrop:backdrop-blur-sm dark:border-slate-700"
+        className="m-0 mx-auto mt-[8vh] w-[calc(100%-1.5rem)] max-w-xl rounded-2xl border border-edge bg-surface p-0 text-ink shadow-2xl backdrop:bg-slate-900/50 backdrop:backdrop-blur-sm"
       >
-        <div className="flex items-center gap-3 border-b border-slate-200 px-4 focus-within:shadow-[inset_0_-2px_0_var(--brand)] dark:border-slate-700">
+        <div className="flex items-center gap-3 border-b border-edge px-4 focus-within:shadow-[inset_0_-2px_0_var(--brand)]">
           <SearchIcon className="size-5 shrink-0 text-slate-400" />
           <input
             ref={inputRef}
@@ -124,7 +124,7 @@ export default function SiteSearch() {
           <button
             type="button"
             onClick={close}
-            className="shrink-0 rounded-md border border-slate-200 px-2 py-1 text-xs font-medium text-subtle hover:border-faint hover:text-body dark:border-slate-700"
+            className="shrink-0 rounded-md border border-edge px-2 py-1 text-xs font-medium text-subtle hover:border-faint hover:text-body"
           >
             Close
           </button>
@@ -141,7 +141,7 @@ export default function SiteSearch() {
                 onMouseMove={() => setActive(i)}
                 onClick={() => go(r.href)}
                 className={`cursor-pointer rounded-xl px-3 py-2.5 ${
-                  i === active ? "bg-teal-50 dark:bg-teal-950/50" : ""
+                  i === active ? "bg-note" : ""
                 }`}
               >
                 <div className="flex items-baseline justify-between gap-3">
@@ -209,7 +209,7 @@ export default function SiteSearch() {
                           setActive(0);
                           inputRef.current?.focus();
                         }}
-                        className="rounded-full border border-slate-200 px-3 py-1.5 text-sm font-medium text-body hover:border-brand hover:text-brand dark:border-slate-700"
+                        className="rounded-full border border-edge px-3 py-1.5 text-sm font-medium text-body hover:border-brand hover:text-brand"
                       >
                         {s}
                       </button>

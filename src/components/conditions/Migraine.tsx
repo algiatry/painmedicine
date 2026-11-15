@@ -132,7 +132,7 @@ export default function Migraine() {
         <strong>second among all causes of disability on Earth, and first
         among young women</strong>, who live with it at two to three times the
         rate of men. None of that describes &ldquo;a bad headache.&rdquo; It
-        describes a neurological disease with its own machinery – machinery
+        describes a neurological disease with its own machinery, machinery
         that science has now traced well enough to build drugs against,
         which is why migraine has become pain medicine&rsquo;s biggest
         recent success story.
@@ -141,7 +141,7 @@ export default function Migraine() {
       <KeyTakeaways
         items={[
           <>Migraine affects roughly <strong>one person in seven</strong> and ranks second among all causes of disability on Earth.</>,
-          <>An attack is a sequence – prodrome, aura (about one in three people), headache, postdrome, not just a <strong>headache</strong>.</>,
+          <>An attack is a sequence: prodrome, aura (about one in three people), headache, postdrome, not just a <strong>headache</strong>.</>,
           <>The trigeminal nerve releases <strong>CGRP</strong>, and blocking it works.</>,
           <>Acute medications work best taken <strong>early</strong>; use on too many days a month can cause medication-overuse headache.</>,
         ]}
@@ -152,8 +152,8 @@ export default function Migraine() {
       <P>
         A migraine attack is a sequence, and the headache is its loudest
         middle chapter. Many attacks announce themselves a day early in the{" "}
-        <strong>prodrome</strong> – yawning, food cravings, mood shifts,
-        neck stiffness – driven by deep brain regions like the hypothalamus
+        <strong>prodrome</strong> (yawning, food cravings, mood shifts,
+        neck stiffness) driven by deep brain regions like the hypothalamus
         waking up first. About one in three people then experience{" "}
         <strong>aura</strong>: a slow electrical wave crossing the
         brain&rsquo;s surface, felt most often as shimmering zigzags or a
@@ -196,8 +196,8 @@ export default function Migraine() {
         triggers are probabilistic, they stack, and they act on a brain
         whose threshold is already set by sleep, stress, hormones, and
         routine. The highest-yield moves are unglamorous:{" "}
-        <strong>regularity</strong> – of sleep, meals, hydration, caffeine,
-        and exercise – raises the threshold an attack has to clear.{" "}
+        <strong>regularity</strong> (of sleep, meals, hydration, caffeine,
+        and exercise) raises the threshold an attack has to clear.{" "}
         <Link href="/understanding-pain/pain-and-sleep" className={link}>
           Sleep
         </Link>{" "}
@@ -275,7 +275,7 @@ export default function Migraine() {
       <P>
         If migraine is costing you multiple days a month despite a fair
         acute-treatment plan, if prevention has never been discussed, or if
-        you suspect the medication-overuse trap has already closed –
+        you suspect the medication-overuse trap has already closed,
         that is the moment for{" "}
         <Link href="/what-is-pain-medicine" className={link}>
           specialist care

@@ -15,7 +15,7 @@ export function renderLlmsTxt(): string {
     "## What this site is",
     "",
     "- Educational content only — not medical advice, not a clinic, nothing for sale.",
-    "- Live pages are written from primary sources and publish as \"sourced.\" None currently has a named medical reviewer. The byline says independent medical review is pending. Live pages do not carry an in-review hold notice.",
+    "- Live pages are written from primary sources and publish as \"sourced.\" None currently has a named medical reviewer. Each page carries a \"not yet medically reviewed\" notice. Live pages do not carry an in-review hold notice.",
     "- Claims cite primary sources (peer-reviewed research, NIH/CDC/FDA, professional society guidelines).",
     "",
     "## Key sections",

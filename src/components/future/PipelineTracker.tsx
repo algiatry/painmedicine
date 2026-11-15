@@ -22,10 +22,10 @@ const MODALITY_TINT: Record<Modality, { fill: string; text: string }> = {
 
 const PHASE_BADGE: Record<Phase, string> = {
   Approved: "bg-teal-600 text-white",
-  "Phase 3": "bg-teal-100 dark:bg-teal-900/40 text-brand-strong",
-  "Phase 2": "bg-amber-100 dark:bg-amber-900/30 text-amber-800 dark:text-amber-300",
+  "Phase 3": "bg-note text-brand-strong",
+  "Phase 2": "bg-caution text-caution-ink",
   "Phase 1": "bg-sunken text-body",
-  Discontinued: "bg-sunken text-subtle line-through decoration-slate-400 dark:decoration-slate-500",
+  Discontinued: "bg-sunken text-subtle line-through decoration-subtle",
 };
 
 const PHASE_GROUP_LABEL: Record<Phase, string> = {

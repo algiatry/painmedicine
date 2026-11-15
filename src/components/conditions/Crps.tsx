@@ -184,7 +184,7 @@ export default function Crps() {
         <strong>pain out of proportion</strong>: a healed fracture or
         routine surgery whose pain does not fade on schedule but deepens,
         spreads beyond the injury, turns burning or squeezing, and makes
-        light touch – a sleeve, a bedsheet – genuinely painful. Second,{" "}
+        light touch (a sleeve, a bedsheet) genuinely painful. Second,{" "}
         <strong>a limb that visibly changes</strong>: color and temperature
         that differ from the other side, swelling, sweating that is simply
         wrong, and over time changes in skin, hair, nails, and movement.

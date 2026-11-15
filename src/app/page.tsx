@@ -202,7 +202,7 @@ export default function Home() {
                     href={item.href}
                     className="group flex items-start gap-4 rounded-xl border border-transparent px-3 py-4 transition-colors hover:border-line hover:bg-paper/70 sm:px-4"
                   >
-                    <span className="flex size-10 shrink-0 items-center justify-center rounded-lg border border-slate-200/70 bg-paper/70 text-brand transition-colors group-hover:border-teal-300 group-hover:bg-white dark:border-slate-800 dark:group-hover:border-teal-400/50 dark:group-hover:bg-slate-800">
+                    <span className="flex size-10 shrink-0 items-center justify-center rounded-lg border border-edge bg-paper/70 text-brand transition-colors group-hover:border-brand/50 group-hover:bg-surface">
                       <HubIcon href={item.href} className="size-5" />
                     </span>
                     <span className="min-w-0 flex-1">
@@ -335,7 +335,7 @@ export default function Home() {
                   href={item.href}
                   className="card-lift group flex h-full flex-col rounded-xl border border-line bg-surface p-5"
                 >
-                  <span className="flex size-11 items-center justify-center rounded-lg border border-slate-200/80 bg-paper/60 transition-colors group-hover:border-teal-300 group-hover:bg-white dark:border-slate-700 dark:bg-slate-200 dark:group-hover:border-teal-400/60">
+                  <span className="flex size-11 items-center justify-center rounded-lg border border-edge bg-plate transition-colors group-hover:border-brand/50 group-hover:bg-white">
                     <ArticleEmblem
                       slug={item.href.split("/").filter(Boolean).pop() ?? ""}
                       className="size-7"

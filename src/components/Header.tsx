@@ -38,7 +38,7 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-40 border-b bg-white/85 backdrop-blur transition-shadow dark:bg-slate-950/85 ${
+      className={`sticky top-0 z-40 border-b bg-chrome/85 backdrop-blur transition-shadow ${
         scrolled
           ? "border-line shadow-[0_1px_12px_-4px_rgb(15_23_42/0.12)] dark:shadow-[0_1px_12px_-4px_rgb(0_0_0/0.5)]"
           : "border-line/70"
@@ -110,7 +110,7 @@ export default function Header() {
       {open && (
         <div
           id="mobile-menu"
-          className="lg:hidden border-t border-line bg-white dark:bg-slate-950"
+          className="lg:hidden border-t border-line bg-chrome"
         >
           <nav
             aria-label="Primary mobile"
@@ -129,8 +129,8 @@ export default function Header() {
                       aria-current={active ? "page" : undefined}
                       className={`flex items-center justify-between rounded-lg px-3 py-3 text-[15px] transition-colors ${
                         active
-                          ? "bg-teal-50 font-semibold text-brand-strong dark:bg-teal-950/50"
-                          : "font-medium text-body hover:bg-slate-50 hover:text-brand dark:hover:bg-slate-800/60"
+                          ? "bg-note font-semibold text-brand-strong"
+                          : "font-medium text-body hover:bg-sunken hover:text-brand"
                       }`}
                     >
                       {item.label}

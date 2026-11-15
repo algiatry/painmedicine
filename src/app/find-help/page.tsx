@@ -140,9 +140,9 @@ export default function FindHelpPage() {
           mills&rdquo; or sell one-size-fits-all procedures. Be cautious if a
           practice does any of the following:
         </p>
-        <ul className="mt-5 space-y-3 rounded-lg border border-amber-200 dark:border-amber-900/50 bg-amber-50 dark:bg-amber-950/30 p-5">
+        <ul className="mt-5 space-y-3 rounded-lg border border-caution-line bg-caution p-5">
           {RED_FLAGS.map((r) => (
-            <li key={r} className="flex gap-3 text-amber-900 dark:text-amber-200">
+            <li key={r} className="flex gap-3 text-caution-ink">
               <span aria-hidden="true" className="shrink-0 font-semibold">
                 !
               </span>

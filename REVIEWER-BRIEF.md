@@ -1,8 +1,8 @@
 # PainMedicine.com — Medical Reviewer Recruitment Brief
 
 > **Purpose.** This is the packet for finding and engaging a credentialed medical
-> reviewer. Clinical pages currently publish as `sourced` with an honest
-> "written from primary sources, review pending" byline; a named reviewer is
+> reviewer. Clinical pages currently publish as `sourced` with a
+> "not yet medically reviewed" notice; a named reviewer is
 > what converts them to `reviewed` (see `CONTENT-TEMPLATE.md`). It is the
 > site's single biggest trust and search lever. Hand the "About the site" and
 > "The role" sections to a candidate; keep the "Compensation," "Where to find
@@ -54,8 +54,8 @@ providing individual medical advice.
     reviewer's own credential pathway to patients.
 
   Every page: primary-source references (PubMed IDs verified), original
-  explanatory figures, FAQ block, and an honest "written from primary sources —
-  review pending" byline. Plus `/find-help` and a 60-term cross-linked
+  explanatory figures, FAQ block, and a "not yet medically reviewed" notice
+  until a reviewer signs off. Plus `/find-help` and a 60-term cross-linked
   `/glossary`.
 - **Voice:** compassionate, ~8th-grade reading level, never condescending, never
   fear-based. The emotional spine is *"You are not imagining your pain."*

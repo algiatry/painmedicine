@@ -12,7 +12,7 @@
 | Signal | State |
 |---|---|
 | Content | 53 articles: 21 condition guides, 13 treatment pages, 10 understanding-pain explainers, 5 future-of-pain-medicine pages, 4 specialty pages |
-| Review status | **0 / 53 reviewed.** `REVIEWERS` is empty; every page publishes as `sourced` with the "review pending" byline |
+| Review status | **0 / 53 reviewed.** `REVIEWERS` is empty; every page publishes as `sourced` with the "not yet medically reviewed" notice |
 | Contact route | `SITE.editorialEmail` is empty. `/reviewers` cannot take applications, and the "Report a correction" links stay hidden until it is set |
 | CI | `verify` (audit, lint, build) is a required check on `main`; Dependabot is on |
 | Citations | `npm run check:refs` runs monthly and on demand. Last full run: 0 dead, 0 mismatched |
@@ -122,12 +122,9 @@ directions, and into the review queue the day it ships.
 
 ## 7. Small engineering items
 
-- **Lower the tic caps.** `TIC_CAPS` in `scripts/content-lint.ts` sits just
-  above the worst page (15 spaced en dashes per 1,000 words). Edit the
-  dash-heavy pages by hand and bring the cap down toward 8.
-- **Finish the colour tokens.** About 60 `dark:` variants remain, mostly
-  amber and teal callout grounds and the header; give them tokens as those
-  components are next touched.
+- **Lower the dash cap further.** `TIC_CAPS` in `scripts/content-lint.ts`
+  allows 10 spaced en dashes per 1,000 words. Edit the dash-heavy pages by
+  hand and bring it down toward 8.
 - **Tests for the pure logic.** `search()` ranking in `src/lib/search.ts` and
   the title matcher in `scripts/check-references.ts` are both easy to break
   silently.

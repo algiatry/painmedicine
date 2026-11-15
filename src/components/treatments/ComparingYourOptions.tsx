@@ -170,8 +170,8 @@ export default function ComparingYourOptions() {
     <div>
       <P>
         Every page in this hub ends at the same question, so this page
-        faces it directly: <em>of all of it – the drugs, the needles, the
-        devices, the therapies – what works?</em> The honest
+        faces it directly: <em>of all of it (the drugs, the needles, the
+        devices, the therapies) what works?</em> The honest
         answer is better than the marketing answer, but it requires a
         reframe. Read the trial literature whole and its clearest finding
         is that <strong>no treatment wins across the board</strong>:
@@ -237,11 +237,11 @@ export default function ComparingYourOptions() {
         <strong>One: averages hide responders.</strong> A modest mean
         effect usually blends people who improved substantially with
         people who didn&rsquo;t improve at all. The average is not your
-        forecast – it is a reason to run fair trials and find your
+        forecast; it is a reason to run fair trials and find your
         responders&rsquo; list. <strong>Two: certainty and size are
         different axes.</strong> Exercise is certain and modest; plenty
         of heavily marketed options are uncertain and loud. When forced
-        to choose, the field chooses certainty – you can build on what
+        to choose, the field chooses certainty: you can build on what
         you can trust. <strong>Three: mechanism fit beats potency</strong>
         – the lesson of the{" "}
         <Link href="/treatments/medications-for-pain" className={link}>
@@ -312,7 +312,7 @@ export default function ComparingYourOptions() {
         average, persistent, low-risk. As an adjunct for someone drawn
         to it, that is a defensible bet. <strong>Supplements</strong> are
         mostly the opposite corner: unregulated products, thin trials,
-        and genuine interaction potential – worth naming to your
+        and genuine interaction potential, worth naming to your
         clinician and pharmacist rather than filing under harmless. The
         four claim-reading questions at the end of this page apply with
         extra force anywhere a product is sold outside medicine&rsquo;s
@@ -332,7 +332,7 @@ export default function ComparingYourOptions() {
         ; agree on a <strong>time window</strong> with your clinician;
         keep a simple diary; and decide <strong>in advance</strong> what
         result means continue versus stop. Done this way, even a
-        &ldquo;failed&rdquo; trial is a win – it retires an option with
+        &ldquo;failed&rdquo; trial is a win: it retires an option with
         confidence and clears the stage for the next.
       </P>
 

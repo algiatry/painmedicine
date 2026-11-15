@@ -94,7 +94,7 @@ export default function ThePainTeam() {
       <TeamRingFigure />
 
       <P>
-        Walk into a serious pain program and you will not meet one clinician –
+        Walk into a serious pain program and you will not meet one clinician;
         you will meet a roster. That is not bureaucracy. It is the working
         conclusion of nearly fifty years of pain science: chronic pain lives in
         biology, psychology, and daily life at once, so treating it well takes
@@ -125,7 +125,7 @@ export default function ThePainTeam() {
       <H2 id="why-a-team">Why pain care became a team sport</H2>
       <P>
         In 1977, the physician George Engel argued in <em>Science</em> that
-        medicine needed a new model – one that treated illness as{" "}
+        medicine needed a new model, one that treated illness as{" "}
         <strong>biopsychosocial</strong>: biological, psychological, and social
         at the same time. No field took that idea further than pain medicine,
         because no condition demanded it more. As the research summarized in{" "}
@@ -142,7 +142,7 @@ export default function ThePainTeam() {
         >
           pain and sleep
         </Link>{" "}
-        shows, mood, fear, stress, and sleep are not side effects of pain –
+        shows, mood, fear, stress, and sleep are not side effects of pain;
         they are dials wired into the pain system itself. A treatment plan that
         ignores them is leaving dials untouched.
       </P>
@@ -193,10 +193,10 @@ export default function ThePainTeam() {
         </li>
       </ul>
 
-      <H2 id="multi-vs-inter">Multidisciplinary vs. interdisciplinary – the wiring matters</H2>
+      <H2 id="multi-vs-inter">Multidisciplinary vs. interdisciplinary: the wiring matters</H2>
       <P>
         The IASP draws a distinction worth knowing when you evaluate a program.{" "}
-        <strong>Multidisciplinary</strong> means several disciplines treat you –
+        <strong>Multidisciplinary</strong> means several disciplines treat you,
         possibly in parallel, without talking much.{" "}
         <strong>Interdisciplinary</strong> means they function as one unit:
         meeting regularly, sharing a single biopsychosocial assessment, agreeing
