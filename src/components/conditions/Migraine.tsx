@@ -4,7 +4,7 @@ import { FIG } from "@/lib/fig";
 import { HeadProfile } from "../anatomy/HeadProfile";
 
 const link =
-  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
 
 /**
  * Figure 1 – the four phases of a migraine attack, with the pain as one
@@ -18,7 +18,7 @@ function PhasesFigure() {
     { x: 500, w: 140, name: "Postdrome", time: "up to a day after", fill: FIG.ground },
   ];
   return (
-    <Figure caption="A migraine attack in four phases (widths not to scale). The headache is the loudest chapter – but the attack often starts a day earlier and ends a day later, which is why 'just take something for the headache' misreads the disease.">
+    <Figure caption="A migraine attack in four phases (widths not to scale). The headache is the loudest chapter, but the attack often starts a day earlier and ends a day later, which is why 'just take something for the headache' misreads the disease.">
       <svg
         role="img"
         aria-labelledby="ph-title ph-desc"
@@ -141,7 +141,7 @@ export default function Migraine() {
       <KeyTakeaways
         items={[
           <>Migraine affects roughly <strong>one person in seven</strong> and ranks second among all causes of disability on Earth.</>,
-          <>An attack is a sequence – prodrome, aura (about one in three people), headache, postdrome – not just a <strong>headache</strong>.</>,
+          <>An attack is a sequence – prodrome, aura (about one in three people), headache, postdrome, not just a <strong>headache</strong>.</>,
           <>The trigeminal nerve releases <strong>CGRP</strong>, and blocking it works.</>,
           <>Acute medications work best taken <strong>early</strong>; use on too many days a month can cause medication-overuse headache.</>,
         ]}
@@ -165,7 +165,7 @@ export default function Migraine() {
         migraine hangover of fog and fatigue that costs many people another
         day. The prodrome hides a useful insight: some famous
         &ldquo;triggers&rdquo; are really early symptoms. Craving chocolate
-        may not cause the attack – the attack, already underway, may be
+        may not cause the attack; the attack, already underway, may be
         causing the craving.
       </P>
 
@@ -181,16 +181,16 @@ export default function Migraine() {
         pain-sensitive coverings and drives the throbbing, movement-hating
         pain, while brainstem and thalamic circuits amplify every other
         sense. That specificity is the story: CGRP is not a metaphor but a
-        molecule, and blocking it works – the arc told in full in{" "}
+        molecule, and blocking it works, the arc told in full in{" "}
         <Link href="/future-of-pain-medicine/biologics-and-gene-therapy" className={link}>
           biologics &amp; gene-targeted therapy
         </Link>
         .
       </P>
 
-      <H2 id="triggers">Triggers, honestly</H2>
+      <H2 id="triggers">Triggers</H2>
       <P>
-        Trigger lists are where migraine advice usually goes to die –
+        Trigger lists are where migraine advice usually goes to die:
         everything from weather to wine gets blamed, and patients end up
         policing their lives. The evidence supports a humbler model:
         triggers are probabilistic, they stack, and they act on a brain
@@ -203,13 +203,13 @@ export default function Migraine() {
         </Link>{" "}
         earns special mention: it is one of the few levers with mechanism
         and evidence on its side. A simple diary beats an internet trigger
-        list – it finds <em>your</em> pattern, and sometimes reveals that a
+        list: it finds <em>your</em> pattern, and sometimes reveals that a
         supposed trigger was the prodrome all along.
       </P>
 
-      <H2 id="diagnosis">How it&rsquo;s diagnosed – and the red flags</H2>
+      <H2 id="diagnosis">How it&rsquo;s diagnosed, and the red flags</H2>
       <P>
-        Migraine is a clinical diagnosis – there is no blood test or scan
+        Migraine is a clinical diagnosis: there is no blood test or scan
         that shows it. The international criteria look for the pattern:
         attacks lasting hours to days, pain that throbs and favors one
         side, worsens with routine movement, and travels with nausea or
@@ -219,7 +219,7 @@ export default function Migraine() {
         seconds, a first severe headache after fifty, fever with a stiff
         neck, aura-like symptoms that include weakness or trouble speaking,
         symptoms that arrive suddenly rather than marching gradually, or a
-        long-stable pattern that transforms. Those earn urgent evaluation –
+        long-stable pattern that transforms. Those earn urgent evaluation;
         everything else earns a proper migraine plan.
       </P>
 
@@ -238,21 +238,21 @@ export default function Migraine() {
         honest warning belongs in bold type: acute relief used on too many
         days a month, for months, can flip episodic migraine into a
         near-daily <strong>medication-overuse headache</strong> that the
-        same pills no longer touch. Counting days is not pedantry – it is
+        same pills no longer touch. Counting days is not pedantry. It is
         how you keep your rescue medicines working.
       </P>
       <P>
         Prevention is where the revolution happened. When attacks claim
         several days a month, guidelines shift from rescuing to preventing:
         long-standing oral options – blood-pressure, seizure, and
-        antidepressant medications with earned migraine evidence – plus, for
+        antidepressant medications with earned migraine evidence, plus, for
         chronic migraine, botulinum toxin injections. Since 2018 they have
         been joined by the <strong>CGRP monoclonal antibodies</strong> –
         monthly or quarterly injections that lower attack frequency with
-        strikingly little side-effect baggage – and{" "}
+        strikingly little side-effect baggage, and{" "}
         <strong>preventive gepants</strong> in tablet form. For many people
         these are the first treatments that feel designed for their disease,
-        because they were. Which of any of this fits you – including
+        because they were. Which of any of this fits you, including
         wearable neuromodulation devices for those who prefer hardware to
         pharmacology – is a plan to build with your clinician, not a menu to
         self-serve.

@@ -21,18 +21,18 @@ export function Figure({
   label?: string;
 }) {
   return (
-    <figure className="my-8">
+    <figure className="my-8 lg:-mx-12">
       <div className="figure-plate overflow-x-auto rounded-xl border p-4 sm:p-6">
         {animate ? <AnimateOnView>{children}</AnimateOnView> : children}
       </div>
-      <figcaption className="mt-3 flex gap-2.5 text-sm leading-relaxed text-slate-500 dark:text-slate-400">
+      <figcaption className="mt-3 flex gap-2.5 text-sm leading-relaxed text-subtle">
         <span
           aria-hidden="true"
-          className="mt-[0.4em] h-3 w-0.5 shrink-0 rounded-full bg-teal-600/70 dark:bg-teal-400/70"
+          className="mt-[0.4em] h-3 w-0.5 shrink-0 rounded-full bg-brand/70"
         />
         <span>
           {label ? (
-            <span className="font-semibold text-teal-700 dark:text-teal-300">
+            <span className="font-semibold text-brand">
               {label}.{" "}
             </span>
           ) : null}
@@ -61,7 +61,7 @@ export function H2({ id, children }: { id: string; children: ReactNode }) {
   return (
     <h2
       id={id}
-      className="mt-12 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100"
+      className="mt-12 scroll-mt-24 text-2xl sm:text-[1.75rem] font-bold tracking-tight text-ink"
     >
       {children}
     </h2>
@@ -70,7 +70,7 @@ export function H2({ id, children }: { id: string; children: ReactNode }) {
 
 /** Body paragraph shared by the explainer bodies. */
 export function P({ children }: { children: ReactNode }) {
-  return <p className="mt-4 text-slate-700 dark:text-slate-300">{children}</p>;
+  return <p className="mt-4 text-body">{children}</p>;
 }
 
 /**
@@ -82,18 +82,18 @@ export function KeyTakeaways({ items }: { items: ReactNode[] }) {
   return (
     <aside
       aria-label="Key takeaways"
-      className="my-8 rounded-2xl border border-teal-600/15 bg-gradient-to-b from-paper to-white p-6 shadow-card sm:p-7 dark:border-teal-400/15 dark:to-background"
+      className="my-8 rounded-2xl border border-brand/15 bg-gradient-to-b from-paper to-background p-6 shadow-card sm:p-7"
     >
-      <p className="text-xs font-semibold uppercase tracking-widest text-teal-700 dark:text-teal-400">
+      <p className="text-xs font-semibold uppercase tracking-widest text-brand">
         Key takeaways
       </p>
       <ul className="mt-4 space-y-3">
         {items.map((item, i) => (
-          <li key={i} className="flex gap-3 text-slate-700 dark:text-slate-300">
+          <li key={i} className="flex gap-3 text-body">
             <svg
               aria-hidden="true"
               viewBox="0 0 20 20"
-              className="mt-1 size-4 shrink-0 text-teal-600 dark:text-teal-400"
+              className="mt-1 size-4 shrink-0 text-brand"
               fill="currentColor"
             >
               <path
@@ -118,7 +118,7 @@ export function KeyTakeaways({ items }: { items: ReactNode[] }) {
 export function PullQuote({ children }: { children: ReactNode }) {
   return (
     <figure className="my-10">
-      <blockquote className="border-l-4 border-teal-600 pl-5 text-xl font-medium leading-snug text-slate-800 sm:pl-6 sm:text-2xl dark:border-teal-400 dark:text-slate-200">
+      <blockquote className="border-l-4 border-brand pl-5 text-xl font-medium leading-snug text-ink sm:pl-6 sm:text-2xl">
         {children}
       </blockquote>
     </figure>
@@ -127,8 +127,8 @@ export function PullQuote({ children }: { children: ReactNode }) {
 
 const CALLOUT_TONES = {
   note: {
-    wrap: "border-teal-600/20 bg-teal-50/60 dark:border-teal-400/20 dark:bg-teal-950/30",
-    label: "text-teal-800 dark:text-teal-300",
+    wrap: "border-brand/20 bg-teal-50/60 dark:bg-teal-950/30",
+    label: "text-brand-strong",
   },
   caution: {
     wrap: "border-amber-500/30 bg-amber-50/70 dark:border-amber-500/25 dark:bg-amber-950/25",
@@ -153,7 +153,7 @@ export function Callout({
   const t = CALLOUT_TONES[tone];
   return (
     <aside
-      className={`my-7 rounded-xl border px-5 py-4 text-slate-700 dark:text-slate-300 ${t.wrap}`}
+      className={`my-7 rounded-xl border px-5 py-4 text-body ${t.wrap}`}
     >
       {title && (
         <p className={`text-sm font-semibold ${t.label}`}>{title}</p>

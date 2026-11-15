@@ -82,6 +82,18 @@ Coach *beside* the reader (companion), never *above* them (guru).
   allowed per CONTENT-INTAKE.md §2, never framed as the reader's dose)
 - Any "how to obtain" framing for controlled substances
 
+### House-style tics (capped by `content-lint`)
+Each of these is fine once and reads as a formula when repeated. The lint
+fails a page that goes over the cap (`TIC_CAPS` in `scripts/content-lint.ts`):
+- **Spaced en dash as a pause** (` – `): at most 15 per 1,000 words. Prefer a
+  comma, colon, parentheses, or a full stop.
+- **"honest / honestly"**: at most 5 per page. State the finding instead of
+  vouching for it.
+- **"actually"**: at most 1 per page. It can almost always be deleted.
+
+Titles, headings, and nav labels use sentence case. Quoted terms in typed
+content use curly double quotes (“like this”), not straight single quotes.
+
 ## Required sections per clinical page
 
 1. **Title + one-paragraph plain answer** (AEO: answer the query in the first 60 words)

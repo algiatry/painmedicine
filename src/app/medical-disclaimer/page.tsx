@@ -10,12 +10,12 @@ export const metadata: Metadata = {
 
 export default function MedicalDisclaimerPage() {
   return (
-    <article className="mx-auto max-w-3xl px-4 sm:px-6 py-14 space-y-8">
-      <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
+    <article className="mx-auto max-w-[42rem] px-4 sm:px-6 py-14 space-y-8">
+      <h1 className="text-4xl sm:text-[2.75rem] sm:leading-[1.1] font-bold tracking-tight text-ink">
         Medical disclaimer
       </h1>
 
-      <section className="space-y-4 text-slate-700 dark:text-slate-300">
+      <section className="space-y-4 text-body">
         <p className="text-lg">
           All content on {SITE.name} is provided for general educational and
           informational purposes only. It is <strong>not medical advice</strong>,

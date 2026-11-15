@@ -9,7 +9,7 @@ import { FIG } from "@/lib/fig";
  */
 function TimelineFigure() {
   return (
-    <Figure caption="Acute pain tracks healing and fades. Chronic pain persists past about three months – often after the tissue itself has healed.">
+    <Figure caption="Acute pain tracks healing and fades. Chronic pain persists past about three months, often after the tissue itself has healed.">
       <svg
         role="img"
         aria-labelledby="timeline-title timeline-desc"
@@ -110,7 +110,7 @@ export default function AcuteVsChronic() {
       <P>
         Acute pain is the pain of a fresh injury or illness: a sprain, a burn, a
         broken bone, a surgical incision. It comes on with the problem, it is
-        usually in proportion to it, and – crucially – it{" "}
+        usually in proportion to it, and, crucially, it{" "}
         <strong>fades as you heal</strong>. This is pain doing exactly what it
         evolved to do: grab your attention, make you protect the part, and stand
         down once the danger has passed. An alarm that switches off when the fire
@@ -133,7 +133,7 @@ export default function AcuteVsChronic() {
         The ICD-11 draws a useful split. In{" "}
         <strong>chronic secondary pain</strong>, the pain is a symptom of
         something else that is ongoing – cancer, rheumatoid arthritis, a nerve
-        injury – and it is managed alongside that condition. In{" "}
+        injury, and it is managed alongside that condition. In{" "}
         <strong>chronic primary pain</strong>, the pain{" "}
         <em>is</em> the condition: it no longer points to active damage
         elsewhere. Fibromyalgia, many cases of chronic low back pain, and chronic
@@ -147,17 +147,17 @@ export default function AcuteVsChronic() {
         that keeps firing can become sensitized – the{" "}
         <Link
           href="/understanding-pain/how-pain-works"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           central sensitization
         </Link>{" "}
-        described in how pain works – so the alarm grows louder and easier to
+        described in how pain works, so the alarm grows louder and easier to
         trip even as the tissue quiets down. That is why chronic pain can be very
         real while scans look normal, and why treating it often means calming the
         nervous system, not just chasing an injury that is no longer there.
       </P>
 
-      <H2 id="hope">This matters – because chronic pain is treatable</H2>
+      <H2 id="hope">This matters, because chronic pain is treatable</H2>
       <P>
         None of this means chronic pain is imaginary or permanent. Understanding
         that the mechanism has shifted is what opens the door to help: paced
@@ -167,7 +167,7 @@ export default function AcuteVsChronic() {
         their lives. That is the work of{" "}
         <Link
           href="/what-is-pain-medicine"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           pain medicine as a specialty
         </Link>

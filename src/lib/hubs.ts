@@ -20,7 +20,7 @@ export type Hub = PageMeta & {
 export const HUBS: Hub[] = [
   {
     slug: "what-is-pain-medicine",
-    title: "What Is Pain Medicine?",
+    title: "What is pain medicine?",
     description:
       "Pain medicine is a board-certified medical specialty dedicated to diagnosing, treating, and managing pain. Learn who pain specialists are and how the specialty works.",
     status: "sourced",
@@ -35,7 +35,7 @@ export const HUBS: Hub[] = [
       {
         title: "How pain physicians train",
         blurb:
-          "The nine-year road: six residency doors, one 12-month accredited fellowship, one shared board exam – and how to verify the credential.",
+          "The nine-year road: six residency doors, one 12-month accredited fellowship, one shared board exam, and how to verify the credential.",
         href: "/what-is-pain-medicine/how-pain-physicians-train",
       },
       {
@@ -53,7 +53,7 @@ export const HUBS: Hub[] = [
       {
         title: "Pain clinics vs. pain medicine",
         blurb:
-          "'Pain clinic' is a sign anyone can hang. The five checkable signals of a credentialed practice.",
+          "“Pain clinic” is a sign anyone can hang. The five checkable signals of a credentialed practice.",
         href: "/what-is-pain-medicine/pain-clinics-vs-pain-medicine",
       },
     ],
@@ -72,21 +72,21 @@ export const HUBS: Hub[] = [
   },
   {
     slug: "understanding-pain",
-    title: "Understanding Pain",
+    title: "Understanding pain",
     description:
-      "How pain actually works: acute vs. chronic pain, the three recognized types of pain, and why pain is more than tissue damage.",
+      "How pain works: acute vs. chronic pain, the three recognized types of pain, and why pain is more than tissue damage.",
     status: "sourced",
     lastUpdated: "2026-08-26",
     heading: "Understanding pain",
     intro: [
-      "Pain is not a simple alarm wire from body to brain. It is an experience the nervous system constructs – which is why two people with the same injury can hurt very differently, and why pain can persist after tissue has healed.",
+      "Pain is not a simple alarm wire from body to brain. It is an experience the nervous system constructs, which is why two people with the same injury can hurt very differently, and why pain can persist after tissue has healed.",
       "Understanding the kind of pain you have matters, because different kinds of pain respond to different treatments. These plain-language guides build that foundation, drawn from primary sources and cited on every page.",
     ],
     planned: [
       {
         title: "How pain works",
         blurb:
-          "Nociceptors, the spinal 'gate,' and central sensitization – the science of hurting, made readable.",
+          "Nociceptors, the spinal “gate,” and central sensitization – the science of hurting, made readable.",
         href: "/understanding-pain/how-pain-works",
       },
       {
@@ -110,7 +110,7 @@ export const HUBS: Hub[] = [
       {
         title: "Pain and sleep",
         blurb:
-          "The cycle runs both ways – but sleep loss drives pain harder than pain drives sleep loss. What one bad night does, and what helps.",
+          "The cycle runs both ways, but sleep loss drives pain harder than pain drives sleep loss. What one bad night does, and what helps.",
         href: "/understanding-pain/pain-and-sleep",
       },
       {
@@ -122,7 +122,7 @@ export const HUBS: Hub[] = [
       {
         title: "The placebo effect",
         blurb:
-          "Real, blockable-with-a-drug biology: expectation switching on the brain's own pain-relief chemistry – and the honest limits of what it can do.",
+          "Real, blockable-with-a-drug biology: expectation switching on the brain's own pain-relief chemistry, and the limits of what it can do.",
         href: "/understanding-pain/the-placebo-effect",
       },
       {
@@ -134,7 +134,7 @@ export const HUBS: Hub[] = [
       {
         title: "Attention and distraction",
         blurb:
-          "Why a cartoon helps a child through a blood draw: attention is a real dial on the brainstem's pain-control pathway, caught on brain scans – and it turns both ways.",
+          "Why a cartoon helps a child through a blood draw: attention is a real dial on the brainstem's pain-control pathway, caught on brain scans, and it turns both ways.",
         href: "/understanding-pain/attention-and-distraction",
       },
       {
@@ -147,7 +147,7 @@ export const HUBS: Hub[] = [
   },
   {
     slug: "treatments",
-    title: "Pain Treatments Today",
+    title: "Pain treatments today",
     description:
       "The full landscape of evidence-based pain treatment: medications, interventional procedures, and physical and behavioral therapies.",
     status: "sourced",
@@ -161,19 +161,19 @@ export const HUBS: Hub[] = [
       {
         title: "Medications for pain",
         blurb:
-          "What pain medications are and the different types of pain relievers – acetaminophen and the NSAIDs, topicals, the nerve-pain medications, opioids honestly, and the first new class in decades – and how to tell which one is right for you.",
+          "What pain medications are and the different types of pain relievers – acetaminophen and the NSAIDs, topicals, the nerve-pain medications, opioids, and the first new class in decades, and how to tell which one is right for you.",
         href: "/treatments/medications-for-pain",
       },
       {
         title: "Interventional procedures",
         blurb:
-          "The image-guided middle layer between pills and surgery: blocks, radiofrequency ablation, stimulators you can test-drive – and the window rule that makes them all work.",
+          "The image-guided middle layer between pills and surgery: blocks, radiofrequency ablation, stimulators you can test-drive, and the window rule that makes them all work.",
         href: "/treatments/interventional-procedures",
       },
       {
         title: "Physical & behavioral therapies",
         blurb:
-          "The active half of pain medicine: movement as medicine, the pacing skill that ends the boom-bust cycle, and what CBT and mindfulness honestly deliver.",
+          "The active half of pain medicine: movement as medicine, the pacing skill that ends the boom-bust cycle, and what CBT and mindfulness deliver.",
         href: "/treatments/physical-and-behavioral-therapies",
       },
       {
@@ -185,37 +185,37 @@ export const HUBS: Hub[] = [
       {
         title: "Comparing your options",
         blurb:
-          "The honest evidence map: why almost everything helps 'modestly,' why modest wins stack, and how to read any treatment claim like the field does.",
+          "The evidence map: why almost everything helps “modestly,” why modest wins stack, and how to read any treatment claim like the field does.",
         href: "/treatments/comparing-your-options",
       },
       {
         title: "Pain medications & your organs",
         blurb:
-          "Liver, kidneys, heart, and gut: the established label limits printed as literacy – acetaminophen stacking, the kidney 'triple whammy,' and the 2015 FDA heart warning in plain terms.",
+          "Liver, kidneys, heart, and gut: the established label limits printed as literacy – acetaminophen stacking, the kidney “triple whammy,” and the 2015 FDA heart warning in plain terms.",
         href: "/treatments/medication-organ-safety",
       },
       {
         title: "Opioids, honestly",
         blurb:
-          "Dependence vs. addiction, tolerance and the trap at the end of it, the combinations that kill, naloxone, safe storage, and how tapers actually succeed.",
+          "Dependence vs. addiction, tolerance and the trap at the end of it, the combinations that kill, naloxone, safe storage, and how tapers succeed.",
         href: "/treatments/opioid-stewardship",
       },
       {
         title: "Opioids for acute pain",
         blurb:
-          "What the largest evidence overview found: real relief after procedures and in abdominal emergencies, very little for sprains and strains, none for acute back or neck pain – and why ibuprofen is often the evidence working.",
+          "What the largest evidence overview found: real relief after procedures and in abdominal emergencies, very little for sprains and strains, none for acute back or neck pain, and why ibuprofen is often the evidence working.",
         href: "/treatments/opioids-for-acute-pain",
       },
       {
         title: "Ketamine",
         blurb:
-          "The anesthetic now sold by mail: what blocking NMDA receptors does to amplified pain, what infusion trials honestly show, and why a monitored clinic differs from a lozenge at home.",
+          "The anesthetic now sold by mail: what blocking NMDA receptors does to amplified pain, what infusion trials show, and why a monitored clinic differs from a lozenge at home.",
         href: "/treatments/ketamine",
       },
       {
         title: "Buprenorphine for chronic pain",
         blurb:
-          "Not only the addiction drug: a partial-agonist opioid with a ceiling on breathing suppression, its pain-specific products, and what the 2025 trial of switching from high-dose opioids honestly found.",
+          "Not only the addiction drug: a partial-agonist opioid with a ceiling on breathing suppression, its pain-specific products, and what the 2025 trial of switching from high-dose opioids found.",
         href: "/treatments/buprenorphine-for-pain",
       },
       {
@@ -234,7 +234,7 @@ export const HUBS: Hub[] = [
   },
   {
     slug: "conditions",
-    title: "Pain Conditions",
+    title: "Pain conditions",
     description:
       "Condition-by-condition guides to common pain conditions: why it hurts, today's treatment approaches, and when to see a specialist.",
     status: "sourced",
@@ -242,19 +242,19 @@ export const HUBS: Hub[] = [
     heading: "Pain conditions",
     intro: [
       "Every pain condition has its own mechanism, its own treatment ladder, and its own research pipeline. These guides connect all three – what it is, what helps today, and what science is working on next.",
-      "Guides are written from cited primary sources (WHO, NIH, guideline bodies, peer-reviewed literature) and publish with an honest byline while independent physician review is arranged.",
+      "Guides are written from cited primary sources (WHO, NIH, guideline bodies, peer-reviewed literature) and publish with a byline while independent physician review is arranged.",
     ],
     planned: [
       {
         title: "Low back pain",
         blurb:
-          "The world's leading cause of disability: what can actually hurt, why most cases are 'non-specific,' what an MRI really shows, the red flags, and today's treatment playbook.",
+          "The world's leading cause of disability: what can hurt, why most cases are “non-specific,” what an MRI really shows, the red flags, and today's treatment playbook.",
         href: "/conditions/low-back-pain",
       },
       {
         title: "Neuropathic pain",
         blurb:
-          "When the wiring becomes the alarm: burning feet, the numb-yet-painful paradox, and the honest map of nerve-pain treatment from first-line drugs to stimulators.",
+          "When the wiring becomes the alarm: burning feet, the numb-yet-painful paradox, and the map of nerve-pain treatment from first-line drugs to stimulators.",
         href: "/conditions/neuropathic-pain",
       },
       {
@@ -266,13 +266,13 @@ export const HUBS: Hub[] = [
       {
         title: "Arthritis pain",
         blurb:
-          "One word, two diseases: osteoarthritis (not 'wear and tear') vs. the immune-driven arthritides – the day-pattern that tells them apart, and why one of them is a race.",
+          "One word, two diseases: osteoarthritis (not “wear and tear”) vs. the immune-driven arthritides – the day-pattern that tells them apart, and why one of them is a race.",
         href: "/conditions/arthritis-pain",
       },
       {
         title: "Fibromyalgia",
         blurb:
-          "The signature disease of a sensitized pain system: the measurable evidence it's real, and why gentleness – tai chi included – beats most pills.",
+          "The signature disease of a sensitized pain system: the measurable evidence it's real, and why gentleness, tai chi included, beats most pills.",
         href: "/conditions/fibromyalgia",
       },
       {
@@ -326,7 +326,7 @@ export const HUBS: Hub[] = [
       {
         title: "TMJ pain and jaw disorders (TMD)",
         blurb:
-          "Three places jaw pain lives, why a clicking jaw is usually harmless, what the OPPERA studies found actually predicts TMD, and why reversible care comes first.",
+          "Three places jaw pain lives, why a clicking jaw is usually harmless, what the OPPERA studies found predicts TMD, and why reversible care comes first.",
         href: "/conditions/tmj-disorders",
       },
       {
@@ -338,7 +338,7 @@ export const HUBS: Hub[] = [
       {
         title: "Central post-stroke pain",
         blurb:
-          "Pain from inside the pathway: the thalamic lesion science, why it starts months after the stroke and gets missed, and the honest state of treatment.",
+          "Pain from inside the pathway: the thalamic lesion science, why it starts months after the stroke and gets missed, and the state of treatment.",
         href: "/conditions/central-post-stroke-pain",
       },
       {
@@ -368,21 +368,21 @@ export const HUBS: Hub[] = [
       {
         title: "Knee and hip osteoarthritis",
         blurb:
-          "The treatment ladder, honestly: why exercise is the base, how long a steroid injection lasts, which injections guidelines recommend against, and how long a new knee lasts.",
+          "The treatment ladder: why exercise is the base, how long a steroid injection lasts, which injections guidelines recommend against, and how long a new knee lasts.",
         href: "/conditions/knee-and-hip-osteoarthritis",
       },
     ],
   },
   {
     slug: "future-of-pain-medicine",
-    title: "The Future of Pain Medicine",
+    title: "The future of pain medicine",
     description:
       "The future of pain management: the next generation of pain relief – non-opioid drug pipelines, advanced neuromodulation, biologics, precision pain medicine, and the science reshaping the field.",
     status: "sourced",
     lastUpdated: "2026-08-26",
     heading: "The future of pain medicine",
     intro: [
-      "Pain science is in the middle of its most productive era in decades. After years in which pain relief meant choosing among old drug classes, new mechanisms are reaching patients – and a deep pipeline sits behind them.",
+      "Pain science is in the middle of its most productive era in decades. After years in which pain relief meant choosing among old drug classes, new mechanisms are reaching patients, and a deep pipeline sits behind them.",
       "This hub tracks where the field is going: new non-opioid drug classes, smarter neuromodulation, biologics, gene-targeted approaches, and precision medicine that matches treatment to your biology. Updated as the science moves.",
     ],
     planned: [
@@ -413,7 +413,7 @@ export const HUBS: Hub[] = [
       {
         title: "Mind, brain, and new frontiers",
         blurb:
-          "Pain reprocessing science, virtual reality analgesia, and early-stage research – covered honestly.",
+          "Pain reprocessing science, virtual reality analgesia, and early-stage research – covered.",
         href: "/future-of-pain-medicine/mind-and-brain",
       },
     ],

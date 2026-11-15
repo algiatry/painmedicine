@@ -40,7 +40,7 @@ const GROUPS = [
 
 function MetabolizerFigure() {
   return (
-    <Figure caption="The same dose of codeine, three different people. The CYP2D6 gene decides how much morphine each one makes – and whether the drug is useless, effective, or dangerous.">
+    <Figure caption="The same dose of codeine, three different people. The CYP2D6 gene decides how much morphine each one makes, and whether the drug is useless, effective, or dangerous.">
       <svg
         role="img"
         aria-labelledby="pgx-title pgx-desc"
@@ -90,8 +90,8 @@ export default function PrecisionPainMedicine() {
       <MetabolizerFigure />
 
       <P>
-        Two people with the same injury can need completely different treatments
-        – and can react to the very same drug in opposite ways. Precision pain
+        Two people with the same injury can need completely different treatments,
+        and can react to the very same drug in opposite ways. Precision pain
         medicine aims to use your biology to guide care, replacing trial and
         error with something closer to a fit.
       </P>
@@ -149,7 +149,7 @@ export default function PrecisionPainMedicine() {
         nociplastic distinction in{" "}
         <Link
           href="/understanding-pain/types-of-pain"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           the three types of pain
         </Link>
@@ -161,7 +161,7 @@ export default function PrecisionPainMedicine() {
 
       <H2 id="biomarkers">The search for an objective signal</H2>
       <P>
-        Pain has no blood test – and a great deal of research is trying to change
+        Pain has no blood test, and a great deal of research is trying to change
         that. Quantitative sensory testing, brain and nerve imaging, and
         candidate blood markers are all being studied as{" "}
         <strong>biomarkers</strong> that could confirm a pain mechanism, predict
@@ -188,7 +188,7 @@ export default function PrecisionPainMedicine() {
         risk. Many of the new drugs in the{" "}
         <Link
           href="/future-of-pain-medicine/pipeline"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           pain treatment pipeline
         </Link>{" "}

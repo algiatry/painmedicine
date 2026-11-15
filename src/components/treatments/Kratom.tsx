@@ -4,7 +4,7 @@ import { FIG } from "@/lib/fig";
 
 function LeafForkFigure() {
   return (
-    <Figure caption="The same leaf, two very different products. Traditional leaf preparations carry only trace 7-OH; concentrated 7-OH tablets isolate and multiply the leaf's most opioid-like compound – and are the target of the 2026 federal scheduling action.">
+    <Figure caption="The same leaf, two very different products. Traditional leaf preparations carry only trace 7-OH; concentrated 7-OH tablets isolate and multiply the leaf's most opioid-like compound, and are the target of the 2026 federal scheduling action.">
       <svg
         role="img"
         aria-labelledby="kratom-fork-title kratom-fork-desc"
@@ -140,7 +140,7 @@ export default function Kratom() {
         through a workday, larger amounts for pain and rest at the end of one.
         In the United States it arrives as powder, capsules, and extracts, and
         federal survey data suggest roughly <strong>1.7 million Americans</strong>{" "}
-        use it in a given year – with pain the most commonly reported reason.
+        use it in a given year, with pain the most commonly reported reason.
       </P>
 
 
@@ -149,7 +149,7 @@ export default function Kratom() {
         The leaf&rsquo;s main active compound is <strong>mitragynine</strong>,
         which makes up about one to two percent of dried leaf. Mitragynine is a{" "}
         <strong>partial agonist at mu-opioid receptors</strong> – the same
-        receptors morphine and oxycodone act on – which is why researchers call
+        receptors morphine and oxycodone act on, which is why researchers call
         kratom an &ldquo;atypical opioid&rdquo; even though the plant is
         unrelated to the opium poppy. It also touches adrenergic and serotonin
         systems, which fits what users describe: stimulant-like effects at low
@@ -166,7 +166,7 @@ export default function Kratom() {
         human data yet establish that margin.
       </P>
 
-      <H2 id="evidence">What the evidence shows – and doesn&rsquo;t</H2>
+      <H2 id="evidence">What the evidence shows, and doesn&rsquo;t</H2>
       <P>
         Surveys of tens of thousands of users consistently report relief from
         pain, and some people with chronic pain report substituting kratom for
@@ -187,7 +187,7 @@ export default function Kratom() {
         studies that could close that gap.
       </P>
 
-      <H2 id="risks">The risks, honestly</H2>
+      <H2 id="risks">The risks</H2>
       <P>
         Because mitragynine works through opioid receptors, regular use can
         produce <strong>physical dependence</strong>, and stopping can bring an
@@ -196,7 +196,7 @@ export default function Kratom() {
         rare but documented liver injury, and seizures – mostly with heavy use
         or combinations. Calls to U.S. poison centers about kratom have risen
         sharply. Deaths involving kratom are rare relative to the number of
-        users and almost always involve other drugs – but that is itself the
+        users and almost always involve other drugs, but that is itself the
         warning: kratom is processed by the same liver enzymes as many common
         medications, and mixing it with opioids, benzodiazepines, or alcohol
         is where the danger concentrates.
@@ -204,7 +204,7 @@ export default function Kratom() {
       <P>
         The other risk is the product itself. Because kratom is sold as a
         botanical outside FDA oversight, the powder in one package can differ
-        from the next – in alkaloid content, in purity, and occasionally in
+        from the next, in alkaloid content, in purity, and occasionally in
         contamination. A 2018 multistate <em>Salmonella</em> outbreak was
         traced to kratom products, and testing has found heavy metals in some.
         None of this is unique to kratom; it is what an unregulated supply
@@ -229,18 +229,18 @@ export default function Kratom() {
       </P>
       <P>
         In July 2026 the DEA filed notice of intent to temporarily place 7-OH
-        above that natural threshold – along with three related synthetic
-        compounds – into <strong>Schedule I</strong>. The first half of that
+        above that natural threshold, along with three related synthetic
+        compounds, into <strong>Schedule I</strong>. The first half of that
         action landed: on <strong>August 26, 2026</strong>, a temporary order
         took effect placing three synthetics – mitragynine pseudoindoxyl,
-        MGM-15, and MGM-16 – in Schedule I, where they remain. The plan for
+        MGM-15, and MGM-16, in Schedule I, where they remain. The plan for
         7-OH itself then changed: on <strong>October 14, 2026</strong>, acting
         on a new recommendation from HHS, the DEA withdrew its July notice and
         proposed a revised one that would place 7-OH together with
         mitragynine pseudoindoxyl into Schedule I above a new combined
         threshold, with MGM-15 and MGM-16 carried forward in a separate
         notice. As of today, no temporary order for 7-OH itself has taken
-        effect – it remains a proposal, not yet in force – and natural leaf
+        effect – it remains a proposal, not yet in force, and natural leaf
         kratom remains federally unscheduled throughout. However the rest
         resolves, the direction is clear: regulators are drawing a line
         between the traditional leaf and the isolated compound.
@@ -267,11 +267,11 @@ export default function Kratom() {
         changes real decisions: anesthesia planning, drug-interaction
         checks, and how withdrawal or dependence would be recognized and
         treated if they arise. Pain medicine&rsquo;s regulated pipeline is
-        working on the same target kratom points at – opioid-receptor relief
-        with less harm – and you can follow those candidates in the{" "}
+        working on the same target kratom points at, opioid-receptor relief
+        with less harm, and you can follow those candidates in the{" "}
         <Link
           href="/future-of-pain-medicine/pipeline"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           pain treatment pipeline
         </Link>

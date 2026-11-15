@@ -43,28 +43,28 @@ export const ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "how-pain-works",
-    title: "How Pain Works",
+    title: "How pain works",
     description:
-      "How the body makes pain: the nerve endings that detect a threat, the spinal 'gate' that filters the signal, and why the brain – not the injury alone – decides how much it hurts.",
+      "How the body makes pain: the nerve endings that detect a threat, the spinal “gate” that filters the signal, and why the brain, not the injury alone, decides how much it hurts.",
     status: "sourced",
     lastUpdated: LAST_UPDATED,
     answer:
-      "Pain begins when specialized nerve endings called nociceptors detect a threat – heat, pressure, or tissue damage – and send a signal up your nerves to the spinal cord and brain. But pain is not a simple readout of that signal. The spinal cord can turn the volume up or down, and the brain builds the final experience of hurting.",
+      "Pain begins when specialized nerve endings called nociceptors detect a threat – heat, pressure, or tissue damage, and send a signal up your nerves to the spinal cord and brain. But pain is not a simple readout of that signal. The spinal cord can turn the volume up or down, and the brain builds the final experience of hurting.",
     faqs: [
       {
         question: "Does more pain always mean more damage?",
         answer:
-          "No. Pain is the nervous system's protective response, not a direct meter of tissue damage. Serious injuries can hurt little at first, and very real pain can persist long after tissue has healed. How much you hurt reflects how much threat your nervous system perceives – which many things can influence.",
+          "No. Pain is the nervous system's protective response, not a direct meter of tissue damage. Serious injuries can hurt little at first, and very real pain can persist long after tissue has healed. How much you hurt reflects how much threat your nervous system perceives, which many things can influence.",
       },
       {
-        question: "If the brain makes pain, is it 'all in my head'?",
+        question: "If the brain makes pain, is it “all in my head”?",
         answer:
-          "No. All pain is produced by the nervous system, and it is completely real. 'Made by the brain' is not the same as 'imagined.' The brain constructs pain from real signals and real biology – describing that process explains how pain works, it does not mean the pain is fake.",
+          "No. All pain is produced by the nervous system, and it is completely real. “Made by the brain” is not the same as “imagined.” The brain constructs pain from real signals and real biology – describing that process explains how pain works, it does not mean the pain is fake.",
       },
       {
         question: "Why does rubbing a sore spot make it feel better?",
         answer:
-          "Rubbing activates large, fast touch nerves that can partly 'close the gate' in the spinal cord, so fewer pain signals reach the brain. This everyday effect is the gate control theory in action, and it is part of why devices like TENS units are used for some kinds of pain.",
+          "Rubbing activates large, fast touch nerves that can partly “close the gate” in the spinal cord, so fewer pain signals reach the brain. This everyday effect is the gate control theory in action, and it is part of why devices like TENS units are used for some kinds of pain.",
       },
     ],
     references: [
@@ -112,13 +112,13 @@ export const ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "types-of-pain",
-    title: "The Three Types of Pain",
+    title: "The three types of pain",
     description:
       "Nociceptive, neuropathic, and nociplastic pain – the modern, mechanism-based way clinicians classify pain, and why the type you have shapes which treatments tend to help.",
     status: "sourced",
     lastUpdated: LAST_UPDATED,
     answer:
-      "Clinicians group pain into three mechanism-based types. Nociceptive pain comes from actual or threatened tissue damage, like a sprain or arthritis. Neuropathic pain comes from damage or disease in the nervous system itself, like sciatica or diabetic neuropathy. Nociplastic pain – recognized by the IASP in 2017 – comes from a changed, over-sensitive pain system, as in fibromyalgia.",
+      "Clinicians group pain into three mechanism-based types. Nociceptive pain comes from actual or threatened tissue damage, like a sprain or arthritis. Neuropathic pain comes from damage or disease in the nervous system itself, like sciatica or diabetic neuropathy. Nociplastic pain, recognized by the IASP in 2017, comes from a changed, over-sensitive pain system, as in fibromyalgia.",
     faqs: [
       {
         question: "What is nociplastic pain in simple terms?",
@@ -128,7 +128,7 @@ export const ARTICLES: Article[] = [
       {
         question: "Can you have more than one type of pain at once?",
         answer:
-          "Yes. 'Mixed pain' is common. Chronic low back pain, for example, can have nociceptive, neuropathic, and nociplastic features together. That overlap is one reason some pain is complex to treat and benefits from a specialist's assessment.",
+          "Yes. “Mixed pain” is common. Chronic low back pain, for example, can have nociceptive, neuropathic, and nociplastic features together. That overlap is one reason some pain is complex to treat and benefits from a specialist's assessment.",
       },
       {
         question: "How do clinicians tell which type of pain I have?",
@@ -168,7 +168,7 @@ export const ARTICLES: Article[] = [
       {
         title: "Neuropathic pain",
         href: "/conditions/neuropathic-pain",
-        blurb: "The second type in full – when the wiring becomes the alarm.",
+        blurb: "The second type in full, when the wiring becomes the alarm.",
       },
       {
         title: "Fibromyalgia",
@@ -181,16 +181,16 @@ export const ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "acute-vs-chronic-pain",
-    title: "Acute vs. Chronic Pain",
+    title: "Acute vs. chronic pain",
     description:
       "Acute pain protects you and fades as you heal. Chronic pain lasts beyond three months and can become a condition in its own right. Why that line matters for how pain is understood and treated.",
     status: "sourced",
     lastUpdated: LAST_UPDATED,
     answer:
-      "Acute pain is short-term pain that warns you of injury or illness and usually fades as your body heals. Chronic pain is pain that lasts or keeps returning for more than three months – often past the point where tissue has healed. In 2019 the World Health Organization's ICD-11 recognized chronic pain as a health condition in its own right.",
+      "Acute pain is short-term pain that warns you of injury or illness and usually fades as your body heals. Chronic pain is pain that lasts or keeps returning for more than three months, often past the point where tissue has healed. In 2019 the World Health Organization's ICD-11 recognized chronic pain as a health condition in its own right.",
     faqs: [
       {
-        question: "When does pain officially become 'chronic'?",
+        question: "When does pain officially become “chronic”?",
         answer:
           "The widely used line is three months of pain that persists or keeps returning, the threshold adopted by the WHO's ICD-11. It is a practical marker, not a magic switch – the point is that pain lasting this long often behaves differently from fresh injury pain and deserves its own assessment.",
       },
@@ -200,7 +200,7 @@ export const ARTICLES: Article[] = [
           "Not necessarily. Chronic pain can continue after tissue has healed because the nervous system's alarm has become sensitized and keeps signaling. The pain is real; the mechanism has simply shifted from injury toward a change in how the pain system itself is working.",
       },
       {
-        question: "Can chronic pain actually be treated?",
+        question: "Can chronic pain be treated?",
         answer:
           "Yes. A complete cure is not always possible, but many people meaningfully reduce their pain and regain function using a combination of approaches – physical, medical, and psychological. A pain specialist can help build a plan. Discuss the options that fit your situation with your own clinician.",
       },
@@ -250,23 +250,23 @@ export const ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "measuring-pain",
-    title: "Measuring Pain",
+    title: "Measuring pain",
     description:
       "Why pain is so hard to measure, the 1947 attempt to give it a unit (the dol), what the 0-to-10 scale can and can't capture, and how to describe your pain so your care team truly understands it.",
     status: "sourced",
     lastUpdated: "2026-08-31",
     answer:
-      "Pain is subjective – there is no blood test or scanner that measures it, and no unit: researchers proposed the 'dol' in 1947, but it never held up outside the lab. Clinicians use rating tools like the 0-to-10 numeric scale, the faces scale, and questionnaires to track it over time. A single number is useful shorthand, but describing your pain's quality, timing, and effect on your life tells your care team far more.",
+      "Pain is subjective – there is no blood test or scanner that measures it, and no unit: researchers proposed the “dol” in 1947, but it never held up outside the lab. Clinicians use rating tools like the 0-to-10 numeric scale, the faces scale, and questionnaires to track it over time. A single number is useful shorthand, but describing your pain's quality, timing, and effect on your life tells your care team far more.",
     faqs: [
       {
         question: "Is a higher pain number always worse?",
         answer:
-          "The number reflects your own experience, not a comparison with anyone else – your '6' and another person's '6' are not the same thing. What is most useful is the trend over time for you: whether your own numbers, and what you can do, are improving or getting worse.",
+          "The number reflects your own experience, not a comparison with anyone else – your “6” and another person's “6” are not the same thing. What is most useful is the trend over time for you: whether your own numbers, and what you can do, are improving or getting worse.",
       },
       {
         question: "What's a better way to describe my pain than a number?",
         answer:
-          "Describe the quality (burning, aching, stabbing, electric), the pattern (constant or in flares), what makes it better or worse, and – most tellingly – what it stops you from doing. Concrete examples from daily life give your clinician far more to work with than a single score.",
+          "Describe the quality (burning, aching, stabbing, electric), the pattern (constant or in flares), what makes it better or worse, and, most tellingly, what it stops you from doing. Concrete examples from daily life give your clinician far more to work with than a single score.",
       },
       {
         question: "Why does my clinician ask about mood and sleep?",
@@ -276,12 +276,12 @@ export const ARTICLES: Article[] = [
       {
         question: "Can pain be measured in units, like temperature in degrees?",
         answer:
-          "No – there is no accepted unit of pain. Researchers tried: in 1947 a Cornell team proposed the 'dol' and built a 0-to-10.5 scale from controlled heat stimuli, but other laboratories could not reproduce the results and the unit was abandoned. Modern medicine measures pain by structured self-report instead, because your own report is the closest thing there is to the experience itself.",
+          "No – there is no accepted unit of pain. Researchers tried: in 1947 a Cornell team proposed the “dol” and built a 0-to-10.5 scale from controlled heat stimuli, but other laboratories could not reproduce the results and the unit was abandoned. Modern medicine measures pain by structured self-report instead, because your own report is the closest thing there is to the experience itself.",
       },
       {
-        question: "What is a 'dol' in pain measurement?",
+        question: "What is a “dol” in pain measurement?",
         answer:
-          "The dol – from dolor, the Latin word for pain – was a proposed unit of pain intensity from the 1940s. One dol equalled two 'just noticeable differences' in pain, on a scale that ran from 0 to 10.5. It survives in the history of pain research and in trivia, but it was never adopted in clinical care, and none of the pain scales used today are built on it.",
+          "The dol, from dolor, the Latin word for pain – was a proposed unit of pain intensity from the 1940s. One dol equalled two “just noticeable differences” in pain, on a scale that ran from 0 to 10.5. It survives in the history of pain research and in trivia, but it was never adopted in clinical care, and none of the pain scales used today are built on it.",
       },
     ],
     references: [
@@ -343,23 +343,23 @@ export const ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "pain-and-sleep",
-    title: "Pain and Sleep",
+    title: "Pain and sleep",
     description:
-      "Pain and sleep wreck each other – but not equally. Why a bad night raises tomorrow's pain, how sleep loss switches off the body's own pain brakes, and what the evidence says helps.",
+      "Pain and sleep wreck each other, but not equally. Why a bad night raises tomorrow's pain, how sleep loss switches off the body's own pain brakes, and what the evidence says helps.",
     status: "sourced",
     lastUpdated: "2026-08-27",
     answer:
-      "Pain and sleep affect each other in both directions, but prospective studies find the sleep-to-pain direction is stronger: poor sleep predicts new and worsening pain more reliably than pain predicts poor sleep. Even one night of bad sleep lowers pain thresholds and weakens the brain's built-in pain-dampening systems – which is why sleep is a core target in modern pain care.",
+      "Pain and sleep affect each other in both directions, but prospective studies find the sleep-to-pain direction is stronger: poor sleep predicts new and worsening pain more reliably than pain predicts poor sleep. Even one night of bad sleep lowers pain thresholds and weakens the brain's built-in pain-dampening systems, which is why sleep is a core target in modern pain care.",
     faqs: [
       {
         question: "Does poor sleep cause pain, or does pain ruin sleep?",
         answer:
-          "Both – it is a genuine cycle. But when researchers follow people over time, sleep problems predict future pain more strongly and consistently than pain predicts future sleep problems. That is actually hopeful news: it means sleep is not just a victim of pain. It is a lever you and your care team can work on.",
+          "Both – it is a genuine cycle. But when researchers follow people over time, sleep problems predict future pain more strongly and consistently than pain predicts future sleep problems. That is hopeful news: it means sleep is not just a victim of pain. It is a lever you and your care team can work on.",
       },
       {
         question: "Can one bad night really make the next day's pain worse?",
         answer:
-          "Yes. In diary studies, night-to-night dips in sleep quality predicted next-day increases in pain – and quality mattered more than the number of hours slept. In the lab, a single night of sleep deprivation measurably lowered healthy people's pain thresholds and changed how their brains processed pain.",
+          "Yes. In diary studies, night-to-night dips in sleep quality predicted next-day increases in pain, and quality mattered more than the number of hours slept. In the lab, a single night of sleep deprivation measurably lowered healthy people's pain thresholds and changed how their brains processed pain.",
       },
       {
         question: "Is broken-up sleep as bad as short sleep?",
@@ -369,7 +369,7 @@ export const ARTICLES: Article[] = [
       {
         question: "Will fixing my insomnia fix my pain?",
         answer:
-          "Treating insomnia – for example with cognitive behavioral therapy for insomnia (CBT-I) – reliably improves sleep and mood in people with chronic pain. Its direct effect on pain intensity is modest on average, but better sleep restores the systems that regulate pain, and it improves the daily life pain has disrupted. Ask your clinician whether it fits your situation.",
+          "Treating insomnia, for example with cognitive behavioral therapy for insomnia (CBT-I) – reliably improves sleep and mood in people with chronic pain. Its direct effect on pain intensity is modest on average, but better sleep restores the systems that regulate pain, and it improves the daily life pain has disrupted. Ask your clinician whether it fits your situation.",
       },
     ],
     references: [
@@ -431,9 +431,9 @@ export const ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "pain-and-emotion",
-    title: "Pain and Emotion",
+    title: "Pain and emotion",
     description:
-      "Emotion is written into the definition of pain itself. How pain and feeling share brain circuitry, why stress and fear turn the volume up, and why therapy that helps is proof of biology – not proof it was in your head.",
+      "Emotion is written into the definition of pain itself. How pain and feeling share brain circuitry, why stress and fear turn the volume up, and why therapy that helps is proof of biology, not proof it was in your head.",
     status: "sourced",
     lastUpdated: "2026-08-27",
     answer:
@@ -452,7 +452,7 @@ export const ARTICLES: Article[] = [
       {
         question: "If therapy helps my pain, does that mean it was all in my head?",
         answer:
-          "No. Psychological therapies like CBT produce measurable – usually modest – reductions in pain and disability across dozens of randomized trials. They work because pain-processing and emotion-processing circuits overlap, so treatments that calm one can quiet the other. Using the brain's own machinery is working with real biology, not imagining things.",
+          "No. Psychological therapies like CBT produce measurable, usually modest, reductions in pain and disability across dozens of randomized trials. They work because pain-processing and emotion-processing circuits overlap, so treatments that calm one can quiet the other. Using the brain's own machinery is working with real biology, not imagining things.",
       },
     ],
     references: [
@@ -516,7 +516,7 @@ export const ARTICLES: Article[] = [
       {
         title: "Pain and sleep",
         href: "/understanding-pain/pain-and-sleep",
-        blurb: "The other everyday amplifier – and the same modulatory circuits.",
+        blurb: "The other everyday amplifier, and the same modulatory circuits.",
       },
       {
         title: "The mind and the brain",
@@ -533,14 +533,14 @@ export const ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "the-placebo-effect",
-    title: "The Placebo Effect",
+    title: "The placebo effect",
     seoTitle: "The Placebo Effect: What It Is and How It Works",
     description:
-      "What the placebo effect is, how it works – expectation switching on the brain's own pain-relief chemistry – how long it lasts, how a placebo differs from the placebo effect, what it proves about your pain, and what it can't do.",
+      "What the placebo effect is, how it works, expectation switching on the brain's own pain-relief chemistry, how long it lasts, how a placebo differs from the placebo effect, what it proves about your pain, and what it can't do.",
     status: "sourced",
     lastUpdated: "2026-09-20",
     answer:
-      "The placebo effect is a real, measurable response to the expectation of treatment – not imagination. A placebo is the inert treatment (a sugar pill, a saline shot); the placebo effect is your nervous system's genuine response to it. In pain, expectation activates the brain's own pain-modulation system, including its natural opioid chemistry – blocking that chemistry with a drug blocks placebo relief. Placebos can ease symptoms like pain and nausea, even when people know they're taking one, but they do not treat the underlying disease.",
+      "The placebo effect is a real, measurable response to the expectation of treatment, not imagination. A placebo is the inert treatment (a sugar pill, a saline shot); the placebo effect is your nervous system's genuine response to it. In pain, expectation activates the brain's own pain-modulation system, including its natural opioid chemistry – blocking that chemistry with a drug blocks placebo relief. Placebos can ease symptoms like pain and nausea, even when people know they're taking one, but they do not treat the underlying disease.",
     faqs: [
       {
         question: "What is the placebo effect, in plain terms?",
@@ -550,7 +550,7 @@ export const ARTICLES: Article[] = [
       {
         question: "What is the difference between a placebo and the placebo effect?",
         answer:
-          "A placebo is the inert thing – a sugar pill, a saline injection, a sham procedure. The placebo effect is your nervous system's real response to receiving it: measurable symptom change driven by expectation and context. Trials also speak of the 'placebo response,' which runs larger still because it adds natural recovery and symptoms drifting back from their worst. The pill is inert; the effect is not.",
+          "A placebo is the inert thing – a sugar pill, a saline injection, a sham procedure. The placebo effect is your nervous system's real response to receiving it: measurable symptom change driven by expectation and context. Trials also speak of the “placebo response,” which runs larger still because it adds natural recovery and symptoms drifting back from their worst. The pill is inert; the effect is not.",
       },
       {
         question: "If a placebo helped me, does that mean my pain wasn't real?",
@@ -560,17 +560,17 @@ export const ARTICLES: Article[] = [
       {
         question: "Do placebos work if you know it's a placebo?",
         answer:
-          "Often, for symptoms – in randomized trials, 'open-label' placebos given with full honesty still outperformed no treatment in irritable bowel syndrome and outperformed usual care alone in chronic low back pain. The trials are small and short, but they suggest the ritual and expectation of care matter, with no deception required.",
+          "Often, for symptoms, in randomized trials, “open-label” placebos given with full honesty still outperformed no treatment in irritable bowel syndrome and outperformed usual care alone in chronic low back pain. The trials are small and short, but they suggest the ritual and expectation of care matter, with no deception required.",
       },
       {
         question: "How long does the placebo effect last?",
         answer:
-          "As long as the expectation and the context that built it hold – which can be longer than people assume. Within a single treatment it is measured in hours. Across a course it is measured in weeks: in chronic low back pain, three weeks of openly labelled placebo pills lowered pain and disability, and a five-year follow-up of those participants found the improvements had persisted. Placebo relief fades when the ritual and the belief behind it fade, and it never changes the underlying disease, so its duration measures how durable expectation can be, not how far the disease has moved.",
+          "As long as the expectation and the context that built it hold, which can be longer than people assume. Within a single treatment it is measured in hours. Across a course it is measured in weeks: in chronic low back pain, three weeks of openly labelled placebo pills lowered pain and disability, and a five-year follow-up of those participants found the improvements had persisted. Placebo relief fades when the ritual and the belief behind it fade, and it never changes the underlying disease, so its duration measures how durable expectation can be, not how far the disease has moved.",
       },
       {
-        question: "Can expecting side effects actually give me side effects?",
+        question: "Can expecting side effects give me side effects?",
         answer:
-          "Yes – that is the nocebo effect. In COVID-19 vaccine trials, about a third of people who received only saline placebo reported 'systemic side effects' like headache and fatigue. Researchers estimated nocebo responses accounted for around three-quarters of such side effects reported after a first real vaccine dose.",
+          "Yes – that is the nocebo effect. In COVID-19 vaccine trials, about a third of people who received only saline placebo reported “systemic side effects” like headache and fatigue. Researchers estimated nocebo responses accounted for around three-quarters of such side effects reported after a first real vaccine dose.",
       },
     ],
     references: [
@@ -659,7 +659,7 @@ export const ARTICLES: Article[] = [
       {
         title: "Measuring pain",
         href: "/understanding-pain/measuring-pain",
-        blurb: "Why self-reported relief is real data – and how to give better data.",
+        blurb: "Why self-reported relief is real data, and how to give better data.",
       },
       {
         title: "The nocebo effect",
@@ -671,9 +671,9 @@ export const ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "the-nocebo-effect",
-    title: "The Nocebo Effect",
+    title: "The nocebo effect",
     description:
-      "What the nocebo effect is and how it works – expecting harm turning pain up through its own brain chemistry – the trials where a sentence cancelled an opioid or tripled side effects, and what you can do about it.",
+      "What the nocebo effect is and how it works, expecting harm turning pain up through its own brain chemistry, the trials where a sentence cancelled an opioid or tripled side effects, and what you can do about it.",
     status: "sourced",
     lastUpdated: "2026-09-08",
     answer:
@@ -682,7 +682,7 @@ export const ARTICLES: Article[] = [
       {
         question: "What is the nocebo effect, in plain terms?",
         answer:
-          "It is a genuine increase in pain or side effects produced by expecting them, rather than by a treatment's ingredients. The name is Latin for 'I shall harm,' the opposite of placebo ('I shall please'). In pain it has a known pathway: expecting harm raises anxiety, which recruits the brain chemical cholecystokinin and turns pain signaling up. Blocking that chemical with proglumide erases the extra pain.",
+          "It is a genuine increase in pain or side effects produced by expecting them, rather than by a treatment's ingredients. The name is Latin for “I shall harm,” the opposite of placebo (“I shall please”). In pain it has a known pathway: expecting harm raises anxiety, which recruits the brain chemical cholecystokinin and turns pain signaling up. Blocking that chemical with proglumide erases the extra pain.",
       },
       {
         question: "What is the difference between placebo and nocebo?",
@@ -702,7 +702,7 @@ export const ARTICLES: Article[] = [
       {
         question: "How can I reduce nocebo effects?",
         answer:
-          "Ask how many people out of 100 get a side effect, so rare things are heard as rare. Ask what alarming words on a scan report actually mean. Tell your clinician if you have read frightening things about a treatment, so they can frame the plan honestly. And treat new symptoms during a medication change as data to record and discuss, not as a verdict. Informed consent stays intact – the evidence favors better framing, not less information.",
+          "Ask how many people out of 100 get a side effect, so rare things are heard as rare. Ask what alarming words on a scan report mean. Tell your clinician if you have read frightening things about a treatment, so they can frame the plan. And treat new symptoms during a medication change as data to record and discuss, not as a verdict. Informed consent stays intact – the evidence favors better framing, not less information.",
       },
     ],
     references: [
@@ -784,7 +784,7 @@ export const ARTICLES: Article[] = [
       {
         title: "Low back pain",
         href: "/conditions/low-back-pain",
-        blurb: "What the alarming words on an imaging report actually mean.",
+        blurb: "What the alarming words on an imaging report mean.",
       },
     ],
   },
@@ -792,10 +792,10 @@ export const ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "attention-and-distraction",
-    title: "Attention and Distraction",
+    title: "Attention and distraction",
     seoTitle: "Why Distraction Reduces Pain: The Science of Attention and Pain",
     description:
-      "Why distraction reduces pain: attention is a dial on the brain's descending pain-control pathway – cortex to periaqueductal grey to spinal cord – caught on brain scans. Why a child's cartoon and an adult's absorbing task work, why focusing on pain turns the dial up, and the honest limits for persistent pain.",
+      "Why distraction reduces pain: attention is a dial on the brain's descending pain-control pathway, cortex to periaqueductal grey to spinal cord, caught on brain scans. Why a child's cartoon and an adult's absorbing task work, why focusing on pain turns the dial up, and the limits for persistent pain.",
     status: "sourced",
     lastUpdated: "2026-10-04",
     answer:
@@ -814,17 +814,17 @@ export const ARTICLES: Article[] = [
       {
         question: "Why does music help with pain?",
         answer:
-          "Music pulls on two dials at once. It occupies attention – more when you chose it and follow it closely – and it shifts mood. Research separating the two found attention mainly lowers how intense pain feels, while mood mainly lowers how unpleasant it feels, through partly different brain circuits. That is also why the effect is personal: music that bores you barely distracts at all.",
+          "Music pulls on two dials at once. It occupies attention, more when you chose it and follow it closely, and it shifts mood. Research separating the two found attention mainly lowers how intense pain feels, while mood mainly lowers how unpleasant it feels, through partly different brain circuits. That is also why the effect is personal: music that bores you barely distracts at all.",
       },
       {
         question: "Can focusing on pain make it worse?",
         answer:
-          "It can. The same volunteers who felt less pain while distracted felt more when asked to focus on the heat. Persistent pain tends to train vigilance – scanning, bracing, checking – which is understandable but holds the dial up. Warnings and expectations work the same way, which is the nocebo effect. This does not mean attention causes pain; it means the pain system has an amplifier, and attention feeds it in both directions.",
+          "It can. The same volunteers who felt less pain while distracted felt more when asked to focus on the heat. Persistent pain tends to train vigilance – scanning, bracing, checking, which is understandable but holds the dial up. Warnings and expectations work the same way, which is the nocebo effect. This does not mean attention causes pain; it means the pain system has an amplifier, and attention feeds it in both directions.",
       },
       {
         question: "Does distraction work for chronic pain?",
         answer:
-          "Less well. Distraction is strongest for brief, predictable pain, because the absorbing task has to last as long as the pain does. For pain lasting months, it can help through the worst hours but is not a plan. The more useful descendant of this science is attention retraining – structured approaches taught in cognitive-behavioral, acceptance-based, and mindfulness programs – which work the same dial with more patience. A pain psychologist or your clinician can match the approach to your pain.",
+          "Less well. Distraction is strongest for brief, predictable pain, because the absorbing task has to last as long as the pain does. For pain lasting months, it can help through the worst hours but is not a plan. The more useful descendant of this science is attention retraining – structured approaches taught in cognitive-behavioral, acceptance-based, and mindfulness programs, which work the same dial with more patience. A pain psychologist or your clinician can match the approach to your pain.",
       },
     ],
     references: [
@@ -903,13 +903,13 @@ export const ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "central-sensitization",
-    title: "Central Sensitization",
+    title: "Central sensitization",
     description:
       "Why pain can be far greater than any injury explains: how the spinal cord and brain turn up their own gain, what that feels like, how it relates to nociplastic pain, and why it changes which treatments help.",
     status: "sourced",
     lastUpdated: "2026-11-14",
     answer:
-      "Central sensitization is a state in which the spinal cord and brain become more responsive to incoming signals, so the same input produces more pain. Light touch can hurt, pain can spread beyond the original site, and it can outlast its cause. It is a real, measurable change in the nervous system – and researchers describe it as reversible.",
+      "Central sensitization is a state in which the spinal cord and brain become more responsive to incoming signals, so the same input produces more pain. Light touch can hurt, pain can spread beyond the original site, and it can outlast its cause. It is a real, measurable change in the nervous system, and researchers describe it as reversible.",
     faqs: [
       {
         question: "Does central sensitization mean the pain is in my head?",

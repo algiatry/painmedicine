@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
 
 function TransitionFigure() {
   const points = [
@@ -37,7 +37,7 @@ export default function PersistentPostsurgicalPain() {
         or reconstruct something deeper. Acute pain is therefore expected. The
         important signal is its direction: as healing advances, pain and
         interference should generally recede. When new or worsened pain remains
-        beyond three months, medicine recognizes a distinct condition – not a
+        beyond three months, medicine recognizes a distinct condition, not a
         character flaw, and not automatically a failed operation.
       </P>
 
@@ -63,7 +63,7 @@ export default function PersistentPostsurgicalPain() {
       <P>
         Persistent postsurgical pain affects roughly one person in ten after
         surgery, although risk varies widely by procedure and by how studies
-        define it. Operations near major nerves – including thoracic, breast,
+        define it. Operations near major nerves, including thoracic, breast,
         hernia, amputation, and some joint procedures – carry recognizable risk.
         A substantial share has a neuropathic component, which changes both the
         symptoms and the treatment map.
@@ -123,7 +123,7 @@ export default function PersistentPostsurgicalPain() {
         blocks or other procedures may clarify and treat a focal generator, but
         temporary numbness is not proof that repeated procedures will create
         durable recovery. The right outcome measures include function, sleep,
-        medication burden, and participation – not only the pain score.
+        medication burden, and participation, not only the pain score.
       </P>
 
       <H2 id="transitional">The missing bridge: transitional pain care</H2>

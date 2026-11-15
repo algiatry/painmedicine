@@ -82,7 +82,7 @@ export default function SiteSearch() {
         type="button"
         onClick={open}
         aria-label="Search the site"
-        className="inline-flex size-11 items-center justify-center rounded-md text-slate-700 transition-colors hover:bg-slate-100 hover:text-teal-700 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-teal-400"
+        className="inline-flex size-11 items-center justify-center rounded-md text-body transition-colors hover:bg-sunken hover:text-brand"
       >
         <SearchIcon className="size-5" />
       </button>
@@ -96,7 +96,7 @@ export default function SiteSearch() {
         }}
         // A click on the backdrop lands on the dialog element itself.
         onClick={(e) => e.target === e.currentTarget && close()}
-        className="m-0 mx-auto mt-[8vh] w-[calc(100%-1.5rem)] max-w-xl rounded-2xl border border-slate-200 bg-white p-0 text-slate-800 shadow-2xl backdrop:bg-slate-900/50 backdrop:backdrop-blur-sm dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200"
+        className="m-0 mx-auto mt-[8vh] w-[calc(100%-1.5rem)] max-w-xl rounded-2xl border border-slate-200 bg-surface p-0 text-ink shadow-2xl backdrop:bg-slate-900/50 backdrop:backdrop-blur-sm dark:border-slate-700"
       >
         <div className="flex items-center gap-3 border-b border-slate-200 px-4 focus-within:shadow-[inset_0_-2px_0_var(--brand)] dark:border-slate-700">
           <SearchIcon className="size-5 shrink-0 text-slate-400" />
@@ -119,12 +119,12 @@ export default function SiteSearch() {
               setActive(0);
             }}
             onKeyDown={onInputKey}
-            className="min-w-0 flex-1 bg-transparent py-4 text-base text-slate-900 outline-none! placeholder:text-slate-400 dark:text-slate-100 [&::-webkit-search-cancel-button]:hidden"
+            className="min-w-0 flex-1 bg-transparent py-4 text-base text-ink outline-none! placeholder:text-slate-400 [&::-webkit-search-cancel-button]:hidden"
           />
           <button
             type="button"
             onClick={close}
-            className="shrink-0 rounded-md border border-slate-200 px-2 py-1 text-xs font-medium text-slate-500 hover:border-slate-300 hover:text-slate-700 dark:border-slate-700 dark:text-slate-400 dark:hover:border-slate-600 dark:hover:text-slate-200"
+            className="shrink-0 rounded-md border border-slate-200 px-2 py-1 text-xs font-medium text-subtle hover:border-faint hover:text-body dark:border-slate-700"
           >
             Close
           </button>
@@ -148,30 +148,30 @@ export default function SiteSearch() {
                   <span
                     className={`font-semibold ${
                       i === active
-                        ? "text-teal-800 dark:text-teal-300"
-                        : "text-slate-900 dark:text-slate-100"
+                        ? "text-brand-strong"
+                        : "text-ink"
                     }`}
                   >
                     {r.title}
                   </span>
-                  <span className="shrink-0 text-xs font-medium uppercase tracking-wide text-slate-500 dark:text-slate-400">
+                  <span className="shrink-0 text-xs font-medium uppercase tracking-wide text-subtle">
                     {r.section}
                   </span>
                 </div>
-                <p className="mt-0.5 line-clamp-2 text-sm text-slate-600 dark:text-slate-400">
+                <p className="mt-0.5 line-clamp-2 text-sm text-muted">
                   {r.summary}
                 </p>
               </li>
             ))}
           </ul>
 
-          <div aria-live="polite" className="px-3 text-sm text-slate-600 dark:text-slate-400">
+          <div aria-live="polite" className="px-3 text-sm text-muted">
             {failed ? (
               <p className="py-6">
                 Search could not load. Check your connection and{" "}
                 <button
                   type="button"
-                  className="font-medium text-teal-700 underline dark:text-teal-400"
+                  className="font-medium text-brand underline"
                   onClick={() => {
                     close();
                     open();
@@ -189,7 +189,7 @@ export default function SiteSearch() {
                 term from a report – or browse the{" "}
                 <button
                   type="button"
-                  className="font-medium text-teal-700 underline dark:text-teal-400"
+                  className="font-medium text-brand underline"
                   onClick={() => go("/glossary")}
                 >
                   glossary
@@ -209,7 +209,7 @@ export default function SiteSearch() {
                           setActive(0);
                           inputRef.current?.focus();
                         }}
-                        className="rounded-full border border-slate-200 px-3 py-1.5 text-sm font-medium text-slate-700 hover:border-teal-600 hover:text-teal-700 dark:border-slate-700 dark:text-slate-300 dark:hover:border-teal-400 dark:hover:text-teal-300"
+                        className="rounded-full border border-slate-200 px-3 py-1.5 text-sm font-medium text-body hover:border-brand hover:text-brand dark:border-slate-700"
                       >
                         {s}
                       </button>

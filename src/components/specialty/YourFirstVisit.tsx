@@ -11,7 +11,7 @@ const STEPS = [
 
 function VisitFlowFigure() {
   return (
-    <Figure caption="The shape of a first pain-medicine evaluation. It is longer than a routine appointment – often one to three hours – because working out the mechanism of your pain is the whole job.">
+    <Figure caption="The shape of a first pain-medicine evaluation. It is longer than a routine appointment, often one to three hours, because working out the mechanism of your pain is the whole job.">
       <svg
         role="img"
         aria-labelledby="visit-title visit-desc"
@@ -81,7 +81,7 @@ export default function YourFirstVisit() {
         A first appointment with a pain specialist is a different kind of
         medical visit, and knowing that in advance changes how well it goes.
         You are not there for a quick look at one body part. You are there so a
-        specialist can work out which pain mechanisms are in play – and that
+        specialist can work out which pain mechanisms are in play, and that
         takes time, records, and questions that may surprise you.
       </P>
 
@@ -115,7 +115,7 @@ export default function YourFirstVisit() {
         life. Filling it out carefully is not paperwork for its own sake; it is
         the first draft of your evaluation. Worth gathering ahead of time:
       </P>
-      <ul className="mt-4 space-y-3 text-slate-700 dark:text-slate-300">
+      <ul className="mt-4 space-y-3 text-body">
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
@@ -141,12 +141,12 @@ export default function YourFirstVisit() {
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
-            <strong>A pain diary or notes</strong>, if you keep them – even a
+            <strong>A pain diary or notes</strong>, if you keep them, even a
             week of entries on flares, triggers, and what pain stops you from
             doing.{" "}
             <Link
               href="/understanding-pain/measuring-pain"
-              className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+              className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
             >
               Measuring pain
             </Link>{" "}
@@ -158,7 +158,7 @@ export default function YourFirstVisit() {
       <H2 id="during">What happens in the room</H2>
       <P>
         Plan for an evaluation that is substantially longer than a routine
-        appointment – often <strong>one to three hours</strong>; major centers
+        appointment, often <strong>one to three hours</strong>; major centers
         tell patients to expect two to three when testing is involved. The
         visit typically moves through a long conversation about your pain and
         its history, a physical and neurological exam, and a careful review of
@@ -166,7 +166,7 @@ export default function YourFirstVisit() {
         and relationships. Those are not detours: as the science in{" "}
         <Link
           href="/understanding-pain/pain-and-emotion"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           pain and emotion
         </Link>{" "}
@@ -198,18 +198,18 @@ export default function YourFirstVisit() {
       <P>
         A first visit should end with something concrete: a working assessment
         of what kind of pain you have, a treatment plan built{" "}
-        <em>with</em> you – often spanning several of the{" "}
+        <em>with</em> you, often spanning several of the{" "}
         <Link
           href="/what-is-pain-medicine/the-pain-team"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           pain team&rsquo;s
         </Link>{" "}
-        disciplines – and a copy shared with your primary care clinician.
+        disciplines, and a copy shared with your primary care clinician.
         Bring your own questions too; the{" "}
         <Link
           href="/find-help"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           find help
         </Link>{" "}

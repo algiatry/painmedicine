@@ -1,40 +1,68 @@
 @import "tailwindcss";
 
 :root {
+  /* Semantic colour tokens. Components use these (text-ink, border-line,
+     bg-surface …) rather than literal slate/teal utilities, so dark mode is
+     one remap below instead of a `dark:` variant on every class. */
   --background: #ffffff;
-  --foreground: #1e293b;
+  --foreground: #334155;
+  --paper: #f4f8f7; /* tinted section ground */
+  --surface: #ffffff; /* cards */
+  --sunken: #f1f5f9; /* wells, hover fills */
+  --ink: #0f172a; /* headings */
+  --body: #334155; /* running text */
+  --muted: #475569; /* secondary text */
+  --subtle: #64748b; /* captions, meta: still AA on white */
+  --faint: #cbd5e1; /* decorative only: arrows, underlines, separators */
+  --line: #e2e8f0; /* hairlines */
   --brand: #0f766e;
+  --brand-strong: #115e59;
   --brand-dark: #115e59;
-  --paper: #f4f8f7;
-  --ink: #0f172a;
+  --plate-from: #fbfdfc;
+  --plate-to: #f1f6f5;
 }
 
 /*
- * Dark theme. Follows the OS preference — no toggle. We remap the semantic
- * tokens (used by `body` and the `bg-paper` surface) and brighten the brand
- * so teal keeps AA contrast on dark surfaces. Literal slate/white utilities
- * across the site are handled with Tailwind `dark:` variants; the hand-drawn
- * SVG figures stay on a light "plate" (see .figure-plate) rather than being
- * recolored.
+ * Dark theme. Follows the OS preference, no toggle. Only the tokens change.
+ * The hand-drawn SVG figures use a light-palette legend, so they stay on a
+ * light "plate" (see .figure-plate), dimmed here so it does not glare.
  */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0b1120;
     --foreground: #cbd5e1;
-    --brand: #2dd4bf;
-    --brand-dark: #5eead4;
     --paper: #111a2e;
-    --ink: #e2e8f0;
+    --surface: #0f172a;
+    --sunken: #1e293b;
+    --ink: #f1f5f9;
+    --body: #cbd5e1;
+    --muted: #94a3b8;
+    --subtle: #94a3b8;
+    --faint: #475569;
+    --line: #1e293b;
+    --brand: #5eead4;
+    --brand-strong: #99f6e4;
+    --brand-dark: #99f6e4;
+    --plate-from: #dfe6ec;
+    --plate-to: #d3dbe3;
   }
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-brand: var(--brand);
-  --color-brand-dark: var(--brand-dark);
   --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-sunken: var(--sunken);
   --color-ink: var(--ink);
+  --color-body: var(--body);
+  --color-muted: var(--muted);
+  --color-subtle: var(--subtle);
+  --color-faint: var(--faint);
+  --color-line: var(--line);
+  --color-brand: var(--brand);
+  --color-brand-strong: var(--brand-strong);
+  --color-brand-dark: var(--brand-dark);
   --font-sans: var(--font-source-sans), system-ui, sans-serif;
   --shadow-card: 0 1px 2px 0 rgb(15 23 42 / 0.04), 0 1px 3px 0 rgb(15 23 42 / 0.06);
   --shadow-card-hover: 0 2px 4px -1px rgb(15 23 42 / 0.05), 0 8px 20px -6px rgb(15 118 110 / 0.14);
@@ -69,8 +97,7 @@ body {
 .figure-plate {
   /* A faint top-down ground so the plate reads as a lit surface, not a flat
      box, with an inner hairline and resting shadow matching the card system. */
-  background:
-    linear-gradient(180deg, #fbfdfc 0%, #f1f6f5 100%);
+  background: linear-gradient(180deg, var(--plate-from) 0%, var(--plate-to) 100%);
   border-color: rgb(203 213 225 / 0.9); /* slate-300 */
   box-shadow:
     inset 0 1px 0 rgb(255 255 255 / 0.6),
@@ -79,7 +106,6 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   .figure-plate {
-    background: linear-gradient(180deg, #f3f6f9 0%, #e9eef3 100%);
     border-color: rgb(51 65 85); /* slate-700 */
     box-shadow:
       0 0 0 1px rgb(2 6 23 / 0.4),
@@ -111,24 +137,23 @@ body {
 }
 
 /*
- * Hero backdrop — a soft teal glow with a faint amber warmth and a whisper of
- * dotted grid, layered behind the hero content. Pure CSS, no extra markup, and
- * it degrades to the plain paper gradient on older engines.
+ * Hero backdrop: one soft teal glow behind the hero content. Pure CSS, no
+ * extra markup, and it degrades to the plain paper gradient on older engines.
  */
 .hero-aura {
-  background-image:
-    radial-gradient(42rem 26rem at 78% -10%, rgb(20 184 166 / 0.12), transparent 60%),
-    radial-gradient(34rem 22rem at 6% 8%, rgb(245 158 11 / 0.07), transparent 55%),
-    radial-gradient(rgb(15 118 110 / 0.05) 1px, transparent 1px);
-  background-size: auto, auto, 22px 22px;
-  background-position: center, center, center;
+  background-image: radial-gradient(
+    42rem 26rem at 78% -10%,
+    rgb(20 184 166 / 0.12),
+    transparent 60%
+  );
 }
 @media (prefers-color-scheme: dark) {
   .hero-aura {
-    background-image:
-      radial-gradient(42rem 26rem at 78% -10%, rgb(45 212 191 / 0.12), transparent 60%),
-      radial-gradient(34rem 22rem at 6% 8%, rgb(245 158 11 / 0.06), transparent 55%),
-      radial-gradient(rgb(94 234 212 / 0.05) 1px, transparent 1px);
+    background-image: radial-gradient(
+      42rem 26rem at 78% -10%,
+      rgb(45 212 191 / 0.1),
+      transparent 60%
+    );
   }
 }
 

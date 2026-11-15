@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
 
 /**
  * Figure 1 – two levers on the same dial: physical therapies raise capacity,
@@ -21,8 +21,8 @@ function LeversFigure() {
         <title id="lev-title">Two levers on the same pain system</title>
         <desc id="lev-desc">
           A center box labeled the pain system, with a volume dial. An arrow
-          enters from the left from physical therapies – graded movement
-          raising capacity – and from the right from behavioral therapies –
+          enters from the left from physical therapies, graded movement
+          raising capacity, and from the right from behavioral therapies –
           retraining that turns down amplification.
         </desc>
 
@@ -162,8 +162,7 @@ export default function PhysicalBehavioralTherapies() {
         standing. They are not consolation prizes for pain that pills
         couldn&rsquo;t fix. They are the treatments that{" "}
         <strong>retrain the pain system rather than mask its output</strong>
-        – modest on average, durable, side-effect-free, and compounding –
-        and for most chronic pain they are where the evidence says to
+        – modest on average, durable, side-effect-free, and compounding, and for most chronic pain they are where the evidence says to
         start, not where to end up.
       </P>
 
@@ -194,7 +193,7 @@ export default function PhysicalBehavioralTherapies() {
         </Link>{" "}
         as much as a tissue problem, and these therapies attack it from
         both sides. Movement raises what the body can do – strength,
-        capacity, confidence – while brain-targeted work turns down the
+        capacity, confidence, while brain-targeted work turns down the
         amplification that{" "}
         <Link href="/understanding-pain/pain-and-emotion" className={link}>
           stress, fear, and vigilance
@@ -274,12 +273,12 @@ export default function PhysicalBehavioralTherapies() {
         <Link href="/conditions/crps" className={link}>
           CRPS
         </Link>
-        , with the newest brain-retraining approaches covered honestly in{" "}
+        , with the newest brain-retraining approaches covered in{" "}
         <Link href="/future-of-pain-medicine/mind-and-brain" className={link}>
           mind, brain, and new frontiers
         </Link>
         . None of this implies your pain is psychological. It implies
-        your pain runs on circuitry – and circuitry trains.
+        your pain runs on circuitry, and circuitry trains.
       </P>
 
       <H2 id="together">When the levers pull together</H2>
@@ -288,7 +287,7 @@ export default function PhysicalBehavioralTherapies() {
         <strong>multidisciplinary rehabilitation</strong>, where physical
         therapy, psychology, and medical care run as one coordinated
         program. The Cochrane evidence for chronic low back pain shows
-        such programs beat usual care for pain and disability – and
+        such programs beat usual care for pain and disability, and
         nearly doubled the odds of returning to work compared with
         physical treatment alone. That is the model{" "}
         <Link href="/what-is-pain-medicine/the-pain-team" className={link}>
@@ -299,7 +298,7 @@ export default function PhysicalBehavioralTherapies() {
         confidence honest.
       </P>
 
-      <H2 id="expectations">Honest expectations – and the active ingredient</H2>
+      <H2 id="expectations">Honest expectations, and the active ingredient</H2>
       <P>
         Read the trials plainly and a pattern emerges: average effects
         are <strong>modest</strong>, durability is <strong>good</strong>,
@@ -314,8 +313,8 @@ export default function PhysicalBehavioralTherapies() {
         </Link>
         . The catch is equally plain: these therapies only work performed.
         The dose is the doing, adherence is the active ingredient, and
-        the honest promise is not a switch flipped but a trajectory
-        bent – usually the thing chronic pain care is actually trying to
+        the promise is not a switch flipped but a trajectory
+        bent, usually the thing chronic pain care is trying to
         achieve.
       </P>
 
@@ -323,7 +322,7 @@ export default function PhysicalBehavioralTherapies() {
       <P>
         Quality varies, so know the marks of the real thing: a program
         built around what <em>you do</em> – progressive, planned, with a
-        home program that advances and a graduation goal – rather than
+        home program that advances and a graduation goal, rather than
         passive treatments repeating indefinitely; a therapist
         comfortable with the words &ldquo;sensitized nervous
         system&rdquo;; a psychologist who treats pain specifically.

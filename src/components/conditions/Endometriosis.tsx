@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
 
 function PainLayersFigure() {
   const layers = [
@@ -83,8 +83,8 @@ export default function Endometriosis() {
 
       <H2 id="diagnosis">Diagnosis no longer has to begin with surgery</H2>
       <P>
-        Older care pathways treated laparoscopy – keyhole surgery to look inside
-        the pelvis – as the required diagnostic gate. Current ACOG and ESHRE
+        Older care pathways treated laparoscopy, keyhole surgery to look inside
+        the pelvis, as the required diagnostic gate. Current ACOG and ESHRE
         guidance has moved beyond that rule. A clinician can form a working
         diagnosis from symptoms, examination, and imaging, then discuss either
         empiric medical treatment or surgery according to the person&rsquo;s

@@ -28,16 +28,16 @@ export type NavItem = {
 
 export const NAV: NavItem[] = [
   {
-    label: "What Is Pain Medicine",
+    label: "What is pain medicine",
     href: "/what-is-pain-medicine",
     description:
       "The medical specialty dedicated to diagnosing and treating pain – who pain specialists are and how they work.",
   },
   {
-    label: "Understanding Pain",
+    label: "Understanding pain",
     href: "/understanding-pain",
     description:
-      "How pain actually works: acute vs. chronic, the three types of pain, and why pain is more than tissue damage.",
+      "How pain works: acute vs. chronic, the three types of pain, and why pain is more than tissue damage.",
   },
   {
     label: "Treatments",
@@ -52,7 +52,7 @@ export const NAV: NavItem[] = [
       "Condition-by-condition guides: why it hurts, what helps, and when to see a specialist.",
   },
   {
-    label: "Future of Pain Medicine",
+    label: "Future of pain medicine",
     href: "/future-of-pain-medicine",
     description:
       "The next generation of pain relief: non-opioid drug pipelines, neuromodulation, precision medicine, and more.",
@@ -60,12 +60,12 @@ export const NAV: NavItem[] = [
 ];
 
 export const SUPPORT_LINKS = [
-  { label: "Find Help", href: "/find-help" },
+  { label: "Find help", href: "/find-help" },
   { label: "Glossary", href: "/glossary" },
-  { label: "About & Editorial Policy", href: "/about" },
-  { label: "Editorial Board", href: "/reviewers" },
-  { label: "Medical Disclaimer", href: "/medical-disclaimer" },
-  { label: "Privacy Policy", href: "/privacy" },
+  { label: "About & editorial policy", href: "/about" },
+  { label: "Editorial board", href: "/reviewers" },
+  { label: "Medical disclaimer", href: "/medical-disclaimer" },
+  { label: "Privacy policy", href: "/privacy" },
 ] as const;
 
 /**

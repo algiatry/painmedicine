@@ -4,7 +4,7 @@ import { FIG } from "@/lib/fig";
 import { SiteMarker } from "../anatomy/marks";
 
 const link =
-  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
 
 /**
  * Figure 1 – a schematic shoulder in front view: the ball (humeral head)
@@ -14,7 +14,7 @@ const link =
  */
 function ShoulderFigure() {
   return (
-    <Figure caption="A shallow socket, a roof, and a narrow gap. The rotator cuff tendons (teal) wrap the ball of the upper arm bone and pass under the bony acromion through the subacromial space. Most non-traumatic shoulder pain comes from that space, from the joint capsule, or from the joint surfaces – and some arrives from the neck.">
+    <Figure caption="A shallow socket, a roof, and a narrow gap. The rotator cuff tendons (teal) wrap the ball of the upper arm bone and pass under the bony acromion through the subacromial space. Most non-traumatic shoulder pain comes from that space, from the joint capsule, or from the joint surfaces, and some arrives from the neck.">
       <svg
         role="img"
         aria-labelledby="shoulder-anat-title shoulder-anat-desc"
@@ -227,7 +227,7 @@ function TradeoffFigure() {
           Exercise – slow, then holds
         </text>
         <text x="630" y="196" textAnchor="end" fontSize="11.5" fill={FIG.muted}>
-          shapes only – not to scale
+          shapes only, not to scale
         </text>
       </svg>
     </Figure>
@@ -361,7 +361,7 @@ export default function ShoulderPain() {
         page describes the classes without prescribing. Frozen shoulder is
         managed somewhat differently – a corticosteroid injection into the
         joint may be used for the painful early phase, with movement work
-        afterwards – and a 2017 systematic review found the old idea that it
+        afterwards, and a 2017 systematic review found the old idea that it
         reliably resolves on its own in three phases is not well supported, so
         it deserves a plan rather than waiting it out.
       </P>
@@ -380,7 +380,7 @@ export default function ShoulderPain() {
         page covers how injections and operations are selected.
       </P>
 
-      <H2 id="imaging">What a scan can – and cannot – settle</H2>
+      <H2 id="imaging">What a scan can, and cannot, settle</H2>
       <P>
         The American College of Radiology does not recommend early imaging for
         non-traumatic shoulder pain unless there are suspicious features. The
@@ -404,8 +404,8 @@ export default function ShoulderPain() {
       <H2 id="red-flags">When shoulder pain needs urgent care</H2>
       <P>
         Seek emergency care if shoulder pain comes with chest pressure,
-        breathlessness, sweating, or nausea – especially pain in the left
-        shoulder or arm that starts with exertion – because the heart can refer
+        breathlessness, sweating, or nausea, especially pain in the left
+        shoulder or arm that starts with exertion, because the heart can refer
         pain here. Go urgently after a fall or accident if you cannot move the
         arm, the shoulder has changed shape or is badly swollen, or there is
         numbness or a cold, pale hand, which can mean a fracture, dislocation,

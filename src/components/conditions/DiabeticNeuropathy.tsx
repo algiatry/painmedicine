@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
 
 function LengthFigure() {
   return (
@@ -93,7 +93,7 @@ export default function DiabeticNeuropathy() {
         compressed elsewhere.
       </P>
 
-      <H2 id="screening">The exam is simple – and it matters</H2>
+      <H2 id="screening">The exam is simple, and it matters</H2>
       <P>
         The American Diabetes Association recommends neuropathy assessment when
         type 2 diabetes is diagnosed, beginning five years after type 1 diabetes
@@ -150,13 +150,13 @@ export default function DiabeticNeuropathy() {
         protects skin. A pebble in a shoe, hot bath, tight seam, blister, or cut
         can deepen unnoticed. Diabetes may also impair circulation and healing.
         Daily visual checks – soles included, using a mirror or another person
-        when needed – and properly fitting footwear are therefore part of
+        when needed, and properly fitting footwear are therefore part of
         medical prevention, not cosmetic foot care.
       </P>
       <P>
         Broken skin, drainage, spreading redness, swelling, dark tissue, a bad
         smell, or fever needs prompt medical attention. A foot that becomes hot,
-        red, and swollen – especially with little pain – can signal infection or
+        red, and swollen, especially with little pain, can signal infection or
         acute Charcot neuroarthropathy and should not be walked on while waiting
         to see whether it settles. Regular professional foot examinations should
         assess sensation, skin, deformity, footwear, and circulation.

@@ -132,14 +132,13 @@ export default function BiologicsGeneTherapy() {
       <H2 id="ngf">Targeting the pain amplifiers</H2>
       <P>
         Some proteins act like fertilizer for pain signaling. The best-studied is{" "}
-        <strong>nerve growth factor (NGF)</strong>. Antibodies that block it –
-        led by tanezumab – clearly relieved osteoarthritis pain, but they also
+        <strong>nerve growth factor (NGF)</strong>. Antibodies that block it, led by tanezumab, clearly relieved osteoarthritis pain, but they also
         raised the risk of rapidly progressive joint damage, and in 2021 the
         program was halted after an FDA panel voted against it. The story
         isn&rsquo;t over: a newer biologic, LEVI-04, targets a related
         neurotrophin and, in a 2026 trial, improved pain and function{" "}
         <em>without</em> the joint-damage signal that sank its predecessor. It is
-        a vivid example of how powerful – and how tricky – this target is.
+        a vivid example of how powerful, and how tricky, this target is.
       </P>
 
       <H2 id="gene">Editing the pain system itself</H2>
@@ -173,7 +172,7 @@ export default function BiologicsGeneTherapy() {
         young. Follow the specific candidates by trial phase in the{" "}
         <Link
           href="/future-of-pain-medicine/pipeline"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           pain treatment pipeline
         </Link>

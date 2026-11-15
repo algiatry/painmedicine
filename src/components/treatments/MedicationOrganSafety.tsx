@@ -54,7 +54,7 @@ export default function MedicationOrganSafety() {
       <H2 id="liver">The liver: acetaminophen&rsquo;s one hard boundary</H2>
       <P>
         The established FDA adult ceiling is{" "}
-        <strong>4,000 milligrams of acetaminophen in 24 hours – from all
+        <strong>4,000 milligrams of acetaminophen in 24 hours, from all
         products combined</strong>. The <em>combined</em> is the part that
         injures people. Acetaminophen hides inside prescription combination
         painkillers (the &ldquo;-cet&rdquo; in hydrocodone-acetaminophen) and
@@ -67,7 +67,7 @@ export default function MedicationOrganSafety() {
       <P>
         The ceiling also moves. Regular alcohol use, prolonged fasting, and
         existing liver disease all lower the amount a given liver can safely
-        process – sometimes substantially. Acetaminophen is the leading cause
+        process, sometimes substantially. Acetaminophen is the leading cause
         of acute liver failure in the United States, and roughly half of those
         cases are unintentional: not overdoses in the dramatic sense, but
         stacking. <strong>The established limit is a ceiling, not a
@@ -78,8 +78,7 @@ export default function MedicationOrganSafety() {
 
       <H2 id="kidneys">The kidneys: prostaglandins are plumbing</H2>
       <P>
-        Your kidneys use prostaglandins to keep their own blood vessels open –
-        especially when the body is under stress: dehydration, illness, heart
+        Your kidneys use prostaglandins to keep their own blood vessels open, especially when the body is under stress: dehydration, illness, heart
         failure, older age, or existing kidney disease. NSAIDs block those
         prostaglandins, and the kidney&rsquo;s blood flow narrows with them.
         For a healthy, hydrated adult taking a short course, the margin is
@@ -109,7 +108,7 @@ export default function MedicationOrganSafety() {
         stroke. The key findings, as the agency stated them: the risk can
         begin <em>within the first weeks</em> of use; it rises with longer use
         and at higher doses; and it applies to people with and without known
-        heart disease – though the absolute risk is greater the more
+        heart disease, though the absolute risk is greater the more
         cardiovascular risk factors you carry. NSAIDs can also raise blood
         pressure and worsen heart failure, partly through the same kidney
         chemistry above: less prostaglandin signaling means more salt and
@@ -137,15 +136,14 @@ export default function MedicationOrganSafety() {
         ulcer, blood thinners, corticosteroids, SSRI antidepressants, and
         alcohol. Warning signs worth acting on immediately: black or bloody
         stools, vomiting blood or material that looks like coffee grounds, and
-        persistent stomach pain. Acetaminophen does not share this mechanism –
-        which is why, for someone with a fragile stomach, clinicians often
+        persistent stomach pain. Acetaminophen does not share this mechanism, which is why, for someone with a fragile stomach, clinicians often
         reach for it first, and why every choice on this page is a trade
         between organs, not a verdict on a drug.
       </P>
 
       <CombinationStackFigure />
 
-      <H2 id="combinations">Where the injuries actually come from</H2>
+      <H2 id="combinations">Where the injuries come from</H2>
       <P>
         Read the injury data and three patterns repeat.{" "}
         <strong>Hidden acetaminophen stacking</strong> – a combination
@@ -158,7 +156,7 @@ export default function MedicationOrganSafety() {
         depth on the{" "}
         <Link
           href="/treatments/opioid-stewardship"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           opioid safety page
         </Link>
@@ -177,7 +175,7 @@ export default function MedicationOrganSafety() {
         &ldquo;active ingredients&rdquo; line on every product (that is where
         hidden acetaminophen and duplicate NSAIDs live), treat label ceilings
         as ceilings rather than starting points, stay hydrated when using
-        NSAIDs, and tell every prescriber the full list – including the
+        NSAIDs, and tell every prescriber the full list, including the
         over-the-counter half. This page describes the established limits and
         the evidence behind them; the right choices for your organs belong to
         you and your care team.

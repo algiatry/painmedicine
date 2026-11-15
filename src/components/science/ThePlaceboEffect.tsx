@@ -108,7 +108,7 @@ const TRIAL_BARS = [
 
 function OpenLabelFigure() {
   return (
-    <Figure caption="Open-label placebo in chronic low back pain (randomized trial, 83 completers, 3 weeks): pain fell ~30% with an honestly-labeled placebo added to usual care, vs ~9% with usual care alone. A small, short trial – but nobody was deceived.">
+    <Figure caption="Open-label placebo in chronic low back pain (randomized trial, 83 completers, 3 weeks): pain fell ~30% with an honestly-labeled placebo added to usual care, vs ~9% with usual care alone. A small, short trial, but nobody was deceived.">
       <svg
         role="img"
         aria-labelledby="olp-title olp-desc"
@@ -160,7 +160,7 @@ export default function ThePlaceboEffect() {
         the implication goes, your problem must not have been real. Pain
         trials say almost exactly the opposite. The placebo effect in pain is
         one of the best-documented phenomena in neuroscience, and what it
-        actually demonstrates is that your brain owns a working pharmacy.
+        demonstrates is that your brain owns a working pharmacy.
       </P>
 
       <KeyTakeaways
@@ -190,7 +190,7 @@ export default function ThePlaceboEffect() {
         Three terms do different jobs here, and telling them apart clears up
         most of the confusion:
       </P>
-      <ul className="mt-4 space-y-3 text-slate-700 dark:text-slate-300">
+      <ul className="mt-4 space-y-3 text-body">
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
@@ -221,7 +221,7 @@ export default function ThePlaceboEffect() {
       </ul>
       <P>
         The pill is inert. The effect is not. Keep those two apart and the
-        science below reads cleanly – and the phrase &ldquo;it was{" "}
+        science below reads cleanly, and the phrase &ldquo;it was{" "}
         <em>just</em> a placebo&rdquo; stops making sense.
       </P>
 
@@ -242,7 +242,7 @@ export default function ThePlaceboEffect() {
         &ldquo;volume control&rdquo; described in{" "}
         <Link
           href="/understanding-pain/pain-and-emotion"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           pain and emotion
         </Link>{" "}
@@ -266,13 +266,12 @@ export default function ThePlaceboEffect() {
       <P>
         The strangest finding in the field may be the most reassuring. In{" "}
         <strong>open-label</strong> trials, patients are told, plainly, that
-        they are receiving an inert pill – and some still improve. In
+        they are receiving an inert pill, and some still improve. In
         irritable bowel syndrome, 59% of patients on honestly-labeled placebo
         reported adequate relief versus 35% with no treatment. In chronic low
         back pain, adding an openly-labeled placebo to usual care roughly
         tripled the pain reduction patients reported. These are small, short
-        trials measuring self-reported symptoms, and they deserve that caveat –
-        but they suggest something important: the ritual of care, expectation,
+        trials measuring self-reported symptoms, and they deserve that caveat, but they suggest something important: the ritual of care, expectation,
         and a trusted explanation carry real therapeutic weight. Deception was
         never the active ingredient.
       </P>
@@ -293,7 +292,7 @@ export default function ThePlaceboEffect() {
         body produces. Nocebo has enough evidence of its own to deserve{" "}
         <Link
           href="/understanding-pain/the-nocebo-effect"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           its own page
         </Link>
@@ -305,18 +304,18 @@ export default function ThePlaceboEffect() {
         Honesty about scope matters, because the placebo effect attracts hype
         in both directions. Across hundreds of trials, placebo effects show up
         reliably for <strong>self-reported symptoms</strong> – pain and nausea
-        above all – and the average effects are modest, not miraculous. For
+        above all, and the average effects are modest, not miraculous. For
         objective disease outcomes, they show essentially nothing: placebos do
         not shrink tumors, heal fractures, or clear infections. Expectation has
         its hands on the nervous system&rsquo;s dials, and pain happens to be
         the most dial-controlled experience the body produces. That is exactly
-        why the effect is strongest there – and why it stops at the border of
+        why the effect is strongest there, and why it stops at the border of
         symptom and disease.
       </P>
       <P>
         The effect is strong enough to complicate science itself. In US
         clinical trials of nerve-pain drugs, placebo responses have climbed
-        steadily for decades – by 2013, placebo arms were averaging ~30% pain
+        steadily for decades, by 2013, placebo arms were averaging ~30% pain
         reduction – making it genuinely harder for new drugs to prove their
         worth. An effect powerful enough to challenge the pharmaceutical
         industry is not &ldquo;nothing.&rdquo;

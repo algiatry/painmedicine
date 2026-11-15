@@ -4,7 +4,7 @@ import BrandMark from "@/components/BrandMark";
 
 export default function Footer() {
   return (
-    <footer className="mt-auto border-t border-slate-200 bg-slate-50 dark:border-slate-800 dark:bg-slate-950">
+    <footer className="mt-auto border-t border-line bg-slate-50 dark:bg-slate-950">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-12 space-y-8">
         {/* Crisis / help lines */}
         <div className="rounded-lg border border-teal-200 bg-teal-50 p-5 dark:border-teal-900/60 dark:bg-teal-950/40">
@@ -29,24 +29,24 @@ export default function Footer() {
             <BrandMark
               variant="signal"
               size={20}
-              className="shrink-0 mt-1 text-teal-700 dark:text-teal-400"
+              className="shrink-0 mt-1 text-brand"
             />
             <div>
-              <p className="text-base font-semibold tracking-tight text-slate-900 dark:text-slate-100">
+              <p className="text-base font-semibold tracking-tight text-ink">
                 {SITE.shortName}
-                <span className="ml-1.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-teal-700 dark:text-teal-400">
+                <span className="ml-1.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-brand">
                   .com
                 </span>
               </p>
-              <p className="mt-0.5 text-sm text-slate-600 dark:text-slate-400">{SITE.tagline}</p>
+              <p className="mt-0.5 text-sm text-muted">{SITE.tagline}</p>
             </div>
           </div>
           <nav aria-label="Footer sections">
-            <p className="text-sm font-semibold text-slate-900 dark:text-slate-100">Explore</p>
+            <p className="text-sm font-semibold text-ink">Explore</p>
             <ul className="mt-2 space-y-1">
               {NAV.map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="text-sm text-slate-600 hover:text-teal-700 dark:text-slate-400 dark:hover:text-teal-400">
+                  <Link href={item.href} className="text-sm text-muted hover:text-brand">
                     {item.label}
                   </Link>
                 </li>
@@ -54,11 +54,11 @@ export default function Footer() {
             </ul>
           </nav>
           <nav aria-label="Footer policies">
-            <p className="text-sm font-semibold text-slate-900 dark:text-slate-100">Site</p>
+            <p className="text-sm font-semibold text-ink">Site</p>
             <ul className="mt-2 space-y-1">
               {SUPPORT_LINKS.map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="text-sm text-slate-600 hover:text-teal-700 dark:text-slate-400 dark:hover:text-teal-400">
+                  <Link href={item.href} className="text-sm text-muted hover:text-brand">
                     {item.label}
                   </Link>
                 </li>
@@ -68,20 +68,20 @@ export default function Footer() {
         </div>
 
         {/* Medical disclaimer – required on every page */}
-        <div className="border-t border-slate-200 pt-6 dark:border-slate-800">
-          <p className="text-xs leading-relaxed text-slate-500 dark:text-slate-400">
+        <div className="border-t border-line pt-6">
+          <p className="text-xs leading-relaxed text-subtle">
             <strong>Medical disclaimer:</strong> The content on {SITE.name} is for
             educational purposes only. It is not medical advice, and it is not a
             substitute for diagnosis, treatment, or guidance from a licensed
             clinician. Never disregard professional medical advice or delay
             seeking it because of something you read here. Always talk to your
             physician before starting, stopping, or changing any treatment.{" "}
-            <Link href="/medical-disclaimer" className="underline hover:text-teal-700 dark:hover:text-teal-400">
+            <Link href="/medical-disclaimer" className="underline hover:text-brand">
               Read the full disclaimer
             </Link>
             .
           </p>
-          <p className="mt-3 text-xs text-slate-400 dark:text-slate-500">
+          <p className="mt-3 text-xs text-subtle">
             © {new Date().getFullYear()} {SITE.name}. Educational content only.
           </p>
         </div>

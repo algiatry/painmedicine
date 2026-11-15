@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "./Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
 
 /**
  * Figure – the descending "dial". Attention in the cortex sets the
@@ -86,7 +86,7 @@ function DialFigure() {
   );
 
   return (
-    <Figure caption="The same pathway, two settings. Attention in the cortex sets the periaqueductal grey – the brainstem's pain-control hub – which sets how much of the incoming signal the spinal cord passes upward. An absorbing task turns the dial down; watching for pain turns it up. Neither setting is imaginary; both are measured in brain scans.">
+    <Figure caption="The same pathway, two settings. Attention in the cortex sets the periaqueductal grey, the brainstem's pain-control hub, which sets how much of the incoming signal the spinal cord passes upward. An absorbing task turns the dial down; watching for pain turns it up. Neither setting is imaginary; both are measured in brain scans.">
       <svg
         role="img"
         aria-labelledby="dial-title dial-desc"
@@ -205,7 +205,7 @@ export default function AttentionAndDistraction() {
         team at Oxford put nine volunteers in a high-resolution MRI scanner,
         applied painful heat to the hand, and simply asked them to either
         focus on the heat or distract themselves from it. During distraction,
-        people rated the same heat as less painful – and activity in the
+        people rated the same heat as less painful, and activity in the
         periaqueductal grey <em>rose</em>. The more it rose, the bigger the
         drop in reported pain. That is the dial being turned, caught on
         camera.
@@ -214,7 +214,7 @@ export default function AttentionAndDistraction() {
       <H2 id="brain-scans">What distraction looks like in the brain</H2>
       <P>
         A companion study from the same group used a different distraction – a
-        demanding counting task – while volunteers received bursts of painful
+        demanding counting task, while volunteers received bursts of painful
         heat. Again, pain ratings fell when the task was hard. Across the
         brain&rsquo;s pain-processing network – the thalamus, the insula, part
         of the cingulate cortex – activity dropped in step with the ratings.
@@ -260,7 +260,7 @@ export default function AttentionAndDistraction() {
         self-reported pain and distress during needle procedures, with the
         honest caveat that most trials were small and the quality of evidence
         was low. Low-quality evidence pointing one way across thirty trials is
-        still worth knowing about – and it is why children&rsquo;s hospitals
+        still worth knowing about, and it is why children&rsquo;s hospitals
         now treat distraction as standard care for shots and blood draws.
       </P>
 
@@ -268,7 +268,7 @@ export default function AttentionAndDistraction() {
       <P>
         Music is an unusual distractor because it works on two dials at once.
         It occupies attention – more so when you choose it, know it, and
-        follow it closely – and it shifts mood. The two are separable. In a
+        follow it closely, and it shifts mood. The two are separable. In a
         2009 McGill study, researchers used pleasant and unpleasant smells to
         change volunteers&rsquo; mood independently of where their attention
         was directed, and found that <strong>mood mainly changed how
@@ -287,7 +287,7 @@ export default function AttentionAndDistraction() {
       <H2 id="cuts-both-ways">The dial turns both ways</H2>
       <P>
         Everything above has a mirror image. If attention away from pain turns
-        the dial down, attention <em>on</em> pain turns it up – and the Oxford
+        the dial down, attention <em>on</em> pain turns it up, and the Oxford
         volunteers who were asked to focus on the heat felt exactly that.
         Nobody chooses to do this on purpose, but persistent pain tends to
         train it. Pain that has lasted months teaches a person to scan for
@@ -304,10 +304,10 @@ export default function AttentionAndDistraction() {
         </Link>{" "}
         describes the chemistry that follows. None of this means pain is
         caused by paying attention to it. It means the pain system has an
-        amplifier, and attention is one of its inputs – in both directions.
+        amplifier, and attention is one of its inputs, in both directions.
       </P>
 
-      <H2 id="limits">The honest limits</H2>
+      <H2 id="limits">The limits</H2>
       <P>
         Distraction is strongest where the pain is <strong>brief and
         predictable</strong>: a needle, a dressing change, a few minutes of
@@ -347,7 +347,7 @@ export default function AttentionAndDistraction() {
         the signal reaching the brain has shrunk. The same pathway can be
         nudged the other way by fear and vigilance, which is one reason
         persistent pain so often grows beyond its original cause. If you want
-        to use this deliberately – for a procedure, a flare, or as part of a
+        to use this deliberately, for a procedure, a flare, or as part of a
         longer plan – it is worth raising with your clinician or a pain
         psychologist, who can match the approach to your pain rather than to
         a headline.

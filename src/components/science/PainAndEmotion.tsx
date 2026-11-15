@@ -4,7 +4,7 @@ import { FIG } from "@/lib/fig";
 
 function SharedCircuitryFigure() {
   return (
-    <Figure caption="Pain and emotion are processed by overlapping brain regions. The anterior cingulate cortex and insula sit at the heart of both – which is why each can turn the other's volume up or down.">
+    <Figure caption="Pain and emotion are processed by overlapping brain regions. The anterior cingulate cortex and insula sit at the heart of both, which is why each can turn the other's volume up or down.">
       <svg
         role="img"
         aria-labelledby="venn-title venn-desc"
@@ -225,7 +225,7 @@ export default function PainAndEmotion() {
       <SharedCircuitryFigure />
       <P>
         Brain imaging shows why pain and feeling are inseparable. The regions
-        that light up when something hurts – especially the{" "}
+        that light up when something hurts, especially the{" "}
         <strong>anterior cingulate cortex</strong> and the{" "}
         <strong>insula</strong> – are long-recognized parts of the
         brain&rsquo;s emotional machinery. They encode the{" "}
@@ -240,13 +240,13 @@ export default function PainAndEmotion() {
       <H2 id="volume-control">The brain&rsquo;s volume control</H2>
       <P>
         The traffic also flows downward. Your brain runs a descending
-        volume-control system – from the cortex and amygdala through a
+        volume-control system, from the cortex and amygdala through a
         brainstem hub called the periaqueductal grey, down to the spinal cord –
         that can amplify or suppress pain signals before they are ever fully
         felt. It is the system described in{" "}
         <Link
           href="/understanding-pain/how-pain-works"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           how pain works
         </Link>
@@ -258,9 +258,9 @@ export default function PainAndEmotion() {
         by roughly 15 to 30%, depending on the study.
       </P>
       <P>
-        This is the honest answer to why stress makes pain worse. It is not
+        This is the answer to why stress makes pain worse. It is not
         that you are exaggerating under pressure. It is that a stressed,
-        threatened nervous system tips its own dial toward amplification – and
+        threatened nervous system tips its own dial toward amplification, and
         the same signal genuinely hurts more.
       </P>
 
@@ -299,7 +299,7 @@ export default function PainAndEmotion() {
         condition deepens the other, and each can hide the other from a
         clinician who is only looking for one. None of this makes either
         condition less real. It makes treating them <em>together</em> the
-        scientifically sound move – and it is why a thorough pain evaluation
+        scientifically sound move, and it is why a thorough pain evaluation
         asks about mood without any implication that your pain is &ldquo;just&rdquo;
         psychological.
       </P>
@@ -312,14 +312,14 @@ export default function PainAndEmotion() {
         the therapies described in{" "}
         <Link
           href="/future-of-pain-medicine/mind-and-brain"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           the mind and the brain
         </Link>{" "}
         – should be able to turn real dials on real pain. The trial evidence
         says they do: across dozens of randomized trials, psychological
         therapies produce measurable reductions in pain, disability, and
-        distress. The honest caveat is that the average effects are modest –
+        distress. The caveat is that the average effects are modest –
         these are tools in a plan, not the whole plan. Whether they fit{" "}
         <em>your</em> plan is a conversation for you and your clinician.
       </P>

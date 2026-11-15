@@ -13,7 +13,7 @@ const FACES = [
 function ScaleFigure() {
   const ticks = Array.from({ length: 11 }, (_, i) => i);
   return (
-    <Figure caption="The 0-to-10 numeric scale, paired with faces. Quick and useful – but a single number is only the beginning of the story.">
+    <Figure caption="The 0-to-10 numeric scale, paired with faces. Quick and useful, but a single number is only the beginning of the story.">
       <svg
         role="img"
         aria-labelledby="scale-title scale-desc"
@@ -166,7 +166,7 @@ const PEOPLE = [
 
 function BeyondNumberFigure() {
   return (
-    <Figure caption="Two people both report a 7 – but the number hides how differently pain is shaping their days.">
+    <Figure caption="Two people both report a 7, but the number hides how differently pain is shaping their days.">
       <svg
         role="img"
         aria-labelledby="beyond-title beyond-desc"
@@ -220,7 +220,7 @@ export default function MeasuringPain() {
       <P>
         &ldquo;On a scale of zero to ten, how bad is your pain?&rdquo; Almost
         everyone who has seen a clinician has been asked it. The number is
-        genuinely useful – but pain is one of the hardest things in medicine to
+        genuinely useful, but pain is one of the hardest things in medicine to
         measure, and knowing why helps you describe yours far better.
       </P>
 
@@ -244,7 +244,7 @@ export default function MeasuringPain() {
         ]}
       />
 
-      <H2 id="subjective">Pain is subjective – and that is the point</H2>
+      <H2 id="subjective">Pain is subjective, and that is the point</H2>
       <P>
         There is no blood test, scan, or &ldquo;painometer&rdquo; that reads out
         how much something hurts. Pain is a personal experience, and the person
@@ -252,7 +252,7 @@ export default function MeasuringPain() {
         pain scientists build this right into their definition: a person&rsquo;s
         report of their own pain{" "}
         <strong>should be respected</strong>. Your account is not a soft
-        substitute for &ldquo;real&rdquo; data – for pain, it{" "}
+        substitute for &ldquo;real&rdquo; data, for pain, it{" "}
         <em>is</em> the data.
       </P>
 
@@ -269,7 +269,7 @@ export default function MeasuringPain() {
       </P>
       <P>
         Two of those steps made one <strong>dol</strong> – from{" "}
-        <em>dolor</em>, the Latin word for pain – and the result was a scale
+        <em>dolor</em>, the Latin word for pain, and the result was a scale
         from 0 to 10.5 dols. It was a serious, careful piece of science: at
         roughly 8 dols the heat was intense enough to start damaging skin,
         which tells you how far the method was willing to go in search of a
@@ -286,25 +286,25 @@ export default function MeasuringPain() {
         calibrated. Meaning can&rsquo;t.
       </P>
       <P>
-        So there is no unit of pain – no dol, no degree, no decibel – and that
+        So there is no unit of pain – no dol, no degree, no decibel, and that
         failure is this whole page in miniature. Pain isn&rsquo;t a stimulus;
         it&rsquo;s an experience the brain assembles, shaped by{" "}
         <Link
           href="/understanding-pain/pain-and-emotion"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           attention, emotion and context
         </Link>
         . Medicine stopped trying to build a better lamp and started asking
-        better questions – which is exactly what the tools below are.
+        better questions, which is exactly what the tools below are.
       </P>
 
       <H2 id="tools">The tools clinicians use</H2>
       <P>
         Because pain can&rsquo;t be measured directly, clinicians use rating
-        tools to capture it and – most usefully – to track how it changes:
+        tools to capture it and, most usefully, to track how it changes:
       </P>
-      <ul className="mt-4 space-y-3 text-slate-700 dark:text-slate-300">
+      <ul className="mt-4 space-y-3 text-body">
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
@@ -348,7 +348,7 @@ export default function MeasuringPain() {
         You can give your care team far more to work with than a score. When you
         describe your pain, try to include:
       </P>
-      <ul className="mt-4 space-y-3 text-slate-700 dark:text-slate-300">
+      <ul className="mt-4 space-y-3 text-body">
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
@@ -356,7 +356,7 @@ export default function MeasuringPain() {
             electric? The words point toward the{" "}
             <Link
               href="/understanding-pain/types-of-pain"
-              className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+              className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
             >
               type of pain
             </Link>
@@ -386,9 +386,9 @@ export default function MeasuringPain() {
         </li>
       </ul>
       <P>
-        A simple pain diary over a week or two – numbers plus a few of these
-        notes – can turn a vague impression into something you and your clinician
-        can actually act on.
+        A simple pain diary over a week or two, numbers plus a few of these
+        notes, can turn a vague impression into something you and your clinician
+        can act on.
       </P>
     </div>
   );

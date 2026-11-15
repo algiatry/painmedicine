@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
 
 function TimelineFigure() {
   return (
@@ -117,7 +117,7 @@ export default function ShinglesPain() {
         than waiting to see how the rash develops.
       </P>
       <P>
-        One honest limit is worth knowing. A Cochrane review of six randomized
+        One limit is worth knowing. A Cochrane review of six randomized
         trials found that the antiviral aciclovir did not significantly reduce
         the number of people who went on to postherpetic neuralgia, although
         there was some evidence of less pain at four weeks. Early antivirals
@@ -174,11 +174,11 @@ export default function ShinglesPain() {
         much improved than with the comparison patch.
       </P>
       <P>
-        That last figure is typical, and it is the honest picture of this
+        That last figure is typical, and it is the picture of this
         field. The same review describes treatment outcomes as modest. A
         realistic goal is pain turned down far enough to sleep, dress, and get
-        on with the day – often through a combination of approaches and some
-        trial and adjustment – rather than a single medicine that removes it.
+        on with the day, often through a combination of approaches and some
+        trial and adjustment, rather than a single medicine that removes it.
       </P>
       <P>
         Opioid pain medicines sit in the third line of that review, with a

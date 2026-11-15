@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
 
 /** The treatment ladder as four stacked steps, widest (everyone) at the bottom. */
 function LadderFigure() {
@@ -101,7 +101,7 @@ export default function KneeAndHipOsteoarthritis() {
         is the reverse of the instinct to rest a sore joint.
       </P>
       <P>
-        The evidence for exercise is large and worth describing honestly. A
+        The evidence for exercise is large. A
         2024 Cochrane review of 139 trials found that exercise probably
         improves knee pain, physical function, and quality of life in the
         short term. The average gain in pain was roughly 9 to 13 points on a
@@ -158,7 +158,7 @@ export default function KneeAndHipOsteoarthritis() {
         Several heavily marketed options are recommended <em>against</em>. The
         guideline strongly recommends against platelet-rich plasma and stem
         cell injections for knee and hip osteoarthritis, citing the lack of
-        standardization in what is actually being injected. It recommends
+        standardization in what is being injected. It recommends
         against hyaluronic acid injections, conditionally for the knee and
         strongly for the hip, because the apparent benefit disappeared in the
         better-designed trials. And it strongly recommends against

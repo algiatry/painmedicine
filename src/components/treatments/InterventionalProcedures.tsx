@@ -4,7 +4,7 @@ import { FIG } from "@/lib/fig";
 import { SpineSide } from "../anatomy/SpineSide";
 
 const link =
-  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
 
 /**
  * Figure 1 – the precision map: where the main procedures aim, on the
@@ -86,7 +86,7 @@ function WindowsFigure() {
     { label: "Stimulator (after a trial)", w: 430, note: "years – adjustable, reversible" },
   ];
   return (
-    <Figure caption="What each window honestly buys. The durations differ; the rule doesn't: a procedure lowers the pain so movement becomes possible, and the rehabilitation done inside the window is what holds the gains.">
+    <Figure caption="What each window buys. The durations differ; the rule doesn't: a procedure lowers the pain so movement becomes possible, and the rehabilitation done inside the window is what holds the gains.">
       <svg
         role="img"
         aria-labelledby="win-title win-desc"
@@ -170,13 +170,13 @@ export default function InterventionalProcedures() {
           CRPS
         </Link>{" "}
         and upper-abdominal cancer pain; painful <strong>joints and
-        muscle trigger points</strong>; and – for the implanted devices –
+        muscle trigger points</strong>; and, for the implanted devices,
         the <strong>spinal cord and its nerve-root ganglia</strong>
         themselves. All of it happens under live X-ray or ultrasound,
         usually awake or lightly sedated, usually home the same day.
       </P>
 
-      <H2 id="blocks">Injections and blocks – and the question inside them</H2>
+      <H2 id="blocks">Injections and blocks, and the question inside them</H2>
       <P>
         The most familiar procedure is the <strong>epidural steroid
         injection</strong>, and it deserves the field&rsquo;s most honest
@@ -185,7 +185,7 @@ export default function InterventionalProcedures() {
           sciatica
         </Link>
         , the systematic-review evidence shows real but{" "}
-        <strong>modest, mostly short-term</strong> relief – and little
+        <strong>modest, mostly short-term</strong> relief, and little
         benefit for ordinary back pain. Used well, that is exactly enough:
         a bridge across the worst weeks while a disc resorbs, a doorway
         into rehab, sometimes a surgery deferred indefinitely. Used as a
@@ -208,7 +208,7 @@ export default function InterventionalProcedures() {
         block</strong> numbs the tiny nerves serving the suspect joints;
         meaningful relief marks them as the culprits. Then{" "}
         <strong>radiofrequency ablation</strong> applies precisely placed
-        heat to quiet those same nerves for the long haul – typically many
+        heat to quiet those same nerves for the long haul, typically many
         months to a year of relief. The nerves regrow in time, and the
         procedure can be repeated. Selection is everything: done after
         confirmatory blocks in the right patient, it is one of the
@@ -236,8 +236,7 @@ export default function InterventionalProcedures() {
         a feature almost nothing else in medicine offers:{" "}
         <strong>a take-home trial</strong> – about a week with a temporary
         external system, so the decision to implant is made from your own
-        lived data, not a brochure. Where the hardware is headed –
-        closed-loop systems that listen to the cord and adjust themselves –
+        lived data, not a brochure. Where the hardware is headed, closed-loop systems that listen to the cord and adjust themselves,
         is the story of{" "}
         <Link href="/future-of-pain-medicine/neuromodulation" className={link}>
           next-generation neuromodulation
@@ -245,16 +244,16 @@ export default function InterventionalProcedures() {
         .
       </P>
 
-      <H2 id="scs-results">What the stimulator numbers honestly say</H2>
+      <H2 id="scs-results">What the stimulator numbers say</H2>
       <P>
         Two questions deserve plain answers before anyone agrees to an
         implant. <em>How many people get relief?</em> In trials the usual
         yardstick is a &ldquo;responder&rdquo; – someone whose pain falls by
-        at least half – and across the modern randomized studies most
+        at least half, and across the modern randomized studies most
         well-selected candidates with nerve-type pain clear that bar during
         the trial period, which is exactly what the take-home test is for.{" "}
         <em>Does it wear off?</em> Sometimes. Relief can fade over years, and
-        a minority of people have the device removed; honest programs track
+        a minority of people have the device removed; good programs track
         this and say so. The newest comparison, a 2026 meta-analysis of 17
         studies and 669 patients, found that &ldquo;burst&rdquo; stimulation
         lowered pain by about 1.3 points more than conventional stimulation
@@ -263,11 +262,11 @@ export default function InterventionalProcedures() {
         clinically meaningful, with no clear difference in quality of life or
         disability. Read that as the field reads it: stimulation is a proven
         tool for the right candidate, the waveform matters less than the
-        selection, and the trial week is the most honest predictor you will
+        selection, and the trial week is the best predictor you will
         get.
       </P>
 
-      <H2 id="pumps">Pumps, and the honest periphery</H2>
+      <H2 id="pumps">Pumps, and the periphery</H2>
       <P>
         <strong>Intrathecal pumps</strong> deliver medication directly
         into the spinal fluid, earning their keep mostly in{" "}
@@ -277,7 +276,7 @@ export default function InterventionalProcedures() {
         that outruns what pills can do. Around the edges of the field sit
         procedures with more mixed report cards – cement augmentation of
         painful spinal fractures, for one, has randomized trials pointing
-        in both directions – and a good interventionalist will tell you
+        in both directions, and a good interventionalist will tell you
         so unprompted. A useful rule for any offered procedure: the
         clinician who volunteers the evidence&rsquo;s limits is the one
         to trust with the needle.
@@ -293,8 +292,8 @@ export default function InterventionalProcedures() {
         decides what it was worth: the strengthening, the movement, the
         sleep repaired, the life resumed. So bring three questions to any
         procedure conversation. <em>What diagnosis is this testing or
-        treating? How large and how long is the expected relief,
-        honestly? And what will we do inside the window?</em> A
+        treating? How large and how long is the expected relief?
+        And what will we do inside the window?</em> A
         clinician with crisp answers to all three is practicing
         interventional pain medicine the way it works.
       </P>
@@ -311,7 +310,7 @@ export default function InterventionalProcedures() {
           Finding pain care near you
         </Link>{" "}
         covers how to verify that training and what to ask at a first
-        visit – including, now, the three questions above.
+        visit, including, now, the three questions above.
       </P>
     </div>
   );

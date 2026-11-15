@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
 
 /** Benefit and harm side by side, from the Cochrane neuropathic-pain review. */
 function BalanceFigure() {
@@ -217,7 +217,7 @@ export default function CannabisAndCannabinoids() {
         <Link href="/treatments/comparing-your-options" className={link}>
           comparing your options
         </Link>
-        , and where an honest conversation with a clinician matters more than
+        , and where a conversation with a clinician matters more than
         a headline. Anyone considering it should tell their clinicians,
         especially when driving is part of daily life or when taking other
         medicines that cause drowsiness. This page gives no dosing or product guidance.

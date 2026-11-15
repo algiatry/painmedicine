@@ -20,7 +20,7 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Adjuvant analgesic",
     definition:
-      "A medicine whose original purpose is something else – such as an antidepressant or anti-seizure drug – but that also relieves certain kinds of pain, especially nerve pain.",
+      "A medicine whose original purpose is something else, such as an antidepressant or anti-seizure drug, but that also relieves certain kinds of pain, especially nerve pain.",
   },
   {
     term: "Allodynia",
@@ -35,13 +35,13 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Biologic",
     definition:
-      "A large, precisely engineered medicine – often an antibody – designed to block one specific molecular target, unlike broad-acting small-molecule drugs.",
+      "A large, precisely engineered medicine, often an antibody, designed to block one specific molecular target, unlike broad-acting small-molecule drugs.",
     href: "/future-of-pain-medicine/biologics-and-gene-therapy",
   },
   {
     term: "Biopsychosocial model",
     definition:
-      "The modern understanding that pain is shaped by biological, psychological, and social factors together – not by tissue damage alone.",
+      "The modern understanding that pain is shaped by biological, psychological, and social factors together, not by tissue damage alone.",
     href: "/what-is-pain-medicine/the-pain-team",
   },
   {
@@ -53,7 +53,7 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Boom-bust cycle",
     definition:
-      "The pattern of overdoing activity on a good day, flaring, and losing the days that follow – which teaches a sensitized pain system that activity is dangerous. Pacing is its evidence-backed replacement.",
+      "The pattern of overdoing activity on a good day, flaring, and losing the days that follow, which teaches a sensitized pain system that activity is dangerous. Pacing is its evidence-backed replacement.",
     href: "/treatments/physical-and-behavioral-therapies",
   },
   {
@@ -106,7 +106,7 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Conditioned pain modulation (CPM)",
     definition:
-      "The nervous system's built-in 'pain-inhibits-pain' reflex: pain in one part of the body can suppress pain signals from elsewhere. Sleep loss can weaken or switch off this reflex.",
+      "The nervous system's built-in “pain-inhibits-pain” reflex: pain in one part of the body can suppress pain signals from elsewhere. Sleep loss can weaken or switch off this reflex.",
     href: "/understanding-pain/pain-and-sleep",
   },
   {
@@ -130,7 +130,7 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Dorsal horn",
     definition:
-      "The region of the spinal cord where incoming pain signals are filtered before traveling on to the brain – home of the pain 'gate.'",
+      "The region of the spinal cord where incoming pain signals are filtered before traveling on to the brain – home of the pain “gate.”",
     href: "/understanding-pain/how-pain-works",
   },
   {
@@ -142,7 +142,7 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Endogenous opioids",
     definition:
-      "Pain-relieving chemicals the body makes itself, such as endorphins, acting on the same receptors as opioid drugs. They are part of how the brain's own pain-relief system – including placebo analgesia – works.",
+      "Pain-relieving chemicals the body makes itself, such as endorphins, acting on the same receptors as opioid drugs. They are part of how the brain's own pain-relief system, including placebo analgesia, works.",
     href: "/understanding-pain/the-placebo-effect",
   },
   {
@@ -160,7 +160,7 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Gate control theory",
     definition:
-      "The idea, introduced by Melzack and Wall in 1965, that a 'gate' in the spinal cord can open or close to let more or fewer pain signals through.",
+      "The idea, introduced by Melzack and Wall in 1965, that a “gate” in the spinal cord can open or close to let more or fewer pain signals through.",
     href: "/understanding-pain/how-pain-works",
   },
   {
@@ -184,7 +184,7 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Interventional pain procedure",
     definition:
-      "An image-guided procedure – such as a nerve block, injection, or radiofrequency treatment – used to diagnose or treat pain.",
+      "An image-guided procedure, such as a nerve block, injection, or radiofrequency treatment – used to diagnose or treat pain.",
   },
   {
     term: "Medication-overuse headache",
@@ -207,7 +207,7 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Naloxone",
     definition:
-      "A drug that blocks opioid receptors. It reverses opioid overdoses – and in research, its ability to blunt placebo pain relief showed that placebo analgesia runs on the body's own opioid chemistry.",
+      "A drug that blocks opioid receptors. It reverses opioid overdoses, and in research, its ability to blunt placebo pain relief showed that placebo analgesia runs on the body's own opioid chemistry.",
     href: "/understanding-pain/the-placebo-effect",
   },
   {
@@ -225,13 +225,13 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Neuropathic pain",
     definition:
-      "Pain caused by damage or disease in the nervous system itself – often described as burning, shooting, or electric.",
+      "Pain caused by damage or disease in the nervous system itself, often described as burning, shooting, or electric.",
     href: "/understanding-pain/types-of-pain",
   },
   {
     term: "Nocebo effect",
     definition:
-      "The placebo effect's evil twin: expecting harm produces real symptoms. In vaccine trials, about a third of people receiving only saline reported 'side effects' like headache and fatigue.",
+      "The placebo effect's evil twin: expecting harm produces real symptoms. In vaccine trials, about a third of people receiving only saline reported “side effects” like headache and fatigue.",
     href: "/understanding-pain/the-nocebo-effect",
   },
   {
@@ -278,7 +278,7 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Pain catastrophizing",
     definition:
-      "An automatic habit of worst-case thinking about pain ('this will never end'). It predicts worse pain and disability – and because it is a learned appraisal habit, not a character flaw, it can be retrained.",
+      "An automatic habit of worst-case thinking about pain (“this will never end”). It predicts worse pain and disability, and because it is a learned appraisal habit, not a character flaw, it can be retrained.",
     href: "/understanding-pain/pain-and-emotion",
   },
   {
@@ -290,7 +290,7 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Paresthesia",
     definition:
-      "A tingling, 'pins and needles' sensation. Older spinal cord stimulators created it deliberately to mask pain; newer ones can work without it.",
+      "A tingling, “pins and needles” sensation. Older spinal cord stimulators created it deliberately to mask pain; newer ones can work without it.",
     href: "/future-of-pain-medicine/neuromodulation",
   },
   {
@@ -308,7 +308,7 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Placebo effect",
     definition:
-      "Real, measurable symptom relief produced by expectation and the context of care – in pain, it works through the brain's own opioid chemistry and descending pain control. It eases symptoms; it does not treat the underlying disease.",
+      "Real, measurable symptom relief produced by expectation and the context of care. In pain, it works through the brain's own opioid chemistry and descending pain control. It eases symptoms; it does not treat the underlying disease.",
     href: "/understanding-pain/the-placebo-effect",
   },
   {
@@ -337,7 +337,7 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Slow-wave sleep",
     definition:
-      "The deepest stage of sleep, when the body – including the pain system – does much of its restoration. Disrupting it, even without shortening sleep, lowers pain thresholds and produces widespread tenderness.",
+      "The deepest stage of sleep, when the body, including the pain system, does much of its restoration. Disrupting it, even without shortening sleep, lowers pain thresholds and produces widespread tenderness.",
     href: "/understanding-pain/pain-and-sleep",
   },
   {

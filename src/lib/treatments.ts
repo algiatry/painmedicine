@@ -20,26 +20,26 @@ export const TREATMENT_ARTICLES: Article[] = [
     slug: "kratom",
     title: "Kratom",
     description:
-      "What kratom is, how mitragynine acts on opioid receptors, what the evidence says about pain relief, the real risks – dependence, interactions, unregulated products – and where the law stands on concentrated 7-OH.",
+      "What kratom is, how mitragynine acts on opioid receptors, what the evidence says about pain relief, the real risks – dependence, interactions, unregulated products, and where the law stands on concentrated 7-OH.",
     status: "sourced",
     lastUpdated: "2026-10-18",
     answer:
-      "Kratom is a Southeast Asian tree whose leaves contain mitragynine, a compound that acts on the same opioid receptors as prescription painkillers – though not in the same way. Roughly 1.7 million Americans use it each year, many for pain. It is not FDA-approved, the products are largely unregulated, and the evidence for pain relief, while real, is early and thin.",
+      "Kratom is a Southeast Asian tree whose leaves contain mitragynine, a compound that acts on the same opioid receptors as prescription painkillers, though not in the same way. Roughly 1.7 million Americans use it each year, many for pain. It is not FDA-approved, the products are largely unregulated, and the evidence for pain relief, while real, is early and thin.",
     faqs: [
       {
         question: "Is kratom an opioid?",
         answer:
-          "Not botanically – the kratom tree is in the coffee family. But its main active compound, mitragynine, is a partial agonist at mu-opioid receptors, the same receptors morphine acts on. Scientists often call it an 'atypical opioid': opioid-receptor activity is central to how it works, which is also why dependence and withdrawal are real risks.",
+          "Not botanically – the kratom tree is in the coffee family. But its main active compound, mitragynine, is a partial agonist at mu-opioid receptors, the same receptors morphine acts on. Scientists often call it an “atypical opioid”: opioid-receptor activity is central to how it works, which is also why dependence and withdrawal are real risks.",
       },
       {
-        question: "Does kratom actually work for chronic pain?",
+        question: "Does kratom work for chronic pain?",
         answer:
-          "Nobody knows yet with the kind of evidence pain medicine relies on. Millions of users report relief in surveys, and one small placebo-controlled trial found kratom significantly increased pain tolerance. But no large randomized trial has ever tested kratom in people with chronic pain, so its true benefit – and how it compares to proven treatments – remains unmeasured.",
+          "Nobody knows yet with the kind of evidence pain medicine relies on. Millions of users report relief in surveys, and one small placebo-controlled trial found kratom significantly increased pain tolerance. But no large randomized trial has ever tested kratom in people with chronic pain, so its true benefit, and how it compares to proven treatments, remains unmeasured.",
       },
       {
         question: "Is kratom legal in the United States?",
         answer:
-          "Leaf kratom is not a federally controlled substance, but it is not FDA-approved for any use, and a handful of states ban it while others regulate it under Kratom Consumer Protection Acts. In 2026 the DEA began temporarily scheduling the concentrated-7-OH corner of the market: three synthetic 7-OH-related compounds entered Schedule I on August 26, 2026, where they remain. The agency's plan for concentrated 7-hydroxymitragynine itself changed on October 14, 2026, when it withdrew its original proposal and floated a revised one with a new threshold – so an order covering 7-OH itself is still pending, not yet in force. None of this touches the traditional leaf.",
+          "Leaf kratom is not a federally controlled substance, but it is not FDA-approved for any use, and a handful of states ban it while others regulate it under Kratom Consumer Protection Acts. In 2026 the DEA began temporarily scheduling the concentrated-7-OH corner of the market: three synthetic 7-OH-related compounds entered Schedule I on August 26, 2026, where they remain. The agency's plan for concentrated 7-hydroxymitragynine itself changed on October 14, 2026, when it withdrew its original proposal and floated a revised one with a new threshold, so an order covering 7-OH itself is still pending, not yet in force. None of this touches the traditional leaf.",
       },
       {
         question: "Is kratom addictive?",
@@ -49,12 +49,12 @@ export const TREATMENT_ARTICLES: Article[] = [
       {
         question: "What is 7-OH, and why is it treated differently?",
         answer:
-          "7-hydroxymitragynine (7-OH) is a minor alkaloid in kratom leaf – present only in traces, but far more potent at opioid receptors than mitragynine. Manufacturers began selling concentrated or synthetic 7-OH tablets that the FDA says are 'not kratom' but effectively novel opioid products, and in 2026 the DEA moved against them: three synthetic 7-OH relatives entered Schedule I on August 26, 2026. The DEA's own proposal for high-concentration 7-OH was withdrawn and replaced with a revised one on October 14, 2026, so a temporary order for 7-OH itself is still pending, not yet in force.",
+          "7-hydroxymitragynine (7-OH) is a minor alkaloid in kratom leaf – present only in traces, but far more potent at opioid receptors than mitragynine. Manufacturers began selling concentrated or synthetic 7-OH tablets that the FDA says are “not kratom” but effectively novel opioid products, and in 2026 the DEA moved against them: three synthetic 7-OH relatives entered Schedule I on August 26, 2026. The DEA's own proposal for high-concentration 7-OH was withdrawn and replaced with a revised one on October 14, 2026, so a temporary order for 7-OH itself is still pending, not yet in force.",
       },
       {
         question: "Can I use kratom alongside my pain medications?",
         answer:
-          "Talk with your physician before combining kratom with anything – and tell them if you already use it. Kratom is processed by the same liver enzymes as many common drugs, and nearly all kratom-involved deaths involved other substances, most often opioids or sedatives. It also matters before surgery or anesthesia. This is a conversation worth having openly; a good clinician will not dismiss it.",
+          "Talk with your physician before combining kratom with anything, and tell them if you already use it. Kratom is processed by the same liver enzymes as many common drugs, and nearly all kratom-involved deaths involved other substances, most often opioids or sedatives. It also matters before surgery or anesthesia. This is a conversation worth having openly; a good clinician will not dismiss it.",
       },
     ],
     references: [
@@ -126,7 +126,7 @@ export const TREATMENT_ARTICLES: Article[] = [
         title: "How pain works",
         href: "/understanding-pain/how-pain-works",
         blurb:
-          "The receptors and pathways any analgesic – plant or pharmaceutical – has to work through.",
+          "The receptors and pathways any analgesic, plant or pharmaceutical, has to work through.",
       },
       {
         title: "Cannabis and cannabinoids for pain",
@@ -139,10 +139,10 @@ export const TREATMENT_ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "medications-for-pain",
-    title: "Medications for Pain",
+    title: "Medications for pain",
     seoTitle: "Pain Medications: Types of Pain Relievers and Which Is Right for You",
     description:
-      "What pain medications are, the different types of pain relievers – acetaminophen, NSAIDs, topicals, the nerve-pain medications, muscle relaxants, opioids, and the first new class in decades – what makes a pain reliever 'good,' and how to tell which one is right for you by matching the drug to the pain type rather than its 'strength.'",
+      "What pain medications are, the different types of pain relievers – acetaminophen, NSAIDs, topicals, the nerve-pain medications, muscle relaxants, opioids, and the first new class in decades – what makes a pain reliever “good,” and how to tell which one is right for you by matching the drug to the pain type rather than its “strength.”",
     status: "sourced",
     lastUpdated: "2026-10-04",
     answer:
@@ -151,7 +151,7 @@ export const TREATMENT_ARTICLES: Article[] = [
       {
         question: "What are pain medications?",
         answer:
-          "Pain medications – also called pain relievers or analgesics – are drugs that reduce pain by acting at some point on the pathway that carries a pain signal from injured tissue, through the nerves and spinal cord, to the brain. Some are sold over the counter (acetaminophen, ibuprofen, naproxen, aspirin, and topical gels and patches); others require a prescription (the nerve-pain medications, muscle relaxants, opioids, and the new sodium-channel blocker suzetrigine). They treat the symptom of pain, not its cause, which is why they work alongside – not instead of – treating what is driving the pain.",
+          "Pain medications, also called pain relievers or analgesics, are drugs that reduce pain by acting at some point on the pathway that carries a pain signal from injured tissue, through the nerves and spinal cord, to the brain. Some are sold over the counter (acetaminophen, ibuprofen, naproxen, aspirin, and topical gels and patches); others require a prescription (the nerve-pain medications, muscle relaxants, opioids, and the new sodium-channel blocker suzetrigine). They treat the symptom of pain, not its cause, which is why they work alongside, not instead of, treating what is driving the pain.",
       },
       {
         question: "What are the different types of pain relievers?",
@@ -161,7 +161,7 @@ export const TREATMENT_ARTICLES: Article[] = [
       {
         question: "What is a good pain reliever?",
         answer:
-          "A good pain reliever is the one whose mechanism matches your pain's mechanism, carries the lowest risk for your particular body, and is used for a defined purpose and period. For a sprain, a sore joint, or a dental ache, that is usually acetaminophen or an NSAID – guidelines list them first-line, and they are as effective as anything for that kind of pain. For burning or shooting nerve pain, it is usually a nerve-pain medication, and the everyday painkillers underperform. 'Good' is defined by the fit, not by potency: a modest drug that matches the pain beats a powerful one that does not.",
+          "A good pain reliever is the one whose mechanism matches your pain's mechanism, carries the lowest risk for your particular body, and is used for a defined purpose and period. For a sprain, a sore joint, or a dental ache, that is usually acetaminophen or an NSAID – guidelines list them first-line, and they are as effective as anything for that kind of pain. For burning or shooting nerve pain, it is usually a nerve-pain medication, and the everyday painkillers underperform. “Good” is defined by the fit, not by potency: a modest drug that matches the pain beats a powerful one that does not.",
       },
       {
         question: "Which pain reliever is right for you?",
@@ -171,7 +171,7 @@ export const TREATMENT_ARTICLES: Article[] = [
       {
         question: "What is the strongest painkiller?",
         answer:
-          "That is the question everyone asks, and it is quietly the wrong one. 'Strength' describes potency at one receptor, not effectiveness for your pain. The most potent opioid does little for nerve pain; an anti-inflammatory can outperform it for an inflamed joint; and for sensitized-pain-system conditions like fibromyalgia, most traditional painkillers underperform movement and brain-targeted care. Effectiveness comes from matching the medication's mechanism to the pain's mechanism – which is exactly what a pain physician is trained to do.",
+          "That is the question everyone asks, and it is quietly the wrong one. “Strength” describes potency at one receptor, not effectiveness for your pain. The most potent opioid does little for nerve pain; an anti-inflammatory can outperform it for an inflamed joint; and for sensitized-pain-system conditions like fibromyalgia, most traditional painkillers underperform movement and brain-targeted care. Effectiveness comes from matching the medication's mechanism to the pain's mechanism, which is exactly what a pain physician is trained to do.",
       },
       {
         question: "Why was I prescribed an antidepressant or a seizure medication for pain?",
@@ -253,7 +253,7 @@ export const TREATMENT_ARTICLES: Article[] = [
         title: "Low back pain",
         href: "/conditions/low-back-pain",
         blurb:
-          "Where medications actually sit in the guideline playbook for the world's most common pain.",
+          "Where medications sit in the guideline playbook for the world's most common pain.",
       },
     ],
   },
@@ -261,9 +261,9 @@ export const TREATMENT_ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "interventional-procedures",
-    title: "Interventional Procedures",
+    title: "Interventional procedures",
     description:
-      "The image-guided middle layer between pills and surgery: epidural injections, nerve blocks, radiofrequency ablation, spinal cord and DRG stimulators, and pumps – what each one actually does, the honest evidence, and the window rule that makes them work.",
+      "The image-guided middle layer between pills and surgery: epidural injections, nerve blocks, radiofrequency ablation, spinal cord and DRG stimulators, and pumps – what each one does, the evidence, and the window rule that makes them work.",
     status: "sourced",
     lastUpdated: "2026-10-04",
     answer:
@@ -282,7 +282,7 @@ export const TREATMENT_ARTICLES: Article[] = [
       {
         question: "What is radiofrequency ablation and how long does it last?",
         answer:
-          "A two-step, test-then-treat approach used most for facet-joint pain in the neck and back. First, a temporary numbing block of the small medial branch nerves answers a question: is this joint the pain source? If relief follows, radiofrequency ablation uses precisely placed heat to quiet those same nerves for longer – typically many months to a year. The nerves regrow and the procedure can be repeated. Its results live or die on that diagnostic step, which is why the block comes first.",
+          "A two-step, test-then-treat approach used most for facet-joint pain in the neck and back. First, a temporary numbing block of the small medial branch nerves answers a question: is this joint the pain source? If relief follows, radiofrequency ablation uses precisely placed heat to quiet those same nerves for longer, typically many months to a year. The nerves regrow and the procedure can be repeated. Its results live or die on that diagnostic step, which is why the block comes first.",
       },
       {
         question: "What is a spinal cord stimulator and who is it for?",
@@ -292,12 +292,12 @@ export const TREATMENT_ARTICLES: Article[] = [
       {
         question: "What percentage of people get relief from a spinal cord stimulator, and does it wear off?",
         answer:
-          "In trials, 'relief' usually means pain cut by at least half, and most well-selected candidates with nerve-type pain reach that during the temporary trial – which is why the trial comes first. Over years, benefit can fade for some people and a minority have the device removed. A 2026 meta-analysis of 669 patients found newer 'burst' stimulation beat conventional stimulation by about 1.3 points on a 10-point pain scale, with no clear difference in quality of life – a real but modest edge. The honest predictor of your result is your own trial week, not the brochure.",
+          "In trials, “relief” usually means pain cut by at least half, and most well-selected candidates with nerve-type pain reach that during the temporary trial, which is why the trial comes first. Over years, benefit can fade for some people and a minority have the device removed. A 2026 meta-analysis of 669 patients found newer “burst” stimulation beat conventional stimulation by about 1.3 points on a 10-point pain scale, with no clear difference in quality of life – a real but modest edge. The best predictor of your result is your own trial week, not the brochure.",
       },
       {
         question: "Are procedures a substitute for physical therapy?",
         answer:
-          "No – they are how physical therapy becomes possible. The pattern behind nearly every interventional success story is the same: the procedure lowers the pain enough to move, and the movement, strengthening, and retraining that follow are what hold the gains. A procedure that buys a window no one uses tends to wear off into disappointment. Arriving with the question 'what will we do with the relief?' is the difference between a cycle of injections and a trajectory.",
+          "No – they are how physical therapy becomes possible. The pattern behind nearly every interventional success story is the same: the procedure lowers the pain enough to move, and the movement, strengthening, and retraining that follow are what hold the gains. A procedure that buys a window no one uses tends to wear off into disappointment. Arriving with the question “what will we do with the relief?” is the difference between a cycle of injections and a trajectory.",
       },
     ],
     references: [
@@ -372,38 +372,38 @@ export const TREATMENT_ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "physical-and-behavioral-therapies",
-    title: "Physical & Behavioral Therapies",
+    title: "Physical & behavioral therapies",
     description:
-      "The treatments that retrain pain rather than mask it: why movement is medicine for a sensitized system, what CBT and mindfulness honestly deliver, the pacing skill that ends the boom-bust cycle, and what a good active-care program looks like.",
+      "The treatments that retrain pain rather than mask it: why movement is medicine for a sensitized system, what CBT and mindfulness deliver, the pacing skill that ends the boom-bust cycle, and what a good active-care program looks like.",
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
-      "Physical and behavioral therapies are the active half of pain medicine – graded movement that rebuilds the body's capacity, and brain-targeted approaches like CBT and mindfulness that turn down the pain system's amplification. Their effects are modest on average but durable, side-effect-free, and compounding – which is why they hold the strongest recommendations in most chronic pain guidelines.",
+      "Physical and behavioral therapies are the active half of pain medicine – graded movement that rebuilds the body's capacity, and brain-targeted approaches like CBT and mindfulness that turn down the pain system's amplification. Their effects are modest on average but durable, side-effect-free, and compounding, which is why they hold the strongest recommendations in most chronic pain guidelines.",
     faqs: [
       {
         question: "How can exercise reduce pain when moving is what hurts?",
         answer:
-          "Because in most chronic pain, hurt does not equal harm – and movement treats the pain system itself. Exercise triggers the body's own pain-dampening chemistry, gradual loading rebuilds the strength that protects joints and spine, and each safe repetition teaches a sensitized nervous system that movement is not a threat, unwinding the fear-avoidance cycle that keeps pain loud. The craft is in the dose: started below the flare threshold and progressed gradually, movement is treatment; started with an ambush, it is a setback.",
+          "Because in most chronic pain, hurt does not equal harm, and movement treats the pain system itself. Exercise triggers the body's own pain-dampening chemistry, gradual loading rebuilds the strength that protects joints and spine, and each safe repetition teaches a sensitized nervous system that movement is not a threat, unwinding the fear-avoidance cycle that keeps pain loud. The craft is in the dose: started below the flare threshold and progressed gradually, movement is treatment; started with an ambush, it is a setback.",
       },
       {
         question: "Why would I see a psychologist for pain? My pain isn't in my head.",
         answer:
-          "Correct – and that is not what the referral means. Pain-processing and emotion-processing circuits overlap in the brain, so therapies that work those circuits can genuinely turn pain's volume down. Across dozens of randomized trials, cognitive behavioral therapy produces reliable, usually modest reductions in pain and disability – by changing how the nervous system handles the signal, not by talking you out of a real experience. Seeing a pain psychologist is using every lever on real biology.",
+          "Correct, and that is not what the referral means. Pain-processing and emotion-processing circuits overlap in the brain, so therapies that work those circuits can genuinely turn pain's volume down. Across dozens of randomized trials, cognitive behavioral therapy produces reliable, usually modest reductions in pain and disability, by changing how the nervous system handles the signal, not by talking you out of a real experience. Seeing a pain psychologist is using every lever on real biology.",
       },
       {
-        question: "What is pacing – and why do I crash after every good day?",
+        question: "What is pacing, and why do I crash after every good day?",
         answer:
           "The crash has a name: the boom-bust cycle. On a good day you do everything, the sensitized system flares, and the next days are lost to recovery – teaching the nervous system that activity is dangerous. Pacing replaces it: find the amount you can do even on a bad day, do that amount consistently, and increase by plan rather than by how you feel. Progress by schedule, not by symptoms. It feels slower and compounds much faster than the sawtooth it replaces.",
       },
       {
-        question: "Does mindfulness actually help pain?",
+        question: "Does mindfulness help pain?",
         answer:
-          "In good trials, yes – modestly and honestly. In a randomized trial for chronic low back pain, mindfulness-based stress reduction improved pain and function more than usual care and performed on par with cognitive behavioral therapy, with gains persisting at one year. Mindfulness does not make pain vanish; it changes the relationship between the signal and the suffering, and it trains the attention and threat systems that set pain's volume. As one tool in an active plan, it earns its place.",
+          "In good trials, yes – modestly. In a randomized trial for chronic low back pain, mindfulness-based stress reduction improved pain and function more than usual care and performed on par with cognitive behavioral therapy, with gains persisting at one year. Mindfulness does not make pain vanish; it changes the relationship between the signal and the suffering, and it trains the attention and threat systems that set pain's volume. As one tool in an active plan, it earns its place.",
       },
       {
         question: "What should good physical therapy for chronic pain look like?",
         answer:
-          "Active, graded, and yours. A good program is built around things you do – progressive exercise, movement retraining, a home plan that advances – with passive treatments like heat or massage in supporting roles at most. It starts where you actually are, progresses by plan, treats flares as information rather than failure, and has a graduation goal: you, running your own program. Passive-only care that never changes and never ends is the pattern to walk away from.",
+          "Active, graded, and yours. A good program is built around things you do – progressive exercise, movement retraining, a home plan that advances, with passive treatments like heat or massage in supporting roles at most. It starts where you are, progresses by plan, treats flares as information rather than failure, and has a graduation goal: you, running your own program. Passive-only care that never changes and never ends is the pattern to walk away from.",
       },
     ],
     references: [
@@ -469,23 +469,23 @@ export const TREATMENT_ARTICLES: Article[] = [
 
     hub: HUB,
     slug: "medication-organ-safety",
-    title: "Pain Medications & Your Organs: Liver, Kidneys, Heart, and Gut",
+    title: "Pain medications & your organs: liver, kidneys, heart, and gut",
     description:
       "The organ-by-organ safety map for the everyday pain medications: acetaminophen and the liver, NSAIDs and the kidneys, heart, blood pressure, and stomach – the established label limits printed as literacy, and the combinations that turn safe drugs into injuries.",
     status: "sourced",
     lastUpdated: "2026-09-05",
     answer:
-      "The most common pain medications are safe for most adults at their established label limits – but each class concentrates its risk in a specific organ. Acetaminophen's boundary is the liver, and the danger is stacking it across combination cold and pain products. NSAIDs (ibuprofen, naproxen) stress the kidneys, raise blood pressure, carry a cardiovascular warning, and can injure the stomach. Knowing which organ each drug touches – and which combinations multiply the load – is the difference between safe use and the most common medication injuries in the country.",
+      "The most common pain medications are safe for most adults at their established label limits, but each class concentrates its risk in a specific organ. Acetaminophen's boundary is the liver, and the danger is stacking it across combination cold and pain products. NSAIDs (ibuprofen, naproxen) stress the kidneys, raise blood pressure, carry a cardiovascular warning, and can injure the stomach. Knowing which organ each drug touches, and which combinations multiply the load, is the difference between safe use and the most common medication injuries in the country.",
     faqs: [
       {
         question: "How much acetaminophen is too much?",
         answer:
-          "The established FDA adult ceiling is 4,000 milligrams in 24 hours – across every product combined. That total is the part people miss: acetaminophen hides inside prescription combination painkillers and dozens of cold, flu, sleep, and sinus products, so a person can exceed the ceiling without ever taking a tablet labeled 'Tylenol.' Regular alcohol use, fasting, and existing liver disease lower the safe amount well below the ceiling. Your own limit may be lower – confirm with your physician or pharmacist.",
+          "The established FDA adult ceiling is 4,000 milligrams in 24 hours – across every product combined. That total is the part people miss: acetaminophen hides inside prescription combination painkillers and dozens of cold, flu, sleep, and sinus products, so a person can exceed the ceiling without ever taking a tablet labeled “Tylenol.” Regular alcohol use, fasting, and existing liver disease lower the safe amount well below the ceiling. Your own limit may be lower – confirm with your physician or pharmacist.",
       },
       {
         question: "Can ibuprofen damage my kidneys?",
         answer:
-          "It can, with the risk concentrated in specific situations: dehydration, existing kidney disease, heart failure, older age, and especially the triple combination of an NSAID plus a blood-pressure medication from the ACE-inhibitor/ARB family plus a diuretic (water pill) – nephrologists call it the 'triple whammy.' The OTC self-care ceiling is 1,200 mg per day, and NSAIDs work by damping the prostaglandin chemistry your kidneys use to regulate their own blood flow. Short courses in a healthy, hydrated adult rarely cause problems; daily long-term use is a conversation for your physician.",
+          "It can, with the risk concentrated in specific situations: dehydration, existing kidney disease, heart failure, older age, and especially the triple combination of an NSAID plus a blood-pressure medication from the ACE-inhibitor/ARB family plus a diuretic (water pill) – nephrologists call it the “triple whammy.” The OTC self-care ceiling is 1,200 mg per day, and NSAIDs work by damping the prostaglandin chemistry your kidneys use to regulate their own blood flow. Short courses in a healthy, hydrated adult rarely cause problems; daily long-term use is a conversation for your physician.",
       },
       {
         question: "Do NSAIDs raise the risk of heart attack and stroke?",
@@ -495,12 +495,12 @@ export const TREATMENT_ARTICLES: Article[] = [
       {
         question: "Which is safer for my stomach – acetaminophen or ibuprofen?",
         answer:
-          "For the stomach specifically, acetaminophen. NSAIDs injure the stomach and intestinal lining directly – they block the prostaglandins that maintain its protective mucus – which is why they carry warnings about ulcers and GI bleeding, a risk that climbs with age, prior ulcers, blood thinners, corticosteroids, and alcohol. Acetaminophen does not share that mechanism; its boundary is the liver instead. Every class trades one organ's risk for another's, which is exactly the point of matching the drug to your health picture.",
+          "For the stomach specifically, acetaminophen. NSAIDs injure the stomach and intestinal lining directly (they block the prostaglandins that maintain its protective mucus) which is why they carry warnings about ulcers and GI bleeding, a risk that climbs with age, prior ulcers, blood thinners, corticosteroids, and alcohol. Acetaminophen does not share that mechanism; its boundary is the liver instead. Every class trades one organ's risk for another's, which is exactly the point of matching the drug to your health picture.",
       },
       {
         question: "What medication combinations are most dangerous for pain patients?",
         answer:
-          "Three patterns dominate the injury statistics. First, hidden acetaminophen stacking – a prescription combination painkiller plus OTC cold medicine, silently doubling the liver load. Second, the kidney 'triple whammy': an NSAID layered onto an ACE-inhibitor/ARB and a diuretic. Third, opioids or sedatives combined with benzodiazepines, sleep medications, or alcohol – the combination behind most accidental overdose deaths, because each suppresses breathing through a shared pathway. A pharmacist can check your full list in minutes; bringing it to them is one of the highest-value safety steps available. And if opioids or sedative combinations are part of your life and worry is growing, the SAMHSA helpline (1-800-662-4357) is free and confidential.",
+          "Three patterns dominate the injury statistics. First, hidden acetaminophen stacking – a prescription combination painkiller plus OTC cold medicine, silently doubling the liver load. Second, the kidney “triple whammy”: an NSAID layered onto an ACE-inhibitor/ARB and a diuretic. Third, opioids or sedatives combined with benzodiazepines, sleep medications, or alcohol – the combination behind most accidental overdose deaths, because each suppresses breathing through a shared pathway. A pharmacist can check your full list in minutes; bringing it to them is one of the highest-value safety steps available. And if opioids or sedative combinations are part of your life and worry is growing, the SAMHSA helpline (1-800-662-4357) is free and confidential.",
       },
     ],
     references: [
@@ -533,7 +533,7 @@ export const TREATMENT_ARTICLES: Article[] = [
       {
         source: "Merck Manual",
         title:
-          "Analgesic Nephropathy – including the NSAID + ACE inhibitor/ARB + diuretic combination",
+          "Analgesic Nephropathy, including the NSAID + ACE inhibitor/ARB + diuretic combination",
         url: "https://www.merckmanuals.com/professional/genitourinary-disorders/tubulointerstitial-diseases/analgesic-nephropathy",
       },
     ],
@@ -568,13 +568,13 @@ export const TREATMENT_ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "opioid-stewardship",
-    title: "Opioids, Honestly: Dependence, Tolerance, and Staying Safe",
+    title: "Opioids, honestly: dependence, tolerance, and staying safe",
     description:
-      "The mind-and-brain side of pain medication safety: how opioids actually work, the difference between dependence and addiction, tolerance and opioid-induced hyperalgesia, the overdose combinations that kill, naloxone, safe storage and disposal, and what the CDC guideline really says.",
+      "The mind-and-brain side of pain medication safety: how opioids work, the difference between dependence and addiction, tolerance and opioid-induced hyperalgesia, the overdose combinations that kill, naloxone, safe storage and disposal, and what the CDC guideline really says.",
     status: "sourced",
     lastUpdated: "2026-10-04",
     answer:
-      "Opioids are powerful pain relievers that act on the brain's own opioid system – the same system that governs reward, breathing, and mood – which is why their benefits and their risks travel together. Physical dependence (the body adapts; stopping causes withdrawal) is normal physiology, not addiction; opioid use disorder is a separate, treatable medical condition. Modern guidelines place opioids late in the treatment ladder for chronic non-cancer pain, and the safety essentials are knowable: never combine with sedatives or alcohol, keep naloxone on hand, store securely, and taper rather than stop suddenly.",
+      "Opioids are powerful pain relievers that act on the brain's own opioid system – the same system that governs reward, breathing, and mood, which is why their benefits and their risks travel together. Physical dependence (the body adapts; stopping causes withdrawal) is normal physiology, not addiction; opioid use disorder is a separate, treatable medical condition. Modern guidelines place opioids late in the treatment ladder for chronic non-cancer pain, and the safety essentials are knowable: never combine with sedatives or alcohol, keep naloxone on hand, store securely, and taper rather than stop suddenly.",
     faqs: [
       {
         question: "What's the difference between dependence and addiction?",
@@ -589,17 +589,17 @@ export const TREATMENT_ARTICLES: Article[] = [
       {
         question: "What is naloxone, and should my household have it?",
         answer:
-          "Naloxone (Narcan and generics) is an opioid antidote: it knocks opioids off their receptors and can restore breathing within minutes of an overdose. It is available without a prescription in all 50 states, safe for laypeople to use, and harmless if given to someone who turns out not to have opioids in their system. The CDC guideline says clinicians should offer it when prescribing opioids – especially with sedative combinations, higher doses, a history of substance use disorder, or sleep-disordered breathing – and recommends teaching household members how to use it. If anyone in your home takes opioids, having naloxone within reach is the single highest-value safety step.",
+          "Naloxone (Narcan and generics) is an opioid antidote: it knocks opioids off their receptors and can restore breathing within minutes of an overdose. It is available without a prescription in all 50 states, safe for laypeople to use, and harmless if given to someone who turns out not to have opioids in their system. The CDC guideline says clinicians should offer it when prescribing opioids, especially with sedative combinations, higher doses, a history of substance use disorder, or sleep-disordered breathing, and recommends teaching household members how to use it. If anyone in your home takes opioids, having naloxone within reach is the single highest-value safety step.",
       },
       {
-        question: "Can long-term opioids actually make pain worse?",
+        question: "Can long-term opioids make pain worse?",
         answer:
           "Yes – a recognized phenomenon called opioid-induced hyperalgesia, where sustained opioid exposure sensitizes the pain system itself, so pain spreads, thresholds drop, and escalating doses chase diminishing returns. It is one reason the SPACE trial's finding mattered: in a year-long randomized trial for chronic back and arthritis pain, opioids performed no better than non-opioid medications on pain-related function, with more side effects. When pain keeps rising despite rising doses, that pattern itself is information worth bringing to your physician.",
       },
       {
         question: "How should opioid medications be stored and disposed of?",
         answer:
-          "Locked, counted, and out of reach – most diverted prescription opioids come from friends' and relatives' medicine cabinets, not from strangers. Keep them in original containers, away from children, teens, and visitors; track how many remain. For disposal, DEA National Take Back Days and year-round pharmacy/police drop boxes are the safest route; the FDA's flush list covers the most dangerous medications (including fentanyl and oxycodone) when no take-back option exists. Never keep leftover opioids 'just in case' – the leftover supply is where much of the crisis began.",
+          "Locked, counted, and out of reach, most diverted prescription opioids come from friends' and relatives' medicine cabinets, not from strangers. Keep them in original containers, away from children, teens, and visitors; track how many remain. For disposal, DEA National Take Back Days and year-round pharmacy/police drop boxes are the safest route; the FDA's flush list covers the most dangerous medications (including fentanyl and oxycodone) when no take-back option exists. Never keep leftover opioids “just in case” – the leftover supply is where much of the crisis began.",
       },
       {
         question: "If I've been on opioids for years, how do I stop safely?",
@@ -657,19 +657,19 @@ export const TREATMENT_ARTICLES: Article[] = [
         title: "Pain medications & your organs",
         href: "/treatments/medication-organ-safety",
         blurb:
-          "The body side of medication safety: liver, kidneys, heart, and gut – and the combinations that multiply risk.",
+          "The body side of medication safety: liver, kidneys, heart, and gut, and the combinations that multiply risk.",
       },
       {
         title: "Medications for pain",
         href: "/treatments/medications-for-pain",
         blurb:
-          "Where opioids sit in the modern class map – and the new non-opioid class that arrived in 2025.",
+          "Where opioids sit in the modern class map, and the new non-opioid class that arrived in 2025.",
       },
       {
         title: "Kratom",
         href: "/treatments/kratom",
         blurb:
-          "The unregulated opioid-reactor at the edge of the market – and the 2026 federal scheduling action.",
+          "The unregulated opioid-reactor at the edge of the market, and the 2026 federal scheduling action.",
       },
       {
         title: "Cancer pain",
@@ -688,9 +688,9 @@ export const TREATMENT_ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "comparing-your-options",
-    title: "Comparing Your Options",
+    title: "Comparing your options",
     description:
-      "An honest map of the pain-treatment evidence: what's well-proven, what's promising, what's weak – why almost everything helps 'modestly' on average, why modest effects stack, and how to read any treatment claim like the field does.",
+      "A map of the pain-treatment evidence: what's well-proven, what's promising, what's weak – why almost everything helps “modestly” on average, why modest effects stack, and how to read any treatment claim like the field does.",
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
@@ -699,12 +699,12 @@ export const TREATMENT_ARTICLES: Article[] = [
       {
         question: "What is the most effective treatment for chronic pain?",
         answer:
-          "The honest answer is a reframe: effectiveness lives in the match, not the treatment. Nerve-pain medications outperform everything else for neuropathic pain and underperform for arthritis; exercise holds the strongest recommendations across the most conditions; a stimulator can transform the right candidate and does nothing for the wrong one. Across trials, average effects are modest nearly everywhere – so the strongest plans combine several matched treatments rather than searching for a single dominant one.",
+          "The answer is a reframe: effectiveness lives in the match, not the treatment. Nerve-pain medications outperform everything else for neuropathic pain and underperform for arthritis; exercise holds the strongest recommendations across the most conditions; a stimulator can transform the right candidate and does nothing for the wrong one. Across trials, average effects are modest nearly everywhere, so the strongest plans combine several matched treatments rather than searching for a single dominant one.",
       },
       {
-        question: "Why do all these treatments only work 'modestly'?",
+        question: "Why do all these treatments only work “modestly”?",
         answer:
-          "Because trial averages flatten very different individual stories. A 'modest average benefit' typically means some people improved substantially, many a little, and some not at all – blended into one number. That has two practical consequences: a modest average is not a prediction of your result, and finding your responders' treatments requires fair, sequential trials. It is also why combinations beat single agents: modest effects from different mechanisms add, and their side effects mostly don't.",
+          "Because trial averages flatten very different individual stories. A “modest average benefit” typically means some people improved substantially, many a little, and some not at all – blended into one number. That has two practical consequences: a modest average is not a prediction of your result, and finding your responders' treatments requires fair, sequential trials. It is also why combinations beat single agents: modest effects from different mechanisms add, and their side effects mostly don't.",
       },
       {
         question: "How can I tell whether a pain treatment claim is trustworthy?",
@@ -714,12 +714,12 @@ export const TREATMENT_ARTICLES: Article[] = [
       {
         question: "Are acupuncture and supplements worth trying?",
         answer:
-          "They sit in different bins. Acupuncture has been tested in an unusually rigorous individual-patient-data meta-analysis: real benefits beyond sham for several chronic pain conditions – small on average, persistent, and low-risk, which makes it a reasonable adjunct for people drawn to it. Supplements are a certainty problem: mostly unregulated products with mostly weak evidence and real interaction potential. If you use any – herbal products included – tell your clinician and pharmacist; interactions are the risk people most underestimate.",
+          "They sit in different bins. Acupuncture has been tested in an unusually rigorous individual-patient-data meta-analysis: real benefits beyond sham for several chronic pain conditions – small on average, persistent, and low-risk, which makes it a reasonable adjunct for people drawn to it. Supplements are a certainty problem: mostly unregulated products with mostly weak evidence and real interaction potential. If you use any, herbal products included, tell your clinician and pharmacist; interactions are the risk people most underestimate.",
       },
       {
-        question: "How do I know if a treatment is actually working for me?",
+        question: "How do I know if a treatment is working for me?",
         answer:
-          "Run a fair trial on yourself: change one thing at a time; pick a functional target before you start – the walk, the workday, the sleep – rather than only a pain score; set a realistic time window with your clinician; keep a simple diary; and decide in advance what result will mean stop versus continue. This is how good pain physicians work through options, and it protects you from both quitting winners too early and riding losers too long.",
+          "Run a fair trial on yourself: change one thing at a time; pick a functional target before you start – the walk, the workday, the sleep, rather than only a pain score; set a realistic time window with your clinician; keep a simple diary; and decide in advance what result will mean stop versus continue. This is how good pain physicians work through options, and it protects you from both quitting winners too early and riding losers too long.",
       },
     ],
     references: [
@@ -773,22 +773,22 @@ export const TREATMENT_ARTICLES: Article[] = [
       {
         title: "Interventional procedures",
         href: "/treatments/interventional-procedures",
-        blurb: "The selection-dependent corner – and the window rule.",
+        blurb: "The selection-dependent corner, and the window rule.",
       },
       {
         title: "Low back pain",
         href: "/conditions/low-back-pain",
         blurb:
-          "The world's most common pain condition – and the one where this evidence map gets used most.",
+          "The world's most common pain condition, and the one where this evidence map gets used most.",
       },
     ],
   },
   {
     hub: HUB,
     slug: "piriformis-syndrome",
-    title: "Piriformis Syndrome and the Deep Hip",
+    title: "Piriformis syndrome and the deep hip",
     description:
-      "The sciatica that does not start at the spine: the small deep-hip muscle the sciatic nerve passes beneath, the four features that define piriformis syndrome, what the evidence honestly says, and what a physical therapy program for it is built to do.",
+      "The sciatica that does not start at the spine: the small deep-hip muscle the sciatic nerve passes beneath, the four features that define piriformis syndrome, what the evidence says, and what a physical therapy program for it is built to do.",
     status: "sourced",
     lastUpdated: "2026-09-10",
     answer:
@@ -797,17 +797,17 @@ export const TREATMENT_ARTICLES: Article[] = [
       {
         question: "How is piriformis syndrome different from ordinary sciatica?",
         answer:
-          "Ordinary sciatica starts at the spine, where a disc or narrowing presses on a nerve root. Piriformis syndrome starts lower and further out, in the buttock, where the piriformis muscle irritates the sciatic nerve as it leaves the pelvis. The felt pain overlaps – buttock and back of the thigh – but the pattern differs: piriformis pain is centered in the buttock rather than the back, is worse with sitting, and is reproduced by pressing over the greater sciatic notch or by positions that tension the muscle. Clinicians must rule out the spine, hip joint, and sacroiliac joint before settling on it.",
+          "Ordinary sciatica starts at the spine, where a disc or narrowing presses on a nerve root. Piriformis syndrome starts lower and further out, in the buttock, where the piriformis muscle irritates the sciatic nerve as it leaves the pelvis. The felt pain overlaps, buttock and back of the thigh, but the pattern differs: piriformis pain is centered in the buttock rather than the back, is worse with sitting, and is reproduced by pressing over the greater sciatic notch or by positions that tension the muscle. Clinicians must rule out the spine, hip joint, and sacroiliac joint before settling on it.",
       },
       {
         question: "Is there a test that proves I have it?",
         answer:
-          "No. There is no blood test or imaging finding that confirms piriformis syndrome, and the accuracy of the physical tests has not been established in properly designed studies. Clinicians diagnose it by the quartet of features found in two systematic reviews – buttock pain, worse with sitting, tenderness at the greater sciatic notch, and pain on maneuvers that tension the muscle – and by excluding other causes. A positive straight-leg raise does not rule it out.",
+          "No. There is no blood test or imaging finding that confirms piriformis syndrome, and the accuracy of the physical tests has not been established in properly designed studies. Clinicians diagnose it by the quartet of features found in two systematic reviews – buttock pain, worse with sitting, tenderness at the greater sciatic notch, and pain on maneuvers that tension the muscle, and by excluding other causes. A positive straight-leg raise does not rule it out.",
       },
       {
         question: "What does physical therapy for piriformis syndrome involve?",
         answer:
-          "A program typically works on three fronts: easing and lengthening the piriformis and neighboring hip rotators, strengthening the hip muscles whose weakness let it overwork – especially the gluteal abductors and rotators – and gently mobilizing the sciatic nerve, alongside changes to the sitting habits that provoke it. Reviews recommend physical therapy as first-line care; the specific exercises are chosen by the therapist for the person in front of them and progressed by plan rather than by pain.",
+          "A program typically works on three fronts: easing and lengthening the piriformis and neighboring hip rotators, strengthening the hip muscles whose weakness let it overwork, especially the gluteal abductors and rotators, and gently mobilizing the sciatic nerve, alongside changes to the sitting habits that provoke it. Reviews recommend physical therapy as first-line care; the specific exercises are chosen by the therapist for the person in front of them and progressed by plan rather than by pain.",
       },
       {
         question: "Do I have the anatomical variant where the nerve goes through the muscle?",
@@ -874,7 +874,7 @@ export const TREATMENT_ARTICLES: Article[] = [
         title: "Sciatica",
         href: "/conditions/sciatica",
         blurb:
-          "The nine-in-ten story – where sciatica usually starts, and why the spine is checked first.",
+          "The nine-in-ten story, where sciatica usually starts, and why the spine is checked first.",
       },
       {
         title: "Physical & behavioral therapies",
@@ -894,19 +894,19 @@ export const TREATMENT_ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "opioids-for-acute-pain",
-    title: "Opioids for Acute Pain",
+    title: "Opioids for acute pain",
     seoTitle: "Do Opioids Work for Acute Pain? What the Largest Evidence Review Found",
     description:
-      "What the 2026 University of Sydney overview of 59 systematic reviews actually found about opioids for short-term pain: real benefit after painful procedures and in acute abdominal pain, very small benefit for sprains and strains, none for acute back and neck pain – and why an ibuprofen-and-acetaminophen prescription is often the evidence working.",
+      "What the 2026 University of Sydney overview of 59 systematic reviews found about opioids for short-term pain: real benefit after painful procedures and in acute abdominal pain, very small benefit for sprains and strains, none for acute back and neck pain, and why an ibuprofen-and-acetaminophen prescription is often the evidence working.",
     status: "sourced",
     lastUpdated: "2026-10-04",
     answer:
-      "Sometimes, and less than most people expect. The largest overview of the evidence found opioids clearly reduce pain after painful procedures and in acute abdominal pain, but give only very small relief for sprains and strains – with about one extra person in ten getting side effects. For acute back and neck pain, a short course did no better than placebo. After surgery or major injury they remain essential.",
+      "Sometimes, and less than most people expect. The largest overview of the evidence found opioids clearly reduce pain after painful procedures and in acute abdominal pain, but give only very small relief for sprains and strains, with about one extra person in ten getting side effects. For acute back and neck pain, a short course did no better than placebo. After surgery or major injury they remain essential.",
     faqs: [
       {
         question: "Do opioids work for acute pain?",
         answer:
-          "For some kinds, yes. A 2026 overview of 59 systematic reviews found opioids lowered pain by roughly 15–20 points on a 100-point scale in the first hours after dental surgery, ear-tube surgery, and in acute abdominal pain. For acute musculoskeletal pain – sprains, strains, back and neck injuries – oral opioids gave only about 9 points of relief between six and 48 hours, which the authors called very small, and raised the risk of side effects. The honest summary is the authors' own: opioids are effective in some acute conditions, not all.",
+          "For some kinds, yes. A 2026 overview of 59 systematic reviews found opioids lowered pain by roughly 15–20 points on a 100-point scale in the first hours after dental surgery, ear-tube surgery, and in acute abdominal pain. For acute musculoskeletal pain – sprains, strains, back and neck injuries – oral opioids gave only about 9 points of relief between six and 48 hours, which the authors called very small, and raised the risk of side effects. The summary is the authors' own: opioids are effective in some acute conditions, not all.",
       },
       {
         question: "Are opioids stronger than ibuprofen?",
@@ -916,7 +916,7 @@ export const TREATMENT_ARTICLES: Article[] = [
       {
         question: "Why did my doctor only give me ibuprofen after my injury?",
         answer:
-          "Most likely because the evidence says it works as well for your kind of pain with fewer side effects. For sprains, strains, and non-specific back or neck pain, trials show an NSAID with acetaminophen matches opioid combinations, while opioids add nausea, drowsiness, constipation, and a small but real risk of longer-term use. If an NSAID is not safe for you – because of your stomach, kidneys, heart, or other medications – your clinician or pharmacist can explain the alternatives. If your pain is not controlled, say so; that is information they need.",
+          "Most likely because the evidence says it works as well for your kind of pain with fewer side effects. For sprains, strains, and non-specific back or neck pain, trials show an NSAID with acetaminophen matches opioid combinations, while opioids add nausea, drowsiness, constipation, and a small but real risk of longer-term use. If an NSAID is not safe for you, because of your stomach, kidneys, heart, or other medications – your clinician or pharmacist can explain the alternatives. If your pain is not controlled, say so; that is information they need.",
       },
       {
         question: "When are opioids appropriate for short-term pain?",
@@ -999,7 +999,7 @@ export const TREATMENT_ARTICLES: Article[] = [
     seoTitle:
       "Ketamine for Chronic Pain: What the Evidence Says and Why At-Home Use Is Different",
     description:
-      "What ketamine is, how blocking the NMDA receptor turns down amplified pain signals, what the trials and the 2025 Cochrane review honestly show, why a monitored infusion differs from a mailed lozenge, and what the ASA and FDA are asking for.",
+      "What ketamine is, how blocking the NMDA receptor turns down amplified pain signals, what the trials and the 2025 Cochrane review show, why a monitored infusion differs from a mailed lozenge, and what the ASA and FDA are asking for.",
     status: "sourced",
     lastUpdated: "2026-10-04",
     answer:
@@ -1008,7 +1008,7 @@ export const TREATMENT_ARTICLES: Article[] = [
       {
         question: "Is ketamine used for chronic pain?",
         answer:
-          "Yes, off-label. Pain specialists sometimes give ketamine as a monitored IV infusion for pain that has not responded to other treatments – most often complex regional pain syndrome (CRPS) and some nerve pain. The FDA has approved ketamine only as an anesthetic, so every use for chronic pain is outside its label, and professional guidelines describe it as a specialist option rather than a routine one.",
+          "Yes, off-label. Pain specialists sometimes give ketamine as a monitored IV infusion for pain that has not responded to other treatments, most often complex regional pain syndrome (CRPS) and some nerve pain. The FDA has approved ketamine only as an anesthetic, so every use for chronic pain is outside its label, and professional guidelines describe it as a specialist option rather than a routine one.",
       },
       {
         question: "Does ketamine infusion work for pain?",
@@ -1065,7 +1065,7 @@ export const TREATMENT_ARTICLES: Article[] = [
       {
         source: "FDA",
         title:
-          "Compounding Risk Alerts – including the October 10, 2023 warning on compounded ketamine products for psychiatric disorders",
+          "Compounding Risk Alerts, including the October 10, 2023 warning on compounded ketamine products for psychiatric disorders",
         url: "https://www.fda.gov/drugs/human-drug-compounding/compounding-risk-alerts",
       },
       {
@@ -1084,7 +1084,7 @@ export const TREATMENT_ARTICLES: Article[] = [
         title: "Complex regional pain syndrome",
         href: "/conditions/crps",
         blurb:
-          "The condition with the clearest – still limited – evidence for ketamine infusion, and why catching it early matters more.",
+          "The condition with the clearest, still limited, evidence for ketamine infusion, and why catching it early matters more.",
       },
       {
         title: "Neuropathic pain",
@@ -1104,15 +1104,15 @@ export const TREATMENT_ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "buprenorphine-for-pain",
-    title: "Buprenorphine for Chronic Pain",
+    title: "Buprenorphine for chronic pain",
     seoTitle:
       "Buprenorphine for Chronic Pain: What It Is and What the Trial Showed",
     description:
-      "Buprenorphine is not only the addiction drug: a partial-agonist opioid with a ceiling on breathing suppression, approved for pain in its own products, and what the 2025 JAMA Internal Medicine trial of switching from high-dose opioids honestly showed – a large drop in opioid dose, a small gain in pain, and no difference between the groups.",
+      "Buprenorphine is not only the addiction drug: a partial-agonist opioid with a ceiling on breathing suppression, approved for pain in its own products, and what the 2025 JAMA Internal Medicine trial of switching from high-dose opioids showed – a large drop in opioid dose, a small gain in pain, and no difference between the groups.",
     status: "sourced",
     lastUpdated: "2026-10-04",
     answer:
-      "Buprenorphine is an opioid that only partly switches on the mu-opioid receptor, so its effect on breathing reaches a ceiling that morphine and oxycodone lack. It is FDA-approved for pain in its own patch and buccal-film products, separate from the addiction formulations. In a 2025 randomized trial, people on high-dose opioids offered a switch cut their dose about 40 percent with slightly less pain – but so did those not offered it.",
+      "Buprenorphine is an opioid that only partly switches on the mu-opioid receptor, so its effect on breathing reaches a ceiling that morphine and oxycodone lack. It is FDA-approved for pain in its own patch and buccal-film products, separate from the addiction formulations. In a 2025 randomized trial, people on high-dose opioids offered a switch cut their dose about 40 percent with slightly less pain, but so did those not offered it.",
     faqs: [
       {
         question: "Is buprenorphine only for addiction?",
@@ -1122,12 +1122,12 @@ export const TREATMENT_ARTICLES: Article[] = [
       {
         question: "How is buprenorphine different from other opioids?",
         answer:
-          "Morphine, oxycodone, and fentanyl are full agonists: they switch the opioid receptor fully on, and more drug means more effect without a natural limit. Buprenorphine is a partial agonist: it binds the receptor very tightly but activates it only part way. In controlled volunteer studies, its suppression of breathing leveled off past a certain amount – a ceiling – while fentanyl's kept rising. Its pain relief did not show the same plateau. That ceiling is the single biggest difference, though it can be overwhelmed by alcohol or sedatives, and buprenorphine still carries the full opioid class warnings.",
+          "Morphine, oxycodone, and fentanyl are full agonists: they switch the opioid receptor fully on, and more drug means more effect without a natural limit. Buprenorphine is a partial agonist: it binds the receptor very tightly but activates it only part way. In controlled volunteer studies, its suppression of breathing leveled off past a certain amount, a ceiling, while fentanyl's kept rising. Its pain relief did not show the same plateau. That ceiling is the single biggest difference, though it can be overwhelmed by alcohol or sedatives, and buprenorphine still carries the full opioid class warnings.",
       },
       {
         question: "Does buprenorphine work for chronic pain?",
         answer:
-          "It relieves pain – that is why it carries an FDA pain indication – but the evidence does not show it relieves chronic pain better than the opioids people are already taking. In the 2025 JAMA Internal Medicine trial, veterans on high-dose opioids who were offered a switch saw their Brief Pain Inventory score fall from 6.8 to 6.1 over a year while their opioid dose fell from about 157 to 94 morphine milligram equivalents. The group not offered buprenorphine improved almost identically. The encouraging part is that pain did not get worse as the full-agonist dose dropped substantially.",
+          "It relieves pain (that is why it carries an FDA pain indication) but the evidence does not show it relieves chronic pain better than the opioids people are already taking. In the 2025 JAMA Internal Medicine trial, veterans on high-dose opioids who were offered a switch saw their Brief Pain Inventory score fall from 6.8 to 6.1 over a year while their opioid dose fell from about 157 to 94 morphine milligram equivalents. The group not offered buprenorphine improved almost identically. The encouraging part is that pain did not get worse as the full-agonist dose dropped substantially.",
       },
       {
         question: "What happens when you switch from oxycodone or morphine to buprenorphine?",
@@ -1214,22 +1214,22 @@ export const TREATMENT_ARTICLES: Article[] = [
         title: "Medications for pain",
         href: "/treatments/medications-for-pain",
         blurb:
-          "The full class map – where every long-term opioid, buprenorphine included, sits relative to the non-opioid classes that come first.",
+          "The full class map, where every long-term opioid, buprenorphine included, sits relative to the non-opioid classes that come first.",
       },
       {
         title: "Kratom",
         href: "/treatments/kratom",
         blurb:
-          "Another partial agonist at the same receptor – but unregulated, untested in chronic pain, and the subject of a 2026 federal scheduling action.",
+          "Another partial agonist at the same receptor, but unregulated, untested in chronic pain, and the subject of a 2026 federal scheduling action.",
       },
     ],
   },
   {
     hub: HUB,
     slug: "cannabis-and-cannabinoids",
-    title: "Cannabis and Cannabinoids for Pain",
+    title: "Cannabis and cannabinoids for pain",
     description:
-      "What the trials actually show about cannabis, THC, and CBD for chronic pain: a small average benefit, common side effects, thin long-term data, what the FDA has and has not approved, and what a leading guideline recommends.",
+      "What the trials show about cannabis, THC, and CBD for chronic pain: a small average benefit, common side effects, thin long-term data, what the FDA has and has not approved, and what a leading guideline recommends.",
     status: "sourced",
     lastUpdated: "2026-11-14",
     answer:
@@ -1324,7 +1324,7 @@ export const TREATMENT_ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "tapering-opioids",
-    title: "Tapering Opioids Safely",
+    title: "Tapering opioids safely",
     description:
       "What the evidence and the CDC's 2022 guideline say about lowering long-term opioid doses: why slow and agreed is the standard, why abrupt or forced tapers are dangerous, what withdrawal means, and what to expect for pain afterwards.",
     status: "sourced",
@@ -1350,7 +1350,7 @@ export const TREATMENT_ARTICLES: Article[] = [
       {
         question: "Will my pain get worse if I taper?",
         answer:
-          "Pain can flare temporarily during a taper. Over the longer term, a review of 67 studies found that pain, function, and quality of life improved in the better-quality studies of supported dose reduction – though the evidence was rated very low quality, because most of the studies had no comparison group.",
+          "Pain can flare temporarily during a taper. Over the longer term, a review of 67 studies found that pain, function, and quality of life improved in the better-quality studies of supported dose reduction, though the evidence was rated very low quality, because most of the studies had no comparison group.",
       },
       {
         question: "Can my doctor force me to taper?",

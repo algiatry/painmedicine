@@ -88,7 +88,7 @@ export const CANDIDATES: Candidate[] = [
     modality: "Device",
     indication: "Chronic intractable trunk & limb pain",
     phase: "Approved",
-    why: "The first stimulator that measures the spinal cord's actual response to each pulse and corrects itself more than 100 times a second – in trials it outperformed conventional open-loop stimulation.",
+    why: "The first stimulator that measures the spinal cord's actual response to each pulse and corrects itself more than 100 times a second. In trials it outperformed conventional open-loop stimulation.",
     note: "FDA-approved 2022. Represents the shift from fixed-output devices toward feedback-controlled neuromodulation.",
     updated: "2026-08",
     source: {
@@ -103,7 +103,7 @@ export const CANDIDATES: Candidate[] = [
     modality: "Small molecule",
     indication: "Moderate-to-severe acute pain",
     phase: "Phase 3",
-    why: "Aims to keep opioid-level pain relief while lowering abuse potential – in human abuse-potential studies it was reported less abusable than oxycodone and tramadol.",
+    why: "Aims to keep opioid-level pain relief while lowering abuse potential. In human abuse-potential studies it was reported less abusable than oxycodone and tramadol.",
     note: "Not approved. Adneuris submitted a New Drug Application on 9 November 2026 for moderate-to-severe acute pain in adults. The FDA has about 60 days to decide whether to accept the file. Phase 3 trials ALLEVIATE-1 and ALLEVIATE-2 met their primary endpoints. It still engages the µ-opioid receptor, so it is opioid-adjacent, not opioid-free.",
     updated: "2026-11",
     source: {
@@ -119,7 +119,7 @@ export const CANDIDATES: Candidate[] = [
     modality: "Small molecule",
     indication: "Knee osteoarthritis pain",
     phase: "Phase 3",
-    why: "A single injection into the joint 'defunctionalizes' the local pain nerves for long-lasting, non-opioid relief. It holds FDA Breakthrough Therapy designation.",
+    why: "A single injection into the joint “defunctionalizes” the local pain nerves for long-lasting, non-opioid relief. It holds FDA Breakthrough Therapy designation.",
     note: "In a global Phase 3 program of more than 1,800 patients.",
     updated: "2026-08",
     source: {
@@ -165,7 +165,7 @@ export const CANDIDATES: Candidate[] = [
     modality: "Small molecule",
     indication: "Diabetic neuropathy (acute-pain arm halted)",
     phase: "Phase 2",
-    why: "A reminder that even a hot new class stumbles: its acute-pain Phase 2 missed the primary endpoint in 2025, so Vertex dropped that use – but the chronic nerve-pain program continues.",
+    why: "A reminder that even a hot new class stumbles: its acute-pain Phase 2 missed the primary endpoint in 2025, so Vertex dropped that use, but the chronic nerve-pain program continues.",
     note: "Not advancing as an acute-pain monotherapy after the August 2025 Phase 2 miss. The diabetic-neuropathy program continues: on 2 November 2026 Vertex said the Phase 2 study is on track to finish enrollment by the end of 2026, with results in mid-2027.",
     updated: "2026-11",
     source: {
@@ -197,7 +197,7 @@ export const CANDIDATES: Candidate[] = [
     indication: "Osteoarthritis & chronic low back pain",
     phase: "Discontinued",
     why: "The cautionary tale of the field: it clearly relieved pain, but an FDA advisory panel voted 19–1 against it over a risk of rapidly progressive joint destruction. Development was halted in 2021.",
-    note: "Discontinued. Its failure reframed the whole anti-NGF class – and is the backdrop against which newer neurotrophin drugs like LEVI-04 are measured.",
+    note: "Discontinued. Its failure reframed the whole anti-NGF class, and is the backdrop against which newer neurotrophin drugs like LEVI-04 are measured.",
     updated: "2021-12",
     source: {
       label: "FierceBiotech – Lilly & Pfizer halt tanezumab",
