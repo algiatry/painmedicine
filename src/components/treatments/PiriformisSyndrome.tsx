@@ -8,7 +8,7 @@ import {
 } from "../anatomy/PelvisPosterior";
 
 const link =
-  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
 
 /**
  * Figure 1 – the deep hip from behind: piriformis crossing the greater
@@ -74,7 +74,7 @@ function DeepHipFigure() {
 
 /**
  * Figure 2 – the quartet: the four clinical features that the systematic
- * reviews keep finding, laid out as what the clinician is actually looking for.
+ * reviews keep finding, laid out as what the clinician is looking for.
  */
 function QuartetFigure() {
   const cards: { title: string; body: [string, string]; x: number; y: number }[] = [
@@ -115,7 +115,7 @@ function QuartetFigure() {
           </g>
         ))}
         <text x="340" y="278" textAnchor="middle" fontSize="12" fill={FIG.textMid}>
-          four together, not one alone – and a straight-leg raise that hurts does not rule it out
+          four together, not one alone, and a straight-leg raise that hurts does not rule it out
         </text>
       </svg>
     </Figure>
@@ -180,8 +180,8 @@ export default function PiriformisSyndrome() {
         For decades the favorite explanation was an anatomical variant: in
         roughly one person in six, the nerve or one of its two divisions
         pierces the muscle rather than passing beneath it. That figure is
-        real – a pooled analysis of more than six thousand cadavers put it
-        at about 17% – but the same review found the variant no more
+        real (a pooled analysis of more than six thousand cadavers put it
+        at about 17%) but the same review found the variant no more
         common in people operated on for piriformis syndrome than in the
         general population. So the nerve&rsquo;s route is mostly not the
         culprit. What the muscle is <em>doing</em> matters
@@ -201,11 +201,11 @@ export default function PiriformisSyndrome() {
         presses over the greater sciatic notch, and pain reproduced by
         maneuvers that stretch or contract the piriformis. The best-known
         of those maneuvers folds the hip up, across, and inward – flexion,
-        adduction, internal rotation, the &ldquo;FAIR&rdquo; position – which
+        adduction, internal rotation, the &ldquo;FAIR&rdquo; position, which
         wraps the muscle tightly over the nerve.
       </P>
       <P>
-        Two honest caveats travel with the quartet. First, a positive
+        Two caveats travel with the quartet. First, a positive
         straight-leg raise, the classic disc test, does <em>not</em> rule
         piriformis syndrome out; the updated review found it limited in a
         substantial share of cases. Second, the accuracy of every one of
@@ -216,7 +216,7 @@ export default function PiriformisSyndrome() {
         clearly real, poorly measured. A careful clinician therefore treats
         it as a diagnosis of pattern <em>and</em> exclusion – checking the
         spine, the sacroiliac joint, the hip joint, and the hamstring
-        tendons before pinning it on the piriformis – and a broader label,{" "}
+        tendons before pinning it on the piriformis, and a broader label,{" "}
         <strong>deep gluteal syndrome</strong>, now covers every way the
         nerve can be caught in that space, of which piriformis is only the
         most famous.
@@ -233,20 +233,19 @@ export default function PiriformisSyndrome() {
         why: thirteen studies, 508 patients, mostly comparing one injection
         to another, and quality low enough that no single conservative
         treatment could be recommended over any other. Its conclusion was
-        to follow the general guidelines for back pain and sciatica –
-        physiotherapy first – with surgery reserved for a chronic minority.
+        to follow the general guidelines for back pain and sciatica, physiotherapy first, with surgery reserved for a chronic minority.
         That is less an endorsement of any particular exercise than a
         statement about where the burden of proof sits.
       </P>
       <P>
-        What a good program actually contains follows from the anatomy. A
+        What a good program contains follows from the anatomy. A
         therapist works on three fronts at once. The first is the muscle
         itself: stretching piriformis and the surrounding rotators,
         typically in that same FAIR direction, and easing the spasm and
         guarding around it. The second is the reason the muscle was
         overworking, which is usually the hips around it – weak or slow
         gluteal muscles, a stiff hip joint, a pelvis that drops on one side
-        when you stand on one leg – so progressive strengthening of the hip
+        when you stand on one leg, so progressive strengthening of the hip
         abductors and rotators is the part of the plan that tends to last.
         The third is the nerve: gentle mobilization that slides the sciatic
         nerve through its tunnel, and a hard look at the sitting that
@@ -266,7 +265,7 @@ export default function PiriformisSyndrome() {
         by half or more, with average improvement around 71% at ten
         months, and only about one in fifteen went on to surgery. It is a
         before-and-after series, not a randomized trial, and the injection
-        is bundled in with the exercise – but it is the clearest picture
+        is bundled in with the exercise, but it is the clearest picture
         anyone has of how this condition behaves when the deep hip is
         treated as the target.
       </P>
@@ -278,7 +277,7 @@ export default function PiriformisSyndrome() {
           targeted injection
         </Link>{" "}
         into the muscle – local anesthetic with a steroid, or botulinum
-        toxin to relax it for months at a time – usually guided by
+        toxin to relax it for months at a time, usually guided by
         ultrasound so the needle finds a small muscle sitting under a large
         one. Trials of these injections are the bulk of the treatment
         evidence, and only a few reached a clinically meaningful reduction

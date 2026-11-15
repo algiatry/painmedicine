@@ -12,7 +12,6 @@ import { getHub } from "@/lib/hubs";
 import { ALL_ARTICLES, getArticle } from "@/lib/articles";
 import { ARTICLE_BODIES } from "@/components/bodies";
 import { SITE, correctionHref } from "@/lib/site";
-import PageKicker from "@/components/PageKicker";
 import ArticleEmblem from "@/components/ArticleEmblem";
 import ArticleToc from "@/components/ArticleToc";
 
@@ -47,13 +46,13 @@ export default async function ArticlePage({
   if (!a) notFound();
 
   const parentHub = getHub(a.hub);
-  const parentTitle = parentHub?.title ?? "Understanding Pain";
+  const parentTitle = parentHub?.title ?? "Understanding pain";
   const Body = ARTICLE_BODIES[a.slug];
   const correction = correctionHref(`/${a.hub}/${a.slug}`);
 
   return (
-    <div className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-14 xl:grid xl:grid-cols-[minmax(0,1fr)_15rem] xl:gap-12">
-      <article data-toc-root className="max-w-3xl">
+    <div className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-14 xl:grid xl:grid-cols-[minmax(0,42rem)_15rem] xl:justify-center xl:gap-16">
+      <article data-toc-root className="mx-auto max-w-[42rem] lg:text-[1.1875rem] xl:mx-0">
       <JsonLd
         data={medicalWebPageJsonLd({
           title: a.title,
@@ -72,36 +71,33 @@ export default async function ArticlePage({
         ])}
       />
 
-      <nav aria-label="Breadcrumb" className="text-sm text-slate-500 dark:text-slate-400">
+      <nav aria-label="Breadcrumb" className="text-sm text-subtle">
         <ol className="flex flex-wrap items-center gap-x-2 gap-y-1">
           <li>
-            <Link href="/" className="hover:text-teal-700 dark:hover:text-teal-300">
+            <Link href="/" className="hover:text-brand">
               Home
             </Link>
           </li>
-          <li aria-hidden="true" className="text-slate-300 dark:text-slate-600">
+          <li aria-hidden="true" className="text-faint">
             /
           </li>
           <li>
-            <Link href={`/${a.hub}`} className="hover:text-teal-700 dark:hover:text-teal-300">
+            <Link href={`/${a.hub}`} className="hover:text-brand">
               {parentTitle}
             </Link>
           </li>
-          <li aria-hidden="true" className="text-slate-300 dark:text-slate-600">
+          <li aria-hidden="true" className="text-faint">
             /
           </li>
-          <li className="text-slate-700 dark:text-slate-300">{a.title}</li>
+          <li className="text-body">{a.title}</li>
         </ol>
       </nav>
 
       <header className="mt-6 space-y-4">
-        <PageKicker href={`/${a.hub}`} iconHref={`/${a.hub}`}>
-          {parentTitle}
-        </PageKicker>
-        <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
+        <h1 className="text-4xl sm:text-[2.75rem] sm:leading-[1.1] font-bold tracking-tight text-ink">
           {a.title}
         </h1>
-        <p className="text-lg text-slate-700 dark:text-slate-300">{a.answer}</p>
+        <p className="text-lg lg:text-xl text-body">{a.answer}</p>
         <ReviewByline
           status={a.status}
           review={a.review}
@@ -120,19 +116,19 @@ export default async function ArticlePage({
 
       <section
         aria-labelledby="faq-heading"
-        className="mt-14 border-t border-slate-200 dark:border-slate-800 pt-10"
+        className="mt-14 border-t border-line pt-10"
       >
         <h2
           id="faq-heading"
-          className="text-2xl font-semibold text-slate-900 dark:text-slate-100"
+          className="text-2xl sm:text-[1.75rem] font-bold tracking-tight text-ink"
         >
           Frequently asked questions
         </h2>
         <dl className="mt-6 space-y-6">
           {a.faqs.map((f) => (
             <div key={f.question}>
-              <dt className="font-semibold text-slate-900 dark:text-slate-100">{f.question}</dt>
-              <dd className="mt-1.5 text-slate-700 dark:text-slate-300">{f.answer}</dd>
+              <dt className="font-semibold text-ink">{f.question}</dt>
+              <dd className="mt-1.5 text-body">{f.answer}</dd>
             </div>
           ))}
         </dl>
@@ -141,24 +137,24 @@ export default async function ArticlePage({
       <section aria-labelledby="refs-heading" className="mt-12">
         <h2
           id="refs-heading"
-          className="text-2xl font-semibold text-slate-900 dark:text-slate-100"
+          className="text-2xl sm:text-[1.75rem] font-bold tracking-tight text-ink"
         >
           References
         </h2>
         <ol className="mt-6 space-y-3 text-sm">
           {a.references.map((ref, i) => (
             <li key={ref.url} className="flex gap-3">
-              <span className="text-slate-400 dark:text-slate-500 tabular-nums">{i + 1}.</span>
+              <span className="text-subtle tabular-nums">{i + 1}.</span>
               <span>
                 <a
                   href={ref.url}
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+                  className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
                 >
                   {ref.title}
                 </a>
-                <span className="text-slate-500 dark:text-slate-400"> – {ref.source}</span>
+                <span className="text-subtle"> – {ref.source}</span>
               </span>
             </li>
           ))}
@@ -169,7 +165,7 @@ export default async function ArticlePage({
         <section aria-labelledby="related-heading" className="mt-12">
           <h2
             id="related-heading"
-            className="text-2xl font-semibold text-slate-900 dark:text-slate-100"
+            className="text-2xl sm:text-[1.75rem] font-bold tracking-tight text-ink"
           >
             Keep reading
           </h2>
@@ -178,7 +174,7 @@ export default async function ArticlePage({
               <Link
                 key={r.href}
                 href={r.href}
-                className="group flex gap-4 rounded-xl border border-transparent px-3 py-4 transition-colors hover:border-slate-200 dark:hover:border-slate-800 hover:bg-paper/70 sm:px-4"
+                className="group flex gap-4 rounded-xl border border-transparent px-3 py-4 transition-colors hover:border-line hover:bg-paper/70 sm:px-4"
               >
                 <span className="mt-0.5 flex size-11 shrink-0 items-center justify-center rounded-lg border border-slate-200/70 dark:border-slate-700 bg-paper/70 dark:bg-slate-200 transition-colors group-hover:border-teal-300 group-hover:bg-white dark:group-hover:border-teal-400/60">
                   <ArticleEmblem
@@ -187,10 +183,10 @@ export default async function ArticlePage({
                   />
                 </span>
                 <span className="flex flex-col gap-1">
-                  <span className="font-semibold text-slate-900 dark:text-slate-100 group-hover:text-teal-700 dark:group-hover:text-teal-300">
+                  <span className="font-semibold text-ink group-hover:text-brand">
                     {r.title}
                   </span>
-                  <span className="text-sm text-slate-600 dark:text-slate-400">{r.blurb}</span>
+                  <span className="text-sm text-muted">{r.blurb}</span>
                 </span>
               </Link>
             ))}
@@ -198,7 +194,7 @@ export default async function ArticlePage({
         </section>
       )}
 
-      <p className="mt-12 border-t border-slate-200 dark:border-slate-800 pt-6 text-sm text-slate-500 dark:text-slate-400">
+      <p className="mt-12 border-t border-line pt-6 text-sm text-subtle">
         This page is educational and is not a substitute for professional
         medical advice. Talk with a qualified clinician about your own
         situation. {SITE.shortName} does not provide treatment or dosing
@@ -209,7 +205,7 @@ export default async function ArticlePage({
             Spotted something inaccurate or out of date?{" "}
             <a
               href={correction}
-              className="font-medium text-teal-700 underline underline-offset-2 dark:text-teal-300"
+              className="font-medium text-brand underline underline-offset-2"
             >
               Report a correction
             </a>

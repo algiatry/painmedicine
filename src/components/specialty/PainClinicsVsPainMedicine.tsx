@@ -59,7 +59,7 @@ export default function PainClinicsVsPainMedicine() {
       <P>
         &ldquo;Pain clinic&rdquo; is a phrase doing two very different jobs in
         American healthcare. It describes some of the most rigorous,
-        team-based programs in medicine – and it has also hung over storefronts
+        team-based programs in medicine, and it has also hung over storefronts
         that existed to move prescriptions. The words on the sign carry no
         licensing weight of their own. What separates the two is everything
         behind the sign, and all of it is checkable.
@@ -102,11 +102,11 @@ export default function PainClinicsVsPainMedicine() {
 
       <H2 id="training">Signal one: training you can verify</H2>
       <P>
-        The physicians should be board-certified – ideally in pain medicine,
+        The physicians should be board-certified, ideally in pain medicine,
         through the pathway described in{" "}
         <Link
           href="/what-is-pain-medicine/how-pain-physicians-train"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           how pain physicians train
         </Link>
@@ -123,7 +123,7 @@ export default function PainClinicsVsPainMedicine() {
         records-deep first visit described in{" "}
         <Link
           href="/what-is-pain-medicine/your-first-visit"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           your first visit
         </Link>{" "}
@@ -134,12 +134,12 @@ export default function PainClinicsVsPainMedicine() {
         laid out in{" "}
         <Link
           href="/what-is-pain-medicine/the-pain-team"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           the pain team
         </Link>
-        . A practice offering exactly one thing to every patient – whatever
-        that one thing is – is not practicing pain medicine in the
+        . A practice offering exactly one thing to every patient, whatever
+        that one thing is, is not practicing pain medicine in the
         specialty&rsquo;s sense.
       </P>
 
@@ -168,7 +168,7 @@ export default function PainClinicsVsPainMedicine() {
         long-term health. The{" "}
         <Link
           href="/find-help"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           find help
         </Link>{" "}
@@ -178,7 +178,7 @@ export default function PainClinicsVsPainMedicine() {
       <P>
         The encouraging bottom line: the specialty built the tools for exactly
         this judgment. Five signals, two free lookups, one thorough first
-        visit – and the sign over the door stops mattering.
+        visit, and the sign over the door stops mattering.
       </P>
     </div>
   );

@@ -109,13 +109,13 @@ export default function MindAndBrain() {
         the body, as{" "}
         <Link
           href="/understanding-pain/how-pain-works"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           how pain works
         </Link>{" "}
         explains. That idea has a hopeful corollary: if the brain builds pain,
         the brain can be part of the treatment. This is some of the most
-        promising – and most misunderstood – territory in the field.
+        promising, and most misunderstood, territory in the field.
       </P>
 
       <KeyTakeaways
@@ -143,8 +143,8 @@ export default function MindAndBrain() {
       <H2 id="unlearn">Unlearning pain</H2>
       <P>
         <strong>Pain reprocessing therapy</strong> is built on a simple premise:
-        chronic pain can persist as a kind of false alarm – the brain keeps
-        signaling danger after the body is safe – and that alarm can be unlearned.
+        chronic pain can persist as a kind of false alarm (the brain keeps
+        signaling danger after the body is safe) and that alarm can be unlearned.
         In a landmark 2021 randomized trial, about{" "}
         <strong>two-thirds of people with chronic back pain became pain-free or
         nearly pain-free</strong> after four weeks, and most held onto that
@@ -172,14 +172,14 @@ export default function MindAndBrain() {
         symptoms, and immersive &ldquo;nature&rdquo; virtual reality has been
         shown in experimental studies to engage the same top-down circuits –
         attention, emotion, the body&rsquo;s own calming reflexes – that
-        reduce sensitization in the spinal cord. The honest size of the effect
+        reduce sensitization in the spinal cord. The size of the effect
         is small and the trials are short. In a 2025 randomized trial, thirty
         minutes of nature sounds during burn-dressing changes lowered pain
         within the group that heard them, but the difference against usual
         care did not reach statistical significance. The useful reading: a
         low-risk, low-cost addition that some people find genuinely helpful,
         with the special virtue of reaching those whose pain keeps them from
-        the real thing – and not a treatment on its own.
+        the real thing, and not a treatment on its own.
       </P>
 
       <H2 id="psychedelics">The psychedelic question</H2>
@@ -190,7 +190,7 @@ export default function MindAndBrain() {
         phantom-limb pain – the idea being that a temporary surge of brain
         plasticity might let a stuck, sensitized pain system be reset. The
         rationale is serious and the early safety signals are encouraging, but
-        the honest summary is: this is <em>investigational</em>. The studies are
+        the summary is: this is <em>investigational</em>. The studies are
         tiny, it is not an available treatment, and enthusiasm has run well ahead
         of the evidence.
       </P>

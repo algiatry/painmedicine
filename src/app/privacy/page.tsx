@@ -13,15 +13,15 @@ const LAST_UPDATED = "November 14, 2026";
 
 export default function PrivacyPage() {
   return (
-    <article className="mx-auto max-w-3xl px-4 sm:px-6 py-14 space-y-8">
+    <article className="mx-auto max-w-[42rem] px-4 sm:px-6 py-14 space-y-8">
       <header className="space-y-2">
-        <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
+        <h1 className="text-4xl sm:text-[2.75rem] sm:leading-[1.1] font-bold tracking-tight text-ink">
           Privacy policy
         </h1>
-        <p className="text-sm text-slate-500 dark:text-slate-400">Last updated {LAST_UPDATED}</p>
+        <p className="text-sm text-subtle">Last updated {LAST_UPDATED}</p>
       </header>
 
-      <section className="space-y-4 text-slate-700 dark:text-slate-300">
+      <section className="space-y-4 text-body">
         <p className="text-lg">
           {SITE.name} is a reading site. There are no accounts, no logins, no
           comment sections, no newsletters, and no forms. The only thing you
@@ -35,8 +35,8 @@ export default function PrivacyPage() {
         </p>
       </section>
 
-      <section className="space-y-4 text-slate-700 dark:text-slate-300">
-        <h2 className="text-xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
+      <section className="space-y-4 text-body">
+        <h2 className="text-xl font-semibold tracking-tight text-ink">
           What the site does see
         </h2>
         <ul className="list-disc pl-6 space-y-2">
@@ -56,7 +56,7 @@ export default function PrivacyPage() {
             handling of that data is described in the{" "}
             <a
               href="https://vercel.com/legal/privacy-policy"
-              className="underline hover:text-teal-700 dark:hover:text-teal-300"
+              className="underline hover:text-brand"
               rel="noopener noreferrer"
             >
               Vercel privacy policy
@@ -66,8 +66,8 @@ export default function PrivacyPage() {
         </ul>
       </section>
 
-      <section className="space-y-4 text-slate-700 dark:text-slate-300">
-        <h2 className="text-xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
+      <section className="space-y-4 text-body">
+        <h2 className="text-xl font-semibold tracking-tight text-ink">
           Site search
         </h2>
         <p>
@@ -87,8 +87,8 @@ export default function PrivacyPage() {
         )}
       </section>
 
-      <section className="space-y-4 text-slate-700 dark:text-slate-300">
-        <h2 className="text-xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
+      <section className="space-y-4 text-body">
+        <h2 className="text-xl font-semibold tracking-tight text-ink">
           What the site never does
         </h2>
         <ul className="list-disc pl-6 space-y-2">
@@ -104,8 +104,8 @@ export default function PrivacyPage() {
         </ul>
       </section>
 
-      <section className="space-y-4 text-slate-700 dark:text-slate-300">
-        <h2 className="text-xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
+      <section className="space-y-4 text-body">
+        <h2 className="text-xl font-semibold tracking-tight text-ink">
           External links
         </h2>
         <p>
@@ -117,8 +117,8 @@ export default function PrivacyPage() {
         </p>
       </section>
 
-      <section className="space-y-4 text-slate-700 dark:text-slate-300">
-        <h2 className="text-xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
+      <section className="space-y-4 text-body">
+        <h2 className="text-xl font-semibold tracking-tight text-ink">
           Not a covered health entity
         </h2>
         <p>
@@ -127,19 +127,19 @@ export default function PrivacyPage() {
           subject to HIPAA because it never handles protected health
           information – by design, it has none to handle. For what the
           content is and is not, see the{" "}
-          <Link href="/medical-disclaimer" className="underline hover:text-teal-700 dark:hover:text-teal-300">
+          <Link href="/medical-disclaimer" className="underline hover:text-brand">
             medical disclaimer
           </Link>{" "}
           and the{" "}
-          <Link href="/about" className="underline hover:text-teal-700 dark:hover:text-teal-300">
+          <Link href="/about" className="underline hover:text-brand">
             editorial policy
           </Link>
           .
         </p>
       </section>
 
-      <section className="space-y-4 text-slate-700 dark:text-slate-300">
-        <h2 className="text-xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
+      <section className="space-y-4 text-body">
+        <h2 className="text-xl font-semibold tracking-tight text-ink">
           Changes to this policy
         </h2>
         <p>

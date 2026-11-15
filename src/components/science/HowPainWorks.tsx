@@ -140,7 +140,7 @@ function SensitizationFigure() {
   return (
     <Figure
       animate
-      caption="Central sensitization: the same small input, amplified. The nervous system can turn up its own gain – and leave it up."
+      caption="Central sensitization: the same small input, amplified. The nervous system can turn up its own gain, and leave it up."
     >
       <svg
         role="img"
@@ -311,8 +311,8 @@ export default function HowPainWorks() {
       <H2 id="step-4">Step 4 – The brain builds the pain</H2>
       <P>
         Only now does pain appear. The signal reaches the brain, which weighs it
-        against everything else it knows – where you are, what you expect,
-        whether you are afraid, what has hurt you before – and{" "}
+        against everything else it knows, where you are, what you expect,
+        whether you are afraid, what has hurt you before, and{" "}
         <em>constructs</em> the experience you feel. That is why the same injury
         can be agonizing on a bad day and barely register in the heat of a game.
       </P>
@@ -341,14 +341,14 @@ export default function HowPainWorks() {
         driver of long-term pain – the bridge from a passing injury to{" "}
         <Link
           href="/understanding-pain/acute-vs-chronic-pain"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           chronic pain
         </Link>
         , and the core of the third pain type,{" "}
         <Link
           href="/understanding-pain/types-of-pain"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           nociplastic pain
         </Link>

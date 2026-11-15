@@ -18,13 +18,13 @@ export const CONDITION_ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "low-back-pain",
-    title: "Low Back Pain",
+    title: "Low back pain",
     description:
-      "What causes pain in the lower back: the structures that can actually hurt, why most cases are 'non-specific,' what an MRI can and can't tell you, the red flags that need urgent care, and how low back pain is treated today.",
+      "What causes pain in the lower back: the structures that can hurt, why most cases are “non-specific,” what an MRI can and can't tell you, the red flags that need urgent care, and how low back pain is treated today.",
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
-      "Most low back pain – roughly nine cases in ten – is 'non-specific': it arises from the muscles, ligaments, discs, and joints of the back without one identifiable culprit, and it usually eases over days to weeks. Less often the pain comes from an irritated nerve root, and rarely from a serious underlying condition. It is also the world's leading cause of disability – if your back hurts, you are in vast company.",
+      "Most low back pain, roughly nine cases in ten, is “non-specific”: it arises from the muscles, ligaments, discs, and joints of the back without one identifiable culprit, and it usually eases over days to weeks. Less often the pain comes from an irritated nerve root, and rarely from a serious underlying condition. It is also the world's leading cause of disability. If your back hurts, you are in vast company.",
     faqs: [
       {
         question: "What causes pain in the lower back?",
@@ -44,7 +44,7 @@ export const CONDITION_ARTICLES: Article[] = [
       {
         question: "Why does my back still hurt if my scan looks normal?",
         answer:
-          "Because pain is made by the nervous system, not by the scanner. Imaging shows structure, and structure correlates surprisingly loosely with pain in both directions: scans find 'damage' in people who feel fine, and find little in people who hurt badly. Persistent pain often involves a sensitized pain system layered on top of whatever started it. The pain is fully real – it is just not always visible.",
+          "Because pain is made by the nervous system, not by the scanner. Imaging shows structure, and structure correlates surprisingly loosely with pain in both directions: scans find “damage” in people who feel fine, and find little in people who hurt badly. Persistent pain often involves a sensitized pain system layered on top of whatever started it. The pain is fully real – it is just not always visible.",
       },
       {
         question: "Is bed rest good for a bad back?",
@@ -92,7 +92,7 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "The three types of pain",
         href: "/understanding-pain/types-of-pain",
         blurb:
-          "Chronic low back pain is the classic mixed-mechanism pain – often all three types at once.",
+          "Chronic low back pain is the classic mixed-mechanism pain, often all three types at once.",
       },
       {
         title: "Acute vs. chronic pain",
@@ -102,7 +102,7 @@ export const CONDITION_ARTICLES: Article[] = [
       {
         title: "Your first visit to a pain physician",
         href: "/what-is-pain-medicine/your-first-visit",
-        blurb: "What actually happens when back pain reaches a specialist.",
+        blurb: "What happens when back pain reaches a specialist.",
       },
       {
         title: "Physical and behavioral therapies",
@@ -124,16 +124,16 @@ export const CONDITION_ARTICLES: Article[] = [
     slug: "sciatica",
     title: "Sciatica",
     description:
-      "What sciatica is and what causes it: the pinched nerve root behind most cases, why inflammation matters as much as pressure, the surprising science of herniated discs that vanish on their own, and how sciatica is treated today – including what surgery does and doesn't change.",
+      "What sciatica is and what causes it: the pinched nerve root behind most cases, why inflammation matters as much as pressure, the surprising science of herniated discs that vanish on their own, and how sciatica is treated today, including what surgery does and doesn't change.",
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
-      "Sciatica is nerve pain that runs from the lower back or buttock down the leg, along the path of the sciatic nerve. In roughly nine cases in ten the cause is a herniated disc pressing on – and inflaming – a nerve root in the lower spine. It can be severe, but its natural story is hopeful: most cases improve within weeks to a few months, and herniated discs often shrink away on their own.",
+      "Sciatica is nerve pain that runs from the lower back or buttock down the leg, along the path of the sciatic nerve. In roughly nine cases in ten the cause is a herniated disc pressing on, and inflaming, a nerve root in the lower spine. It can be severe, but its natural story is hopeful: most cases improve within weeks to a few months, and herniated discs often shrink away on their own.",
     faqs: [
       {
         question: "What causes sciatica?",
         answer:
-          "About 90% of sciatica comes from a herniated disc compressing and chemically irritating one of the nerve roots in the lower spine that merge to form the sciatic nerve. Less common causes include spinal stenosis (age-related narrowing of the nerve passages), spondylolisthesis (a slipped vertebra), and – rarely – irritation of the nerve further down its course. The pain is felt in the leg, but the problem almost always sits at the spine.",
+          "About 90% of sciatica comes from a herniated disc compressing and chemically irritating one of the nerve roots in the lower spine that merge to form the sciatic nerve. Less common causes include spinal stenosis (age-related narrowing of the nerve passages), spondylolisthesis (a slipped vertebra), and, rarely, irritation of the nerve further down its course. The pain is felt in the leg, but the problem almost always sits at the spine.",
       },
       {
         question: "How long does sciatica take to go away?",
@@ -143,7 +143,7 @@ export const CONDITION_ARTICLES: Article[] = [
       {
         question: "Can a herniated disc heal on its own?",
         answer:
-          "Yes – often. The immune system treats displaced disc material as debris to clear, and follow-up imaging shows herniations shrinking or vanishing over months. Counterintuitively, the dramatic-looking ones regress most: in a systematic review, free disc fragments resorbed in about 96% of cases and extrusions in about 70%, while mild bulges – the least alarming finding – changed least. A scary MRI report is not a life sentence.",
+          "Yes, often. The immune system treats displaced disc material as debris to clear, and follow-up imaging shows herniations shrinking or vanishing over months. Counterintuitively, the dramatic-looking ones regress most: in a systematic review, free disc fragments resorbed in about 96% of cases and extrusions in about 70%, while mild bulges, the least alarming finding, changed least. A scary MRI report is not a life sentence.",
       },
       {
         question: "Do I need surgery for sciatica?",
@@ -195,13 +195,13 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Low back pain",
         href: "/conditions/low-back-pain",
         blurb:
-          "The parent territory – and where sciatica fits among the causes of a hurting back.",
+          "The parent territory, and where sciatica fits among the causes of a hurting back.",
       },
       {
         title: "Piriformis syndrome",
         href: "/treatments/piriformis-syndrome",
         blurb:
-          "The one-in-ten that does not start at the spine – and the deep-hip rehab built for it.",
+          "The one-in-ten that does not start at the spine, and the deep-hip rehab built for it.",
       },
       {
         title: "The three types of pain",
@@ -212,7 +212,7 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Medications for pain",
         href: "/treatments/medications-for-pain",
         blurb:
-          "Why nerve pain gets different drugs – and what the sciatica trials honestly showed.",
+          "Why nerve pain gets different drugs, and what the sciatica trials showed.",
       },
       {
         title: "The pain treatment pipeline",
@@ -226,9 +226,9 @@ export const CONDITION_ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "neuropathic-pain",
-    title: "Neuropathic Pain",
+    title: "Neuropathic pain",
     description:
-      "What neuropathic pain is and what causes it: how damaged nerves become the source of pain rather than its messenger, why feet burn first, the numb-yet-painful paradox, and the honest map of treatments for nerve pain – from the first-line medications to spinal cord stimulation.",
+      "What neuropathic pain is and what causes it: how damaged nerves become the source of pain rather than its messenger, why feet burn first, the numb-yet-painful paradox, and the map of treatments for nerve pain, from the first-line medications to spinal cord stimulation.",
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
@@ -242,12 +242,12 @@ export const CONDITION_ARTICLES: Article[] = [
       {
         question: "What causes neuropathic pain?",
         answer:
-          "Anything that injures sensory nerves or their pathways. The most common causes are diabetes (the leading cause of peripheral neuropathy), shingles (postherpetic neuralgia), chemotherapy, nerve compression or injury – including sciatica – and alcohol-related and inherited neuropathies. Central causes include stroke, multiple sclerosis, and spinal cord injury. Sometimes no cause is found even after a careful workup; that is common and does not make the pain less real.",
+          "Anything that injures sensory nerves or their pathways. The most common causes are diabetes (the leading cause of peripheral neuropathy), shingles (postherpetic neuralgia), chemotherapy, nerve compression or injury, including sciatica, and alcohol-related and inherited neuropathies. Central causes include stroke, multiple sclerosis, and spinal cord injury. Sometimes no cause is found even after a careful workup; that is common and does not make the pain less real.",
       },
       {
         question: "Why do my feet burn at night?",
         answer:
-          "Burning feet – often worst in bed – is the classic voice of peripheral neuropathy, and there is a reason it starts there: the nerves serving the feet are the longest in the body, and nerves that are struggling metabolically tend to fail from their farthest tips backward. That is why symptoms typically begin in the toes and spread upward in a 'stocking' pattern, with hands joining later in a 'glove' pattern. New or worsening burning feet deserve a clinical evaluation – diabetes screening included.",
+          "Burning feet, often worst in bed, is the classic voice of peripheral neuropathy, and there is a reason it starts there: the nerves serving the feet are the longest in the body, and nerves that are struggling metabolically tend to fail from their farthest tips backward. That is why symptoms typically begin in the toes and spread upward in a “stocking” pattern, with hands joining later in a “glove” pattern. New or worsening burning feet deserve a clinical evaluation – diabetes screening included.",
       },
       {
         question: "Why don't normal painkillers work on nerve pain?",
@@ -257,7 +257,7 @@ export const CONDITION_ARTICLES: Article[] = [
       {
         question: "Can neuropathic pain be treated?",
         answer:
-          "Yes, with honest expectations. Treating the underlying cause matters most where possible – blood sugar control, relieving a compression, changing an offending drug. For the pain itself, first-line medications meaningfully help a substantial minority of patients, and clinicians often combine approaches or move to options like high-concentration capsaicin patches, lidocaine patches, or spinal cord stimulation, which showed strong results for painful diabetic neuropathy in a randomized trial. A realistic win is major relief, not always zero pain – and function often improves ahead of the numbers.",
+          "Yes, with realistic expectations. Treating the underlying cause matters most where possible – blood sugar control, relieving a compression, changing an offending drug. For the pain itself, first-line medications meaningfully help a substantial minority of patients, and clinicians often combine approaches or move to options like high-concentration capsaicin patches, lidocaine patches, or spinal cord stimulation, which showed strong results for painful diabetic neuropathy in a randomized trial. A realistic win is major relief, not always zero pain, and function often improves ahead of the numbers.",
       },
     ],
     references: [
@@ -305,7 +305,7 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Medications for pain",
         href: "/treatments/medications-for-pain",
         blurb:
-          "The nerve-pain medications explained – and why their names confuse everyone.",
+          "The nerve-pain medications explained, and why their names confuse everyone.",
       },
       {
         title: "Sciatica",
@@ -337,26 +337,26 @@ export const CONDITION_ARTICLES: Article[] = [
     slug: "migraine",
     title: "Migraine",
     description:
-      "What migraine actually is – an inherited neurological disease, not a bad headache: the four phases of an attack, the trigeminal-CGRP engine behind the pain, the medication-overuse trap, and the new generation of treatments designed for migraine's own biology.",
+      "What migraine is – an inherited neurological disease, not a bad headache: the four phases of an attack, the trigeminal-CGRP engine behind the pain, the medication-overuse trap, and the new generation of treatments designed for migraine's own biology.",
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
-      "Migraine is an inherited neurological disease, not a bad headache – the headache is one phase of a whole-brain attack that can begin a day before the pain and end a day after it. It affects roughly one person in seven, ranks second among the world's causes of disability – first among young women – and is now treatable with drugs designed for its specific biology.",
+      "Migraine is an inherited neurological disease, not a bad headache – the headache is one phase of a whole-brain attack that can begin a day before the pain and end a day after it. It affects roughly one person in seven, ranks second among the world's causes of disability, first among young women, and is now treatable with drugs designed for its specific biology.",
     faqs: [
       {
         question: "Is migraine just a bad headache?",
         answer:
-          "No. Migraine is a neurological disease with a strong genetic basis, and the headache is only one phase of an attack that also brings sensory amplification (light, sound, and smell become painful), nausea, thinking changes, and often a day of 'hangover' afterward. The Global Burden of Disease studies rank migraine second among all causes of disability worldwide – and first among young women. Taking it seriously is not dramatizing; it is reading the data.",
+          "No. Migraine is a neurological disease with a strong genetic basis, and the headache is only one phase of an attack that also brings sensory amplification (light, sound, and smell become painful), nausea, thinking changes, and often a day of “hangover” afterward. The Global Burden of Disease studies rank migraine second among all causes of disability worldwide, and first among young women. Taking it seriously is not dramatizing; it is reading the data.",
       },
       {
         question: "What causes migraine?",
         answer:
-          "An inherited tendency toward a hypersensitive brain, plus an attack mechanism science can now trace: the trigeminal nerve – the head's main sensory nerve – activates and releases CGRP, a peptide that inflames the brain's pain-sensitive coverings and drives the throbbing pain. Attacks often begin in deep brain regions like the hypothalamus hours before any pain, which is why warning symptoms such as yawning and cravings arrive first. Triggers matter, but they act on this underlying biology – they are sparks, not the engine.",
+          "An inherited tendency toward a hypersensitive brain, plus an attack mechanism science can now trace: the trigeminal nerve, the head's main sensory nerve, activates and releases CGRP, a peptide that inflames the brain's pain-sensitive coverings and drives the throbbing pain. Attacks often begin in deep brain regions like the hypothalamus hours before any pain, which is why warning symptoms such as yawning and cravings arrive first. Triggers matter, but they act on this underlying biology – they are sparks, not the engine.",
       },
       {
-        question: "What is a migraine aura – and how do I know it isn't a stroke?",
+        question: "What is a migraine aura, and how do I know it isn't a stroke?",
         answer:
-          "Aura is a slow electrical wave moving across the brain's surface, experienced by about one in three people with migraine – most often as shimmering zigzags or blind spots that gradually spread over twenty to sixty minutes, then fade. The gradual march is the signature: stroke symptoms typically arrive suddenly and all at once. Any first-ever aura, aura that includes weakness or trouble speaking, or a sudden thunderclap headache deserves emergency evaluation – this is one place not to self-diagnose.",
+          "Aura is a slow electrical wave moving across the brain's surface, experienced by about one in three people with migraine, most often as shimmering zigzags or blind spots that gradually spread over twenty to sixty minutes, then fade. The gradual march is the signature: stroke symptoms typically arrive suddenly and all at once. Any first-ever aura, aura that includes weakness or trouble speaking, or a sudden thunderclap headache deserves emergency evaluation – this is one place not to self-diagnose.",
       },
       {
         question: "Can taking painkillers make migraine worse?",
@@ -366,7 +366,7 @@ export const CONDITION_ARTICLES: Article[] = [
       {
         question: "What are the new migraine treatments?",
         answer:
-          "Migraine is pain medicine's biggest recent success story. The CGRP era began in 2018: monoclonal antibodies given monthly or quarterly to prevent attacks, followed by gepants – CGRP-blocking tablets, some usable both to treat an attack and to prevent the next ones – and lasmiditan, an acute option without triptans' vascular constraints. None is universal, but for many people these drugs – the first ever designed from migraine's own mechanism to prevent it – have changed what living with migraine means. Whether one fits you is a conversation for your clinician.",
+          "Migraine is pain medicine's biggest recent success story. The CGRP era began in 2018: monoclonal antibodies given monthly or quarterly to prevent attacks, followed by gepants – CGRP-blocking tablets, some usable both to treat an attack and to prevent the next ones, and lasmiditan, an acute option without triptans' vascular constraints. None is universal, but for many people these drugs, the first ever designed from migraine's own mechanism to prevent it, have changed what living with migraine means. Whether one fits you is a conversation for your clinician.",
       },
     ],
     references: [
@@ -438,23 +438,23 @@ export const CONDITION_ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "arthritis-pain",
-    title: "Arthritis Pain",
+    title: "Arthritis pain",
     description:
-      "What arthritis actually is – one word covering two very different diseases: osteoarthritis (a whole-joint disease, not 'wear and tear') and inflammatory arthritis (rheumatoid, psoriatic, gout). How to tell the patterns apart, why the X-ray rarely matches the pain, and how each is treated today.",
+      "What arthritis is – one word covering two very different diseases: osteoarthritis (a whole-joint disease, not “wear and tear”) and inflammatory arthritis (rheumatoid, psoriatic, gout). How to tell the patterns apart, why the X-ray rarely matches the pain, and how each is treated today.",
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
-      "Arthritis is an umbrella word for over a hundred joint conditions, but two families cover most of it. Osteoarthritis – the most common by far – is a whole-joint disease of cartilage, bone, and lining, not simple 'wear and tear.' Inflammatory arthritis – rheumatoid, psoriatic, gout – is the immune system attacking the joint. Telling them apart matters, because one is managed and the other is a race.",
+      "Arthritis is an umbrella word for over a hundred joint conditions, but two families cover most of it. Osteoarthritis, the most common by far, is a whole-joint disease of cartilage, bone, and lining, not simple “wear and tear.” Inflammatory arthritis – rheumatoid, psoriatic, gout – is the immune system attacking the joint. Telling them apart matters, because one is managed and the other is a race.",
     faqs: [
       {
         question: "What is the difference between osteoarthritis and rheumatoid arthritis?",
         answer:
-          "Different diseases sharing a word. Osteoarthritis is a gradual disease of the joint's own tissues – cartilage thins, bone remodels, the lining grumbles – typically in knees, hips, hands, and spine, hurting more with use. Rheumatoid arthritis is autoimmune: the immune system attacks the joint lining itself, classically in the small joints of both hands and feet symmetrically, with long morning stiffness, warm swelling, and whole-body fatigue. The distinction drives everything – including how urgently treatment should start.",
+          "Different diseases sharing a word. Osteoarthritis is a gradual disease of the joint's own tissues – cartilage thins, bone remodels, the lining grumbles, typically in knees, hips, hands, and spine, hurting more with use. Rheumatoid arthritis is autoimmune: the immune system attacks the joint lining itself, classically in the small joints of both hands and feet symmetrically, with long morning stiffness, warm swelling, and whole-body fatigue. The distinction drives everything, including how urgently treatment should start.",
       },
       {
         question: "Is osteoarthritis just wear and tear?",
         answer:
-          "No – and retiring that phrase changes how people treat their joints. Osteoarthritis is an active disease process involving the whole joint: cartilage biology, bone remodeling, and low-grade inflammation of the lining. Joints are living tissue, not brake pads. That is why loading them sensibly through exercise strengthens rather than erodes them, and why guidelines put movement – not rest – at the center of treatment.",
+          "No, and retiring that phrase changes how people treat their joints. Osteoarthritis is an active disease process involving the whole joint: cartilage biology, bone remodeling, and low-grade inflammation of the lining. Joints are living tissue, not brake pads. That is why loading them sensibly through exercise strengthens rather than erodes them, and why guidelines put movement, not rest, at the center of treatment.",
       },
       {
         question: "Why doesn't my X-ray match how much I hurt?",
@@ -469,7 +469,7 @@ export const CONDITION_ARTICLES: Article[] = [
       {
         question: "When should I see a rheumatologist quickly?",
         answer:
-          "When the inflammatory pattern shows itself: joints that are swollen, warm, and stiff for an hour or more in the morning – especially the small joints of both hands or feet – plus fatigue or feeling generally unwell. Modern rheumatology treats early inflammatory arthritis as a window of opportunity: disease-modifying treatment started promptly can prevent the joint damage that once defined rheumatoid arthritis. Months of watchful waiting is the one move the evidence argues against.",
+          "When the inflammatory pattern shows itself: joints that are swollen, warm, and stiff for an hour or more in the morning, especially the small joints of both hands or feet, plus fatigue or feeling generally unwell. Modern rheumatology treats early inflammatory arthritis as a window of opportunity: disease-modifying treatment started promptly can prevent the joint damage that once defined rheumatoid arthritis. Months of watchful waiting is the one move the evidence argues against.",
       },
     ],
     references: [
@@ -529,7 +529,7 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "The three types of pain",
         href: "/understanding-pain/types-of-pain",
         blurb:
-          "Nociceptive, neuropathic, nociplastic – where joint pain sits on the mechanism map.",
+          "Nociceptive, neuropathic, nociplastic, where joint pain sits on the mechanism map.",
       },
       {
         title: "Knee and hip osteoarthritis",
@@ -544,16 +544,16 @@ export const CONDITION_ARTICLES: Article[] = [
     slug: "fibromyalgia",
     title: "Fibromyalgia",
     description:
-      "What fibromyalgia actually is – the signature disease of a sensitized pain system: the measurable evidence that it is real, how it is diagnosed today, why exercise and sleep outperform most pills, and honest expectations for the three approved medications.",
+      "What fibromyalgia is – the signature disease of a sensitized pain system: the measurable evidence that it is real, how it is diagnosed today, why exercise and sleep outperform most pills, and realistic expectations for the three approved medications.",
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
-      "Fibromyalgia is chronic widespread pain – both sides of the body, above and below the waist – traveling with fatigue, unrefreshing sleep, and thinking difficulties. It affects roughly 2–4% of people, and modern research locates the problem in a sensitized pain system: the nervous system's volume control turned up. That is measurable biology, not imagination – and it points to treatments that retrain the system rather than mask it.",
+      "Fibromyalgia is chronic widespread pain – both sides of the body, above and below the waist – traveling with fatigue, unrefreshing sleep, and thinking difficulties. It affects roughly 2–4% of people, and modern research locates the problem in a sensitized pain system: the nervous system's volume control turned up. That is measurable biology, not imagination, and it points to treatments that retrain the system rather than mask it.",
     faqs: [
       {
         question: "Is fibromyalgia a real disease or is it in my head?",
         answer:
-          "It is real, and the evidence is measurable. Brain imaging shows people with fibromyalgia producing the same pain-processing activation as controls at roughly half the pressure. Spinal fluid carries elevated levels of pain-transmitting chemicals. And the body's own pain-dampening reflexes underperform on testing. Fibromyalgia is the signature example of nociplastic pain – pain from a sensitized pain system – recognized by the international pain-science community. Being brain-involved does not make it imaginary; all pain is made by the nervous system.",
+          "It is real, and the evidence is measurable. Brain imaging shows people with fibromyalgia producing the same pain-processing activation as controls at roughly half the pressure. Spinal fluid carries elevated levels of pain-transmitting chemicals. And the body's own pain-dampening reflexes underperform on testing. Fibromyalgia is the signature example of nociplastic pain, pain from a sensitized pain system, recognized by the international pain-science community. Being brain-involved does not make it imaginary; all pain is made by the nervous system.",
       },
       {
         question: "What causes fibromyalgia?",
@@ -563,17 +563,17 @@ export const CONDITION_ARTICLES: Article[] = [
       {
         question: "How is fibromyalgia diagnosed?",
         answer:
-          "By modern criteria, not by pressing tender points – that method was retired. Clinicians assess how widespread the pain is and how severe the accompanying symptoms are (fatigue, unrefreshing sleep, cognitive difficulty) over at least three months, and run basic blood work to check for mimics like thyroid disease or inflammatory arthritis. There is no blood test for fibromyalgia itself, but it is a recognized diagnosis made on positive grounds – not a label of last resort, and a diagnosis you are allowed to have alongside other conditions.",
+          "By modern criteria, not by pressing tender points – that method was retired. Clinicians assess how widespread the pain is and how severe the accompanying symptoms are (fatigue, unrefreshing sleep, cognitive difficulty) over at least three months, and run basic blood work to check for mimics like thyroid disease or inflammatory arthritis. There is no blood test for fibromyalgia itself, but it is a recognized diagnosis made on positive grounds, not a label of last resort, and a diagnosis you are allowed to have alongside other conditions.",
       },
       {
         question: "What is fibro fog?",
         answer:
-          "The cognitive side of fibromyalgia: trouble concentrating, finding words, and holding a thread – often as disabling as the pain. It appears to arise from the same sources as the rest of the condition: a nervous system spending resources on amplified pain traffic, plus unrefreshing sleep compounding everything. It is not dementia and does not progress like one. The treatments that calm the overall condition – sleep, graded activity, pacing – are the ones that thin the fog.",
+          "The cognitive side of fibromyalgia: trouble concentrating, finding words, and holding a thread, often as disabling as the pain. It appears to arise from the same sources as the rest of the condition: a nervous system spending resources on amplified pain traffic, plus unrefreshing sleep compounding everything. It is not dementia and does not progress like one. The treatments that calm the overall condition – sleep, graded activity, pacing – are the ones that thin the fog.",
       },
       {
-        question: "What actually helps fibromyalgia?",
+        question: "What helps fibromyalgia?",
         answer:
-          "The strongest evidence belongs to things that retrain the system: graded exercise – with tai chi performing as well as or better than aerobic exercise in a randomized trial – good sleep care, education about how the condition works, and cognitive behavioral approaches. Three medications are approved for fibromyalgia; honestly framed, each meaningfully helps a minority of the people who try it. Opioids are a specific poor fit and can worsen the underlying sensitivity. The realistic goal is a system turned down and a life built back up – most people can improve.",
+          "The strongest evidence belongs to things that retrain the system: graded exercise, with tai chi performing as well as or better than aerobic exercise in a randomized trial – good sleep care, education about how the condition works, and cognitive behavioral approaches. Three medications are approved for fibromyalgia; framed, each meaningfully helps a minority of the people who try it. Opioids are a specific poor fit and can worsen the underlying sensitivity. The realistic goal is a system turned down and a life built back up, most people can improve.",
       },
     ],
     references: [
@@ -634,7 +634,7 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Physical and behavioral therapies",
         href: "/treatments/physical-and-behavioral-therapies",
         blurb:
-          "Graded movement, pacing, and cognitive behavioral approaches, and what each honestly delivers.",
+          "Graded movement, pacing, and cognitive behavioral approaches, and what each delivers.",
       },
     ],
   },
@@ -642,33 +642,33 @@ export const CONDITION_ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "cancer-pain",
-    title: "Cancer Pain",
+    title: "Cancer pain",
     description:
-      "Cancer pain is one of the most treatable parts of cancer – where it comes from (the disease, the treatment, and the years after), why opioids are a different conversation here, what palliative care actually is, and the full toolbox beyond the pill bottle.",
+      "Cancer pain is one of the most treatable parts of cancer, where it comes from (the disease, the treatment, and the years after), why opioids are a different conversation here, what palliative care is, and the full toolbox beyond the pill bottle.",
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
-      "Pain affects roughly half of people during cancer treatment and about two-thirds of those with advanced disease – and it is among the most treatable parts of cancer. With today's tools, most cancer pain can be brought under control. Treating it is part of cancer care, not an afterthought, and reporting it early is the step that makes everything else work.",
+      "Pain affects roughly half of people during cancer treatment and about two-thirds of those with advanced disease, and it is among the most treatable parts of cancer. With today's tools, most cancer pain can be brought under control. Treating it is part of cancer care, not an afterthought, and reporting it early is the step that makes everything else work.",
     faqs: [
       {
         question: "Is pain an inevitable part of cancer?",
         answer:
-          "No. Pain is common in cancer – studies find it in about 55% of people during treatment and 66% with advanced disease – but common is not the same as untreatable. With the modern toolbox, most cancer pain can be controlled well. The biggest obstacle is silence: pain that goes unreported goes untreated, and studies have long found a substantial minority of patients undertreated. Reporting pain early and specifically is not complaining – it is giving your team the information treatment runs on.",
+          "No. Pain is common in cancer – studies find it in about 55% of people during treatment and 66% with advanced disease, but common is not the same as untreatable. With the modern toolbox, most cancer pain can be controlled well. The biggest obstacle is silence: pain that goes unreported goes untreated, and studies have long found a substantial minority of patients undertreated. Reporting pain early and specifically is not complaining – it is giving your team the information treatment runs on.",
       },
       {
         question: "Will I get addicted to pain medicine during cancer treatment?",
         answer:
-          "For people taking opioids as prescribed for cancer pain, with a team monitoring, addiction is uncommon – and fear of it is one of the best-documented reasons cancer pain goes undertreated. Physical dependence (the body adapting, needing a taper to stop) and tolerance (needing adjustment over time) are expected biology, not addiction. Your team plans for both. If use ever feels like it is escaping the plan – yours or a loved one's – say so early; confidential help exists, including the SAMHSA helpline at 1-800-662-4357.",
+          "For people taking opioids as prescribed for cancer pain, with a team monitoring, addiction is uncommon, and fear of it is one of the best-documented reasons cancer pain goes undertreated. Physical dependence (the body adapting, needing a taper to stop) and tolerance (needing adjustment over time) are expected biology, not addiction. Your team plans for both. If use ever feels like it is escaping the plan, yours or a loved one's, say so early; confidential help exists, including the SAMHSA helpline at 1-800-662-4357.",
       },
       {
         question: "What is “breakthrough” pain?",
         answer:
-          "Pain that spikes through otherwise controlled background pain – typically fast-rising, severe, and short-lived, sometimes triggered by movement or an activity, sometimes arriving unprovoked. It is common in cancer and it is planned for: alongside regular, scheduled pain control, your team can provide a separate fast-acting rescue plan. Tracking when breakthrough episodes happen, what triggers them, and how long they last helps your team tune both halves of the plan.",
+          "Pain that spikes through otherwise controlled background pain, typically fast-rising, severe, and short-lived, sometimes triggered by movement or an activity, sometimes arriving unprovoked. It is common in cancer and it is planned for: alongside regular, scheduled pain control, your team can provide a separate fast-acting rescue plan. Tracking when breakthrough episodes happen, what triggers them, and how long they last helps your team tune both halves of the plan.",
       },
       {
         question: "Is palliative care the same as giving up?",
         answer:
-          "No – this is one of medicine's most costly misunderstandings. Palliative care is specialist care for symptoms and quality of life, delivered alongside cancer treatment, at any stage. In a landmark randomized trial in metastatic lung cancer, people who received palliative care from diagnosis had better quality of life, less depression – and lived longer than those receiving standard care alone. Asking for palliative care early is not surrender; it is choosing the version of treatment with more support in it.",
+          "No – this is one of medicine's most costly misunderstandings. Palliative care is specialist care for symptoms and quality of life, delivered alongside cancer treatment, at any stage. In a landmark randomized trial in metastatic lung cancer, people who received palliative care from diagnosis had better quality of life, less depression, and lived longer than those receiving standard care alone. Asking for palliative care early is not surrender; it is choosing the version of treatment with more support in it.",
       },
       {
         question: "Why do I still have pain years after beating cancer?",
@@ -717,19 +717,19 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Neuropathic pain",
         href: "/conditions/neuropathic-pain",
         blurb:
-          "Chemotherapy-induced neuropathy is nerve pain – and it is treated as such.",
+          "Chemotherapy-induced neuropathy is nerve pain, and it is treated as such.",
       },
       {
         title: "Medications for pain",
         href: "/treatments/medications-for-pain",
         blurb:
-          "The full drug-class map – including where opioids genuinely belong.",
+          "The full drug-class map, including where opioids genuinely belong.",
       },
       {
         title: "Measuring pain",
         href: "/understanding-pain/measuring-pain",
         blurb:
-          "How to report pain so your team can actually act on it.",
+          "How to report pain so your team can act on it.",
       },
       {
         title: "Precision pain medicine",
@@ -743,7 +743,7 @@ export const CONDITION_ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "persistent-postsurgical-pain",
-    title: "Persistent Postsurgical Pain",
+    title: "Persistent postsurgical pain",
     description:
       "Why pain can continue after an operation has healed: the three-month definition, nerve injury and sensitization, who is at higher risk, what must be ruled out, and how transitional pain care can prevent a difficult recovery from becoming a permanent handoff.",
     status: "sourced",
@@ -933,7 +933,7 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Precision pain medicine",
         href: "/future-of-pain-medicine/precision-pain-medicine",
         blurb:
-          "Matching treatment to the mechanism of the pain, not the diagnosis alone – where the field is heading.",
+          "Matching treatment to the mechanism of the pain, not the diagnosis alone, where the field is heading.",
       },
     ],
   },
@@ -941,7 +941,7 @@ export const CONDITION_ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "diabetic-neuropathy",
-    title: "Diabetic Neuropathy",
+    title: "Diabetic neuropathy",
     description:
       "How diabetes damages nerves: why symptoms begin in the toes, how feet can be numb and painful at once, why daily foot checks matter, and what current guidelines say about preventing damage and treating neuropathic pain.",
     status: "sourced",
@@ -1016,7 +1016,7 @@ export const CONDITION_ARTICLES: Article[] = [
       {
         title: "Neuropathic pain",
         href: "/conditions/neuropathic-pain",
-        blurb: "The larger nerve-pain map – and why numbness and burning can coexist.",
+        blurb: "The larger nerve-pain map, and why numbness and burning can coexist.",
       },
       {
         title: "Medications for pain",
@@ -1040,7 +1040,7 @@ export const CONDITION_ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "spinal-stenosis",
-    title: "Lumbar Spinal Stenosis",
+    title: "Lumbar spinal stenosis",
     description:
       "Why spinal stenosis makes standing and walking hurt: the shopping-cart sign, why a narrow MRI is not a diagnosis by itself, what improves walking, the limited evidence for injections, and when decompression surgery enters the conversation.",
     status: "sourced",
@@ -1115,7 +1115,7 @@ export const CONDITION_ARTICLES: Article[] = [
       {
         title: "Low back pain",
         href: "/conditions/low-back-pain",
-        blurb: "The larger territory – and why scan findings do not always identify the pain source.",
+        blurb: "The larger territory, and why scan findings do not always identify the pain source.",
       },
       {
         title: "Sciatica",
@@ -1137,7 +1137,7 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Next-generation neuromodulation",
         href: "/future-of-pain-medicine/neuromodulation",
         blurb:
-          "Closed-loop and high-frequency spinal cord stimulation – where implanted devices are heading.",
+          "Closed-loop and high-frequency spinal cord stimulation, where implanted devices are heading.",
       },
     ],
   },
@@ -1145,7 +1145,7 @@ export const CONDITION_ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "neck-pain",
-    title: "Neck Pain",
+    title: "Neck pain",
     description:
       "What neck pain means: why most cases are mechanical rather than dangerous, what arm symptoms can reveal about a nerve or spinal cord problem, when imaging helps, and the treatment options supported by current guidelines.",
     status: "sourced",
@@ -1244,18 +1244,18 @@ export const CONDITION_ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "crps",
-    title: "Complex Regional Pain Syndrome",
+    title: "Complex regional pain syndrome",
     description:
       "CRPS explained: pain out of proportion after an injury, a limb that visibly changes, and why the first months matter most – the Budapest criteria, the brain-map science behind mirror therapy, and the treatments with real evidence, movement first.",
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
-      "Complex regional pain syndrome (CRPS) is severe, persistent limb pain out of proportion to the injury that started it – usually a fracture, surgery, or sprain – in a limb that visibly changes: color, temperature, swelling, sweating, movement. It is rare, real, and time-sensitive: recognized and treated early, with movement at the center, most people improve substantially.",
+      "Complex regional pain syndrome (CRPS) is severe, persistent limb pain out of proportion to the injury that started it, usually a fracture, surgery, or sprain, in a limb that visibly changes: color, temperature, swelling, sweating, movement. It is rare, real, and time-sensitive: recognized and treated early, with movement at the center, most people improve substantially.",
     faqs: [
       {
         question: "What is CRPS and what does it feel like?",
         answer:
-          "CRPS is a regional pain syndrome that usually follows an injury – most often a wrist fracture, surgery, or sprain – in which the pain outlives and outgrows the injury itself. It is typically burning or squeezing, spread beyond the original injury site, and severe out of proportion to what started it; light touch can be intensely painful. What sets CRPS apart is that the limb visibly changes too: color and temperature shifts, swelling, abnormal sweating, and over time changes in skin, hair, nails, and movement.",
+          "CRPS is a regional pain syndrome that usually follows an injury, most often a wrist fracture, surgery, or sprain, in which the pain outlives and outgrows the injury itself. It is typically burning or squeezing, spread beyond the original injury site, and severe out of proportion to what started it; light touch can be intensely painful. What sets CRPS apart is that the limb visibly changes too: color and temperature shifts, swelling, abnormal sweating, and over time changes in skin, hair, nails, and movement.",
       },
       {
         question: "What causes CRPS?",
@@ -1270,19 +1270,19 @@ export const CONDITION_ARTICLES: Article[] = [
       {
         question: "Does CRPS go away?",
         answer:
-          "Often, substantially – especially when it is caught and treated in the first months. Many cases improve significantly within the first year with active rehabilitation; a minority persist and need long-term specialist care, and honest medicine holds both facts at once. The variable most within reach is time-to-treatment: the earlier the diagnosis is made and movement-based rehabilitation begins, the better the odds. CRPS caught early is a very different disease from CRPS found late.",
+          "Often, substantially, especially when it is caught and treated in the first months. Many cases improve significantly within the first year with active rehabilitation; a minority persist and need long-term specialist care, and honest medicine holds both facts at once. The variable most within reach is time-to-treatment: the earlier the diagnosis is made and movement-based rehabilitation begins, the better the odds. CRPS caught early is a very different disease from CRPS found late.",
       },
       {
         question: "Is it safe to move a limb with CRPS?",
         answer:
-          "Not only safe – movement is the cornerstone of treatment. The instinct to guard and immobilize the limb is understandable and counterproductive: disuse feeds the swelling, the bone loss, and the brain's shrinking map of the limb. Rehabilitation is built to make movement possible again in graded steps – desensitization, graded motor imagery, mirror therapy, then progressive loading – with pain control supporting the movement, not replacing it. In CRPS, hurt does not equal harm; guarding is the riskier path.",
+          "Not only safe – movement is the cornerstone of treatment. The instinct to guard and immobilize the limb is understandable and counterproductive: disuse feeds the swelling, the bone loss, and the brain's shrinking map of the limb. Rehabilitation is built to make movement possible again in graded steps – desensitization, graded motor imagery, mirror therapy, then progressive loading, with pain control supporting the movement, not replacing it. In CRPS, hurt does not equal harm; guarding is the riskier path.",
       },
     ],
     references: [
       {
         source: "PAIN / PubMed",
         title:
-          "Harden et al. – Validation of proposed diagnostic criteria (the 'Budapest criteria') for complex regional pain syndrome",
+          "Harden et al. – Validation of proposed diagnostic criteria (the “Budapest criteria”) for complex regional pain syndrome",
         url: "https://pubmed.ncbi.nlm.nih.gov/20493633/",
       },
       {
@@ -1331,20 +1331,20 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "How pain works",
         href: "/understanding-pain/how-pain-works",
         blurb:
-          "The nervous-system plasticity that CRPS turns against a limb – and rehab turns back.",
+          "The nervous-system plasticity that CRPS turns against a limb, and rehab turns back.",
       },
       {
         title: "Interventional procedures",
         href: "/treatments/interventional-procedures",
         blurb:
-          "Nerve blocks and spinal cord and DRG stimulation – what each does, and the honest evidence.",
+          "Nerve blocks and spinal cord and DRG stimulation – what each does, and the evidence.",
       },
     ],
   },
   {
     hub: HUB,
     slug: "tmj-disorders",
-    title: "TMJ Pain and Jaw Disorders (TMD)",
+    title: "TMJ pain and jaw disorders (TMD)",
     description:
       "What temporomandibular disorders are: the three places jaw pain lives, why a clicking jaw is usually harmless, what the OPPERA studies found predicts TMD, and why conservative, reversible care comes first.",
     status: "sourced",
@@ -1449,7 +1449,7 @@ export const CONDITION_ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "chronic-pelvic-pain",
-    title: "Chronic Pelvic Pain",
+    title: "Chronic pelvic pain",
     description:
       "Why pelvic pain rarely has one source: the shared nerve supply, the pelvic floor muscles found in most cases, the six-domain approach used in men and women, and why a normal scan does not mean nothing is wrong.",
     status: "sourced",
@@ -1560,9 +1560,9 @@ export const CONDITION_ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "central-post-stroke-pain",
-    title: "Central Post-Stroke Pain",
+    title: "Central post-stroke pain",
     description:
-      "Pain generated by the stroke's damage to the brain's own pain pathways: what it feels like, why it starts months later and is often missed, the thalamic lesion science, and the honest state of treatment.",
+      "Pain generated by the stroke's damage to the brain's own pain pathways: what it feels like, why it starts months later and is often missed, the thalamic lesion science, and the state of treatment.",
     status: "sourced",
     lastUpdated: "2026-09-08",
     answer:
@@ -1586,7 +1586,7 @@ export const CONDITION_ARTICLES: Article[] = [
       {
         question: "What treatments help central post-stroke pain?",
         answer:
-          "Nerve-pain medications, honestly described as partially effective: amitriptyline (the first drug shown to help), lamotrigine (44% responders in a 2001 trial), gabapentinoids (pregabalin missed its main endpoint in 2011 but improved sleep and anxiety), and SNRIs by extrapolation from other neuropathic pain. For refractory cases, repetitive transcranial magnetic stimulation and implanted motor cortex stimulation are used in specialist centers. Opioids are not recommended as ongoing treatment.",
+          "Nerve-pain medications, described as partially effective: amitriptyline (the first drug shown to help), lamotrigine (44% responders in a 2001 trial), gabapentinoids (pregabalin missed its main endpoint in 2011 but improved sleep and anxiety), and SNRIs by extrapolation from other neuropathic pain. For refractory cases, repetitive transcranial magnetic stimulation and implanted motor cortex stimulation are used in specialist centers. Opioids are not recommended as ongoing treatment.",
       },
       {
         question: "Who should I see for pain after a stroke?",
@@ -1670,7 +1670,7 @@ export const CONDITION_ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "shoulder-pain",
-    title: "Shoulder Pain",
+    title: "Shoulder pain",
     seoTitle: "Shoulder Pain: Causes, Cortisone Shot vs Physical Therapy, and When to Worry",
     description:
       "What shoulder pain means: the rotator cuff, bursa, frozen shoulder, arthritis, and pain referred from the neck; what one-year trials say about a cortisone shot versus exercise therapy; why a scan can mislead; and the signs that need urgent care.",
@@ -1687,7 +1687,7 @@ export const CONDITION_ARTICLES: Article[] = [
       {
         question: "Is a cortisone shot or physical therapy better for shoulder pain?",
         answer:
-          "It depends on what you need from the next few weeks versus the next year. In a one-year pragmatic trial in general practice, people given a corticosteroid injection improved more by six weeks, while people who completed twelve sessions of exercise therapy were doing better at six, nine, and twelve months, with wide uncertainty around the size of the difference. The larger GRASP trial found no long-term benefit from adding an injection. The honest summary is faster versus more durable, and the evidence cannot yet say who should start with which; that is a decision to make with your clinician.",
+          "It depends on what you need from the next few weeks versus the next year. In a one-year pragmatic trial in general practice, people given a corticosteroid injection improved more by six weeks, while people who completed twelve sessions of exercise therapy were doing better at six, nine, and twelve months, with wide uncertainty around the size of the difference. The larger GRASP trial found no long-term benefit from adding an injection. The summary is faster versus more durable, and the evidence cannot yet say who should start with which; that is a decision to make with your clinician.",
       },
       {
         question: "How long does a cortisone shot last in the shoulder?",
@@ -1788,14 +1788,14 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Precision pain medicine",
         href: "/future-of-pain-medicine/precision-pain-medicine",
         blurb:
-          "Matching treatment to the person rather than the average – where the field is heading.",
+          "Matching treatment to the person rather than the average, where the field is heading.",
       },
     ],
   },
   {
     hub: HUB,
     slug: "shingles-pain",
-    title: "Shingles Pain and Postherpetic Neuralgia",
+    title: "Shingles pain and postherpetic neuralgia",
     description:
       "Why shingles hurts and why the pain sometimes stays: the reactivated chickenpox virus, the 72-hour treatment window, what postherpetic neuralgia is, how it is treated today, and how well the vaccine prevents it.",
     status: "sourced",
@@ -1907,7 +1907,7 @@ export const CONDITION_ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "trigeminal-neuralgia",
-    title: "Trigeminal Neuralgia",
+    title: "Trigeminal neuralgia",
     description:
       "What trigeminal neuralgia is: the electric-shock facial pain set off by a touch, the blood vessel pressing on a nerve behind most cases, why ordinary painkillers fail, the medicines that work, and what surgery offers when they stop working.",
     status: "sourced",
@@ -2009,7 +2009,7 @@ export const CONDITION_ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "tension-and-cluster-headache",
-    title: "Tension-Type and Cluster Headache",
+    title: "Tension-type and cluster headache",
     description:
       "The two headaches beyond migraine: tension-type headache, the most common headache in the world, and cluster headache, among the most severe – how to tell them apart, what treats each, the medication-overuse trap, and the warning signs that need urgent care.",
     status: "sourced",
@@ -2025,7 +2025,7 @@ export const CONDITION_ARTICLES: Article[] = [
       {
         question: "How is cluster headache different from migraine?",
         answer:
-          "Cluster attacks are shorter – 15 minutes to three hours – strictly one-sided around the eye, and come with a red, watering eye or blocked nose on that side. People feel restless and agitated rather than wanting to lie still. Attacks arrive in runs, often at the same time each day or night, for weeks at a time, followed by months without any.",
+          "Cluster attacks are shorter, 15 minutes to three hours, strictly one-sided around the eye, and come with a red, watering eye or blocked nose on that side. People feel restless and agitated rather than wanting to lie still. Attacks arrive in runs, often at the same time each day or night, for weeks at a time, followed by months without any.",
       },
       {
         question: "Can taking painkillers too often cause headaches?",
@@ -2109,7 +2109,7 @@ export const CONDITION_ARTICLES: Article[] = [
       {
         title: "Physical & behavioral therapies",
         href: "/treatments/physical-and-behavioral-therapies",
-        blurb: "Relaxation, cognitive behavioral approaches, and what each honestly delivers.",
+        blurb: "Relaxation, cognitive behavioral approaches, and what each delivers.",
       },
       {
         title: "How pain works",
@@ -2126,7 +2126,7 @@ export const CONDITION_ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "knee-and-hip-osteoarthritis",
-    title: "Knee and Hip Osteoarthritis",
+    title: "Knee and hip osteoarthritis",
     description:
       "What helps knee and hip osteoarthritis, in the order guidelines suggest: exercise and weight loss, anti-inflammatory gels and tablets, what steroid injections can and cannot do, the injections guidelines recommend against, and when joint replacement makes sense.",
     status: "sourced",

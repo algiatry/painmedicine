@@ -16,7 +16,7 @@
 | Contact route | `SITE.editorialEmail` is empty. `/reviewers` cannot take applications, and the "Report a correction" links stay hidden until it is set |
 | CI | `verify` (audit, lint, build) is a required check on `main`; Dependabot is on |
 | Citations | `npm run check:refs` runs monthly and on demand. Last full run: 0 dead, 0 mismatched |
-| Content lint | 0 errors, 0 warnings. Enforces the cross-link triangle and that every internal link resolves |
+| Content lint | 0 errors, 0 warnings. Enforces the cross-link triangle, that every internal link resolves, and per-page caps on house-style tics (spaced en dashes, "honest", "actually") |
 | Search | Header search over articles, hubs, and glossary; runs in the browser |
 | Search data | No Search Console or Bing report has been run; `reports/` does not exist |
 | Tests | None beyond the content lint |
@@ -122,6 +122,12 @@ directions, and into the review queue the day it ships.
 
 ## 7. Small engineering items
 
+- **Lower the tic caps.** `TIC_CAPS` in `scripts/content-lint.ts` sits just
+  above the worst page (15 spaced en dashes per 1,000 words). Edit the
+  dash-heavy pages by hand and bring the cap down toward 8.
+- **Finish the colour tokens.** About 60 `dark:` variants remain, mostly
+  amber and teal callout grounds and the header; give them tokens as those
+  components are next touched.
 - **Tests for the pure logic.** `search()` ranking in `src/lib/search.ts` and
   the title matcher in `scripts/check-references.ts` are both easy to break
   silently.

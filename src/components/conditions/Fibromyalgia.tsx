@@ -4,7 +4,7 @@ import { FIG } from "@/lib/fig";
 import { BodyFront } from "../anatomy/BodyOutline";
 
 const link =
-  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
 
 /**
  * Figure 1 – pain without a postcode: the widespread pattern, both sides,
@@ -12,7 +12,7 @@ const link =
  */
 function WidespreadFigure() {
   return (
-    <Figure caption="The fibromyalgia map: pain on both sides of the body, above and below the waist – and the sites shift over weeks. The distribution itself is the diagnostic clue: no injury produces this pattern, but a sensitized pain system does.">
+    <Figure caption="The fibromyalgia map: pain on both sides of the body, above and below the waist, and the sites shift over weeks. The distribution itself is the diagnostic clue: no injury produces this pattern, but a sensitized pain system does.">
       <svg
         role="img"
         aria-labelledby="wide-title wide-desc"
@@ -146,7 +146,7 @@ export default function Fibromyalgia() {
     <div>
       <P>
         No pain condition has been dismissed longer or harder than
-        fibromyalgia – and few have been more thoroughly vindicated by
+        fibromyalgia, and few have been more thoroughly vindicated by
         modern pain science. It affects roughly <strong>2 to 4% of
         people</strong>, most of those diagnosed are women, and it is now
         the signature example of the third kind of pain:{" "}
@@ -174,7 +174,7 @@ export default function Fibromyalgia() {
       <P>
         Fibromyalgia&rsquo;s pain is defined by its geography: both sides of
         the body, above and below the waist, often deep and aching with
-        burning edges – and mobile, favoring the shoulders one month and the
+        burning edges, and mobile, favoring the shoulders one month and the
         hips the next. Touch that should not hurt sometimes does. And pain
         never travels alone here: profound <strong>fatigue</strong>, sleep
         that fails to refresh no matter its length, the cognitive haze
@@ -210,9 +210,8 @@ export default function Fibromyalgia() {
 
       <H2 id="origins">Where it comes from</H2>
       <P>
-        No single cause has been found, and the honest model is a
-        combination: an inherited tendency toward a sensitive pain system –
-        fibromyalgia runs in families – often switched on by stressors such
+        No single cause has been found, and the model is a
+        combination: an inherited tendency toward a sensitive pain system (fibromyalgia runs in families) often switched on by stressors such
         as an infection, an injury, trauma, or a long siege of stress and
         broken sleep. Sleep deserves special mention because the arrow runs
         both ways: unrefreshing sleep is a core symptom, and{" "}
@@ -221,13 +220,13 @@ export default function Fibromyalgia() {
         </Link>{" "}
         in healthy volunteers produced exactly the widespread tenderness
         fibromyalgia is known for. A sensitized system is
-        something a body can be talked into – and, the treatment evidence
+        something a body can be talked into, and, the treatment evidence
         suggests, partially talked out of.
       </P>
 
       <H2 id="diagnosis">How it&rsquo;s diagnosed</H2>
       <P>
-        The tender-point exam – eleven of eighteen points – belongs to
+        The tender-point exam, eleven of eighteen points, belongs to
         history; the criteria retired it. Today&rsquo;s diagnosis rests on
         the pattern: how widespread the pain is, how severe the fatigue,
         sleep, and cognitive symptoms are, and whether the picture has held
@@ -235,7 +234,7 @@ export default function Fibromyalgia() {
         mimics – thyroid disease, inflammatory arthritis, vitamin
         deficiency. There is no biomarker yet, but fibromyalgia is a
         diagnosis made on positive grounds, not a consolation prize after
-        every other test – and current criteria explicitly allow it to
+        every other test, and current criteria explicitly allow it to
         coexist with other conditions, because it often does.
       </P>
 
@@ -256,7 +255,7 @@ export default function Fibromyalgia() {
       <P>
         Medication deserves honest framing. Three drugs are approved for
         fibromyalgia – two calm overexcited nerve signaling, one
-        strengthens the pain-dampening pathways – and each meaningfully
+        strengthens the pain-dampening pathways, and each meaningfully
         helps a minority of those who try it, usually as a supporting
         actor rather than the lead.{" "}
         <Link href="/treatments/medications-for-pain" className={link}>
@@ -275,7 +274,7 @@ export default function Fibromyalgia() {
         Fibromyalgia sits at the center of pain science&rsquo;s newest
         frontier – therapies aimed at retraining a sensitized system rather
         than numbing it, from pain-reprocessing approaches to non-invasive
-        brain stimulation, covered honestly in{" "}
+        brain stimulation, covered in{" "}
         <Link href="/future-of-pain-medicine/mind-and-brain" className={link}>
           mind, brain, and new frontiers
         </Link>
@@ -285,7 +284,7 @@ export default function Fibromyalgia() {
 
       <H2 id="specialist">When to bring in a specialist</H2>
       <P>
-        Diagnosis often starts with rheumatology – the mimics live there –
+        Diagnosis often starts with rheumatology, the mimics live there,
         but long-term care is where{" "}
         <Link href="/what-is-pain-medicine" className={link}>
           pain medicine

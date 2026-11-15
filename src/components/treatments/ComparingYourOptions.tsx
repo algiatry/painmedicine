@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
 
 /**
  * Figure 1 – the evidence map: certainty of evidence (x) against typical
@@ -12,7 +12,7 @@ const link =
  */
 function EvidenceMapFigure() {
   return (
-    <Figure caption="The evidence map, drawn honestly: how certain the evidence is (left to right) against the typical average benefit in trials (bottom to top). Positions are a schematic synthesis of the reviews cited on this page and across this site – approximate by design, and averages hide wide individual variation. Teal = low-risk active care; slate = drugs and procedures; the red ring marks a high-risk option whose long-term evidence came up short.">
+    <Figure caption="The evidence map: how certain the evidence is (left to right) against the typical average benefit in trials (bottom to top). Positions are a schematic synthesis of the reviews cited on this page and across this site – approximate by design, and averages hide wide individual variation. Teal = low-risk active care; slate = drugs and procedures; the red ring marks a high-risk option whose long-term evidence came up short.">
       <svg
         role="img"
         aria-labelledby="map2-title map2-desc"
@@ -53,7 +53,7 @@ function EvidenceMapFigure() {
         {/* slate: drugs & procedures */}
         <circle cx="390" cy="100" r="10" fill={FIG.muted} />
         <text x="390" y="78" textAnchor="middle" fontSize="12" fontWeight="700" fill={FIG.text}>
-          Stimulators – in selected patients
+          Stimulators, in selected patients
         </text>
         <circle cx="350" cy="185" r="10" fill={FIG.muted} />
         <text x="335" y="190" textAnchor="end" fontSize="12" fontWeight="700" fill={FIG.text}>
@@ -61,7 +61,7 @@ function EvidenceMapFigure() {
         </text>
         <circle cx="525" cy="150" r="10" fill={FIG.muted} />
         <text x="525" y="128" textAnchor="middle" fontSize="12" fontWeight="700" fill={FIG.text}>
-          Nerve-pain drugs – for nerve pain
+          Nerve-pain drugs, for nerve pain
         </text>
         <circle cx="612" cy="315" r="10" fill={FIG.muted} />
         <text x="597" y="320" textAnchor="end" fontSize="12" fontWeight="700" fill={FIG.text}>
@@ -97,7 +97,7 @@ function StackingFigure() {
     { label: "pacing & skills", fill: FIG.nerveBright },
   ];
   return (
-    <Figure caption="The strategy the evidence actually supports. Left: treatments tried one at a time, each judged 'only modest' and abandoned. Right: the same modest effects, matched to mechanism and kept, stacking – because benefits from different mechanisms add, and their side effects mostly don't.">
+    <Figure caption="The strategy the evidence supports. Left: treatments tried one at a time, each judged 'only modest' and abandoned. Right: the same modest effects, matched to mechanism and kept, stacking, because benefits from different mechanisms add, and their side effects mostly don't.">
       <svg
         role="img"
         aria-labelledby="stk-title stk-desc"
@@ -171,19 +171,19 @@ export default function ComparingYourOptions() {
       <P>
         Every page in this hub ends at the same question, so this page
         faces it directly: <em>of all of it – the drugs, the needles, the
-        devices, the therapies – what actually works?</em> The honest
+        devices, the therapies – what works?</em> The honest
         answer is better than the marketing answer, but it requires a
         reframe. Read the trial literature whole and its clearest finding
         is that <strong>no treatment wins across the board</strong>:
         nearly everything helps modestly on average, and the real
-        differences between options lie elsewhere – in how{" "}
+        differences between options lie elsewhere, in how{" "}
         <em>certain</em> the evidence is, how <em>long</em> benefits
         last, how <em>safe</em> the option is, and which{" "}
         <Link href="/understanding-pain/types-of-pain" className={link}>
           pain mechanism
         </Link>{" "}
         it fits. This page maps those differences the way the field sees
-        them – and teaches the reading skills to weigh any option, or any
+        them, and teaches the reading skills to weigh any option, or any
         claim, yourself.
       </P>
 
@@ -298,7 +298,7 @@ export default function ComparingYourOptions() {
         It is a verdict on the old assumption that the strongest
         painkiller must be the strongest treatment for chronic pain. For
         anyone whose use has come to feel like its own problem, the
-        SAMHSA helpline – 1-800-662-4357 – is free, confidential, and
+        SAMHSA helpline, 1-800-662-4357, is free, confidential, and
         always open.
       </P>
 
@@ -306,8 +306,8 @@ export default function ComparingYourOptions() {
       <P>
         Complementary options divide cleanly on the certainty axis.{" "}
         <strong>Acupuncture</strong> has been examined about as
-        rigorously as a hands-on therapy can be – an individual-patient-
-        data meta-analysis of dozens of trials – and shows real benefits
+        rigorously as a hands-on therapy can be, an individual-patient-
+        data meta-analysis of dozens of trials, and shows real benefits
         beyond sham for several chronic pain conditions: small on
         average, persistent, low-risk. As an adjunct for someone drawn
         to it, that is a defensible bet. <strong>Supplements</strong> are
@@ -325,7 +325,7 @@ export default function ComparingYourOptions() {
         method is simple and rarely followed: change{" "}
         <strong>one thing at a time</strong>; define success as a{" "}
         <strong>functional target</strong> – the walk, the workday, the
-        night&rsquo;s sleep – not only a{" "}
+        night&rsquo;s sleep, not only a{" "}
         <Link href="/understanding-pain/measuring-pain" className={link}>
           pain score
         </Link>
@@ -345,7 +345,7 @@ export default function ComparingYourOptions() {
         marketing: one remedy claimed to work for every kind of pain,
         testimonials doing the work of trials, mechanisms too secret to
         explain, and the language of certainty where medicine speaks in
-        probabilities. The green flags are just as consistent – and they
+        probabilities. The green flags are just as consistent, and they
         are this site&rsquo;s own standard: evidence named, limits
         volunteered, and a clear statement of who an option is for.
         Building your particular stack from this map is exactly the

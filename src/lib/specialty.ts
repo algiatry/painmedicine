@@ -22,13 +22,13 @@ export const SPECIALTY_ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "how-pain-physicians-train",
-    title: "How Pain Physicians Train",
+    title: "How pain physicians train",
     description:
-      "The nine-year road to pain medicine: medical school, a four-year residency through one of six specialties, a 12-month accredited fellowship, and a single shared board exam. How the credential works – and how to verify it.",
+      "The nine-year road to pain medicine: medical school, a four-year residency through one of six specialties, a 12-month accredited fellowship, and a single shared board exam. How the credential works, and how to verify it.",
     status: "sourced",
     lastUpdated: LAST_UPDATED,
     answer:
-      "A pain physician trains for about nine years after college: four years of medical school, a four-year residency – most often anesthesiology, physical medicine & rehabilitation, neurology, or psychiatry – then a 12-month ACGME-accredited pain medicine fellowship. Board certification runs through a single shared exam administered by the American Board of Anesthesiology since 1993, with six ABMS boards certifying to the same standard.",
+      "A pain physician trains for about nine years after college: four years of medical school, a four-year residency, most often anesthesiology, physical medicine & rehabilitation, neurology, or psychiatry, then a 12-month ACGME-accredited pain medicine fellowship. Board certification runs through a single shared exam administered by the American Board of Anesthesiology since 1993, with six ABMS boards certifying to the same standard.",
     faqs: [
       {
         question: "How many years does a pain specialist train?",
@@ -38,12 +38,12 @@ export const SPECIALTY_ARTICLES: Article[] = [
       {
         question: "How do I check whether a doctor is board-certified in pain medicine?",
         answer:
-          "Use the ABMS's free 'Is My Doctor Certified?' lookup, reached from abms.org/verify-certification, to confirm the pain medicine subspecialty certificate – and your state medical board's site to confirm the license and check disciplinary history. Both take minutes and are exactly what the credential system is built for.",
+          "Use the ABMS's free “Is My Doctor Certified?” lookup, reached from abms.org/verify-certification, to confirm the pain medicine subspecialty certificate, and your state medical board's site to confirm the license and check disciplinary history. Both take minutes and are exactly what the credential system is built for.",
       },
       {
-        question: "Is 'board-certified in pain medicine' a single credential?",
+        question: "Is “board-certified in pain medicine” a single credential?",
         answer:
-          "The ABMS-recognized version is one standard: a shared exam developed and administered by the American Board of Anesthesiology, with six ABMS member boards – anesthesiology, PM&R, psychiatry & neurology, emergency medicine, family medicine, and radiology – certifying their own physicians to the same passing bar. Other pain 'boards' exist outside the ABMS system; some institutions recognize them, some do not.",
+          "The ABMS-recognized version is one standard: a shared exam developed and administered by the American Board of Anesthesiology, with six ABMS member boards – anesthesiology, PM&R, psychiatry & neurology, emergency medicine, family medicine, and radiology – certifying their own physicians to the same passing bar. Other pain “boards” exist outside the ABMS system; some institutions recognize them, some do not.",
       },
     ],
     references: [
@@ -100,7 +100,7 @@ export const SPECIALTY_ARTICLES: Article[] = [
       {
         title: "Pain clinics vs. pain medicine",
         href: "/what-is-pain-medicine/pain-clinics-vs-pain-medicine",
-        blurb: "Why the credential matters when anyone can hang a 'pain clinic' sign.",
+        blurb: "Why the credential matters when anyone can hang a “pain clinic” sign.",
       },
       {
         title: "Find help",
@@ -113,28 +113,28 @@ export const SPECIALTY_ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "the-pain-team",
-    title: "The Pain Team",
+    title: "The pain team",
     description:
       "Why modern pain care is a team sport: the biopsychosocial model behind it, who sits on a pain team, the difference between multidisciplinary and interdisciplinary care, and what the evidence says team-based care delivers.",
     status: "sourced",
     lastUpdated: LAST_UPDATED,
     answer:
-      "Modern pain care is built around a team – physician, nurse, physical therapist, pain psychologist, and often a pharmacist and social worker – because chronic pain involves biology, psychology, and life circumstances together. Randomized-trial evidence shows this coordinated, biopsychosocial approach improves pain and function more than usual care for chronic low back pain.",
+      "Modern pain care is built around a team – physician, nurse, physical therapist, pain psychologist, and often a pharmacist and social worker, because chronic pain involves biology, psychology, and life circumstances together. Randomized-trial evidence shows this coordinated, biopsychosocial approach improves pain and function more than usual care for chronic low back pain.",
     faqs: [
       {
         question: "Why does my pain clinic want me to see a psychologist?",
         answer:
-          "Because pain is defined as a sensory and emotional experience, and pain-processing and emotion-processing brain circuits overlap. A pain psychologist works on that circuitry – sleep, stress, fear of movement, pacing – with evidence-based tools. It is a standard part of good pain care, not a suggestion that your pain is imaginary.",
+          "Because pain is defined as a sensory and emotional experience, and pain-processing and emotion-processing brain circuits overlap. A pain psychologist works on that circuitry – sleep, stress, fear of movement, pacing, with evidence-based tools. It is a standard part of good pain care, not a suggestion that your pain is imaginary.",
       },
       {
-        question: "Does team-based pain care actually work better?",
+        question: "Does team-based pain care work better?",
         answer:
           "For chronic low back pain, a large systematic review found moderate-quality evidence that multidisciplinary biopsychosocial rehabilitation improves pain and day-to-day function more than usual care, and roughly doubles the odds of being at work compared with physical treatment alone. The effects are meaningful but modest – a team is an advantage, not a magic wand.",
       },
       {
-        question: "What is the difference between 'multidisciplinary' and 'interdisciplinary' care?",
+        question: "What is the difference between “multidisciplinary” and “interdisciplinary” care?",
         answer:
-          "Same professions, different wiring. Multidisciplinary means several disciplines treat you, possibly separately. Interdisciplinary – the aspirational standard – means they meet regularly, share one biopsychosocial assessment and one set of goals, and include you in the decisions. When you're evaluating a program, it is fair to ask which one it really is.",
+          "Same professions, different wiring. Multidisciplinary means several disciplines treat you, possibly separately. Interdisciplinary, the aspirational standard, means they meet regularly, share one biopsychosocial assessment and one set of goals, and include you in the decisions. When you're evaluating a program, it is fair to ask which one it really is.",
       },
     ],
     references: [
@@ -181,7 +181,7 @@ export const SPECIALTY_ARTICLES: Article[] = [
       {
         title: "Your first visit",
         href: "/what-is-pain-medicine/your-first-visit",
-        blurb: "What meeting this team for the first time actually looks like.",
+        blurb: "What meeting this team for the first time looks like.",
       },
       {
         title: "Pain and emotion",
@@ -199,18 +199,18 @@ export const SPECIALTY_ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "your-first-visit",
-    title: "Your First Visit",
+    title: "Your first visit",
     description:
-      "What actually happens at a first pain-medicine appointment: how long it takes, what to bring, the questionnaires and exams to expect, and the safety practices that mark a careful clinic.",
+      "What happens at a first pain-medicine appointment: how long it takes, what to bring, the questionnaires and exams to expect, and the safety practices that mark a careful clinic.",
     status: "sourced",
     lastUpdated: LAST_UPDATED,
     answer:
-      "A first pain-medicine evaluation is longer and more thorough than a routine appointment – often one to three hours. Expect a detailed history, a physical and neurological exam, review of your records and imaging, and questions about sleep, mood, and daily function. It ends with a treatment plan built with you and shared with your primary care clinician.",
+      "A first pain-medicine evaluation is longer and more thorough than a routine appointment, often one to three hours. Expect a detailed history, a physical and neurological exam, review of your records and imaging, and questions about sleep, mood, and daily function. It ends with a treatment plan built with you and shared with your primary care clinician.",
     faqs: [
       {
         question: "How long will my first pain appointment take?",
         answer:
-          "Plan for substantially longer than a routine visit – often one to three hours. Major centers tell patients to expect two to three, especially if testing is involved. The length is the point: a thorough first evaluation is how a pain specialist works out which mechanisms are driving your pain.",
+          "Plan for substantially longer than a routine visit, often one to three hours. Major centers tell patients to expect two to three, especially if testing is involved. The length is the point: a thorough first evaluation is how a pain specialist works out which mechanisms are driving your pain.",
       },
       {
         question: "What should I bring to a pain clinic appointment?",
@@ -270,7 +270,7 @@ export const SPECIALTY_ARTICLES: Article[] = [
       {
         title: "Find help",
         href: "/find-help",
-        blurb: "Questions worth asking – and how to verify credentials first.",
+        blurb: "Questions worth asking, and how to verify credentials first.",
       },
     ],
   },
@@ -278,16 +278,16 @@ export const SPECIALTY_ARTICLES: Article[] = [
   {
     hub: HUB,
     slug: "pain-clinics-vs-pain-medicine",
-    title: "Pain Clinics vs. Pain Medicine",
+    title: "Pain clinics vs. pain medicine",
     description:
-      "'Pain clinic' is a sign anyone can hang; pain medicine is a credentialed specialty. The five signals of the real thing – training, evaluation, team, safety habits, and coordination – and how to check each one.",
+      "“Pain clinic” is a sign anyone can hang; pain medicine is a credentialed specialty. The five signals of the real thing – training, evaluation, team, safety habits, and coordination, and how to check each one.",
     status: "sourced",
     lastUpdated: LAST_UPDATED,
     answer:
-      "'Pain clinic' is not a protected term – anyone can use it. Pain medicine is a board-certified specialty with verifiable credentials. The real thing shows five signals: fellowship-trained physicians you can verify through the ABMS, a thorough first evaluation, team-based multimodal care, guideline-following safety habits, and open coordination with your primary care clinician.",
+      "“Pain clinic” is not a protected term – anyone can use it. Pain medicine is a board-certified specialty with verifiable credentials. The real thing shows five signals: fellowship-trained physicians you can verify through the ABMS, a thorough first evaluation, team-based multimodal care, guideline-following safety habits, and open coordination with your primary care clinician.",
     faqs: [
       {
-        question: "Is every 'pain clinic' run by a pain specialist?",
+        question: "Is every “pain clinic” run by a pain specialist?",
         answer:
           "No. The phrase carries no licensing weight of its own, so it covers everything from academic interdisciplinary centers to storefronts. The fastest way through the ambiguity is to check the physician, not the sign: the ABMS's free lookup verifies pain medicine subspecialty certification in minutes.",
       },
@@ -334,12 +334,12 @@ export const SPECIALTY_ARTICLES: Article[] = [
       {
         title: "Find help",
         href: "/find-help",
-        blurb: "The full verification walkthrough – and the red flags in detail.",
+        blurb: "The full verification walkthrough, and the red flags in detail.",
       },
       {
         title: "How pain physicians train",
         href: "/what-is-pain-medicine/how-pain-physicians-train",
-        blurb: "What the credential you're verifying actually represents.",
+        blurb: "What the credential you're verifying represents.",
       },
       {
         title: "Your first visit",

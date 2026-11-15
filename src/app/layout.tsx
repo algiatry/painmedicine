@@ -40,7 +40,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${sourceSans.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-background text-slate-800 dark:text-slate-300">
+      <body className="min-h-full flex flex-col bg-background text-body">
         <JsonLd data={organizationJsonLd()} />
         <Header />
         <main className="flex-1">{children}</main>

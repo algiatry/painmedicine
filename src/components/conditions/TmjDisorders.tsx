@@ -5,7 +5,7 @@ import { HeadProfile, HEAD_W, HEAD_H } from "../anatomy/HeadProfile";
 import { SiteMarker } from "../anatomy/marks";
 
 const link =
-  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
 
 /**
  * Figure 1 – where TMD hurts: the joint in front of the ear, and the two
@@ -16,7 +16,7 @@ function JawMapFigure() {
   const ox = 40;
   const oy = 20;
   return (
-    <Figure caption="Three places a 'jaw problem' can live. The joint itself sits just in front of the ear. The masseter (cheek) and temporalis (temple) muscles do the chewing and clenching – and in most people with TMD, the muscles are the main source of pain, not the joint.">
+    <Figure caption="Three places a 'jaw problem' can live. The joint itself sits just in front of the ear. The masseter (cheek) and temporalis (temple) muscles do the chewing and clenching, and in most people with TMD, the muscles are the main source of pain, not the joint.">
       <svg
         role="img"
         aria-labelledby="tmj-map-title tmj-map-desc"
@@ -247,7 +247,7 @@ export default function TmjDisorders() {
         because most TMD improves with them and because the irreversible
         options have a poor track record. The described ladder:
       </P>
-      <ul className="mt-4 space-y-3 text-slate-700 dark:text-slate-300">
+      <ul className="mt-4 space-y-3 text-body">
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>

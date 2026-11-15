@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
 
 /**
  * Figure 1 – the three sources of cancer pain: the disease, the treatment,
@@ -11,7 +11,7 @@ const link =
  */
 function SourcesFigure() {
   return (
-    <Figure caption="Cancer pain has three sources, and they call for different tools: the disease itself, the treatments that fight it, and – for a growing population of survivors – the marks treatment leaves behind.">
+    <Figure caption="Cancer pain has three sources, and they call for different tools: the disease itself, the treatments that fight it, and, for a growing population of survivors, the marks treatment leaves behind.">
       <svg
         role="img"
         aria-labelledby="src-title src-desc"
@@ -63,7 +63,7 @@ function SourcesFigure() {
           <text x="340" y="194">radiation&rsquo;s local effects</text>
         </g>
         <text x="340" y="240" textAnchor="middle" fontSize="11" fill={FIG.muted}>
-          expected, monitored – and treatable
+          expected, monitored, and treatable
         </text>
 
         {/* the years after */}
@@ -94,7 +94,7 @@ function SourcesFigure() {
  */
 function PalliativeFigure() {
   return (
-    <Figure caption="The trial that changed the conversation: in metastatic lung cancer, palliative care added from diagnosis improved quality of life and mood – and patients lived longer (median 11.6 vs 8.9 months; Temel 2010, NEJM). Comfort care and cancer care belong together, early.">
+    <Figure caption="The trial that changed the conversation: in metastatic lung cancer, palliative care added from diagnosis improved quality of life and mood, and patients lived longer (median 11.6 vs 8.9 months; Temel 2010, NEJM). Comfort care and cancer care belong together, early.">
       <svg
         role="img"
         aria-labelledby="pal-title pal-desc"
@@ -165,7 +165,7 @@ export default function CancerPain() {
         Cancer pain is really three problems wearing one name. The{" "}
         <strong>disease</strong> causes pain most often through bone –
         metastases remodel and weaken bone, which aches deeply and can flare
-        sharply with movement – and by pressing on or invading nerves, or
+        sharply with movement, and by pressing on or invading nerves, or
         stretching organs and their coverings. The{" "}
         <strong>treatment</strong> causes its own: pain around surgical
         sites, chemotherapy&rsquo;s nerve damage in the hands and feet –
@@ -173,11 +173,10 @@ export default function CancerPain() {
         <Link href="/conditions/neuropathic-pain" className={link}>
           neuropathic pain
         </Link>
-        , glove-and-stocking included – and radiation&rsquo;s local
+        , glove-and-stocking included, and radiation&rsquo;s local
         effects. And the <strong>years after</strong> bring the newest
         chapter: a large and growing population of survivors whose cancer is
-        gone but whose pain is not. Most cancer pain mixes mechanisms –
-        tissue-driven and nerve-driven at once – which is exactly why the
+        gone but whose pain is not. Most cancer pain mixes mechanisms, tissue-driven and nerve-driven at once, which is exactly why the
         toolbox below is wider than any single drug class.
       </P>
 
@@ -191,14 +190,14 @@ export default function CancerPain() {
         strength of treatment to the severity of pain. Today&rsquo;s WHO
         guidance keeps the spirit and drops the rigidity: treatment is
         individualized from the start. Two practical habits carry most of
-        the value. Report pain early, specifically, and every visit – where
+        the value. Report pain early, specifically, and every visit, where
         it is, what it feels like, what it stops you doing (
         <Link href="/understanding-pain/measuring-pain" className={link}>
           how to describe pain
         </Link>{" "}
         helps). And expect a plan for <strong>“breakthrough” pain</strong> –
-        the fast, sharp spikes through otherwise controlled background pain
-        – because scheduled control plus a rescue plan is the standard, and
+        the fast, sharp spikes through otherwise controlled background pain,
+        because scheduled control plus a rescue plan is the standard, and
         a good plan includes both halves.
       </P>
 
@@ -210,7 +209,7 @@ export default function CancerPain() {
         <strong>backbone of treatment</strong> and sit on the WHO&rsquo;s
         list of essential medicines. The distinctions that get blurred
         everywhere else matter most here. <strong>Tolerance</strong> –
-        needing adjustment over time – and <strong>physical
+        needing adjustment over time, and <strong>physical
         dependence</strong> – the body adapting, needing a taper to stop –
         are expected biology that your team plans for.{" "}
         <strong>Addiction</strong> – use escaping control despite harm – is
@@ -218,7 +217,7 @@ export default function CancerPain() {
         care. Research on undertreatment keeps finding the same barrier:
         fear of addiction, held by patients and families, quietly trading
         real relief for imagined safety. Take the medicine your pain
-        actually requires; let your team manage the side effects
+        requires; let your team manage the side effects
         proactively – constipation, notably, is expected and treatable from
         day one. And if opioid use ever does feel like it is escaping the
         plan – yours or a loved one&rsquo;s – say so early: the SAMHSA
@@ -240,7 +239,7 @@ export default function CancerPain() {
         the majority of patients – one of oncology&rsquo;s quiet triumphs.
         Interventional pain medicine adds precision tools: nerve blocks
         such as the celiac plexus block for pancreatic and upper-abdominal
-        cancer pain – a procedure with decades of track record – and
+        cancer pain, a procedure with decades of track record, and
         implanted pumps that deliver medication directly to the spinal
         fluid when pills reach their limits. Psychology, physical therapy,
         and good sleep care round out a plan that treats the person, not
@@ -257,7 +256,7 @@ export default function CancerPain() {
         stage</strong> – not instead of treatment, and not a signal about
         prognosis. In the landmark randomized trial above, patients with
         metastatic lung cancer who received palliative care from diagnosis
-        had better quality of life, less depression – and lived longer.
+        had better quality of life, less depression, and lived longer.
         Comfort turned out to be not the opposite of fighting, but part of
         how the fight goes better. If pain or symptoms are a daily
         presence, asking for a palliative care referral early is one of

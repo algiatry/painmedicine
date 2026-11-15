@@ -4,7 +4,7 @@ import { FIG } from "@/lib/fig";
 import { SynovialJoint } from "../anatomy/SynovialJoint";
 
 const link =
-  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
 
 /**
  * Figure 1 – one word, three joints: healthy, osteoarthritis, inflammatory.
@@ -71,7 +71,7 @@ function JointsFigure() {
  */
 function PatternsFigure() {
   return (
-    <Figure caption="The day tells the diagnosis. Mechanical (osteoarthritis) pain builds with use and eases with rest, after brief morning stiffness. Inflammatory pain is worst on waking – stiffness lasting an hour or more – and improves as the day moves. The second pattern deserves a prompt appointment.">
+    <Figure caption="The day tells the diagnosis. Mechanical (osteoarthritis) pain builds with use and eases with rest, after brief morning stiffness. Inflammatory pain is worst on waking, stiffness lasting an hour or more, and improves as the day moves. The second pattern deserves a prompt appointment.">
       <svg
         role="img"
         aria-labelledby="pat-title pat-desc"
@@ -165,14 +165,13 @@ export default function ArthritisPain() {
       <JointsFigure />
       <P>
         A healthy joint is a beautifully engineered bearing: bone ends
-        capped in smooth cartilage, wrapped in a capsule whose thin lining –
-        the synovium – makes the lubricating fluid. In{" "}
+        capped in smooth cartilage, wrapped in a capsule whose thin lining, the synovium, makes the lubricating fluid. In{" "}
         <strong>osteoarthritis</strong>, that whole system changes:
         cartilage thins, the bone beneath remodels and grows spurs, and the
         lining runs a low-grade inflammation. Note what that is <em>not</em>:
         the old &ldquo;wear and tear&rdquo; story of a tread wearing out.
         Joints are living tissue that responds to load, and osteoarthritis
-        is an active disease process – which is precisely why sensible
+        is an active disease process, which is precisely why sensible
         loading helps rather than harms, as we&rsquo;ll get to. In{" "}
         <strong>inflammatory arthritis</strong> the primary event is
         different in kind: the immune system targets the synovium itself,
@@ -193,7 +192,7 @@ export default function ArthritisPain() {
         accumulated load, eased by putting the joint up. Inflammatory pain
         runs the opposite schedule: <strong>worst on waking</strong>, with
         morning stiffness lasting an hour or more, joints that are visibly
-        swollen and warm, improvement with movement – and often a systemic
+        swollen and warm, improvement with movement, and often a systemic
         shadow of fatigue and feeling unwell, because the immune system is
         running hot everywhere. Distribution helps too: osteoarthritis
         favors knees, hips, the base of the thumb, and the finger ends;
@@ -224,15 +223,15 @@ export default function ArthritisPain() {
       <H2 id="window">The window of opportunity</H2>
       <P>
         Here is why the mechanical-versus-inflammatory question carries
-        urgency. Untreated rheumatoid arthritis damages joints early – and
+        urgency. Untreated rheumatoid arthritis damages joints early, and
         modern rheumatology has learned that starting{" "}
         <strong>disease-modifying treatment promptly</strong>, then
-        adjusting it until the inflammation is actually suppressed, prevents
+        adjusting it until the inflammation is suppressed, prevents
         most of the destruction that once defined the disease. The
         deformities older generations associate with rheumatoid arthritis
         have become largely a story of the pre-treatment era. That
         transformation only works for people who get through the door in
-        months, not years – which is exactly what the inflammatory pattern
+        months, not years, which is exactly what the inflammatory pattern
         above is for. Swollen, warm, symmetric small joints with long
         morning stiffness are not a wait-and-see situation.
       </P>
@@ -247,7 +246,7 @@ export default function ArthritisPain() {
         soreness of starting is adaptation, not damage. Around that core:
         topical anti-inflammatories first for knees and hands (relief where
         the risks stay local), oral NSAIDs in sensible courses, steroid
-        injections for flares – honest about their short-term horizon – and
+        injections for flares, honest about their short-term horizon, and
         braces, canes, and activity tweaks that quietly earn their keep.
         Opioids are specifically discouraged in the guidelines.
         If you or someone you love is struggling with opioid or other substance use, the SAMHSA National Helpline is free, confidential, and open 24/7 at 1-800-662-HELP (4357). And when a
@@ -259,12 +258,12 @@ export default function ArthritisPain() {
         For <strong>inflammatory arthritis</strong>, the deepest pain
         relief is not a painkiller at all: it is turning off the
         inflammation. Methotrexate and the biologic revolution that
-        followed – TNF blockers and their successors – treat the disease,
+        followed, TNF blockers and their successors, treat the disease,
         and the pain follows it down; anti-inflammatories bridge flares
         while the disease-modifiers take hold. <strong>Gout</strong> is the
         happiest version of this logic: flares are quenched with
         anti-inflammatory treatment, and daily urate-lowering therapy can
-        make future flares – and the joint damage of untreated gout –
+        make future flares, and the joint damage of untreated gout,
         essentially preventable. Which medications, in which order, is
         rheumatology&rsquo;s craft and your clinician&rsquo;s call; the
         principle to hold onto is that in inflammatory disease,{" "}
@@ -277,7 +276,7 @@ export default function ArthritisPain() {
         still waiting for one. The field&rsquo;s open hunt is a{" "}
         <strong>disease-modifying osteoarthritis drug</strong> – something
         that changes the joint&rsquo;s trajectory rather than muting its
-        signal – with candidates aimed at cartilage biology and at the
+        signal, with candidates aimed at cartilage biology and at the
         nerve-growth-factor pathway in trials now. The{" "}
         <Link href="/future-of-pain-medicine/pipeline" className={link}>
           pipeline tracker

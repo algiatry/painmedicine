@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P, anim } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
 
 /**
  * Figure 1 – the pain pathway with the injury inside it. The
@@ -15,7 +15,7 @@ function PathwayLesionFigure() {
   return (
     <Figure
       animate
-      caption="Central post-stroke pain is pain from an injury inside the pain pathway itself. Signals for pain and temperature travel from the body up the spinothalamic tract to the thalamus, the brain's relay, and on to the cortex. A stroke that damages any part of that line – the thalamus is the classic site – leaves a system that generates pain without input from the body."
+      caption="Central post-stroke pain is pain from an injury inside the pain pathway itself. Signals for pain and temperature travel from the body up the spinothalamic tract to the thalamus, the brain's relay, and on to the cortex. A stroke that damages any part of that line (the thalamus is the classic site) leaves a system that generates pain without input from the body."
     >
       <svg
         role="img"
@@ -226,7 +226,7 @@ export default function CentralPostStrokePain() {
         pains to treat, and the trials are small. What they show, described
         rather than prescribed:
       </P>
-      <ul className="mt-4 space-y-3 text-slate-700 dark:text-slate-300">
+      <ul className="mt-4 space-y-3 text-body">
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
@@ -253,7 +253,7 @@ export default function CentralPostStrokePain() {
             condition, pregabalin in 2011, did not beat placebo on its main
             pain measure, though sleep, anxiety, and overall status improved.
             Guidelines still list the class because of its record in other
-            central pain, an honest example of extrapolated evidence.
+            central pain, an example of extrapolated evidence.
           </span>
         </li>
         <li className="flex gap-3">

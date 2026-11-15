@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "@/components/science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
 
 /**
  * /treatments/buprenorphine-for-pain – a partial-agonist opioid that is
@@ -151,13 +151,13 @@ export default function BuprenorphineForPain() {
       <P>
         If your physician has mentioned buprenorphine and your first thought
         was <em>that is the drug they give people with addiction</em>, you are
-        not wrong – and you are not being accused of anything. Buprenorphine is
+        not wrong, and you are not being accused of anything. Buprenorphine is
         one of the three FDA-approved medications for opioid use disorder, and
         it has saved a great many lives in that role. But the same molecule
         has been an approved <strong>pain medication</strong> in the United
         States for more than four decades, in its own products with its own
         labels. A physician who brings it up is usually thinking about your
-        breathing and your long-term safety – not about a diagnosis you do not
+        breathing and your long-term safety, not about a diagnosis you do not
         have.
       </P>
 
@@ -188,7 +188,7 @@ export default function BuprenorphineForPain() {
         studies in healthy volunteers, Dahan and colleagues found that
         buprenorphine&rsquo;s effect on breathing{" "}
         <strong>reaches a ceiling</strong> – past a certain point, more drug
-        did not suppress breathing further – while its pain-relieving effect
+        did not suppress breathing further, while its pain-relieving effect
         did not show the same plateau. Fentanyl, tested the same way, kept
         suppressing breathing as the amount rose. This is the single property
         that makes buprenorphine different from the opioids most people know,
@@ -232,14 +232,14 @@ export default function BuprenorphineForPain() {
         not a statement about who you are.
       </P>
 
-      <H2 id="the-trial">What the 2025 trial actually showed</H2>
+      <H2 id="the-trial">What the 2025 trial showed</H2>
       <P>
         The most rigorous test of buprenorphine as a way off high-dose opioids
         was published in <em>JAMA Internal Medicine</em> in 2025 by Becker,
         Krebs, and the VOICE study group. It enrolled 207 veterans with
         moderate to severe chronic pain who had been on a high-dose,
-        full-agonist opioid – at least 70 morphine milligram equivalents a
-        day – for at least three months. Half were randomly assigned to be{" "}
+        full-agonist opioid, at least 70 morphine milligram equivalents a
+        day, for at least three months. Half were randomly assigned to be{" "}
         <strong>offered the option</strong> of switching to buprenorphine;
         half were not offered it. The main outcome was the Brief Pain
         Inventory total score a year later, with the opioid dose as the main
@@ -254,12 +254,12 @@ export default function BuprenorphineForPain() {
         <em>not</em> offered buprenorphine did almost exactly the same – pain
         from 6.8 to 6.3, dose from 165 to 107. The difference between the two
         groups was essentially zero on both measures. And only 27 of the 104
-        people offered the switch, about one in four, actually made it.
+        people offered the switch, about one in four, made it.
       </P>
 
       <H2 id="reading-it">How to read that result</H2>
       <P>
-        It would be easy to spin this trial either way, and the honest reading
+        It would be easy to spin this trial either way, and the reading
         is in the middle. It does not show that buprenorphine is a better pain
         reliever than the opioids people were already taking. It does show
         something patients on high-dose opioids are often told is impossible:
@@ -298,7 +298,7 @@ export default function BuprenorphineForPain() {
       <H2 id="switching">What switching involves, in general terms</H2>
       <P>
         Because buprenorphine grips the receptor so tightly, it can push a
-        full agonist off – and if the full agonist is still present in
+        full agonist off, and if the full agonist is still present in
         quantity, that sudden displacement can trigger{" "}
         <strong>precipitated withdrawal</strong>: a fast, miserable onset of
         sweating, aching, cramping, and anxiety. Avoiding that is the whole
@@ -308,14 +308,14 @@ export default function BuprenorphineForPain() {
         small amounts of buprenorphine are introduced while the previous
         opioid is reduced. Which approach, how long it takes, and what the
         numbers are depend entirely on which opioid you take, how much, and
-        your health – which is why this page describes the shape of the
+        your health, which is why this page describes the shape of the
         process and does not give schedules.
       </P>
       <P>
-        What you can expect is close follow-up – in the trial, people who
+        What you can expect is close follow-up, in the trial, people who
         switched had structured check-ins to adjust the amount and manage side
         effects. Common side effects are familiar opioid ones – nausea,
-        constipation, drowsiness, headache – plus, with the patch, skin
+        constipation, drowsiness, headache, plus, with the patch, skin
         irritation at the site, and the label warns against heating pads or
         hot baths over a patch because heat speeds absorption. Buprenorphine
         can also affect heart rhythm at higher amounts, which is something your
@@ -339,7 +339,7 @@ export default function BuprenorphineForPain() {
       <P>
         Buprenorphine sits late in the treatment ladder, in the same rung as
         every other long-term opioid for chronic non-cancer pain. The classes
-        that come before it – and that keep working alongside it – are mapped
+        that come before it, and that keep working alongside it, are mapped
         on our{" "}
         <Link href="/treatments/medications-for-pain" className={link}>
           medications for pain

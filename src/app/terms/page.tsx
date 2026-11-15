@@ -13,15 +13,15 @@ const LAST_UPDATED = "August 30, 2026";
 
 export default function TermsPage() {
   return (
-    <article className="mx-auto max-w-3xl px-4 sm:px-6 py-14 space-y-8">
+    <article className="mx-auto max-w-[42rem] px-4 sm:px-6 py-14 space-y-8">
       <header className="space-y-2">
-        <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
+        <h1 className="text-4xl sm:text-[2.75rem] sm:leading-[1.1] font-bold tracking-tight text-ink">
           Terms of use
         </h1>
-        <p className="text-sm text-slate-500 dark:text-slate-400">Last updated {LAST_UPDATED}</p>
+        <p className="text-sm text-subtle">Last updated {LAST_UPDATED}</p>
       </header>
 
-      <section className="space-y-4 text-slate-700 dark:text-slate-300">
+      <section className="space-y-4 text-body">
         <p className="text-lg">
           By reading {SITE.name}, you agree to these terms. They are short
           because the site is simple: it publishes educational material about
@@ -29,8 +29,8 @@ export default function TermsPage() {
         </p>
       </section>
 
-      <section className="space-y-4 text-slate-700 dark:text-slate-300">
-        <h2 className="text-xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
+      <section className="space-y-4 text-body">
+        <h2 className="text-xl font-semibold tracking-tight text-ink">
           Educational content only
         </h2>
         <p>
@@ -40,15 +40,15 @@ export default function TermsPage() {
           relationship with anyone involved in producing it. Decisions about
           your health belong with you and a licensed clinician who knows your
           situation. The{" "}
-          <Link href="/medical-disclaimer" className="underline hover:text-teal-700 dark:hover:text-teal-300">
+          <Link href="/medical-disclaimer" className="underline hover:text-brand">
             medical disclaimer
           </Link>{" "}
           sets this out in full and is part of these terms.
         </p>
       </section>
 
-      <section className="space-y-4 text-slate-700 dark:text-slate-300">
-        <h2 className="text-xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
+      <section className="space-y-4 text-body">
+        <h2 className="text-xl font-semibold tracking-tight text-ink">
           Using the material
         </h2>
         <ul className="list-disc pl-6 space-y-2">
@@ -73,8 +73,8 @@ export default function TermsPage() {
         </ul>
       </section>
 
-      <section className="space-y-4 text-slate-700 dark:text-slate-300">
-        <h2 className="text-xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
+      <section className="space-y-4 text-body">
+        <h2 className="text-xl font-semibold tracking-tight text-ink">
           Accuracy and currency
         </h2>
         <p>
@@ -87,8 +87,8 @@ export default function TermsPage() {
         </p>
       </section>
 
-      <section className="space-y-4 text-slate-700 dark:text-slate-300">
-        <h2 className="text-xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
+      <section className="space-y-4 text-body">
+        <h2 className="text-xl font-semibold tracking-tight text-ink">
           No warranties; limitation of liability
         </h2>
         <p>
@@ -102,8 +102,8 @@ export default function TermsPage() {
         </p>
       </section>
 
-      <section className="space-y-4 text-slate-700 dark:text-slate-300">
-        <h2 className="text-xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
+      <section className="space-y-4 text-body">
+        <h2 className="text-xl font-semibold tracking-tight text-ink">
           External links
         </h2>
         <p>
@@ -114,8 +114,8 @@ export default function TermsPage() {
         </p>
       </section>
 
-      <section className="space-y-4 text-slate-700 dark:text-slate-300">
-        <h2 className="text-xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
+      <section className="space-y-4 text-body">
+        <h2 className="text-xl font-semibold tracking-tight text-ink">
           Governing law and changes
         </h2>
         <p>
@@ -124,7 +124,7 @@ export default function TermsPage() {
           conflict-of-law rules. Terms may be revised from time to time; the
           date above reflects the current version, and continued use after a
           revision constitutes acceptance. See also the{" "}
-          <Link href="/privacy" className="underline hover:text-teal-700 dark:hover:text-teal-300">
+          <Link href="/privacy" className="underline hover:text-brand">
             privacy policy
           </Link>
           , which describes the site&apos;s data practices and is part of these

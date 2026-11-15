@@ -5,7 +5,6 @@ import JsonLd from "@/components/JsonLd";
 import ReviewByline from "@/components/ReviewByline";
 import { faqJsonLd, medicalWebPageJsonLd } from "@/lib/schema";
 import { HUBS, getHub } from "@/lib/hubs";
-import PageKicker from "@/components/PageKicker";
 import ArticleEmblem from "@/components/ArticleEmblem";
 
 export const dynamicParams = false;
@@ -39,7 +38,7 @@ export default async function HubPage({
   if (!hub) notFound();
 
   return (
-    <article className="mx-auto max-w-3xl px-4 sm:px-6 py-14">
+    <article className="mx-auto max-w-[42rem] px-4 sm:px-6 py-14">
       <JsonLd
         data={medicalWebPageJsonLd({
           title: hub.title,
@@ -52,8 +51,7 @@ export default async function HubPage({
       {hub.faqs && hub.faqs.length > 0 && <JsonLd data={faqJsonLd(hub.faqs)} />}
 
       <header className="space-y-4">
-        <PageKicker iconHref={`/${hub.slug}`}>{hub.title}</PageKicker>
-        <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
+        <h1 className="text-4xl sm:text-[2.75rem] sm:leading-[1.1] font-bold tracking-tight text-ink">
           {hub.heading}
         </h1>
         <ReviewByline
@@ -66,7 +64,7 @@ export default async function HubPage({
 
       <div className="mt-8 space-y-5">
         {hub.intro.map((p, i) => (
-          <p key={i} className="text-lg text-slate-700 dark:text-slate-300">
+          <p key={i} className="text-lg text-body">
             {p}
           </p>
         ))}
@@ -75,7 +73,7 @@ export default async function HubPage({
       <section aria-labelledby={`${hub.slug}-coverage`} className="mt-12">
         <h2
           id={`${hub.slug}-coverage`}
-          className="text-xl font-semibold text-slate-900 dark:text-slate-100"
+          className="text-xl font-semibold text-ink"
         >
           {hub.planned.some((p) => p.href)
             ? "Explore this section"
@@ -87,7 +85,7 @@ export default async function HubPage({
               <li key={item.title}>
                 <Link
                   href={item.href}
-                  className="card-lift group flex items-start gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 hover:border-teal-600/70"
+                  className="card-lift group flex items-start gap-4 rounded-xl border border-line bg-surface p-5 hover:border-teal-600/70"
                 >
                   <span className="flex size-12 shrink-0 items-center justify-center rounded-lg border border-slate-200/70 dark:border-slate-700 bg-paper/70 dark:bg-slate-200">
                     <ArticleEmblem
@@ -96,16 +94,16 @@ export default async function HubPage({
                     />
                   </span>
                   <span className="flex-1">
-                    <span className="block font-semibold text-slate-900 dark:text-slate-100 group-hover:text-teal-700 dark:group-hover:text-teal-300">
+                    <span className="block font-semibold text-ink group-hover:text-brand">
                       {item.title}
                     </span>
-                    <span className="mt-1 block text-sm text-slate-600 dark:text-slate-400">
+                    <span className="mt-1 block text-sm text-muted">
                       {item.blurb}
                     </span>
                   </span>
                   <span
                     aria-hidden="true"
-                    className="mt-0.5 text-slate-300 dark:text-slate-600 transition-colors group-hover:text-teal-600 dark:group-hover:text-teal-400"
+                    className="mt-0.5 text-faint transition-colors group-hover:text-brand"
                   >
                     →
                   </span>
@@ -116,8 +114,8 @@ export default async function HubPage({
                 key={item.title}
                 className="rounded-xl border border-dashed border-slate-300 dark:border-slate-700 bg-slate-50/60 dark:bg-slate-900/40 p-5"
               >
-                <h3 className="font-semibold text-slate-900 dark:text-slate-100">{item.title}</h3>
-                <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">{item.blurb}</p>
+                <h3 className="font-semibold text-ink">{item.title}</h3>
+                <p className="mt-1 text-sm text-muted">{item.blurb}</p>
               </li>
             ),
           )}
@@ -128,15 +126,15 @@ export default async function HubPage({
         <section aria-labelledby={`${hub.slug}-faq`} className="mt-12">
           <h2
             id={`${hub.slug}-faq`}
-            className="text-xl font-semibold text-slate-900 dark:text-slate-100"
+            className="text-xl font-semibold text-ink"
           >
             Frequently asked questions
           </h2>
           <dl className="mt-5 space-y-6">
             {hub.faqs.map((f) => (
               <div key={f.question}>
-                <dt className="font-semibold text-slate-900 dark:text-slate-100">{f.question}</dt>
-                <dd className="mt-1 text-slate-700 dark:text-slate-300">{f.answer}</dd>
+                <dt className="font-semibold text-ink">{f.question}</dt>
+                <dd className="mt-1 text-body">{f.answer}</dd>
               </div>
             ))}
           </dl>

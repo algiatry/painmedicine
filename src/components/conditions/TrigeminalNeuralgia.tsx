@@ -4,7 +4,7 @@ import { FIG } from "@/lib/fig";
 import { HeadProfile } from "../anatomy/HeadProfile";
 
 const link =
-  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
 
 function BranchesFigure() {
   return (
@@ -149,7 +149,7 @@ export default function TrigeminalNeuralgia() {
         .
       </P>
       <P>
-        Two honest caveats. First, the trial evidence is old and thin: a
+        Two caveats. First, the trial evidence is old and thin: a
         Cochrane review found carbamazepine generally relieved pain better
         than placebo, but in small studies that lasted four weeks or less.
         Long clinical experience, more than large modern trials, is what

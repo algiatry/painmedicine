@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
 
 /**
  * Figure 1 – the four Budapest sign categories: what makes CRPS visible.
@@ -52,7 +52,7 @@ function SignsFigure() {
         </desc>
 
         <text x="340" y="26" textAnchor="middle" fontSize="13" fontWeight="700" fill={FIG.textMid}>
-          Pain out of proportion – plus signs from these four families
+          Pain out of proportion, plus signs from these four families
         </text>
 
         {cards.map((c) => (
@@ -80,7 +80,7 @@ function SignsFigure() {
  */
 function MirrorFigure() {
   return (
-    <Figure caption="Mirror therapy, from above: the painful hand rests hidden behind a mirror while the healthy hand moves in front of it. The brain watches what looks like two healthy hands moving – and the limb's blurred, shrunken cortical map begins to redraw.">
+    <Figure caption="Mirror therapy, from above: the painful hand rests hidden behind a mirror while the healthy hand moves in front of it. The brain watches what looks like two healthy hands moving, and the limb's blurred, shrunken cortical map begins to redraw.">
       <svg
         role="img"
         aria-labelledby="mir-title mir-desc"
@@ -157,14 +157,14 @@ export default function Crps() {
         Complex regional pain syndrome is the rarest condition in this hub –
         a large Dutch population study found roughly 26 new cases per 100,000
         people each year (other studies report fewer), most often in women,
-        most often after a wrist fracture – and
+        most often after a wrist fracture, and
         the one where early recognition changes the most. It used to go by
         two older names, reflex sympathetic dystrophy and causalgia, and it
         still comes in two types: <strong>type I</strong>, after an injury
         with no identifiable nerve damage (the large majority), and{" "}
         <strong>type II</strong>, after a documented nerve injury. Both
         share the same signature, and this page&rsquo;s one job is to make
-        that signature recognizable – because CRPS caught in its first
+        that signature recognizable, because CRPS caught in its first
         months is a very different disease from CRPS found late.
       </P>
 
@@ -191,7 +191,7 @@ export default function Crps() {
         That visibility matters. If a limb weeks after injury is hurting
         far more than it should <em>and</em> looks different from its
         partner, say the letters C-R-P-S to your clinician out loud. The
-        diagnosis is clinical – the Budapest criteria above – and asking
+        diagnosis is clinical, the Budapest criteria above, and asking
         the question early is the single highest-value move available.
       </P>
 
@@ -213,14 +213,14 @@ export default function Crps() {
         <Link href="/understanding-pain/how-pain-works" className={link}>
           the nervous system&rsquo;s plasticity
         </Link>{" "}
-        turned against a limb – which is exactly why treatment aims to
+        turned against a limb, which is exactly why treatment aims to
         turn that same plasticity back.
       </P>
 
       <H2 id="window">Why the first months matter</H2>
       <P>
         CRPS feeds on protection. Guarding the limb is the natural
-        response to pain this severe – and it is the disease&rsquo;s best
+        response to pain this severe, and it is the disease&rsquo;s best
         friend: disuse worsens the swelling and bone loss, and a limb that
         stops moving fades further from the brain&rsquo;s map, which
         deepens the pain, which invites more guarding. Breaking that
@@ -241,7 +241,7 @@ export default function Crps() {
         condition. It often begins below the threshold of movement
         entirely: desensitization to touch, then{" "}
         <strong>graded motor imagery</strong> – first recognizing left
-        from right hands in photos, then imagining movement – and then{" "}
+        from right hands in photos, then imagining movement, and then{" "}
         <strong>mirror therapy</strong>, the elegant trick in the figure:
         the brain watches two healthy hands move, and the shrunken map
         begins to redraw. Only then does progressive loading of the real
@@ -251,7 +251,7 @@ export default function Crps() {
           nerve-pain agents
         </Link>
         , short early anti-inflammatory strategies, bone-targeted drugs
-        with promising trial results – with honesty that no single pill
+        with promising trial results, with honesty that no single pill
         has proven itself the answer. Sympathetic nerve blocks can help
         selected patients, with mixed trial evidence. And for CRPS that
         resists all of it, neuromodulation has real receipts:{" "}
@@ -293,9 +293,8 @@ export default function Crps() {
         <Link href="/what-is-pain-medicine" className={link}>
           pain medicine
         </Link>{" "}
-        early – for diagnosis by the Budapest criteria, coordinated
-        rehabilitation, and timely escalation if first-line care stalls –
-        rather than after months of watch-and-wait.{" "}
+        early, for diagnosis by the Budapest criteria, coordinated
+        rehabilitation, and timely escalation if first-line care stalls, rather than after months of watch-and-wait.{" "}
         <Link href="/find-help" className={link}>
           Finding pain care near you
         </Link>{" "}

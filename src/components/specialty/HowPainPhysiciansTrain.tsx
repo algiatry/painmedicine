@@ -149,7 +149,7 @@ export default function HowPainPhysiciansTrain() {
         The arithmetic is straightforward. After a standard four-year medical
         degree comes a <strong>four-year residency</strong> for the most common
         routes – anesthesiology or physical medicine &amp; rehabilitation, with
-        neurology and psychiatry close behind – though across the six feeder
+        neurology and psychiatry close behind, though across the six feeder
         specialties residency runs three to five years. Only then comes the
         specialty&rsquo;s defining step: a{" "}
         <strong>12-month fellowship devoted entirely to pain medicine</strong>,
@@ -163,7 +163,7 @@ export default function HowPainPhysiciansTrain() {
       <P>
         Certification has an unusual and rather elegant structure. Since{" "}
         <strong>1993</strong>, the American Board of Anesthesiology has
-        developed and administered the pain medicine exam – but it does not
+        developed and administered the pain medicine exam, but it does not
         keep the credential to itself. Today <strong>six</strong> member boards
         of the American Board of Medical Specialties – anesthesiology, physical
         medicine &amp; rehabilitation, psychiatry &amp; neurology, emergency
@@ -194,7 +194,7 @@ export default function HowPainPhysiciansTrain() {
         construction, one who has kept proving it.
       </P>
 
-      <H2 id="verify">How to verify – in minutes</H2>
+      <H2 id="verify">How to verify, in minutes</H2>
       <P>
         All of this exists so that you do not have to take anyone&rsquo;s word
         for it. The ABMS runs a free public lookup –{" "}
@@ -206,7 +206,7 @@ export default function HowPainPhysiciansTrain() {
         points patients to both routes. The{" "}
         <Link
           href="/find-help"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           find help
         </Link>{" "}
@@ -221,15 +221,14 @@ export default function HowPainPhysiciansTrain() {
         end-of-life care. Second: not every &ldquo;board certification&rdquo;
         in pain is the ABMS credential described here. Independent
         certifying organizations exist outside the ABMS system with their own
-        exams and standards. That is a matter of fact rather than judgment –
-        but when this site says <em>board-certified pain physician</em>, it
+        exams and standards. That is a matter of fact rather than judgment, but when this site says <em>board-certified pain physician</em>, it
         means the ACGME-fellowship-plus-ABMS pathway, because that is the one
         with a single national standard behind it and a public registry you
         can check. How that plays out when you are sizing up an actual clinic
         is the subject of{" "}
         <Link
           href="/what-is-pain-medicine/pain-clinics-vs-pain-medicine"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           pain clinics vs. pain medicine
         </Link>

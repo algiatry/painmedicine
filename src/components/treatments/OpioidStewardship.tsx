@@ -35,7 +35,7 @@ export default function OpioidStewardship() {
         own endorphins use. But evolution assigned that receptor system three
         jobs at once: it dampens pain, it regulates <strong>breathing</strong>,
         and it marks experiences as <strong>rewarding</strong>. Every opioid
-        effect – wanted and unwanted – flows from that triple assignment.
+        effect, wanted and unwanted, flows from that triple assignment.
         Pain relief is the target; slowed breathing is the overdose mechanism;
         and the reward signal is why a drug prescribed for a knee can end up
         mattering to the brain far beyond the knee.
@@ -51,7 +51,7 @@ export default function OpioidStewardship() {
         prescribers to start low, reassess often, and pair every prescription
         with safety planning. The evidence behind that placement is direct:
         in the year-long SPACE trial, opioids performed no better than
-        non-opioid medications for chronic back and arthritis pain – with
+        non-opioid medications for chronic back and arthritis pain, with
         more side effects.
       </P>
 
@@ -85,12 +85,12 @@ export default function OpioidStewardship() {
         Tolerance is dependence&rsquo;s cousin: over time the same dose
         produces less effect, which invites escalation. Two facts make this
         dangerous. First, tolerance to pain relief and euphoria rises{" "}
-        <em>faster</em> than tolerance to respiratory depression – so the
+        <em>faster</em> than tolerance to respiratory depression, so the
         breathing margin quietly narrows as doses climb. Second, tolerance{" "}
         <strong>drops after a break</strong>: after detox, incarceration, or a
         successful taper, the dose a person used to handle can now stop their
         breathing. Returning to a previous dose after lost tolerance is one of
-        the deadliest patterns in overdose data – and the reason the CDC
+        the deadliest patterns in overdose data, and the reason the CDC
         specifically flags people coming off tapers for naloxone.
       </P>
       <P>
@@ -109,14 +109,13 @@ export default function OpioidStewardship() {
 
       <H2 id="overdose">The combinations that kill</H2>
       <P>
-        Overdose is rarely one drug. The FDA requires its most serious warning
-        – a boxed warning – on opioids and benzodiazepines (alprazolam,
+        Overdose is rarely one drug. The FDA requires its most serious warning,
+        a boxed warning, on opioids and benzodiazepines (alprazolam,
         lorazepam, diazepam) precisely because the combination suppresses
         breathing through converging pathways, and CDC data show most
         opioid-involved overdose deaths involve multiple substances. Alcohol,
         sleep medications, and the gabapentinoids (gabapentin, pregabalin)
-        add to the same pile. If you take opioids and anything sedating –
-        prescribed or not – that combination deserves to be named out loud
+        add to the same pile. If you take opioids and anything sedating, prescribed or not, that combination deserves to be named out loud
         with your prescriber and pharmacist, not discovered in an emergency.
       </P>
       <P>
@@ -125,10 +124,9 @@ export default function OpioidStewardship() {
         without a prescription in all 50 states, simple enough for a friend or
         family member to use, and harmless if given to someone who turns out
         not to have opioids on board. The CDC guideline says clinicians should
-        offer it when prescribing opioids – especially with sedative
+        offer it when prescribing opioids, especially with sedative
         combinations, higher doses, a history of substance use disorder or
-        overdose, sleep-disordered breathing, or after tolerance has dropped –
-        and recommends teaching household members. If opioids live in your
+        overdose, sleep-disordered breathing, or after tolerance has dropped, and recommends teaching household members. If opioids live in your
         home, naloxone should too. That is not pessimism; it is the same logic
         as owning a fire extinguisher.
       </P>
@@ -142,14 +140,14 @@ export default function OpioidStewardship() {
         widely, easier access to{" "}
         <Link
           href="/treatments/buprenorphine-for-pain"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           buprenorphine
         </Link>{" "}
         and other treatment after prescribing restrictions were lifted, and
         shifts in the illegal
         supply. Overdose is still the leading cause of death for Americans
-        under 45, so none of this is a reason to relax – but it is proof
+        under 45, so none of this is a reason to relax, but it is proof
         that the safety habits work at the scale of a country, not only a
         household.
       </P>
@@ -179,7 +177,7 @@ export default function OpioidStewardship() {
         movement-based care, non-opioid medications where they fit, and
         behavioral support for the fear that understandably comes with
         changing a long-standing plan. If stopping feels unmanageable, that is
-        clinical information, not failure – and it is exactly what treatment
+        clinical information, not failure, and it is exactly what treatment
         exists for. SAMHSA&rsquo;s helpline is{" "}
         <strong>1-800-662-HELP (4357)</strong>, free and confidential, any
         hour. This page describes; decisions about your medications belong to
@@ -201,7 +199,7 @@ function DependenceVsAddictionFigure() {
         <title id="dep-title">Dependence versus opioid use disorder</title>
         <desc id="dep-desc">
           Two cards side by side: dependence – universal body adaptation,
-          withdrawal on sudden stop, managed by taper – and opioid use
+          withdrawal on sudden stop, managed by taper, and opioid use
           disorder, a treatable medical condition.
         </desc>
         <g>

@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
 
 function PatternFigure() {
   const rows = [
@@ -136,7 +136,7 @@ export default function NeckPain() {
         rather than a simple worn-part problem.
       </P>
 
-      <H2 id="imaging">What an X-ray or MRI can – and cannot – settle</H2>
+      <H2 id="imaging">What an X-ray or MRI can, and cannot, settle</H2>
       <P>
         A scan answers a clinical question; it does not automatically discover
         the cause of pain. Age-related disc and joint changes are common, so

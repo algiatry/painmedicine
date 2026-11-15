@@ -4,7 +4,7 @@ import { FIG } from "@/lib/fig";
 import { BodyFront } from "../anatomy/BodyOutline";
 
 const link =
-  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
 
 /**
  * Figure 1 – the broken alarm wiring: a healthy nerve that signals only when
@@ -75,7 +75,7 @@ function WiringFigure() {
           Damaged nerve
         </text>
         <text x="510" y="76" textAnchor="middle" fontSize="12" fill={FIG.textMid}>
-          fires on its own – and to a light touch
+          fires on its own, and to a light touch
         </text>
         <line x1="376" y1="166" x2="644" y2="166" stroke={FIG.nerve} strokeWidth="3.5" strokeLinecap="round" strokeDasharray="14 6" />
         {myelin(384, [1, 3, 4])}
@@ -189,8 +189,7 @@ export default function NeuropathicPain() {
       <P>
         A healthy sensory nerve is disciplined: it fires when something
         happens to it, and otherwise keeps quiet. Injury and disease break
-        that discipline. Damaged fibers accumulate extra sodium channels –
-        the molecular triggers of nerve firing – and begin generating
+        that discipline. Damaged fibers accumulate extra sodium channels, the molecular triggers of nerve firing, and begin generating
         impulses spontaneously, with no stimulus at all. Patches of lost
         insulation let signals leak and cross-excite neighboring fibers. And
         the spinal cord, bombarded by this traffic, amplifies: circuits
@@ -217,7 +216,7 @@ export default function NeuropathicPain() {
         farthest tip backward, the way a city&rsquo;s outermost suburbs lose
         power first. So peripheral neuropathy classically announces itself in
         the toes and soles – burning, tingling, numbness, often worst at
-        night – and creeps upward, with the hands joining once the damage
+        night, and creeps upward, with the hands joining once the damage
         reaches nerves of <em>their</em> length. <strong>Diabetes</strong> is
         the leading cause of this pattern in the developed world. But the
         list is long: shingles can leave lasting nerve pain in its wake
@@ -227,7 +226,7 @@ export default function NeuropathicPain() {
         <Link href="/conditions/sciatica" className={link}>
           sciatica
         </Link>{" "}
-        is neuropathic pain of a single nerve root – and central causes like
+        is neuropathic pain of a single nerve root, and central causes like
         stroke, multiple sclerosis, and spinal cord injury generate it from
         inside the cord and brain. And in a meaningful minority, a careful
         workup finds no cause at all. That is frustrating, common, and not a
@@ -237,7 +236,7 @@ export default function NeuropathicPain() {
       <H2 id="recognizing">How it&rsquo;s recognized</H2>
       <P>
         The diagnosis starts with vocabulary – burning, shooting, electric,
-        pins and needles are pointing words – and with geography: neuropathic
+        pins and needles are pointing words, and with geography: neuropathic
         pain lives in nerve territory, whether a stocking, a single root&rsquo;s
         line down a leg, or a band of old shingles rash. The exam maps where
         sensation is heightened, lost, or both. Testing then works backward
@@ -276,8 +275,8 @@ export default function NeuropathicPain() {
         </Link>
         , doing mechanism-matched work. Honesty about the numbers builds
         better plans than hype: even first-line drugs deliver meaningful
-        relief to a minority of the people who try them – roughly one in
-        four to eight – so finding your medication is often a sequence of
+        relief to a minority of the people who try them, roughly one in
+        four to eight, so finding your medication is often a sequence of
         fair trials, not a single prescription. For pain in one findable
         place, second-line topicals earn their keep: lidocaine patches, and
         high-concentration capsaicin applied in clinic. Opioids sit
@@ -318,7 +317,7 @@ export default function NeuropathicPain() {
       <H2 id="specialist">When to bring in a specialist</H2>
       <P>
         If nerve pain is still running your nights after a cause hunt and a
-        fair first-line trial – or if the diagnosis itself is unclear – this
+        fair first-line trial, or if the diagnosis itself is unclear, this
         is core{" "}
         <Link href="/what-is-pain-medicine" className={link}>
           pain medicine

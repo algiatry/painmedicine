@@ -128,7 +128,7 @@ export default function ThreeTypesOfPain() {
       <TypesFigure />
 
       <P>
-        Not all pain is the same kind of pain – and the difference is not just
+        Not all pain is the same kind of pain, and the difference is not just
         where it hurts, but <em>why</em>. Modern pain medicine sorts pain into
         three mechanism-based types. Knowing which one you have is one of the
         most useful things you and your clinician can work out, because
@@ -169,7 +169,7 @@ export default function ThreeTypesOfPain() {
       <P>
         Neuropathic pain is caused by{" "}
         <strong>damage or disease in the nervous system itself</strong> – the
-        nerves, spinal cord, or brain – rather than in the tissue those nerves
+        nerves, spinal cord, or brain, rather than in the tissue those nerves
         report on. Because the wiring is the problem, it feels different:
         burning, shooting, electric, or stabbing, often with numbness, tingling,
         or a patch of skin that feels wrong to the touch. Sciatica, diabetic
@@ -178,7 +178,7 @@ export default function ThreeTypesOfPain() {
 
       <H2 id="nociplastic">3. Nociplastic pain – the newest category</H2>
       <P>
-        The third type is the one most people – and many older resources – have
+        The third type is the one most people, and many older resources, have
         never heard named. In <strong>2017</strong> the International Association
         for the Study of Pain formally recognized{" "}
         <strong>nociplastic pain</strong>: real pain that arises from a{" "}
@@ -189,7 +189,7 @@ export default function ThreeTypesOfPain() {
         It is closely tied to the central sensitization described in{" "}
         <Link
           href="/understanding-pain/how-pain-works"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           how pain works
         </Link>{" "}

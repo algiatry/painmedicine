@@ -116,6 +116,10 @@ function scanText(page: string, text: string, origin: string) {
   }
 }
 
+/* ------------------------------------------------------ house-style tics */
+
+const TIC_CAPS = { dashesPer1000: 15, honest: 5, actually: 1 } as const;
+
 /* ------------------------------------------------------- review status */
 
 function checkReviewModel(page: string, meta: PageMeta, hub: string) {
@@ -241,6 +245,24 @@ for (const a of ALL_ARTICLES) {
     err(page, `substantive opioid content (${opioidMentions} mentions) without inline SAMHSA helpline`);
   else if (opioidMentions > 0 && opioidMentions < 3 && !hasSamhsa)
     warn(page, `mentions opioids (${opioidMentions}×) without inline SAMHSA — verify context (site-wide footer helpline still renders)`);
+
+  // House-style tics. Each is fine once; repeated on every page they read as
+  // a formula. Counted over reader-facing content (bibliography excluded).
+  // Caps sit just above the current worst page, so they hold the line
+  // rather than demand a rewrite; lower them as pages are edited.
+  const words = wordCount(contentText);
+  const count = (re: RegExp) => (contentText.match(re) ?? []).length;
+  const dashes = count(/\s–\s/g);
+  const dashRate = (dashes * 1000) / words;
+  if (dashRate > TIC_CAPS.dashesPer1000)
+    err(page, `${dashes} spaced en dashes (${dashRate.toFixed(1)} per 1,000 words; cap ${TIC_CAPS.dashesPer1000}) — use a comma, colon, or full stop`);
+  // "honestly-labeled" / "full honesty" are the open-label placebo literature's own terms.
+  const honest = count(/\bhonest(ly)?\b(?!-)/gi);
+  if (honest > TIC_CAPS.honest)
+    err(page, `"honest/honestly" used ${honest}× (cap ${TIC_CAPS.honest}) — say the thing instead of vouching for it`);
+  const actually = count(/\bactually\b/gi);
+  if (actually > TIC_CAPS.actually)
+    err(page, `"actually" used ${actually}× (cap ${TIC_CAPS.actually}) — it can almost always be deleted`);
 }
 
 // -- cross-links: the condition → treatment → science → future triangle

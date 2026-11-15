@@ -3,11 +3,11 @@ import { Figure, H2, KeyTakeaways, P } from "@/components/science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
 
 function InfusionVersusHomeFigure() {
   return (
-    <Figure caption="The same molecule, two very different settings. In a monitored infusion, the people and equipment that handle sedation, blood-pressure swings, and breathing changes are in the room. With mailed lozenges, they are not – which is the gap the ASA and the FDA have both pointed to.">
+    <Figure caption="The same molecule, two very different settings. In a monitored infusion, the people and equipment that handle sedation, blood-pressure swings, and breathing changes are in the room. With mailed lozenges, they are not, which is the gap the ASA and the FDA have both pointed to.">
       <svg
         role="img"
         aria-labelledby="ketamine-settings-title ketamine-settings-desc"
@@ -173,7 +173,7 @@ export default function Ketamine() {
       <P>
         If you have been living with pain that nothing seems to touch, it is
         natural to wonder about it. This page explains what ketamine does in
-        the nervous system, what the evidence for chronic pain honestly shows,
+        the nervous system, what the evidence for chronic pain shows,
         and why the setting it is given in matters so much. It describes; it
         does not prescribe.
       </P>
@@ -207,7 +207,7 @@ export default function Ketamine() {
         working, in places other than the pain pathway.
       </P>
 
-      <H2 id="evidence">What the evidence shows – and doesn&rsquo;t</H2>
+      <H2 id="evidence">What the evidence shows, and doesn&rsquo;t</H2>
       <P>
         The strongest claim the evidence supports is a modest one. In 2018,
         three professional societies – the American Society of Regional
@@ -222,7 +222,7 @@ export default function Ketamine() {
       </P>
       <P>
         A 2019 meta-analysis in <em>Anesthesia &amp; Analgesia</em> pooled
-        seven randomized trials – 211 patients in all – and found a{" "}
+        seven randomized trials, 211 patients in all, and found a{" "}
         <strong>small benefit lasting up to about two weeks</strong> after an
         infusion: roughly 1.8 points on a 0-to-10 pain scale, with about half
         of ketamine patients counted as responders versus a fifth on placebo.
@@ -234,7 +234,7 @@ export default function Ketamine() {
         raise the risk of adverse events.
       </P>
       <P>
-        So the honest summary is this: for some people with stubborn
+        So the summary is this: for some people with stubborn
         neuropathic or CRPS pain, a monitored infusion can bring real relief
         for days to a few weeks. Whether that relief lasts, whether repeated
         infusions are safe over years, and whether lozenges or nasal sprays do
@@ -271,8 +271,8 @@ export default function Ketamine() {
 
       <H2 id="asa">What the anesthesiologists are asking for</H2>
       <P>
-        The American Society of Anesthesiologists – the specialty that has
-        used ketamine longest – has spent 2026 pressing lawmakers and state
+        The American Society of Anesthesiologists, the specialty that has
+        used ketamine longest, has spent 2026 pressing lawmakers and state
         medical boards on this point. In a June 2026 statement, ASA President
         Patrick Giam put it plainly: &ldquo;We have grave concerns about the
         home delivery and use of ketamine. You can move very quickly from
@@ -281,7 +281,7 @@ export default function Ketamine() {
         society&rsquo;s updated guidance says ketamine used outside the
         operating room should meet the same safety standards as any
         anesthetic: in-person evaluation, a physician immediately available,
-        a monitored setting with rescue equipment – and it states that a
+        a monitored setting with rescue equipment, and it states that a
         telehealth visit does not satisfy that requirement.
       </P>
       <P>
@@ -335,8 +335,8 @@ export default function Ketamine() {
           interventional procedures
         </Link>{" "}
         with better long-term track records. It is usually offered as a
-        short course with a clear goal – a window of lower pain in which
-        rehabilitation can gain ground – rather than as a maintenance drug.
+        short course with a clear goal, a window of lower pain in which
+        rehabilitation can gain ground, rather than as a maintenance drug.
         Insurance often does not cover it for pain, and cash prices vary
         widely, which is part of why the at-home market grew.
       </P>
@@ -349,7 +349,7 @@ export default function Ketamine() {
         <Link href="/find-help" className={link}>
           fellowship-trained pain specialist
         </Link>{" "}
-        can answer those honestly. Your pain is real; the goal is a treatment
+        can answer those. Your pain is real; the goal is a treatment
         whose benefits and risks are just as real to the people giving it.
       </P>
     </div>

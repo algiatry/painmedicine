@@ -11,35 +11,35 @@ const FEATURED = [
     eyebrow: "Conditions",
     title: "Low back pain",
     blurb:
-      "The world's leading cause of disability: what can actually hurt, why most cases are 'non-specific,' and what an MRI really shows.",
+      "The world's leading cause of disability: what can hurt, why most cases are “non-specific,” and what an MRI can and can't show.",
     href: "/conditions/low-back-pain",
   },
   {
     eyebrow: "Conditions",
     title: "Migraine",
     blurb:
-      "An inherited neurological disease, not a bad headache – the four-phase attack, and the designed drugs that changed everything.",
+      "An inherited neurological disease with a four-phase attack, and the purpose-built drugs that changed its treatment.",
     href: "/conditions/migraine",
   },
   {
     eyebrow: "Treatments",
     title: "Medications for pain",
     blurb:
-      "The different types of pain relievers, what makes one 'good,' and how to tell which is right for you – by mechanism, not 'strength.'",
+      "The main types of pain reliever, compared by how they work instead of by “strength.”",
     href: "/treatments/medications-for-pain",
   },
   {
     eyebrow: "Understanding pain",
     title: "How pain works",
     blurb:
-      "Nociceptors, the spinal 'gate,' and why the brain – not the injury alone – decides how much it hurts.",
+      "Nociceptors, the spinal “gate,” and why the brain has the final say on how much an injury hurts.",
     href: "/understanding-pain/how-pain-works",
   },
   {
     eyebrow: "Understanding pain",
     title: "The placebo effect",
     blurb:
-      "Real relief from an inert pill, blockable by an opioid antagonist – and its mirror image, the nocebo effect.",
+      "Measurable relief from an inert pill, which an opioid blocker can switch off. Plus its mirror image, the nocebo effect.",
     href: "/understanding-pain/the-placebo-effect",
   },
   {
@@ -55,11 +55,11 @@ const FEATURED = [
 const PRINCIPLES = [
   {
     title: "Written from primary sources",
-    body: "Every page is built from the research and guidelines themselves – not from other websites.",
+    body: "Every page is built from the research and guidelines themselves, and cites them.",
   },
   {
-    title: "Reviewed by clinicians",
-    body: "Checked against current clinical practice before it earns a reviewed byline.",
+    title: "Clinician review, shown openly",
+    body: "Independent medical review is in progress. Each page states whether it has been reviewed, and by whom.",
   },
   {
     title: "No ads, no sponsorships",
@@ -67,13 +67,13 @@ const PRINCIPLES = [
   },
   {
     title: "We are not your doctor",
-    body: "This is education to make your appointments sharper – never a substitute for your own care team.",
+    body: "This is education to make your appointments more useful. It does not replace your own care team.",
   },
 ];
 
 const TRUST = [
   "Primary sources",
-  "Clinician-reviewed",
+  "Clinician review in progress",
   "No ads, ever",
 ];
 
@@ -83,53 +83,49 @@ const MORE_HUBS = NAV.slice(1);
 export default function Home() {
   return (
     <div>
-      <section className="relative overflow-hidden border-b border-slate-200/70 bg-gradient-to-b from-paper via-paper/40 to-white dark:border-slate-800/70 dark:to-background">
+      <section className="relative overflow-hidden border-b border-line/70 bg-gradient-to-b from-paper via-paper/40 to-background">
         <div className="hero-aura absolute inset-0" aria-hidden="true" />
         <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
           <div className="grid items-center gap-8 pt-14 pb-10 sm:pt-20 sm:pb-16 lg:grid-cols-[minmax(0,1fr)_minmax(0,28rem)] lg:gap-12 lg:pb-20">
             <div className="max-w-2xl">
-              <p className="inline-flex items-center gap-2 rounded-full border border-teal-600/20 bg-white/70 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-teal-700 shadow-sm backdrop-blur dark:border-teal-400/25 dark:bg-slate-900/60 dark:text-teal-300">
+              <p className="inline-flex items-center gap-2 rounded-full border border-brand/20 bg-surface/70 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-brand shadow-sm backdrop-blur">
                 <span
                   aria-hidden="true"
                   className="size-1.5 rounded-full bg-teal-600"
                 />
                 Patient-first pain education
               </p>
-              <h1 className="mt-5 text-4xl sm:text-5xl lg:text-[3.4rem] font-semibold leading-[1.05] tracking-tight text-slate-900 dark:text-slate-50">
+              <h1 className="mt-5 text-4xl sm:text-5xl lg:text-[3.4rem] font-bold leading-[1.05] tracking-tight text-ink">
                 Pain is real.
                 <br className="hidden sm:block" />{" "}
-                <span className="bg-gradient-to-r from-teal-700 to-teal-500 bg-clip-text text-transparent dark:from-teal-300 dark:to-teal-500">
-                  So are your options.
-                </span>
+                <span className="text-brand">So are your options.</span>
               </h1>
-              <p className="mt-6 text-lg leading-relaxed text-slate-600 dark:text-slate-300">
-                {SITE.shortName} exists to answer two questions clearly and
-                honestly: what can pain medicine do for you <em>today</em>, and
-                what is medical science building for <em>tomorrow</em>? No hype,
-                no sales – just evidence-grounded education to help you have
-                better conversations with your care team.
+              <p className="mt-6 text-lg leading-relaxed text-muted">
+                Plain-language guides to why pain happens, what treats it
+                today, and what is in development. Every claim is cited, and
+                nothing here is for sale.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
-                  href="/what-is-pain-medicine"
-                  className="rounded-md bg-teal-700 px-5 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-teal-800 hover:shadow-md hover:-translate-y-0.5 dark:bg-teal-600 dark:hover:bg-teal-500"
+                  href="/conditions"
+                  className="rounded-md bg-teal-700 px-5 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-teal-800 hover:shadow-md hover:-translate-y-0.5"
                 >
-                  What is pain medicine?
+                  Find your condition
                 </Link>
                 <Link
-                  href="/future-of-pain-medicine"
-                  className="rounded-md border border-slate-300 bg-white/80 px-5 py-3 text-sm font-semibold text-slate-700 shadow-sm backdrop-blur transition-all hover:border-teal-700 hover:text-teal-700 hover:-translate-y-0.5 dark:border-slate-700 dark:bg-slate-900/60 dark:text-slate-200 dark:hover:border-teal-400 dark:hover:text-teal-300"
+                  href="/treatments"
+                  className="rounded-md border border-faint bg-surface/80 px-5 py-3 text-sm font-semibold text-body shadow-sm backdrop-blur transition-all hover:border-brand hover:text-brand hover:-translate-y-0.5"
                 >
-                  The future of pain relief
+                  See treatment options
                 </Link>
               </div>
-              <ul className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-slate-500 dark:text-slate-400">
+              <ul className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-subtle">
                 {TRUST.map((t) => (
                   <li key={t} className="inline-flex items-center gap-1.5">
                     <svg
                       aria-hidden="true"
                       viewBox="0 0 20 20"
-                      className="size-4 text-teal-600 dark:text-teal-400"
+                      className="size-4 text-brand"
                       fill="currentColor"
                     >
                       <path
@@ -162,33 +158,33 @@ export default function Home() {
 
       <section aria-labelledby="explore-heading" className="py-14 sm:py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <p className="text-xs font-semibold uppercase tracking-widest text-teal-700 dark:text-teal-400">
-            Five ways in
+          <p className="text-xs font-semibold uppercase tracking-widest text-brand">
+            Five sections
           </p>
           <h2
             id="explore-heading"
-            className="mt-2 text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100"
+            className="mt-2 text-3xl sm:text-4xl font-bold tracking-tight text-ink"
           >
             Start where you are
           </h2>
           <div className="mt-8 grid gap-8 lg:grid-cols-12 lg:gap-12">
             <Link
               href={START.href}
-              className="card-lift group relative overflow-hidden lg:col-span-5 rounded-2xl border border-slate-200 bg-gradient-to-br from-paper to-white p-7 sm:p-8 dark:border-slate-800 dark:to-background"
+              className="card-lift group relative overflow-hidden lg:col-span-5 rounded-2xl border border-line bg-gradient-to-br from-paper to-background p-7 sm:p-8"
             >
               <span
                 aria-hidden="true"
                 className="pointer-events-none absolute -right-10 -top-10 size-40 rounded-full bg-teal-500/5 blur-2xl"
               />
-              <span className="relative inline-flex items-center gap-2 rounded-full bg-teal-700/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-teal-700 dark:bg-teal-400/10 dark:text-teal-300">
+              <span className="relative inline-flex items-center gap-2 rounded-full bg-brand/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-brand">
                 <HubIcon href={START.href} className="size-3.5" />
-                Start here
+                The specialty
               </span>
-              <h3 className="relative mt-5 text-2xl font-semibold tracking-tight text-slate-900 group-hover:text-teal-700 dark:text-slate-100 dark:group-hover:text-teal-300">
+              <h3 className="relative mt-5 text-2xl font-semibold tracking-tight text-ink group-hover:text-brand">
                 {START.label}
               </h3>
-              <p className="relative mt-3 text-slate-600 dark:text-slate-400">{START.description}</p>
-              <span className="relative mt-6 inline-flex items-center gap-1 text-sm font-semibold text-teal-700 dark:text-teal-300">
+              <p className="relative mt-3 text-muted">{START.description}</p>
+              <span className="relative mt-6 inline-flex items-center gap-1 text-sm font-semibold text-brand">
                 Read the specialty
                 <span
                   aria-hidden="true"
@@ -204,22 +200,22 @@ export default function Home() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="group flex items-start gap-4 rounded-xl border border-transparent px-3 py-4 transition-colors hover:border-slate-200 hover:bg-paper/70 sm:px-4 dark:hover:border-slate-800"
+                    className="group flex items-start gap-4 rounded-xl border border-transparent px-3 py-4 transition-colors hover:border-line hover:bg-paper/70 sm:px-4"
                   >
-                    <span className="flex size-10 shrink-0 items-center justify-center rounded-lg border border-slate-200/70 bg-paper/70 text-teal-700 transition-colors group-hover:border-teal-300 group-hover:bg-white dark:border-slate-800 dark:text-teal-300 dark:group-hover:border-teal-400/50 dark:group-hover:bg-slate-800">
+                    <span className="flex size-10 shrink-0 items-center justify-center rounded-lg border border-slate-200/70 bg-paper/70 text-brand transition-colors group-hover:border-teal-300 group-hover:bg-white dark:border-slate-800 dark:group-hover:border-teal-400/50 dark:group-hover:bg-slate-800">
                       <HubIcon href={item.href} className="size-5" />
                     </span>
                     <span className="min-w-0 flex-1">
-                      <span className="block font-semibold text-slate-900 group-hover:text-teal-700 dark:text-slate-100 dark:group-hover:text-teal-300">
+                      <span className="block font-semibold text-ink group-hover:text-brand">
                         {item.label}
                       </span>
-                      <span className="mt-1 block text-sm text-slate-600 dark:text-slate-400">
+                      <span className="mt-1 block text-sm text-muted">
                         {item.description}
                       </span>
                     </span>
                     <span
                       aria-hidden="true"
-                      className="mt-0.5 shrink-0 text-slate-300 transition-all group-hover:translate-x-0.5 group-hover:text-teal-700 dark:text-slate-600 dark:group-hover:text-teal-300"
+                      className="mt-0.5 shrink-0 text-faint transition-all group-hover:translate-x-0.5 group-hover:text-brand"
                     >
                       →
                     </span>
@@ -233,61 +229,53 @@ export default function Home() {
 
       <section
         aria-labelledby="map-heading"
-        className="border-t border-slate-200/70 py-14 sm:py-16 dark:border-slate-800/70"
+        className="border-t border-line/70 py-14 sm:py-16"
       >
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="grid gap-10 lg:grid-cols-12 lg:gap-14">
             <div className="lg:col-span-7">
-              <p className="text-xs font-semibold uppercase tracking-widest text-teal-700 dark:text-teal-400">
-                Why this site exists
+              <p className="text-xs font-semibold uppercase tracking-widest text-brand">
+                About this site
               </p>
               <h2
                 id="map-heading"
-                className="mt-2 text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100"
+                className="mt-2 text-3xl sm:text-4xl font-bold tracking-tight text-ink"
               >
-                The territory, briefly
+                Why this site exists
               </h2>
-              <div className="mt-6 space-y-5 text-slate-600 dark:text-slate-400">
+              <div className="mt-6 space-y-5 text-muted">
                 <p>
-                  Pain medicine is a real medical specialty – physicians who
-                  train for years in exactly one problem, yours. Most people
-                  living with pain have never been told that it exists, what a
-                  pain specialist actually does, or how to get referred to one.
-                  That is where this site begins:{" "}
+                  Pain medicine is a medical specialty in its own right:
+                  physicians who train for years in exactly one problem, yours.
+                  Most people living with pain have never been told that it
+                  exists, what a pain specialist does, or how to get referred
+                  to one. That is where this site begins:{" "}
                   <Link
                     href="/what-is-pain-medicine"
-                    className="font-semibold text-teal-700 hover:underline dark:text-teal-300"
+                    className="font-semibold text-brand hover:underline"
                   >
                     what pain medicine is
                   </Link>{" "}
                   and how the specialty thinks.
                 </p>
                 <p>
-                  We are not your doctor, and we say so plainly – the goal is
-                  that you walk into your next appointment knowing the terrain,
-                  asking sharper questions, and expecting more from your care.
-                  Start with{" "}
-                  <Link
-                    href="/what-is-pain-medicine"
-                    className="font-semibold text-teal-700 hover:underline dark:text-teal-300"
-                  >
-                    the specialty itself
-                  </Link>
-                  , or jump straight to the{" "}
+                  We are not your doctor. The goal is that you walk into your
+                  next appointment knowing what to ask and what to expect from
+                  your care. When a term gets in the way, the{" "}
                   <Link
                     href="/glossary"
-                    className="font-semibold text-teal-700 hover:underline dark:text-teal-300"
+                    className="font-semibold text-brand hover:underline"
                   >
                     glossary
                   </Link>{" "}
-                  whenever a term gets in the way.
+                  explains it in a sentence or two.
                 </p>
               </div>
             </div>
 
             <div className="lg:col-span-5">
-              <div className="rounded-2xl border border-teal-600/15 bg-gradient-to-b from-paper to-white p-6 shadow-card sm:p-7 dark:border-teal-400/15 dark:to-background">
-                <h3 className="text-sm font-semibold uppercase tracking-widest text-teal-700 dark:text-teal-400">
+              <div className="rounded-2xl border border-brand/15 bg-gradient-to-b from-paper to-background p-6 shadow-card sm:p-7">
+                <h3 className="text-sm font-semibold uppercase tracking-widest text-brand">
                   How we work
                 </h3>
                 <ul className="mt-5 space-y-5">
@@ -296,7 +284,7 @@ export default function Home() {
                       <svg
                         aria-hidden="true"
                         viewBox="0 0 20 20"
-                        className="mt-0.5 size-5 shrink-0 text-teal-600 dark:text-teal-400"
+                        className="mt-0.5 size-5 shrink-0 text-brand"
                         fill="currentColor"
                       >
                         <path
@@ -306,10 +294,10 @@ export default function Home() {
                         />
                       </svg>
                       <div>
-                        <p className="font-semibold text-slate-900 dark:text-slate-100">
+                        <p className="font-semibold text-ink">
                           {p.title}
                         </p>
-                        <p className="mt-0.5 text-sm text-slate-600 dark:text-slate-400">
+                        <p className="mt-0.5 text-sm text-muted">
                           {p.body}
                         </p>
                       </div>
@@ -324,20 +312,20 @@ export default function Home() {
 
       <section
         aria-labelledby="featured-heading"
-        className="border-t border-slate-200/70 bg-paper/50 py-14 sm:py-16 dark:border-slate-800/70"
+        className="border-t border-line/70 bg-paper/50 py-14 sm:py-16"
       >
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <p className="text-xs font-semibold uppercase tracking-widest text-teal-700 dark:text-teal-400">
-            Where to start
+          <p className="text-xs font-semibold uppercase tracking-widest text-brand">
+            Editor&rsquo;s picks
           </p>
           <h2
             id="featured-heading"
-            className="mt-2 text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100"
+            className="mt-2 text-3xl sm:text-4xl font-bold tracking-tight text-ink"
           >
             Good first reads
           </h2>
-          <p className="mt-2 max-w-2xl text-sm text-slate-600 dark:text-slate-400">
-            Six pages that show what the whole site aims for – pick whichever is
+          <p className="mt-2 max-w-2xl text-sm text-muted">
+            Six pages that show what the site aims for. Pick whichever is
             closest to what you&rsquo;re living with.
           </p>
           <ol className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -345,7 +333,7 @@ export default function Home() {
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="card-lift group flex h-full flex-col rounded-xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900"
+                  className="card-lift group flex h-full flex-col rounded-xl border border-line bg-surface p-5"
                 >
                   <span className="flex size-11 items-center justify-center rounded-lg border border-slate-200/80 bg-paper/60 transition-colors group-hover:border-teal-300 group-hover:bg-white dark:border-slate-700 dark:bg-slate-200 dark:group-hover:border-teal-400/60">
                     <ArticleEmblem
@@ -353,13 +341,13 @@ export default function Home() {
                       className="size-7"
                     />
                   </span>
-                  <span className="mt-4 text-xs font-semibold uppercase tracking-wider text-teal-700 dark:text-teal-400">
+                  <span className="mt-4 text-xs font-semibold uppercase tracking-wider text-brand">
                     {item.eyebrow}
                   </span>
-                  <span className="mt-1 block font-semibold text-slate-900 group-hover:text-teal-700 dark:text-slate-100 dark:group-hover:text-teal-300">
+                  <span className="mt-1 block font-semibold text-ink group-hover:text-brand">
                     {item.title}
                   </span>
-                  <span className="mt-1.5 block text-sm text-slate-600 dark:text-slate-400">
+                  <span className="mt-1.5 block text-sm text-muted">
                     {item.blurb}
                   </span>
                 </Link>

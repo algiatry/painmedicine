@@ -30,7 +30,7 @@ const SECTION: Record<string, string> = {
 };
 
 /**
- * What people actually type. Each alias names something the page itself
+ * What people type. Each alias names something the page itself
  * covers – this is a ranking aid, never a promise of content that isn't there.
  */
 export const ALIASES: Record<string, string> = {

@@ -131,14 +131,14 @@ export default function ThePainTeam() {
         because no condition demanded it more. As the research summarized in{" "}
         <Link
           href="/understanding-pain/pain-and-emotion"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           pain and emotion
         </Link>{" "}
         and{" "}
         <Link
           href="/understanding-pain/pain-and-sleep"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           pain and sleep
         </Link>{" "}
@@ -151,10 +151,10 @@ export default function ThePainTeam() {
       <P>
         Composition varies by program, but the roles are consistent across the
         IASP&rsquo;s guidelines for pain treatment services and major academic
-        centers – and reflect the coordinated, multidisciplinary care the
+        centers, and reflect the coordinated, multidisciplinary care the
         CDC&rsquo;s 2022 guideline calls for:
       </P>
-      <ul className="mt-4 space-y-3 text-slate-700 dark:text-slate-300">
+      <ul className="mt-4 space-y-3 text-body">
         <li className="flex gap-3">
           <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
           <span>
@@ -200,31 +200,31 @@ export default function ThePainTeam() {
         possibly in parallel, without talking much.{" "}
         <strong>Interdisciplinary</strong> means they function as one unit:
         meeting regularly, sharing a single biopsychosocial assessment, agreeing
-        on one set of goals, and – explicitly – including you in the decisions.
+        on one set of goals, and, explicitly, including you in the decisions.
         The IASP is candid that fully interdisciplinary programs are still more
         aspiration than norm. That honesty is useful: it tells you what to ask.
         Not just &ldquo;do you have a psychologist?&rdquo; but &ldquo;do your
-        clinicians actually meet about my case?&rdquo;
+        clinicians meet about my case?&rdquo;
       </P>
 
       <H2 id="evidence">Does it work?</H2>
       <P>
-        For chronic low back pain – the best-studied case – a systematic review
+        For chronic low back pain, the best-studied case, a systematic review
         of 41 randomized trials with nearly 7,000 participants found
         moderate-quality evidence that multidisciplinary biopsychosocial
         rehabilitation outperforms usual care on both pain and everyday
         function. Compared with physical treatment alone, it also roughly{" "}
-        <strong>doubled the odds of being at work</strong>. The honest reading:
+        <strong>doubled the odds of being at work</strong>. The reading:
         the average effects are meaningful but modest. A team does not dissolve
         chronic pain. It reliably moves more of the dials than any single
-        discipline moves alone – and for a condition with this many dials, that
+        discipline moves alone, and for a condition with this many dials, that
         is exactly what you want.
       </P>
       <P>
         If you are looking for this kind of care, the{" "}
         <Link
           href="/find-help"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           find help
         </Link>{" "}

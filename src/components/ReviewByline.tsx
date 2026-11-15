@@ -10,7 +10,7 @@ import { defaultReviewDue, getReviewer } from "@/lib/reviewers";
  *    resolves to a profile in the reviewer registry. The name links to the
  *    reviewer's public profile; the next-review date and an optional
  *    "what changed" note render alongside.
- * 2. An honest "sourced" line – full content built from primary sources,
+ * 2. A plain "sourced" notice – full content built from primary sources,
  *    independent medical review still pending. No credit claimed.
  * 3. The in-review notice – orientation-only pages held for review.
  *
@@ -33,18 +33,18 @@ export default function ReviewByline({
   if (review && profile && status === "reviewed") {
     const due = review.reviewDue ?? defaultReviewDue(hub ?? "", review.reviewedAt);
     return (
-      <div className="flex flex-col gap-1 border-l-2 border-teal-600 pl-4 text-sm text-slate-500 dark:text-slate-400">
+      <div className="flex flex-col gap-1 border-l-2 border-teal-600 pl-4 text-sm text-subtle">
         <p>
           Medically reviewed by{" "}
           <Link
             href={`/reviewers/${profile.slug}`}
-            className="font-medium text-slate-700 dark:text-slate-300 underline decoration-teal-600/40 underline-offset-2 hover:text-teal-700 dark:hover:text-teal-300"
+            className="font-medium text-body underline decoration-teal-600/40 underline-offset-2 hover:text-brand"
           >
             {profile.name}, {profile.credentials}
           </Link>{" "}
           on {formatDate(review.reviewedAt)}
         </p>
-        {review.note && <p className="text-slate-600 dark:text-slate-400">In review: {review.note}</p>}
+        {review.note && <p className="text-muted">In review: {review.note}</p>}
         <p>
           Last updated {formatDate(lastUpdated)} · Next review by {formatDate(due)}
         </p>
@@ -54,15 +54,15 @@ export default function ReviewByline({
 
   if (status === "sourced") {
     return (
-      <div className="flex flex-col gap-1 border-l-2 border-teal-600 pl-4 text-sm text-slate-500 dark:text-slate-400">
+      <div className="flex flex-col gap-1 rounded-lg border border-line bg-paper px-4 py-3 text-sm text-muted">
         <p>
-          <span className="font-medium text-slate-700 dark:text-slate-300">
-            Written from primary sources.
+          <span className="font-semibold text-ink">
+            Not yet medically reviewed.
           </span>{" "}
-          Built from the cited references below – independent medical review is
-          pending. Educational information, not medical advice.
+          Written from the primary sources cited below; independent clinician
+          review is pending. Educational information, not medical advice.
         </p>
-        <p>Last updated {formatDate(lastUpdated)}</p>
+        <p className="text-subtle">Last updated {formatDate(lastUpdated)}</p>
       </div>
     );
   }

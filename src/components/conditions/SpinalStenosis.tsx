@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
 
 function PostureFigure() {
   return (
@@ -60,7 +60,7 @@ export default function SpinalStenosis() {
         Spinal stenosis literally means a narrowing of space in the spine. In
         the lower back, discs can lose height, facet joints can enlarge, and
         ligaments can thicken as the spine ages. Those changes may crowd the
-        nerve roots – but the scan is only half the story. Many people have a
+        nerve roots, but the scan is only half the story. Many people have a
         narrow-looking canal without the walking-limited leg symptoms that make
         stenosis a clinical condition.
       </P>
@@ -113,7 +113,7 @@ export default function SpinalStenosis() {
 
       <H2 id="why-it-hurts">Why standing and walking bring it on</H2>
       <P>
-        Extending the lower back – the posture used in upright standing – tends
+        Extending the lower back, the posture used in upright standing, tends
         to reduce space around already crowded nerves. Walking also raises the
         nerves&rsquo; demand for blood flow. The leading explanation combines
         mechanical crowding with impaired circulation around the nerve roots,
@@ -148,7 +148,7 @@ export default function SpinalStenosis() {
         mechanism may lead to a different conversation.
       </P>
 
-      <H2 id="surgery">What decompression surgery can – and cannot – promise</H2>
+      <H2 id="surgery">What decompression surgery can, and cannot, promise</H2>
       <P>
         Decompression removes bone or ligament that is crowding the nerves. It
         is generally considered when walking and daily function remain severely
@@ -188,7 +188,7 @@ export default function SpinalStenosis() {
           neuromodulation
         </Link>{" "}
         continue to evolve, but each needs comparison against good rehabilitation
-        and standard decompression – not just against doing nothing.
+        and standard decompression, not just against doing nothing.
       </P>
 
       <H2 id="specialist">When to see a specialist</H2>

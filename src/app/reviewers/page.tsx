@@ -29,7 +29,7 @@ export default function ReviewersPage() {
   const reviewedCount = ALL_ARTICLES.filter((a) => a.status === "reviewed").length;
 
   return (
-    <article className="mx-auto max-w-3xl px-4 sm:px-6 py-14 space-y-10">
+    <article className="mx-auto max-w-[42rem] px-4 sm:px-6 py-14 space-y-10">
       <JsonLd
         data={breadcrumbJsonLd([
           { name: "Home", path: "/" },
@@ -52,13 +52,13 @@ export default function ReviewersPage() {
       )}
 
       <header className="space-y-4">
-        <p className="text-sm font-semibold uppercase tracking-widest text-teal-700 dark:text-teal-300">
+        <p className="text-sm font-semibold uppercase tracking-widest text-brand">
           Editorial board
         </p>
-        <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
+        <h1 className="text-4xl sm:text-[2.75rem] sm:leading-[1.1] font-bold tracking-tight text-ink">
           The people who check the pages
         </h1>
-        <p className="text-lg text-slate-700 dark:text-slate-300">
+        <p className="text-lg text-body">
           Every clinical page on {SITE.name} is written from primary sources.
           A credentialed physician then reviews it against the checklist below
           before it can carry a &ldquo;medically reviewed&rdquo; line. The
@@ -68,11 +68,11 @@ export default function ReviewersPage() {
       </header>
 
       <section aria-labelledby="board-heading" className="space-y-5">
-        <h2 id="board-heading" className="text-2xl font-semibold text-slate-900 dark:text-slate-100">
+        <h2 id="board-heading" className="text-2xl sm:text-[1.75rem] font-bold tracking-tight text-ink">
           Medical reviewers
         </h2>
         {REVIEWERS.length === 0 ? (
-          <div className="rounded-md border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 px-5 py-4 text-slate-700 dark:text-slate-300">
+          <div className="rounded-md border border-line bg-slate-50 dark:bg-slate-900 px-5 py-4 text-body">
             <p>
               The board is being formed. Until a reviewer has signed off, every
               page carries an honest &ldquo;written from primary sources,
@@ -85,21 +85,21 @@ export default function ReviewersPage() {
             {REVIEWERS.map((r) => (
               <li
                 key={r.slug}
-                className="rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 shadow-card"
+                className="rounded-lg border border-line bg-surface p-5 shadow-card"
               >
                 <Link
                   href={`/reviewers/${r.slug}`}
-                  className="text-lg font-semibold text-slate-900 dark:text-slate-100 hover:text-teal-700 dark:hover:text-teal-300"
+                  className="text-lg font-semibold text-ink hover:text-brand"
                 >
                   {r.name}, {r.credentials}
                 </Link>
-                <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">{r.headline}</p>
+                <p className="mt-1 text-sm text-muted">{r.headline}</p>
               </li>
             ))}
           </ul>
         )}
         {reviewedCount > 0 && (
-          <p className="text-sm text-slate-500 dark:text-slate-400">
+          <p className="text-sm text-subtle">
             {reviewedCount} of {ALL_ARTICLES.length} pages currently carry a
             reviewer sign-off.
           </p>
@@ -107,24 +107,24 @@ export default function ReviewersPage() {
       </section>
 
       <section aria-labelledby="standard-heading" className="space-y-4">
-        <h2 id="standard-heading" className="text-2xl font-semibold text-slate-900 dark:text-slate-100">
+        <h2 id="standard-heading" className="text-2xl sm:text-[1.75rem] font-bold tracking-tight text-ink">
           What a review checks
         </h2>
-        <p className="text-slate-700 dark:text-slate-300">
+        <p className="text-body">
           Reviewers work from a written checklist, the same one for every page.
           A page passes only when every line holds.
         </p>
-        <ol className="list-decimal pl-6 space-y-2 text-slate-700 dark:text-slate-300">
+        <ol className="list-decimal pl-6 space-y-2 text-body">
           {CHECKLIST.map((item) => (
             <li key={item}>{item}</li>
           ))}
         </ol>
-        <p className="text-slate-700 dark:text-slate-300">
+        <p className="text-body">
           After sign-off the page publishes with the reviewer&rsquo;s byline and
           a next-review date. Fast-moving pages in{" "}
           <Link
             href="/future-of-pain-medicine"
-            className="text-teal-700 dark:text-teal-300 underline underline-offset-2"
+            className="text-brand underline underline-offset-2"
           >
             the future of pain medicine
           </Link>{" "}
@@ -135,10 +135,10 @@ export default function ReviewersPage() {
       </section>
 
       <section aria-labelledby="join-heading" className="space-y-4">
-        <h2 id="join-heading" className="text-2xl font-semibold text-slate-900 dark:text-slate-100">
+        <h2 id="join-heading" className="text-2xl sm:text-[1.75rem] font-bold tracking-tight text-ink">
           Join the board
         </h2>
-        <p className="text-slate-700 dark:text-slate-300">
+        <p className="text-body">
           We are recruiting board-certified physicians in pain medicine,
           anesthesiology, physical medicine and rehabilitation, neurology, and
           closely related specialties, plus clinical pharmacists for medication
@@ -146,7 +146,7 @@ export default function ReviewersPage() {
           review pre-drafted, pre-cited educational content; you do not write
           from scratch and you never give individual medical advice.
         </p>
-        <ul className="list-disc pl-6 space-y-2 text-slate-700 dark:text-slate-300">
+        <ul className="list-disc pl-6 space-y-2 text-body">
           <li>
             <strong>What you get.</strong> A public profile here with your
             credentials, affiliations, and verified identity links, and a
@@ -163,11 +163,11 @@ export default function ReviewersPage() {
           </li>
         </ul>
         {SITE.editorialEmail ? (
-          <p className="text-slate-700 dark:text-slate-300">
+          <p className="text-body">
             Write to{" "}
             <a
               href={`mailto:${SITE.editorialEmail}`}
-              className="text-teal-700 dark:text-teal-300 underline underline-offset-2"
+              className="text-brand underline underline-offset-2"
             >
               {SITE.editorialEmail}
             </a>{" "}
@@ -175,9 +175,9 @@ export default function ReviewersPage() {
             reviewer brief and a first page to look at.
           </p>
         ) : (
-          <p className="text-slate-700 dark:text-slate-300">
+          <p className="text-body">
             See{" "}
-            <Link href="/about" className="text-teal-700 dark:text-teal-300 underline underline-offset-2">
+            <Link href="/about" className="text-brand underline underline-offset-2">
               About &amp; editorial policy
             </Link>{" "}
             for the standard behind the site. A contact route for applications

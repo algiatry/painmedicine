@@ -12,10 +12,10 @@ export const FUTURE_ARTICLES: Article[] = [
   {
     hub: "future-of-pain-medicine",
     slug: "pipeline",
-    title: "The Pain Treatment Pipeline",
+    title: "The pain treatment pipeline",
     seoTitle: "VX-993: Which Companies Are Researching Non-Opioid Pain Treatments?",
     description:
-      "Who is developing new pain treatments: Vertex (suzetrigine, VX-993), Adneuris/Tris (cebranopadol), Grünenthal, Lexicon, Levicept, Sangamo, and Saluda – trial phase, mechanism, and what is actually approved.",
+      "Who is developing new pain treatments: Vertex (suzetrigine, VX-993), Adneuris/Tris (cebranopadol), Grünenthal, Lexicon, Levicept, Sangamo, and Saluda – trial phase, mechanism, and what is approved.",
     status: "sourced",
     lastUpdated: LAST_REVIEWED,
     answer:
@@ -38,19 +38,19 @@ export const FUTURE_ARTICLES: Article[] = [
           "On this page: Vertex (suzetrigine and VX-993), Grünenthal (resiniferatoxin), Lexicon (pilavapadin), Levicept (LEVI-04), Sangamo (ST-503; the company said in October 2026 it expects to sell that program in the fourth quarter, while a Phase 1/2 study continues), and Saluda Medical (the Evoke stimulator). Adneuris Therapeutics, a Tris Pharma company, is developing cebranopadol, which is opioid-adjacent rather than opioid-free, and is not approved. Pfizer and Lilly's tanezumab was discontinued in 2021. Only suzetrigine and Evoke are FDA-approved, and only for the uses on their labels. This is not every company in the field.",
       },
       {
-        question: "Does a drug being 'in the pipeline' mean I can get it?",
+        question: "Does a drug being “in the pipeline” mean I can get it?",
         answer:
-          "Usually no. Most entries here are still in clinical trials and are not available as prescription treatments – and most investigational drugs never reach the market at all. Only entries marked 'Approved' are cleared for use, and even then only for the specific condition on their label. A filed application, such as cebranopadol's, is not an approval. Ask your clinician what is actually available for your situation.",
+          "Usually no. Most entries here are still in clinical trials and are not available as prescription treatments, and most investigational drugs never reach the market at all. Only entries marked “Approved” are cleared for use, and even then only for the specific condition on their label. A filed application, such as cebranopadol's, is not an approval. Ask your clinician what is available for your situation.",
       },
       {
         question: "What do the trial phases mean?",
         answer:
-          "Phase 1 tests safety in a small group. Phase 2 looks for early signs the treatment works and refines the dose. Phase 3 is the large, pivotal test against placebo or standard care that regulators weigh for approval. 'Approved' means the FDA has cleared it. Each phase is a filter – many candidates stop here.",
+          "Phase 1 tests safety in a small group. Phase 2 looks for early signs the treatment works and refines the dose. Phase 3 is the large, pivotal test against placebo or standard care that regulators weigh for approval. “Approved” means the FDA has cleared it. Each phase is a filter – many candidates stop here.",
       },
       {
         question: "Why include treatments that failed?",
         answer:
-          "Because an honest pipeline includes its setbacks. Failures like tanezumab and the halted acute-pain arm of VX-993 shaped the field and explain why today's candidates are designed the way they are. Showing only the wins would misrepresent how slow and uncertain drug development really is.",
+          "Because a pipeline includes its setbacks. Failures like tanezumab and the halted acute-pain arm of VX-993 shaped the field and explain why today's candidates are designed the way they are. Showing only the wins would misrepresent how slow and uncertain drug development really is.",
       },
     ],
     references: [
@@ -106,13 +106,13 @@ export const FUTURE_ARTICLES: Article[] = [
   {
     hub: "future-of-pain-medicine",
     slug: "neuromodulation",
-    title: "Next-Generation Neuromodulation",
+    title: "Next-generation neuromodulation",
     description:
       "Treating pain with electricity is becoming a precision tool: paresthesia-free high-frequency stimulation, closed-loop devices that read the spinal cord and self-adjust, dorsal-root-ganglion targeting, and non-invasive brain stimulation.",
     status: "sourced",
     lastUpdated: "2026-10-04",
     answer:
-      "Neuromodulation treats pain with carefully placed electricity instead of drugs – and it is getting far more precise. Newer systems can stimulate without the old tingling sensation, read the spinal cord's own signals and adjust themselves in real time, target a single cluster of nerves, or work entirely from outside the skull. The shared idea is stimulation matched to the person, not a fixed setting.",
+      "Neuromodulation treats pain with carefully placed electricity instead of drugs, and it is getting far more precise. Newer systems can stimulate without the old tingling sensation, read the spinal cord's own signals and adjust themselves in real time, target a single cluster of nerves, or work entirely from outside the skull. The shared idea is stimulation matched to the person, not a fixed setting.",
     faqs: [
       {
         question: "What is spinal cord stimulation?",
@@ -122,7 +122,7 @@ export const FUTURE_ARTICLES: Article[] = [
       {
         question: "What makes the newer stimulators different?",
         answer:
-          "Older stimulators masked pain with a constant tingling (paresthesia) at a fixed setting. Newer approaches can be paresthesia-free (high-frequency 10 kHz stimulation), closed-loop – measuring the spinal cord's response and adjusting more than 100 times a second – or aimed at the dorsal root ganglion for focal, hard-to-reach pain.",
+          "Older stimulators masked pain with a constant tingling (paresthesia) at a fixed setting. Newer approaches can be paresthesia-free (high-frequency 10 kHz stimulation), closed-loop – measuring the spinal cord's response and adjusting more than 100 times a second, or aimed at the dorsal root ganglion for focal, hard-to-reach pain.",
       },
       {
         question: "Can pain be treated without surgery or an implant?",
@@ -164,7 +164,7 @@ export const FUTURE_ARTICLES: Article[] = [
       {
         title: "How pain works",
         href: "/understanding-pain/how-pain-works",
-        blurb: "The spinal 'gate' these devices act on.",
+        blurb: "The spinal “gate” these devices act on.",
       },
     ],
   },
@@ -172,9 +172,9 @@ export const FUTURE_ARTICLES: Article[] = [
   {
     hub: "future-of-pain-medicine",
     slug: "biologics-and-gene-therapy",
-    title: "Biologics & Gene-Targeted Therapy",
+    title: "Biologics & gene-targeted therapy",
     description:
-      "The most precise pain treatments yet: antibodies that block a single pain molecule – as CGRP drugs did for migraine – and gene therapies that turn down the body's pain genes at their source.",
+      "The most precise pain treatments yet: antibodies that block a single pain molecule, as CGRP drugs did for migraine, and gene therapies that turn down the body's pain genes at their source.",
     status: "sourced",
     lastUpdated: "2026-10-04",
     answer:
@@ -183,17 +183,17 @@ export const FUTURE_ARTICLES: Article[] = [
       {
         question: "What is a biologic, and how is it different from a normal drug?",
         answer:
-          "A biologic is a large, precisely-engineered molecule – often an antibody – built to block one specific target, whereas familiar small-molecule drugs act more broadly. The CGRP antibodies for migraine are the pain field's landmark example of how targeting a single molecule can prevent pain.",
+          "A biologic is a large, precisely-engineered molecule, often an antibody, built to block one specific target, whereas familiar small-molecule drugs act more broadly. The CGRP antibodies for migraine are the pain field's landmark example of how targeting a single molecule can prevent pain.",
       },
       {
         question: "Did the CGRP migraine drugs really change things?",
         answer:
-          "Yes. Erenumab, approved in 2018, was the first antibody designed to prevent migraine by blocking the CGRP pathway – and the first approved antibody against this kind of receptor. It proved a precisely-targeted biologic can prevent pain, and a whole class of migraine drugs followed.",
+          "Yes. Erenumab, approved in 2018, was the first antibody designed to prevent migraine by blocking the CGRP pathway, and the first approved antibody against this kind of receptor. It proved a precisely-targeted biologic can prevent pain, and a whole class of migraine drugs followed.",
       },
       {
         question: "Is gene therapy for pain real?",
         answer:
-          "It is at the earliest stage. Experimental therapies that turn down the SCN9A / NaV1.7 pain gene have produced durable relief in animals and are only now entering first-in-human trials. The idea is powerful – a one-time treatment at the genetic source – but it is unproven in people and years from routine use.",
+          "It is at the earliest stage. Experimental therapies that turn down the SCN9A / NaV1.7 pain gene have produced durable relief in animals and are only now entering first-in-human trials. The idea is powerful, a one-time treatment at the genetic source, but it is unproven in people and years from routine use.",
       },
     ],
     references: [
@@ -237,28 +237,28 @@ export const FUTURE_ARTICLES: Article[] = [
   {
     hub: "future-of-pain-medicine",
     slug: "precision-pain-medicine",
-    title: "Precision Pain Medicine",
+    title: "Precision pain medicine",
     description:
       "Matching the treatment to the patient: pharmacogenomics (why codeine is dangerous for some people and useless for others), mechanism-based treatment, biomarkers, and the end of one-size-fits-all pain care.",
     status: "sourced",
     lastUpdated: "2026-10-04",
     answer:
-      "Two people with the same pain can need completely different treatments – and get very different results from the same drug. Precision pain medicine uses your biology to guide care: genetic testing that flags who will be harmed or unhelped by a drug like codeine, matching medicines to your specific pain mechanism, and emerging biomarkers – replacing trial-and-error with something closer to a fit.",
+      "Two people with the same pain can need completely different treatments, and get very different results from the same drug. Precision pain medicine uses your biology to guide care: genetic testing that flags who will be harmed or unhelped by a drug like codeine, matching medicines to your specific pain mechanism, and emerging biomarkers – replacing trial-and-error with something closer to a fit.",
     faqs: [
       {
         question: "How can the same painkiller help one person and harm another?",
         answer:
-          "Genetics. The CYP2D6 gene controls how fast your body turns codeine into morphine. 'Ultrarapid metabolizers' can produce a dangerous amount very quickly, while 'poor metabolizers' get little pain relief at all. The FDA carries a boxed warning about this, and prescribing guidelines advise avoiding codeine and tramadol in those groups.",
+          "Genetics. The CYP2D6 gene controls how fast your body turns codeine into morphine. “Ultrarapid metabolizers” can produce a dangerous amount very quickly, while “poor metabolizers” get little pain relief at all. The FDA carries a boxed warning about this, and prescribing guidelines advise avoiding codeine and tramadol in those groups.",
       },
       {
-        question: "Can I get my 'pain genetics' tested?",
+        question: "Can I get my “pain genetics” tested?",
         answer:
-          "Pharmacogenomic testing – for genes like CYP2D6 – already exists, and expert guidelines (from the group called CPIC) translate the results into concrete prescribing advice. It is not yet routine for everyone, but it is a real, actionable piece of precision pain care available today.",
+          "Pharmacogenomic testing, for genes like CYP2D6, already exists, and expert guidelines (from the group called CPIC) translate the results into concrete prescribing advice. It is not yet routine for everyone, but it is a real, actionable piece of precision pain care available today.",
       },
       {
-        question: "What does 'mechanism-based' treatment mean?",
+        question: "What does “mechanism-based” treatment mean?",
         answer:
-          "Choosing the treatment to fit the kind of pain you have – nociceptive, neuropathic, or nociplastic – rather than guessing and adjusting. Working out the underlying mechanism points toward what is most likely to help and away from what usually will not.",
+          "Choosing the treatment to fit the kind of pain you have – nociceptive, neuropathic, or nociplastic, rather than guessing and adjusting. Working out the underlying mechanism points toward what is most likely to help and away from what usually will not.",
       },
     ],
     references: [
@@ -297,16 +297,16 @@ export const FUTURE_ARTICLES: Article[] = [
   {
     hub: "future-of-pain-medicine",
     slug: "mind-and-brain",
-    title: "Mind, Brain & New Frontiers",
+    title: "Mind, brain & new frontiers",
     description:
-      "Because the brain constructs pain, treatments that retrain the brain are real medicine: pain reprocessing therapy, an FDA-authorized virtual-reality program, nature and sound as low-risk adjuncts, and the early, honest science of psychedelics for chronic pain.",
+      "Because the brain constructs pain, treatments that retrain the brain are real medicine: pain reprocessing therapy, an FDA-authorized virtual-reality program, nature and sound as low-risk adjuncts, and the early science of psychedelics for chronic pain.",
     status: "sourced",
     lastUpdated: "2026-10-04",
     answer:
-      "If the brain builds the experience of pain, then the brain can be part of the treatment – and that is no longer just a metaphor. Pain reprocessing therapy helped most patients in a landmark trial become pain-free by unlearning a false alarm. An FDA-authorized virtual-reality program treats chronic back pain at home. And early research is testing whether psychedelics can help reset a sensitized pain system.",
+      "If the brain builds the experience of pain, then the brain can be part of the treatment, and that is no longer just a metaphor. Pain reprocessing therapy helped most patients in a landmark trial become pain-free by unlearning a false alarm. An FDA-authorized virtual-reality program treats chronic back pain at home. And early research is testing whether psychedelics can help reset a sensitized pain system.",
     faqs: [
       {
-        question: "Isn't a 'mind-based' treatment just saying my pain is imaginary?",
+        question: "Isn't a “mind-based” treatment just saying my pain is imaginary?",
         answer:
           "No. Because all pain is produced by the nervous system, brain-focused treatments act on the real machinery that generates pain. In a landmark trial, pain reprocessing therapy produced large, lasting relief in people with genuine chronic back pain – the opposite of dismissing it.",
       },
@@ -318,12 +318,12 @@ export const FUTURE_ARTICLES: Article[] = [
       {
         question: "Does nature or being outdoors help with chronic pain?",
         answer:
-          "Modestly, and the evidence is early. Time in nature is linked to lower chronic pain symptoms, and immersive 'nature' virtual reality engages the brain's own top-down pain-dampening systems in experimental studies. But the randomized trials are small and short: in one 2025 trial, thirty minutes of nature sounds during burn-dressing changes eased pain within the group, yet the difference against usual care was not statistically significant. Treat it as a low-risk addition to a plan, not a replacement for one.",
+          "Modestly, and the evidence is early. Time in nature is linked to lower chronic pain symptoms, and immersive “nature” virtual reality engages the brain's own top-down pain-dampening systems in experimental studies. But the randomized trials are small and short: in one 2025 trial, thirty minutes of nature sounds during burn-dressing changes eased pain within the group, yet the difference against usual care was not statistically significant. Treat it as a low-risk addition to a plan, not a replacement for one.",
       },
       {
         question: "Are psychedelics used to treat pain?",
         answer:
-          "Not yet in everyday practice. Small early trials are testing psilocybin for conditions like fibromyalgia and phantom-limb pain. The results are preliminary and it remains investigational, but the idea – that a burst of brain plasticity could help reset chronic pain – is drawing serious research.",
+          "Not yet in everyday practice. Small early trials are testing psilocybin for conditions like fibromyalgia and phantom-limb pain. The results are preliminary and it remains investigational, but the idea, that a burst of brain plasticity could help reset chronic pain, is drawing serious research.",
       },
     ],
     references: [
@@ -362,7 +362,7 @@ export const FUTURE_ARTICLES: Article[] = [
       {
         title: "How pain works",
         href: "/understanding-pain/how-pain-works",
-        blurb: "Why the brain – not the injury alone – builds pain.",
+        blurb: "Why the brain, not the injury alone, builds pain.",
       },
       {
         title: "Acute vs. chronic pain",

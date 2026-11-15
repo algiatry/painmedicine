@@ -4,7 +4,7 @@ import { FIG } from "@/lib/fig";
 
 function CycleFigure() {
   return (
-    <Figure caption="The pain-sleep cycle runs in both directions – but not equally. In prospective studies, poor sleep predicts future pain more strongly than pain predicts poor sleep.">
+    <Figure caption="The pain-sleep cycle runs in both directions, but not equally. In prospective studies, poor sleep predicts future pain more strongly than pain predicts poor sleep.">
       <svg
         role="img"
         aria-labelledby="cycle-title cycle-desc"
@@ -206,7 +206,7 @@ export default function PainAndSleep() {
         ]}
       />
 
-      <H2 id="both-ways">A two-way street – with a heavier lane</H2>
+      <H2 id="both-ways">A two-way street, with a heavier lane</H2>
       <P>
         The relationship genuinely runs in both directions. But when researchers
         follow people over months and years, the two directions are not equal:
@@ -220,7 +220,7 @@ export default function PainAndSleep() {
         That asymmetry matters, and it is quietly hopeful. If sleep were only a
         casualty of pain, there would be nothing to do but wait for the pain to
         improve. Instead, sleep is upstream – a lever that you and your care
-        team can actually pull.
+        team can pull.
       </P>
 
       <H2 id="one-night">What a single night does</H2>
@@ -250,7 +250,7 @@ export default function PainAndSleep() {
         of the systems described in{" "}
         <Link
           href="/understanding-pain/how-pain-works"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           how pain works
         </Link>
@@ -262,7 +262,7 @@ export default function PainAndSleep() {
       <P>
         The <em>kind</em> of sleep you lose matters too. In an earlier
         experiment, sleep broken by repeated forced awakenings knocked out the
-        same pain-inhibition system and increased spontaneous pain – while sleep
+        same pain-inhibition system and increased spontaneous pain, while sleep
         that was merely shortened by the same amount did not. And in a small
         early study, disrupting only deep slow-wave sleep for three nights
         lowered pain thresholds and produced the kind of
@@ -290,8 +290,8 @@ export default function PainAndSleep() {
         structured, non-drug program that retrains sleep habits and the racing
         thoughts that fuel insomnia. In people with chronic pain, meta-analyses
         show it reliably and durably improves sleep and mood; its direct effect
-        on pain intensity is more modest on average. That is worth hearing
-        honestly: better sleep does not make pain disappear on its own. It
+        on pain intensity is more modest on average. That is worth hearing:
+        better sleep does not make pain disappear on its own. It
         restores the conditions the pain system needs to regulate itself, and
         it gives you back the nights.
       </P>

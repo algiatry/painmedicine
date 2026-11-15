@@ -4,7 +4,7 @@ import { FIG } from "@/lib/fig";
 import { HeadProfile } from "../anatomy/HeadProfile";
 
 const link =
-  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
 
 function TwoHeadachesFigure() {
   return (
@@ -239,8 +239,8 @@ export default function TensionAndClusterHeadache() {
       <P>
         Less urgently, see a clinician for headaches that are getting worse
         over days or weeks or have changed in pattern, for two or more
-        headaches a week, for a constant new headache – particularly after age
-        50 – and for new headaches in someone with a history of cancer or HIV.
+        headaches a week, for a constant new headache, particularly after age
+        50, and for new headaches in someone with a history of cancer or HIV.
         A neurologist or headache specialist is the usual referral for
         suspected cluster headache, and a{" "}
         <Link href="/what-is-pain-medicine" className={link}>

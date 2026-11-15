@@ -3,11 +3,11 @@ import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
 
 /**
  * /treatments/opioids-for-acute-pain – what the largest overview of the
- * evidence (Sydney, Drugs 2026) actually found about opioids for short-term
+ * evidence (Sydney, Drugs 2026) found about opioids for short-term
  * pain, condition by condition. Literacy, not policy. Opioid content →
  * SAMHSA helpline inline (house rule), CDC-2022-aligned, never "how to
  * obtain," never an argument against opioids where they belong.
@@ -51,10 +51,10 @@ export default function OpioidsForAcutePain() {
 
       <P>
         This page walks through what that overview and the two trials behind
-        its most-quoted findings actually report. It describes; it does not
+        its most-quoted findings report. It describes; it does not
         prescribe. Nothing here is an argument against opioids after major
         surgery, serious injury, or in cancer care, where they remain
-        essential – and decisions about your own pain plan belong to you and
+        essential, and decisions about your own pain plan belong to you and
         your clinician.
       </P>
 
@@ -84,8 +84,7 @@ export default function OpioidsForAcutePain() {
         percentage points: about one extra person in ten experiencing nausea,
         drowsiness, dizziness, or constipation. The authors&rsquo; own
         conclusion is careful and worth quoting: opioids &ldquo;are
-        efficacious in reducing pain in some acute conditions.&rdquo; Some –
-        not all, and not equally.
+        efficacious in reducing pain in some acute conditions.&rdquo; Some, not all, and not equally.
       </P>
 
       <H2 id="back-and-neck">Back and neck pain: the OPAL trial</H2>
@@ -140,7 +139,7 @@ export default function OpioidsForAcutePain() {
         spinal cord and brain and leave the inflammation untouched. So when a
         clinician reaches for the NSAID-and-acetaminophen combination first,
         that is usually not the system failing you. It is the evidence
-        working – with the side effects of sedation, nausea, and constipation
+        working, with the side effects of sedation, nausea, and constipation
         left out. (NSAIDs carry their own cautions, for the stomach, kidneys,
         and heart, which is why they are not right for everyone either; your
         clinician and pharmacist weigh that for you.)
@@ -173,7 +172,7 @@ export default function OpioidsForAcutePain() {
         treat afterward.
       </P>
 
-      <H2 id="harms">The harms column, honestly</H2>
+      <H2 id="harms">The harms column</H2>
       <P>
         Side effects from a short opioid course are common and usually
         unpleasant rather than dangerous: constipation, nausea, drowsiness,
@@ -294,7 +293,7 @@ function BenefitByConditionFigure() {
   const scale = barMax / 20;
 
   return (
-    <Figure caption="How much lower pain was with an opioid than with placebo, on a 0–100 scale, in the 2026 Sydney overview of 59 systematic reviews – plus the OPAL trial for acute back and neck pain. Benefit is real after painful procedures and in abdominal emergencies; for everyday musculoskeletal injuries it is very small, and the harms column fills in.">
+    <Figure caption="How much lower pain was with an opioid than with placebo, on a 0–100 scale, in the 2026 Sydney overview of 59 systematic reviews, plus the OPAL trial for acute back and neck pain. Benefit is real after painful procedures and in abdominal emergencies; for everyday musculoskeletal injuries it is very small, and the harms column fills in.">
       <svg
         role="img"
         aria-labelledby="ofa-title ofa-desc"

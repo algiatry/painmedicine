@@ -36,7 +36,12 @@ export default function ArticleToc({
       if (!root) return;
       const nodes = Array.from(root.querySelectorAll<HTMLElement>("h2[id]"));
       setHeadings(
-        nodes.map((n) => ({ id: n.id, text: (n.textContent ?? "").trim() })),
+        nodes.map((n) => {
+          // Drop decorations (e.g. a count badge) marked data-toc-skip.
+          const clone = n.cloneNode(true) as HTMLElement;
+          clone.querySelectorAll("[data-toc-skip]").forEach((e) => e.remove());
+          return { id: n.id, text: (clone.textContent ?? "").trim() };
+        }),
       );
       if (nodes.length === 0) return;
 
@@ -75,8 +80,8 @@ export default function ArticleToc({
               aria-current={active ? "location" : undefined}
               className={`block border-l-2 py-1 pl-3 transition-colors ${
                 active
-                  ? "border-teal-600 font-semibold text-teal-800 dark:text-teal-300"
-                  : "border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-400 hover:border-slate-400 hover:text-teal-700 dark:hover:text-teal-300"
+                  ? "border-teal-600 font-semibold text-brand-strong"
+                  : "border-line text-subtle hover:border-slate-400 hover:text-brand"
               }`}
             >
               {h.text}
@@ -89,13 +94,13 @@ export default function ArticleToc({
 
   if (variant === "inline") {
     return (
-      <details className="group mt-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-paper/60 xl:hidden">
-        <summary className="flex cursor-pointer list-none items-center justify-between gap-2 px-4 py-3 text-sm font-semibold text-slate-900 dark:text-slate-100">
+      <details className="group mt-6 rounded-xl border border-line bg-paper/60 xl:hidden">
+        <summary className="flex cursor-pointer list-none items-center justify-between gap-2 px-4 py-3 text-sm font-semibold text-ink">
           On this page
           <svg
             aria-hidden="true"
             viewBox="0 0 20 20"
-            className="size-4 text-slate-400 dark:text-slate-500 transition-transform group-open:rotate-180"
+            className="size-4 text-subtle transition-transform group-open:rotate-180"
             fill="currentColor"
           >
             <path
@@ -105,14 +110,14 @@ export default function ArticleToc({
             />
           </svg>
         </summary>
-        <div className="border-t border-slate-200 dark:border-slate-800 px-4 py-3">{list}</div>
+        <div className="border-t border-line px-4 py-3">{list}</div>
       </details>
     );
   }
 
   return (
     <nav aria-label="On this page" className="sticky top-24">
-      <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500">
+      <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-subtle">
         On this page
       </p>
       {list}

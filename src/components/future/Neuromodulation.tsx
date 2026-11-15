@@ -31,7 +31,7 @@ const LEVELS = [
 
 function LevelsFigure() {
   return (
-    <Figure caption="Neuromodulation now acts at every level of the pain pathway – from the brain down to a single peripheral nerve.">
+    <Figure caption="Neuromodulation now acts at every level of the pain pathway, from the brain down to a single peripheral nerve.">
       <svg
         role="img"
         aria-labelledby="nm-title nm-desc"
@@ -82,7 +82,7 @@ export default function Neuromodulation() {
       <P>
         Some of the biggest advances in pain treatment are not drugs at all.
         Neuromodulation uses precisely placed electricity to change how pain
-        signals travel – and over the past decade it has gone from a blunt
+        signals travel, and over the past decade it has gone from a blunt
         instrument to something closer to a tuned one.
       </P>
 
@@ -98,7 +98,7 @@ export default function Neuromodulation() {
           </>,
           <>
             <strong>DRG and peripheral nerve stimulation</strong> aim at the
-            exact spot – one nerve cluster or a single nerve – for focal pain
+            exact spot, one nerve cluster or a single nerve, for focal pain
             such as CRPS.
           </>,
           <>
@@ -116,12 +116,12 @@ export default function Neuromodulation() {
         spinal &ldquo;gate&rdquo; described in{" "}
         <Link
           href="/understanding-pain/how-pain-works"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           how pain works
         </Link>
         : activity on large nerve fibers helps close the gate on pain signals.
-        It helps many people – but the tingling is a constant reminder, and the
+        It helps many people, but the tingling is a constant reminder, and the
         setting never changes as you move.
       </P>
 
@@ -140,7 +140,7 @@ export default function Neuromodulation() {
       <P>
         The bigger leap is <strong>closed-loop</strong> stimulation. An
         FDA-approved system now measures the spinal cord&rsquo;s own electrical
-        response to each pulse – a signal called an ECAP – and adjusts the next
+        response to each pulse, a signal called an ECAP, and adjusts the next
         pulse more than a hundred times a second. Instead of a fixed dose of
         electricity, the device keeps the stimulation on target as you move,
         cough, or shift position, and it outperformed conventional open-loop
@@ -153,7 +153,7 @@ export default function Neuromodulation() {
         Stimulation can also be pointed at exactly the right spot.{" "}
         <strong>Dorsal root ganglion (DRG) stimulation</strong>, FDA-approved in
         2016, targets the small bundle of nerve cell bodies that serves one
-        region of the body – which makes it valuable for focal, hard-to-treat
+        region of the body, which makes it valuable for focal, hard-to-treat
         pain such as complex regional pain syndrome, where it outperformed
         standard stimulation in the pivotal ACCURATE trial. Peripheral nerve
         stimulation goes further still, treating a single nerve near the source
@@ -168,8 +168,8 @@ export default function Neuromodulation() {
         magnetic or electrical pulses through the scalp to the brain&rsquo;s
         motor cortex. Studies suggest it can ease some drug-resistant nerve pain
         and fibromyalgia, though the evidence is still mixed and the technique is
-        not yet a settled part of routine care. It is a frontier worth watching
-        honestly, neither dismissed nor oversold.
+        not yet a settled part of routine care. It is a frontier worth watching,
+        neither dismissed nor oversold.
       </P>
 
       <H2 id="arc">The through-line</H2>
@@ -180,7 +180,7 @@ export default function Neuromodulation() {
         it. See where each device sits among everything in development in the{" "}
         <Link
           href="/future-of-pain-medicine/pipeline"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           pain treatment pipeline
         </Link>

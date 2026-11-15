@@ -22,10 +22,10 @@ const MODALITY_TINT: Record<Modality, { fill: string; text: string }> = {
 
 const PHASE_BADGE: Record<Phase, string> = {
   Approved: "bg-teal-600 text-white",
-  "Phase 3": "bg-teal-100 dark:bg-teal-900/40 text-teal-800 dark:text-teal-300",
+  "Phase 3": "bg-teal-100 dark:bg-teal-900/40 text-brand-strong",
   "Phase 2": "bg-amber-100 dark:bg-amber-900/30 text-amber-800 dark:text-amber-300",
-  "Phase 1": "bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300",
-  Discontinued: "bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 line-through decoration-slate-400 dark:decoration-slate-500",
+  "Phase 1": "bg-sunken text-body",
+  Discontinued: "bg-sunken text-subtle line-through decoration-slate-400 dark:decoration-slate-500",
 };
 
 const PHASE_GROUP_LABEL: Record<Phase, string> = {
@@ -252,7 +252,7 @@ function LandscapeFigure() {
 }
 function CandidateCard({ c }: { c: Candidate }) {
   return (
-    <li className="overflow-hidden rounded-xl border border-slate-200 dark:border-slate-800">
+    <li className="overflow-hidden rounded-xl border border-line">
       <div className="flex">
         <span
           aria-hidden="true"
@@ -265,9 +265,9 @@ function CandidateCard({ c }: { c: Candidate }) {
         <div className="min-w-0 flex-1 p-5">
       <div className="flex items-start justify-between gap-4">
         <div>
-          <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100">{c.name}</h3>
+          <h3 className="text-lg font-semibold text-ink">{c.name}</h3>
           {c.code && (
-            <p className="text-sm text-slate-500 dark:text-slate-400">{c.code}</p>
+            <p className="text-sm text-subtle">{c.code}</p>
           )}
         </div>
         <span
@@ -279,36 +279,36 @@ function CandidateCard({ c }: { c: Candidate }) {
 
       <dl className="mt-3 grid grid-cols-1 gap-x-6 gap-y-1.5 text-sm sm:grid-cols-2">
         <div className="flex gap-2">
-          <dt className="shrink-0 font-medium text-slate-500 dark:text-slate-400">Mechanism</dt>
-          <dd className="text-slate-700 dark:text-slate-300">{c.mechanism}</dd>
+          <dt className="shrink-0 font-medium text-subtle">Mechanism</dt>
+          <dd className="text-body">{c.mechanism}</dd>
         </div>
         <div className="flex gap-2">
-          <dt className="shrink-0 font-medium text-slate-500 dark:text-slate-400">Type</dt>
-          <dd className="text-slate-700 dark:text-slate-300">{c.modality}</dd>
+          <dt className="shrink-0 font-medium text-subtle">Type</dt>
+          <dd className="text-body">{c.modality}</dd>
         </div>
         <div className="flex gap-2 sm:col-span-2">
-          <dt className="shrink-0 font-medium text-slate-500 dark:text-slate-400">For</dt>
-          <dd className="text-slate-700 dark:text-slate-300">{c.indication}</dd>
+          <dt className="shrink-0 font-medium text-subtle">For</dt>
+          <dd className="text-body">{c.indication}</dd>
         </div>
         <div className="flex gap-2 sm:col-span-2">
-          <dt className="shrink-0 font-medium text-slate-500 dark:text-slate-400">Sponsor</dt>
-          <dd className="text-slate-700 dark:text-slate-300">{c.sponsor}</dd>
+          <dt className="shrink-0 font-medium text-subtle">Sponsor</dt>
+          <dd className="text-body">{c.sponsor}</dd>
         </div>
       </dl>
 
-      <p className="mt-3 text-slate-700 dark:text-slate-300">{c.why}</p>
-      {c.note && <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">{c.note}</p>}
+      <p className="mt-3 text-body">{c.why}</p>
+      {c.note && <p className="mt-2 text-sm text-subtle">{c.note}</p>}
 
       <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
         <a
           href={c.source.url}
           target="_blank"
           rel="noopener noreferrer nofollow"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           {c.source.label}
         </a>
-        <span className="text-slate-400 dark:text-slate-500">· status checked {c.updated}</span>
+        <span className="text-subtle">· status checked {c.updated}</span>
       </div>
         </div>
       </div>
@@ -356,7 +356,7 @@ export default function PipelineTracker() {
         For most of the last forty years, treating pain meant choosing among old
         drug classes – opioids, anti-inflammatories, a handful of nerve-pain
         medicines borrowed from other fields. That has started to change. Below
-        is what is actually moving through development now: what each candidate
+        is what is moving through development now: what each candidate
         is, how it works, and how far along it is.
       </P>
 
@@ -378,8 +378,7 @@ export default function PipelineTracker() {
         A word on how to read it, because this is a page where honesty matters
         more than hype. A candidate in a trial is <strong>not</strong> an
         available treatment, and most investigational drugs never reach patients
-        at all. Only the entries marked <em>Approved</em> are cleared for use –
-        and even then only for the specific condition on their label. This is
+        at all. Only the entries marked <em>Approved</em> are cleared for use, and even then only for the specific condition on their label. This is
         reporting on the science, not medical advice; decisions belong with your
         clinician.
       </P>
@@ -396,7 +395,7 @@ export default function PipelineTracker() {
           <section key={phase} aria-labelledby={`grp-${phase}`}>
             <H2 id={`grp-${phase}`}>
               {PHASE_GROUP_LABEL[phase]}
-              <span className="ml-2 text-base font-normal text-slate-400 dark:text-slate-500">
+              <span data-toc-skip className="ml-2 text-base font-normal text-subtle">
                 {list.length}
               </span>
             </H2>
@@ -422,13 +421,13 @@ export default function PipelineTracker() {
           href="https://clinicaltrials.gov/"
           target="_blank"
           rel="noopener noreferrer nofollow"
-          className="text-teal-700 dark:text-teal-300 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
         >
           ClinicalTrials.gov
         </a>{" "}
         and with your care team.
       </P>
-      <p className="mt-4 text-sm text-slate-500 dark:text-slate-400">
+      <p className="mt-4 text-sm text-subtle">
         This tracker covers {CANDIDATES.length} notable candidates and is not
         exhaustive – the full pain pipeline runs to hundreds of programs. It
         favors candidates that are late-stage, first-in-class, or otherwise
