@@ -40,8 +40,8 @@ function LevelsFigure() {
       >
         <title id="nm-title">Where neuromodulation acts</title>
         <desc id="nm-desc">
-          A vertical map of the nervous system – brain, spinal cord, dorsal root
-          ganglion, and peripheral nerve – each paired with the stimulation
+          A vertical map of the nervous system (brain, spinal cord, dorsal root
+          ganglion, and peripheral nerve) each paired with the stimulation
           technique that targets it.
         </desc>
 
@@ -116,7 +116,7 @@ export default function Neuromodulation() {
         spinal &ldquo;gate&rdquo; described in{" "}
         <Link
           href="/understanding-pain/how-pain-works"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           how pain works
         </Link>
@@ -180,7 +180,7 @@ export default function Neuromodulation() {
         it. See where each device sits among everything in development in the{" "}
         <Link
           href="/future-of-pain-medicine/pipeline"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           pain treatment pipeline
         </Link>

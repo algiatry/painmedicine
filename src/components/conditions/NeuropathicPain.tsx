@@ -4,7 +4,7 @@ import { FIG } from "@/lib/fig";
 import { BodyFront } from "../anatomy/BodyOutline";
 
 const link =
-  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
 /**
  * Figure 1 – the broken alarm wiring: a healthy nerve that signals only when
@@ -33,7 +33,7 @@ function WiringFigure() {
     </g>
   );
   return (
-    <Figure caption="The fault behind neuropathic pain: a healthy nerve carries signals only when something happens to it. A damaged nerve – its insulation patchy, its channels overactive – fires spontaneously, and fires at things that should not hurt.">
+    <Figure caption="The fault behind neuropathic pain: a healthy nerve carries signals only when something happens to it. A damaged nerve (its insulation patchy, its channels overactive) fires spontaneously, and fires at things that should not hurt.">
       <svg
         role="img"
         aria-labelledby="wire-title wire-desc"
@@ -169,7 +169,7 @@ export default function NeuropathicPain() {
         messenger has become the message. That single fact explains nearly
         everything strange about it: why it feels electric, why it strikes
         without provocation, why a bedsheet can hurt, and why the usual
-        painkillers so often shrug. It is also common – studies put
+        painkillers so often shrug. It is also common: studies put
         neuropathic pain at roughly <strong>7 to 10% of adults</strong>,
         making it one of the largest and most under-recognized territories in
         pain medicine.
@@ -200,7 +200,7 @@ export default function NeuropathicPain() {
         a region that is <em>numb and in pain at the same time</em>, because
         the same damage that loses real signal also manufactures false
         signal. If that paradox describes you, nothing is contradictory
-        about your body – it is the textbook picture of{" "}
+        about your body; it is the textbook picture of{" "}
         <Link href="/understanding-pain/types-of-pain" className={link}>
           neuropathic pain
         </Link>
@@ -215,7 +215,7 @@ export default function NeuropathicPain() {
         vulnerability: a nerve struggling metabolically fails from its
         farthest tip backward, the way a city&rsquo;s outermost suburbs lose
         power first. So peripheral neuropathy classically announces itself in
-        the toes and soles – burning, tingling, numbness, often worst at
+        the toes and soles: burning, tingling, numbness, often worst at
         night, and creeps upward, with the hands joining once the damage
         reaches nerves of <em>their</em> length. <strong>Diabetes</strong> is
         the leading cause of this pattern in the developed world. But the
@@ -235,14 +235,14 @@ export default function NeuropathicPain() {
 
       <H2 id="recognizing">How it&rsquo;s recognized</H2>
       <P>
-        The diagnosis starts with vocabulary – burning, shooting, electric,
+        The diagnosis starts with vocabulary: burning, shooting, electric,
         pins and needles are pointing words, and with geography: neuropathic
         pain lives in nerve territory, whether a stocking, a single root&rsquo;s
         line down a leg, or a band of old shingles rash. The exam maps where
         sensation is heightened, lost, or both. Testing then works backward
         toward a cause: nerve-conduction studies assess the large, insulated
         fibers; a small skin biopsy can count the small fibers those studies
-        miss; and blood work screens the treatable drivers – glucose,
+        miss; and blood work screens the treatable drivers: glucose,
         vitamin B12, thyroid, and others. The cause hunt matters, because
         the most effective move against neuropathic pain is often aimed at the cause
         rather than the pain.

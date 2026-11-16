@@ -4,7 +4,7 @@ import { FIG } from "@/lib/fig";
 import { SynovialJoint } from "../anatomy/SynovialJoint";
 
 const link =
-  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
 /**
  * Figure 1 – one word, three joints: healthy, osteoarthritis, inflammatory.
@@ -145,8 +145,8 @@ export default function ArthritisPain() {
         treatments. For a person in pain, nearly everything worth knowing
         comes down to one distinction. <strong>Osteoarthritis</strong>, by
         far the most common, is a disease of the joint&rsquo;s own tissues.{" "}
-        <strong>Inflammatory arthritis</strong> – rheumatoid arthritis,
-        psoriatic arthritis, gout – is the immune system attacking the
+        <strong>Inflammatory arthritis</strong> (rheumatoid arthritis,
+        psoriatic arthritis, gout) is the immune system attacking the
         joint. One is managed over years; the other is, at its outset, a
         race. This page is about learning which story your joints are
         telling.

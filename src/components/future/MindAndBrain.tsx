@@ -46,8 +46,8 @@ function BrainFigure() {
       >
         <title id="mb-title">Retraining the brain that builds pain</title>
         <desc id="mb-desc">
-          A brain at the top with three approaches below – pain reprocessing
-          therapy, virtual reality, and psychedelics research – each connected
+          A brain at the top with three approaches below (pain reprocessing
+          therapy, virtual reality, and psychedelics research) each connected
           upward to it.
         </desc>
 
@@ -109,7 +109,7 @@ export default function MindAndBrain() {
         the body, as{" "}
         <Link
           href="/understanding-pain/how-pain-works"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           how pain works
         </Link>{" "}

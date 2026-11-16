@@ -61,7 +61,7 @@ function BoardChip({
     return (
       <span className="inline-flex items-baseline gap-1.5 rounded-md border border-dashed border-slate-300 bg-white px-2 py-1.5 text-[12.5px] font-semibold leading-none tracking-tight text-slate-500">
         {label}
-        <span className="text-[11px] font-medium text-slate-400">
+        <span className="text-[11px] font-medium text-slate-500">
           {c.modality.toLowerCase()}
         </span>
       </span>
@@ -107,7 +107,7 @@ function LandscapeFigure() {
     >
       <div className="min-w-[43rem]">
         <p
-          className="fig-fade mb-3 text-right text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-400"
+          className="fig-fade mb-3 text-right text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500"
           style={anim(0.05)}
         >
           closer to patients <span aria-hidden="true">→</span>
@@ -228,7 +228,7 @@ function LandscapeFigure() {
               <tr className="fig-fade" style={anim(0.55)}>
                 <th
                   scope="row"
-                  className="pt-5 pr-3 text-right align-middle text-[12px] font-semibold text-slate-400"
+                  className="pt-5 pr-3 text-right align-middle text-[12px] font-semibold text-slate-500"
                 >
                   Halted
                 </th>
@@ -304,7 +304,7 @@ function CandidateCard({ c }: { c: Candidate }) {
           href={c.source.url}
           target="_blank"
           rel="noopener noreferrer nofollow"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           {c.source.label}
         </a>
@@ -421,7 +421,7 @@ export default function PipelineTracker() {
           href="https://clinicaltrials.gov/"
           target="_blank"
           rel="noopener noreferrer nofollow"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           ClinicalTrials.gov
         </a>{" "}

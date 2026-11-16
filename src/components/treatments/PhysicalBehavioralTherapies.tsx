@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
 /**
  * Figure 1 – two levers on the same dial: physical therapies raise capacity,
@@ -155,8 +155,8 @@ export default function PhysicalBehavioralTherapies() {
       <P>
         Here is a strange fact about chronic pain treatment: the approaches
         holding the <strong>strongest recommendations in guideline after
-        guideline</strong> – graded exercise, physical therapy, cognitive
-        behavioral therapy – are the ones patients are most likely to hear
+        guideline</strong> (graded exercise, physical therapy, cognitive
+        behavioral therapy) are the ones patients are most likely to hear
         offered as an afterthought, or receive as a photocopied sheet on
         the way out. This page gives the active therapies their real
         standing. They are not consolation prizes for pain that pills
@@ -254,8 +254,8 @@ export default function PhysicalBehavioralTherapies() {
       <P>
         The behavioral therapies work the other lever, and their evidence
         deserves plain statement. <strong>Cognitive behavioral
-        therapy</strong> for pain – retraining the thoughts, fears, and
-        behaviors that amplify it – shows reliable, usually modest
+        therapy</strong> for pain (retraining the thoughts, fears, and
+        behaviors that amplify it) shows reliable, usually modest
         benefits for pain and disability across dozens of randomized
         trials in the Cochrane review. <strong>Mindfulness-based stress
         reduction</strong> went head-to-head with CBT for chronic low

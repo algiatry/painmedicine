@@ -189,7 +189,7 @@ export default function ThreeTypesOfPain() {
         It is closely tied to the central sensitization described in{" "}
         <Link
           href="/understanding-pain/how-pain-works"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           how pain works
         </Link>{" "}

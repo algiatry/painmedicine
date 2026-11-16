@@ -172,7 +172,7 @@ export default function BiologicsGeneTherapy() {
         young. Follow the specific candidates by trial phase in the{" "}
         <Link
           href="/future-of-pain-medicine/pipeline"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           pain treatment pipeline
         </Link>

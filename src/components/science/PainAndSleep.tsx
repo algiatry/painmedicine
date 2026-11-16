@@ -250,7 +250,7 @@ export default function PainAndSleep() {
         of the systems described in{" "}
         <Link
           href="/understanding-pain/how-pain-works"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           how pain works
         </Link>
@@ -296,8 +296,8 @@ export default function PainAndSleep() {
         it gives you back the nights.
       </P>
       <P>
-        Basic sleep habits – consistent times, a dark and cool room, caution
-        with late caffeine and screens – are laid out well in the NIH&rsquo;s
+        Basic sleep habits (consistent times, a dark and cool room, caution
+        with late caffeine and screens) are laid out well in the NIH&rsquo;s
         patient guides. If pain is what keeps waking you, or you suspect a sleep
         disorder such as sleep apnea, raise it directly with your clinician:
         sleep is a legitimate treatment target in its own right, not a

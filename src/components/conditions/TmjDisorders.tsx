@@ -5,7 +5,7 @@ import { HeadProfile, HEAD_W, HEAD_H } from "../anatomy/HeadProfile";
 import { SiteMarker } from "../anatomy/marks";
 
 const link =
-  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
 /**
  * Figure 1 – where TMD hurts: the joint in front of the ear, and the two
@@ -249,7 +249,7 @@ export default function TmjDisorders() {
       </P>
       <ul className="mt-4 space-y-3 text-body">
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Self-management first.</strong> Softer foods during a
             flare, avoiding gum and wide yawns, heat on the muscles, gentle
@@ -259,7 +259,7 @@ export default function TmjDisorders() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Physical therapy and behavioral care.</strong> Exercises,
             manual therapy, and cognitive behavioral approaches for the stress
@@ -272,7 +272,7 @@ export default function TmjDisorders() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Oral appliances.</strong> A stabilization splint worn at
             night can reduce muscle pain in some people. Its role is to unload
@@ -281,7 +281,7 @@ export default function TmjDisorders() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Medications.</strong> Short courses of anti-inflammatory
             drugs for flares, and for persistent pain the same
@@ -293,7 +293,7 @@ export default function TmjDisorders() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Joint procedures, rarely.</strong> Flushing the joint
             (arthrocentesis) or arthroscopy is reserved for a locked or

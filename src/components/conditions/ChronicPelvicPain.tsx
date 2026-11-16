@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
 /**
  * Figure 1 – one neighborhood, many tenants. The pelvis packs bladder,
@@ -186,7 +186,7 @@ export default function ChronicPelvicPain() {
       </P>
       <ul className="mt-4 space-y-3 text-body">
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Pelvic floor muscle pain.</strong> The most common and
             most overlooked. Muscles that clench in response to pain, stress,
@@ -196,7 +196,7 @@ export default function ChronicPelvicPain() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Endometriosis.</strong> Tissue like the uterine lining
             growing outside the uterus, covered in its own guide:{" "}
@@ -208,7 +208,7 @@ export default function ChronicPelvicPain() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Bladder pain syndrome (interstitial cystitis).</strong>{" "}
             Bladder pain that builds as it fills and eases with emptying, with
@@ -216,7 +216,7 @@ export default function ChronicPelvicPain() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Irritable bowel syndrome.</strong> Cramping tied to bowel
             habit. It shares nerve supply and sensitization mechanisms with the
@@ -224,7 +224,7 @@ export default function ChronicPelvicPain() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Chronic prostatitis / CPPS in men.</strong> The NIH
             classification (1999) reserved a true bacterial cause for a small
@@ -234,7 +234,7 @@ export default function ChronicPelvicPain() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Nerve entrapment and post-surgical pain.</strong> The
             pudendal, ilioinguinal, and related nerves can be compressed or
@@ -270,7 +270,7 @@ export default function ChronicPelvicPain() {
       </P>
       <ul className="mt-4 space-y-3 text-body">
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Pelvic floor physical therapy.</strong> The strongest
             single trial in the field: in women with bladder pain syndrome and
@@ -282,7 +282,7 @@ export default function ChronicPelvicPain() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Organ-directed treatment where an organ is involved.</strong>{" "}
             Hormonal therapy or surgery for endometriosis, bladder-directed
@@ -292,7 +292,7 @@ export default function ChronicPelvicPain() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Nervous-system medications.</strong> For the sensitized
             component, the same classes used for other centralized pain, with
@@ -305,7 +305,7 @@ export default function ChronicPelvicPain() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Targeted injections and neuromodulation.</strong> Trigger
             point injections, nerve blocks for an entrapped nerve, and in
@@ -317,7 +317,7 @@ export default function ChronicPelvicPain() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Psychological and pain-science care.</strong> The pain is not
             psychological. A pelvis that has hurt for years has trained the

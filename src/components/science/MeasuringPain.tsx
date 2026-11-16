@@ -258,8 +258,7 @@ export default function MeasuringPain() {
 
       <H2 id="the-dol">The unit of pain that almost was</H2>
       <P>
-        Science did try to give pain a unit. In the 1940s a Cornell team –
-        James Hardy, Harold Wolff and Helen Goodell – built an instrument
+        Science did try to give pain a unit. In the 1940s a Cornell team (James Hardy, Harold Wolff and Helen Goodell) built an instrument
         called the <strong>dolorimeter</strong>: a lamp that focused a precise
         dose of radiant heat onto a small patch of skin, usually the forehead,
         blackened with ink so that every complexion absorbed the same energy.
@@ -291,7 +290,7 @@ export default function MeasuringPain() {
         it&rsquo;s an experience the brain assembles, shaped by{" "}
         <Link
           href="/understanding-pain/pain-and-emotion"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           attention, emotion and context
         </Link>
@@ -306,23 +305,23 @@ export default function MeasuringPain() {
       </P>
       <ul className="mt-4 space-y-3 text-body">
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
-            <strong>The 0-to-10 numeric scale</strong> – fast, needs no props,
+            <strong>The 0-to-10 numeric scale</strong>: fast, needs no props,
             and works over the phone. The everyday workhorse.
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
-            <strong>Faces scales</strong> – a row of expressions, well suited to
+            <strong>Faces scales</strong>: a row of expressions, well suited to
             young children and to anyone who has trouble with numbers or words.
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
-            <strong>Questionnaires</strong> – tools like the McGill Pain
+            <strong>Questionnaires</strong>: tools like the McGill Pain
             Questionnaire and the Brief Pain Inventory go further, asking about
             the <em>quality</em> of pain and how much it interferes with your
             life.
@@ -350,13 +349,13 @@ export default function MeasuringPain() {
       </P>
       <ul className="mt-4 space-y-3 text-body">
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
-            <strong>Quality</strong> – burning, aching, stabbing, throbbing,
+            <strong>Quality</strong>: burning, aching, stabbing, throbbing,
             electric? The words point toward the{" "}
             <Link
               href="/understanding-pain/types-of-pain"
-              className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+              className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
             >
               type of pain
             </Link>
@@ -364,23 +363,23 @@ export default function MeasuringPain() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
-            <strong>Pattern and triggers</strong> – constant or in flares? What
+            <strong>Pattern and triggers</strong>: constant or in flares? What
             makes it better or worse?
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
-            <strong>Function</strong> – what does it stop you from doing? This is
+            <strong>Function</strong>: what does it stop you from doing? This is
             often the most useful thing you can report.
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
-            <strong>Sleep and mood</strong> – these both feed back into pain, so
+            <strong>Sleep and mood</strong>: these both feed back into pain, so
             they are part of the picture, not a distraction from it.
           </span>
         </li>

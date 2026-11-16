@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
 /**
  * /treatments/opioids-for-acute-pain – what the largest overview of the
@@ -118,8 +118,8 @@ export default function OpioidsForAcutePain() {
         For a broken arm or a badly sprained ankle, is ibuprofen really in the
         same league? A 2017 randomized trial in two New York emergency
         departments, published in <em>JAMA</em>, tested exactly that. Over
-        400 adults with moderate-to-severe arm or leg injuries – mostly
-        fractures, sprains, and soft-tissue injuries – received a single dose
+        400 adults with moderate-to-severe arm or leg injuries (mostly
+        fractures, sprains, and soft-tissue injuries) received a single dose
         of either <strong>ibuprofen plus acetaminophen</strong> or one of
         three opioid-plus-acetaminophen combinations (oxycodone, hydrocodone,
         or codeine). Two hours later, pain had fallen by about four points on

@@ -246,7 +246,7 @@ export default function PainAndEmotion() {
         felt. It is the system described in{" "}
         <Link
           href="/understanding-pain/how-pain-works"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           how pain works
         </Link>
@@ -312,7 +312,7 @@ export default function PainAndEmotion() {
         the therapies described in{" "}
         <Link
           href="/future-of-pain-medicine/mind-and-brain"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           the mind and the brain
         </Link>{" "}

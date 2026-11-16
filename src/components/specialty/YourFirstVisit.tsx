@@ -117,14 +117,14 @@ export default function YourFirstVisit() {
       </P>
       <ul className="mt-4 space-y-3 text-body">
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>A complete medication list with doses</strong> – including
             everything already tried for this pain, and what happened with each.
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Records and imaging</strong> – prior notes, MRI/CT results,
             or the contact details of the clinicians who hold them so they can
@@ -132,21 +132,21 @@ export default function YourFirstVisit() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Your referring doctor&rsquo;s information</strong> and your
             insurance card.
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>A pain diary or notes</strong>, if you keep them, even a
             week of entries on flares, triggers, and what pain stops you from
             doing.{" "}
             <Link
               href="/understanding-pain/measuring-pain"
-              className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+              className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
             >
               Measuring pain
             </Link>{" "}
@@ -166,7 +166,7 @@ export default function YourFirstVisit() {
         and relationships. Those are not detours: as the science in{" "}
         <Link
           href="/understanding-pain/pain-and-emotion"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           pain and emotion
         </Link>{" "}
@@ -201,7 +201,7 @@ export default function YourFirstVisit() {
         <em>with</em> you, often spanning several of the{" "}
         <Link
           href="/what-is-pain-medicine/the-pain-team"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           pain team&rsquo;s
         </Link>{" "}
@@ -209,7 +209,7 @@ export default function YourFirstVisit() {
         Bring your own questions too; the{" "}
         <Link
           href="/find-help"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           find help
         </Link>{" "}

@@ -123,7 +123,7 @@ function scanText(page: string, text: string, origin: string) {
 
 /* ------------------------------------------------------ house-style tics */
 
-const TIC_CAPS = { dashesPer1000: 10, honest: 5, actually: 1 } as const;
+const TIC_CAPS = { dashesPer1000: 8, honest: 5, actually: 1 } as const;
 
 /* ------------------------------------------------------- review status */
 

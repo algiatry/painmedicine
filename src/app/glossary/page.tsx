@@ -68,7 +68,7 @@ export default function GlossaryPage() {
           <a
             key={g.letter}
             href={`#letter-${g.letter}`}
-            className="flex h-8 w-8 items-center justify-center rounded-md border border-line text-sm font-semibold text-brand hover:border-teal-600 hover:bg-note"
+            className="flex h-8 w-8 items-center justify-center rounded-md border border-line text-sm font-semibold text-brand hover:border-brand hover:bg-note"
           >
             {g.letter}
           </a>
@@ -95,7 +95,7 @@ export default function GlossaryPage() {
                         {" "}
                         <Link
                           href={t.href}
-                          className="whitespace-nowrap text-sm font-medium text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+                          className="whitespace-nowrap text-sm font-medium text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
                         >
                           Learn more →
                         </Link>

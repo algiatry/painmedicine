@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "@/components/science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
 /**
  * /treatments/buprenorphine-for-pain – a partial-agonist opioid that is
@@ -212,8 +212,8 @@ export default function BuprenorphineForPain() {
       <P>
         Part of the confusion is that &ldquo;buprenorphine&rdquo; is really
         two shelves of medicine. The products approved for{" "}
-        <strong>opioid use disorder</strong> – Suboxone and its generics,
-        Sublocade, and others – are films, tablets, or injections, often
+        <strong>opioid use disorder</strong> (Suboxone and its generics,
+        Sublocade, and others) are films, tablets, or injections, often
         combined with naloxone, built to hold a person steady and stop
         withdrawal and craving. The products approved for{" "}
         <strong>pain</strong> are different: <strong>Butrans</strong> is a

@@ -444,7 +444,7 @@ export const CONDITION_ARTICLES: Article[] = [
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
-      "Arthritis is an umbrella word for over a hundred joint conditions, but two families cover most of it. Osteoarthritis, the most common by far, is a whole-joint disease of cartilage, bone, and lining, not simple “wear and tear.” Inflammatory arthritis – rheumatoid, psoriatic, gout – is the immune system attacking the joint. Telling them apart matters, because one is managed and the other is a race.",
+      "Arthritis is an umbrella word for over a hundred joint conditions, but two families cover most of it. Osteoarthritis, the most common by far, is a whole-joint disease of cartilage, bone, and lining, not simple “wear and tear.” Inflammatory arthritis (rheumatoid, psoriatic, gout) is the immune system attacking the joint. Telling them apart matters, because one is managed and the other is a race.",
     faqs: [
       {
         question: "What is the difference between osteoarthritis and rheumatoid arthritis?",
@@ -548,7 +548,7 @@ export const CONDITION_ARTICLES: Article[] = [
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
-      "Fibromyalgia is chronic widespread pain – both sides of the body, above and below the waist – traveling with fatigue, unrefreshing sleep, and thinking difficulties. It affects roughly 2–4% of people, and modern research locates the problem in a sensitized pain system: the nervous system's volume control turned up. That is measurable biology, not imagination, and it points to treatments that retrain the system rather than mask it.",
+      "Fibromyalgia is chronic widespread pain (both sides of the body, above and below the waist) traveling with fatigue, unrefreshing sleep, and thinking difficulties. It affects roughly 2–4% of people, and modern research locates the problem in a sensitized pain system: the nervous system's volume control turned up. That is measurable biology, not imagination, and it points to treatments that retrain the system rather than mask it.",
     faqs: [
       {
         question: "Is fibromyalgia a real disease or is it in my head?",
@@ -568,7 +568,7 @@ export const CONDITION_ARTICLES: Article[] = [
       {
         question: "What is fibro fog?",
         answer:
-          "The cognitive side of fibromyalgia: trouble concentrating, finding words, and holding a thread, often as disabling as the pain. It appears to arise from the same sources as the rest of the condition: a nervous system spending resources on amplified pain traffic, plus unrefreshing sleep compounding everything. It is not dementia and does not progress like one. The treatments that calm the overall condition – sleep, graded activity, pacing – are the ones that thin the fog.",
+          "The cognitive side of fibromyalgia: trouble concentrating, finding words, and holding a thread, often as disabling as the pain. It appears to arise from the same sources as the rest of the condition: a nervous system spending resources on amplified pain traffic, plus unrefreshing sleep compounding everything. It is not dementia and does not progress like one. The treatments that calm the overall condition (sleep, graded activity, pacing) are the ones that thin the fog.",
       },
       {
         question: "What helps fibromyalgia?",

@@ -33,12 +33,12 @@ export default function ReviewByline({
   if (review && profile && status === "reviewed") {
     const due = review.reviewDue ?? defaultReviewDue(hub ?? "", review.reviewedAt);
     return (
-      <div className="flex flex-col gap-1 border-l-2 border-teal-600 pl-4 text-sm text-subtle">
+      <div className="flex flex-col gap-1 border-l-2 border-brand pl-4 text-sm text-subtle">
         <p>
           Medically reviewed by{" "}
           <Link
             href={`/reviewers/${profile.slug}`}
-            className="font-medium text-body underline decoration-teal-600/40 underline-offset-2 hover:text-brand"
+            className="font-medium text-body underline decoration-brand/40 underline-offset-2 hover:text-brand"
           >
             {profile.name}, {profile.credentials}
           </Link>{" "}

@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
 /**
  * Figure 1 – the evidence map: certainty of evidence (x) against typical
@@ -190,7 +190,7 @@ export default function ComparingYourOptions() {
       <KeyTakeaways
         items={[
           <>
-            <strong>No treatment wins across the board</strong> – nearly everything helps modestly, and the real differences lie in certainty, durability, safety, and mechanism fit.
+            <strong>No treatment wins across the board</strong>: nearly everything helps modestly, and the real differences lie in certainty, durability, safety, and mechanism fit.
           </>,
           <>
             Exercise, active rehabilitation, and behavioral therapies sit on the <strong>high-certainty shore</strong>: modest on average, durable, and essentially risk-free, which is why guidelines start there.
@@ -224,7 +224,7 @@ export default function ComparingYourOptions() {
         <Link href="/treatments/medications-for-pain" className={link}>
           nerve-pain drugs
         </Link>
-        : larger effects, but only in the right patient – a stimulator
+        : larger effects, but only in the right patient; a stimulator
         transforms a matched candidate and does nothing for anyone else.
         Everything about using this map well follows from one habit:
         never ask &ldquo;does it work?&rdquo; without adding{" "}
@@ -324,7 +324,7 @@ export default function ComparingYourOptions() {
         The map narrows your options; personal trials decide them. The
         method is simple and rarely followed: change{" "}
         <strong>one thing at a time</strong>; define success as a{" "}
-        <strong>functional target</strong> – the walk, the workday, the
+        <strong>functional target</strong>: the walk, the workday, the
         night&rsquo;s sleep, not only a{" "}
         <Link href="/understanding-pain/measuring-pain" className={link}>
           pain score

@@ -73,7 +73,7 @@ export default async function HubPage({
       <section aria-labelledby={`${hub.slug}-coverage`} className="mt-12">
         <h2
           id={`${hub.slug}-coverage`}
-          className="text-xl font-semibold text-ink"
+          className="text-2xl font-bold tracking-tight text-ink"
         >
           {hub.planned.some((p) => p.href)
             ? "Explore this section"
@@ -85,7 +85,7 @@ export default async function HubPage({
               <li key={item.title}>
                 <Link
                   href={item.href}
-                  className="card-lift group flex items-start gap-4 rounded-xl border border-line bg-surface p-5 hover:border-teal-600/70"
+                  className="card-lift group flex items-start gap-4 rounded-xl border border-line bg-surface p-5 hover:border-brand/70"
                 >
                   <span className="flex size-12 shrink-0 items-center justify-center rounded-lg border border-edge bg-plate">
                     <ArticleEmblem
@@ -126,7 +126,7 @@ export default async function HubPage({
         <section aria-labelledby={`${hub.slug}-faq`} className="mt-12">
           <h2
             id={`${hub.slug}-faq`}
-            className="text-xl font-semibold text-ink"
+            className="text-2xl font-bold tracking-tight text-ink"
           >
             Frequently asked questions
           </h2>

@@ -150,7 +150,7 @@ export default async function ArticlePage({
                   href={ref.url}
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+                  className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
                 >
                   {ref.title}
                 </a>

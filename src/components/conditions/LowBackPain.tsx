@@ -3,7 +3,7 @@ import { Callout, Figure, H2, KeyTakeaways, P, PullQuote } from "../science/Figu
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
 /**
  * Figure 1 – the pain-generator map: a stylized lumbar segment with every
@@ -261,8 +261,7 @@ export default function LowBackPain() {
         That is why major guidelines advise <em>against</em> routine early
         imaging for low back pain unless red flags or significant nerve
         symptoms are present. A scan ordered too early rarely changes
-        treatment, but it reliably produces alarming-sounding words –
-        degeneration, bulge, desiccation – that can make a recovering back
+        treatment, but it reliably produces alarming-sounding words (degeneration, bulge, desiccation) that can make a recovering back
         feel more fragile than it is. The reverse is equally important: a
         normal scan does not mean the pain isn&rsquo;t real.{" "}
         <Link href="/understanding-pain/how-pain-works" className={link}>

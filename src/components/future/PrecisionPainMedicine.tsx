@@ -120,7 +120,7 @@ export default function PrecisionPainMedicine() {
       <H2 id="genes">Your genes and your painkillers</H2>
       <P>
         The clearest example is already in your medical record&rsquo;s reach.
-        Codeine does nothing on its own – your body has to convert it into
+        Codeine does nothing on its own; your body has to convert it into
         morphine, using an enzyme built by the gene{" "}
         <strong>CYP2D6</strong>. But people carry different versions of that
         gene. <strong>Poor metabolizers</strong> convert very little and get
@@ -149,7 +149,7 @@ export default function PrecisionPainMedicine() {
         nociplastic distinction in{" "}
         <Link
           href="/understanding-pain/types-of-pain"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           the three types of pain
         </Link>
@@ -170,12 +170,12 @@ export default function PrecisionPainMedicine() {
         rough objective signal would change how pain is diagnosed.
       </P>
 
-      <H2 id="ai">Where AI fits – carefully</H2>
+      <H2 id="ai">Where AI fits, carefully</H2>
       <P>
         Machine learning is being applied to some of these problems: reading
         imaging, spotting patterns across large datasets, and estimating the risk
         that acute pain will turn chronic. It is early, and it carries real risks
-        of bias if trained on incomplete data – pain has a long history of being
+        of bias if trained on incomplete data: pain has a long history of being
         under-recognized in some groups. Treated as a tool to support clinicians
         rather than replace judgment, it may help target care; oversold, it could
         entrench old inequities.
@@ -188,7 +188,7 @@ export default function PrecisionPainMedicine() {
         risk. Many of the new drugs in the{" "}
         <Link
           href="/future-of-pain-medicine/pipeline"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           pain treatment pipeline
         </Link>{" "}

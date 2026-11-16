@@ -43,7 +43,7 @@ export const SPECIALTY_ARTICLES: Article[] = [
       {
         question: "Is “board-certified in pain medicine” a single credential?",
         answer:
-          "The ABMS-recognized version is one standard: a shared exam developed and administered by the American Board of Anesthesiology, with six ABMS member boards – anesthesiology, PM&R, psychiatry & neurology, emergency medicine, family medicine, and radiology – certifying their own physicians to the same passing bar. Other pain “boards” exist outside the ABMS system; some institutions recognize them, some do not.",
+          "The ABMS-recognized version is one standard: a shared exam developed and administered by the American Board of Anesthesiology, with six ABMS member boards (anesthesiology, PM&R, psychiatry & neurology, emergency medicine, family medicine, and radiology) certifying their own physicians to the same passing bar. Other pain “boards” exist outside the ABMS system; some institutions recognize them, some do not.",
       },
     ],
     references: [

@@ -142,7 +142,7 @@ export const TREATMENT_ARTICLES: Article[] = [
     title: "Medications for pain",
     seoTitle: "Pain Medications: Types of Pain Relievers and Which Is Right for You",
     description:
-      "What pain medications are, the different types of pain relievers – acetaminophen, NSAIDs, topicals, the nerve-pain medications, muscle relaxants, opioids, and the first new class in decades – what makes a pain reliever “good,” and how to tell which one is right for you by matching the drug to the pain type rather than its “strength.”",
+      "What pain medications are, the different types of pain relievers (acetaminophen, NSAIDs, topicals, the nerve-pain medications, muscle relaxants, opioids, and the first new class in decades) what makes a pain reliever “good,” and how to tell which one is right for you by matching the drug to the pain type rather than its “strength.”",
     status: "sourced",
     lastUpdated: "2026-10-04",
     answer:
@@ -287,7 +287,7 @@ export const TREATMENT_ARTICLES: Article[] = [
       {
         question: "What is a spinal cord stimulator and who is it for?",
         answer:
-          "An implanted device that delivers electrical pulses to the spinal cord, changing how pain signals are processed. Candidates are people with persistent nerve-related pain – painful diabetic neuropathy, complex regional pain syndrome, and pain persisting after spine surgery are the territories with the strongest trial evidence. Its most patient-friendly feature is unique in medicine: a temporary externally-worn trial lets you test-drive the therapy for about a week before deciding on the implant. Newer variants – high-frequency, closed-loop, and dorsal-root-ganglion stimulation – have strong randomized-trial results.",
+          "An implanted device that delivers electrical pulses to the spinal cord, changing how pain signals are processed. Candidates are people with persistent nerve-related pain – painful diabetic neuropathy, complex regional pain syndrome, and pain persisting after spine surgery are the territories with the strongest trial evidence. Its most patient-friendly feature is unique in medicine: a temporary externally-worn trial lets you test-drive the therapy for about a week before deciding on the implant. Newer variants (high-frequency, closed-loop, and dorsal-root-ganglion stimulation) have strong randomized-trial results.",
       },
       {
         question: "What percentage of people get relief from a spinal cord stimulator, and does it wear off?",
@@ -792,7 +792,7 @@ export const TREATMENT_ARTICLES: Article[] = [
     status: "sourced",
     lastUpdated: "2026-09-10",
     answer:
-      "Piriformis syndrome is buttock and leg pain caused when the piriformis – a small, deep hip muscle – presses on or irritates the sciatic nerve that passes beneath it. It is an uncommon but real cause of sciatica, recognized by a pattern of four features rather than any single test. First-line care is physical therapy aimed at the muscle, the hips around it, and the nerve; injections and, rarely, surgery are reserved for cases that do not settle.",
+      "Piriformis syndrome is buttock and leg pain caused when the piriformis (a small, deep hip muscle) presses on or irritates the sciatic nerve that passes beneath it. It is an uncommon but real cause of sciatica, recognized by a pattern of four features rather than any single test. First-line care is physical therapy aimed at the muscle, the hips around it, and the nerve; injections and, rarely, surgery are reserved for cases that do not settle.",
     faqs: [
       {
         question: "How is piriformis syndrome different from ordinary sciatica?",
@@ -812,12 +812,12 @@ export const TREATMENT_ARTICLES: Article[] = [
       {
         question: "Do I have the anatomical variant where the nerve goes through the muscle?",
         answer:
-          "About one person in six does – a pooled analysis of more than six thousand cadavers found the variant in about 17%. But the same review found it no more common in people operated on for piriformis syndrome than in everyone else, so the variant is mostly not the cause. What the muscle is doing – spasm, thickening, shortening, irritation – matters more than the nerve's exact route.",
+          "About one person in six does – a pooled analysis of more than six thousand cadavers found the variant in about 17%. But the same review found it no more common in people operated on for piriformis syndrome than in everyone else, so the variant is mostly not the cause. What the muscle is doing (spasm, thickening, shortening, irritation) matters more than the nerve's exact route.",
       },
       {
         question: "Will I need an injection or surgery?",
         answer:
-          "Most people do not. In the largest published series, 79% of patients treated with an injection plus physical therapy improved by half or more, and only about one in fifteen went on to surgery. Injections into the muscle – anesthetic with steroid, or botulinum toxin – are used when a well-run program stalls, and the treatment trials suggest their benefit is modest. Surgical release is reserved for chronic cases that have exhausted everything else.",
+          "Most people do not. In the largest published series, 79% of patients treated with an injection plus physical therapy improved by half or more, and only about one in fifteen went on to surgery. Injections into the muscle (anesthetic with steroid, or botulinum toxin) are used when a well-run program stalls, and the treatment trials suggest their benefit is modest. Surgical release is reserved for chronic cases that have exhausted everything else.",
       },
     ],
     references: [
@@ -906,7 +906,7 @@ export const TREATMENT_ARTICLES: Article[] = [
       {
         question: "Do opioids work for acute pain?",
         answer:
-          "For some kinds, yes. A 2026 overview of 59 systematic reviews found opioids lowered pain by roughly 15–20 points on a 100-point scale in the first hours after dental surgery, ear-tube surgery, and in acute abdominal pain. For acute musculoskeletal pain – sprains, strains, back and neck injuries – oral opioids gave only about 9 points of relief between six and 48 hours, which the authors called very small, and raised the risk of side effects. The summary is the authors' own: opioids are effective in some acute conditions, not all.",
+          "For some kinds, yes. A 2026 overview of 59 systematic reviews found opioids lowered pain by roughly 15–20 points on a 100-point scale in the first hours after dental surgery, ear-tube surgery, and in acute abdominal pain. For acute musculoskeletal pain (sprains, strains, back and neck injuries) oral opioids gave only about 9 points of relief between six and 48 hours, which the authors called very small, and raised the risk of side effects. The summary is the authors' own: opioids are effective in some acute conditions, not all.",
       },
       {
         question: "Are opioids stronger than ibuprofen?",

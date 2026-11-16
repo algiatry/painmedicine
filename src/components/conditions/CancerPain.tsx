@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
 /**
  * Figure 1 – the three sources of cancer pain: the disease, the treatment,
@@ -212,7 +212,7 @@ export default function CancerPain() {
         needing adjustment over time, and <strong>physical
         dependence</strong> (the body adapting, needing a taper to stop)
         are expected biology that your team plans for.{" "}
-        <strong>Addiction</strong> – use escaping control despite harm – is
+        <strong>Addiction</strong> (use escaping control despite harm) is
         a different phenomenon, and it is uncommon in monitored cancer pain
         care. Research on undertreatment keeps finding the same barrier:
         fear of addiction, held by patients and families, quietly trading
@@ -220,7 +220,7 @@ export default function CancerPain() {
         requires; let your team manage the side effects
         proactively; constipation, notably, is expected and treatable from
         day one. And if opioid use ever does feel like it is escaping the
-        plan – yours or a loved one&rsquo;s – say so early: the SAMHSA
+        plan (yours or a loved one&rsquo;s), say so early: the SAMHSA
         helpline, 1-800-662-4357, is free, confidential, and always open.
       </P>
 
@@ -285,7 +285,7 @@ export default function CancerPain() {
         <Link href="/what-is-pain-medicine" className={link}>
           pain medicine
         </Link>{" "}
-        for the interventional tools – blocks, pumps, and the management of
+        for the interventional tools: blocks, pumps, and the management of
         survivor pain.{" "}
         <Link href="/find-help" className={link}>
           Finding pain care near you

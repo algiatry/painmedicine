@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
 function TransitionFigure() {
   const points = [
@@ -55,9 +55,8 @@ export default function PersistentPostsurgicalPain() {
       <P>
         The ICD-11 definition requires pain that developed or increased after a
         surgical procedure, persists for at least three months, and sits in the
-        surgical field or a referred nerve territory. Other explanations –
-        infection, recurrent disease, an unstable implant, poor healing, or a
-        separate pain condition – must be considered. The three-month line is a
+        surgical field or a referred nerve territory. Other explanations (infection, recurrent disease, an unstable implant, poor healing, or a
+        separate pain condition) must be considered. The three-month line is a
         definition, not permission to ignore severe or worsening pain before it.
       </P>
       <P>

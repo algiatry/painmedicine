@@ -205,7 +205,7 @@ export default function HowPainPhysiciansTrain() {
         points patients to both routes. The{" "}
         <Link
           href="/find-help"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           find help
         </Link>{" "}
@@ -227,7 +227,7 @@ export default function HowPainPhysiciansTrain() {
         is the subject of{" "}
         <Link
           href="/what-is-pain-medicine/pain-clinics-vs-pain-medicine"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           pain clinics vs. pain medicine
         </Link>

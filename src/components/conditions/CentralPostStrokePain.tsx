@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P, anim } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
 /**
  * Figure 1 – the pain pathway with the injury inside it. The
@@ -228,7 +228,7 @@ export default function CentralPostStrokePain() {
       </P>
       <ul className="mt-4 space-y-3 text-body">
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Tricyclic antidepressants.</strong> Amitriptyline was the
             first drug shown to help, in a small 1989 trial, and remains a
@@ -238,7 +238,7 @@ export default function CentralPostStrokePain() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Lamotrigine.</strong> A 2001 randomized trial found a
             modest but real reduction in daily pain, with 44% of patients
@@ -247,7 +247,7 @@ export default function CentralPostStrokePain() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Gabapentinoids.</strong> The largest trial in the
             condition, pregabalin in 2011, did not beat placebo on its main
@@ -257,7 +257,7 @@ export default function CentralPostStrokePain() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Serotonin-norepinephrine reuptake inhibitors.</strong>{" "}
             Duloxetine and related drugs are guideline first-line options for
@@ -266,7 +266,7 @@ export default function CentralPostStrokePain() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Brain stimulation, for refractory cases.</strong> Repetitive
             transcranial magnetic stimulation of the motor cortex has

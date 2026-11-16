@@ -160,7 +160,7 @@ export default function Kratom() {
         biased way that recruits less of the signaling associated with
         respiratory depression, and animal studies have found less breathing
         suppression than with classic opioids. That pharmacology is genuinely
-        interesting – it is part of why NIH-funded labs study kratom compounds
+        interesting; it is part of why NIH-funded labs study kratom compounds
         as leads for safer analgesics. But &ldquo;less in animal
         studies&rdquo; is not &ldquo;safe in humans,&rdquo; and no controlled
         human data yet establish that margin.
@@ -240,7 +240,7 @@ export default function Kratom() {
         mitragynine pseudoindoxyl into Schedule I above a new combined
         threshold, with MGM-15 and MGM-16 carried forward in a separate
         notice. As of today, no temporary order for 7-OH itself has taken
-        effect – it remains a proposal, not yet in force, and natural leaf
+        effect; it remains a proposal, not yet in force, and natural leaf
         kratom remains federally unscheduled throughout. However the rest
         resolves, the direction is clear: regulators are drawing a line
         between the traditional leaf and the isolated compound.
@@ -248,7 +248,7 @@ export default function Kratom() {
 
       <H2 id="legal-status">Where the law stands</H2>
       <P>
-        Leaf kratom is not a federally controlled substance – the DEA proposed
+        Leaf kratom is not a federally controlled substance; the DEA proposed
         scheduling it in 2016 and withdrew the proposal after significant
         public and congressional pushback, an unusual reversal. It is also not
         FDA-approved for any medical use, and the agency has warned against
@@ -271,7 +271,7 @@ export default function Kratom() {
         with less harm, and you can follow those candidates in the{" "}
         <Link
           href="/future-of-pain-medicine/pipeline"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           pain treatment pipeline
         </Link>
