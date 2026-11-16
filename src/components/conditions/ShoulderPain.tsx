@@ -4,7 +4,7 @@ import { FIG } from "@/lib/fig";
 import { SiteMarker } from "../anatomy/marks";
 
 const link =
-  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
 /**
  * Figure 1 – a schematic shoulder in front view: the ball (humeral head)
@@ -263,8 +263,8 @@ export default function ShoulderPain() {
         rotator cuff tendons and a thin cushion called the bursa pass through a
         narrow space under a bony roof, the acromion. Pain here is often felt on
         the outside of the upper arm, worse when reaching up or lying on that
-        side. Older labels – rotator cuff tendinopathy, impingement, bursitis,
-        partial tear – overlap so much that a 2026 review in JAMA Internal
+        side. Older labels (rotator cuff tendinopathy, impingement, bursitis,
+        partial tear) overlap so much that a 2026 review in JAMA Internal
         Medicine suggests the plainer term, subacromial pain, for all of them.
       </P>
       <P>
@@ -295,8 +295,8 @@ export default function ShoulderPain() {
       <H2 id="why-it-hurts">Why it hurts</H2>
       <P>
         Tendons are living tissue that adapts to load. When the load changes
-        faster than the tendon can – a new sport, a season of overhead work, a
-        fall, or simply years of use – the tendon and the bursa beside it become
+        faster than the tendon can (a new sport, a season of overhead work, a
+        fall, or simply years of use) the tendon and the bursa beside it become
         sensitive and sore. Pain then changes how you move: the arm is held
         close, the shoulder blade stops gliding, and the tissues are asked to
         work in a position they tolerate badly. That loop, more than any single

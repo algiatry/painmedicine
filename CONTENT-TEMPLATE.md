@@ -85,7 +85,7 @@ Coach *beside* the reader (companion), never *above* them (guru).
 ### House-style tics (capped by `content-lint`)
 Each of these is fine once and reads as a formula when repeated. The lint
 fails a page that goes over the cap (`TIC_CAPS` in `scripts/content-lint.ts`):
-- **Spaced en dash as a pause** (` – `): at most 10 per 1,000 words. Prefer a
+- **Spaced en dash as a pause** (` – `): at most 8 per 1,000 words. Prefer a
   comma, colon, parentheses, or a full stop.
 - **"honest / honestly"**: at most 5 per page. State the finding instead of
   vouching for it.

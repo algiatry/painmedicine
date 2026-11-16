@@ -4,7 +4,7 @@ import { FIG } from "@/lib/fig";
 import { HeadProfile } from "../anatomy/HeadProfile";
 
 const link =
-  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
 /**
  * Figure 1 – the four phases of a migraine attack, with the pain as one
@@ -127,7 +127,7 @@ export default function Migraine() {
       <P>
         Migraine may be the most consequential disease that people are still
         told to walk off. It affects roughly <strong>one person in
-        seven</strong> – about a billion people – runs strongly in families,
+        seven</strong> (about a billion people), runs strongly in families,
         and in the Global Burden of Disease studies ranks{" "}
         <strong>second among all causes of disability on Earth, and first
         among young women</strong>, who live with it at two to three times the
@@ -176,7 +176,7 @@ export default function Migraine() {
         stretching. The modern picture is neurological. The inherited part
         is a brain whose sensory networks sit closer to their tipping point.
         The attack part is traceable: the <strong>trigeminal nerve</strong>
-        – the great sensory nerve of the head – activates and releases{" "}
+        (the great sensory nerve of the head) activates and releases{" "}
         <strong>CGRP</strong>, a peptide that inflames the brain&rsquo;s
         pain-sensitive coverings and drives the throbbing, movement-hating
         pain, while brainstem and thalamic circuits amplify every other
@@ -244,7 +244,7 @@ export default function Migraine() {
       <P>
         Prevention is where the revolution happened. When attacks claim
         several days a month, guidelines shift from rescuing to preventing:
-        long-standing oral options – blood-pressure, seizure, and
+        long-standing oral options: blood-pressure, seizure, and
         antidepressant medications with earned migraine evidence, plus, for
         chronic migraine, botulinum toxin injections. Since 2018 they have
         been joined by the <strong>CGRP monoclonal antibodies</strong> –

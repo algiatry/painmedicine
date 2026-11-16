@@ -4,7 +4,7 @@ import { FIG } from "@/lib/fig";
 import { SpineSide } from "../anatomy/SpineSide";
 
 const link =
-  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
 /**
  * Figure 1 – the precision map: where the main procedures aim, on the
@@ -152,7 +152,7 @@ export default function InterventionalProcedures() {
             Spinal cord stimulation offers a <strong>take-home trial</strong> of about a week before any implant decision.
           </>,
           <>
-            Procedures rarely erase pain permanently – they <strong>buy windows</strong>, and what fills the window decides what it was worth.
+            Procedures rarely erase pain permanently; they <strong>buy windows</strong>, and what fills the window decides what it was worth.
           </>,
         ]}
       />
@@ -234,7 +234,7 @@ export default function InterventionalProcedures() {
         stimulation</strong> beat conventional stimulation head-to-head
         for focal nerve pain in the ACCURATE trial. And the therapy carries
         a feature almost nothing else in medicine offers:{" "}
-        <strong>a take-home trial</strong> – about a week with a temporary
+        <strong>a take-home trial</strong>, about a week with a temporary
         external system, so the decision to implant is made from your own
         lived data, not a brochure. Where the hardware is headed, closed-loop systems that listen to the cord and adjust themselves,
         is the story of{" "}
@@ -248,7 +248,7 @@ export default function InterventionalProcedures() {
       <P>
         Two questions deserve plain answers before anyone agrees to an
         implant. <em>How many people get relief?</em> In trials the usual
-        yardstick is a &ldquo;responder&rdquo; – someone whose pain falls by
+        yardstick is a &ldquo;responder&rdquo;: someone whose pain falls by
         at least half, and across the modern randomized studies most
         well-selected candidates with nerve-type pain clear that bar during
         the trial period, which is exactly what the take-home test is for.{" "}
@@ -257,7 +257,7 @@ export default function InterventionalProcedures() {
         this and say so. The newest comparison, a 2026 meta-analysis of 17
         studies and 669 patients, found that &ldquo;burst&rdquo; stimulation
         lowered pain by about 1.3 points more than conventional stimulation
-        on a 10-point scale – a real, consistent edge that patients
+        on a 10-point scale, a real, consistent edge that patients
         preferred, but one the authors note may fall short of what counts as
         clinically meaningful, with no clear difference in quality of life or
         disability. Read that as the field reads it: stimulation is a proven
@@ -286,7 +286,7 @@ export default function InterventionalProcedures() {
       <WindowsFigure />
       <P>
         Here is the frame that makes the whole toolbox make sense.
-        Procedures rarely erase pain permanently – they{" "}
+        Procedures rarely erase pain permanently; they{" "}
         <strong>buy windows</strong>: weeks from an injection, months
         from an ablation, years from a stimulator. What fills the window
         decides what it was worth: the strengthening, the movement, the

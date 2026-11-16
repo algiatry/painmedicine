@@ -100,7 +100,7 @@ export default function FindHelpPage() {
                 href={d.url}
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                className="font-semibold text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+                className="font-semibold text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
               >
                 {d.name} →
               </a>
@@ -123,7 +123,7 @@ export default function FindHelpPage() {
             <li key={q} className="flex gap-3 text-body">
               <span
                 aria-hidden="true"
-                className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600"
+                className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand"
               />
               <span>{q}</span>
             </li>
@@ -180,7 +180,7 @@ export default function FindHelpPage() {
               href="https://findtreatment.gov/"
               target="_blank"
               rel="noopener noreferrer nofollow"
-              className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+              className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
             >
               a confidential locator for treatment near you
             </a>

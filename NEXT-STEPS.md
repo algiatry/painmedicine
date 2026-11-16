@@ -122,9 +122,6 @@ directions, and into the review queue the day it ships.
 
 ## 7. Small engineering items
 
-- **Lower the dash cap further.** `TIC_CAPS` in `scripts/content-lint.ts`
-  allows 10 spaced en dashes per 1,000 words. Edit the dash-heavy pages by
-  hand and bring it down toward 8.
 - **Tests for the pure logic.** `search()` ranking in `src/lib/search.ts` and
   the title matcher in `scripts/check-references.ts` are both easy to break
   silently.

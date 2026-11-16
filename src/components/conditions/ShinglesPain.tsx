@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
 function TimelineFigure() {
   return (
@@ -100,7 +100,7 @@ export default function ShinglesPain() {
       </P>
       <P>
         The pain during the rash can be intense. Some people find that the
-        lightest touch – a shirt, a breeze – sets it off. That is the nerve
+        lightest touch (a shirt, a breeze) sets it off. That is the nerve
         itself being inflamed, which is why shingles pain behaves like{" "}
         <Link href="/conditions/neuropathic-pain" className={link}>
           neuropathic pain

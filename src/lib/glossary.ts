@@ -166,7 +166,7 @@ export const GLOSSARY: GlossaryTerm[] = [
   {
     term: "Graded motor imagery",
     definition:
-      "A staged rehabilitation approach for severe limb pain that begins below the threshold of movement – recognizing left from right in photos, imagining movement, then mirror therapy – to redraw the brain's map of the limb before loading it.",
+      "A staged rehabilitation approach for severe limb pain that begins below the threshold of movement (recognizing left from right in photos, imagining movement, then mirror therapy) to redraw the brain's map of the limb before loading it.",
     href: "/conditions/crps",
   },
   {

@@ -192,26 +192,26 @@ export default function ThePlaceboEffect() {
       </P>
       <ul className="mt-4 space-y-3 text-body">
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
-            <strong>A placebo</strong> – the thing itself: a sugar pill, a
+            <strong>A placebo</strong>, the thing itself: a sugar pill, a
             saline injection, a sham procedure. Inert by design; it contains
             nothing that acts on the body.
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
-            <strong>The placebo effect</strong> – the genuine neurobiological
+            <strong>The placebo effect</strong>: the genuine neurobiological
             response: real changes in symptoms produced by expectation,
             context, and the ritual of care. This is what the rest of this page
             is about.
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
-            <strong>The placebo response</strong> – what a trial&rsquo;s
+            <strong>The placebo response</strong>: what a trial&rsquo;s
             placebo arm measures. It runs larger than the placebo effect,
             because it also sweeps in natural recovery and the statistical
             tendency of symptoms measured at their worst to drift back toward
@@ -242,7 +242,7 @@ export default function ThePlaceboEffect() {
         &ldquo;volume control&rdquo; described in{" "}
         <Link
           href="/understanding-pain/pain-and-emotion"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           pain and emotion
         </Link>{" "}
@@ -287,12 +287,12 @@ export default function ThePlaceboEffect() {
         their first dose. Comparing arms, researchers estimated that nocebo
         responses accounted for roughly three-quarters of such side effects
         reported after a first real dose. None of those symptoms were
-        imaginary – headaches from expectation still ache. The lesson is that
+        imaginary; headaches from expectation still ache. The lesson is that
         what you are told, and what you brace for, measurably shapes what your
         body produces. Nocebo has enough evidence of its own to deserve{" "}
         <Link
           href="/understanding-pain/the-nocebo-effect"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           its own page
         </Link>
@@ -334,7 +334,7 @@ export default function ThePlaceboEffect() {
         And if you have ever responded to a placebo, or wondered whether your
         relief &ldquo;counts,&rdquo; keep the naloxone experiment in mind. A
         placebo response is your descending pain-control system doing its job.
-        It is not evidence your pain was fake – it is evidence your brain&rsquo;s
+        It is not evidence your pain was fake; it is evidence your brain&rsquo;s
         own pain-relief machinery, the very system pain medicine works to
         recruit, is switched on and listening.
       </P>

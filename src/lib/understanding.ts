@@ -192,7 +192,7 @@ export const ARTICLES: Article[] = [
       {
         question: "When does pain officially become “chronic”?",
         answer:
-          "The widely used line is three months of pain that persists or keeps returning, the threshold adopted by the WHO's ICD-11. It is a practical marker, not a magic switch – the point is that pain lasting this long often behaves differently from fresh injury pain and deserves its own assessment.",
+          "The widely used line is three months of pain that persists or keeps returning, the threshold adopted by the WHO's ICD-11. It is a practical marker, not a magic switch; the point is that pain lasting this long often behaves differently from fresh injury pain and deserves its own assessment.",
       },
       {
         question: "Does chronic pain mean something is still damaged?",
@@ -202,7 +202,7 @@ export const ARTICLES: Article[] = [
       {
         question: "Can chronic pain be treated?",
         answer:
-          "Yes. A complete cure is not always possible, but many people meaningfully reduce their pain and regain function using a combination of approaches – physical, medical, and psychological. A pain specialist can help build a plan. Discuss the options that fit your situation with your own clinician.",
+          "Yes. A complete cure is not always possible, but many people meaningfully reduce their pain and regain function using a combination of approaches: physical, medical, and psychological. A pain specialist can help build a plan. Discuss the options that fit your situation with your own clinician.",
       },
     ],
     references: [

@@ -4,7 +4,7 @@ import { FIG } from "@/lib/fig";
 import { BodyBack } from "../anatomy/BodyOutline";
 
 const link =
-  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
 /**
  * Figure 1 – starts here, felt there: the back view with the sciatic path,

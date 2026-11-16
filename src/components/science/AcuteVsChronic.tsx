@@ -147,7 +147,7 @@ export default function AcuteVsChronic() {
         that keeps firing can become sensitized – the{" "}
         <Link
           href="/understanding-pain/how-pain-works"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           central sensitization
         </Link>{" "}
@@ -167,7 +167,7 @@ export default function AcuteVsChronic() {
         their lives. That is the work of{" "}
         <Link
           href="/what-is-pain-medicine"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           pain medicine as a specialty
         </Link>

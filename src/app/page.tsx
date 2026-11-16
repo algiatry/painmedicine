@@ -91,7 +91,7 @@ export default function Home() {
               <p className="inline-flex items-center gap-2 rounded-full border border-brand/20 bg-surface/70 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-brand shadow-sm backdrop-blur">
                 <span
                   aria-hidden="true"
-                  className="size-1.5 rounded-full bg-teal-600"
+                  className="size-1.5 rounded-full bg-brand"
                 />
                 Patient-first pain education
               </p>

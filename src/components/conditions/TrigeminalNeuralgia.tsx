@@ -4,11 +4,11 @@ import { FIG } from "@/lib/fig";
 import { HeadProfile } from "../anatomy/HeadProfile";
 
 const link =
-  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
 function BranchesFigure() {
   return (
-    <Figure caption="The trigeminal nerve carries feeling from the face through three branches. Trigeminal neuralgia most often strikes the middle and lower branches – the cheek, teeth, gums, and jaw – on one side.">
+    <Figure caption="The trigeminal nerve carries feeling from the face through three branches. Trigeminal neuralgia most often strikes the middle and lower branches (the cheek, teeth, gums, and jaw) on one side.">
       <svg
         role="img"
         aria-labelledby="tn-title tn-desc"

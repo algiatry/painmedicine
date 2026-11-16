@@ -4,7 +4,7 @@ import { FIG } from "@/lib/fig";
 import { BodyFront } from "../anatomy/BodyOutline";
 
 const link =
-  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
 /**
  * Figure 1 – pain without a postcode: the widespread pattern, both sides,
@@ -242,8 +242,8 @@ export default function Fibromyalgia() {
       <P>
         Treatment starts with something unusual: <strong>understanding the
         condition is itself a treatment</strong>. Knowing that hurt does not
-        equal harm – that a flare is a sensitized system misfiring, not
-        tissue tearing – is what makes the rest possible. The strongest
+        equal harm (that a flare is a sensitized system misfiring, not
+        tissue tearing) is what makes the rest possible. The strongest
         evidence then belongs to <strong>movement</strong>, started
         absurdly gently and built gradually, because a sensitized system
         punishes ambushes but adapts to patience. In a randomized trial,{" "}

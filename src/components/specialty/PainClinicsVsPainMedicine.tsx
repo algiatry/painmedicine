@@ -106,7 +106,7 @@ export default function PainClinicsVsPainMedicine() {
         through the pathway described in{" "}
         <Link
           href="/what-is-pain-medicine/how-pain-physicians-train"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           how pain physicians train
         </Link>
@@ -123,7 +123,7 @@ export default function PainClinicsVsPainMedicine() {
         records-deep first visit described in{" "}
         <Link
           href="/what-is-pain-medicine/your-first-visit"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           your first visit
         </Link>{" "}
@@ -134,7 +134,7 @@ export default function PainClinicsVsPainMedicine() {
         laid out in{" "}
         <Link
           href="/what-is-pain-medicine/the-pain-team"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           the pain team
         </Link>
@@ -163,16 +163,16 @@ export default function PainClinicsVsPainMedicine() {
         Real pain medicine plugs into the rest of your care: referrals are
         normal or required, the treatment plan is shared with your primary
         care clinician, and insurance is the expected way to pay. Isolation is
-        the anti-signal – a practice that wants no records sent, no plan
+        the anti-signal: a practice that wants no records sent, no plan
         shared, and cash only is organized around something other than your
         long-term health. The{" "}
         <Link
           href="/find-help"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           find help
         </Link>{" "}
-        page carries the full checklist – verification steps, questions to
+        page carries the full checklist: verification steps, questions to
         ask, and the red flags in detail.
       </P>
       <P>

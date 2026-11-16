@@ -80,8 +80,8 @@ export default function ArticleToc({
               aria-current={active ? "location" : undefined}
               className={`block border-l-2 py-1 pl-3 transition-colors ${
                 active
-                  ? "border-teal-600 font-semibold text-brand-strong"
-                  : "border-line text-subtle hover:border-slate-400 hover:text-brand"
+                  ? "border-brand font-semibold text-brand-strong"
+                  : "border-line text-subtle hover:border-subtle hover:text-brand"
               }`}
             >
               {h.text}

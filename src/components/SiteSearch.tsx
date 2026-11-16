@@ -99,7 +99,7 @@ export default function SiteSearch() {
         className="m-0 mx-auto mt-[8vh] w-[calc(100%-1.5rem)] max-w-xl rounded-2xl border border-edge bg-surface p-0 text-ink shadow-2xl backdrop:bg-slate-900/50 backdrop:backdrop-blur-sm"
       >
         <div className="flex items-center gap-3 border-b border-edge px-4 focus-within:shadow-[inset_0_-2px_0_var(--brand)]">
-          <SearchIcon className="size-5 shrink-0 text-slate-400" />
+          <SearchIcon className="size-5 shrink-0 text-subtle" />
           <input
             ref={inputRef}
             type="search"
@@ -119,7 +119,7 @@ export default function SiteSearch() {
               setActive(0);
             }}
             onKeyDown={onInputKey}
-            className="min-w-0 flex-1 bg-transparent py-4 text-base text-ink outline-none! placeholder:text-slate-400 [&::-webkit-search-cancel-button]:hidden"
+            className="min-w-0 flex-1 bg-transparent py-4 text-base text-ink outline-none! placeholder:text-subtle [&::-webkit-search-cancel-button]:hidden"
           />
           <button
             type="button"

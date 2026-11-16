@@ -8,7 +8,7 @@ import {
 } from "../anatomy/PelvisPosterior";
 
 const link =
-  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
 /**
  * Figure 1 – the deep hip from behind: piriformis crossing the greater
@@ -18,7 +18,7 @@ const link =
 function DeepHipFigure() {
   const scale = 0.62;
   return (
-    <Figure caption="The deep hip, seen from behind (the patient's right is on your right). Piriformis is the small pear-shaped muscle running from the sacrum out to the top of the thigh bone, drawn here in teal beneath the ghosted gluteus medius. The sciatic nerve – drawn schematically, in amber – leaves the pelvis right underneath it, which is the whole story of this page. Bone and muscle outlines are projected from BodyParts3D 4.0 (DBCLS, CC BY 4.0).">
+    <Figure caption="The deep hip, seen from behind (the patient's right is on your right). Piriformis is the small pear-shaped muscle running from the sacrum out to the top of the thigh bone, drawn here in teal beneath the ghosted gluteus medius. The sciatic nerve (drawn schematically, in amber) leaves the pelvis right underneath it, which is the whole story of this page. Bone and muscle outlines are projected from BodyParts3D 4.0 (DBCLS, CC BY 4.0).">
       <svg
         role="img"
         aria-labelledby="deephip-title deephip-desc"
@@ -165,9 +165,8 @@ export default function PiriformisSyndrome() {
         Piriformis runs from the front of the sacrum out through the
         greater sciatic notch to the top of the thigh bone. It is a hip
         rotator: it turns the thigh outward when the hip is straight and
-        helps pull it sideways when the hip is bent. The sciatic nerve –
-        the largest nerve in the body, formed from the lower spinal nerve
-        roots – leaves the pelvis through the same notch, almost always
+        helps pull it sideways when the hip is bent. The sciatic nerve (the largest nerve in the body, formed from the lower spinal nerve
+        roots) leaves the pelvis through the same notch, almost always
         emerging just <em>below</em> the muscle&rsquo;s lower edge. That
         shared doorway is the whole anatomy of the problem. A piriformis
         that is thickened, in spasm, shortened, or irritated by a fall or
@@ -194,8 +193,8 @@ export default function PiriformisSyndrome() {
         Because there is no blood test, no imaging finding, and no single
         physical test that settles the diagnosis, clinicians recognize
         piriformis syndrome by pattern. The two systematic reviews of the
-        world&rsquo;s reported cases – one covering 55 studies, and an
-        update eight years later – kept finding the same four features:
+        world&rsquo;s reported cases (one covering 55 studies, and an
+        update eight years later) kept finding the same four features:
         pain in the buttock itself rather than centered on the low back,
         pain that worsens with sitting, tenderness when the examiner
         presses over the greater sciatic notch, and pain reproduced by
@@ -209,9 +208,8 @@ export default function PiriformisSyndrome() {
         straight-leg raise, the classic disc test, does <em>not</em> rule
         piriformis syndrome out; the updated review found it limited in a
         substantial share of cases. Second, the accuracy of every one of
-        these signs is unproven, because the studies that could prove it –
-        comparing sciatica patients with and without disc disease, blind to
-        the answer – have barely been done. The diagnosis is, as one review
+        these signs is unproven, because the studies that could prove it (comparing sciatica patients with and without disc disease, blind to
+        the answer) have barely been done. The diagnosis is, as one review
         put it, roughly where the herniated disc was a generation ago:
         clearly real, poorly measured. A careful clinician therefore treats
         it as a diagnosis of pattern <em>and</em> exclusion – checking the

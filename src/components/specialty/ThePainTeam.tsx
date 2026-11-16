@@ -131,14 +131,14 @@ export default function ThePainTeam() {
         because no condition demanded it more. As the research summarized in{" "}
         <Link
           href="/understanding-pain/pain-and-emotion"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           pain and emotion
         </Link>{" "}
         and{" "}
         <Link
           href="/understanding-pain/pain-and-sleep"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           pain and sleep
         </Link>{" "}
@@ -156,35 +156,35 @@ export default function ThePainTeam() {
       </P>
       <ul className="mt-4 space-y-3 text-body">
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>The pain physician</strong> – a fellowship-trained
             specialist who leads the assessment and owns the overall plan.
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Nurses</strong> – often your most frequent contact:
             coordination, education, and follow-up between visits.
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Physical and occupational therapists</strong> – rebuilding
             movement, strength, and the daily activities pain has taken.
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>A pain psychologist</strong> – working the brain&rsquo;s own
             dials: sleep, stress, pacing, and the fear-avoidance loop.
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Pharmacists and social workers</strong> – medication
             expertise on one side; insurance, work, and life logistics on the
@@ -224,7 +224,7 @@ export default function ThePainTeam() {
         If you are looking for this kind of care, the{" "}
         <Link
           href="/find-help"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           find help
         </Link>{" "}

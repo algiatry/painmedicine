@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P, anim } from "./Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
 /**
  * Figure 1 – the mirror of the placebo pathway: expectation of harm runs
@@ -387,7 +387,7 @@ export default function TheNoceboEffect() {
       </P>
       <ul className="mt-4 space-y-3 text-body">
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Ask for the denominator.</strong> When a side effect is
             mentioned, ask how many people out of 100 get it. Rare things
@@ -396,7 +396,7 @@ export default function TheNoceboEffect() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Ask what the scan words mean.</strong> &ldquo;Degenerative
             changes&rdquo; and &ldquo;disc bulge&rdquo; are common in pain-free
@@ -408,7 +408,7 @@ export default function TheNoceboEffect() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Name it when you notice it.</strong> Telling your clinician
             &ldquo;I read a lot of frightening things about this drug&rdquo; is
@@ -418,7 +418,7 @@ export default function TheNoceboEffect() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
             <strong>Treat a symptom as data, not a verdict.</strong> SAMSON
             participants changed course only after seeing their own numbers.

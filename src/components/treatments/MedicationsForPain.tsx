@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
 /**
  * Figure 1 – the medication map: the pain pathway from tissue to brain, with
@@ -217,7 +217,7 @@ export default function MedicationsForPain() {
       <KeyTakeaways
         items={[
           <>
-            Painkillers are not a ladder from weak to strong – they are <strong>different tools that act at different points</strong> on the pain pathway.
+            Painkillers are not a ladder from weak to strong; they are <strong>different tools that act at different points</strong> on the pain pathway.
           </>,
           <>
             Relief comes from <strong>mechanism match</strong>, not potency: a modest drug that fits beats a powerful one that does not.
@@ -255,7 +255,7 @@ export default function MedicationsForPain() {
       <P>Seven groups cover nearly everything on the shelf and the prescription pad:</P>
       <ul className="mt-4 mb-6 space-y-3 text-body">
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
           <strong>Acetaminophen</strong> (Tylenol, paracetamol) – works mostly
           centrally; little effect on inflammation; the liver is its safety
@@ -263,7 +263,7 @@ export default function MedicationsForPain() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
           <strong>NSAIDs</strong> (ibuprofen, naproxen, aspirin, prescription
           relatives) – damp the inflammatory chemistry at the site of injury;
@@ -271,14 +271,14 @@ export default function MedicationsForPain() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
           <strong>Topicals</strong> (NSAID gels, lidocaine, capsaicin) – act
           where they are applied with little reaching the bloodstream.
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
           <strong>Nerve-pain medications</strong> (gabapentin, pregabalin,
           duloxetine, the tricyclics) – calm sensitized nerves or strengthen
@@ -286,24 +286,24 @@ export default function MedicationsForPain() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
-          <strong>Muscle relaxants</strong> – a short bridge through painful
+          <strong>Muscle relaxants</strong>: a short bridge through painful
           spasm; drowsiness is the common tax.
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
-          <strong>Opioids</strong> – turn the alarm down at the spinal cord and
+          <strong>Opioids</strong>: turn the alarm down at the spinal cord and
           brain; essential for severe acute, surgical, and cancer pain; late
           in modern guidelines for long-term non-cancer pain.
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
-          <strong>Suzetrigine</strong> – the first drug of a new non-opioid
+          <strong>Suzetrigine</strong>: the first drug of a new non-opioid
           class (2025); blocks a sodium channel on pain-sensing nerves.
           </span>
         </li>
@@ -419,8 +419,8 @@ export default function MedicationsForPain() {
         guideline reframed the field away from one-size-fits-all limits and
         toward individualized decisions – maximizing non-opioid options
         first, starting low when opioids are used, and never abandoning
-        patients who are already on them. If opioid use – yours or a loved
-        one&rsquo;s – has become hard to control, confidential help exists
+        patients who are already on them. If opioid use
+        (yours or a loved one&rsquo;s) has become hard to control, confidential help exists
         and works: the SAMHSA helpline, 1-800-662-4357, is free and answers
         around the clock.
       </P>
@@ -469,7 +469,7 @@ export default function MedicationsForPain() {
       </P>
       <ul className="mt-4 mb-6 space-y-3 text-body">
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
           <strong>What kind of pain is it?</strong> Aching, throbbing,
           swollen, worse with use – that points to tissue and inflammation,
@@ -487,7 +487,7 @@ export default function MedicationsForPain() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
           <strong>What does your health history rule out?</strong> Liver
           disease or regular alcohol use argues for caution with
@@ -502,7 +502,7 @@ export default function MedicationsForPain() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
           <strong>Where is the pain?</strong> One findable place (a knee, a
           patch of post-shingles skin) may suit a topical, which keeps the
@@ -510,7 +510,7 @@ export default function MedicationsForPain() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
           <strong>What else are you taking?</strong> Acetaminophen hides in
           hundreds of combination products; NSAIDs interact with blood
@@ -519,7 +519,7 @@ export default function MedicationsForPain() {
           </span>
         </li>
         <li className="flex gap-3">
-          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
+          <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
           <span>
           <strong>How long has it hurt?</strong> A short course for a new
           injury and a plan for a problem that has lasted months are different
@@ -554,8 +554,8 @@ export default function MedicationsForPain() {
           mixed-mechanism
         </Link>
         , real-world regimens are often thoughtful combinations of modest
-        tools rather than one powerful one. That is not settling for less –
-        it is how the pharmacology works.
+        tools rather than one powerful one. That is not settling
+        for less; it is how the pharmacology works.
       </P>
 
       <H2 id="ask">Questions worth bringing to your clinician</H2>

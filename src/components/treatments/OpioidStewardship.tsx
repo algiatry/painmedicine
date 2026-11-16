@@ -46,7 +46,7 @@ export default function OpioidStewardship() {
         acute pain, after surgery and major injury, at the end of life, and in
         cancer care they remain essential tools. The CDC&rsquo;s 2022
         guideline is more precise than its reputation: it does not ban
-        opioids – it places them late in the ladder for chronic non-cancer
+        opioids; it places them late in the ladder for chronic non-cancer
         pain, after non-opioid options have had a fair trial, and it asks
         prescribers to start low, reassess often, and pair every prescription
         with safety planning. The evidence behind that placement is direct:
@@ -57,12 +57,12 @@ export default function OpioidStewardship() {
 
       <H2 id="dependence">Dependence is physiology, not a diagnosis</H2>
       <P>
-        Take opioids regularly for a few weeks and the body adapts – receptor
+        Take opioids regularly for a few weeks and the body adapts: receptor
         systems recalibrate around the drug&rsquo;s presence. That adaptation
         is <strong>physical dependence</strong>, and it happens to essentially
         everyone on sustained therapy, the same way the body adapts to blood
         pressure medication or antidepressants. It means only one thing:
-        stopping suddenly will cause withdrawal – muscle aches, sweating,
+        stopping suddenly will cause withdrawal: muscle aches, sweating,
         insomnia, restlessness, diarrhea, anxiety. Unpleasant, temporary, and
         not dangerous in itself for most adults.
       </P>
@@ -96,8 +96,8 @@ export default function OpioidStewardship() {
       <P>
         There is one more twist worth knowing by name:{" "}
         <strong>opioid-induced hyperalgesia</strong>. In some people on
-        long-term opioids, the exposure itself sensitizes the pain system –
-        pain spreads, light touch starts to hurt, and escalating doses chase a
+        long-term opioids, the exposure itself sensitizes the pain
+        system: pain spreads, light touch starts to hurt, and escalating doses chase a
         target the medication is helping to move. When pain keeps rising
         despite rising doses, that pattern is not failure or faking; it is a
         recognized pharmacological phenomenon, and the evidence-based response
@@ -140,7 +140,7 @@ export default function OpioidStewardship() {
         widely, easier access to{" "}
         <Link
           href="/treatments/buprenorphine-for-pain"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           buprenorphine
         </Link>{" "}
@@ -154,8 +154,8 @@ export default function OpioidStewardship() {
 
       <H2 id="storage">Storage, disposal, and the medicine cabinet</H2>
       <P>
-        Most diverted prescription opioids do not come from strangers – they
-        come from the medicine cabinets of friends and relatives. The storage
+        Most diverted prescription opioids do not come from
+        strangers; they come from the medicine cabinets of friends and relatives. The storage
         rules are unglamorous and real: locked or at least out of casual
         reach, away from children, teens, and visitors; original containers;
         a rough count kept. For disposal, DEA Take Back days and year-round
@@ -168,8 +168,8 @@ export default function OpioidStewardship() {
 
       <H2 id="tapering">If you&rsquo;ve been on them for years</H2>
       <P>
-        Long-term opioids can be tapered successfully – gradually, and with
-        support. Guidelines explicitly warn against rapid or forced tapers:
+        Long-term opioids can be tapered successfully:
+        gradually, and with support. Guidelines explicitly warn against rapid or forced tapers:
         they can trigger uncontrolled pain, severe withdrawal, depression,
         and overdose when a person returns to a previous dose after losing
         tolerance. A well-run taper goes slowly enough for the nervous system

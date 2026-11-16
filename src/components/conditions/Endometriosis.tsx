@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
 function PainLayersFigure() {
   const layers = [

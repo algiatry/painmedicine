@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "@/components/science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
 function InfusionVersusHomeFigure() {
   return (
@@ -252,8 +252,8 @@ export default function Ketamine() {
         management and resuscitation, continuous monitoring of oxygen, heart
         rate, and blood pressure, and medications on hand to blunt nausea or
         a sharp rise in blood pressure. The reason is simple. Ketamine&rsquo;s
-        effects – sedation, dissociation, blood-pressure swings, and in rare
-        cases slowed breathing – arrive quickly, and someone has to be
+        effects (sedation, dissociation, blood-pressure swings, and in rare
+        cases slowed breathing) arrive quickly, and someone has to be
         watching for them.
       </P>
       <P>

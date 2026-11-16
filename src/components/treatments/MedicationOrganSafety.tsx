@@ -17,7 +17,7 @@ export default function MedicationOrganSafety() {
             Each medication class concentrates its risk in a specific organ: acetaminophen in the <strong>liver</strong>, NSAIDs in the kidneys, heart, and stomach.
           </>,
           <>
-            The established FDA adult ceiling is <strong>4,000 milligrams of acetaminophen in 24 hours</strong> from all products combined – a ceiling, not a target.
+            The established FDA adult ceiling is <strong>4,000 milligrams of acetaminophen in 24 hours</strong> from all products combined: a ceiling, not a target.
           </>,
           <>
             Injuries come from <strong>stacking</strong>: hidden acetaminophen, the NSAID &ldquo;triple whammy,&rdquo; and opioids or sedatives combined with benzodiazepines, sleep aids, or alcohol.
@@ -123,13 +123,13 @@ export default function MedicationOrganSafety() {
         the kind a clinician can only make if they know you are taking it.
         (Aspirin is the exception that proves the rule: it is an NSAID, but at
         the low doses used for heart protection its antiplatelet effect
-        dominates – a separate question entirely for your physician.)
+        dominates, a separate question entirely for your physician.)
       </P>
 
       <H2 id="gut">The stomach: the price of blocking the shield</H2>
       <P>
         The stomach protects itself from its own acid with a layer of mucus
-        and bicarbonate – maintained, again, by prostaglandins. Block them,
+        and bicarbonate, maintained, again, by prostaglandins. Block them,
         and the shield thins: NSAIDs carry warnings about ulcers and GI
         bleeding, a risk that climbs steeply with age over 65, a previous
         ulcer, blood thinners, corticosteroids, SSRI antidepressants, and
@@ -155,7 +155,7 @@ export default function MedicationOrganSafety() {
         depth on the{" "}
         <Link
           href="/treatments/opioid-stewardship"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           opioid safety page
         </Link>

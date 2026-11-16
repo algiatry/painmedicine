@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "./Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
 /**
  * Figure – the descending "dial". Attention in the cortex sets the
@@ -216,8 +216,8 @@ export default function AttentionAndDistraction() {
         A companion study from the same group used a different distraction – a
         demanding counting task, while volunteers received bursts of painful
         heat. Again, pain ratings fell when the task was hard. Across the
-        brain&rsquo;s pain-processing network – the thalamus, the insula, part
-        of the cingulate cortex – activity dropped in step with the ratings.
+        brain&rsquo;s pain-processing network (the thalamus, the insula, part
+        of the cingulate cortex) activity dropped in step with the ratings.
         At the same time, regions involved in control and evaluation became
         <em> more</em> active. Distraction was not switching the pain off; it
         was recruiting one set of circuits to dampen another.
@@ -333,9 +333,9 @@ export default function AttentionAndDistraction() {
       </P>
       <P>
         One safety note: distraction changes how pain is <em>felt</em>, not
-        what is causing it. New, severe, or rapidly worsening pain – chest
+        what is causing it. New, severe, or rapidly worsening pain (chest
         pain, a sudden severe headache, pain with fever, weakness, numbness,
-        or loss of bladder or bowel control – needs urgent medical attention,
+        or loss of bladder or bowel control) needs urgent medical attention,
         however well a headset or a playlist is handling it in the moment.
       </P>
 

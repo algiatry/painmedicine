@@ -341,14 +341,14 @@ export default function HowPainWorks() {
         driver of long-term pain – the bridge from a passing injury to{" "}
         <Link
           href="/understanding-pain/acute-vs-chronic-pain"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           chronic pain
         </Link>
         , and the core of the third pain type,{" "}
         <Link
           href="/understanding-pain/types-of-pain"
-          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600"
+          className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
         >
           nociplastic pain
         </Link>
@@ -358,8 +358,8 @@ export default function HowPainWorks() {
       <H2 id="why-it-matters">Why this matters for you</H2>
       <P>
         If pain were only a damage readout, the only way to treat it would be to
-        fix tissue. Because pain is a nervous-system process – detected, filtered
-        at the gate, and built by the brain – there are many more points where it
+        fix tissue. Because pain is a nervous-system process (detected, filtered
+        at the gate, and built by the brain) there are many more points where it
         can be turned down: through the body, the nerves, and the brain
         together. That is the whole idea behind modern, multidisciplinary pain
         care, and it is the reason understanding pain is the first step toward

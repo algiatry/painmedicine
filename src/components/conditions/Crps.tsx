@@ -3,7 +3,7 @@ import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
-  "text-brand underline decoration-faint underline-offset-2 hover:decoration-teal-600";
+  "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
 /**
  * Figure 1 – the four Budapest sign categories: what makes CRPS visible.
@@ -154,8 +154,8 @@ export default function Crps() {
   return (
     <div>
       <P>
-        Complex regional pain syndrome is the rarest condition in this hub –
-        a large Dutch population study found roughly 26 new cases per 100,000
+        Complex regional pain syndrome is the rarest condition in
+        this hub: a large Dutch population study found roughly 26 new cases per 100,000
         people each year (other studies report fewer), most often in women,
         most often after a wrist fracture, and
         the one where early recognition changes the most. It used to go by
@@ -202,12 +202,12 @@ export default function Crps() {
         should stand down after healing keeps running, driven partly by
         nerve endings themselves releasing inflammatory signals into the
         limb. The <strong>small-nerve regulation</strong> of blood vessels
-        and sweat glands goes haywire – hence the color, temperature, and
+        and sweat glands goes haywire, hence the color, temperature, and
         sweating changes. And upstream, the <strong>brain
         reorganizes</strong>: imaging studies show the affected
         limb&rsquo;s territory in the brain&rsquo;s sensory map shrinking
         and blurring, which tracks with the strange feelings patients
-        report – a hand that feels foreign, swollen beyond its true size,
+        report: a hand that feels foreign, swollen beyond its true size,
         hard to locate with eyes closed. None of this is psychological in
         origin, and none of it is the patient&rsquo;s doing. It is{" "}
         <Link href="/understanding-pain/how-pain-works" className={link}>
@@ -240,7 +240,7 @@ export default function Crps() {
         in graded steps</strong>, run by therapists who know this
         condition. It often begins below the threshold of movement
         entirely: desensitization to touch, then{" "}
-        <strong>graded motor imagery</strong> – first recognizing left
+        <strong>graded motor imagery</strong>, first recognizing left
         from right hands in photos, then imagining movement, and then{" "}
         <strong>mirror therapy</strong>, the elegant trick in the figure:
         the brain watches two healthy hands move, and the shrunken map
@@ -257,8 +257,8 @@ export default function Crps() {
         resists all of it, neuromodulation has real receipts:{" "}
         <strong>spinal cord stimulation</strong> proved itself in CRPS in
         a randomized trial back in 2000, and{" "}
-        <strong>dorsal root ganglion stimulation</strong> – pinpoint
-        stimulation of the nerve cluster serving the painful territory –
+        <strong>dorsal root ganglion stimulation</strong> (pinpoint
+        stimulation of the nerve cluster serving the painful territory)
         beat conventional stimulation head-to-head in the ACCURATE trial,
         making CRPS the condition where{" "}
         <Link href="/future-of-pain-medicine/neuromodulation" className={link}>
@@ -272,8 +272,8 @@ export default function Crps() {
 
       <H2 id="whats-coming">What&rsquo;s coming</H2>
       <P>
-        CRPS research now runs along the neuroimmune frontier – the
-        crosstalk between nerves and immune cells that keeps the limb
+        CRPS research now runs along the neuroimmune
+        frontier: the crosstalk between nerves and immune cells that keeps the limb
         inflamed – alongside refinements in brain-retraining rehabilitation
         and stimulation. The{" "}
         <Link href="/future-of-pain-medicine/mind-and-brain" className={link}>
