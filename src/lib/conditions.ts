@@ -1799,7 +1799,7 @@ export const CONDITION_ARTICLES: Article[] = [
     description:
       "Why shingles hurts and why the pain sometimes stays: the reactivated chickenpox virus, the 72-hour treatment window, what postherpetic neuralgia is, how it is treated today, and how well the vaccine prevents it.",
     status: "sourced",
-    lastUpdated: "2026-11-14",
+    lastUpdated: "2026-11-20",
     answer:
       "Shingles is a painful rash caused by the chickenpox virus reactivating in a single nerve, so it appears in one band on one side of the body. For most people the pain fades as the skin heals. When it lasts about three months or more, it is called postherpetic neuralgia – nerve pain that can be treated, and that vaccination largely prevents.",
     faqs: [
@@ -1839,6 +1839,11 @@ export const CONDITION_ARTICLES: Article[] = [
         source: "CDC",
         title: "Clinical Overview of Shingles (Herpes Zoster)",
         url: "https://www.cdc.gov/shingles/hcp/clinical-overview/index.html",
+      },
+      {
+        source: "CDC",
+        title: "Clinical Features of Shingles (Herpes Zoster)",
+        url: "https://www.cdc.gov/shingles/hcp/clinical-signs/index.html",
       },
       {
         source: "CDC",
@@ -1911,7 +1916,7 @@ export const CONDITION_ARTICLES: Article[] = [
     description:
       "What trigeminal neuralgia is: the electric-shock facial pain set off by a touch, the blood vessel pressing on a nerve behind most cases, why ordinary painkillers fail, the medicines that work, and what surgery offers when they stop working.",
     status: "sourced",
-    lastUpdated: "2026-11-14",
+    lastUpdated: "2026-11-20",
     answer:
       "Trigeminal neuralgia causes sudden, shock-like attacks of severe pain on one side of the face, lasting seconds and set off by light touch, eating, or talking. In most cases a blood vessel is pressing on the trigeminal nerve. Ordinary painkillers rarely help, but specific anti-seizure medicines often do, and surgery is a standard option when they fail.",
     faqs: [
@@ -1971,6 +1976,11 @@ export const CONDITION_ARTICLES: Article[] = [
         source: "Cochrane / PubMed",
         title: "Wiffen et al. – Carbamazepine for chronic neuropathic pain and fibromyalgia in adults",
         url: "https://pubmed.ncbi.nlm.nih.gov/24719027/",
+      },
+      {
+        source: "Clinical Pharmacology & Therapeutics / PubMed",
+        title: "Phillips et al. – CPIC guideline for HLA genotype and use of carbamazepine and oxcarbazepine (2017 update)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/29392710/",
       },
       {
         source: "New England Journal of Medicine / PubMed",

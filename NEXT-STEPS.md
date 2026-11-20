@@ -46,17 +46,25 @@ Still the largest trust and ranking lever, and still entirely off-repo.
    `buprenorphine-for-pain`, `ketamine`, `kratom`,
    `cannabis-and-cannabinoids`.
 
-**Review these first.** The November pages carry open questions recorded in
-PRs #40 and #41:
+**Review these first.** The November pages carried open questions recorded
+in PRs #40 and #41. The four below were worked through against primary
+sources on 2026-11-20; a reviewer should still confirm them:
 
 - `tapering-opioids` quotes the CDC's "about 10% a month or slower"
-  benchmark. Keep, reword, or cut.
-- `trigeminal-neuralgia` omits genetic testing before carbamazepine because
-  the source could not be opened. Likely worth adding.
-- `shingles-pain` rests its three-month definition on a paper whose text was
-  not accessible, and gives no figure for how often shingles leads to
-  lasting pain.
-- `cannabis-and-cannabinoids` says nothing about federal scheduling.
+  benchmark. **Kept** — it is accurately attributed to the 2022 guideline
+  (PMC9639433) and already framed as a clinician benchmark, not a schedule.
+- `trigeminal-neuralgia` omitted genetic testing before carbamazepine.
+  **Added** a note on HLA-B\*15:02 screening and the Stevens-Johnson risk,
+  cited to the CPIC guideline (PMID 29392710). The EAN guideline already on
+  the page does not cover it.
+- `shingles-pain` **now** anchors the postherpetic-neuralgia definition to
+  the CDC's "more than 90 days after rash onset" and states the proportion
+  who develop it (CDC: about 10–18%), cited to the CDC Clinical Features
+  page.
+- `cannabis-and-cannabinoids` **now** covers federal scheduling: still
+  Schedule I, with the 2024 proposal to move it to Schedule III not
+  finalized as of 2026 (Federal Register 91 FR 22777). Fast-moving — recheck
+  at the next reference sweep.
 
 ---
 

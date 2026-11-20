@@ -128,23 +128,26 @@ export default function ShinglesPain() {
 
       <H2 id="phn">When the pain outlasts the rash</H2>
       <P>
-        Postherpetic neuralgia is usually defined as pain that continues about
-        three months or more after the rash began. It is felt in the same area
-        the rash covered. People describe burning, stabbing, or electric
-        jolts, and skin so sensitive that clothing hurts – a symptom called
-        allodynia. The skin can look fully healed while the nerve beneath it
-        is still misfiring. It belongs to the neuropathic group in{" "}
+        Postherpetic neuralgia is defined by the CDC as pain that continues
+        more than 90 days after the rash began, roughly three months. It is
+        felt in the same area the rash covered. People describe burning,
+        stabbing, or electric jolts, and skin so sensitive that clothing hurts
+        – a symptom called allodynia. The skin can look fully healed while the
+        nerve beneath it is still misfiring. It belongs to the neuropathic
+        group in{" "}
         <Link href="/understanding-pain/types-of-pain" className={link}>
           the three types of pain
         </Link>
         .
       </P>
       <P>
+        It is the most common complication of shingles: the CDC estimates
+        that about 10% to 18% of people who get shingles go on to develop it.
         Age is the clearest risk factor: the older a person is when shingles
-        strikes, the greater the chance of lasting pain. A pooled analysis of
-        19 studies also found the risk more than doubled in people who had pain
-        before the rash appeared, severe pain during the attack, a severe
-        rash, or shingles involving the eye. Lasting pain can wear down sleep,
+        strikes, the greater the chance of lasting pain, and it is rare before
+        age 40. A pooled analysis of 19 studies also found the risk more than
+        doubled in people who had pain before the rash appeared, severe pain
+        during the attack, a severe rash, or shingles involving the eye. Lasting pain can wear down sleep,
         mood, and appetite. For most people it eases over time, though that
         can take months and for some it lasts longer.
       </P>

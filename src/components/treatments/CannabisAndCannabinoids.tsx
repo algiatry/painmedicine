@@ -194,10 +194,21 @@ export default function CannabisAndCannabinoids() {
         In practice this means products bought from a dispensary or a shop
         have not been through the testing for purity, strength, and
         consistency that an approved medicine must pass, and what is on the
-        label is not guaranteed by the FDA. Laws on medical and recreational
-        cannabis differ from state to state and continue to change, so the
-        legal position where you live is worth checking directly rather than
-        assuming.
+        label is not guaranteed by the FDA.
+      </P>
+      <P>
+        Cannabis also sits in a particular place in federal law: it has long
+        been a <strong>Schedule I</strong> controlled substance, the most
+        restrictive category of the Controlled Substances Act, defined as
+        drugs the government classes as having a high potential for abuse and
+        no currently accepted medical use. That classification is one reason
+        rigorous trials have been hard to run, and it coexists awkwardly with
+        the state medical-cannabis programs that now operate across much of
+        the country. A federal proposal to move cannabis to the less
+        restrictive Schedule III began in 2024 and, as of 2026, has not been
+        finalized. Because the federal picture and state laws both keep
+        changing, the legal position where you live is worth checking directly
+        rather than assuming.
       </P>
 
       <H2 id="guidance">What guidelines say</H2>
