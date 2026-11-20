@@ -18,10 +18,13 @@
 //   2. In Search Console → property → Settings → Users and permissions, add the
 //      service-account email (client_email from the JSON) as a Full or
 //      Restricted user.
-//   3. Point the script at the key + property:
-//        export GSC_SA_KEY_FILE="C:/Users/waite/.secrets/gsc-sa.json"
+//   3. Point the script at the key + property, either by file path or by
+//      passing the key JSON inline (handy for CI / cloud, where there's no
+//      file on disk — set it from a secret):
+//        export GSC_SA_KEY_FILE="/path/to/gsc-sa.json"   # a file path, OR
+//        export GSC_SA_KEY='{"client_email":"...","private_key":"..."}'
 //        export GSC_SITE_URL="sc-domain:painmedicine.com"   # or https://painmedicine.com/
-//      (or pass the site as the first CLI arg; both default for this project)
+//      (or pass the site as the first CLI arg; the site defaults for this project)
 //
 // Run:  node scripts/gsc-report.mjs [siteUrl] [--days=90]
 //       npm run gsc
@@ -44,9 +47,11 @@ const flags = Object.fromEntries(
 const positional = args.filter((a) => !a.startsWith('--'))
 
 const SITE_URL = positional[0] || process.env.GSC_SITE_URL || 'sc-domain:painmedicine.com'
-const KEY_FILE =
-  process.env.GSC_SA_KEY_FILE ||
-  'C:/Users/waite/.secrets/my-tide-pjt-191-f9d9237851cb.json'
+// The service-account key may come as inline JSON (GSC_SA_KEY, good for CI /
+// cloud secrets) or as a path to the JSON file (GSC_SA_KEY_FILE). No default
+// path — a missing key fails loudly rather than reading someone's home dir.
+const KEY_JSON = process.env.GSC_SA_KEY || ''
+const KEY_FILE = process.env.GSC_SA_KEY_FILE || ''
 const DAYS = Number(flags.days || 90)
 const TOKEN_URL = 'https://oauth2.googleapis.com/token'
 const SCOPE = 'https://www.googleapis.com/auth/webmasters.readonly'
@@ -61,15 +66,23 @@ function base64url(input) {
     .replace(/\//g, '_')
 }
 
-async function getAccessToken(keyFile) {
+async function getAccessToken({ keyJson, keyFile }) {
   let sa
-  try {
-    sa = JSON.parse(await readFile(resolve(keyFile), 'utf8'))
-  } catch (e) {
-    fail(`Could not read/parse key file at ${keyFile}: ${e.message}`)
+  if (keyJson) {
+    try {
+      sa = JSON.parse(keyJson)
+    } catch (e) {
+      fail(`Could not parse GSC_SA_KEY as JSON: ${e.message}`)
+    }
+  } else {
+    try {
+      sa = JSON.parse(await readFile(resolve(keyFile), 'utf8'))
+    } catch (e) {
+      fail(`Could not read/parse key file at ${keyFile}: ${e.message}`)
+    }
   }
   if (!sa.client_email || !sa.private_key) {
-    fail('Key file is missing client_email / private_key — is it a service-account JSON?')
+    fail('Key is missing client_email / private_key — is it a service-account JSON?')
   }
 
   const now = Math.floor(Date.now() / 1000)
@@ -180,16 +193,17 @@ async function main() {
         '  e.g. node scripts/gsc-report.mjs "sc-domain:americanpeptide.com"',
     )
   }
-  if (!KEY_FILE) {
+  if (!KEY_JSON && !KEY_FILE) {
     fail(
-      'No service-account key. Set GSC_SA_KEY_FILE to the path of the JSON key.\n' +
+      'No service-account key. Set GSC_SA_KEY to the key JSON inline, or\n' +
+        '  GSC_SA_KEY_FILE to the path of the JSON key.\n' +
         '  See the setup notes at the top of this file.',
     )
   }
 
   console.log(`\nGSC query report for ${SITE_URL} (last ${DAYS} days)\n`)
 
-  const { token, clientEmail } = await getAccessToken(KEY_FILE)
+  const { token, clientEmail } = await getAccessToken({ keyJson: KEY_JSON, keyFile: KEY_FILE })
   console.log(`✓ Authenticated as ${clientEmail}`)
 
   const end = new Date()
