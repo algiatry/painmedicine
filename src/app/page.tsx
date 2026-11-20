@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { NAV, SITE } from "@/lib/site";
+import { ALL_ARTICLES } from "@/lib/articles";
 import JsonLd from "@/components/JsonLd";
 import HeroFigure from "@/components/HeroFigure";
 import HubIcon from "@/components/HubIcon";
@@ -79,6 +80,7 @@ const TRUST = [
 
 const START = NAV[0];
 const MORE_HUBS = NAV.slice(1);
+const GUIDE_COUNT = ALL_ARTICLES.length;
 
 export default function Home() {
   return (
@@ -159,7 +161,7 @@ export default function Home() {
       <section aria-labelledby="explore-heading" className="py-14 sm:py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <p className="text-xs font-semibold uppercase tracking-widest text-brand">
-            Five sections
+            {NAV.length} sections · {GUIDE_COUNT} guides
           </p>
           <h2
             id="explore-heading"
@@ -325,8 +327,8 @@ export default function Home() {
             Good first reads
           </h2>
           <p className="mt-2 max-w-2xl text-sm text-muted">
-            Six pages that show what the site aims for. Pick whichever is
-            closest to what you&rsquo;re living with.
+            {FEATURED.length} pages that show what the site aims for. Pick
+            whichever is closest to what you&rsquo;re living with.
           </p>
           <ol className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {FEATURED.map((item) => (
