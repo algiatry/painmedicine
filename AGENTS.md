@@ -16,11 +16,12 @@ runs, in order:
 
 1. `npm audit --audit-level=high` — fails on high/critical advisories
 2. `npm run lint` — eslint + content-lint (`scripts/content-lint.ts`)
-3. `npm run build` — `next build`
+3. `npm test` — `node:test` suites for the pure logic (`tests/*.test.ts`)
+4. `npm run build` — `next build`
 
 `main` is protected: the **verify** check is a required status check, so a PR
 cannot merge while any of those steps is red. Keep changes passing locally
-before you push — run `npm run lint` and `npm run build`, and resolve any
+before you push — run `npm run lint`, `npm test` and `npm run build`, and resolve any
 high/critical `npm audit` finding (bump the dependency; don't silence it).
 Don't weaken the audit gate or skip/disable a failing check to get green.
 
