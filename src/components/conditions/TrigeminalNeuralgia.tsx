@@ -160,6 +160,19 @@ export default function TrigeminalNeuralgia() {
         adjusting, and monitoring these medicines belongs with a clinician;
         this page gives no dosing guidance.
       </P>
+      <P>
+        One safety step is worth knowing about before carbamazepine is
+        started. In people with Asian ancestry, a gene variant called{" "}
+        <strong>HLA-B*15:02</strong> raises the risk of a rare but
+        serious skin reaction to the drug, including Stevens-Johnson syndrome.
+        FDA labeling and pharmacogenetic guidelines advise a one-time blood
+        test for the variant before a first course of carbamazepine in
+        patients whose ancestry comes from populations where it is common,
+        and choosing a different medicine if the test is positive. The variant
+        is largely absent in people of non-Asian descent, so the test is
+        targeted rather than universal. Oxcarbazepine carries a related,
+        smaller risk. Your prescriber decides whether the test applies to you.
+      </P>
 
       <H2 id="surgery">When surgery is considered</H2>
       <P>

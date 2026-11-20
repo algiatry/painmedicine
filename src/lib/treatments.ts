@@ -1231,7 +1231,7 @@ export const TREATMENT_ARTICLES: Article[] = [
     description:
       "What the trials show about cannabis, THC, and CBD for chronic pain: a small average benefit, common side effects, thin long-term data, what the FDA has and has not approved, and what a leading guideline recommends.",
     status: "sourced",
-    lastUpdated: "2026-11-14",
+    lastUpdated: "2026-11-20",
     answer:
       "In pooled clinical trials, cannabis-based medicines give a small to very small improvement in chronic pain, physical function, and sleep, with common side effects such as dizziness and drowsiness. The FDA has not approved cannabis for any condition. A leading guideline gives a weak recommendation for a trial alongside standard care when that care has not been enough.",
     faqs: [
@@ -1296,6 +1296,11 @@ export const TREATMENT_ARTICLES: Article[] = [
         source: "NIH / NCCIH",
         title: "Cannabis (Marijuana) and Cannabinoids: What You Need To Know",
         url: "https://www.nccih.nih.gov/health/cannabis-marijuana-and-cannabinoids-what-you-need-to-know",
+      },
+      {
+        source: "Federal Register / DEA",
+        title: "Schedules of Controlled Substances: Rescheduling of Marijuana (proposed rule, 91 FR 22777)",
+        url: "https://www.federalregister.gov/documents/2026/04/28/2026-08177/schedules-of-controlled-substances-rescheduling-of-marijuana",
       },
     ],
     related: [
