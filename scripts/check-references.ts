@@ -29,6 +29,7 @@
  */
 
 import * as fs from "node:fs";
+import { fileURLToPath } from "node:url";
 import { ALL_ARTICLES } from "../src/lib/articles";
 import { CANDIDATES } from "../src/lib/pipeline";
 
@@ -80,7 +81,7 @@ async function get(url: string, init: RequestInit = {}): Promise<Response> {
 }
 
 /** Lower-cased significant words, accents and punctuation stripped. */
-function words(s: string): string[] {
+export function words(s: string): string[] {
   return s
     .normalize("NFKD")
     .replace(/[̀-ͯ]/g, "")
@@ -94,7 +95,7 @@ function words(s: string): string[] {
  * Does an NCBI record look like the paper we cite? Either the first author's
  * surname appears in our citation, or most of the record's title words do.
  */
-function looksLike(cited: string, recordTitle: string, firstAuthor: string) {
+export function looksLike(cited: string, recordTitle: string, firstAuthor: string) {
   const citedWords = new Set(words(cited));
   const surname = words(firstAuthor.split(" ")[0] ?? "")[0];
   if (surname && citedWords.has(surname)) return true;
@@ -283,4 +284,6 @@ async function main() {
   process.exit(failing.length ? 1 : 0);
 }
 
-main();
+// Run the network check only when executed directly, not when imported (e.g. by tests).
+const invokedPath = process.argv[1] ? fs.realpathSync(process.argv[1]) : "";
+if (invokedPath && invokedPath === fileURLToPath(import.meta.url)) main();

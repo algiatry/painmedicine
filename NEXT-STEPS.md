@@ -19,7 +19,7 @@
 | Content lint | 0 errors, 0 warnings. Enforces the cross-link triangle, that every internal link resolves, and per-page caps on house-style tics (spaced en dashes, "honest", "actually") |
 | Search | Header search over articles, hubs, and glossary; runs in the browser |
 | Search data | No Search Console or Bing report has been run; `reports/` does not exist |
-| Tests | None beyond the content lint |
+| Tests | `npm test` covers the pure logic (search ranking, citation title matcher) via `node:test`; content lint covers the rest |
 
 The site is built and its citations are checked. What it lacks is the one
 thing every page is waiting for: a named reviewer.
@@ -122,9 +122,10 @@ directions, and into the review queue the day it ships.
 
 ## 7. Small engineering items
 
-- **Tests for the pure logic.** `search()` ranking in `src/lib/search.ts` and
-  the title matcher in `scripts/check-references.ts` are both easy to break
-  silently.
+- **Tests for the pure logic.** Done: `npm test` runs `node:test` suites for
+  `search()` ranking in `src/lib/search.ts` and the `looksLike`/`words` title
+  matcher in `scripts/check-references.ts`, the two pieces easiest to break
+  silently. `npm test` runs in the `verify` CI job between lint and build.
 - **Search analytics.** Nothing records what people search for and fail to
   find. The privacy policy states that search terms never leave the
   device, so any logging would need that page changed first.

@@ -37,5 +37,8 @@ jobs:
       - name: Lint (code + content)
         run: npm run lint
 
+      - name: Unit tests (pure logic)
+        run: npm test
+
       - name: Build
         run: npm run build
