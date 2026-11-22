@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE, HELP_LINES } from "@/lib/site";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Finding Pain Care You Can Trust",
   description:
     "How to find and evaluate a qualified pain specialist: what board certification means, where to verify it, the questions worth asking at a first visit, and the red flags of an illegitimate pain clinic.",
-  alternates: { canonical: "/find-help" },
-};
+  path: "/find-help",
+});
 
 const DIRECTORIES = [
   {

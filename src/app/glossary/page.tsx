@@ -1,15 +1,15 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import { SITE } from "@/lib/site";
+import { pageMetadata } from "@/lib/metadata";
 import { GLOSSARY, glossaryByLetter, termSlug } from "@/lib/glossary";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Glossary of Pain Terms",
   description:
     "Plain-language definitions of the pain terms used across PainMedicine.com – from nociceptive and nociplastic pain to central sensitization, neuromodulation, and pharmacogenomics.",
-  alternates: { canonical: "/glossary" },
-};
+  path: "/glossary",
+});
 
 function definedTermSetJsonLd() {
   return {

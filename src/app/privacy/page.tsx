@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE } from "@/lib/site";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Privacy Policy",
   description:
     "PainMedicine.com has no accounts, no forms, no ad tracking, and no data to sell. Site search runs in your browser. What little the site sees, and what it never collects.",
-  alternates: { canonical: "/privacy" },
-};
+  path: "/privacy",
+});
 
 const LAST_UPDATED = "November 14, 2026";
 

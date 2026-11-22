@@ -24,24 +24,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${SITE.url}${page.path}`,
     lastModified: new Date(page.lastModified),
     changeFrequency: "monthly" as const,
+    // Homepage is the strongest entry point; the policy/legal pages sit low.
+    priority: page.path === "" ? 1 : 0.5,
   }));
 
   const hubEntries = HUBS.map((h) => ({
     url: `${SITE.url}/${h.slug}`,
     lastModified: new Date(h.lastUpdated),
     changeFrequency: "weekly" as const,
+    priority: 0.9,
   }));
 
   const articleEntries = ALL_ARTICLES.map((a) => ({
     url: `${SITE.url}/${a.hub}/${a.slug}`,
     lastModified: new Date(a.lastUpdated),
     changeFrequency: "monthly" as const,
+    priority: 0.7,
   }));
 
   const reviewerEntries = REVIEWERS.map((r) => ({
     url: `${SITE.url}/reviewers/${r.slug}`,
     lastModified: new Date(r.joinedAt),
     changeFrequency: "monthly" as const,
+    priority: 0.5,
   }));
 
   return [...staticEntries, ...hubEntries, ...articleEntries, ...reviewerEntries];

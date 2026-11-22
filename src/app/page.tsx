@@ -1,7 +1,11 @@
 import Link from "next/link";
-import { NAV, SITE } from "@/lib/site";
+import { pageMetadata } from "@/lib/metadata";
+import { NAV } from "@/lib/site";
+
+// Title and description inherit the root layout defaults; this adds the
+// homepage canonical (/) and og:url, the one route that otherwise had none.
+export const metadata = pageMetadata({ path: "/" });
 import { ALL_ARTICLES } from "@/lib/articles";
-import JsonLd from "@/components/JsonLd";
 import HeroFigure from "@/components/HeroFigure";
 import HubIcon from "@/components/HubIcon";
 import ArticleEmblem from "@/components/ArticleEmblem";
@@ -358,17 +362,6 @@ export default function Home() {
           </ol>
         </div>
       </section>
-
-      <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "WebSite",
-          name: SITE.name,
-          alternateName: SITE.shortName,
-          url: SITE.url,
-          description: SITE.description,
-        }}
-      />
     </div>
   );
 }

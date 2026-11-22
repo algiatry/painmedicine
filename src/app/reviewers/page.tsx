@@ -1,17 +1,17 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import { SITE } from "@/lib/site";
+import { pageMetadata } from "@/lib/metadata";
 import { REVIEWERS } from "@/lib/reviewers";
 import { ALL_ARTICLES } from "@/lib/articles";
 import { breadcrumbJsonLd, personJsonLd } from "@/lib/schema";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Editorial Board & Medical Reviewers",
   description:
     "The credentialed physicians who review the clinical pages on PainMedicine.com, the checklist every page is held to, and how to join the board.",
-  alternates: { canonical: "/reviewers" },
-};
+  path: "/reviewers",
+});
 
 /** The public version of the reviewer checklist (CONTENT-INTAKE.md §5). */
 const CHECKLIST = [
