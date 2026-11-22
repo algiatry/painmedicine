@@ -48,12 +48,9 @@ export type PageMeta = {
 /**
  * WebSite node. Declares the canonical site name (and a shorter
  * alternateName) so search engines have an explicit name to show for the
- * site, and links the site to its publishing Organization.
- *
- * No `potentialAction`/SearchAction is declared: the on-site search is a
- * client-only dialog that navigates straight to a result, with no
- * `?q=`-driven results URL for a search box to target. Add a SearchAction
- * only once such a results route exists.
+ * site, links the site to its publishing Organization, and advertises the
+ * on-site search via a SearchAction (the Google sitelinks search box). The
+ * target is the server-rendered /search?q= results page.
  */
 export function websiteJsonLd() {
   return {
@@ -66,6 +63,14 @@ export function websiteJsonLd() {
     description: SITE.description,
     inLanguage: "en-US",
     publisher: { "@id": `${SITE.url}/#organization` },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${SITE.url}/search?q={search_term_string}`,
+      },
+      "query-input": "required name=search_term_string",
+    },
   };
 }
 
