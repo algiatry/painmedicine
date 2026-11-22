@@ -165,6 +165,17 @@ export default function SiteSearch() {
             ))}
           </ul>
 
+          {index && trimmed && results.length > 0 && (
+            <button
+              type="button"
+              onClick={() => go(`/search?q=${encodeURIComponent(trimmed)}`)}
+              className="mt-1 flex w-full items-center justify-between gap-3 rounded-xl px-3 py-2.5 text-sm font-medium text-brand hover:bg-note"
+            >
+              <span>See all results for &ldquo;{trimmed}&rdquo;</span>
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+          )}
+
           <div aria-live="polite" className="px-3 text-sm text-muted">
             {failed ? (
               <p className="py-6">
