@@ -4,7 +4,8 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
-import { organizationJsonLd } from "@/lib/schema";
+import { organizationJsonLd, websiteJsonLd } from "@/lib/schema";
+import { OG_BASE } from "@/lib/metadata";
 import { SITE } from "@/lib/site";
 import { Analytics } from "@vercel/analytics/next";
 
@@ -20,11 +21,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE.shortName}`,
   },
   description: SITE.description,
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    siteName: SITE.shortName,
-  },
+  openGraph: OG_BASE,
   twitter: {
     card: "summary_large_image",
   },
@@ -42,6 +39,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en" className={`${sourceSans.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-background text-body">
         <JsonLd data={organizationJsonLd()} />
+        <JsonLd data={websiteJsonLd()} />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

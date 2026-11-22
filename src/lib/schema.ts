@@ -45,10 +45,35 @@ export type PageMeta = {
   lastUpdated: string; // ISO date
 };
 
+/**
+ * WebSite node. Declares the canonical site name (and a shorter
+ * alternateName) so search engines have an explicit name to show for the
+ * site, and links the site to its publishing Organization.
+ *
+ * No `potentialAction`/SearchAction is declared: the on-site search is a
+ * client-only dialog that navigates straight to a result, with no
+ * `?q=`-driven results URL for a search box to target. Add a SearchAction
+ * only once such a results route exists.
+ */
+export function websiteJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${SITE.url}/#website`,
+    name: SITE.name,
+    alternateName: SITE.shortName,
+    url: SITE.url,
+    description: SITE.description,
+    inLanguage: "en-US",
+    publisher: { "@id": `${SITE.url}/#organization` },
+  };
+}
+
 export function organizationJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": `${SITE.url}/#organization`,
     name: SITE.name,
     url: SITE.url,
     description: SITE.description,

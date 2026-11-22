@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE } from "@/lib/site";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Terms of Use",
   description:
     "The terms that govern reading PainMedicine.com: educational content only, no medical advice, no warranties, and how the material may be used.",
-  alternates: { canonical: "/terms" },
-};
+  path: "/terms",
+});
 
 const LAST_UPDATED = "August 30, 2026";
 

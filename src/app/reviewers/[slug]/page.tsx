@@ -8,6 +8,7 @@ import { REVIEWERS, getReviewer } from "@/lib/reviewers";
 import { ALL_ARTICLES } from "@/lib/articles";
 import { HUBS } from "@/lib/hubs";
 import { breadcrumbJsonLd, personJsonLd } from "@/lib/schema";
+import { pageMetadata } from "@/lib/metadata";
 
 export const dynamicParams = false;
 
@@ -23,11 +24,11 @@ export async function generateMetadata({
   const { slug } = await params;
   const r = getReviewer(slug);
   if (!r) return {};
-  return {
+  return pageMetadata({
     title: `${r.name}, ${r.credentials} – Medical Reviewer`,
     description: `${r.headline}. ${r.bio[0]}`,
-    alternates: { canonical: `/reviewers/${r.slug}` },
-  };
+    path: `/reviewers/${r.slug}`,
+  });
 }
 
 export default async function ReviewerPage({

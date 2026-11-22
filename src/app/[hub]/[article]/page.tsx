@@ -12,6 +12,7 @@ import { getHub } from "@/lib/hubs";
 import { ALL_ARTICLES, getArticle } from "@/lib/articles";
 import { ARTICLE_BODIES } from "@/components/bodies";
 import { SITE, correctionHref } from "@/lib/site";
+import { pageMetadata } from "@/lib/metadata";
 import ArticleEmblem from "@/components/ArticleEmblem";
 import ArticleToc from "@/components/ArticleToc";
 
@@ -29,11 +30,11 @@ export async function generateMetadata({
   const { hub, article } = await params;
   const a = getArticle(hub, article);
   if (!a) return {};
-  return {
+  return pageMetadata({
     title: a.seoTitle ?? a.title,
     description: a.description,
-    alternates: { canonical: `/${a.hub}/${a.slug}` },
-  };
+    path: `/${a.hub}/${a.slug}`,
+  });
 }
 
 export default async function ArticlePage({

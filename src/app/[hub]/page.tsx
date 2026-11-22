@@ -5,6 +5,7 @@ import JsonLd from "@/components/JsonLd";
 import ReviewByline from "@/components/ReviewByline";
 import { faqJsonLd, medicalWebPageJsonLd } from "@/lib/schema";
 import { HUBS, getHub } from "@/lib/hubs";
+import { pageMetadata } from "@/lib/metadata";
 import ArticleEmblem from "@/components/ArticleEmblem";
 
 export const dynamicParams = false;
@@ -21,11 +22,11 @@ export async function generateMetadata({
   const { hub: slug } = await params;
   const hub = getHub(slug);
   if (!hub) return {};
-  return {
+  return pageMetadata({
     title: hub.title,
     description: hub.description,
-    alternates: { canonical: `/${hub.slug}` },
-  };
+    path: `/${hub.slug}`,
+  });
 }
 
 export default async function HubPage({

@@ -1,12 +1,12 @@
-import type { Metadata } from "next";
 import { HELP_LINES, SITE } from "@/lib/site";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Medical Disclaimer",
   description:
     "PainMedicine.com provides educational content only. It is not medical advice and is not a substitute for care from a licensed clinician.",
-  alternates: { canonical: "/medical-disclaimer" },
-};
+  path: "/medical-disclaimer",
+});
 
 export default function MedicalDisclaimerPage() {
   return (
