@@ -20,7 +20,7 @@ export const TREATMENT_ARTICLES: Article[] = [
     slug: "kratom",
     title: "Kratom",
     description:
-      "What kratom is, how mitragynine acts on opioid receptors, what the evidence says about pain relief, the real risks – dependence, interactions, unregulated products, and where the law stands on concentrated 7-OH.",
+      "Kratom's active alkaloid, mitragynine, acts on opioid receptors. Reviews what clinical evidence exists for pain relief, risks including dependence and product contamination, and the legal status of concentrated 7-OH.",
     status: "sourced",
     lastUpdated: "2026-10-18",
     answer:
@@ -142,7 +142,7 @@ export const TREATMENT_ARTICLES: Article[] = [
     title: "Medications for pain",
     seoTitle: "Pain Medications: Types of Pain Relievers and Which Is Right for You",
     description:
-      "What pain medications are, the different types of pain relievers (acetaminophen, NSAIDs, topicals, the nerve-pain medications, muscle relaxants, opioids, and the first new class in decades) what makes a pain reliever “good,” and how to tell which one is right for you by matching the drug to the pain type rather than its “strength.”",
+      "Covers the main classes of pain medication (acetaminophen, NSAIDs, topicals, nerve-pain drugs, muscle relaxants, opioids, and newer non-opioid options) and how clinicians match each to the underlying pain mechanism.",
     status: "sourced",
     lastUpdated: "2026-10-04",
     answer:
@@ -263,7 +263,7 @@ export const TREATMENT_ARTICLES: Article[] = [
     slug: "interventional-procedures",
     title: "Interventional procedures",
     description:
-      "The image-guided middle layer between pills and surgery: epidural injections, nerve blocks, radiofrequency ablation, spinal cord and DRG stimulators, and pumps – what each one does, the evidence, and the window rule that makes them work.",
+      "Image-guided procedures sit between medication and surgery, including epidural injections, nerve blocks, radiofrequency ablation, spinal cord and DRG stimulators, and intrathecal pumps. Reviews what each does and the evidence behind them.",
     status: "sourced",
     lastUpdated: "2026-10-04",
     answer:
@@ -374,7 +374,7 @@ export const TREATMENT_ARTICLES: Article[] = [
     slug: "physical-and-behavioral-therapies",
     title: "Physical & behavioral therapies",
     description:
-      "The treatments that retrain pain rather than mask it: why movement is medicine for a sensitized system, what CBT and mindfulness deliver, the pacing skill that ends the boom-bust cycle, and what a good active-care program looks like.",
+      "Physical therapy, cognitive behavioral therapy, mindfulness, and activity pacing help retrain a sensitized nervous system. Covers what clinical trials show and what an effective active-care program includes.",
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
@@ -471,7 +471,7 @@ export const TREATMENT_ARTICLES: Article[] = [
     slug: "medication-organ-safety",
     title: "Pain medications & your organs: liver, kidneys, heart, and gut",
     description:
-      "The organ-by-organ safety map for the everyday pain medications: acetaminophen and the liver, NSAIDs and the kidneys, heart, blood pressure, and stomach – the established label limits printed as literacy, and the combinations that turn safe drugs into injuries.",
+      "Organ-by-organ safety guide for common pain relievers: acetaminophen and the liver, NSAIDs and the kidneys, heart, blood pressure, and stomach, including label limits and risky drug combinations.",
     status: "sourced",
     lastUpdated: "2026-09-05",
     answer:
@@ -570,7 +570,7 @@ export const TREATMENT_ARTICLES: Article[] = [
     slug: "opioid-stewardship",
     title: "Opioids, honestly: dependence, tolerance, and staying safe",
     description:
-      "The mind-and-brain side of pain medication safety: how opioids work, the difference between dependence and addiction, tolerance and opioid-induced hyperalgesia, the overdose combinations that kill, naloxone, safe storage and disposal, and what the CDC guideline really says.",
+      "Covers how opioids work, how physical dependence differs from addiction, tolerance and opioid-induced hyperalgesia, overdose risks, naloxone, safe storage, and what the CDC guideline recommends.",
     status: "sourced",
     lastUpdated: "2026-10-04",
     answer:
@@ -690,7 +690,7 @@ export const TREATMENT_ARTICLES: Article[] = [
     slug: "comparing-your-options",
     title: "Comparing your options",
     description:
-      "A map of the pain-treatment evidence: what's well-proven, what's promising, what's weak – why almost everything helps “modestly” on average, why modest effects stack, and how to read any treatment claim like the field does.",
+      "Summarizes the strength of evidence across pain treatments, why individual therapies often show modest average effects, how combining them helps, and how to evaluate treatment claims.",
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
@@ -788,7 +788,7 @@ export const TREATMENT_ARTICLES: Article[] = [
     slug: "piriformis-syndrome",
     title: "Piriformis syndrome and the deep hip",
     description:
-      "The sciatica that does not start at the spine: the small deep-hip muscle the sciatic nerve passes beneath, the four features that define piriformis syndrome, what the evidence says, and what a physical therapy program for it is built to do.",
+      "Piriformis syndrome causes sciatica-like pain when the deep-hip muscle irritates the sciatic nerve. Covers its four defining features, diagnostic challenges, and targeted physical therapy.",
     status: "sourced",
     lastUpdated: "2026-09-10",
     answer:
@@ -1108,7 +1108,7 @@ export const TREATMENT_ARTICLES: Article[] = [
     seoTitle:
       "Buprenorphine for Chronic Pain: What It Is and What the Trial Showed",
     description:
-      "Buprenorphine is not only the addiction drug: a partial-agonist opioid with a ceiling on breathing suppression, approved for pain in its own products, and what the 2025 JAMA Internal Medicine trial of switching from high-dose opioids showed – a large drop in opioid dose, a small gain in pain, and no difference between the groups.",
+      "Buprenorphine is a partial-agonist opioid with a ceiling on breathing suppression, FDA-approved for chronic pain in patch and buccal-film forms. Reviews how it works and what the 2025 JAMA Internal Medicine switching trial showed.",
     status: "sourced",
     lastUpdated: "2026-10-04",
     answer:

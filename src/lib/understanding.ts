@@ -45,7 +45,7 @@ export const ARTICLES: Article[] = [
     slug: "how-pain-works",
     title: "How pain works",
     description:
-      "How the body makes pain: the nerve endings that detect a threat, the spinal “gate” that filters the signal, and why the brain, not the injury alone, decides how much it hurts.",
+      "Pain signals start at peripheral nerve endings, pass through a spinal cord filter, and are interpreted by the brain. Explains why tissue damage and pain intensity do not always match.",
     status: "sourced",
     lastUpdated: LAST_UPDATED,
     answer:
@@ -114,7 +114,7 @@ export const ARTICLES: Article[] = [
     slug: "types-of-pain",
     title: "The three types of pain",
     description:
-      "Nociceptive, neuropathic, and nociplastic pain – the modern, mechanism-based way clinicians classify pain, and why the type you have shapes which treatments tend to help.",
+      "Clinicians group pain into nociceptive, neuropathic, and nociplastic mechanisms. Knowing which type is active helps guide which treatments are likely to work.",
     status: "sourced",
     lastUpdated: LAST_UPDATED,
     answer:
@@ -183,7 +183,7 @@ export const ARTICLES: Article[] = [
     slug: "acute-vs-chronic-pain",
     title: "Acute vs. chronic pain",
     description:
-      "Acute pain protects you and fades as you heal. Chronic pain lasts beyond three months and can become a condition in its own right. Why that line matters for how pain is understood and treated.",
+      "Acute pain fades as tissues heal, whereas chronic pain lasts beyond three months and involves changes in how the nervous system processes signals. Explains why treatment shifts after that mark.",
     status: "sourced",
     lastUpdated: LAST_UPDATED,
     answer:
@@ -252,7 +252,7 @@ export const ARTICLES: Article[] = [
     slug: "measuring-pain",
     title: "Measuring pain",
     description:
-      "Why pain is so hard to measure, the 1947 attempt to give it a unit (the dol), what the 0-to-10 scale can and can't capture, and how to describe your pain so your care team truly understands it.",
+      "Explains why pain is difficult to quantify, the 1947 \"dol\" scale experiment, what the 0-to-10 rating misses, and practical ways to describe pain to your care team.",
     status: "sourced",
     lastUpdated: "2026-08-31",
     answer:
@@ -345,7 +345,7 @@ export const ARTICLES: Article[] = [
     slug: "pain-and-sleep",
     title: "Pain and sleep",
     description:
-      "Pain and sleep wreck each other, but not equally. Why a bad night raises tomorrow's pain, how sleep loss switches off the body's own pain brakes, and what the evidence says helps.",
+      "Poor sleep lowers the nervous system's pain threshold the next day more reliably than daytime pain disrupts sleep. Covers the biology behind that link and what improves sleep in chronic pain.",
     status: "sourced",
     lastUpdated: "2026-08-27",
     answer:
@@ -433,7 +433,7 @@ export const ARTICLES: Article[] = [
     slug: "pain-and-emotion",
     title: "Pain and emotion",
     description:
-      "Emotion is written into the definition of pain itself. How pain and feeling share brain circuitry, why stress and fear turn the volume up, and why therapy that helps is proof of biology, not proof it was in your head.",
+      "Pain and emotion share overlapping brain circuits, so stress and fear can amplify physical pain. Explains why psychological therapies work through measurable biology.",
     status: "sourced",
     lastUpdated: "2026-08-27",
     answer:
@@ -536,7 +536,7 @@ export const ARTICLES: Article[] = [
     title: "The placebo effect",
     seoTitle: "The Placebo Effect: What It Is and How It Works",
     description:
-      "What the placebo effect is, how it works, expectation switching on the brain's own pain-relief chemistry, how long it lasts, how a placebo differs from the placebo effect, what it proves about your pain, and what it can't do.",
+      "Expectation can trigger the brain's own pain-relief chemistry, producing real but limited analgesia. Explains how a placebo differs from the placebo effect and what it does and cannot do.",
     status: "sourced",
     lastUpdated: "2026-09-20",
     answer:
@@ -673,7 +673,7 @@ export const ARTICLES: Article[] = [
     slug: "the-nocebo-effect",
     title: "The nocebo effect",
     description:
-      "What the nocebo effect is and how it works, expecting harm turning pain up through its own brain chemistry, the trials where a sentence cancelled an opioid or tripled side effects, and what you can do about it.",
+      "Expecting harm can amplify pain or trigger side effects through measurable brain chemistry. Covers clinical trials where framing changed drug response and how clinicians reduce nocebo effects.",
     status: "sourced",
     lastUpdated: "2026-09-08",
     answer:

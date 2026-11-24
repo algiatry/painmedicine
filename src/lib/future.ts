@@ -15,7 +15,7 @@ export const FUTURE_ARTICLES: Article[] = [
     title: "The pain treatment pipeline",
     seoTitle: "VX-993: Which Companies Are Researching Non-Opioid Pain Treatments?",
     description:
-      "Who is developing new pain treatments: Vertex (suzetrigine, VX-993), Adneuris/Tris (cebranopadol), Grünenthal, Lexicon, Levicept, Sangamo, and Saluda – trial phase, mechanism, and what is approved.",
+      "Tracks non-opioid pain drugs in development from Vertex (suzetrigine, VX-993), Adneuris/Tris (cebranopadol), Grünenthal, Lexicon, Levicept, Sangamo, and Saluda, including trial phase, mechanism, and approval status.",
     status: "sourced",
     lastUpdated: LAST_REVIEWED,
     answer:
@@ -108,7 +108,7 @@ export const FUTURE_ARTICLES: Article[] = [
     slug: "neuromodulation",
     title: "Next-generation neuromodulation",
     description:
-      "Treating pain with electricity is becoming a precision tool: paresthesia-free high-frequency stimulation, closed-loop devices that read the spinal cord and self-adjust, dorsal-root-ganglion targeting, and non-invasive brain stimulation.",
+      "Electrical stimulation for pain has evolved to include paresthesia-free high-frequency stimulation, closed-loop devices that read spinal cord signals, dorsal-root-ganglion targeting, and non-invasive brain stimulation.",
     status: "sourced",
     lastUpdated: "2026-10-04",
     answer:
@@ -174,7 +174,7 @@ export const FUTURE_ARTICLES: Article[] = [
     slug: "biologics-and-gene-therapy",
     title: "Biologics & gene-targeted therapy",
     description:
-      "The most precise pain treatments yet: antibodies that block a single pain molecule, as CGRP drugs did for migraine, and gene therapies that turn down the body's pain genes at their source.",
+      "Antibodies that block a single pain molecule (like CGRP drugs for migraine) and gene therapies that dial down pain-signaling genes at their source.",
     status: "sourced",
     lastUpdated: "2026-10-04",
     answer:
@@ -239,7 +239,7 @@ export const FUTURE_ARTICLES: Article[] = [
     slug: "precision-pain-medicine",
     title: "Precision pain medicine",
     description:
-      "Matching the treatment to the patient: pharmacogenomics (why codeine is dangerous for some people and useless for others), mechanism-based treatment, biomarkers, and the end of one-size-fits-all pain care.",
+      "Precision pain medicine tailors care using pharmacogenomics (such as why codeine fails or harms some patients), mechanism-based treatment, and emerging biomarkers.",
     status: "sourced",
     lastUpdated: "2026-10-04",
     answer:
@@ -299,7 +299,7 @@ export const FUTURE_ARTICLES: Article[] = [
     slug: "mind-and-brain",
     title: "Mind, brain & new frontiers",
     description:
-      "Because the brain constructs pain, treatments that retrain the brain are real medicine: pain reprocessing therapy, an FDA-authorized virtual-reality program, nature and sound as low-risk adjuncts, and the early science of psychedelics for chronic pain.",
+      "Reviews brain-targeted pain approaches, including pain reprocessing therapy, an FDA-authorized virtual-reality program, nature and sound adjuncts, and early research on psychedelics for chronic pain.",
     status: "sourced",
     lastUpdated: "2026-10-04",
     answer:
