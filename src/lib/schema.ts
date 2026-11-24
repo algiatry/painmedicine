@@ -112,19 +112,22 @@ export function medicalWebPageJsonLd(meta: {
     description: meta.description,
     url: `${SITE.url}${meta.path}`,
     ...(meta.publishedAt ? { datePublished: meta.publishedAt } : {}),
+    inLanguage: "en-US",
     dateModified: meta.lastUpdated,
+    // Link into the site's entity graph. The Organization and WebSite nodes
+    // (with these @ids) are emitted site-wide from the root layout, so these
+    // references resolve without re-declaring them here. No datePublished:
+    // there is no honest per-article publish date in the data model, and
+    // dateModified (lastUpdated) is not the same thing.
+    isPartOf: { "@id": `${SITE.url}/#website` },
+    author: { "@id": `${SITE.url}/#organization` },
+    publisher: { "@id": `${SITE.url}/#organization` },
     ...(meta.review && profile
       ? {
           reviewedBy: personJsonLd(profile),
           lastReviewed: meta.review.reviewedAt,
         }
       : {}),
-    publisher: {
-      "@type": "Organization",
-      name: SITE.name,
-      url: SITE.url,
-      logo: `${SITE.url}/icon-512.png`,
-    },
   };
 }
 
