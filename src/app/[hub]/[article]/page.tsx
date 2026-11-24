@@ -111,7 +111,7 @@ export default async function ArticlePage({
       <ArticleToc variant="inline" />
 
       {Body && (
-        <div className="mt-10">
+        <div className="mt-10 max-w-[65ch] text-[17px] leading-[1.7]">
           <Body />
         </div>
       )}
