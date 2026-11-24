@@ -60,6 +60,7 @@ export default async function ArticlePage({
           description: a.description,
           path: `/${a.hub}/${a.slug}`,
           lastUpdated: a.lastUpdated,
+          publishedAt: a.publishedAt,
           review: a.review,
         })}
       />

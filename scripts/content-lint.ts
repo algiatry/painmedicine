@@ -159,6 +159,20 @@ function checkReviewModel(page: string, meta: PageMeta, hub: string) {
     err(page, `lastUpdated is not an ISO date: "${meta.lastUpdated}"`);
   else if (new Date(meta.lastUpdated) > new Date())
     err(page, `lastUpdated is in the future: ${meta.lastUpdated}`);
+  // publishedAt is optional (set by the editor when a page goes live). When
+  // present it must be a real past date and cannot fall after lastUpdated —
+  // a page cannot be modified before it was published. No "missing" warning:
+  // the field is intentionally absent until an editorial publish date exists.
+  if (meta.publishedAt !== undefined) {
+    if (!isoDate.test(meta.publishedAt))
+      err(page, `publishedAt is not an ISO date: "${meta.publishedAt}"`);
+    else {
+      if (new Date(meta.publishedAt) > new Date())
+        err(page, `publishedAt is in the future: ${meta.publishedAt}`);
+      if (isoDate.test(meta.lastUpdated) && meta.publishedAt > meta.lastUpdated)
+        err(page, `publishedAt (${meta.publishedAt}) is after lastUpdated (${meta.lastUpdated}) — a page cannot be updated before it was published`);
+    }
+  }
 }
 
 /* -------------------------------------------------------------- cadence */

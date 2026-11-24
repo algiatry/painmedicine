@@ -43,6 +43,14 @@ export type PageMeta = {
   status: ReviewStatus;
   review?: PageReview;
   lastUpdated: string; // ISO date
+  /**
+   * ISO date this page was first published to the public site — set BY THE
+   * EDITOR when the page actually goes live, never derived from git history or
+   * the repo-import commit. Optional and omitted until a real editorial
+   * publish date is confirmed; `datePublished` is emitted only when it is
+   * present (it is NOT a fallback for, or the same as, `lastUpdated`).
+   */
+  publishedAt?: string;
 };
 
 /**
@@ -92,6 +100,8 @@ export function medicalWebPageJsonLd(meta: {
   description: string;
   path: string;
   lastUpdated: string;
+  /** ISO editorial publish date; when present, emitted as `datePublished`. */
+  publishedAt?: string;
   review?: PageReview;
 }) {
   const profile = meta.review ? getReviewer(meta.review.reviewer) : undefined;
@@ -101,6 +111,7 @@ export function medicalWebPageJsonLd(meta: {
     name: meta.title,
     description: meta.description,
     url: `${SITE.url}${meta.path}`,
+    ...(meta.publishedAt ? { datePublished: meta.publishedAt } : {}),
     inLanguage: "en-US",
     dateModified: meta.lastUpdated,
     // Link into the site's entity graph. The Organization and WebSite nodes
