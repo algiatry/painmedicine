@@ -56,13 +56,8 @@ export default function Header() {
               size={22}
               className="shrink-0 text-brand"
             />
-            <span className="flex items-baseline gap-1.5">
-              <span className="text-xl font-semibold tracking-tight text-ink">
-                {SITE.shortName}
-              </span>
-              <span className="hidden sm:inline text-[11px] font-semibold uppercase tracking-[0.16em] text-brand">
-                .com
-              </span>
+            <span className="text-xl font-semibold tracking-tight text-ink">
+              {SITE.shortName}
             </span>
           </Link>
 
