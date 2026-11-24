@@ -101,7 +101,7 @@ content use curly double quotes (“like this”), not straight single quotes.
 3. **FAQ block** (3–6 questions, mirrored into `FAQPage` JSON-LD)
 4. **References** — ≥3 primary/authoritative sources (NIH, CDC, IASP, FDA labels, Cochrane, peer-reviewed journals), linked and dated
 5. **Reviewer byline block** (or in-review notice)
-6. **Last-updated date**
+6. **Last-updated date** (`lastUpdated`; see *Publish & update dates*)
 
 ## Condition page template
 
@@ -135,6 +135,45 @@ default to the optimistic take the evidence supports:
 
 In every register, honor *Agency without blame*: remaining pain is never
 framed as a failure of will.
+
+## Publish & update dates
+
+Two separate dates describe a page. They mean different things and must never
+be conflated or back-filled from each other.
+
+- **`lastUpdated` (required) — "last modified."** The date of the most recent
+  substantive content change. Always present; it drives the re-review cadence
+  and is emitted as `dateModified` in the `MedicalWebPage` JSON-LD.
+- **`publishedAt` (optional) — "first published."** The date the page first
+  went live to the public. Emitted as `datePublished` **only when present**;
+  it is never derived from `lastUpdated`. Together the two give search engines
+  a published-and-modified pair (a freshness / article signal).
+
+### Source of truth for `publishedAt` (hard rule)
+
+`publishedAt` records a real editorial event — the day the page became
+publicly visible — and nothing else. It is **set by the editor by hand**, in
+the page's typed record (`src/lib/*.ts`), at the moment the page goes live.
+
+- **Do NOT derive it from git.** The first commit is the repo-import date, not
+  an editorial publish date — most pages share one import commit, so their
+  "first seen" date is meaningless as a publish date. Never script it from
+  `git log`, and never copy it from `lastUpdated`.
+- **Pre-launch pages leave it unset.** While the site is not yet public (pages
+  `status: "sourced"`, no confirmed public launch), there is no true publish
+  date, so the field stays absent and no `datePublished` is emitted. That is
+  the correct, honest state — an absent date is better than an invented one.
+- **Set it once, then leave it.** Unlike `lastUpdated`, `publishedAt` never
+  moves after it is set; later edits bump `lastUpdated` only. A page is
+  published once.
+- **When the site launches** (or when a new page goes live afterward), stamp
+  that page's real go-live date into `publishedAt`. If a batch of pages launch
+  together, they share that launch date — because they genuinely did.
+
+`content-lint` enforces the shape, not the policy: when `publishedAt` is
+present it must be a valid ISO date, not in the future, and not after
+`lastUpdated` (a page cannot be modified before it was published). It does
+**not** warn when the field is missing — absence is expected pre-launch.
 
 ## Update cadence
 
