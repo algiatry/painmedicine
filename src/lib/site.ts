@@ -1,10 +1,10 @@
 export const SITE = {
   name: "PainMedicine.com",
-  shortName: "Pain Medicine",
+  shortName: "PainMedicine.com",
   url: "https://painmedicine.com",
   tagline: "Understand pain. Understand your options.",
   description:
-    "Patient-first education on pain medicine: what the specialty is, how pain works, the treatment options that exist today, and the science shaping tomorrow's pain relief.",
+    "Patient-first education on pain medicine, covering what the specialty is, how pain works, current treatments, and pain research in development.",
   /** Public inbox for reviewer applications and corrections. Empty = not shown. */
   editorialEmail: "",
 } as const;
