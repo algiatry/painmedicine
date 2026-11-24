@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import JsonLd from "@/components/JsonLd";
 import { formatDate } from "@/components/ReviewByline";
@@ -80,12 +81,12 @@ export default async function ReviewerPage({
 
       <header className="flex flex-col gap-5 sm:flex-row sm:items-start">
         {r.photo && (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
+          <Image
             src={r.photo}
             alt={`${r.name}, ${r.credentials}`}
             width={144}
             height={144}
+            sizes="144px"
             className="h-36 w-36 shrink-0 rounded-lg object-cover"
           />
         )}
