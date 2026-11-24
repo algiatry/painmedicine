@@ -8,7 +8,6 @@ export const metadata = pageMetadata({ path: "/" });
 import { ALL_ARTICLES } from "@/lib/articles";
 import HeroFigure from "@/components/HeroFigure";
 import HubIcon from "@/components/HubIcon";
-import ArticleEmblem from "@/components/ArticleEmblem";
 
 /** Curated flagship reads – keeps the site's strongest pages one click deep. */
 const FEATURED = [
@@ -237,91 +236,75 @@ export default function Home() {
       </section>
 
       <section
-        aria-labelledby="map-heading"
-        className="border-t border-line/70 py-14 sm:py-16"
+        aria-labelledby="about-heading"
+        className="border-t border-line/70 bg-paper/70 py-14 sm:py-16"
       >
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="grid gap-10 lg:grid-cols-12 lg:gap-14">
-            <div className="lg:col-span-7">
-              <p className="text-xs font-semibold uppercase tracking-widest text-brand">
-                About this site
+          <div className="max-w-2xl">
+            <p className="text-xs font-semibold uppercase tracking-widest text-brand">
+              About this site
+            </p>
+            <h2
+              id="about-heading"
+              className="mt-2 text-3xl sm:text-4xl font-bold tracking-tight text-ink"
+            >
+              Why this site exists
+            </h2>
+            <div className="mt-6 space-y-5 text-muted">
+              <p>
+                Pain medicine is a board-certified medical specialty focused
+                on diagnosing and treating pain. Most people living with pain
+                have never been told that it exists, what a pain specialist
+                does, or how to get referred to one. That is where this site
+                begins:{" "}
+                <Link
+                  href="/what-is-pain-medicine"
+                  className="font-semibold text-brand hover:underline"
+                >
+                  what pain medicine is
+                </Link>{" "}
+                and how the specialty thinks.
               </p>
-              <h2
-                id="map-heading"
-                className="mt-2 text-3xl sm:text-4xl font-bold tracking-tight text-ink"
-              >
-                Why this site exists
-              </h2>
-              <div className="mt-6 space-y-5 text-muted">
-                <p>
-                  Pain medicine is a board-certified medical specialty focused
-                  on diagnosing and treating pain. Most people living with pain
-                  have never been told that it exists, what a pain specialist
-                  does, or how to get referred
-                  to one. That is where this site begins:{" "}
-                  <Link
-                    href="/what-is-pain-medicine"
-                    className="font-semibold text-brand hover:underline"
-                  >
-                    what pain medicine is
-                  </Link>{" "}
-                  and how the specialty thinks.
-                </p>
-                <p>
-                  We are not your doctor. The goal is that you walk into your
-                  next appointment knowing what to ask and what to expect from
-                  your care. When a term gets in the way, the{" "}
-                  <Link
-                    href="/glossary"
-                    className="font-semibold text-brand hover:underline"
-                  >
-                    glossary
-                  </Link>{" "}
-                  explains it in a sentence or two.
-                </p>
-              </div>
+              <p>
+                We are not your doctor. The goal is that you walk into your
+                next appointment knowing what to ask and what to expect from
+                your care. When a term gets in the way, the{" "}
+                <Link
+                  href="/glossary"
+                  className="font-semibold text-brand hover:underline"
+                >
+                  glossary
+                </Link>{" "}
+                explains it in a sentence or two.
+              </p>
             </div>
+          </div>
 
-            <div className="lg:col-span-5">
-              <div className="rounded-2xl border border-brand/15 bg-gradient-to-b from-paper to-background p-6 shadow-card sm:p-7">
-                <h3 className="text-sm font-semibold uppercase tracking-widest text-brand">
-                  How we work
-                </h3>
-                <ul className="mt-5 space-y-5">
-                  {PRINCIPLES.map((p) => (
-                    <li key={p.title} className="flex gap-3">
-                      <svg
-                        aria-hidden="true"
-                        viewBox="0 0 20 20"
-                        className="mt-0.5 size-5 shrink-0 text-brand"
-                        fill="currentColor"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.7-9.3a1 1 0 0 0-1.4-1.4L9 10.6 7.7 9.3a1 1 0 0 0-1.4 1.4l2 2a1 1 0 0 0 1.4 0l4-4Z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                      <div>
-                        <p className="font-semibold text-ink">
-                          {p.title}
-                        </p>
-                        <p className="mt-0.5 text-sm text-muted">
-                          {p.body}
-                        </p>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+          <div className="mt-12">
+            <h3 className="text-xs font-semibold uppercase tracking-widest text-brand">
+              How we work
+            </h3>
+            <ol className="mt-5 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+              {PRINCIPLES.map((p, idx) => (
+                <li
+                  key={p.title}
+                  className="border-t border-line pt-4"
+                >
+                  <span className="font-mono text-xs font-semibold tracking-wider text-brand">
+                    {String(idx + 1).padStart(2, "0")}
+                  </span>
+                  <p className="mt-2 font-semibold text-ink">{p.title}</p>
+                  <p className="mt-1 text-sm text-muted">{p.body}</p>
+                </li>
+              ))}
+            </ol>
           </div>
         </div>
       </section>
 
       <section
         aria-labelledby="featured-heading"
-        className="border-t border-line/70 bg-paper/50 py-14 sm:py-16"
+        className="border-t border-line/70 bg-background py-14 sm:py-16"
       >
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <p className="text-xs font-semibold uppercase tracking-widest text-brand">
@@ -337,27 +320,32 @@ export default function Home() {
             {FEATURED.length} pages that show what the site aims for. Pick
             whichever is closest to what you&rsquo;re living with.
           </p>
-          <ol className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <ol className="mt-8 grid gap-x-10 sm:grid-cols-2">
             {FEATURED.map((item) => (
-              <li key={item.href}>
+              <li
+                key={item.href}
+                className="border-t border-line"
+              >
                 <Link
                   href={item.href}
-                  className="card-lift group flex h-full flex-col rounded-xl border border-line bg-surface p-5"
+                  className="group flex items-baseline justify-between gap-4 py-4 transition-colors"
                 >
-                  <span className="flex size-11 items-center justify-center rounded-lg border border-edge bg-plate transition-colors group-hover:border-brand/50 group-hover:bg-white">
-                    <ArticleEmblem
-                      slug={item.href.split("/").filter(Boolean).pop() ?? ""}
-                      className="size-7"
-                    />
-                  </span>
-                  <span className="mt-4 text-xs font-semibold uppercase tracking-wider text-brand">
-                    {item.eyebrow}
-                  </span>
-                  <span className="mt-1 block font-semibold text-ink group-hover:text-brand">
-                    {item.title}
-                  </span>
-                  <span className="mt-1.5 block text-sm text-muted">
-                    {item.blurb}
+                  <div>
+                    <span className="text-xs font-semibold uppercase tracking-wider text-brand">
+                      {item.eyebrow}
+                    </span>
+                    <span className="mt-1 block font-semibold text-ink group-hover:text-brand">
+                      {item.title}
+                    </span>
+                    <span className="mt-1 block text-sm text-muted">
+                      {item.blurb}
+                    </span>
+                  </div>
+                  <span
+                    aria-hidden="true"
+                    className="shrink-0 text-sm text-muted transition-transform group-hover:translate-x-0.5 group-hover:text-brand"
+                  >
+                    →
                   </span>
                 </Link>
               </li>
