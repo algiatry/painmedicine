@@ -148,7 +148,10 @@ export default function Home() {
             {/* Mobile / tablet: the full hero figure on a light plate, below
                 the copy. Replaces the thin decorative strip so small screens
                 get a real illustration, not just a flourish. */}
-            <figure className="lg:hidden figure-plate rounded-2xl border p-4 shadow-card sm:p-5">
+            <figure
+              aria-hidden="true"
+              className="lg:hidden figure-plate rounded-2xl border p-4 shadow-card sm:p-5"
+            >
               <HeroFigure className="mx-auto block h-auto w-full max-w-md" />
             </figure>
 

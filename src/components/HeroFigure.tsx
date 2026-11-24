@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FIG } from "@/lib/fig";
 
 /**
@@ -143,44 +144,61 @@ export default function HeroFigure({ className }: { className?: string }) {
         <circle cx={X1} cy={REST_Y.toFixed(1)} r="4.5" fill={FIG.nerveDark} />
       </g>
 
-      {/* baseline glyphs — the mechanism, quiet under the wave */}
-      {/* the signal starts: concentric amber rings (the site's pain-site motif) */}
-      <g>
-        <circle cx={B1} cy={215} r="17" fill="none" stroke={FIG.signal} strokeOpacity="0.25" strokeWidth="2" />
-        <circle cx={B1} cy={215} r="10.5" fill="none" stroke={FIG.signal} strokeOpacity="0.55" strokeWidth="2" />
-        <circle cx={B1} cy={215} r="5" fill={FIG.signal} />
-      </g>
-      {/* the spinal gate */}
-      <g>
-        <rect x={B2 - 11} y={200} width="22" height="30" rx="5" fill={FIG.nerveTint} stroke={FIG.nerve} strokeWidth="2.4" />
-        <line x1={B2} y1={200} x2={B2} y2={230} stroke={FIG.nerve} strokeWidth="2" />
-      </g>
-      {/* the brain: two hemispheres, central fissure, gyri, brainstem */}
-      <g transform={`translate(${B3 - 21},${214 - 20})`}>
-        <path
-          d="M21 3 C13 2 7 7 7 13 C2 15 1 22 5 26 C5 32 12 35 18 32 C19 35 24 35 25 32 C31 35 38 31 37 25 C41 22 40 15 35 13 C35 7 29 2 21 3 Z"
-          fill={FIG.nerveTint}
-          stroke={FIG.nerveDark}
-          strokeWidth="2.4"
-          strokeLinejoin="round"
-        />
-        <path d="M21 4 C19 10 23 12 21 17 C19 22 23 26 21 32" fill="none" stroke={FIG.nerveDark} strokeWidth="1.5" strokeLinecap="round" />
-        <path d="M8 14 C13 14 13 19 9 21" fill="none" stroke={FIG.nerveDark} strokeWidth="1.3" strokeLinecap="round" />
-        <path d="M8 25 C12 25 14 28 13 30" fill="none" stroke={FIG.nerveDark} strokeWidth="1.3" strokeLinecap="round" />
-        <path d="M34 14 C29 14 29 19 33 21" fill="none" stroke={FIG.nerveDark} strokeWidth="1.3" strokeLinecap="round" />
-        <path d="M34 25 C30 25 28 28 29 30" fill="none" stroke={FIG.nerveDark} strokeWidth="1.3" strokeLinecap="round" />
-        <path d="M21 32 q0 5 -3 7" fill="none" stroke={FIG.nerveDark} strokeWidth="2.2" strokeLinecap="round" />
-      </g>
+      {/* baseline glyphs + interactive beat labels */}
+      <Link
+        href="/understanding-pain/how-pain-works"
+        aria-label="Pain: the signal fires — read How pain works"
+        className="group focus:outline-none"
+      >
+        <g className="motion-safe:transition-opacity group-hover:opacity-80 group-focus-visible:opacity-80">
+          <circle cx={B1} cy={215} r="22" fill="transparent" />
+          <circle cx={B1} cy={215} r="17" fill="none" stroke={FIG.signal} strokeOpacity="0.25" strokeWidth="2" />
+          <circle cx={B1} cy={215} r="10.5" fill="none" stroke={FIG.signal} strokeOpacity="0.55" strokeWidth="2" />
+          <circle cx={B1} cy={215} r="5" fill={FIG.signal} />
+          <text x={B1} y={300} textAnchor="middle" fontSize="19" fontWeight="700" fill={FIG.signalDark} letterSpacing="-0.3" className="group-hover:underline group-focus-visible:underline">Pain</text>
+          <text x={B1} y={322} textAnchor="middle" fontSize="13" fill={FIG.muted}>the signal fires</text>
+        </g>
+      </Link>
 
-      {/* beat labels: brand word (large) + mechanism (small) */}
-      <g textAnchor="middle">
-        <text x={B1} y={300} fontSize="19" fontWeight="700" fill={FIG.signalDark} letterSpacing="-0.3">Pain</text>
-        <text x={B1} y={322} fontSize="13" fill={FIG.muted}>the signal fires</text>
-        <text x={B2} y={300} fontSize="19" fontWeight="700" fill={FIG.ink} letterSpacing="-0.3">Understanding</text>
-        <text x={B2} y={322} fontSize="13" fill={FIG.muted}>the gate filters it</text>
-        <text x={B3} y={300} fontSize="19" fontWeight="700" fill={FIG.nerveDark} letterSpacing="-0.3">Options</text>
-        <text x={B3} y={322} fontSize="13" fill={FIG.muted}>the brain can turn it down</text>
-      </g>
+      <Link
+        href="/understanding-pain"
+        aria-label="Understanding: the gate filters it — explore Understanding pain"
+        className="group focus:outline-none"
+      >
+        <g className="motion-safe:transition-opacity group-hover:opacity-80 group-focus-visible:opacity-80">
+          <rect x={B2 - 22} y={193} width="44" height="44" fill="transparent" />
+          <rect x={B2 - 11} y={200} width="22" height="30" rx="5" fill={FIG.nerveTint} stroke={FIG.nerve} strokeWidth="2.4" />
+          <line x1={B2} y1={200} x2={B2} y2={230} stroke={FIG.nerve} strokeWidth="2" />
+          <text x={B2} y={300} textAnchor="middle" fontSize="19" fontWeight="700" fill={FIG.ink} letterSpacing="-0.3" className="group-hover:underline group-focus-visible:underline">Understanding</text>
+          <text x={B2} y={322} textAnchor="middle" fontSize="13" fill={FIG.muted}>the gate filters it</text>
+        </g>
+      </Link>
+
+      <Link
+        href="/treatments"
+        aria-label="Options: the brain can turn it down — explore Treatments"
+        className="group focus:outline-none"
+      >
+        <g className="motion-safe:transition-opacity group-hover:opacity-80 group-focus-visible:opacity-80">
+          <g transform={`translate(${B3 - 21},${214 - 20})`}>
+            <path
+              d="M21 3 C13 2 7 7 7 13 C2 15 1 22 5 26 C5 32 12 35 18 32 C19 35 24 35 25 32 C31 35 38 31 37 25 C41 22 40 15 35 13 C35 7 29 2 21 3 Z"
+              fill={FIG.nerveTint}
+              stroke={FIG.nerveDark}
+              strokeWidth="2.4"
+              strokeLinejoin="round"
+            />
+            <path d="M21 4 C19 10 23 12 21 17 C19 22 23 26 21 32" fill="none" stroke={FIG.nerveDark} strokeWidth="1.5" strokeLinecap="round" />
+            <path d="M8 14 C13 14 13 19 9 21" fill="none" stroke={FIG.nerveDark} strokeWidth="1.3" strokeLinecap="round" />
+            <path d="M8 25 C12 25 14 28 13 30" fill="none" stroke={FIG.nerveDark} strokeWidth="1.3" strokeLinecap="round" />
+            <path d="M34 14 C29 14 29 19 33 21" fill="none" stroke={FIG.nerveDark} strokeWidth="1.3" strokeLinecap="round" />
+            <path d="M34 25 C30 25 28 28 29 30" fill="none" stroke={FIG.nerveDark} strokeWidth="1.3" strokeLinecap="round" />
+            <path d="M21 32 q0 5 -3 7" fill="none" stroke={FIG.nerveDark} strokeWidth="2.2" strokeLinecap="round" />
+          </g>
+          <text x={B3} y={300} textAnchor="middle" fontSize="19" fontWeight="700" fill={FIG.nerveDark} letterSpacing="-0.3" className="group-hover:underline group-focus-visible:underline">Options</text>
+          <text x={B3} y={322} textAnchor="middle" fontSize="13" fill={FIG.muted}>the brain can turn it down</text>
+        </g>
+      </Link>
     </svg>
   );
 }
