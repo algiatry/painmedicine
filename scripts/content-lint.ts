@@ -237,9 +237,13 @@ for (const a of ALL_ARTICLES) {
   checkReviewModel(page, a, a.hub);
 
   // Required sections (CONTENT-TEMPLATE.md)
-  if (!a.answer?.trim()) err(page, "missing plain-English answer (AEO first-60-words rule)");
+  if (!a.answer?.trim()) err(page, "missing plain-English answer (AEO first 60 words rule)");
   else if (wordCount(a.answer) > 110)
     warn(page, `answer is ${wordCount(a.answer)} words — template targets ~50–60; trim if possible`);
+  if (a.description && /\s–\s/.test(a.description))
+    err(page, "description contains a spaced en dash ( – ) — use a comma, colon, or full stop");
+  if (a.description && /^Neither\s+.+\s+nor\s+.+:/i.test(a.description))
+    err(page, "description uses 'Neither X nor Y:' colon-hook formula");
   if (!a.faqs || a.faqs.length < 3 || a.faqs.length > 6)
     err(page, `FAQ block must have 3–6 questions (has ${a.faqs?.length ?? 0})`);
   if (!a.references || a.references.length < 3)

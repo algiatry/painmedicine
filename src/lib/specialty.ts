@@ -24,7 +24,7 @@ export const SPECIALTY_ARTICLES: Article[] = [
     slug: "how-pain-physicians-train",
     title: "How pain physicians train",
     description:
-      "The nine-year road to pain medicine: medical school, a four-year residency through one of six specialties, a 12-month accredited fellowship, and a single shared board exam. How the credential works, and how to verify it.",
+      "Pain medicine physicians complete medical school, a four-year residency in one of six specialties, a 12-month accredited fellowship, and a shared board exam. Explains how the credential works and how to verify it.",
     status: "sourced",
     lastUpdated: LAST_UPDATED,
     answer:
@@ -115,7 +115,7 @@ export const SPECIALTY_ARTICLES: Article[] = [
     slug: "the-pain-team",
     title: "The pain team",
     description:
-      "Why modern pain care is a team sport: the biopsychosocial model behind it, who sits on a pain team, the difference between multidisciplinary and interdisciplinary care, and what the evidence says team-based care delivers.",
+      "Modern pain care relies on a coordinated team based on the biopsychosocial model. Covers who sits on a pain team, how multidisciplinary and interdisciplinary care differ, and what outcomes the evidence supports.",
     status: "sourced",
     lastUpdated: LAST_UPDATED,
     answer:
@@ -201,7 +201,7 @@ export const SPECIALTY_ARTICLES: Article[] = [
     slug: "your-first-visit",
     title: "Your first visit",
     description:
-      "What happens at a first pain-medicine appointment: how long it takes, what to bring, the questionnaires and exams to expect, and the safety practices that mark a careful clinic.",
+      "A first pain-medicine appointment typically includes a detailed history, questionnaires, and a physical exam. Covers how long it takes, what to bring, and the safety practices of a careful clinic.",
     status: "sourced",
     lastUpdated: LAST_UPDATED,
     answer:
@@ -280,7 +280,7 @@ export const SPECIALTY_ARTICLES: Article[] = [
     slug: "pain-clinics-vs-pain-medicine",
     title: "Pain clinics vs. pain medicine",
     description:
-      "“Pain clinic” is a sign anyone can hang; pain medicine is a credentialed specialty. The five signals of the real thing – training, evaluation, team, safety habits, and coordination, and how to check each one.",
+      "Anyone can open a \"pain clinic,\" whereas pain medicine is a board-certified specialty. Explains how to check a clinic's training, evaluation process, team structure, safety habits, and care coordination.",
     status: "sourced",
     lastUpdated: LAST_UPDATED,
     answer:

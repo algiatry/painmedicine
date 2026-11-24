@@ -251,10 +251,10 @@ export default function Home() {
               </h2>
               <div className="mt-6 space-y-5 text-muted">
                 <p>
-                  Pain medicine is a medical specialty in its own right:
-                  physicians who train for years in exactly one problem, yours.
-                  Most people living with pain have never been told that it
-                  exists, what a pain specialist does, or how to get referred
+                  Pain medicine is a board-certified medical specialty focused
+                  on diagnosing and treating pain. Most people living with pain
+                  have never been told that it exists, what a pain specialist
+                  does, or how to get referred
                   to one. That is where this site begins:{" "}
                   <Link
                     href="/what-is-pain-medicine"

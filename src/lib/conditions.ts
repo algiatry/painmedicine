@@ -20,7 +20,7 @@ export const CONDITION_ARTICLES: Article[] = [
     slug: "low-back-pain",
     title: "Low back pain",
     description:
-      "What causes pain in the lower back: the structures that can hurt, why most cases are “non-specific,” what an MRI can and can't tell you, the red flags that need urgent care, and how low back pain is treated today.",
+      "Most low back pain has no single identifiable structural cause. Learn which tissues can hurt, what an MRI can and cannot show, which red flags need urgent care, and how guidelines approach treatment.",
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
@@ -124,7 +124,7 @@ export const CONDITION_ARTICLES: Article[] = [
     slug: "sciatica",
     title: "Sciatica",
     description:
-      "What sciatica is and what causes it: the pinched nerve root behind most cases, why inflammation matters as much as pressure, the surprising science of herniated discs that vanish on their own, and how sciatica is treated today, including what surgery does and doesn't change.",
+      "Sciatica starts when a spinal nerve root is compressed or inflamed, often by a herniated disc. Most herniated discs shrink on their own over time; here is how symptoms behave and when surgery helps.",
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
@@ -228,7 +228,7 @@ export const CONDITION_ARTICLES: Article[] = [
     slug: "neuropathic-pain",
     title: "Neuropathic pain",
     description:
-      "What neuropathic pain is and what causes it: how damaged nerves become the source of pain rather than its messenger, why feet burn first, the numb-yet-painful paradox, and the map of treatments for nerve pain, from the first-line medications to spinal cord stimulation.",
+      "Damaged nerves can fire pain signals on their own, causing burning, tingling, or pain in numb areas. Covers why feet are often affected first and the range of treatments from medications to spinal cord stimulation.",
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
@@ -337,7 +337,7 @@ export const CONDITION_ARTICLES: Article[] = [
     slug: "migraine",
     title: "Migraine",
     description:
-      "What migraine is – an inherited neurological disease, not a bad headache: the four phases of an attack, the trigeminal-CGRP engine behind the pain, the medication-overuse trap, and the new generation of treatments designed for migraine's own biology.",
+      "Migraine is an inherited neurological condition involving the trigeminal-CGRP pathway. Covers the four phases of an attack, medication-overuse headache, and newer targeted treatments.",
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
@@ -440,7 +440,7 @@ export const CONDITION_ARTICLES: Article[] = [
     slug: "arthritis-pain",
     title: "Arthritis pain",
     description:
-      "What arthritis is – one word covering two very different diseases: osteoarthritis (a whole-joint disease, not “wear and tear”) and inflammatory arthritis (rheumatoid, psoriatic, gout). How to tell the patterns apart, why the X-ray rarely matches the pain, and how each is treated today.",
+      "Arthritis covers both osteoarthritis, which affects the whole joint, and inflammatory types like rheumatoid arthritis, psoriatic arthritis, and gout. Explains how the patterns differ, why X-rays often mismatch symptoms, and current treatments.",
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
@@ -544,7 +544,7 @@ export const CONDITION_ARTICLES: Article[] = [
     slug: "fibromyalgia",
     title: "Fibromyalgia",
     description:
-      "What fibromyalgia is – the signature disease of a sensitized pain system: the measurable evidence that it is real, how it is diagnosed today, why exercise and sleep outperform most pills, and realistic expectations for the three approved medications.",
+      "Fibromyalgia involves heightened pain processing in the central nervous system. Reviews how it is diagnosed, why exercise and sleep are central to care, and what to expect from the three FDA-approved medications.",
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
@@ -644,7 +644,7 @@ export const CONDITION_ARTICLES: Article[] = [
     slug: "cancer-pain",
     title: "Cancer pain",
     description:
-      "Cancer pain is one of the most treatable parts of cancer, where it comes from (the disease, the treatment, and the years after), why opioids are a different conversation here, what palliative care is, and the full toolbox beyond the pill bottle.",
+      "Cancer pain can come from the tumor itself, from treatment, or linger after treatment ends. Explains how clinicians approach opioids in this setting, the role of palliative care, and non-medication options.",
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
@@ -745,7 +745,7 @@ export const CONDITION_ARTICLES: Article[] = [
     slug: "persistent-postsurgical-pain",
     title: "Persistent postsurgical pain",
     description:
-      "Why pain can continue after an operation has healed: the three-month definition, nerve injury and sensitization, who is at higher risk, what must be ruled out, and how transitional pain care can prevent a difficult recovery from becoming a permanent handoff.",
+      "Pain lasting three months or more after surgery can stem from nerve injury or central sensitization. Covers risk factors, what needs to be ruled out, and how transitional pain clinics help.",
     status: "sourced",
     lastUpdated: "2026-09-05",
     answer:
@@ -844,7 +844,7 @@ export const CONDITION_ARTICLES: Article[] = [
     slug: "endometriosis",
     title: "Endometriosis",
     description:
-      "What endometriosis is, why pain can spread beyond visible lesions, how diagnosis has moved beyond mandatory surgery, and how hormonal treatment, surgery, pelvic-floor care, and fertility goals shape an individualized plan.",
+      "Endometriosis can cause pain that extends beyond visible lesions. Covers how diagnosis has shifted away from mandatory surgery and how hormonal therapy, surgery, pelvic-floor care, and fertility goals fit together.",
     status: "sourced",
     lastUpdated: "2026-09-05",
     answer:
@@ -943,7 +943,7 @@ export const CONDITION_ARTICLES: Article[] = [
     slug: "diabetic-neuropathy",
     title: "Diabetic neuropathy",
     description:
-      "How diabetes damages nerves: why symptoms begin in the toes, how feet can be numb and painful at once, why daily foot checks matter, and what current guidelines say about preventing damage and treating neuropathic pain.",
+      "High blood sugar can damage peripheral nerves, usually starting in the toes and causing numbness alongside burning pain. Covers daily foot checks, prevention, and guideline-backed treatments.",
     status: "sourced",
     lastUpdated: "2026-09-05",
     answer:
@@ -1042,7 +1042,7 @@ export const CONDITION_ARTICLES: Article[] = [
     slug: "spinal-stenosis",
     title: "Lumbar spinal stenosis",
     description:
-      "Why spinal stenosis makes standing and walking hurt: the shopping-cart sign, why a narrow MRI is not a diagnosis by itself, what improves walking, the limited evidence for injections, and when decompression surgery enters the conversation.",
+      "Lumbar spinal stenosis narrows the spinal canal, often making standing and walking painful while leaning forward brings relief. Covers why MRI findings alone do not make a diagnosis, physical therapy, injections, and decompression surgery.",
     status: "sourced",
     lastUpdated: "2026-09-05",
     answer:
@@ -1147,7 +1147,7 @@ export const CONDITION_ARTICLES: Article[] = [
     slug: "neck-pain",
     title: "Neck pain",
     description:
-      "What neck pain means: why most cases are mechanical rather than dangerous, what arm symptoms can reveal about a nerve or spinal cord problem, when imaging helps, and the treatment options supported by current guidelines.",
+      "Most neck pain is mechanical and resolves with time and movement. Explains when arm symptoms point to a nerve or spinal cord issue, when imaging is useful, and what guidelines recommend.",
     status: "sourced",
     lastUpdated: "2026-09-05",
     answer:
@@ -1246,7 +1246,7 @@ export const CONDITION_ARTICLES: Article[] = [
     slug: "crps",
     title: "Complex regional pain syndrome",
     description:
-      "CRPS explained: pain out of proportion after an injury, a limb that visibly changes, and why the first months matter most – the Budapest criteria, the brain-map science behind mirror therapy, and the treatments with real evidence, movement first.",
+      "CRPS causes pain out of proportion after an injury alongside visible limb changes. Covers the Budapest diagnostic criteria, why early movement matters, and treatments including mirror therapy.",
     status: "sourced",
     lastUpdated: "2026-08-28",
     answer:
@@ -2021,7 +2021,7 @@ export const CONDITION_ARTICLES: Article[] = [
     slug: "tension-and-cluster-headache",
     title: "Tension-type and cluster headache",
     description:
-      "The two headaches beyond migraine: tension-type headache, the most common headache in the world, and cluster headache, among the most severe – how to tell them apart, what treats each, the medication-overuse trap, and the warning signs that need urgent care.",
+      "Tension-type headache is common and bilateral, while cluster headache causes severe one-sided attacks around the eye. Covers how to tell them apart, treatments for each, medication overuse, and red flags.",
     status: "sourced",
     lastUpdated: "2026-11-14",
     answer:
