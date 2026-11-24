@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Source_Sans_3 } from "next/font/google";
+import { Source_Sans_3, Newsreader, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -11,6 +11,16 @@ import { Analytics } from "@vercel/analytics/next";
 
 const sourceSans = Source_Sans_3({
   variable: "--font-source-sans",
+  subsets: ["latin"],
+});
+
+const newsreader = Newsreader({
+  variable: "--font-serif",
+  subsets: ["latin"],
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-mono",
   subsets: ["latin"],
 });
 
@@ -36,7 +46,10 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${sourceSans.variable} h-full antialiased`}>
+    <html
+      lang="en"
+      className={`${sourceSans.variable} ${newsreader.variable} ${jetbrainsMono.variable} h-full antialiased`}
+    >
       <body className="min-h-full flex flex-col bg-background text-body">
         <JsonLd data={organizationJsonLd()} />
         <JsonLd data={websiteJsonLd()} />

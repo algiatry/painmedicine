@@ -1,23 +1,36 @@
 @import "tailwindcss";
 
+@layer base {
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-serif), Georgia, serif;
+  }
+
+  .font-mono {
+    font-family: var(--font-mono), ui-monospace, SFMono-Regular, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
 :root {
   /* Semantic colour tokens. Components use these (text-ink, border-line,
      bg-surface …) rather than literal slate/teal utilities, so dark mode is
      one remap below instead of a `dark:` variant on every class. */
-  --background: #ffffff;
-  --foreground: #334155;
-  --paper: #f4f8f7; /* tinted section ground */
-  --surface: #ffffff; /* cards */
-  --sunken: #f1f5f9; /* wells, hover fills */
-  --ink: #0f172a; /* headings */
-  --body: #334155; /* running text */
-  --muted: #475569; /* secondary text */
-  --subtle: #64748b; /* captions, meta: still AA on white */
+  --background: #faf9f6;
+  --foreground: #2d3136;
+  --paper: #f4f6f3; /* tinted section ground */
+  --surface: #fdfcfa; /* cards */
+  --sunken: #f1f3ef; /* wells, hover fills */
+  --ink: #1c1e21; /* headings */
+  --body: #2d3136; /* running text */
+  --muted: #4b525a; /* secondary text */
+  --subtle: #646b73; /* captions, meta: still AA on warm paper */
   --faint: #cbd5e1; /* decorative only: arrows, underlines, separators */
-  --line: #e2e8f0; /* hairlines */
-  --edge: #e2e8f0; /* borders on raised surfaces */
-  --well: #f8fafc; /* footer, quiet panels */
-  --chrome: #ffffff; /* header and menus */
+  --line: #e5e4df; /* hairlines */
+  --edge: #e5e4df; /* borders on raised surfaces */
+  --well: #f4f4f0; /* footer, quiet panels */
+  --chrome: #faf9f6; /* header and menus */
   --plate: #f4f8f7; /* emblem tiles: stays light in dark mode */
   --note: #f0fdfa; /* teal callout ground / line / text */
   --note-line: #99f6e4;
