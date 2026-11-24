@@ -1,5 +1,6 @@
 import JsonLd from "@/components/JsonLd";
 import { Figure, H2, KeyTakeaways, P, anim } from "@/components/science/Figure";
+import PipelineMatrix from "./PipelineMatrix";
 import { SITE } from "@/lib/site";
 import {
   CANDIDATES,
@@ -351,6 +352,16 @@ export default function PipelineTracker() {
       <JsonLd data={datasetJsonLd()} />
 
       <LandscapeFigure />
+
+      <PipelineMatrix />
+
+      <p className="mt-3 text-xs text-subtle">
+        For substance-use support, contact the SAMHSA National Helpline at{" "}
+        <a href="tel:18006624357" className="underline">
+          1-800-662-4357
+        </a>
+        .
+      </p>
 
       <P>
         For most of the last forty years, treating pain meant choosing among old
