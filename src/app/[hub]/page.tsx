@@ -46,6 +46,7 @@ export default async function HubPage({
           description: hub.description,
           path: `/${hub.slug}`,
           lastUpdated: hub.lastUpdated,
+          publishedAt: hub.publishedAt,
           review: hub.review,
         })}
       />
