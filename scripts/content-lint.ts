@@ -157,8 +157,14 @@ function checkReviewModel(page: string, meta: PageMeta, hub: string) {
   }
   if (!isoDate.test(meta.lastUpdated))
     err(page, `lastUpdated is not an ISO date: "${meta.lastUpdated}"`);
-  else if (new Date(meta.lastUpdated) > new Date())
-    err(page, `lastUpdated is in the future: ${meta.lastUpdated}`);
+  else {
+    const updated = new Date(meta.lastUpdated);
+    const now = new Date();
+    if (updated > now)
+      err(page, `lastUpdated is in the future: ${meta.lastUpdated}`);
+    else if ((now.getTime() - updated.getTime()) / (1000 * 60 * 60 * 24) > 365)
+      warn(page, `lastUpdated (${meta.lastUpdated}) is over 12 months old — review for currency`);
+  }
   // publishedAt is optional (set by the editor when a page goes live). When
   // present it must be a real past date and cannot fall after lastUpdated —
   // a page cannot be modified before it was published. No "missing" warning:
