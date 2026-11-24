@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Figure, H2, KeyTakeaways, P, anim } from "./Figure";
 import { FIG } from "@/lib/fig";
+import TreatmentPathwayInteractive from "./TreatmentPathwayInteractive";
 
 /**
  * Figure 1 – the pain signal pathway, schematic. Skin → nerve → spinal
@@ -248,6 +249,8 @@ export default function HowPainWorks() {
         like a phone call. The real path is more interesting, and understanding
         it changes what you can do about pain.
       </P>
+
+      <TreatmentPathwayInteractive />
 
       <KeyTakeaways
         items={[

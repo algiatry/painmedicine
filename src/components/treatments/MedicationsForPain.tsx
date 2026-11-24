@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
+import TreatmentPathwayInteractive from "../science/TreatmentPathwayInteractive";
 
 const link =
   "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
@@ -213,6 +214,8 @@ export default function MedicationsForPain() {
         to the mechanism and modest drugs work well; mismatch them and even
         potent ones fail.
       </P>
+
+      <TreatmentPathwayInteractive />
 
       <KeyTakeaways
         items={[

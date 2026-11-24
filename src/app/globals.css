@@ -45,9 +45,30 @@
   --plate-to: #f1f6f5;
 }
 
+@media print {
+  header,
+  footer,
+  nav,
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+    color: #444444;
+  }
+}
+
 /*
  * Dark theme. Follows the OS preference, no toggle. Only the tokens change.
- * The hand-drawn SVG figures use a light-palette legend, so they stay on a
  * light "plate" (see .figure-plate), dimmed here so it does not glare.
  */
 @media (prefers-color-scheme: dark) {
