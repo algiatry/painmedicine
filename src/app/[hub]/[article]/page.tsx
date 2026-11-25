@@ -110,10 +110,49 @@ export default async function ArticlePage({
 
       <ArticleToc variant="inline" />
 
+      {hub === "conditions" && (
+        <aside
+          aria-label="Red flags: when to seek urgent care"
+          className="mt-8 max-w-[65ch] rounded-xl border border-caution-line bg-caution px-5 py-4 text-sm text-caution-ink"
+        >
+          <p className="font-semibold">Red flags: when to seek urgent care</p>
+          <p className="mt-1 leading-relaxed">
+            Seek immediate medical evaluation for sudden severe pain, new
+            weakness or numbness in a limb, loss of bowel or bladder control,
+            fever with back or neck pain, or pain after major trauma.
+          </p>
+        </aside>
+      )}
+
       {Body && (
         <div className="mt-10 max-w-[65ch] text-[17px] leading-[1.7]">
           <Body />
         </div>
+      )}
+
+      {hub === "conditions" && (
+        <section
+          aria-labelledby="appointment-heading"
+          className="mt-12 max-w-[65ch] rounded-xl border border-line bg-paper/70 px-5 py-5"
+        >
+          <h2
+            id="appointment-heading"
+            className="text-xl font-bold tracking-tight text-ink"
+          >
+            What an appointment looks like
+          </h2>
+          <p className="mt-2 text-sm leading-relaxed text-muted">
+            A pain-medicine evaluation typically starts with a focused history
+            of how your symptoms began, what makes them better or worse, a
+            targeted physical exam, and a review of prior imaging or treatments.{" "}
+            <Link
+              href="/what-is-pain-medicine/your-first-visit"
+              className="font-semibold text-brand hover:underline"
+            >
+              Read what to expect at your first visit →
+            </Link>
+          </p>
+        </section>
       )}
 
       <section
