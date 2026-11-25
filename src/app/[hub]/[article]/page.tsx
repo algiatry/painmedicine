@@ -15,6 +15,7 @@ import { SITE, correctionHref } from "@/lib/site";
 import { pageMetadata } from "@/lib/metadata";
 import ArticleEmblem from "@/components/ArticleEmblem";
 import ArticleToc from "@/components/ArticleToc";
+import ReadingControls from "@/components/ReadingControls";
 
 export const dynamicParams = false;
 
@@ -108,7 +109,10 @@ export default async function ArticlePage({
         />
       </header>
 
-      <ArticleToc variant="inline" />
+      <div className="mt-6 flex flex-wrap items-center justify-between gap-4">
+        <ArticleToc variant="inline" />
+        <ReadingControls />
+      </div>
 
       {hub === "conditions" && (
         <aside
