@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Figure, H2, KeyTakeaways, P, anim } from "./Figure";
 import { FIG } from "@/lib/fig";
 import TreatmentPathwayInteractive from "./TreatmentPathwayInteractive";
+import GlossaryTerm from "../GlossaryTerm";
 
 /**
  * Figure 1 – the pain signal pathway, schematic. Skin → nerve → spinal
@@ -277,7 +278,11 @@ export default function HowPainWorks() {
       <P>
         Scattered through your skin, muscles, joints, and organs are the free
         endings of specialized nerves called{" "}
-        <strong>nociceptors</strong>. They are threat detectors. They fire when
+        <GlossaryTerm
+          term="nociceptors"
+          definition="Specialized peripheral nerve endings that detect potentially damaging heat, pressure, or chemical signals and send an alert toward the spinal cord."
+        />
+        . They are threat detectors. They fire when
         they sense something that could harm tissue: strong heat or cold, harsh
         pressure, or the chemicals released when cells are damaged. Firing a
         nociceptor is not yet pain – it is the first link in a chain.
