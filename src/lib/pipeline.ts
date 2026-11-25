@@ -13,7 +13,7 @@
  * and each affected entry's `updated` when you re-check.
  */
 
-export const LAST_REVIEWED = "2026-11-11";
+export const LAST_REVIEWED = "2026-11-25";
 
 export type Phase =
   | "Approved"
@@ -72,7 +72,7 @@ export const CANDIDATES: Candidate[] = [
     indication: "Moderate-to-severe acute pain",
     phase: "Approved",
     why: "The first non-opioid painkiller of a genuinely new class in decades – it blocks pain signals in the peripheral nerves rather than acting on the brain, so it carries no opioid addiction risk.",
-    note: "FDA-approved for moderate-to-severe acute pain (January 2025). Chronic-pain uses are not approved. On 2 November 2026 Vertex said both Phase 3 diabetic-neuropathy studies are on track to finish enrollment by the end of 2026, with results in mid-2027. A lumbosacral radiculopathy program has also been described as ongoing; that update did not mention it. Vertex said that, as of August 2026, JOURNAVX was the most prescribed branded oral pain medicine in the U.S. Earlier 2026 reports describe it inside opioid-free recovery plans after keyhole surgery.",
+    note: "FDA-approved for moderate-to-severe acute pain (January 2025). Chronic-pain uses are not approved. On 2 November 2026 Vertex said both Phase 3 diabetic-neuropathy studies are on track to finish enrollment by the end of 2026, with results in mid-2027. A lumbosacral radiculopathy program has also been described as ongoing; that update did not mention it. Vertex said that, as of August 2026, JOURNAVX was the most prescribed branded oral pain medicine in the U.S. Real-world data presented at the November 2026 AAHKS meeting found that, among total-knee-replacement patients, those given suzetrigine were more often discharged without an opioid prescription, and 70% never filled one in the 30 days after surgery. Earlier 2026 reports describe it inside opioid-free recovery plans after keyhole surgery.",
     updated: "2026-11",
     source: {
       label: "Vertex – third-quarter 2026 results (2 Nov 2026)",
@@ -171,6 +171,22 @@ export const CANDIDATES: Candidate[] = [
     source: {
       label: "Vertex – third-quarter 2026 results (2 Nov 2026)",
       url: "https://news.vrtx.com/news-releases/news-release-details/vertex-reports-third-quarter-2026-financial-results",
+    },
+  },
+  {
+    name: "Halneuron",
+    code: "Tetrodotoxin (TTX)",
+    sponsor: "Dogwood Therapeutics",
+    mechanism: "Selective NaV1.7 sodium-channel modulator (purified tetrodotoxin)",
+    modality: "Small molecule",
+    indication: "Chemotherapy-induced neuropathic pain",
+    phase: "Phase 2",
+    why: "A non-opioid injection aimed at a nerve-pain problem with no approved drug at all: the burning, numb feet and hands left behind by chemotherapy.",
+    note: "Not approved. On 23 November 2026 Dogwood said its Phase 2b study met the primary endpoint: 23.3% of patients reached at least a 50% cut in pain versus 9.2% on placebo (p=0.003), with a 4.2% discontinuation rate matching placebo. There is no FDA-approved therapy for chemotherapy-induced neuropathic pain, so a positive mid-stage result is notable; it still needs a pivotal Phase 3 trial.",
+    updated: "2026-11",
+    source: {
+      label: "Dogwood Therapeutics – Halneuron Phase 2b CINP topline (23 Nov 2026)",
+      url: "https://www.globenewswire.com/news-release/2026/11/23/3408242/0/en/dogwood-therapeutics-announces-halneuron-meets-primary-endpoint-with-statistically-significant-pain-reduction-vs-placebo-in-phase-2b-study-of-chemotherapy-induced-neuropathic-pain.html",
     },
   },
   {

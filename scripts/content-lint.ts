@@ -48,21 +48,27 @@ function allStrings(obj: unknown): string[] {
 /** Prose component source for an article slug, if one exists. */
 function proseFor(slug: string): string {
   const key = slug.replace(/-/g, "");
+  // A page can render across more than one component (e.g. the pipeline uses
+  // both PipelineMatrix and PipelineTracker). Read every matching file, not
+  // just the first, so inline content like the SAMHSA note is never missed.
+  const parts: string[] = [];
   for (const dir of COMPONENT_DIRS) {
     if (!fs.existsSync(dir)) continue;
-    const hit = fs
+    const hits = fs
       .readdirSync(dir)
-      .find((f) =>
+      .filter((f) =>
         f.toLowerCase().replace(/[^a-z0-9]/g, "").includes(key)
       );
     // Comments are not reader-facing; drop them so they are not scanned.
-    if (hit)
-      return fs
-        .readFileSync(path.join(dir, hit), "utf8")
-        .replace(/\/\*[\s\S]*?\*\//g, "")
-        .replace(/^\s*\/\/.*$/gm, "");
+    for (const hit of hits)
+      parts.push(
+        fs
+          .readFileSync(path.join(dir, hit), "utf8")
+          .replace(/\/\*[\s\S]*?\*\//g, "")
+          .replace(/^\s*\/\/.*$/gm, "")
+      );
   }
-  return "";
+  return parts.join("\n");
 }
 
 const isoDate = /^\d{4}-\d{2}-\d{2}$/;

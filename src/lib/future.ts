@@ -35,7 +35,7 @@ export const FUTURE_ARTICLES: Article[] = [
         question:
           "Which companies are researching new approaches to non-opioid pain treatment?",
         answer:
-          "On this page: Vertex (suzetrigine and VX-993), Grünenthal (resiniferatoxin), Lexicon (pilavapadin), Levicept (LEVI-04), Sangamo (ST-503; the company said in October 2026 it expects to sell that program in the fourth quarter, while a Phase 1/2 study continues), and Saluda Medical (the Evoke stimulator). Adneuris Therapeutics, a Tris Pharma company, is developing cebranopadol, which is opioid-adjacent rather than opioid-free, and is not approved. Pfizer and Lilly's tanezumab was discontinued in 2021. Only suzetrigine and Evoke are FDA-approved, and only for the uses on their labels. This is not every company in the field.",
+          "On this page: Vertex (suzetrigine and VX-993), Grünenthal (resiniferatoxin), Lexicon (pilavapadin), Levicept (LEVI-04), Dogwood Therapeutics (Halneuron, a purified tetrodotoxin for chemotherapy-induced nerve pain), Sangamo (ST-503; the company said in October 2026 it expects to sell that program in the fourth quarter, while a Phase 1/2 study continues), and Saluda Medical (the Evoke stimulator). Adneuris Therapeutics, a Tris Pharma company, is developing cebranopadol, which is opioid-adjacent rather than opioid-free, and is not approved. Pfizer and Lilly's tanezumab was discontinued in 2021. Only suzetrigine and Evoke are FDA-approved, and only for the uses on their labels. This is not every company in the field.",
       },
       {
         question: "Does a drug being “in the pipeline” mean I can get it?",
@@ -76,6 +76,12 @@ export const FUTURE_ARTICLES: Article[] = [
         title:
           "NDA submission for cebranopadol in moderate-to-severe acute pain (9 Nov 2026)",
         url: "https://www.biospace.com/press-releases/adneuris-therapeutics-reaches-key-regulatory-milestone-with-fda-submission-of-new-drug-application-for-cebranopadol-in-moderate-to-severe-acute-pain",
+      },
+      {
+        source: "Dogwood Therapeutics",
+        title:
+          "Halneuron meets primary endpoint in Phase 2b CINP study (23 Nov 2026)",
+        url: "https://www.globenewswire.com/news-release/2026/11/23/3408242/0/en/dogwood-therapeutics-announces-halneuron-meets-primary-endpoint-with-statistically-significant-pain-reduction-vs-placebo-in-phase-2b-study-of-chemotherapy-induced-neuropathic-pain.html",
       },
       {
         source: "Vertex Pharmaceuticals",
