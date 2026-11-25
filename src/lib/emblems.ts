@@ -293,6 +293,14 @@ export const EMBLEMS: Record<string, string> = {
       `<circle stroke="${A}" cx="24" cy="24" r="7" stroke-width="2.2"/>`,
   ),
 
+  // Spinal column with a stimulation pulse running alongside it — leads at the cord.
+  "spinal-cord-stimulation": g(
+    `<path stroke="${T}" d="M17 7v34"/>` +
+      `<path stroke="${T}" d="M12 13h10M12 20h10M12 27h10M12 34h10" stroke-width="2.2"/>` +
+      `<path stroke="${A}" d="M28 33c3 0 3-6 6-6s3 6 6 6"/>` +
+      `<circle cx="26" cy="20" r="2.2" fill="${A}" stroke-width="0"/>`,
+  ),
+
   // Capsule and tablet over the signal wave they quiet — many tools, one map.
   "medications-for-pain": g(
     `<rect stroke="${T}" x="6" y="10" width="22" height="11" rx="5.5" transform="rotate(-24 17 15.5)"/>` +

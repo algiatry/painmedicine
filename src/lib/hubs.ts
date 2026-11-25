@@ -171,6 +171,12 @@ export const HUBS: Hub[] = [
         href: "/treatments/interventional-procedures",
       },
       {
+        title: "Spinal cord stimulation",
+        blurb:
+          "The implanted stimulator, the test-first trial, success rates, the newer closed-loop devices, and the real limits.",
+        href: "/treatments/spinal-cord-stimulation",
+      },
+      {
         title: "Physical & behavioral therapies",
         blurb:
           "The active half of pain medicine: movement as medicine, the pacing skill that ends the boom-bust cycle, and what CBT and mindfulness deliver.",

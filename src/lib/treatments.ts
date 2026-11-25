@@ -349,6 +349,12 @@ export const TREATMENT_ARTICLES: Article[] = [
     ],
     related: [
       {
+        title: "Spinal cord stimulation",
+        href: "/treatments/spinal-cord-stimulation",
+        blurb:
+          "The implanted stimulator in depth: the test-first trial, success rates, and the newer devices.",
+      },
+      {
         title: "Next-generation neuromodulation",
         href: "/future-of-pain-medicine/neuromodulation",
         blurb:
@@ -365,6 +371,120 @@ export const TREATMENT_ARTICLES: Article[] = [
         href: "/conditions/crps",
         blurb:
           "The condition where stimulation earned its randomized-trial reputation.",
+      },
+    ],
+  },
+
+  {
+    hub: HUB,
+    slug: "spinal-cord-stimulation",
+    title: "Spinal cord stimulation",
+    seoTitle: "Spinal Cord Stimulator: How It Works, Success Rate, Risks",
+    description:
+      "An implanted device that sends mild electrical pulses to the spinal cord to quiet nerve pain. Covers who it helps, the test-first trial, success rates, the newer waveforms and closed-loop devices, and the real limits and risks.",
+    status: "sourced",
+    lastUpdated: "2026-11-25",
+    answer:
+      "A spinal cord stimulator is a small implanted device that delivers mild electrical pulses to the spinal cord, changing how pain signals are processed before they reach the brain. Its most distinctive feature is unusual in medicine: before anything is implanted, you wear a temporary trial for about a week to test whether it helps you.",
+    faqs: [
+      {
+        question: "What is a spinal cord stimulator and how does it work?",
+        answer:
+          "It is an implanted device with two parts: thin leads placed in the space just outside the spinal cord, and a small battery-powered pulse generator under the skin. The leads deliver gentle electrical pulses that change how pain signals travel up the cord, so less pain reaches the brain. It does not fix the original problem; it turns down the volume on a pain signal that has not switched off on its own.",
+      },
+      {
+        question: "Who is a spinal cord stimulator for?",
+        answer:
+          "It is for people with persistent nerve-related pain that medication and other measures have not controlled. The conditions with the strongest trial evidence are painful diabetic neuropathy, complex regional pain syndrome, and pain that continues after spine surgery. It is a later step, not a first one, and a careful evaluation, usually including a psychological assessment, comes before the trial.",
+      },
+      {
+        question: "What is the trial, and why does it come first?",
+        answer:
+          "Before a permanent implant, a temporary system is placed through the skin and worn for roughly a week while you go about ordinary life. If it cuts your pain by about half or more, the permanent device is likely to help too, and only then is it implanted. If it does not, nothing permanent goes in. This test-drive is the single best predictor of your result, which is why it comes first.",
+      },
+      {
+        question: "What is the success rate of a spinal cord stimulator, and does it wear off?",
+        answer:
+          "Most well-selected candidates with nerve-type pain reach at least a 50% reduction during the trial week, which is the point of running it. Over years, benefit can fade for some people, and a minority have the device removed. In a randomized trial in painful diabetic neuropathy, high-frequency stimulation produced large, sustained relief that medication alone had not. Your own trial, not an average, is the best guide to what you can expect.",
+      },
+      {
+        question: "What are the newer types: high-frequency, burst, DRG, and closed-loop?",
+        answer:
+          "Conventional stimulation replaces pain with a tingling sensation. Newer approaches aim to do better. High-frequency (10 kHz) and burst stimulation relieve pain without the tingling. Dorsal root ganglion stimulation targets a specific nerve cluster and has strong trial results in complex regional pain syndrome. Closed-loop systems read the spinal cord's own response and adjust every pulse in real time; in a blinded randomized trial they beat older open-loop devices, with the advantage holding out to three years.",
+      },
+      {
+        question: "What are the risks?",
+        answer:
+          "Because it is a surgical implant, the main risks are infection, bleeding, and leads that shift out of position and need revision; these are usually manageable but sometimes mean another procedure. Hardware can fail, and some people simply stop getting enough benefit and choose removal. The device also affects whether and how you can have an MRI later, so the type implanted and its labeling matter. Your team weighs all of this against how much the trial helped.",
+      },
+    ],
+    references: [
+      {
+        source: "NCBI StatPearls",
+        title: "Spinal Cord Stimulator Implant",
+        url: "https://www.ncbi.nlm.nih.gov/books/NBK555994/",
+      },
+      {
+        source: "JAMA Neurology / PubMed",
+        title:
+          "Petersen et al. – Effect of high-frequency (10-kHz) spinal cord stimulation in patients with painful diabetic neuropathy: a randomized clinical trial",
+        url: "https://pubmed.ncbi.nlm.nih.gov/33818600/",
+      },
+      {
+        source: "NEJM / PubMed",
+        title:
+          "Kemler et al. – Spinal cord stimulation in patients with chronic reflex sympathetic dystrophy",
+        url: "https://pubmed.ncbi.nlm.nih.gov/10965008/",
+      },
+      {
+        source: "PAIN / PubMed",
+        title:
+          "Deer et al. – Dorsal root ganglion stimulation yielded higher treatment success rate for complex regional pain syndrome and causalgia (ACCURATE trial)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/28030470/",
+      },
+      {
+        source: "Lancet Neurology / PubMed",
+        title:
+          "Mekhail et al. – Long-term safety and efficacy of closed-loop spinal cord stimulation to treat chronic back and leg pain (Evoke): a double-blind, randomised, controlled trial",
+        url: "https://pubmed.ncbi.nlm.nih.gov/31870766/",
+      },
+      {
+        source: "Reg Anesth Pain Med / PubMed",
+        title:
+          "ECAP-controlled closed-loop versus open-loop SCS for the treatment of chronic pain: 36-month results of the EVOKE blinded randomized clinical trial",
+        url: "https://pubmed.ncbi.nlm.nih.gov/37640452/",
+      },
+      {
+        source: "Neuromodulation / PubMed",
+        title:
+          "Aldehri et al. – Burst vs Tonic Spinal Cord Stimulation for Chronic Neuropathic Pain: A Systematic Review and Meta-Analysis (2026)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/42742508/",
+      },
+    ],
+    related: [
+      {
+        title: "Complex regional pain syndrome",
+        href: "/conditions/crps",
+        blurb:
+          "The condition where stimulation earned its randomized-trial reputation.",
+      },
+      {
+        title: "Diabetic neuropathy",
+        href: "/conditions/diabetic-neuropathy",
+        blurb:
+          "Where a high-frequency stimulation trial showed large, lasting relief.",
+      },
+      {
+        title: "Interventional procedures",
+        href: "/treatments/interventional-procedures",
+        blurb:
+          "The wider family of image-guided procedures this sits at the far end of.",
+      },
+      {
+        title: "Next-generation neuromodulation",
+        href: "/future-of-pain-medicine/neuromodulation",
+        blurb:
+          "Closed-loop and non-invasive stimulation, and where the device frontier goes next.",
       },
     ],
   },
