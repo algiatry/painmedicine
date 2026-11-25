@@ -161,7 +161,7 @@ export async function brandCard({
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                background: "#ffffff",
+                background: "#faf9f6",
                 borderRadius: 36,
                 border: `2px solid #d7e5e2`,
                 boxShadow: "0 8px 28px rgba(15, 23, 42, 0.08)",

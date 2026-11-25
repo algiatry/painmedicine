@@ -65,6 +65,13 @@
     font-size: 0.85em;
     color: #444444;
   }
+
+  figure,
+  .figure-plate,
+  svg {
+    break-inside: avoid;
+    max-width: 100% !important;
+  }
 }
 
 /*
