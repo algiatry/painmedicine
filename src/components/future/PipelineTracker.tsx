@@ -363,6 +363,14 @@ export default function PipelineTracker() {
         .
       </p>
 
+      <p className="mt-3 text-xs text-subtle">
+        For substance-use support, contact the SAMHSA National Helpline at{" "}
+        <a href="tel:18006624357" className="underline">
+          1-800-662-4357
+        </a>
+        .
+      </p>
+
       <P>
         For most of the last forty years, treating pain meant choosing among old
         drug classes – opioids, anti-inflammatories, a handful of nerve-pain

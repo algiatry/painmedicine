@@ -13,6 +13,18 @@
   }
 }
 
+html[data-text-size="large"] article {
+  font-size: 1.125rem;
+}
+
+html[data-low-glare="true"] {
+  --background: #f2efe9;
+  --surface: #f5f2ec;
+  --paper: #eae6de;
+  --ink: #26292e;
+  --body: #363a40;
+}
+
 :root {
   /* Semantic colour tokens. Components use these (text-ink, border-line,
      bg-surface …) rather than literal slate/teal utilities, so dark mode is
