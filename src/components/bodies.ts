@@ -52,6 +52,7 @@ import TensionAndClusterHeadache from "./conditions/TensionAndClusterHeadache";
 import TrigeminalNeuralgia from "./conditions/TrigeminalNeuralgia";
 import Ketamine from "./treatments/Ketamine";
 import BuprenorphineForPain from "./treatments/BuprenorphineForPain";
+import SpinalCordStimulation from "./treatments/SpinalCordStimulation";
 
 /**
  * Maps an article slug to the component that renders its illustrated body.
@@ -112,4 +113,5 @@ export const ARTICLE_BODIES: Record<string, ComponentType> = {
   "trigeminal-neuralgia": TrigeminalNeuralgia,
   "ketamine": Ketamine,
   "buprenorphine-for-pain": BuprenorphineForPain,
+  "spinal-cord-stimulation": SpinalCordStimulation,
 };

@@ -163,6 +163,12 @@ export const FUTURE_ARTICLES: Article[] = [
     ],
     related: [
       {
+        title: "Spinal cord stimulation",
+        href: "/treatments/spinal-cord-stimulation",
+        blurb:
+          "The stimulator as it is used today: who it helps, the trial, and what to expect.",
+      },
+      {
         title: "The pain treatment pipeline",
         href: "/future-of-pain-medicine/pipeline",
         blurb: "Where these devices sit among everything in development.",
