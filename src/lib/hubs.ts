@@ -379,11 +379,11 @@ export const HUBS: Hub[] = [
     description:
       "The future of pain management: the next generation of pain relief – non-opioid drug pipelines, advanced neuromodulation, biologics, precision pain medicine, and the science reshaping the field.",
     status: "sourced",
-    lastUpdated: "2026-08-26",
+    lastUpdated: "2026-11-25",
     heading: "The future of pain medicine",
     intro: [
-      "Pain science is in the middle of its most productive era in decades. After years in which pain relief meant choosing among old drug classes, new mechanisms are reaching patients, and a deep pipeline sits behind them.",
-      "This hub tracks where the field is going: new non-opioid drug classes, smarter neuromodulation, biologics, gene-targeted approaches, and precision medicine that matches treatment to your biology. Updated as the science moves.",
+      "Pain science is in the middle of its most productive era in decades. Suzetrigine, the first non-opioid painkiller of a genuinely new class, reached patients in 2025, and a deep pipeline of fresh mechanisms sits behind it: sodium-channel blockers, a dual-receptor candidate just filed with the FDA, closed-loop neuromodulation, biologics, and gene-targeted therapy.",
+      "This hub tracks where the field is going. The live pipeline tracker below follows every notable drug and device in development, with its phase and what it means; the other pages go deeper on neuromodulation, biologics and gene therapy, precision medicine, and the mind-brain frontier. Updated as the science moves.",
     ],
     planned: [
       {
