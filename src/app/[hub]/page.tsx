@@ -7,6 +7,7 @@ import { faqJsonLd, medicalWebPageJsonLd } from "@/lib/schema";
 import { HUBS, getHub } from "@/lib/hubs";
 import { pageMetadata } from "@/lib/metadata";
 import ArticleEmblem from "@/components/ArticleEmblem";
+import TreatmentAccess from "@/components/future/TreatmentAccess";
 
 export const dynamicParams = false;
 
@@ -71,6 +72,8 @@ export default async function HubPage({
           </p>
         ))}
       </div>
+
+      {hub.slug === "future-of-pain-medicine" && <TreatmentAccess />}
 
       <section aria-labelledby={`${hub.slug}-coverage`} className="mt-12">
         <h2
