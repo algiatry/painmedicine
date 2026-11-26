@@ -38,6 +38,7 @@ export default async function HubPage({
   const { hub: slug } = await params;
   const hub = getHub(slug);
   if (!hub) notFound();
+  const isFutureHub = hub.slug === "future-of-pain-medicine";
 
   return (
     <article className="mx-auto max-w-[42rem] px-4 sm:px-6 py-14">
@@ -73,16 +74,42 @@ export default async function HubPage({
         ))}
       </div>
 
-      {hub.slug === "future-of-pain-medicine" && <TreatmentAccess />}
+      {isFutureHub && (
+        <>
+          <section aria-labelledby="treatment-availability" className="mt-8">
+            <h2 id="treatment-availability" className="text-2xl font-bold tracking-tight text-ink">
+              What’s available now, and what’s still in trials?
+            </h2>
+            <ul className="mt-4 space-y-3 text-body">
+              <li>
+                <Link href="/treatments" className="font-medium text-brand underline underline-offset-2">
+                  Explore pain treatments available today
+                </Link>
+                {" "}for an overview of medicines, procedures, and physical and behavioral therapies.
+              </li>
+              <li>
+                <Link href="/future-of-pain-medicine/pipeline" className="font-medium text-brand underline underline-offset-2">
+                  See treatments in development
+                </Link>
+                {" "}and check the status of selected drugs and devices. For approved treatments,
+                check which conditions the approval covers.
+              </li>
+            </ul>
+          </section>
+          <TreatmentAccess />
+        </>
+      )}
 
       <section aria-labelledby={`${hub.slug}-coverage`} className="mt-12">
         <h2
           id={`${hub.slug}-coverage`}
           className="text-2xl font-bold tracking-tight text-ink"
         >
-          {hub.planned.some((p) => p.href)
-            ? "Explore this section"
-            : "What this section will cover"}
+          {isFutureHub
+            ? "New and emerging approaches to pain treatment"
+            : hub.planned.some((p) => p.href)
+              ? "Explore this section"
+              : "What this section will cover"}
         </h2>
         <ul className="mt-5 space-y-4">
           {hub.planned.map((item) =>

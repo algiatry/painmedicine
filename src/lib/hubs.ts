@@ -381,45 +381,44 @@ export const HUBS: Hub[] = [
   },
   {
     slug: "future-of-pain-medicine",
-    title: "The future of pain medicine",
+    title: "Future of Pain Medicine: New and Emerging Treatments",
     description:
-      "The future of pain management: the next generation of pain relief – non-opioid drug pipelines, advanced neuromodulation, biologics, precision pain medicine, and the science reshaping the field.",
+      "See which new pain treatments are available, which are still in trials, and what to ask about study evidence, coverage, and access.",
     status: "sourced",
-    lastUpdated: "2026-11-25",
+    lastUpdated: "2026-11-26",
     heading: "The future of pain medicine",
     intro: [
-      "Pain science is in the middle of its most productive era in decades. Suzetrigine, the first non-opioid painkiller of a genuinely new class, reached patients in 2025, and a deep pipeline of fresh mechanisms sits behind it: sodium-channel blockers, a dual-receptor candidate just filed with the FDA, closed-loop neuromodulation, biologics, and gene-targeted therapy.",
-      "This hub tracks where the field is going. The live pipeline tracker below follows every notable drug and device in development, with its phase and what it means; the other pages go deeper on neuromodulation, biologics and gene therapy, precision medicine, and the mind-brain frontier. Updated as the science moves.",
+      "Explore how pain treatment is changing, from new non-opioid medicines and advances in nerve stimulation to research on how to match treatments to individual patients.",
     ],
     planned: [
       {
-        title: "The pain treatment pipeline – live tracker",
+        title: "The pain treatment pipeline",
         blurb:
-          "Every notable drug and device in development for pain – mechanism, phase, and what each one means. Updated quarterly.",
+          "Which new pain treatments are approved, in trials, or no longer in development? The tracker follows selected drugs and devices.",
         href: "/future-of-pain-medicine/pipeline",
       },
       {
         title: "Next-generation neuromodulation",
         blurb:
-          "Closed-loop spinal cord stimulation and non-invasive brain and nerve stimulation.",
+          "How do some spinal cord stimulators adjust as you move, and how do they differ from devices that work outside the body?",
         href: "/future-of-pain-medicine/neuromodulation",
       },
       {
         title: "Biologics & gene-targeted therapy",
         blurb:
-          "What migraine's antibody drugs proved, and where gene therapy for pain is headed.",
+          "How do antibody treatments for migraine work, and what are researchers studying in gene therapy for pain?",
         href: "/future-of-pain-medicine/biologics-and-gene-therapy",
       },
       {
         title: "Precision pain medicine",
         blurb:
-          "Pharmacogenomics, biomarkers, and matching the treatment to the patient.",
+          "How might genetic tests and other biological measurements help match a pain treatment to a person?",
         href: "/future-of-pain-medicine/precision-pain-medicine",
       },
       {
         title: "Mind, brain, and new frontiers",
         blurb:
-          "Pain reprocessing science, virtual reality analgesia, and early-stage research – covered.",
+          "What does the research say about pain reprocessing therapy and virtual reality for pain?",
         href: "/future-of-pain-medicine/mind-and-brain",
       },
     ],
