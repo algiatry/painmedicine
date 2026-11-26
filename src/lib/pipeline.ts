@@ -41,6 +41,11 @@ export type Candidate = {
   why: string;
   /** Status nuance – a caveat, a caution, or what happens next. */
   note?: string;
+  access?: {
+    studied: string;
+    barriers: string;
+    source: { label: string; url: string };
+  };
   /** Month we last confirmed this entry's status. */
   updated: string;
   source: { label: string; url: string };
@@ -73,6 +78,14 @@ export const CANDIDATES: Candidate[] = [
     phase: "Approved",
     why: "The first non-opioid painkiller of a genuinely new class in decades – it blocks pain signals in the peripheral nerves rather than acting on the brain, so it carries no opioid addiction risk.",
     note: "FDA-approved for moderate-to-severe acute pain (January 2025). Chronic-pain uses are not approved. On 2 November 2026 Vertex said both Phase 3 diabetic-neuropathy studies are on track to finish enrollment by the end of 2026, with results in mid-2027. A lumbosacral radiculopathy program has also been described as ongoing; that update did not mention it. Vertex said that, as of August 2026, JOURNAVX was the most prescribed branded oral pain medicine in the U.S. Real-world data presented at the November 2026 AAHKS meeting found that, among total-knee-replacement patients, those given suzetrigine were more often discharged without an opioid prescription, and 70% never filled one in the 30 days after surgery. Earlier 2026 reports describe it inside opioid-free recovery plans after keyhole surgery.",
+    access: {
+      studied: "Across three U.S. acute-pain trials, 89% of 2,447 adults were female and 5% were 65 or older. The two main studies of pain relief looked at pain after abdominal surgery or bunion surgery.",
+      barriers: "Ask whether your plan covers this prescription, what you’d pay, and whether your pharmacy can fill it.",
+      source: {
+        label: "FDA trial snapshot",
+        url: "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-journavx",
+      },
+    },
     updated: "2026-11",
     source: {
       label: "Vertex – third-quarter 2026 results (2 Nov 2026)",
@@ -90,6 +103,14 @@ export const CANDIDATES: Candidate[] = [
     phase: "Approved",
     why: "The first stimulator that measures the spinal cord's actual response to each pulse and corrects itself more than 100 times a second. In trials it outperformed conventional open-loop stimulation.",
     note: "FDA-approved 2022. Represents the shift from fixed-output devices toward feedback-controlled neuromodulation.",
+    access: {
+      studied: "The trial assigned 134 people with persistent back and leg pain to two groups. About 91% were White, and several racial groups had few or no participants.",
+      barriers: "A temporary stimulation trial comes before a permanent implant. Ask about coverage for both steps and where you’d go for follow-up.",
+      source: {
+        label: "FDA device review, Table 9",
+        url: "https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190002B.pdf#page=28",
+      },
+    },
     updated: "2026-08",
     source: {
       label: "Saluda Medical – FDA approval of Evoke",
@@ -105,6 +126,14 @@ export const CANDIDATES: Candidate[] = [
     phase: "Phase 3",
     why: "Aims to keep opioid-level pain relief while lowering abuse potential. In human abuse-potential studies it was reported less abusable than oxycodone and tramadol.",
     note: "Not approved. Adneuris submitted a New Drug Application on 9 November 2026 for moderate-to-severe acute pain in adults. The FDA has about 60 days to decide whether to accept the file. Phase 3 trials ALLEVIATE-1 and ALLEVIATE-2 met their primary endpoints. It still engages the µ-opioid receptor, so it is opioid-adjacent, not opioid-free.",
+    access: {
+      studied: "Two Phase 3 studies enrolled 303 people having abdominal surgery and 242 having bunion surgery. The sponsor-funded conference poster does not report participant race or ethnicity.",
+      barriers: "While the drug is investigational, routine availability and insurance coverage remain unknown.",
+      source: {
+        label: "ALLEVIATE trial results poster (PDF)",
+        url: "https://epostersonline-2.s3.amazonaws.com/asraspring2026/asraspring2026.12001ca.NORMAL.pdf",
+      },
+    },
     updated: "2026-11",
     source: {
       label: "Adneuris – NDA submission for cebranopadol (9 Nov 2026)",

@@ -59,8 +59,12 @@ for (const a of ALL_ARTICLES) {
   for (const r of a.references) add(r.url, r.title, page);
 }
 if (!only || only.replace(/^\//, "") === "future-of-pain-medicine/pipeline")
-  for (const c of CANDIDATES)
+  for (const c of CANDIDATES) {
     add(c.source.url, `${c.name} – ${c.source.label}`, "/future-of-pain-medicine/pipeline");
+    if (c.access) {
+      add(c.access.source.url, `${c.name} – ${c.access.source.label}`, "/future-of-pain-medicine/pipeline");
+    }
+  }
 
 /* ---------------------------------------------------------------- utils */
 

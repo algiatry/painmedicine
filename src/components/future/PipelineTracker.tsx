@@ -300,6 +300,27 @@ function CandidateCard({ c }: { c: Candidate }) {
       <p className="mt-3 text-body">{c.why}</p>
       {c.note && <p className="mt-2 text-sm text-subtle">{c.note}</p>}
 
+      {c.access && (
+        <div className="mt-4 rounded-lg border border-line bg-surface p-4 text-sm">
+          <dl className="space-y-3">
+            <div>
+              <dt className="font-semibold text-ink">Who was studied?</dt>
+              <dd className="mt-1 text-body">{c.access.studied}</dd>
+            </div>
+            <div>
+              <dt className="font-semibold text-ink">What could affect access?</dt>
+              <dd className="mt-1 text-body">{c.access.barriers}</dd>
+            </div>
+          </dl>
+          <a
+            href={c.access.source.url}
+            className="mt-3 inline-block text-brand underline underline-offset-2"
+          >
+            {c.access.source.label}
+          </a>
+        </div>
+      )}
+
       <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
         <a
           href={c.source.url}
