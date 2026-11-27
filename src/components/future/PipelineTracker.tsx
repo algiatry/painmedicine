@@ -23,7 +23,7 @@ const MODALITY_TINT: Record<Modality, { fill: string; text: string }> = {
 };
 
 const PHASE_BADGE: Record<Phase, string> = {
-  Approved: "bg-teal-600 text-white",
+  Approved: "bg-note text-note-ink",
   "Phase 3": "bg-note text-brand-strong",
   "Phase 2": "bg-caution text-caution-ink",
   "Phase 1": "bg-sunken text-body",
@@ -105,6 +105,7 @@ function LandscapeFigure() {
   return (
     <Figure
       animate
+      scrollLabel="Pipeline development stages"
       caption="The board, drawn live from the tracker data. Each row is a mechanism type and each column a development stage. Approved candidates sit past the teal rule. Halted candidates are set aside below – tanezumab fell at that line."
     >
       <div className="min-w-[43rem]">
@@ -150,15 +151,15 @@ function LandscapeFigure() {
                     </span>
                     {approved && (
                       <span
-                        className="mt-1 block text-[10px] font-semibold uppercase tracking-[0.16em]"
-                        style={{ color: FIG.nerve }}
+                        className="mt-1 block text-xs font-semibold uppercase tracking-[0.16em]"
+                        style={{ color: FIG.nerveDark }}
                       >
                         FDA approval
                       </span>
                     )}
                     <span
                       className="mt-1 block text-[11px] font-medium tabular-nums"
-                      style={{ color: FIG.faint }}
+                      style={{ color: FIG.textMid }}
                     >
                       {n}
                     </span>

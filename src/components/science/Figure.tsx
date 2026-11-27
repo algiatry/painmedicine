@@ -12,6 +12,7 @@ export function Figure({
   children,
   animate = false,
   label,
+  scrollLabel,
 }: {
   caption: string;
   children: ReactNode;
@@ -19,10 +20,17 @@ export function Figure({
   animate?: boolean;
   /** Optional short lead, set in teal before the caption (e.g. "Figure 1"). */
   label?: string;
+  /** Label a wide figure that requires keyboard scrolling. */
+  scrollLabel?: string;
 }) {
   return (
     <figure className="my-8 lg:-mx-12">
-      <div className="figure-plate overflow-x-auto rounded-xl border p-4 sm:p-6">
+      <div
+        className="figure-plate overflow-x-auto rounded-xl border p-4 sm:p-6"
+        role={scrollLabel ? "region" : undefined}
+        aria-label={scrollLabel}
+        tabIndex={scrollLabel ? 0 : undefined}
+      >
         {animate ? <AnimateOnView>{children}</AnimateOnView> : children}
       </div>
       <figcaption className="mt-3 flex gap-2.5 text-sm leading-relaxed text-subtle">
