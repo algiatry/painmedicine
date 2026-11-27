@@ -234,6 +234,11 @@ export const FUTURE_ARTICLES: Article[] = [
     ],
     related: [
       {
+        title: "CGRP therapies and headache medications",
+        href: "/treatments/cgrp-and-headache-treatments",
+        blurb: "The CGRP antibodies and gepants in clinical use, not as a future story.",
+      },
+      {
         title: "The pain treatment pipeline",
         href: "/future-of-pain-medicine/pipeline",
         blurb: "Track these biologics and gene therapies by phase.",

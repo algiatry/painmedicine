@@ -151,7 +151,7 @@ export const HUBS: Hub[] = [
     description:
       "The full landscape of evidence-based pain treatment: medications, interventional procedures, and physical and behavioral therapies.",
     status: "sourced",
-    lastUpdated: "2026-09-10",
+    lastUpdated: "2026-11-27",
     heading: "Pain treatments today",
     intro: [
       "Pain medicine today offers far more than pills. Treatment spans medication classes with very different mechanisms, image-guided procedures, neuromodulation devices, and physical and psychological therapies with real evidence behind them.",
@@ -163,6 +163,12 @@ export const HUBS: Hub[] = [
         blurb:
           "What pain medications are and the different types of pain relievers – acetaminophen and the NSAIDs, topicals, the nerve-pain medications, opioids, and the first new class in decades, and how to tell which one is right for you.",
         href: "/treatments/medications-for-pain",
+      },
+      {
+        title: "CGRP therapies and headache medications",
+        blurb:
+          "The antibodies and gepants designed for migraine, how they differ from triptans, what the trials show, and where Botox and cluster-headache care fit.",
+        href: "/treatments/cgrp-and-headache-treatments",
       },
       {
         title: "Interventional procedures",

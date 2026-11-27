@@ -301,6 +301,14 @@ export const EMBLEMS: Record<string, string> = {
       `<circle cx="26" cy="20" r="2.2" fill="${A}" stroke-width="0"/>`,
   ),
 
+  // Antibody Y capturing the amber CGRP peptide.
+  "cgrp-and-headache-treatments": g(
+    `<path stroke="${T}" d="M14 38 L24 18 L34 38" stroke-width="3"/>` +
+      `<path stroke="${T}" d="M24 18 v-6" stroke-width="3"/>` +
+      `<circle cx="36" cy="14" r="6" fill="${A}" stroke-width="0"/>` +
+      `<circle stroke="${A}" cx="36" cy="14" r="10" stroke-width="2.2"/>`,
+  ),
+
   // Capsule and tablet over the signal wave they quiet — many tools, one map.
   "medications-for-pain": g(
     `<rect stroke="${T}" x="6" y="10" width="22" height="11" rx="5.5" transform="rotate(-24 17 15.5)"/>` +

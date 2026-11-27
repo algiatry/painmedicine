@@ -58,6 +58,8 @@ export const ALIASES: Record<string, string> = {
   "/treatments/cannabis-and-cannabinoids": "marijuana weed thc cbd cbd oil medical marijuana hemp",
   "/treatments/medications-for-pain":
     "painkillers pain relievers medicine drugs pills nsaids ibuprofen acetaminophen tylenol gabapentin",
+  "/treatments/cgrp-and-headache-treatments":
+    "cgrp aimovig nurtec ubrelvy qulipta ajovy emgality vyepti gepants triptans botox reyvow lasmiditan migraine medication headache meds zavzpret",
   "/treatments/medication-organ-safety": "side effects liver kidney stomach tylenol ibuprofen nsaids",
   "/treatments/interventional-procedures":
     "injections epidural steroid nerve block radiofrequency ablation spinal cord stimulator",

@@ -252,7 +252,12 @@ export default function Migraine() {
         strikingly little side-effect baggage, and{" "}
         <strong>preventive gepants</strong> in tablet form. For many people
         these are the first treatments that feel designed for their disease,
-        because they were. Which of any of this fits you, including
+        because they were. The{" "}
+        <Link href="/treatments/cgrp-and-headache-treatments" className={link}>
+          CGRP therapies and headache medications
+        </Link>{" "}
+        page walks through the antibodies, gepants, triptans, and Botox in
+        depth. Which of any of this fits you, including
         wearable neuromodulation devices for those who prefer hardware to
         pharmacology – is a plan to build with your clinician, not a menu to
         self-serve.

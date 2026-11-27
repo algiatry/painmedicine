@@ -255,6 +255,12 @@ export const TREATMENT_ARTICLES: Article[] = [
         blurb:
           "Where medications sit in the guideline playbook for the world's most common pain.",
       },
+      {
+        title: "CGRP therapies and headache medications",
+        href: "/treatments/cgrp-and-headache-treatments",
+        blurb:
+          "The migraine-specific corner: antibodies, gepants, triptans, and Botox.",
+      },
     ],
   },
 
@@ -1535,6 +1541,119 @@ export const TREATMENT_ARTICLES: Article[] = [
         title: "Cancer pain",
         href: "/conditions/cancer-pain",
         blurb: "Where the CDC guideline does not apply, and opioids are a different conversation.",
+      },
+    ],
+  },
+
+  {
+    hub: HUB,
+    slug: "cgrp-and-headache-treatments",
+    title: "CGRP therapies and headache medications",
+    seoTitle: "CGRP Migraine Drugs: Antibodies, Gepants, and Triptans",
+    description:
+      "The CGRP antibodies and gepants designed for migraine, how they differ from triptans, what the trials show, and where Botox and cluster-headache care fit.",
+    status: "sourced",
+    lastUpdated: "2026-11-27",
+    answer:
+      "CGRP is a peptide the trigeminal nerve releases during a migraine attack. Since 2018, antibodies and tablets that block it have become first-line options for preventing migraine, and some of the tablets also treat an attack already underway. They sit beside triptans, not in place of them. None makes migraine vanish; the usual win is fewer days, not zero days.",
+    faqs: [
+      {
+        question: "What is CGRP, and why do migraine drugs target it?",
+        answer:
+          "CGRP is a peptide the trigeminal nerve releases onto the brain's pain-sensitive coverings during an attack. Infusing it can provoke migraine; blocking it can prevent attacks. That causal chain is why the antibodies (Aimovig, Ajovy, Emgality, Vyepti) and the gepant tablets were designed around this one molecule, rather than borrowed from blood-pressure or seizure care.",
+      },
+      {
+        question: "What is the difference between CGRP antibodies and gepants?",
+        answer:
+          "Antibodies are large biologics given monthly or quarterly to prevent attacks; they do not stop an attack already underway. Gepants are small receptor-blocking tablets (or a nasal spray). Some treat an attack, some prevent the next ones, and rimegepant is labeled for both. Same pathway, different size and job.",
+      },
+      {
+        question: "Do CGRP drugs replace triptans?",
+        answer:
+          "No. Triptans still treat an attack that has started, and they remain the usual first acute option for many people. CGRP antibodies are prevention. Some gepants can treat an attack, prevent, or both. Many people use an acute drug and a preventive together. The two jobs are different.",
+      },
+      {
+        question: "Are gepants safer than triptans if I have heart disease?",
+        answer:
+          "Triptans narrow blood vessels, so they are avoided in coronary disease, prior stroke, or uncontrolled high blood pressure. Gepants and the CGRP antibodies do not constrict vessels, which is why they exist as options for people who cannot take a triptan. That is not the same as proven safety in high-risk hearts; that conversation still belongs with your clinician.",
+      },
+      {
+        question: "Is Botox a real treatment for migraine?",
+        answer:
+          "For chronic migraine, yes. Two large randomized trials (PREEMPT) found that onabotulinumtoxinA injections every twelve weeks reduced headache days compared with placebo. It is not a treatment for ordinary episodic migraine, and it is not being used here as a cosmetic. Whether it fits you is a specialist decision.",
+      },
+      {
+        question: "Can these drugs cause medication-overuse headache?",
+        answer:
+          "Everyday painkillers and triptans can, if used on too many days a month for months. CGRP antibodies are preventives given monthly or quarterly, so they are not in that trap. Whether frequent gepant use can do the same is still being watched. Counting days of acute treatment still matters, and a preventive is how most people get those days back down.",
+      },
+    ],
+    references: [
+      {
+        source: "NEJM / PubMed",
+        title:
+          "Goadsby et al. – A Controlled Trial of Erenumab for Episodic Migraine (STRIVE)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/29171821/",
+      },
+      {
+        source: "Headache / PubMed",
+        title:
+          "Charles et al. – CGRP-targeting therapies are a first-line option for the prevention of migraine: an American Headache Society position statement update (2024)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/38466028/",
+      },
+      {
+        source: "Neurology / AAN",
+        title:
+          "Pharmacologic Treatment for Migraine Prevention in Adults: AAN/AHS practice guideline (2026)",
+        url: "https://www.neurology.org/doi/10.1212/WNL.0000000000218112",
+      },
+      {
+        source: "Headache / PubMed",
+        title:
+          "Dodick et al. – OnabotulinumtoxinA for treatment of chronic migraine: pooled results from the PREEMPT clinical program",
+        url: "https://pubmed.ncbi.nlm.nih.gov/20487038/",
+      },
+      {
+        source: "NEJM / PubMed",
+        title:
+          "Goadsby et al. – Trial of galcanezumab in prevention of episodic cluster headache",
+        url: "https://pubmed.ncbi.nlm.nih.gov/31291515/",
+      },
+      {
+        source: "DailyMed / FDA",
+        title: "NURTEC ODT (rimegepant) prescribing information",
+        url: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=86ef19d2-d6dc-4ac1-a793-dc549cc6bb9b",
+      },
+      {
+        source: "NCBI / PMC",
+        title:
+          "King et al. – Discovery of the migraine prevention therapeutic Aimovig (erenumab), the first FDA-approved antibody against a G-protein-coupled receptor",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7088995/",
+      },
+    ],
+    related: [
+      {
+        title: "Migraine",
+        href: "/conditions/migraine",
+        blurb:
+          "The disease these drugs were designed for: four-phase attack, CGRP engine, medication-overuse trap.",
+      },
+      {
+        title: "Tension-type and cluster headache",
+        href: "/conditions/tension-and-cluster-headache",
+        blurb:
+          "Where galcanezumab has a cluster indication, and why the other antibodies do not.",
+      },
+      {
+        title: "Biologics & gene-targeted therapy",
+        href: "/future-of-pain-medicine/biologics-and-gene-therapy",
+        blurb:
+          "CGRP as proof that blocking one pain molecule can work, and what comes after it.",
+      },
+      {
+        title: "Medications for pain",
+        href: "/treatments/medications-for-pain",
+        blurb: "The wider drug-class map these migraine-specific tools sit inside.",
       },
     ],
   },
