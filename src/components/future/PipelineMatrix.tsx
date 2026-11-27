@@ -1,5 +1,6 @@
 "use client";
 
+import { track } from "@vercel/analytics";
 import { useMemo, useState } from "react";
 import {
   CANDIDATES,
@@ -13,6 +14,31 @@ type SortKey = "name" | "sponsor" | "phase" | "updated";
 
 const PHASES: ("All" | Phase)[] = ["All", "Approved", "Phase 3", "Phase 2", "Phase 1", "Discontinued"];
 const MODALITIES: ("All" | Modality)[] = ["All", "Small molecule", "Biologic", "Device", "Gene therapy"];
+
+function PhaseBadge({ phase }: { phase: Phase }) {
+  return (
+    <span className={`inline-block rounded-full border px-2.5 py-0.5 font-mono text-xs font-medium ${
+      phase === "Approved"
+        ? "border-brand/25 bg-brand/10 text-brand-strong"
+        : "border-line bg-paper text-ink"
+    }`}>
+      {phase}
+    </span>
+  );
+}
+
+function CandidateSource({ source }: { source: Candidate["source"] }) {
+  return (
+    <a
+      href={source.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-mono text-xs text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
+    >
+      {source.label}
+    </a>
+  );
+}
 
 export default function PipelineMatrix() {
   const [phaseFilter, setPhaseFilter] = useState<"All" | Phase>("All");
@@ -50,17 +76,18 @@ export default function PipelineMatrix() {
   };
 
   return (
-    <div className="my-8 rounded-2xl border border-line bg-surface p-5 shadow-card sm:p-6">
+    <div className="my-8 rounded-2xl border border-line bg-surface p-4 shadow-card sm:p-6">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
           <p className="font-mono text-xs font-semibold uppercase tracking-wider text-brand">
             Clinical matrix
           </p>
           <p className="mt-1 text-sm text-muted">
-            Filter by phase or modality, or click a column header to sort.
+            Filter by phase or modality.
+            <span className="hidden md:inline"> Select a column header to sort.</span>
           </p>
         </div>
-        <span className="font-mono text-xs text-subtle">
+        <span role="status" className="font-mono text-xs text-subtle">
           {rows.length} of {CANDIDATES.length} candidates
         </span>
       </div>
@@ -70,8 +97,12 @@ export default function PipelineMatrix() {
           Phase
           <select
             value={phaseFilter}
-            onChange={(e) => setPhaseFilter(e.target.value as "All" | Phase)}
-            className="rounded-lg border border-line bg-background px-2.5 py-1.5 text-xs text-ink focus:border-brand focus:outline-none"
+            onChange={(e) => {
+              const value = e.currentTarget.value as "All" | Phase;
+              setPhaseFilter(value);
+              track("pipeline_filter_change", { filter: "phase", value });
+            }}
+            className="min-h-11 rounded-lg border border-line bg-background px-2.5 text-base text-ink md:min-h-0 md:py-1.5 md:text-xs"
           >
             {PHASES.map((p) => (
               <option key={p} value={p}>
@@ -85,8 +116,12 @@ export default function PipelineMatrix() {
           Modality
           <select
             value={modalityFilter}
-            onChange={(e) => setModalityFilter(e.target.value as "All" | Modality)}
-            className="rounded-lg border border-line bg-background px-2.5 py-1.5 text-xs text-ink focus:border-brand focus:outline-none"
+            onChange={(e) => {
+              const value = e.currentTarget.value as "All" | Modality;
+              setModalityFilter(value);
+              track("pipeline_filter_change", { filter: "modality", value });
+            }}
+            className="min-h-11 rounded-lg border border-line bg-background px-2.5 text-base text-ink md:min-h-0 md:py-1.5 md:text-xs"
           >
             {MODALITIES.map((m) => (
               <option key={m} value={m}>
@@ -97,7 +132,48 @@ export default function PipelineMatrix() {
         </label>
       </div>
 
-      <div className="mt-4 overflow-x-auto">
+      {rows.length === 0 && (
+        <p className="mt-4 text-sm text-body">No candidates match these filters.</p>
+      )}
+
+      <div className="mt-4 divide-y divide-line md:hidden">
+        {rows.map((c) => (
+          <details
+            key={c.name}
+            className="group"
+            onToggle={(e) => {
+              if (e.currentTarget.open) {
+                track("pipeline_candidate_expand", { candidate: c.name });
+              }
+            }}
+          >
+            <summary className="flex min-h-11 cursor-pointer list-none items-start gap-3 rounded py-3 marker:content-none [&::-webkit-details-marker]:hidden">
+              <span className="min-w-0 flex-1">
+                <span className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                  <span className="font-semibold text-ink">{c.name}</span>
+                  <PhaseBadge phase={c.phase} />
+                </span>
+                <span className="mt-1 block text-sm text-body">{c.indication}</span>
+              </span>
+              <span aria-hidden="true" className="text-brand-strong">
+                <span className="group-open:hidden">+</span>
+                <span className="hidden group-open:inline">−</span>
+              </span>
+            </summary>
+            <dl className="space-y-2 pb-4 text-sm text-body">
+              {c.code && (
+                <div><dt className="font-semibold text-ink">Also known as</dt><dd>{c.code}</dd></div>
+              )}
+              <div><dt className="font-semibold text-ink">Target / mechanism</dt><dd>{c.mechanism}</dd></div>
+              <div><dt className="font-semibold text-ink">Sponsor</dt><dd>{c.sponsor}</dd></div>
+              <div><dt className="font-semibold text-ink">Verified</dt><dd>{c.updated}</dd></div>
+              <div><dt className="font-semibold text-ink">Source</dt><dd><CandidateSource source={c.source} /></dd></div>
+            </dl>
+          </details>
+        ))}
+      </div>
+
+      <div className="mt-4 hidden overflow-x-auto md:block">
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b border-line text-xs font-semibold uppercase tracking-wider text-subtle">
@@ -156,21 +232,12 @@ export default function PipelineMatrix() {
                 <td className="py-3 pr-4 text-body">{c.mechanism}</td>
                 <td className="py-3 pr-4 text-body">{c.sponsor}</td>
                 <td className="py-3 pr-4">
-                  <span className="inline-block rounded-full border border-line bg-paper px-2.5 py-0.5 font-mono text-xs font-medium text-ink">
-                    {c.phase}
-                  </span>
+                  <PhaseBadge phase={c.phase} />
                 </td>
                 <td className="py-3 pr-4 text-body">{c.indication}</td>
                 <td className="py-3 pr-4 font-mono text-xs text-subtle">{c.updated}</td>
                 <td className="py-3">
-                  <a
-                    href={c.source.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-mono text-xs text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
-                  >
-                    {c.source.label}
-                  </a>
+                  <CandidateSource source={c.source} />
                 </td>
               </tr>
             ))}

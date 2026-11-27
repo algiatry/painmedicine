@@ -1,5 +1,6 @@
 "use client";
 
+import { track } from "@vercel/analytics";
 import { useEffect, useState } from "react";
 
 type Heading = { id: string; text: string };
@@ -20,8 +21,10 @@ type Heading = { id: string; text: string };
  */
 export default function ArticleToc({
   variant = "rail",
+  engagementArticle,
 }: {
   variant?: "rail" | "inline";
+  engagementArticle?: "interventional-procedures" | "pipeline";
 }) {
   const [headings, setHeadings] = useState<Heading[]>([]);
   const [activeId, setActiveId] = useState<string>("");
@@ -40,7 +43,7 @@ export default function ArticleToc({
           // Drop decorations (e.g. a count badge) marked data-toc-skip.
           const clone = n.cloneNode(true) as HTMLElement;
           clone.querySelectorAll("[data-toc-skip]").forEach((e) => e.remove());
-          return { id: n.id, text: (clone.textContent ?? "").trim() };
+          return { id: n.id, text: n.dataset.tocLabel ?? (clone.textContent ?? "").trim() };
         }),
       );
       if (nodes.length === 0) return;
@@ -77,8 +80,17 @@ export default function ArticleToc({
           <li key={h.id}>
             <a
               href={`#${h.id}`}
+              onClick={engagementArticle ? () => {
+                track("article_section_jump", {
+                  article: engagementArticle,
+                  section: h.id,
+                  variant,
+                });
+              } : undefined}
               aria-current={active ? "location" : undefined}
-              className={`block border-l-2 py-1 pl-3 transition-colors ${
+              className={`flex items-center rounded-e border-s-2 ps-3 transition-colors ${
+                variant === "inline" ? "min-h-11 py-2" : "py-1"
+              } ${
                 active
                   ? "border-brand font-semibold text-brand-strong"
                   : "border-line text-subtle hover:border-subtle hover:text-brand"
@@ -94,8 +106,8 @@ export default function ArticleToc({
 
   if (variant === "inline") {
     return (
-      <details className="group mt-6 rounded-xl border border-line bg-paper/60 xl:hidden">
-        <summary className="flex cursor-pointer list-none items-center justify-between gap-2 px-4 py-3 text-sm font-semibold text-ink">
+      <details className="group rounded-xl border border-line bg-paper/60 xl:hidden">
+        <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-2 rounded-xl px-4 py-3 text-sm font-semibold text-ink marker:content-none [&::-webkit-details-marker]:hidden">
           On this page
           <svg
             aria-hidden="true"
@@ -110,7 +122,7 @@ export default function ArticleToc({
             />
           </svg>
         </summary>
-        <div className="border-t border-line px-4 py-3">{list}</div>
+        <nav aria-label="On this page" className="border-t border-line px-4 py-2">{list}</nav>
       </details>
     );
   }

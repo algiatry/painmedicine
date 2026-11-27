@@ -1,4 +1,5 @@
 import Link from "next/link";
+import GuideCallout from "@/components/GuideCallout";
 import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 import { SpineSide } from "../anatomy/SpineSide";
@@ -157,30 +158,28 @@ export default function InterventionalProcedures() {
         ]}
       />
 
-      <H2 id="procedure-guides">Which procedure did your clinician mention?</H2>
-      <ul className="mt-4 list-disc space-y-2 pl-5 text-body">
-        <li>
-          <Link href="/treatments/epidural-steroid-injections" className={link}>
-            Epidural steroid injections
-          </Link>
-          {" "}– what the injection is used for, how long relief may last, and
-          which risks to discuss.
-        </li>
-        <li>
-          <Link href="/treatments/nerve-blocks-and-rfa" className={link}>
-            Nerve blocks and radiofrequency ablation
-          </Link>
-          {" "}– why a clinician may start with a nerve block and how the
-          results can inform the next step.
-        </li>
-        <li>
-          <Link href="/treatments/spinal-cord-stimulation" className={link}>
-            Spinal cord stimulation
-          </Link>
-          {" "}– what happens during a stimulator trial and what to consider
-          before an implant.
-        </li>
-      </ul>
+      <GuideCallout
+        id="procedure-guides"
+        title="Which procedure did your clinician mention?"
+        tocLabel="Find your procedure"
+        guides={[
+          {
+            href: "/treatments/epidural-steroid-injections",
+            title: "Epidural steroid injections",
+            description: "What the injection is used for, how long relief may last, and which risks to discuss.",
+          },
+          {
+            href: "/treatments/nerve-blocks-and-rfa",
+            title: "Nerve blocks and radiofrequency ablation",
+            description: "Why a clinician may start with a nerve block and how the results can inform the next step.",
+          },
+          {
+            href: "/treatments/spinal-cord-stimulation",
+            title: "Spinal cord stimulation",
+            description: "What happens during a stimulator trial and what to consider before an implant.",
+          },
+        ]}
+      />
 
       <H2 id="the-map">The precision map</H2>
       <TargetsFigure />
