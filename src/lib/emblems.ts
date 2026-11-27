@@ -317,6 +317,13 @@ export const EMBLEMS: Record<string, string> = {
       `<circle cx="24" cy="36" r="4" fill="${A}" stroke-width="0"/>`,
   ),
 
+  // A patch on the skin damping the signal underneath.
+  "topicals-for-pain": g(
+    `<rect stroke="${T}" x="10" y="14" width="28" height="20" rx="4"/>` +
+      `<path stroke="${A}" d="M16 40c4-6 8-6 12 0s8 6 12 0" stroke-width="2.2"/>` +
+      `<circle cx="24" cy="24" r="2.4" fill="${A}" stroke-width="0"/>`,
+  ),
+
   // Capsule and tablet over the signal wave they quiet — many tools, one map.
   "medications-for-pain": g(
     `<rect stroke="${T}" x="6" y="10" width="22" height="11" rx="5.5" transform="rotate(-24 17 15.5)"/>` +

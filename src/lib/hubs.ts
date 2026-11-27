@@ -177,6 +177,12 @@ export const HUBS: Hub[] = [
         href: "/treatments/antidepressants-and-anticonvulsants",
       },
       {
+        title: "Topical treatments for pain",
+        blurb:
+          "Lidocaine, capsaicin, and diclofenac gel: local tools for a joint or a strip of skin you can reach, and what the trials add over rubbing.",
+        href: "/treatments/topicals-for-pain",
+      },
+      {
         title: "Interventional procedures",
         blurb:
           "The image-guided middle layer between pills and surgery: blocks, radiofrequency ablation, stimulators you can test-drive, and the window rule that makes them all work.",

@@ -62,6 +62,8 @@ export const ALIASES: Record<string, string> = {
     "cgrp aimovig nurtec ubrelvy qulipta ajovy emgality vyepti gepants triptans botox reyvow lasmiditan migraine medication headache meds zavzpret",
   "/treatments/antidepressants-and-anticonvulsants":
     "gabapentin lyrica cymbalta pregabalin neurontin duloxetine amitriptyline elavil anticonvulsant nerve pain meds gabapentinoids snri",
+  "/treatments/topicals-for-pain":
+    "voltaren diclofenac gel lidocaine patch capsaicin qutenza aspercreme salonpas topical nsaid icy hot",
   "/treatments/medication-organ-safety": "side effects liver kidney stomach tylenol ibuprofen nsaids",
   "/treatments/interventional-procedures":
     "injections epidural steroid nerve block radiofrequency ablation spinal cord stimulator",

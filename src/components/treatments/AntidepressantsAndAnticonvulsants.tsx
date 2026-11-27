@@ -385,9 +385,11 @@ export default function AntidepressantsAndAnticonvulsants() {
         <Link href="/treatments/spinal-cord-stimulation" className={link}>
           spinal cord stimulation
         </Link>{" "}
-        has randomized-trial evidence in diabetic neuropathy. Lidocaine and
-        capsaicin on the skin matter when the pain is in one findable
-        patch.
+        has randomized-trial evidence in diabetic neuropathy.{" "}
+        <Link href="/treatments/topicals-for-pain" className={link}>
+          Lidocaine and capsaicin
+        </Link>{" "}
+        on the skin matter when the pain is in one findable patch.
       </P>
       <P>
         Questions worth bringing: is the pain nerve-type, or is this being
