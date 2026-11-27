@@ -620,6 +620,21 @@ export const TREATMENT_ARTICLES: Article[] = [
         blurb:
           "The condition where gentleness proved itself a mechanism, not a compromise.",
       },
+      {
+        title: "Movement as medicine",
+        href: "/treatments/movement-as-medicine",
+        blurb: "Exercise for pain, in depth.",
+      },
+      {
+        title: "Pacing for pain",
+        href: "/treatments/pacing-for-pain",
+        blurb: "The boom-bust escape.",
+      },
+      {
+        title: "CBT and mindfulness for pain",
+        href: "/treatments/cbt-and-mindfulness-for-pain",
+        blurb: "The brain-side lever, in depth.",
+      },
     ],
   },
 
@@ -2591,6 +2606,249 @@ export const TREATMENT_ARTICLES: Article[] = [
         href: "/treatments/topicals-for-pain",
         blurb: "Diclofenac gel: the same class through the skin.",
       },
+    ],
+  },
+
+  {
+    hub: HUB,
+    slug: "movement-as-medicine",
+    title: "Movement as medicine",
+    seoTitle: "Exercise for Pain: Why Guidelines Put Movement First",
+    description:
+      "Exercise treats pain through chemistry and threat-unlearning, not fitness culture. Hayden's Cochrane review found it probably reduces chronic low back pain versus usual care. Effects are modest. Adherence is the active ingredient.",
+    status: "sourced",
+    lastUpdated: "2026-11-27",
+    answer:
+      "Exercise treats pain by turning on the body's own dampening chemistry, rebuilding muscle that cushions joints, and teaching a sensitized nervous system that movement is not a threat. Hayden's 2021 Cochrane review found moderate-certainty evidence that exercise reduces pain in chronic low back pain versus no treatment or usual care. Guidelines put it first. The form you will repeat is the one that works.",
+    faqs: [
+      {
+        question: "Does exercise really help pain, or just fitness?",
+        answer:
+          "Both, and the pain effect is not a side benefit. Hayden found exercise probably reduces pain versus no treatment or usual care in chronic low back pain. ACP and NICE put exercise first for that reason.",
+      },
+      {
+        question: "Which kind of exercise should I pick?",
+        answer:
+          "The one you will keep doing. Therapist-led loading, walking, tai chi, yoga, and water work all appear in the evidence. Tai chi matched or beat aerobic exercise for fibromyalgia in a randomized trial.",
+      },
+      {
+        question: "Why does it hurt at first?",
+        answer:
+          "Soreness is common and usually settles. A flare that lasts days is a sign the step was too big, which is a pacing problem, not a reason to quit forever.",
+      },
+      {
+        question: "Can heat or massage replace it?",
+        answer:
+          "They are supporting roles: short-term relievers that work best when they open the door to loading, not when they become the whole visit.",
+      },
+    ],
+    references: [
+      {
+        source: "Cochrane / PubMed",
+        title: "Hayden et al. – Exercise therapy for chronic low back pain",
+        url: "https://pubmed.ncbi.nlm.nih.gov/34580864/",
+      },
+      {
+        source: "Annals of Internal Medicine / PubMed",
+        title:
+          "Qaseem et al. – Noninvasive Treatments for Acute, Subacute, and Chronic Low Back Pain: A Clinical Practice Guideline From the American College of Physicians (2017)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/28192789/",
+      },
+      {
+        source: "BMJ / PubMed",
+        title:
+          "Wang et al. – Effect of tai chi versus aerobic exercise for fibromyalgia: comparative effectiveness randomized controlled trial",
+        url: "https://pubmed.ncbi.nlm.nih.gov/29563100/",
+      },
+    ],
+    related: [
+      { title: "Low back pain", href: "/conditions/low-back-pain", blurb: "Where guidelines put exercise first." },
+      { title: "Pacing for pain", href: "/treatments/pacing-for-pain", blurb: "How a program survives a good day." },
+      { title: "Physical & behavioral therapies", href: "/treatments/physical-and-behavioral-therapies", blurb: "The parent map of two levers." },
+      { title: "CBT and mindfulness for pain", href: "/treatments/cbt-and-mindfulness-for-pain", blurb: "The other lever." },
+    ],
+  },
+
+  {
+    hub: HUB,
+    slug: "pacing-for-pain",
+    title: "Pacing for pain",
+    seoTitle: "Pacing for Chronic Pain: Stop the Boom-Bust Cycle",
+    description:
+      "Boom-bust is a good day that becomes a crash. Pacing is a bad-day baseline, increased by plan not by pain. It is a skill, not a personality trait.",
+    status: "sourced",
+    lastUpdated: "2026-11-27",
+    answer:
+      "Pacing is staying active without the boom-bust cycle: find a baseline you can repeat on a bad day, keep it with dull consistency, then increase on a schedule. NICE's low-back guideline is built around staying active. Pacing is how staying active survives real life. It is not the same as doing less forever.",
+    faqs: [
+      {
+        question: "What is pacing?",
+        answer:
+          "A planned amount of activity you can keep even on a bad day, increased by schedule rather than by how you feel. It stops good days from becoming overdrafts and bad days from stopping the program.",
+      },
+      {
+        question: "Is pacing just doing less?",
+        answer:
+          "No. The point is a staircase that still goes up. Doing less forever is avoidance. Heroics then a crash is boom-bust. Pacing sits between them.",
+      },
+      {
+        question: "How do I find a baseline?",
+        answer:
+          "The amount of walking, sitting, or chores you could repeat tomorrow if today is already a bad day. That number is usually smaller than a good-day personal best, which is the point.",
+      },
+      {
+        question: "Is there a trial of pacing itself?",
+        answer:
+          "Pacing is a skill inside exercise and CBT programs more than a standalone drug-style trial. NICE still tells people with low back pain to stay active. This page is how that instruction survives a flare.",
+      },
+    ],
+    references: [
+      {
+        source: "NICE",
+        title: "Low back pain and sciatica in over 16s: assessment and management (NG59)",
+        url: "https://www.nice.org.uk/guidance/ng59",
+      },
+      {
+        source: "Cochrane / PubMed",
+        title: "Hayden et al. – Exercise therapy for chronic low back pain",
+        url: "https://pubmed.ncbi.nlm.nih.gov/34580864/",
+      },
+      {
+        source: "Annals of Internal Medicine / PubMed",
+        title:
+          "Qaseem et al. – Noninvasive Treatments for Acute, Subacute, and Chronic Low Back Pain: A Clinical Practice Guideline From the American College of Physicians (2017)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/28192789/",
+      },
+    ],
+    related: [
+      { title: "Movement as medicine", href: "/treatments/movement-as-medicine", blurb: "What pacing is protecting." },
+      { title: "Low back pain", href: "/conditions/low-back-pain", blurb: "Stay-active advice only works if it survives a flare." },
+      { title: "Physical & behavioral therapies", href: "/treatments/physical-and-behavioral-therapies", blurb: "The parent map." },
+      { title: "Fibromyalgia", href: "/conditions/fibromyalgia", blurb: "Where boom-bust is a classic trap." },
+    ],
+  },
+
+  {
+    hub: HUB,
+    slug: "cbt-and-mindfulness-for-pain",
+    title: "CBT and mindfulness for pain",
+    seoTitle: "CBT vs Mindfulness for Chronic Pain: What the Trials Show",
+    description:
+      "CBT retrains thoughts and behaviors that amplify pain. MBSR trains attention. Cochrane finds modest CBT benefits. Cherkin's JAMA trial found MBSR and CBT both beat usual care for chronic low back pain, and tied with each other.",
+    status: "sourced",
+    lastUpdated: "2026-11-27",
+    answer:
+      "Cognitive behavioral therapy for pain retrains the thoughts, fears, and behaviors that turn the volume up. Mindfulness-based stress reduction trains attention so a flare is less of an emergency. Cochrane reviews find modest, reliable CBT benefits. Cherkin's JAMA trial found MBSR and CBT both beat usual care for chronic low back pain at one year, with no meaningful difference between them.",
+    faqs: [
+      {
+        question: "Does CBT mean the pain is in my head?",
+        answer:
+          "No. It means pain runs on circuitry that learning can change. The trials measure pain and function, not a verdict on character.",
+      },
+      {
+        question: "Is mindfulness as good as CBT?",
+        answer:
+          "For chronic low back pain, Cherkin found them statistically tied, both beating usual care at 26 and 52 weeks. Pick the format you will attend.",
+      },
+      {
+        question: "What about ACT or sleep therapy?",
+        answer:
+          "Acceptance and commitment therapy aims at a life pain has shrunk, without waiting for pain to leave. CBT for insomnia treats the sleep half of the cycle. Cousins, not replacements.",
+      },
+      {
+        question: "Do I still need exercise?",
+        answer:
+          "Yes. The plans that change lives pull both levers. This page is the brain-side one.",
+      },
+    ],
+    references: [
+      {
+        source: "Cochrane / PubMed",
+        title:
+          "Williams et al. – Psychological therapies for the management of chronic pain (excluding headache) in adults",
+        url: "https://pubmed.ncbi.nlm.nih.gov/32794606/",
+      },
+      {
+        source: "JAMA / PubMed",
+        title:
+          "Cherkin et al. – Effect of mindfulness-based stress reduction vs cognitive behavioral therapy or usual care on back pain and functional limitations",
+        url: "https://pubmed.ncbi.nlm.nih.gov/27002445/",
+      },
+      {
+        source: "BMJ / PubMed",
+        title:
+          "Kamper et al. – Multidisciplinary biopsychosocial rehabilitation for chronic low back pain: Cochrane systematic review and meta-analysis",
+        url: "https://pubmed.ncbi.nlm.nih.gov/25694111/",
+      },
+    ],
+    related: [
+      { title: "Low back pain", href: "/conditions/low-back-pain", blurb: "The Cherkin trial population." },
+      { title: "Pain and emotion", href: "/understanding-pain/pain-and-emotion", blurb: "Shared circuitry." },
+      { title: "Physical & behavioral therapies", href: "/treatments/physical-and-behavioral-therapies", blurb: "The parent map." },
+      { title: "Mind, brain, and new frontiers", href: "/future-of-pain-medicine/mind-and-brain", blurb: "Specialized imagery and newer retraining." },
+    ],
+  },
+
+  {
+    hub: HUB,
+    slug: "complementary-pain-treatments",
+    title: "Complementary treatments for pain",
+    seoTitle: "Acupuncture, TENS, and Chiropractic for Pain: What Trials Show",
+    description:
+      "Vickers found acupuncture better than sham and better than no acupuncture, with a small extra versus sham. TENS evidence is mixed. Rubinstein found spinal manipulation's effect versus other care may not be clinically important.",
+    status: "sourced",
+    lastUpdated: "2026-11-27",
+    answer:
+      "Acupuncture, TENS, and spinal manipulation are widely used adjuncts with small average effects. Vickers' individual-patient meta-analysis found acupuncture beat sham and beat no acupuncture for several chronic pains; the extra versus sham was modest. TENS borrows gate control; chronic-pain reviews are mixed. Rubinstein found spinal manipulation for chronic low back pain has a small effect that may not be clinically important versus other care.",
+    faqs: [
+      {
+        question: "Does acupuncture work, or is it placebo?",
+        answer:
+          "Vickers pooled about 18,000 people. True acupuncture beat sham and beat no acupuncture. The gap versus sham was small, so needling is more than placebo and also not most of the effect.",
+      },
+      {
+        question: "Is TENS worth buying?",
+        answer:
+          "It is a low-risk home trial if it does not become the whole program. Cochrane overviews of TENS for chronic pain have not produced a strong, consistent claim.",
+      },
+      {
+        question: "Does chiropractic fix the spine?",
+        answer:
+          "Rubinstein's Cochrane review found a small short-term effect versus other interventions for chronic low back pain that did not look clinically important. Hands-on care can still be a door into movement.",
+      },
+      {
+        question: "What about supplements?",
+        answer:
+          "Mostly thin trials and real interaction potential. Name them to a clinician and pharmacist rather than filing under harmless.",
+      },
+      {
+        question: "Should I skip physical therapy for these?",
+        answer:
+          "No. Small adjunct effects are not a reason to skip the active plan.",
+      },
+    ],
+    references: [
+      {
+        source: "Arch Intern Med / PubMed",
+        title: "Vickers et al. – Acupuncture for chronic pain: individual patient data meta-analysis",
+        url: "https://pubmed.ncbi.nlm.nih.gov/22965186/",
+      },
+      {
+        source: "Cochrane / PubMed",
+        title: "Gibson et al. – Transcutaneous electrical nerve stimulation (TENS) for chronic pain - an overview of Cochrane Reviews",
+        url: "https://pubmed.ncbi.nlm.nih.gov/30941745/",
+      },
+      {
+        source: "Cochrane / PubMed",
+        title: "Rubinstein et al. – Spinal manipulative therapy for chronic low-back pain",
+        url: "https://pubmed.ncbi.nlm.nih.gov/21328304/",
+      },
+    ],
+    related: [
+      { title: "Comparing your options", href: "/treatments/comparing-your-options", blurb: "How to size a modest claim." },
+      { title: "Movement as medicine", href: "/treatments/movement-as-medicine", blurb: "The active plan these adjuncts should not replace." },
+      { title: "Low back pain", href: "/conditions/low-back-pain", blurb: "Where most of this evidence was gathered." },
+      { title: "Physical & behavioral therapies", href: "/treatments/physical-and-behavioral-therapies", blurb: "The two-lever parent map." },
     ],
   },
 ];

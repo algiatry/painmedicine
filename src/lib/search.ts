@@ -79,6 +79,14 @@ export const ALIASES: Record<string, string> = {
     "journavx vx-548 nav1.8 vertex new pain pill suzetrigine",
   "/treatments/acetaminophen-and-nsaids":
     "tylenol ibuprofen advil aleve naproxen aspirin paracetamol nsaid acetaminophen",
+  "/treatments/movement-as-medicine":
+    "exercise for pain physical therapy gym walking yoga tai chi",
+  "/treatments/pacing-for-pain":
+    "pacing boom bust flare activity pacing energy envelope",
+  "/treatments/cbt-and-mindfulness-for-pain":
+    "cbt mindfulness mbsr act pain psychology cognitive behavioral",
+  "/treatments/complementary-pain-treatments":
+    "acupuncture tens chiropractic spinal manipulation dry needling",
   "/treatments/vertebroplasty-and-kyphoplasty":
     "vertebroplasty kyphoplasty cement spine compression fracture balloon kypho",
   "/treatments/intrathecal-pumps":

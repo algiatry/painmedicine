@@ -64,6 +64,10 @@ import Suzetrigine from "./treatments/Suzetrigine";
 import VertebroplastyAndKyphoplasty from "./treatments/VertebroplastyAndKyphoplasty";
 import IntrathecalPumps from "./treatments/IntrathecalPumps";
 import AcetaminophenAndNsaids from "./treatments/AcetaminophenAndNsaids";
+import MovementAsMedicine from "./treatments/MovementAsMedicine";
+import PacingForPain from "./treatments/PacingForPain";
+import CbtAndMindfulnessForPain from "./treatments/CbtAndMindfulnessForPain";
+import ComplementaryPainTreatments from "./treatments/ComplementaryPainTreatments";
 
 /**
  * Maps an article slug to the component that renders its illustrated body.
@@ -136,4 +140,8 @@ export const ARTICLE_BODIES: Record<string, ComponentType> = {
   "vertebroplasty-and-kyphoplasty": VertebroplastyAndKyphoplasty,
   "intrathecal-pumps": IntrathecalPumps,
   "acetaminophen-and-nsaids": AcetaminophenAndNsaids,
+  "movement-as-medicine": MovementAsMedicine,
+  "pacing-for-pain": PacingForPain,
+  "cbt-and-mindfulness-for-pain": CbtAndMindfulnessForPain,
+  "complementary-pain-treatments": ComplementaryPainTreatments,
 };
