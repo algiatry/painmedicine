@@ -324,6 +324,13 @@ export const EMBLEMS: Record<string, string> = {
       `<circle cx="24" cy="24" r="2.4" fill="${A}" stroke-width="0"/>`,
   ),
 
+  // Needle to a facet joint, heat quieting the signal.
+  "nerve-blocks-and-rfa": g(
+    `<path stroke="${S}" d="M10 38 L24 10 L38 38" stroke-width="2.2"/>` +
+      `<path stroke="${T}" d="M24 40 L24 18" stroke-width="2.6"/>` +
+      `<circle cx="24" cy="14" r="3.2" fill="${A}" stroke-width="0"/>`,
+  ),
+
   // Capsule and tablet over the signal wave they quiet — many tools, one map.
   "medications-for-pain": g(
     `<rect stroke="${T}" x="6" y="10" width="22" height="11" rx="5.5" transform="rotate(-24 17 15.5)"/>` +

@@ -116,6 +116,11 @@ export const CONDITION_ARTICLES: Article[] = [
         blurb:
           "Pain reprocessing therapy and an FDA-authorized virtual-reality program, both tested in chronic back pain.",
       },
+      {
+        title: "Nerve blocks and radiofrequency ablation",
+        href: "/treatments/nerve-blocks-and-rfa",
+        blurb: "Diagnostic medial branch blocks, facet RFA, and what the MINT trials found.",
+      },
     ],
   },
 
@@ -1260,6 +1265,11 @@ export const CONDITION_ARTICLES: Article[] = [
         blurb: "How movement, graded loading, and pain skills fit into recovery.",
       },
       {
+        title: "Nerve blocks and radiofrequency ablation",
+        href: "/treatments/nerve-blocks-and-rfa",
+        blurb: "Cervical facet pain uses the same test-then-treat sequence as the low back.",
+      },
+      {
         title: "Your first visit to a pain physician",
         href: "/what-is-pain-medicine/your-first-visit",
         blurb: "What happens when persistent neck or arm pain reaches a specialist.",
@@ -2270,6 +2280,11 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Topical treatments for pain",
         href: "/treatments/topicals-for-pain",
         blurb: "Diclofenac gel for the knee; why the same gel is not first-line for the hip.",
+      },
+      {
+        title: "Nerve blocks and radiofrequency ablation",
+        href: "/treatments/nerve-blocks-and-rfa",
+        blurb: "Genicular radiofrequency when the target is the small nerves around a painful knee.",
       },
       {
         title: "Central sensitization",
