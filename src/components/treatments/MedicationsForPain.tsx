@@ -380,24 +380,17 @@ export default function MedicationsForPain() {
 
       <H2 id="nerve-pain">The nerve-pain medications, and their confusing names</H2>
       <P>
-        Here is where more pain-medication confusion lives than anywhere
-        else. If your physician offers an &ldquo;antidepressant&rdquo; or a
+        If your physician offers an &ldquo;antidepressant&rdquo; or a
         &ldquo;seizure medication&rdquo; for pain, nothing is being implied
         about your mind. These drugs earned their names from their first
-        jobs, but they have a second, independent pharmacology.{" "}
-        <strong>Duloxetine</strong> and the older{" "}
-        <strong>tricyclics</strong> boost the descending pathways the spinal
-        cord uses to dampen pain traffic – the brakes in the figure above.{" "}
-        <strong>Gabapentin and pregabalin</strong> bind a calcium-channel
-        subunit on overexcited neurons and turn sensitized signaling down.
-        For pain from damaged nerves (diabetic neuropathy, sciatica-type
-        pain, post-shingles pain) the international NeuPSIG evidence review
-        ranks exactly these families as first-line, ahead of any conventional
-        painkiller. NSAIDs, for all their virtues, do little for this{" "}
-        <Link href="/understanding-pain/types-of-pain" className={link}>
-          type of pain
-        </Link>
-        .
+        jobs, but they have a second, independent pharmacology. The{" "}
+        <Link href="/treatments/antidepressants-and-anticonvulsants" className={link}>
+          antidepressants and anticonvulsants for pain
+        </Link>{" "}
+        page covers duloxetine, the tricyclics, gabapentin, and pregabalin
+        in depth: where the evidence holds, where a sciatica trial found
+        nothing, and the breathing warning when gabapentinoids sit next to
+        sedating drugs.
       </P>
 
       <H2 id="muscle-relaxants">Muscle relaxants, briefly</H2>

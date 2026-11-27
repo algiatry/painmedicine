@@ -144,7 +144,7 @@ export const TREATMENT_ARTICLES: Article[] = [
     description:
       "Covers the main classes of pain medication (acetaminophen, NSAIDs, topicals, nerve-pain drugs, muscle relaxants, opioids, and newer non-opioid options) and how clinicians match each to the underlying pain mechanism.",
     status: "sourced",
-    lastUpdated: "2026-10-04",
+    lastUpdated: "2026-11-27",
     answer:
       "Pain medications (pain relievers, or analgesics) are drugs that reduce pain by acting somewhere on the pathway between an injured tissue and the brain. They are not one ladder from weak to strong but different tools for different mechanisms: acetaminophen and anti-inflammatory NSAIDs for everyday tissue-driven pain, a separate group of nerve-pain medications for damaged nerves, opioids for severe acute and cancer pain, and a new non-opioid class approved in 2025. The right pain reliever is the one that matches your pain's mechanism and your health history – a decision to make with your clinician.",
     faqs: [
@@ -260,6 +260,12 @@ export const TREATMENT_ARTICLES: Article[] = [
         href: "/treatments/cgrp-and-headache-treatments",
         blurb:
           "The migraine-specific corner: antibodies, gepants, triptans, and Botox.",
+      },
+      {
+        title: "Antidepressants and anticonvulsants for pain",
+        href: "/treatments/antidepressants-and-anticonvulsants",
+        blurb:
+          "Gabapentin, pregabalin, duloxetine, and the tricyclics in depth.",
       },
     ],
   },
@@ -1654,6 +1660,115 @@ export const TREATMENT_ARTICLES: Article[] = [
         title: "Medications for pain",
         href: "/treatments/medications-for-pain",
         blurb: "The wider drug-class map these migraine-specific tools sit inside.",
+      },
+    ],
+  },
+
+  {
+    hub: HUB,
+    slug: "antidepressants-and-anticonvulsants",
+    title: "Antidepressants and anticonvulsants for pain",
+    seoTitle: "Gabapentin, Pregabalin, and Duloxetine for Nerve Pain",
+    description:
+      "Gabapentin, pregabalin, duloxetine, and the tricyclics for nerve pain: why the names confuse, where the evidence holds, where a sciatica trial found nothing, and the breathing warning with sedating drugs.",
+    status: "sourced",
+    lastUpdated: "2026-11-27",
+    answer:
+      "These drugs began as seizure medicines and antidepressants. For nerve pain they act on calcium channels or the spinal cord's own brakes. NICE offers amitriptyline, duloxetine, gabapentin, or pregabalin as first choices for most neuropathic pain. They are not general painkillers; pregabalin failed a large sciatica trial.",
+    faqs: [
+      {
+        question: "Why was I prescribed an antidepressant or a seizure medication for pain?",
+        answer:
+          "Because those labels describe the drug's first job, not its only one. Duloxetine and the tricyclics strengthen the spinal cord's own pain-dampening pathways. Gabapentin and pregabalin calm the excitable signaling of damaged nerves. Both effects are independent of mood. International guidelines rank these families as first-line treatments for nerve pain. It is mechanism-matching, not a comment on your mental health.",
+      },
+      {
+        question: "Do gabapentin and Lyrica work for every kind of pain?",
+        answer:
+          "No. The evidence is strongest for neuropathic pain such as diabetic nerve pain and post-shingles pain. A large randomized trial found pregabalin no better than placebo for sciatica, with more dizziness. NICE tells clinicians not to start gabapentinoids for chronic primary pain. They are not a general-purpose painkiller.",
+      },
+      {
+        question: "What is the difference between gabapentinoids and duloxetine?",
+        answer:
+          "Gabapentin and pregabalin quiet overexcited calcium channels on damaged nerves. Duloxetine and the tricyclics strengthen descending inhibitory pathways from the brain to the spinal cord. NICE offers either family as an initial choice for most neuropathic pain, and says to switch class if the first drug is not effective or not tolerated.",
+      },
+      {
+        question: "If the first nerve-pain drug does not help, what next?",
+        answer:
+          "Switch to one of the other three first-line options rather than stacking dose on a drug that is not working. NICE's sequence is amitriptyline, duloxetine, gabapentin, or pregabalin, then the remaining three. Many people get little benefit from any one of them; that is expected from the numbers, not a personal failure.",
+      },
+      {
+        question: "Are gabapentinoids a safe swap for opioids?",
+        answer:
+          "They are not inert. In 2019 the FDA warned that gabapentin and pregabalin can cause serious breathing problems, especially with opioid pain medicines or other sedating drugs, in lung disease, and in older adults. Pregabalin is a U.S. Schedule V controlled substance; gabapentin is scheduled in many states. If opioid or other substance use has become hard to control, the SAMHSA National Helpline is 1-800-662-HELP (4357).",
+      },
+      {
+        question: "Does duloxetine work only if I am depressed?",
+        answer:
+          "No. The pain effect is a separate pharmacology: it strengthens descending inhibitory pathways whether or not someone has depression. A 2023 Cochrane review found duloxetine the antidepressant with the most reliable chronic-pain evidence. Fibromyalgia and diabetic nerve pain are labeled uses in the United States. Mood may still improve as a side benefit; that is not why it is offered for burning feet.",
+      },
+    ],
+    references: [
+      {
+        source: "NICE",
+        title:
+          "Neuropathic pain in adults: pharmacological management in non-specialist settings (CG173)",
+        url: "https://www.nice.org.uk/guidance/cg173",
+      },
+      {
+        source: "NICE",
+        title:
+          "Chronic pain (primary and secondary) in over 16s: assessment and management (NG193)",
+        url: "https://www.nice.org.uk/guidance/ng193",
+      },
+      {
+        source: "Lancet Neurology / PMC",
+        title:
+          "Finnerup et al. – Pharmacotherapy for neuropathic pain in adults: systematic review, meta-analysis and updated NeuPSIG recommendations",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4493167/",
+      },
+      {
+        source: "NEJM / PubMed",
+        title: "Mathieson et al. – Trial of Pregabalin for Acute and Chronic Sciatica (PRECISE)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/28328324/",
+      },
+      {
+        source: "Cochrane / PubMed",
+        title:
+          "Birkinshaw et al. – Antidepressants for pain management in adults with chronic pain: a network meta-analysis",
+        url: "https://pubmed.ncbi.nlm.nih.gov/37160297/",
+      },
+      {
+        source: "FDA",
+        title:
+          "Neurontin, Gralise, Horizant (gabapentin) and Lyrica, Lyrica CR (pregabalin): Drug Safety Communication – serious breathing difficulties with respiratory risk factors (2019)",
+        url: "https://www.fda.gov/safety/medical-product-safety-information/neurontin-gralise-horizant-gabapentin-and-lyrica-lyrica-cr-pregabalin-drug-safety-communication",
+      },
+    ],
+    related: [
+      {
+        title: "Neuropathic pain",
+        href: "/conditions/neuropathic-pain",
+        blurb: "The pain type these drugs were ranked first-line for, and why ordinary painkillers miss it.",
+      },
+      {
+        title: "Diabetic neuropathy",
+        href: "/conditions/diabetic-neuropathy",
+        blurb: "The condition most gabapentinoid and duloxetine pain trials were built on.",
+      },
+      {
+        title: "Fibromyalgia",
+        href: "/conditions/fibromyalgia",
+        blurb: "Where duloxetine has a U.S. label, and where NICE says not to start gabapentinoids.",
+      },
+      {
+        title: "Sciatica",
+        href: "/conditions/sciatica",
+        blurb: "The PRECISE trial: pregabalin no better than placebo for leg pain, with more dizziness.",
+      },
+      {
+        title: "Medications for pain",
+        href: "/treatments/medications-for-pain",
+        blurb: "The wider class map these nerve-pain drugs sit inside.",
       },
     ],
   },

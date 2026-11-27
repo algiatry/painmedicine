@@ -215,6 +215,11 @@ export const CONDITION_ARTICLES: Article[] = [
           "Why nerve pain gets different drugs, and what the sciatica trials showed.",
       },
       {
+        title: "Antidepressants and anticonvulsants for pain",
+        href: "/treatments/antidepressants-and-anticonvulsants",
+        blurb: "The PRECISE trial in context: pregabalin did not beat placebo for sciatica.",
+      },
+      {
         title: "The pain treatment pipeline",
         href: "/future-of-pain-medicine/pipeline",
         blurb:
@@ -301,6 +306,12 @@ export const CONDITION_ARTICLES: Article[] = [
       },
     ],
     related: [
+      {
+        title: "Antidepressants and anticonvulsants for pain",
+        href: "/treatments/antidepressants-and-anticonvulsants",
+        blurb:
+          "Gabapentin, pregabalin, duloxetine, and the tricyclics: first-line for nerve pain, not a general pill.",
+      },
       {
         title: "Medications for pain",
         href: "/treatments/medications-for-pain",
@@ -641,6 +652,11 @@ export const CONDITION_ARTICLES: Article[] = [
         href: "/treatments/physical-and-behavioral-therapies",
         blurb:
           "Graded movement, pacing, and cognitive behavioral approaches, and what each delivers.",
+      },
+      {
+        title: "Antidepressants and anticonvulsants for pain",
+        href: "/treatments/antidepressants-and-anticonvulsants",
+        blurb: "Duloxetine's fibromyalgia evidence, and why gabapentinoids are not the default.",
       },
     ],
   },
@@ -1028,6 +1044,11 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Medications for pain",
         href: "/treatments/medications-for-pain",
         blurb: "How the major nerve-pain medication classes work and where their limits lie.",
+      },
+      {
+        title: "Antidepressants and anticonvulsants for pain",
+        href: "/treatments/antidepressants-and-anticonvulsants",
+        blurb: "Duloxetine, gabapentinoids, and the tricyclics for diabetic nerve pain.",
       },
       {
         title: "Next-generation neuromodulation",
