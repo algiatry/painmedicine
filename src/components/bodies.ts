@@ -57,6 +57,7 @@ import CgrpAndHeadacheTreatments from "./treatments/CgrpAndHeadacheTreatments";
 import AntidepressantsAndAnticonvulsants from "./treatments/AntidepressantsAndAnticonvulsants";
 import TopicalsForPain from "./treatments/TopicalsForPain";
 import NerveBlocksAndRfa from "./treatments/NerveBlocksAndRfa";
+import EpiduralSteroidInjections from "./treatments/EpiduralSteroidInjections";
 
 /**
  * Maps an article slug to the component that renders its illustrated body.
@@ -122,4 +123,5 @@ export const ARTICLE_BODIES: Record<string, ComponentType> = {
   "antidepressants-and-anticonvulsants": AntidepressantsAndAnticonvulsants,
   "topicals-for-pain": TopicalsForPain,
   "nerve-blocks-and-rfa": NerveBlocksAndRfa,
+  "epidural-steroid-injections": EpiduralSteroidInjections,
 };

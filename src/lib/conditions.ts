@@ -121,6 +121,11 @@ export const CONDITION_ARTICLES: Article[] = [
         href: "/treatments/nerve-blocks-and-rfa",
         blurb: "Diagnostic medial branch blocks, facet RFA, and what the MINT trials found.",
       },
+      {
+        title: "Epidural steroid injections",
+        href: "/treatments/epidural-steroid-injections",
+        blurb: "A short-term bridge for radiating leg pain, not a shot for ordinary backache.",
+      },
     ],
   },
 
@@ -223,6 +228,11 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Antidepressants and anticonvulsants for pain",
         href: "/treatments/antidepressants-and-anticonvulsants",
         blurb: "The PRECISE trial in context: pregabalin did not beat placebo for sciatica.",
+      },
+      {
+        title: "Epidural steroid injections",
+        href: "/treatments/epidural-steroid-injections",
+        blurb: "A short-term bridge for radiating nerve-root pain, not a disc repair.",
       },
       {
         title: "The pain treatment pipeline",
@@ -1163,6 +1173,11 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Interventional procedures",
         href: "/treatments/interventional-procedures",
         blurb: "The evidence and limits behind injections and spine procedures.",
+      },
+      {
+        title: "Epidural steroid injections",
+        href: "/treatments/epidural-steroid-injections",
+        blurb: "The LESS trial: steroid plus lidocaine no better than lidocaine alone at six weeks.",
       },
       {
         title: "How pain works",

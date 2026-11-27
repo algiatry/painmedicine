@@ -331,6 +331,14 @@ export const EMBLEMS: Record<string, string> = {
       `<circle cx="24" cy="14" r="3.2" fill="${A}" stroke-width="0"/>`,
   ),
 
+  // Needle to the epidural sleeve around a nerve root.
+  "epidural-steroid-injections": g(
+    `<rect stroke="${T}" x="16" y="8" width="16" height="10" rx="2"/>` +
+      `<rect stroke="${T}" x="16" y="22" width="16" height="10" rx="2"/>` +
+      `<path stroke="${A}" d="M32 18 C 38 22, 40 28, 36 36" stroke-width="2.2"/>` +
+      `<circle cx="36" cy="38" r="3" fill="${A}" stroke-width="0"/>`,
+  ),
+
   // Capsule and tablet over the signal wave they quiet — many tools, one map.
   "medications-for-pain": g(
     `<rect stroke="${T}" x="6" y="10" width="22" height="11" rx="5.5" transform="rotate(-24 17 15.5)"/>` +

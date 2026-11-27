@@ -195,6 +195,12 @@ export const HUBS: Hub[] = [
         href: "/treatments/nerve-blocks-and-rfa",
       },
       {
+        title: "Epidural steroid injections",
+        blurb:
+          "The most common interventional shot: modest short-term relief for radiating nerve-root pain, little for ordinary back pain, and a rare neurologic warning from the FDA.",
+        href: "/treatments/epidural-steroid-injections",
+      },
+      {
         title: "Spinal cord stimulation",
         blurb:
           "The implanted stimulator, the test-first trial, success rates, the newer closed-loop devices, and the real limits.",
