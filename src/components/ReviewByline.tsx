@@ -21,32 +21,34 @@ export default function ReviewByline({
   review,
   lastUpdated,
   hub,
+  referencesHref,
 }: {
   status: ReviewStatus;
   review?: PageReview;
   lastUpdated: string;
   /** Owning hub slug – sets the default re-review cadence. */
   hub?: string;
+  referencesHref?: string;
 }) {
   const profile = review ? getReviewer(review.reviewer) : undefined;
 
   if (review && profile && status === "reviewed") {
     const due = review.reviewDue ?? defaultReviewDue(hub ?? "", review.reviewedAt);
     return (
-      <div className="flex flex-col gap-1 border-l-2 border-brand pl-4 text-sm text-subtle">
+      <div data-review-state="reviewed" className="review-panel space-y-1 text-sm text-note-ink">
         <p>
-          Medically reviewed by{" "}
+          <strong>Medically reviewed by</strong>{" "}
           <Link
             href={`/reviewers/${profile.slug}`}
             className="font-medium text-body underline decoration-brand/40 underline-offset-2 hover:text-brand"
           >
             {profile.name}, {profile.credentials}
           </Link>{" "}
-          on {formatDate(review.reviewedAt)}
+          on <time dateTime={review.reviewedAt}>{formatDate(review.reviewedAt)}</time>
         </p>
         {review.note && <p className="text-muted">In review: {review.note}</p>}
         <p>
-          Last updated {formatDate(lastUpdated)} · Next review by {formatDate(due)}
+          Last updated <time dateTime={lastUpdated}>{formatDate(lastUpdated)}</time> · Next review by <time dateTime={due}>{formatDate(due)}</time>
         </p>
       </div>
     );
@@ -54,21 +56,26 @@ export default function ReviewByline({
 
   if (status === "sourced") {
     return (
-      <div className="flex flex-col gap-1 rounded-lg border border-line bg-paper px-4 py-3 text-sm text-muted">
+      <div data-review-state="sourced" className="review-panel space-y-1 text-sm text-muted">
         <p>
           <span className="font-semibold text-ink">
             Not yet medically reviewed.
           </span>{" "}
-          Written from the primary sources cited below; independent clinician
+          Written from the{" "}
+          {referencesHref ? (
+            <a href={referencesHref} className="font-medium text-brand underline underline-offset-2">
+              primary sources cited below
+            </a>
+          ) : "primary sources cited below"}; independent clinician
           review is pending. Educational information, not medical advice.
         </p>
-        <p className="text-subtle">Last updated {formatDate(lastUpdated)}</p>
+        <p className="text-subtle">Last updated <time dateTime={lastUpdated}>{formatDate(lastUpdated)}</time></p>
       </div>
     );
   }
 
   return (
-    <div className="rounded-md border border-caution-line bg-caution px-4 py-3">
+    <div data-review-state="in-review" className="review-panel space-y-1 text-sm text-caution-ink">
       <p className="text-sm text-caution-ink">
         <strong>In editorial review.</strong> This page is being prepared with
         our medical review board and currently provides general orientation

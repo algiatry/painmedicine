@@ -13,10 +13,6 @@
   }
 }
 
-html[data-text-size="large"] article {
-  font-size: 1.125rem;
-}
-
 html[data-low-glare="true"] {
   --background: #f2efe9;
   --surface: #f5f2ec;
@@ -196,48 +192,14 @@ body {
   }
 }
 
-/*
- * Shared surface polish. `.card-lift` gives any bordered surface a resting
- * shadow and a gentle rise on hover/focus-within — used across the homepage
- * and hub/article link cards so the whole site shares one tactile language.
- */
+/* Quiet elevation and hover feedback for linked panels. */
 .card-lift {
   box-shadow: var(--shadow-card);
-  transition:
-    box-shadow 0.25s ease,
-    border-color 0.25s ease,
-    transform 0.25s cubic-bezier(0.33, 1, 0.68, 1);
-}
-@media (prefers-reduced-motion: no-preference) {
-  .card-lift:hover,
-  .card-lift:focus-within {
-    transform: translateY(-2px);
-  }
-}
-.card-lift:hover,
-.card-lift:focus-within {
-  box-shadow: var(--shadow-card-hover);
+  transition: border-color 150ms ease, box-shadow 150ms ease;
 }
 
-/*
- * Hero backdrop: one soft teal glow behind the hero content. Pure CSS, no
- * extra markup, and it degrades to the plain paper gradient on older engines.
- */
-.hero-aura {
-  background-image: radial-gradient(
-    42rem 26rem at 78% -10%,
-    rgb(20 184 166 / 0.12),
-    transparent 60%
-  );
-}
-@media (prefers-color-scheme: dark) {
-  .hero-aura {
-    background-image: radial-gradient(
-      42rem 26rem at 78% -10%,
-      rgb(45 212 191 / 0.1),
-      transparent 60%
-    );
-  }
+.card-lift:is(:hover, :focus-visible) {
+  box-shadow: var(--shadow-card-hover);
 }
 
 /* One consistent, visible focus ring site-wide (keyboard users only). */
@@ -325,4 +287,97 @@ body {
   to {
     opacity: 1;
   }
+}
+
+/* Shared editorial hierarchy for reference pages and directories. */
+:root {
+  --editorial-measure: 42rem;
+  --editorial-gutter: clamp(1rem, 3vw, 1.5rem);
+  --editorial-space: clamp(2.5rem, 5vw, 4rem);
+  --editorial-radius: 0.375rem;
+  --editorial-title-size: clamp(2.15rem, 1.6rem + 2.15vw, 3.25rem);
+}
+
+.editorial-shell {
+  margin-inline: auto;
+  max-inline-size: calc(var(--editorial-measure) + 2 * var(--editorial-gutter));
+  padding: var(--editorial-space) var(--editorial-gutter);
+}
+
+.editorial-header {
+  border-block-start: 1px solid var(--brand);
+  padding-block-start: clamp(1rem, 3vw, 1.75rem);
+}
+
+.editorial-title {
+  color: var(--ink);
+  font-size: var(--editorial-title-size);
+  font-weight: 650;
+  letter-spacing: -0.025em;
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
+.editorial-index-link {
+  border-block-end: 1px solid var(--line);
+  transition: background-color 150ms ease;
+}
+
+.editorial-index-link:is(:hover, :focus-visible) {
+  background: var(--paper);
+}
+
+.review-panel {
+  border-inline-start: 3px solid var(--edge);
+  border-radius: 0 var(--editorial-radius) var(--editorial-radius) 0;
+  background: var(--paper);
+  padding: 0.75rem 1rem;
+}
+
+.review-panel[data-review-state="reviewed"] {
+  border-inline-start-color: var(--brand);
+  background: var(--note);
+}
+
+.review-panel[data-review-state="in-review"] {
+  border-inline-start-color: var(--caution-ink);
+  background: var(--caution);
+}
+
+
+:root {
+  --editorial-reading-size: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --sticky-clearance: 5rem;
+
+}
+
+.editorial-reading {
+  max-inline-size: 65ch;
+  font-size: var(--editorial-reading-size);
+  line-height: 1.7;
+}
+
+html[data-text-size="large"] {
+  --editorial-reading-size: 1.3125rem;
+}
+
+#main-content, #refs-heading {
+  scroll-margin-block-start: var(--sticky-clearance);
+}
+
+.skip-link {
+  position: fixed;
+  inset-block-start: 0.75rem;
+  inset-inline-start: var(--editorial-gutter);
+  z-index: 60;
+  transform: translateY(-200%);
+  border-radius: var(--editorial-radius);
+  background: var(--surface);
+  color: var(--brand-strong);
+  padding: 0.6rem 1rem;
+  font-weight: 650;
+}
+
+.skip-link:focus {
+  transform: none;
 }

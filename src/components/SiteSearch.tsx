@@ -62,9 +62,12 @@ export default function SiteSearch() {
   }, [index]);
 
   function onInputKey(e: React.KeyboardEvent<HTMLInputElement>) {
-    if (e.key === "ArrowDown") {
+    if (e.key === "Escape") {
       e.preventDefault();
-      setActive((i) => Math.min(i + 1, results.length - 1));
+      close();
+    } else if (e.key === "ArrowDown") {
+      e.preventDefault();
+      setActive((i) => Math.min(i + 1, Math.max(0, results.length - 1)));
     } else if (e.key === "ArrowUp") {
       e.preventDefault();
       setActive((i) => Math.max(i - 1, 0));
@@ -144,7 +147,7 @@ export default function SiteSearch() {
                   i === active ? "bg-note" : ""
                 }`}
               >
-                <div className="flex items-baseline justify-between gap-3">
+                <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
                   <span
                     className={`font-semibold ${
                       i === active

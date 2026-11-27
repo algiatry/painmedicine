@@ -128,7 +128,7 @@ export default function ArticleToc({
   }
 
   return (
-    <nav aria-label="On this page" className="sticky top-24">
+    <nav aria-label="On this page" className="sticky top-24 max-h-[calc(100dvh-7rem)] overflow-y-auto overscroll-contain p-1">
       <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-subtle">
         On this page
       </p>

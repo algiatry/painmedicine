@@ -88,8 +88,7 @@ const GUIDE_COUNT = ALL_ARTICLES.length;
 export default function Home() {
   return (
     <div>
-      <section className="relative overflow-hidden border-b border-line/70 bg-gradient-to-b from-paper via-paper/40 to-background">
-        <div className="hero-aura absolute inset-0" aria-hidden="true" />
+      <section className="border-b border-line bg-paper">
         <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
           <div className="grid items-center gap-8 pt-14 pb-10 sm:pt-20 sm:pb-16 lg:grid-cols-[minmax(0,1fr)_minmax(0,28rem)] lg:gap-12 lg:pb-20">
             <div className="max-w-2xl">
@@ -100,7 +99,7 @@ export default function Home() {
                 />
                 Patient-first pain education
               </p>
-              <h1 className="mt-5 text-4xl sm:text-5xl lg:text-[3.4rem] font-bold leading-[1.05] tracking-tight text-ink">
+              <h1 className="mt-5 editorial-title">
                 Pain is real.
                 <br className="hidden sm:block" />{" "}
                 <span className="text-brand">So are your options.</span>
@@ -113,13 +112,13 @@ export default function Home() {
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
                   href="/conditions"
-                  className="rounded-md bg-teal-700 px-5 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-teal-800 hover:shadow-md hover:-translate-y-0.5"
+                  className="rounded-md bg-teal-700 px-5 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-teal-800 hover:shadow-md motion-reduce:transition-none"
                 >
                   Find your condition
                 </Link>
                 <Link
                   href="/treatments"
-                  className="rounded-md border border-faint bg-surface/80 px-5 py-3 text-sm font-semibold text-body shadow-sm backdrop-blur transition-all hover:border-brand hover:text-brand hover:-translate-y-0.5"
+                  className="rounded-md border border-faint bg-surface/80 px-5 py-3 text-sm font-semibold text-body shadow-sm backdrop-blur transition-all hover:border-brand hover:text-brand motion-reduce:transition-none"
                 >
                   See treatment options
                 </Link>
@@ -144,21 +143,8 @@ export default function Home() {
                 ))}
               </ul>
             </div>
-            {/* Mobile / tablet: the full hero figure on a light plate, below
-                the copy. Replaces the thin decorative strip so small screens
-                get a real illustration, not just a flourish. */}
-            <figure
-              aria-hidden="true"
-              className="lg:hidden figure-plate rounded-2xl border p-4 shadow-card sm:p-5"
-            >
+            <figure className="figure-plate rounded-md border p-4 sm:p-5">
               <HeroFigure className="mx-auto block h-auto w-full max-w-md" />
-            </figure>
-
-            {/* Desktop: figure in the right rail. */}
-            <figure className="hidden lg:block">
-              <div className="figure-plate rounded-2xl border p-5 shadow-card ring-1 ring-slate-900/[0.02] backdrop-blur">
-                <HeroFigure className="block h-auto w-full" />
-              </div>
             </figure>
           </div>
         </div>
@@ -178,13 +164,9 @@ export default function Home() {
           <div className="mt-8 grid gap-8 lg:grid-cols-12 lg:gap-12">
             <Link
               href={START.href}
-              className="card-lift group relative overflow-hidden lg:col-span-5 rounded-2xl border border-line bg-gradient-to-br from-paper to-background p-7 sm:p-8"
+              className="card-lift group relative lg:col-span-5 rounded-md border border-line bg-paper p-7 sm:p-8"
             >
-              <span
-                aria-hidden="true"
-                className="pointer-events-none absolute -right-10 -top-10 size-40 rounded-full bg-teal-500/5 blur-2xl"
-              />
-              <span className="relative inline-flex items-center gap-2 rounded-full bg-brand/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-brand">
+              <span className="relative inline-flex items-center gap-2 rounded-full bg-brand/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-brand-strong">
                 <HubIcon href={START.href} className="size-3.5" />
                 The specialty
               </span>

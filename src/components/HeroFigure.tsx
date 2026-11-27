@@ -51,7 +51,7 @@ export default function HeroFigure({ className }: { className?: string }) {
     <svg
       viewBox={`0 0 ${VB_W} ${VB_H}`}
       className={className}
-      role="img"
+      role="group"
       aria-labelledby="hero-fig-title hero-fig-desc"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -147,8 +147,7 @@ export default function HeroFigure({ className }: { className?: string }) {
       {/* baseline glyphs + interactive beat labels */}
       <Link
         href="/understanding-pain/how-pain-works"
-        aria-label="Pain: the signal fires — read How pain works"
-        className="group focus:outline-none"
+        className="group"
       >
         <g className="motion-safe:transition-opacity group-hover:opacity-80 group-focus-visible:opacity-80">
           <circle cx={B1} cy={215} r="22" fill="transparent" />
@@ -162,8 +161,7 @@ export default function HeroFigure({ className }: { className?: string }) {
 
       <Link
         href="/understanding-pain"
-        aria-label="Understanding: the gate filters it — explore Understanding pain"
-        className="group focus:outline-none"
+        className="group"
       >
         <g className="motion-safe:transition-opacity group-hover:opacity-80 group-focus-visible:opacity-80">
           <rect x={B2 - 22} y={193} width="44" height="44" fill="transparent" />
@@ -176,8 +174,7 @@ export default function HeroFigure({ className }: { className?: string }) {
 
       <Link
         href="/treatments"
-        aria-label="Options: the brain can turn it down — explore Treatments"
-        className="group focus:outline-none"
+        className="group"
       >
         <g className="motion-safe:transition-opacity group-hover:opacity-80 group-focus-visible:opacity-80">
           <g transform={`translate(${B3 - 21},${214 - 20})`}>
