@@ -367,15 +367,14 @@ export default function MedicationsForPain() {
 
       <H2 id="topicals">Topicals: relief without the body-wide dose</H2>
       <P>
-        Some of the most quietly useful pain medications never enter the
-        bloodstream in meaningful amounts. Topical NSAID gels deliver the
-        anti-inflammatory effect through the skin to a sore joint with a
-        fraction of the systemic exposure. Lidocaine patches numb the nerve
-        endings under them, useful for localized nerve pain such as
-        post-shingles pain. Capsaicin, the chili-pepper molecule, works by
-        overstimulating and then exhausting local pain fibers. For pain in
-        one findable place, topicals are often worth asking about precisely
-        because their risks stay local too.
+        Some of the most quietly useful pain medications never have to
+        travel through the stomach. The{" "}
+        <Link href="/treatments/topicals-for-pain" className={link}>
+          topical treatments
+        </Link>{" "}
+        page covers diclofenac gel, lidocaine, and capsaicin in depth:
+        which joints they can reach, what the osteoarthritis trials add
+        over rubbing, and why a hip is not a knee.
       </P>
 
       <H2 id="nerve-pain">The nerve-pain medications, and their confusing names</H2>

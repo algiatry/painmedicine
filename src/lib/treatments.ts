@@ -267,6 +267,11 @@ export const TREATMENT_ARTICLES: Article[] = [
         blurb:
           "Gabapentin, pregabalin, duloxetine, and the tricyclics in depth.",
       },
+      {
+        title: "Topical treatments for pain",
+        href: "/treatments/topicals-for-pain",
+        blurb: "Lidocaine, capsaicin, and diclofenac gel when the pain is in one findable place.",
+      },
     ],
   },
 
@@ -1769,6 +1774,106 @@ export const TREATMENT_ARTICLES: Article[] = [
         title: "Medications for pain",
         href: "/treatments/medications-for-pain",
         blurb: "The wider class map these nerve-pain drugs sit inside.",
+      },
+      {
+        title: "Topical treatments for pain",
+        href: "/treatments/topicals-for-pain",
+        blurb: "Lidocaine and capsaicin when the nerve pain is in one findable place.",
+      },
+    ],
+  },
+
+  {
+    hub: HUB,
+    slug: "topicals-for-pain",
+    title: "Topical treatments for pain",
+    seoTitle: "Lidocaine, Capsaicin, and Diclofenac Gel for Pain",
+    description:
+      "Lidocaine patches, capsaicin, and diclofenac gel: local tools for a joint or a strip of skin you can reach, what osteoarthritis trials add over rubbing, and why a hip is not a knee.",
+    status: "sourced",
+    lastUpdated: "2026-11-27",
+    answer:
+      "Topical pain treatments act on a joint or a strip of skin you can reach. Diclofenac gel is an anti-inflammatory for osteoarthritis in listed joints and is sold over the counter. Lidocaine quiets nerve endings, mainly for post-shingles pain. Capsaicin exhausts local pain fibers. They are not a quieter pill for every pain, and gel is not first-line for a deep hip.",
+    faqs: [
+      {
+        question: "Does Voltaren gel work as well as an anti-inflammatory pill?",
+        answer:
+          "For knee osteoarthritis, the few head-to-head trials found similar relief, with more local skin reactions and less of the stomach tax. A 2016 Cochrane review put the number needed to treat for a substantial reduction in pain at about ten versus the gel without the drug. Roughly half of people improved on carrier alone. The gel is labeled for listed joints, not for the hip, the back, or whatever hurts.",
+      },
+      {
+        question: "Why isn't gel first-line for hip arthritis?",
+        answer:
+          "The hip sits too deep. The American College of Rheumatology strongly recommends topical NSAIDs for knee osteoarthritis and does not give the hip the same first-line status. A joint you cannot put a finger on is a poor target for a drug that has to travel through skin.",
+      },
+      {
+        question: "Do lidocaine patches work for nerve pain?",
+        answer:
+          "Prescription patches are labeled for post-shingles nerve pain. A Cochrane review of topical lidocaine for neuropathic pain found some signal of benefit and graded the evidence very low. Drugstore lidocaine products are a milder, different set. Tablets remain first-line when nerve pain is widespread; a patch is for a strip of skin you can cover.",
+      },
+      {
+        question: "Is capsaicin cream the same as the clinic patch?",
+        answer:
+          "No. High-concentration capsaicin is applied in clinic, usually for post-shingles pain or painful diabetic neuropathy, because the first hours burn. Cochrane evidence supports that high-strength patch for a minority of people. Over-the-counter cream is much weaker and often abandoned when it stings.",
+      },
+      {
+        question: "If gel doesn't enter the bloodstream, is it risk-free?",
+        answer:
+          "It does enter, just less than a swallowed NSAID. That is the safety argument, not a free pass. The product still carries NSAID class warnings. People with serious stomach, kidney, or heart disease, or who already take oral NSAIDs, should not treat gel as invisible. The label also says it may take up to seven days and is not for immediate relief.",
+      },
+      {
+        question: "Are Icy Hot and Salonpas the same as these drugs?",
+        answer:
+          "No. Menthol and methyl-salicylate rubs are counterirritants. They can feel like they are doing something. They are not diclofenac gel, lidocaine, or capsaicin, and they do not inherit those trials.",
+      },
+    ],
+    references: [
+      {
+        source: "Cochrane / PubMed",
+        title: "Derry et al. – Topical NSAIDs for chronic musculoskeletal pain in adults",
+        url: "https://pubmed.ncbi.nlm.nih.gov/27103611/",
+      },
+      {
+        source: "Arthritis & Rheumatology / PubMed",
+        title:
+          "Kolasinski et al. – 2019 American College of Rheumatology/Arthritis Foundation Guideline for the Management of Osteoarthritis of the Hand, Hip, and Knee",
+        url: "https://pubmed.ncbi.nlm.nih.gov/31908149/",
+      },
+      {
+        source: "Cochrane / PubMed",
+        title: "Derry et al. – Topical lidocaine for neuropathic pain in adults",
+        url: "https://pubmed.ncbi.nlm.nih.gov/25058164/",
+      },
+      {
+        source: "Cochrane / PubMed",
+        title: "Derry et al. – Topical capsaicin (high concentration) for chronic neuropathic pain in adults",
+        url: "https://pubmed.ncbi.nlm.nih.gov/28085183/",
+      },
+    ],
+    related: [
+      {
+        title: "Knee and hip osteoarthritis",
+        href: "/conditions/knee-and-hip-osteoarthritis",
+        blurb: "Why gel is first-line for a knee and not for a hip.",
+      },
+      {
+        title: "Shingles pain and postherpetic neuralgia",
+        href: "/conditions/shingles-pain",
+        blurb: "The labeled home for lidocaine patches and high-strength capsaicin.",
+      },
+      {
+        title: "Arthritis pain",
+        href: "/conditions/arthritis-pain",
+        blurb: "Where topical anti-inflammatories sit among osteoarthritis options.",
+      },
+      {
+        title: "Medications for pain",
+        href: "/treatments/medications-for-pain",
+        blurb: "The wider class map these local tools sit inside.",
+      },
+      {
+        title: "Pain medications & your organs",
+        href: "/treatments/medication-organ-safety",
+        blurb: "Why gel is not a free pass if you already take an oral NSAID.",
       },
     ],
   },

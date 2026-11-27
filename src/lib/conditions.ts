@@ -537,6 +537,11 @@ export const CONDITION_ARTICLES: Article[] = [
           "Where NSAIDs and topicals genuinely earn their keep – inflamed, tissue-driven pain.",
       },
       {
+        title: "Topical treatments for pain",
+        href: "/treatments/topicals-for-pain",
+        blurb: "Diclofenac gel for a reachable joint, and why a hip is not a knee.",
+      },
+      {
         title: "The pain treatment pipeline",
         href: "/future-of-pain-medicine/pipeline",
         blurb:
@@ -1925,6 +1930,11 @@ export const CONDITION_ARTICLES: Article[] = [
         blurb: "The drug-class map, including the nerve-pain medicines and topical treatments used here.",
       },
       {
+        title: "Topical treatments for pain",
+        href: "/treatments/topicals-for-pain",
+        blurb: "Lidocaine patches and capsaicin for a strip of post-shingles skin.",
+      },
+      {
         title: "The three types of pain",
         href: "/understanding-pain/types-of-pain",
         blurb: "Why pain from an injured nerve behaves differently from pain from injured tissue.",
@@ -2255,6 +2265,11 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Pain medications & your organs",
         href: "/treatments/medication-organ-safety",
         blurb: "What long-term anti-inflammatories ask of the stomach, kidneys, and heart.",
+      },
+      {
+        title: "Topical treatments for pain",
+        href: "/treatments/topicals-for-pain",
+        blurb: "Diclofenac gel for the knee; why the same gel is not first-line for the hip.",
       },
       {
         title: "Central sensitization",

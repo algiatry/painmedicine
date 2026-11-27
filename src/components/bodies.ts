@@ -55,6 +55,7 @@ import BuprenorphineForPain from "./treatments/BuprenorphineForPain";
 import SpinalCordStimulation from "./treatments/SpinalCordStimulation";
 import CgrpAndHeadacheTreatments from "./treatments/CgrpAndHeadacheTreatments";
 import AntidepressantsAndAnticonvulsants from "./treatments/AntidepressantsAndAnticonvulsants";
+import TopicalsForPain from "./treatments/TopicalsForPain";
 
 /**
  * Maps an article slug to the component that renders its illustrated body.
@@ -118,4 +119,5 @@ export const ARTICLE_BODIES: Record<string, ComponentType> = {
   "spinal-cord-stimulation": SpinalCordStimulation,
   "cgrp-and-headache-treatments": CgrpAndHeadacheTreatments,
   "antidepressants-and-anticonvulsants": AntidepressantsAndAnticonvulsants,
+  "topicals-for-pain": TopicalsForPain,
 };
