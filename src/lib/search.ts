@@ -67,6 +67,8 @@ export const ALIASES: Record<string, string> = {
   "/treatments/medication-organ-safety": "side effects liver kidney stomach tylenol ibuprofen nsaids",
   "/treatments/interventional-procedures":
     "injections epidural steroid nerve block radiofrequency ablation spinal cord stimulator",
+  "/treatments/nerve-blocks-and-rfa":
+    "rfa radiofrequency ablation nerve block medial branch facet injection rhizotomy denervation genicular",
   "/treatments/physical-and-behavioral-therapies": "physical therapy exercise cbt mindfulness pacing",
   "/treatments/opioid-stewardship": "addiction dependence overdose naloxone",
   "/treatments/tapering-opioids": "taper tapering withdrawal coming off opioids stopping reduce dose wean weaning",

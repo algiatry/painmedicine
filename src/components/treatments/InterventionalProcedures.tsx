@@ -199,21 +199,15 @@ export default function InterventionalProcedures() {
 
       <H2 id="rfa">Radiofrequency ablation: test, then treat</H2>
       <P>
-        For pain from the facet joints – the small paired joints{" "}
-        <Link href="/conditions/low-back-pain" className={link}>
-          the low back
+        For pain from the facet joints, the sequence is a diagnostic
+        medial branch block, then heat to quiet those same nerves if the
+        block answered yes. The{" "}
+        <Link href="/treatments/nerve-blocks-and-rfa" className={link}>
+          nerve blocks and radiofrequency ablation
         </Link>{" "}
-        and neck rely on, and a common source of arthritic spine pain –
-        the logic runs in two steps. A temporary <strong>medial branch
-        block</strong> numbs the tiny nerves serving the suspect joints;
-        meaningful relief marks them as the culprits. Then{" "}
-        <strong>radiofrequency ablation</strong> applies precisely placed
-        heat to quiet those same nerves for the long haul, typically many
-        months to a year of relief. The nerves regrow in time, and the
-        procedure can be repeated. Selection is everything: done after
-        confirmatory blocks in the right patient, it is one of the
-        toolbox&rsquo;s reliable performers; done on spec, it inherits the
-        wrong diagnosis.
+        page covers that two-step logic, how long relief lasts, what the
+        MINT trials found, and why NICE still considers denervation after
+        a positive block.
       </P>
 
       <H2 id="stimulators">Stimulators: the therapy you can test-drive</H2>

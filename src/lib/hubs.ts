@@ -189,6 +189,12 @@ export const HUBS: Hub[] = [
         href: "/treatments/interventional-procedures",
       },
       {
+        title: "Nerve blocks and radiofrequency ablation",
+        blurb:
+          "A diagnostic block is a question. Ablation is the next step only if the answer was yes. What MINT found, and what NICE still considers.",
+        href: "/treatments/nerve-blocks-and-rfa",
+      },
+      {
         title: "Spinal cord stimulation",
         blurb:
           "The implanted stimulator, the test-first trial, success rates, the newer closed-loop devices, and the real limits.",

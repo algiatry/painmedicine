@@ -282,7 +282,7 @@ export const TREATMENT_ARTICLES: Article[] = [
     description:
       "Image-guided procedures sit between medication and surgery, including epidural injections, nerve blocks, radiofrequency ablation, spinal cord and DRG stimulators, and intrathecal pumps. Reviews what each does and the evidence behind them.",
     status: "sourced",
-    lastUpdated: "2026-10-04",
+    lastUpdated: "2026-11-27",
     answer:
       "Interventional pain procedures are the middle layer between medication and surgery: image-guided treatments delivered to the exact structure generating pain – an injection around an irritated nerve root, heat treatment of the tiny nerves serving an arthritic joint, or an implanted stimulator talking directly to the spinal cord. Their honest promise is not permanence: a well-chosen procedure buys a window of relief, and rehabilitation is what furnishes it.",
     faqs: [
@@ -370,6 +370,12 @@ export const TREATMENT_ARTICLES: Article[] = [
         href: "/treatments/spinal-cord-stimulation",
         blurb:
           "The implanted stimulator in depth: the test-first trial, success rates, and the newer devices.",
+      },
+      {
+        title: "Nerve blocks and radiofrequency ablation",
+        href: "/treatments/nerve-blocks-and-rfa",
+        blurb:
+          "The two-step facet pathway, what MINT found, and why NICE still considers denervation after a positive block.",
       },
       {
         title: "Next-generation neuromodulation",
@@ -1874,6 +1880,103 @@ export const TREATMENT_ARTICLES: Article[] = [
         title: "Pain medications & your organs",
         href: "/treatments/medication-organ-safety",
         blurb: "Why gel is not a free pass if you already take an oral NSAID.",
+      },
+    ],
+  },
+
+  {
+    hub: HUB,
+    slug: "nerve-blocks-and-rfa",
+    title: "Nerve blocks and radiofrequency ablation",
+    seoTitle: "Nerve Blocks and RFA: Facet Pain, How Long It Lasts",
+    description:
+      "Medial branch blocks and radiofrequency ablation for facet-joint pain: the test-then-treat sequence, how long relief lasts, what the MINT trials found, and why NICE still considers denervation after a positive block.",
+    status: "sourced",
+    lastUpdated: "2026-11-27",
+    answer:
+      "A diagnostic nerve block asks whether a specific structure is generating pain. Radiofrequency ablation uses heat to quiet the same small nerves, most often the medial branches to the facet joints, typically for many months to a year. The nerves regrow. The large MINT trials found no clinically important add-on versus exercise. NICE still considers denervation after a positive block.",
+    faqs: [
+      {
+        question: "What is the difference between a nerve block and radiofrequency ablation?",
+        answer:
+          "A diagnostic block numbs a specific nerve or joint for a short time to see whether the pain changes. Ablation uses a needle and controlled heat to quiet those same nerves for longer, typically many months to a year. The block is the question. Ablation is the next step only if the answer was yes. Skipping the question is how the procedure inherits the wrong diagnosis.",
+      },
+      {
+        question: "How long does radiofrequency ablation last?",
+        answer:
+          "When it helps, relief typically lasts many months to about a year. The nerves can regenerate, which is why the pain can return and why a repeat is sometimes offered. NICE says only perform denervation after a positive diagnostic medial branch block, and only after conservative care has failed.",
+      },
+      {
+        question: "Did a big trial show that RFA does not work?",
+        answer:
+          "The 2017 MINT trials added radiofrequency to a structured exercise program for chronic low back pain. In the facet-joint trial the difference at three months was 0.18 points on a 0-10 scale, against a pre-set bar of 2 points for a meaningful change. Interventional societies argue the technique and selection did not match how the procedure is taught. MINT is still the largest test of adding ablation to exercise.",
+      },
+      {
+        question: "Do steroid injections in the back work the same way?",
+        answer:
+          "No. Epidural steroid injections bathe an irritated nerve root, most often for sciatica, and the systematic-review evidence is modest and mostly short-term. NICE says do not offer spinal injections for managing isolated low back pain. A diagnostic medial branch block is a different procedure with a different job.",
+      },
+      {
+        question: "Can this be used for a painful knee?",
+        answer:
+          "Genicular radiofrequency targets the small nerves around the knee in some people with osteoarthritis when surgery is not the next step. It is the same heat-the-nerve idea at a different address. It does not repair cartilage. It buys a window.",
+      },
+      {
+        question: "What should I ask before agreeing to ablation?",
+        answer:
+          "Which structure is being tested, what would count as a positive block, how long the expected quiet lasts, and what the plan is if the pain returns when the nerve grows back. A procedure that buys a window no one uses tends to wear off into disappointment.",
+      },
+    ],
+    references: [
+      {
+        source: "JAMA / PubMed",
+        title:
+          "Juch et al. – Effect of Radiofrequency Denervation on Pain Intensity Among Patients With Chronic Low Back Pain: The Mint Randomized Clinical Trials",
+        url: "https://pubmed.ncbi.nlm.nih.gov/28672319/",
+      },
+      {
+        source: "NICE",
+        title:
+          "Low back pain and sciatica in over 16s: assessment and management (NG59)",
+        url: "https://www.nice.org.uk/guidance/ng59",
+      },
+      {
+        source: "NCBI StatPearls",
+        title: "Radiofrequency Ablation",
+        url: "https://www.ncbi.nlm.nih.gov/books/NBK482387/",
+      },
+      {
+        source: "PAIN / PubMed",
+        title:
+          "Choi et al. – Radiofrequency treatment relieves chronic knee osteoarthritis pain: a double-blind randomized controlled trial",
+        url: "https://pubmed.ncbi.nlm.nih.gov/21055873/",
+      },
+    ],
+    related: [
+      {
+        title: "Low back pain",
+        href: "/conditions/low-back-pain",
+        blurb: "Where facet joints sit among the causes of a hurting back, and the guideline playbook.",
+      },
+      {
+        title: "Neck pain",
+        href: "/conditions/neck-pain",
+        blurb: "Cervical facet pain uses the same test-then-treat sequence.",
+      },
+      {
+        title: "Knee and hip osteoarthritis",
+        href: "/conditions/knee-and-hip-osteoarthritis",
+        blurb: "Genicular radiofrequency when the target is the small nerves around the knee.",
+      },
+      {
+        title: "Interventional procedures",
+        href: "/treatments/interventional-procedures",
+        blurb: "The parent map: epidurals, stimulators, pumps, and the window rule.",
+      },
+      {
+        title: "Physical & behavioral therapies",
+        href: "/treatments/physical-and-behavioral-therapies",
+        blurb: "What is supposed to fill the months the procedure buys.",
       },
     ],
   },
