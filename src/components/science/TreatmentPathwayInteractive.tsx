@@ -67,7 +67,7 @@ export default function TreatmentPathwayInteractive() {
               onClick={() => setSelectedId(opt.id)}
               className={`rounded-full border px-3.5 py-1.5 text-sm font-medium transition-colors ${
                 selected
-                  ? "border-brand bg-brand text-white"
+                  ? "border-brand bg-brand text-background"
                   : "border-line bg-background text-body hover:border-brand/50 hover:text-ink"
               }`}
             >

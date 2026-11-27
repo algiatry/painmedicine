@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { SITE, NAV, SUPPORT_LINKS } from "@/lib/site";
@@ -17,6 +17,7 @@ export default function Header() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const menuButton = useRef<HTMLButtonElement>(null);
 
   // Deepen the header's edge once the page has scrolled past the hero top.
   useEffect(() => {
@@ -26,18 +27,14 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Lock body scroll while the mobile menu is open.
-  useEffect(() => {
-    if (!open) return;
-    const prev = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.body.style.overflow = prev;
-    };
-  }, [open]);
-
   return (
     <header
+      onKeyDown={(event) => {
+        if (!open || event.key !== "Escape" || event.defaultPrevented) return;
+        if (event.target instanceof Element && event.target.closest("dialog")) return;
+        setOpen(false);
+        menuButton.current?.focus();
+      }}
       className={`sticky top-0 z-40 border-b bg-chrome/85 backdrop-blur transition-shadow ${
         scrolled
           ? "border-line shadow-[0_1px_12px_-4px_rgb(15_23_42/0.12)] dark:shadow-[0_1px_12px_-4px_rgb(0_0_0/0.5)]"
@@ -70,6 +67,7 @@ export default function Header() {
           <div className="ml-auto flex items-center lg:ml-0">
           <SiteSearch />
           <button
+            ref={menuButton}
             type="button"
             onClick={() => setOpen((v) => !v)}
             aria-expanded={open}
@@ -102,10 +100,10 @@ export default function Header() {
       </div>
 
       {/* Mobile menu panel */}
-      {open && (
-        <div
+      <div
           id="mobile-menu"
-          className="lg:hidden border-t border-line bg-chrome"
+          hidden={!open}
+          className="max-h-[calc(100dvh-4.5rem)] overflow-y-auto overscroll-contain border-t border-line bg-chrome lg:hidden"
         >
           <nav
             aria-label="Primary mobile"
@@ -152,7 +150,6 @@ export default function Header() {
             </ul>
           </nav>
         </div>
-      )}
     </header>
   );
 }

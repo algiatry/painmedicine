@@ -173,7 +173,12 @@ export default function PipelineMatrix() {
         ))}
       </div>
 
-      <div className="mt-4 hidden overflow-x-auto md:block">
+      <div
+        className="mt-4 hidden overflow-x-auto md:block"
+        role="region"
+        aria-label="Candidate comparison table"
+        tabIndex={0}
+      >
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b border-line text-xs font-semibold uppercase tracking-wider text-subtle">
