@@ -189,6 +189,12 @@ export const HUBS: Hub[] = [
         href: "/treatments/muscle-relaxants-for-pain",
       },
       {
+        title: "Suzetrigine (Journavx)",
+        blurb:
+          "The NaV1.8 blocker approved in January 2025 for acute pain, not for chronic pain.",
+        href: "/treatments/suzetrigine",
+      },
+      {
         title: "Interventional procedures",
         blurb:
           "The image-guided middle layer between pills and surgery: blocks, radiofrequency ablation, stimulators you can test-drive, and the window rule that makes them all work.",
@@ -205,6 +211,24 @@ export const HUBS: Hub[] = [
         blurb:
           "The most common interventional shot: modest short-term relief for radiating nerve-root pain, little for ordinary back pain, and a rare neurologic warning from the FDA.",
         href: "/treatments/epidural-steroid-injections",
+      },
+      {
+        title: "Joint steroid injections",
+        blurb:
+          "Cortisone into a knee, shoulder, or hip: weeks of relief, not a cartilage rebuild, and not an epidural.",
+        href: "/treatments/joint-steroid-injections",
+      },
+      {
+        title: "Vertebroplasty and kyphoplasty",
+        blurb:
+          "Two 2009 sham trials found vertebroplasty no better than a simulated procedure. Kyphoplasty is a cousin, not a rebuttal.",
+        href: "/treatments/vertebroplasty-and-kyphoplasty",
+      },
+      {
+        title: "Intrathecal pumps",
+        blurb:
+          "A reservoir under the skin for cancer pain that outruns pills. Hardware, refills, and real risks.",
+        href: "/treatments/intrathecal-pumps",
       },
       {
         title: "Spinal cord stimulation",

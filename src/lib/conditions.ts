@@ -2312,6 +2312,11 @@ export const CONDITION_ARTICLES: Article[] = [
         blurb: "Genicular radiofrequency when the target is the small nerves around a painful knee.",
       },
       {
+        title: "Joint steroid injections",
+        href: "/treatments/joint-steroid-injections",
+        blurb: "Cortisone into the knee: weeks of relief, not a cartilage rebuild.",
+      },
+      {
         title: "Central sensitization",
         href: "/understanding-pain/central-sensitization",
         blurb: "Why the same X-ray can come with very different amounts of pain.",

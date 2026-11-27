@@ -426,20 +426,15 @@ export default function MedicationsForPain() {
 
       <H2 id="new-class">The first new class in decades</H2>
       <P>
-        For most of living memory, every pain pill belonged to a family your
-        grandparents would recognize. That changed in January 2025, when the
-        FDA approved <strong>suzetrigine</strong> (Journavx) – the first
-        medication of a genuinely new class in over twenty years. It blocks
-        NaV1.8, a sodium channel found on pain-sensing nerves outside the
-        brain, muting the pain signal at its source: no opioid receptors, no
-        euphoria, no dependence liability. Its approval covers
-        moderate-to-severe acute pain, and its deeper significance is the
-        door it opens – a validated non-opioid mechanism with a pipeline of
-        successors behind it, tracked on our{" "}
-        <Link href="/future-of-pain-medicine/pipeline" className={link}>
-          pain treatment pipeline
+        In January 2025 the FDA approved{" "}
+        <Link href="/treatments/suzetrigine" className={link}>
+          suzetrigine (Journavx)
         </Link>
-        .
+        , a NaV1.8 blocker for moderate-to-severe acute pain. The{" "}
+        <Link href="/future-of-pain-medicine/pipeline" className={link}>
+          pipeline
+        </Link>{" "}
+        tracks what comes after it.
       </P>
 
       <H2 id="good-pain-reliever">What is a good pain reliever?</H2>

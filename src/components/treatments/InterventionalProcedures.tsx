@@ -214,67 +214,37 @@ export default function InterventionalProcedures() {
       <H2 id="stimulators">Stimulators: the therapy you can test-drive</H2>
       <P>
         Neuromodulation is the interventional world&rsquo;s deepest
-        evidence story. <strong>Spinal cord stimulation</strong> proved
-        itself in randomized trials in{" "}
-        <Link href="/conditions/crps" className={link}>
-          CRPS
+        evidence story. The{" "}
+        <Link href="/treatments/spinal-cord-stimulation" className={link}>
+          spinal cord stimulation
         </Link>{" "}
-        a generation ago; the modern high-frequency version posted one of
-        the clearest device results in pain medicine for{" "}
-        <Link href="/conditions/neuropathic-pain" className={link}>
-          painful diabetic neuropathy
-        </Link>{" "}
-        – about eight in ten patients achieving substantial relief versus
-        one in twenty on medication alone. <strong>Dorsal root ganglion
-        stimulation</strong> beat conventional stimulation head-to-head
-        for focal nerve pain in the ACCURATE trial. And the therapy carries
-        a feature almost nothing else in medicine offers:{" "}
-        <strong>a take-home trial</strong>, about a week with a temporary
-        external system, so the decision to implant is made from your own
-        lived data, not a brochure. Where the hardware is headed, closed-loop systems that listen to the cord and adjust themselves,
-        is the story of{" "}
+        page covers the trial-first implant, who it helps, the newer
+        waveforms, and the real limits.{" "}
         <Link href="/future-of-pain-medicine/neuromodulation" className={link}>
-          next-generation neuromodulation
-        </Link>
-        .
-      </P>
-
-      <H2 id="scs-results">What the stimulator numbers say</H2>
-      <P>
-        Two questions deserve plain answers before anyone agrees to an
-        implant. <em>How many people get relief?</em> In trials the usual
-        yardstick is a &ldquo;responder&rdquo;: someone whose pain falls by
-        at least half, and across the modern randomized studies most
-        well-selected candidates with nerve-type pain clear that bar during
-        the trial period, which is exactly what the take-home test is for.{" "}
-        <em>Does it wear off?</em> Sometimes. Relief can fade over years, and
-        a minority of people have the device removed; good programs track
-        this and say so. The newest comparison, a 2026 meta-analysis of 17
-        studies and 669 patients, found that &ldquo;burst&rdquo; stimulation
-        lowered pain by about 1.3 points more than conventional stimulation
-        on a 10-point scale, a real, consistent edge that patients
-        preferred, but one the authors note may fall short of what counts as
-        clinically meaningful, with no clear difference in quality of life or
-        disability. Read that as the field reads it: stimulation is a proven
-        tool for the right candidate, the waveform matters less than the
-        selection, and the trial week is the best predictor you will
-        get.
+          Next-generation neuromodulation
+        </Link>{" "}
+        is where the hardware is headed.
       </P>
 
       <H2 id="pumps">Pumps, and the periphery</H2>
       <P>
-        <strong>Intrathecal pumps</strong> deliver medication directly
-        into the spinal fluid, earning their keep mostly in{" "}
-        <Link href="/conditions/cancer-pain" className={link}>
-          cancer pain
+        <Link href="/treatments/intrathecal-pumps" className={link}>
+          Intrathecal pumps
         </Link>{" "}
-        that outruns what pills can do. Around the edges of the field sit
-        procedures with more mixed report cards – cement augmentation of
-        painful spinal fractures, for one, has randomized trials pointing
-        in both directions, and a good interventionalist will tell you
-        so unprompted. A useful rule for any offered procedure: the
-        clinician who volunteers the evidence&rsquo;s limits is the one
-        to trust with the needle.
+        deliver medication into the spinal fluid, mostly for cancer pain
+        that outruns pills.{" "}
+        <Link href="/treatments/vertebroplasty-and-kyphoplasty" className={link}>
+          Cement augmentation
+        </Link>{" "}
+        of painful spinal fractures has sham-controlled trials that did
+        not beat a simulated procedure. A useful rule: the clinician who
+        volunteers the evidence&rsquo;s limits is the one to trust with
+        the needle. Joint cortisone shots are a different address, covered
+        under{" "}
+        <Link href="/treatments/joint-steroid-injections" className={link}>
+          joint steroid injections
+        </Link>
+        .
       </P>
 
       <H2 id="window-rule">The window rule</H2>

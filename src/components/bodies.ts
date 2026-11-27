@@ -59,6 +59,10 @@ import TopicalsForPain from "./treatments/TopicalsForPain";
 import NerveBlocksAndRfa from "./treatments/NerveBlocksAndRfa";
 import EpiduralSteroidInjections from "./treatments/EpiduralSteroidInjections";
 import MuscleRelaxantsForPain from "./treatments/MuscleRelaxantsForPain";
+import JointSteroidInjections from "./treatments/JointSteroidInjections";
+import Suzetrigine from "./treatments/Suzetrigine";
+import VertebroplastyAndKyphoplasty from "./treatments/VertebroplastyAndKyphoplasty";
+import IntrathecalPumps from "./treatments/IntrathecalPumps";
 
 /**
  * Maps an article slug to the component that renders its illustrated body.
@@ -126,4 +130,8 @@ export const ARTICLE_BODIES: Record<string, ComponentType> = {
   "nerve-blocks-and-rfa": NerveBlocksAndRfa,
   "epidural-steroid-injections": EpiduralSteroidInjections,
   "muscle-relaxants-for-pain": MuscleRelaxantsForPain,
+  "joint-steroid-injections": JointSteroidInjections,
+  suzetrigine: Suzetrigine,
+  "vertebroplasty-and-kyphoplasty": VertebroplastyAndKyphoplasty,
+  "intrathecal-pumps": IntrathecalPumps,
 };
