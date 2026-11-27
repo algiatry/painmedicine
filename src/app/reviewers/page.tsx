@@ -29,7 +29,7 @@ export default function ReviewersPage() {
   const reviewedCount = ALL_ARTICLES.filter((a) => a.status === "reviewed").length;
 
   return (
-    <article className="mx-auto max-w-[42rem] px-4 sm:px-6 py-14 space-y-10">
+    <article className="editorial-shell space-y-10">
       <JsonLd
         data={breadcrumbJsonLd([
           { name: "Home", path: "/" },
@@ -51,11 +51,11 @@ export default function ReviewersPage() {
         />
       )}
 
-      <header className="space-y-4">
+      <header className="editorial-header space-y-4">
         <p className="text-sm font-semibold uppercase tracking-widest text-brand">
           Editorial board
         </p>
-        <h1 className="text-4xl sm:text-[2.75rem] sm:leading-[1.1] font-bold tracking-tight text-ink">
+        <h1 className="editorial-title">
           The people who check the pages
         </h1>
         <p className="text-lg text-body">

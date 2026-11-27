@@ -58,7 +58,7 @@ export default async function ArticlePage({
 
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-14 xl:grid xl:grid-cols-[minmax(0,42rem)_15rem] xl:justify-center xl:gap-16">
-      <article data-toc-root className="mx-auto max-w-[42rem] lg:text-[1.1875rem] xl:mx-0">
+      <article data-toc-root className="mx-auto max-w-[var(--editorial-measure)] xl:mx-0">
       <JsonLd
         data={medicalWebPageJsonLd({
           title: a.title,
@@ -100,8 +100,8 @@ export default async function ArticlePage({
         </ol>
       </nav>
 
-      <header className="mt-6 space-y-4">
-        <h1 className="text-4xl sm:text-[2.75rem] sm:leading-[1.1] font-bold tracking-tight text-ink">
+      <header className="editorial-header mt-6 space-y-4">
+        <h1 className="editorial-title">
           {a.title}
         </h1>
         <p className="text-lg lg:text-xl text-body">{a.answer}</p>
@@ -110,6 +110,7 @@ export default async function ArticlePage({
           review={a.review}
           lastUpdated={a.lastUpdated}
           hub={a.hub}
+          referencesHref="#refs-heading"
         />
       </header>
 
@@ -133,7 +134,7 @@ export default async function ArticlePage({
       )}
 
       {Body && (
-        <div className="mt-10 max-w-[65ch] text-[17px] leading-[1.7]">
+        <div className="editorial-reading mt-10">
           <Body />
         </div>
       )}
@@ -190,11 +191,11 @@ export default async function ArticlePage({
         >
           References
         </h2>
-        <ol className="mt-6 space-y-3 text-sm">
+        <ol role="list" className="mt-4 divide-y divide-line border-y border-line text-base">
           {a.references.map((ref, i) => (
-            <li key={ref.url} className="flex gap-3">
-              <span className="text-subtle tabular-nums">{i + 1}.</span>
-              <span>
+            <li key={ref.url} className="flex gap-3 py-3">
+              <span aria-hidden="true" className="w-7 shrink-0 text-subtle tabular-nums">{i + 1}.</span>
+              <span className="min-w-0 wrap-anywhere">
                 <a
                   href={ref.url}
                   target="_blank"

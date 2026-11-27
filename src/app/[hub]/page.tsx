@@ -41,7 +41,7 @@ export default async function HubPage({
   const isFutureHub = hub.slug === "future-of-pain-medicine";
 
   return (
-    <article className="mx-auto max-w-[42rem] px-4 sm:px-6 py-14">
+    <article className="editorial-shell">
       <JsonLd
         data={medicalWebPageJsonLd({
           title: hub.title,
@@ -54,8 +54,8 @@ export default async function HubPage({
       />
       {hub.faqs && hub.faqs.length > 0 && <JsonLd data={faqJsonLd(hub.faqs)} />}
 
-      <header className="space-y-4">
-        <h1 className="text-4xl sm:text-[2.75rem] sm:leading-[1.1] font-bold tracking-tight text-ink">
+      <header className="editorial-header space-y-4">
+        <h1 className="editorial-title">
           {hub.heading}
         </h1>
         <ReviewByline
@@ -111,13 +111,13 @@ export default async function HubPage({
               ? "Explore this section"
               : "What this section will cover"}
         </h2>
-        <ul className="mt-5 space-y-4">
+        <ul className="mt-5 border-t border-line">
           {hub.planned.map((item) =>
             item.href ? (
               <li key={item.title}>
                 <Link
                   href={item.href}
-                  className="card-lift group flex items-start gap-4 rounded-xl border border-line bg-surface p-5 hover:border-brand/70"
+                  className="editorial-index-link group flex items-start gap-3 px-2 py-4 sm:gap-4 sm:px-3"
                 >
                   <span className="flex size-12 shrink-0 items-center justify-center rounded-lg border border-edge bg-plate">
                     <ArticleEmblem
@@ -126,7 +126,7 @@ export default async function HubPage({
                     />
                   </span>
                   <span className="flex-1">
-                    <span className="block font-semibold text-ink group-hover:text-brand">
+                    <span className="block text-lg font-semibold text-ink group-hover:text-brand group-hover:underline">
                       {item.title}
                     </span>
                     <span className="mt-1 block text-sm text-muted">

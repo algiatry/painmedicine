@@ -12,8 +12,8 @@ export const metadata = pageMetadata({
 export default function AboutPage() {
   const correction = correctionHref();
   return (
-    <article className="mx-auto max-w-[42rem] px-4 sm:px-6 py-14 space-y-8">
-      <h1 className="text-4xl sm:text-[2.75rem] sm:leading-[1.1] font-bold tracking-tight text-ink">
+    <article className="editorial-shell space-y-8">
+      <h1 className="editorial-header editorial-title">
         About {SITE.name}
       </h1>
 

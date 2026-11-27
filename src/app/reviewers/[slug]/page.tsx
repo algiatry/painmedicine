@@ -59,7 +59,7 @@ export default async function ReviewerPage({
   ].sort((a, b) => b.reviewedAt.localeCompare(a.reviewedAt));
 
   return (
-    <article className="mx-auto max-w-[42rem] px-4 sm:px-6 py-14 space-y-10">
+    <article className="editorial-shell space-y-10">
       <JsonLd data={{ "@context": "https://schema.org", ...personJsonLd(r) }} />
       <JsonLd
         data={breadcrumbJsonLd([
@@ -94,7 +94,7 @@ export default async function ReviewerPage({
           <p className="text-sm font-semibold uppercase tracking-widest text-brand">
             Medical reviewer
           </p>
-          <h1 className="text-4xl sm:text-[2.75rem] sm:leading-[1.1] font-bold tracking-tight text-ink">
+          <h1 className="editorial-title">
             {r.name}, {r.credentials}
           </h1>
           <p className="text-lg text-body">{r.headline}</p>

@@ -21,6 +21,7 @@ const newsreader = Newsreader({
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-mono",
+  preload: false,
   subsets: ["latin"],
 });
 
@@ -53,8 +54,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col bg-background text-body">
         <JsonLd data={organizationJsonLd()} />
         <JsonLd data={websiteJsonLd()} />
+        <a href="#main-content" className="skip-link no-print">Skip to content</a>
         <Header />
-        <main className="flex-1">{children}</main>
+        <main id="main-content" tabIndex={-1} className="flex-1">{children}</main>
         <Footer />
         <Analytics />
       </body>
