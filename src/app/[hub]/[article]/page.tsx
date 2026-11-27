@@ -51,6 +51,10 @@ export default async function ArticlePage({
   const parentTitle = parentHub?.title ?? "Understanding pain";
   const Body = ARTICLE_BODIES[a.slug];
   const correction = correctionHref(`/${a.hub}/${a.slug}`);
+  const engagementArticle =
+    a.slug === "interventional-procedures" || a.slug === "pipeline"
+      ? a.slug
+      : undefined;
 
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-14 xl:grid xl:grid-cols-[minmax(0,42rem)_15rem] xl:justify-center xl:gap-16">
@@ -109,8 +113,8 @@ export default async function ArticlePage({
         />
       </header>
 
-      <div className="mt-6 flex flex-wrap items-center justify-between gap-4">
-        <ArticleToc variant="inline" />
+      <div className="mt-6 max-w-[65ch] space-y-3">
+        <ArticleToc variant="inline" engagementArticle={engagementArticle} />
         <ReadingControls />
       </div>
 
@@ -261,7 +265,7 @@ export default async function ArticlePage({
       </article>
 
       <aside className="hidden xl:block">
-        <ArticleToc variant="rail" />
+        <ArticleToc variant="rail" engagementArticle={engagementArticle} />
       </aside>
     </div>
   );
