@@ -339,6 +339,13 @@ export const EMBLEMS: Record<string, string> = {
       `<circle cx="36" cy="38" r="3" fill="${A}" stroke-width="0"/>`,
   ),
 
+  // A muscle fiber with a sedating wave across it — the name vs the job.
+  "muscle-relaxants-for-pain": g(
+    `<path stroke="${T}" d="M6 24 C 14 10, 22 38, 30 24 S 46 10, 42 24" stroke-width="2.6"/>` +
+      `<path stroke="${A}" d="M10 36 h28" stroke-width="2.2"/>` +
+      `<circle cx="24" cy="24" r="2.4" fill="${A}" stroke-width="0"/>`,
+  ),
+
   // Capsule and tablet over the signal wave they quiet — many tools, one map.
   "medications-for-pain": g(
     `<rect stroke="${T}" x="6" y="10" width="22" height="11" rx="5.5" transform="rotate(-24 17 15.5)"/>` +

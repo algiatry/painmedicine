@@ -183,6 +183,12 @@ export const HUBS: Hub[] = [
         href: "/treatments/topicals-for-pain",
       },
       {
+        title: "Muscle relaxants for pain",
+        blurb:
+          "Most of these pills sedate the nervous system, not the muscle. Short-term for a seized-up back, little for staying on them, and adding cyclobenzaprine to naproxen did not help in an ED trial.",
+        href: "/treatments/muscle-relaxants-for-pain",
+      },
+      {
         title: "Interventional procedures",
         blurb:
           "The image-guided middle layer between pills and surgery: blocks, radiofrequency ablation, stimulators you can test-drive, and the window rule that makes them all work.",

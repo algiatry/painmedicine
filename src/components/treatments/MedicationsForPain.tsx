@@ -395,10 +395,14 @@ export default function MedicationsForPain() {
       <H2 id="muscle-relaxants">Muscle relaxants, briefly</H2>
       <P>
         For painful muscle spasm (the seized-up back, the wry neck)
-        clinicians sometimes add a short course of a muscle relaxant. The
-        honest evidence summary: modest benefit for short-term use, with
-        drowsiness as the common tax, and little support for staying on them
-        long. They are a bridge back to movement, not a maintenance plan.
+        clinicians sometimes add a short course. The{" "}
+        <Link href="/treatments/muscle-relaxants-for-pain" className={link}>
+          muscle relaxants
+        </Link>{" "}
+        page covers what the name hides: most of these pills sedate the
+        nervous system, the evidence is days not months, and adding
+        cyclobenzaprine to naproxen did not improve function at one week
+        in an emergency-department trial.
       </P>
 
       <H2 id="opioids">Opioids: the picture</H2>
