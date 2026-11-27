@@ -178,23 +178,24 @@ export default function InterventionalProcedures() {
 
       <H2 id="blocks">Injections and blocks, and the question inside them</H2>
       <P>
-        The most familiar procedure is the <strong>epidural steroid
-        injection</strong>, and it deserves the field&rsquo;s most honest
-        sentence: for radiating nerve-root pain like{" "}
+        The most familiar procedure is the{" "}
+        <Link href="/treatments/epidural-steroid-injections" className={link}>
+          epidural steroid injection
+        </Link>
+        : for radiating nerve-root pain like{" "}
         <Link href="/conditions/sciatica" className={link}>
           sciatica
         </Link>
-        , the systematic-review evidence shows real but{" "}
-        <strong>modest, mostly short-term</strong> relief, and little
-        benefit for ordinary back pain. Used well, that is exactly enough:
-        a bridge across the worst weeks while a disc resorbs, a doorway
-        into rehab, sometimes a surgery deferred indefinitely. Used as a
-        standing appointment with no plan attached, it disappoints on
-        schedule. The subtler value of blocks is diagnostic:{" "}
-        <strong>a block is also a question</strong>. Numb a specific
+        , reviews show real but modest, mostly short-term relief, and
+        little benefit for ordinary back pain. Used as a bridge, that can
+        be enough. Used as a standing appointment, it disappoints. The
+        subtler value of other blocks is diagnostic: numb a specific
         structure, and the pain&rsquo;s response tells you whether you
-        found the generator – information no scan can give, and the entire
-        foundation of what comes next.
+        found the generator. That question is the foundation of{" "}
+        <Link href="/treatments/nerve-blocks-and-rfa" className={link}>
+          radiofrequency ablation
+        </Link>
+        .
       </P>
 
       <H2 id="rfa">Radiofrequency ablation: test, then treat</H2>

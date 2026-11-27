@@ -378,6 +378,11 @@ export const TREATMENT_ARTICLES: Article[] = [
           "The two-step facet pathway, what MINT found, and why NICE still considers denervation after a positive block.",
       },
       {
+        title: "Epidural steroid injections",
+        href: "/treatments/epidural-steroid-injections",
+        blurb: "The most common interventional shot, and why it is not the same as a facet block.",
+      },
+      {
         title: "Next-generation neuromodulation",
         href: "/future-of-pain-medicine/neuromodulation",
         blurb:
@@ -1974,9 +1979,112 @@ export const TREATMENT_ARTICLES: Article[] = [
         blurb: "The parent map: epidurals, stimulators, pumps, and the window rule.",
       },
       {
+        title: "Epidural steroid injections",
+        href: "/treatments/epidural-steroid-injections",
+        blurb: "The other common needle: a steroid bath for a nerve root, not heat for a facet nerve.",
+      },
+      {
         title: "Physical & behavioral therapies",
         href: "/treatments/physical-and-behavioral-therapies",
         blurb: "What is supposed to fill the months the procedure buys.",
+      },
+    ],
+  },
+
+  {
+    hub: HUB,
+    slug: "epidural-steroid-injections",
+    title: "Epidural steroid injections",
+    seoTitle: "Epidural Steroid Injection: What It Helps, How Long It Lasts",
+    description:
+      "Epidural steroid injections for radiating nerve-root pain: what Chou's review measured, why they do little for ordinary back pain, the LESS trial in stenosis, and the FDA's rare neurologic warning.",
+    status: "sourced",
+    lastUpdated: "2026-11-27",
+    answer:
+      "An epidural steroid injection puts anti-inflammatory medicine next to an irritated spinal nerve root. Reviews find a small, short-term benefit for radiating sciatica-type pain and little for ordinary back pain. NICE says do not offer spinal injections for isolated low back pain. The FDA has not approved corticosteroids for this use and warns of rare but serious neurologic events.",
+    faqs: [
+      {
+        question: "Do epidural steroid injections work?",
+        answer:
+          "For radiating nerve-root pain like sciatica, systematic reviews find a real but small, short-term drop in pain that fades over weeks to months. For ordinary back pain they find little. That can still be a useful bridge while a disc resorbs and rehab starts. It is not a repair.",
+      },
+      {
+        question: "How long does an epidural last?",
+        answer:
+          "When it helps, the useful window is usually weeks, not a year. Most sciatica also improves on its own over weeks to a few months as herniated disc material resorbs. A standing series with no plan attached tends to disappoint on schedule.",
+      },
+      {
+        question: "Are they for spinal stenosis?",
+        answer:
+          "The LESS randomized trial in lumbar stenosis compared epidural glucocorticoid plus lidocaine with lidocaine alone. At six weeks, disability scores did not differ in a way that mattered. Steroid was not the active ingredient people hoped it was for that anatomy.",
+      },
+      {
+        question: "Is this the same as a nerve block or RFA?",
+        answer:
+          "No. An epidural bathes an irritated nerve root. A diagnostic medial branch block asks whether a facet joint is the source. Radiofrequency ablation heats those tiny nerves for months. Mixing the names is how people get the wrong procedure.",
+      },
+      {
+        question: "How dangerous is an epidural steroid injection?",
+        answer:
+          "Soreness, a flushed face, and a few days of higher blood sugar in people with diabetes are the usual after-effects. Infection, bleeding, and a spinal headache are uncommon. In 2014 the FDA required a class warning: rare but serious neurologic events, including vision loss, stroke, paralysis, and death, have been reported. Corticosteroids are not approved for epidural use.",
+      },
+      {
+        question: "Why would a guideline say not to offer spinal injections?",
+        answer:
+          "NICE says do not offer spinal injections for managing isolated low back pain, because that is not the pattern the evidence supports. Diagnostic medial branch blocks, which answer a different question, are a separate procedure on the path to radiofrequency ablation.",
+      },
+    ],
+    references: [
+      {
+        source: "Ann Intern Med / PubMed",
+        title:
+          "Chou et al. – Epidural corticosteroid injections for radiculopathy and spinal stenosis: a systematic review and meta-analysis",
+        url: "https://pubmed.ncbi.nlm.nih.gov/26302454/",
+      },
+      {
+        source: "NEJM / PubMed",
+        title:
+          "Friedly et al. – A Randomized Trial of Epidural Glucocorticoid Injections for Spinal Stenosis (LESS)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/24988555/",
+      },
+      {
+        source: "NICE",
+        title:
+          "Low back pain and sciatica in over 16s: assessment and management (NG59)",
+        url: "https://www.nice.org.uk/guidance/ng59",
+      },
+      {
+        source: "NEJM / PubMed",
+        title:
+          "Racoosin et al. – Serious Neurologic Events after Epidural Glucocorticoid Injection",
+        url: "https://pubmed.ncbi.nlm.nih.gov/26444582/",
+      },
+    ],
+    related: [
+      {
+        title: "Sciatica",
+        href: "/conditions/sciatica",
+        blurb: "The radiating pattern these injections are aimed at.",
+      },
+      {
+        title: "Spinal stenosis",
+        href: "/conditions/spinal-stenosis",
+        blurb: "Where the LESS trial found steroid no better than lidocaine alone.",
+      },
+      {
+        title: "Low back pain",
+        href: "/conditions/low-back-pain",
+        blurb: "Why isolated back pain is the wrong address for this shot.",
+      },
+      {
+        title: "Interventional procedures",
+        href: "/treatments/interventional-procedures",
+        blurb: "The parent map: blocks, ablation, stimulators, and the window rule.",
+      },
+      {
+        title: "Nerve blocks and radiofrequency ablation",
+        href: "/treatments/nerve-blocks-and-rfa",
+        blurb: "The other needle: a diagnostic question, then heat, not a steroid bath.",
       },
     ],
   },
