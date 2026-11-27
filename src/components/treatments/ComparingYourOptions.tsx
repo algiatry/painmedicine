@@ -304,19 +304,14 @@ export default function ComparingYourOptions() {
 
       <H2 id="complementary">The complementary aisle</H2>
       <P>
-        Complementary options divide cleanly on the certainty axis.{" "}
-        <strong>Acupuncture</strong> has been examined about as
-        rigorously as a hands-on therapy can be, an individual-patient-
-        data meta-analysis of dozens of trials, and shows real benefits
-        beyond sham for several chronic pain conditions: small on
-        average, persistent, low-risk. As an adjunct for someone drawn
-        to it, that is a defensible bet. <strong>Supplements</strong> are
-        mostly the opposite corner: unregulated products, thin trials,
-        and genuine interaction potential, worth naming to your
-        clinician and pharmacist rather than filing under harmless. The
-        four claim-reading questions at the end of this page apply with
-        extra force anywhere a product is sold outside medicine&rsquo;s
-        evidence machinery.
+        The{" "}
+        <Link href="/treatments/complementary-pain-treatments" className={link}>
+          complementary treatments
+        </Link>{" "}
+        page covers acupuncture (Vickers), TENS, and spinal manipulation
+        (Rubinstein): small average effects, sometimes real, never a
+        substitute for the active plan. Supplements stay the thin-evidence
+        corner.
       </P>
 
       <H2 id="fair-trial">Running a fair trial on yourself</H2>

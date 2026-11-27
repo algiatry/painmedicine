@@ -249,6 +249,24 @@ export const HUBS: Hub[] = [
         href: "/treatments/physical-and-behavioral-therapies",
       },
       {
+        title: "Movement as medicine",
+        blurb:
+          "Exercise for pain: Hayden's Cochrane review, why guidelines put it first, and why adherence is the active ingredient.",
+        href: "/treatments/movement-as-medicine",
+      },
+      {
+        title: "Pacing for pain",
+        blurb:
+          "The boom-bust escape: a bad-day baseline, increased by plan not by pain.",
+        href: "/treatments/pacing-for-pain",
+      },
+      {
+        title: "CBT and mindfulness for pain",
+        blurb:
+          "Cochrane CBT evidence and Cherkin's JAMA trial: MBSR and CBT both beat usual care for chronic low back pain.",
+        href: "/treatments/cbt-and-mindfulness-for-pain",
+      },
+      {
         title: "Piriformis syndrome and the deep hip",
         blurb:
           "The sciatica that does not start at the spine: the deep-hip muscle over the nerve, the four-feature diagnosis, and what a physical therapy program for it is built to do.",
@@ -259,6 +277,12 @@ export const HUBS: Hub[] = [
         blurb:
           "The evidence map: why almost everything helps “modestly,” why modest wins stack, and how to read any treatment claim like the field does.",
         href: "/treatments/comparing-your-options",
+      },
+      {
+        title: "Complementary treatments for pain",
+        blurb:
+          "Acupuncture, TENS, and spinal manipulation: small average effects, sometimes real, never a substitute for the active plan.",
+        href: "/treatments/complementary-pain-treatments",
       },
       {
         title: "Pain medications & your organs",

@@ -376,6 +376,27 @@ export const EMBLEMS: Record<string, string> = {
       `<path stroke="${A}" d="M8 40 h32" stroke-width="2.2"/>`,
   ),
 
+  "movement-as-medicine": g(
+    `<path stroke="${T}" d="M8 36 L18 20 L28 36 L38 12" stroke-width="2.6"/>` +
+      `<circle cx="38" cy="12" r="3" fill="${A}" stroke-width="0"/>`,
+  ),
+
+  "pacing-for-pain": g(
+    `<path stroke="${T}" d="M6 36 H16 V28 H24 V20 H32 V12 H42" stroke-width="2.4"/>` +
+      `<path stroke="${A}" d="M6 40 h36" stroke-width="2"/>`,
+  ),
+
+  "cbt-and-mindfulness-for-pain": g(
+    `<circle stroke="${T}" cx="18" cy="24" r="10"/>` +
+      `<circle stroke="${S}" cx="30" cy="24" r="10"/>` +
+      `<circle cx="24" cy="24" r="2.4" fill="${A}" stroke-width="0"/>`,
+  ),
+
+  "complementary-pain-treatments": g(
+    `<path stroke="${T}" d="M10 30 L24 10 L38 30" stroke-width="2.2"/>` +
+      `<circle stroke="${A}" cx="24" cy="34" r="6"/>`,
+  ),
+
   // Capsule and tablet over the signal wave they quiet — many tools, one map.
   "medications-for-pain": g(
     `<rect stroke="${T}" x="6" y="10" width="22" height="11" rx="5.5" transform="rotate(-24 17 15.5)"/>` +

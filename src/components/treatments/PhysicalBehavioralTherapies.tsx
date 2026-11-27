@@ -205,80 +205,35 @@ export default function PhysicalBehavioralTherapies() {
 
       <H2 id="movement">Movement as medicine</H2>
       <P>
-        Exercise treats pain through mechanisms that have nothing to do
-        with fitness culture. A bout of activity switches on the
-        body&rsquo;s own pain-dampening chemistry. Progressive loading
-        rebuilds the muscle that cushions joints and spine – the core of
-        why guidelines put exercise first for{" "}
-        <Link href="/conditions/low-back-pain" className={link}>
-          back pain
+        The{" "}
+        <Link href="/treatments/movement-as-medicine" className={link}>
+          movement as medicine
         </Link>{" "}
-        and{" "}
-        <Link href="/conditions/arthritis-pain" className={link}>
-          arthritis
-        </Link>
-        . And every safe repetition is data for a sensitized nervous
-        system: <em>this movement is not a threat</em> – the slow
-        unwinding of the fear-avoidance loop. The umbrella evidence,
-        summarized across Cochrane reviews, is honest and encouraging:
-        consistent, usually modest improvements in pain and function, with
-        a safety profile no drug can match. The menu is broad – therapist-
-        led exercise, tai chi (which{" "}
-        <Link href="/conditions/fibromyalgia" className={link}>
-          matched or beat aerobic exercise for fibromyalgia
-        </Link>{" "}
-        in a randomized trial), yoga, water-based programs for joints that
-        need unloading first. Heat, massage, and manual therapy earn
-        supporting roles – genuine short-term relievers, at their best
-        when they open the door to the active work rather than replace it.
+        page covers Hayden&rsquo;s Cochrane review, why guidelines put
+        exercise first, and the menu from loading to tai chi. Heat and
+        massage stay supporting roles.
       </P>
 
       <H2 id="pacing">The skill that changes everything: pacing</H2>
       <PacingFigure />
       <P>
-        If this page taught only one thing, it should be this. The most
-        common way active therapy fails is the <strong>boom-bust
-        cycle</strong>: a good day arrives, everything postponed gets
-        done, the sensitized system flares, and days are lost to the
-        crash – teaching the nervous system, flare by flare, that
-        activity is dangerous. <strong>Pacing</strong> is the escape:
-        find the baseline you can manage even on a bad day, do it with
-        boring consistency, and increase on a schedule –{" "}
-        <strong>by plan, not by pain</strong>. Good days no longer
-        trigger overdraft spending; bad days no longer stop the program.
-        It feels slower than pushing through. It compounds incomparably
-        faster than crashing does.
+        The{" "}
+        <Link href="/treatments/pacing-for-pain" className={link}>
+          pacing
+        </Link>{" "}
+        page is the boom-bust escape: a bad-day baseline, increased by
+        plan not by pain.
       </P>
 
       <H2 id="brain-side">The brain-side toolbox</H2>
       <P>
-        The behavioral therapies work the other lever, and their evidence
-        deserves plain statement. <strong>Cognitive behavioral
-        therapy</strong> for pain (retraining the thoughts, fears, and
-        behaviors that amplify it) shows reliable, usually modest
-        benefits for pain and disability across dozens of randomized
-        trials in the Cochrane review. <strong>Mindfulness-based stress
-        reduction</strong> went head-to-head with CBT for chronic low
-        back pain in a major trial and performed on par – both beating
-        usual care, with gains lasting a year. Acceptance and commitment
-        therapy takes a different road to the same territory:
-        re-expanding a life that pain has shrunk, without waiting for
-        the pain to leave first. <strong>CBT for insomnia</strong> treats
-        the{" "}
-        <Link href="/understanding-pain/pain-and-sleep" className={link}>
-          sleep half of the pain-sleep cycle
+        The{" "}
+        <Link href="/treatments/cbt-and-mindfulness-for-pain" className={link}>
+          CBT and mindfulness
         </Link>{" "}
-        directly. And at the specialized end sit graded motor imagery and
-        mirror therapy for{" "}
-        <Link href="/conditions/crps" className={link}>
-          CRPS
-        </Link>
-        , with the newest brain-retraining approaches covered in{" "}
-        <Link href="/future-of-pain-medicine/mind-and-brain" className={link}>
-          mind, brain, and new frontiers
-        </Link>
-        . None of this implies your pain is psychological. It implies
-        your pain runs on circuitry, and circuitry trains.
+        page covers the Cochrane CBT review and Cherkin&rsquo;s JAMA
+        trial of MBSR versus CBT versus usual care for chronic low back
+        pain.
       </P>
 
       <H2 id="together">When the levers pull together</H2>
