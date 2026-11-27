@@ -336,33 +336,17 @@ export default function MedicationsForPain() {
 
       <H2 id="everyday">The everyday two: acetaminophen and the NSAIDs</H2>
       <P>
-        <strong>Acetaminophen</strong> (Tylenol, paracetamol) is the world&rsquo;s
-        most-used pain reliever, and, remarkably, science is still debating
-        exactly how it works; its action appears to be largely central, in the
-        brain and spinal cord, with little effect on inflammation. Its
-        defining safety boundary is the liver. On its own, at labeled doses,
-        it is well tolerated; the danger is accumulation, because
-        acetaminophen hides inside hundreds of combination cold, flu, sleep,
-        and prescription pain products. Overdose, often unintentional, is a
-        leading cause of acute liver failure, which is why pharmacists ask
-        what else you are taking.
-      </P>
-      <P>
-        The <strong>NSAIDs</strong> (ibuprofen, naproxen, aspirin,
-        prescription relatives, and the anti-inflammatory medicines people
-        search for by name) work at the scene of the injury: they block the
-        prostaglandin chemistry that makes injured tissue swell, throb, and
-        stay tender. That mechanism makes them genuinely effective for
-        inflammatory and tissue-driven pain – sprains, arthritis flares,
-        dental pain, menstrual pain, and it is why guidelines list them
-        first-line for conditions like{" "}
-        <Link href="/conditions/low-back-pain" className={link}>
-          low back pain
-        </Link>
-        . The same mechanism sets their limits: prostaglandins also protect
-        the stomach lining, support the kidneys, and balance cardiovascular
-        function, so long-term or high-dose NSAID use carries stomach,
-        kidney, and heart cautions that deserve a clinician&rsquo;s eyes, especially past middle age or alongside blood thinners.
+        The{" "}
+        <Link href="/treatments/acetaminophen-and-nsaids" className={link}>
+          acetaminophen and NSAIDs
+        </Link>{" "}
+        page covers how they differ (central versus tissue), the stacking
+        trap in combination cold medicines, and why stomach, kidney, and
+        heart history decide whether ibuprofen is ordinary or unwise. The{" "}
+        <Link href="/treatments/medication-organ-safety" className={link}>
+          organ-safety
+        </Link>{" "}
+        page is the health-history half.
       </P>
 
       <H2 id="topicals">Topicals: relief without the body-wide dose</H2>
@@ -407,21 +391,22 @@ export default function MedicationsForPain() {
 
       <H2 id="opioids">Opioids: the picture</H2>
       <P>
-        Opioids, morphine and its descendants, work on the receptors of the
-        body&rsquo;s own pain-relief chemistry, turning down the alarm at the
-        spinal cord and brain. For severe acute pain, surgical pain, cancer
-        pain, and comfort at the end of life, they remain essential medicine,
-        and nothing on this page argues otherwise. For long-term non-cancer
-        pain the picture is more sobering: tolerance builds, benefits often
-        fade, physical dependence develops with sustained use, and for a
-        subset of people use progresses to addiction. The CDC&rsquo;s 2022
-        guideline reframed the field away from one-size-fits-all limits and
-        toward individualized decisions – maximizing non-opioid options
-        first, starting low when opioids are used, and never abandoning
-        patients who are already on them. If opioid use
-        (yours or a loved one&rsquo;s) has become hard to control, confidential help exists
-        and works: the SAMHSA helpline, 1-800-662-4357, is free and answers
-        around the clock.
+        Morphine-class drugs remain essential for severe acute pain,
+        surgery, cancer pain, and comfort at the end of life. For
+        long-term non-cancer pain the picture is more sobering. The{" "}
+        <Link href="/treatments/opioid-stewardship" className={link}>
+          stewardship
+        </Link>
+        ,{" "}
+        <Link href="/treatments/opioids-for-acute-pain" className={link}>
+          acute-pain evidence
+        </Link>
+        , and{" "}
+        <Link href="/treatments/tapering-opioids" className={link}>
+          tapering
+        </Link>{" "}
+        pages carry that depth. If use has become hard to control, the
+        SAMHSA helpline is 1-800-662-4357.
       </P>
 
       <H2 id="new-class">The first new class in decades</H2>

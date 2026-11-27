@@ -370,6 +370,12 @@ export const EMBLEMS: Record<string, string> = {
       `<rect stroke="${S}" x="38" y="16" width="6" height="16" rx="2"/>`,
   ),
 
+  "acetaminophen-and-nsaids": g(
+    `<rect stroke="${T}" x="6" y="14" width="16" height="20" rx="4"/>` +
+      `<circle stroke="${S}" cx="34" cy="24" r="10"/>` +
+      `<path stroke="${A}" d="M8 40 h32" stroke-width="2.2"/>`,
+  ),
+
   // Capsule and tablet over the signal wave they quiet — many tools, one map.
   "medications-for-pain": g(
     `<rect stroke="${T}" x="6" y="10" width="22" height="11" rx="5.5" transform="rotate(-24 17 15.5)"/>` +

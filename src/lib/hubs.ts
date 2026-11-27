@@ -195,6 +195,12 @@ export const HUBS: Hub[] = [
         href: "/treatments/suzetrigine",
       },
       {
+        title: "Acetaminophen and NSAIDs",
+        blurb:
+          "Tylenol versus ibuprofen: central versus tissue, the stacking trap, and why stomach and heart history decide.",
+        href: "/treatments/acetaminophen-and-nsaids",
+      },
+      {
         title: "Interventional procedures",
         blurb:
           "The image-guided middle layer between pills and surgery: blocks, radiofrequency ablation, stimulators you can test-drive, and the window rule that makes them all work.",
