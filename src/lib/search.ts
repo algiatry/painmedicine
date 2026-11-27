@@ -73,6 +73,14 @@ export const ALIASES: Record<string, string> = {
     "epidural steroid injection esi cortisone shot in the back transforaminal interlaminar sciatica injection",
   "/treatments/muscle-relaxants-for-pain":
     "flexeril cyclobenzaprine soma carisoprodol robaxin methocarbamol skelaxin zanaflex tizanidine muscle spasm",
+  "/treatments/joint-steroid-injections":
+    "cortisone shot steroid injection knee hip shoulder joint injection kenalog depomedrol",
+  "/treatments/suzetrigine":
+    "journavx vx-548 nav1.8 vertex new pain pill suzetrigine",
+  "/treatments/vertebroplasty-and-kyphoplasty":
+    "vertebroplasty kyphoplasty cement spine compression fracture balloon kypho",
+  "/treatments/intrathecal-pumps":
+    "pain pump intrathecal morphine ziconotide prialt implantable pump",
   "/treatments/physical-and-behavioral-therapies": "physical therapy exercise cbt mindfulness pacing",
   "/treatments/opioid-stewardship": "addiction dependence overdose naloxone",
   "/treatments/tapering-opioids": "taper tapering withdrawal coming off opioids stopping reduce dose wean weaning",

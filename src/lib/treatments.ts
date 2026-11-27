@@ -2180,4 +2180,322 @@ export const TREATMENT_ARTICLES: Article[] = [
       },
     ],
   },
+
+  {
+    hub: HUB,
+    slug: "joint-steroid-injections",
+    title: "Joint steroid injections",
+    seoTitle: "Cortisone Shot in a Joint: How Long It Lasts, Knee vs Hip",
+    description:
+      "Cortisone into a knee, shoulder, or hip is not an epidural. Cochrane evidence for knee osteoarthritis is short-term. The joint is still the joint when the window closes.",
+    status: "sourced",
+    lastUpdated: "2026-11-27",
+    answer:
+      "A joint steroid injection puts corticosteroid into the synovial space of a knee, shoulder, hip, or smaller joint. Relief, when it comes, lasts weeks. Cochrane evidence for knee osteoarthritis is short-term. It does not rebuild cartilage, and it is a different procedure from an epidural steroid injection aimed at a nerve root.",
+    faqs: [
+      {
+        question: "How long does a cortisone shot in the knee last?",
+        answer:
+          "Weeks, not a year. Jüni's Cochrane review found pain relief that is real and most visible in the first weeks, then uncertain. That is a bridge, not a rebuild.",
+      },
+      {
+        question: "Is this the same as an epidural?",
+        answer:
+          "No. An epidural bathes a spinal nerve root. A joint shot goes into the synovial capsule. Same drug family, different address, different evidence.",
+      },
+      {
+        question: "Can I get them whenever it flares?",
+        answer:
+          "Repeating a shot as the only plan is a stall. Frequent, closely spaced injections raise questions about cartilage and about masking a joint that needs movement or a different procedure.",
+      },
+      {
+        question: "Does a hip shot work like a knee shot?",
+        answer:
+          "The hip is deep. Imaging guidance matters. ACR treats topical anti-inflammatories as first-line for a reachable knee; a hip is a poorer target for gel and a more technical target for a needle.",
+      },
+      {
+        question: "What are the risks?",
+        answer:
+          "Soreness, a few days of higher blood sugar in people with diabetes, skin changes at the site. Joint infection is uncommon and the reason the skin is prepped carefully.",
+      },
+    ],
+    references: [
+      {
+        source: "Cochrane / PubMed",
+        title: "Jüni et al. – Intra-articular corticosteroid for knee osteoarthritis",
+        url: "https://pubmed.ncbi.nlm.nih.gov/26490760/",
+      },
+      {
+        source: "Arthritis & Rheumatology / PubMed",
+        title:
+          "Kolasinski et al. – 2019 American College of Rheumatology/Arthritis Foundation Guideline for the Management of Osteoarthritis of the Hand, Hip, and Knee",
+        url: "https://pubmed.ncbi.nlm.nih.gov/31908149/",
+      },
+      {
+        source: "Cochrane / PubMed",
+        title: "Derry et al. – Topical NSAIDs for chronic musculoskeletal pain in adults",
+        url: "https://pubmed.ncbi.nlm.nih.gov/27103611/",
+      },
+    ],
+    related: [
+      {
+        title: "Knee and hip osteoarthritis",
+        href: "/conditions/knee-and-hip-osteoarthritis",
+        blurb: "Where a shot sits on the knee ladder, and why a hip is different.",
+      },
+      {
+        title: "Arthritis pain",
+        href: "/conditions/arthritis-pain",
+        blurb: "The wider joint-pain map.",
+      },
+      {
+        title: "Epidural steroid injections",
+        href: "/treatments/epidural-steroid-injections",
+        blurb: "The other steroid needle: a nerve root, not a joint.",
+      },
+      {
+        title: "Topical treatments for pain",
+        href: "/treatments/topicals-for-pain",
+        blurb: "Gel for a reachable knee, before a needle.",
+      },
+    ],
+  },
+
+  {
+    hub: HUB,
+    slug: "suzetrigine",
+    title: "Suzetrigine (Journavx)",
+    seoTitle: "Journavx (Suzetrigine): The New NaV1.8 Pain Pill",
+    description:
+      "Suzetrigine is a NaV1.8 blocker approved in January 2025 for moderate-to-severe acute pain. It is not approved for chronic pain. Covers the trials, the label, and what Vertex is still studying.",
+    status: "sourced",
+    lastUpdated: "2026-11-27",
+    answer:
+      "Suzetrigine (Journavx) blocks the NaV1.8 sodium channel on peripheral pain nerves. The FDA approved it in January 2025 for moderate-to-severe acute pain. It is not approved for chronic pain. Phase 2 and 3 surgical-pain trials beat placebo. Headache and nausea were common. Diabetic nerve pain uses are still in studies.",
+    faqs: [
+      {
+        question: "What is Journavx?",
+        answer:
+          "The brand name for suzetrigine, a selective NaV1.8 blocker. It is a tablet for moderate-to-severe acute pain, approved in January 2025. It acts on peripheral pain-sensing nerves, not on the brain's reward system.",
+      },
+      {
+        question: "Is it approved for chronic pain or neuropathy?",
+        answer:
+          "No. The label is acute pain. Vertex has described Phase 3 diabetic-neuropathy studies as ongoing. Until the label changes, those uses are research, not the approved job.",
+      },
+      {
+        question: "Does it work better than ibuprofen after surgery?",
+        answer:
+          "The registration trials compared it with placebo, not with every everyday painkiller. Jones reported Phase 2 data in NEJM under the code VX-548. Whether it is on a given hospital's list is a separate, practical question.",
+      },
+      {
+        question: "What are the side effects?",
+        answer:
+          "Headache, nausea, constipation, and dizziness were common in the acute-pain trials. It is still a new class. Unusual symptoms should go back to the prescriber.",
+      },
+      {
+        question: "Is this the same as the pipeline page?",
+        answer:
+          "The pipeline tracks candidates still in trials, including what Vertex is doing next with this class. This page is the approved acute-pain use.",
+      },
+    ],
+    references: [
+      {
+        source: "NEJM / PubMed",
+        title: "Jones et al. – Selective Inhibition of NaV1.8 with VX-548 for Acute Pain",
+        url: "https://pubmed.ncbi.nlm.nih.gov/37530822/",
+      },
+      {
+        source: "FDA",
+        title: "FDA Approves Novel Non-Opioid Treatment for Moderate to Severe Acute Pain (suzetrigine, January 2025)",
+        url: "https://www.fda.gov/news-events/press-announcements/fda-approves-novel-non-opioid-treatment-moderate-severe-acute-pain",
+      },
+      {
+        source: "Vertex",
+        title: "Third-quarter 2026 results – JOURNAVX and VX-993 (2 Nov 2026)",
+        url: "https://news.vrtx.com/news-releases/news-release-details/vertex-reports-third-quarter-2026-financial-results",
+      },
+    ],
+    related: [
+      {
+        title: "Medications for pain",
+        href: "/treatments/medications-for-pain",
+        blurb: "Where this new class sits on the wider map.",
+      },
+      {
+        title: "The pain treatment pipeline",
+        href: "/future-of-pain-medicine/pipeline",
+        blurb: "What Vertex is studying next, including neuropathy trials.",
+      },
+      {
+        title: "Diabetic neuropathy",
+        href: "/conditions/diabetic-neuropathy",
+        blurb: "A use that is still in trials, not on the current label.",
+      },
+      {
+        title: "Comparing your options",
+        href: "/treatments/comparing-your-options",
+        blurb: "How to read a modest trial win, which is what most pain drugs deliver.",
+      },
+    ],
+  },
+
+  {
+    hub: HUB,
+    slug: "vertebroplasty-and-kyphoplasty",
+    title: "Vertebroplasty and kyphoplasty",
+    seoTitle: "Vertebroplasty vs Kyphoplasty: Do They Work for Compression Fractures?",
+    description:
+      "Two 2009 sham-controlled NEJM trials found vertebroplasty no better than a simulated procedure for osteoporotic compression fractures. Kyphoplasty is a cousin, not a rebuttal.",
+    status: "sourced",
+    lastUpdated: "2026-11-27",
+    answer:
+      "Vertebroplasty injects cement into a collapsed osteoporotic vertebra. Kyphoplasty inflates a balloon first. Kallmes and Buchbinder, both in NEJM in 2009, found vertebroplasty similar to a sham procedure. Pain from these fractures often improves with time anyway. Cement leak and adjacent fracture are the main extra risks.",
+    faqs: [
+      {
+        question: "Does vertebroplasty work?",
+        answer:
+          "Two sham-controlled trials in 2009 found it no better than a simulated procedure at the primary time points. Both groups improved. That is why a sham arm matters, and why the result is still argued.",
+      },
+      {
+        question: "Is kyphoplasty different?",
+        answer:
+          "It uses a balloon before the cement. That is a different procedure with its own studies, not a free pass from the vertebroplasty sham trials.",
+      },
+      {
+        question: "Who is this for?",
+        answer:
+          "People with a painful osteoporotic compression fracture, not ordinary back pain without a fracture. Imaging has to show the collapse.",
+      },
+      {
+        question: "What can go wrong?",
+        answer:
+          "Cement can leak. A nearby vertebra can fracture later. Infection and the usual needle harms are uncommon. A good operator names those before the consent form.",
+      },
+      {
+        question: "If the trials were negative, why is it still offered?",
+        answer:
+          "Because later registries and arguments about who was enrolled keep the door open, and because some people are in severe pain. A clinician should be able to say which evidence they are hanging the offer on.",
+      },
+    ],
+    references: [
+      {
+        source: "NEJM / PubMed",
+        title: "Kallmes et al. – A Randomized Trial of Vertebroplasty for Osteoporotic Spinal Fractures",
+        url: "https://pubmed.ncbi.nlm.nih.gov/19657122/",
+      },
+      {
+        source: "NEJM / PubMed",
+        title: "Buchbinder et al. – A Randomized Trial of Vertebroplasty for Painful Osteoporotic Vertebral Fractures",
+        url: "https://pubmed.ncbi.nlm.nih.gov/19657121/",
+      },
+      {
+        source: "NICE",
+        title: "Low back pain and sciatica in over 16s: assessment and management (NG59)",
+        url: "https://www.nice.org.uk/guidance/ng59",
+      },
+    ],
+    related: [
+      {
+        title: "Low back pain",
+        href: "/conditions/low-back-pain",
+        blurb: "Ordinary back pain without a fracture is the wrong address.",
+      },
+      {
+        title: "Spinal stenosis",
+        href: "/conditions/spinal-stenosis",
+        blurb: "Another age-related spine problem, with a different treatment map.",
+      },
+      {
+        title: "Interventional procedures",
+        href: "/treatments/interventional-procedures",
+        blurb: "The parent map, and the window rule.",
+      },
+      {
+        title: "Epidural steroid injections",
+        href: "/treatments/epidural-steroid-injections",
+        blurb: "A needle with clearer short-term evidence for nerve-root pain.",
+      },
+    ],
+  },
+
+  {
+    hub: HUB,
+    slug: "intrathecal-pumps",
+    title: "Intrathecal pumps",
+    seoTitle: "Intrathecal Pain Pump: Cancer Pain, How It Works, Risks",
+    description:
+      "A pump under the skin delivers medicine into spinal fluid. Strongest evidence is in cancer pain when pills are failing. Covers the Smith trial, ziconotide, hardware risks, and who refills it.",
+    status: "sourced",
+    lastUpdated: "2026-11-27",
+    answer:
+      "An intrathecal pump delivers medicine through a catheter into the spinal fluid so a small dose can act at the cord. The best evidence is in cancer pain that outruns pills. Morphine-class drugs and ziconotide are the labeled options. Infection, catheter failure, and granuloma are the hardware risks. If use of these medicines has become hard to control, the SAMHSA helpline is 1-800-662-4357.",
+    faqs: [
+      {
+        question: "Who gets an intrathecal pump?",
+        answer:
+          "Mostly people with cancer pain that is not controlled by systemic medicine, or who cannot tolerate the side effects. Smith’s randomized trial found more people reaching a pain-and-toxicity goal with a pump added to comprehensive medical management.",
+      },
+      {
+        question: "What drugs go in it?",
+        answer:
+          "Morphine-class analgesics and ziconotide are labeled for intrathecal use. Combinations are specialist craft, not a menu to self-serve.",
+      },
+      {
+        question: "What can go wrong?",
+        answer:
+          "Infection of the pocket, a kinked or migrated catheter, pump failure, overdose or withdrawal after a programming or refill error, and granuloma at the catheter tip. This is why pumps live in programs.",
+      },
+      {
+        question: "Is it for chronic back pain?",
+        answer:
+          "That is not the population the core trial was built on. A pump for non-cancer pain is a much more contested, specialist decision.",
+      },
+      {
+        question: "What about addiction?",
+        answer:
+          "Physical dependence is expected biology with morphine-class infusions. Addiction is a different problem. If use has become hard to control, the SAMHSA National Helpline is 1-800-662-HELP (4357).",
+      },
+    ],
+    references: [
+      {
+        source: "J Clin Oncol / PubMed",
+        title:
+          "Smith et al. – Randomized Clinical Trial of an Implantable Drug Delivery System Compared With Comprehensive Medical Management for Refractory Cancer Pain",
+        url: "https://pubmed.ncbi.nlm.nih.gov/12351602/",
+      },
+      {
+        source: "JAMA / PubMed",
+        title: "Staats et al. – Intrathecal ziconotide in the treatment of refractory pain in patients with cancer or AIDS",
+        url: "https://pubmed.ncbi.nlm.nih.gov/14709577/",
+      },
+      {
+        source: "Neuromodulation / PubMed",
+        title: "Deer et al. – The Polyanalgesic Consensus Conference (PACC): recommendations on intrathecal drug infusion systems",
+        url: "https://pubmed.ncbi.nlm.nih.gov/28042904/",
+      },
+    ],
+    related: [
+      {
+        title: "Cancer pain",
+        href: "/conditions/cancer-pain",
+        blurb: "The setting where a pump has its strongest evidence.",
+      },
+      {
+        title: "Interventional procedures",
+        href: "/treatments/interventional-procedures",
+        blurb: "The parent ladder, and the window rule.",
+      },
+      {
+        title: "Spinal cord stimulation",
+        href: "/treatments/spinal-cord-stimulation",
+        blurb: "The other implant, built for nerve-type pain rather than a drug reservoir.",
+      },
+      {
+        title: "Opioids, honestly",
+        href: "/treatments/opioid-stewardship",
+        blurb: "Dependence versus addiction when morphine-class drugs are in the mix.",
+      },
+    ],
+  },
 ];

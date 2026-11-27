@@ -346,6 +346,30 @@ export const EMBLEMS: Record<string, string> = {
       `<circle cx="24" cy="24" r="2.4" fill="${A}" stroke-width="0"/>`,
   ),
 
+  "joint-steroid-injections": g(
+    `<ellipse stroke="${T}" cx="24" cy="22" rx="10" ry="14"/>` +
+      `<path stroke="${A}" d="M24 8 v28" stroke-width="2.2"/>` +
+      `<circle cx="24" cy="22" r="2.2" fill="${A}" stroke-width="0"/>`,
+  ),
+
+  suzetrigine: g(
+    `<path stroke="${T}" d="M6 24 h36" stroke-width="3"/>` +
+      `<rect stroke="${S}" x="18" y="16" width="12" height="16" rx="2"/>` +
+      `<circle cx="24" cy="24" r="2" fill="${A}" stroke-width="0"/>`,
+  ),
+
+  "vertebroplasty-and-kyphoplasty": g(
+    `<rect stroke="${T}" x="14" y="8" width="20" height="12" rx="2"/>` +
+      `<rect stroke="${T}" x="16" y="22" width="16" height="10" rx="2"/>` +
+      `<path stroke="${A}" d="M24 32 v10" stroke-width="2.6"/>`,
+  ),
+
+  "intrathecal-pumps": g(
+    `<circle stroke="${T}" cx="18" cy="24" r="10"/>` +
+      `<path stroke="${T}" d="M28 24 H40" stroke-width="2.6"/>` +
+      `<rect stroke="${S}" x="38" y="16" width="6" height="16" rx="2"/>`,
+  ),
+
   // Capsule and tablet over the signal wave they quiet — many tools, one map.
   "medications-for-pain": g(
     `<rect stroke="${T}" x="6" y="10" width="22" height="11" rx="5.5" transform="rotate(-24 17 15.5)"/>` +
