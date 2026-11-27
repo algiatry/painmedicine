@@ -171,6 +171,12 @@ export const HUBS: Hub[] = [
         href: "/treatments/cgrp-and-headache-treatments",
       },
       {
+        title: "Antidepressants and anticonvulsants for pain",
+        blurb:
+          "Gabapentin, pregabalin, duloxetine, and the tricyclics: why the names confuse, where the evidence holds, and where a sciatica trial found nothing.",
+        href: "/treatments/antidepressants-and-anticonvulsants",
+      },
+      {
         title: "Interventional procedures",
         blurb:
           "The image-guided middle layer between pills and surgery: blocks, radiofrequency ablation, stimulators you can test-drive, and the window rule that makes them all work.",

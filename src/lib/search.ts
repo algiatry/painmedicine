@@ -60,6 +60,8 @@ export const ALIASES: Record<string, string> = {
     "painkillers pain relievers medicine drugs pills nsaids ibuprofen acetaminophen tylenol gabapentin",
   "/treatments/cgrp-and-headache-treatments":
     "cgrp aimovig nurtec ubrelvy qulipta ajovy emgality vyepti gepants triptans botox reyvow lasmiditan migraine medication headache meds zavzpret",
+  "/treatments/antidepressants-and-anticonvulsants":
+    "gabapentin lyrica cymbalta pregabalin neurontin duloxetine amitriptyline elavil anticonvulsant nerve pain meds gabapentinoids snri",
   "/treatments/medication-organ-safety": "side effects liver kidney stomach tylenol ibuprofen nsaids",
   "/treatments/interventional-procedures":
     "injections epidural steroid nerve block radiofrequency ablation spinal cord stimulator",

@@ -309,6 +309,14 @@ export const EMBLEMS: Record<string, string> = {
       `<circle stroke="${A}" cx="36" cy="14" r="10" stroke-width="2.2"/>`,
   ),
 
+  // Descending brakes meeting an overexcited nerve.
+  "antidepressants-and-anticonvulsants": g(
+    `<path stroke="${T}" d="M24 6v16"/>` +
+      `<path stroke="${T}" d="M16 18l8 8 8-8" stroke-width="2.2"/>` +
+      `<path stroke="${S}" d="M8 36h32" stroke-width="2.2"/>` +
+      `<circle cx="24" cy="36" r="4" fill="${A}" stroke-width="0"/>`,
+  ),
+
   // Capsule and tablet over the signal wave they quiet — many tools, one map.
   "medications-for-pain": g(
     `<rect stroke="${T}" x="6" y="10" width="22" height="11" rx="5.5" transform="rotate(-24 17 15.5)"/>` +
