@@ -1,3 +1,4 @@
+import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import { Figure, H2, KeyTakeaways, P, anim } from "@/components/science/Figure";
 import PipelineMatrix from "./PipelineMatrix";
@@ -371,6 +372,16 @@ export default function PipelineTracker() {
   return (
     <div>
       <JsonLd data={datasetJsonLd()} />
+
+      <P>
+        <strong>Looking for pain treatment options available today?</strong>{" "}
+        Explore medications, procedures, and physical and behavioral therapies
+        in our{" "}
+        <Link href="/treatments" className="text-brand underline underline-offset-2">
+          guide to current pain treatments
+        </Link>
+        .
+      </P>
 
       <LandscapeFigure />
 

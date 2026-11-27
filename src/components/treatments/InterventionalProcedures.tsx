@@ -157,6 +157,31 @@ export default function InterventionalProcedures() {
         ]}
       />
 
+      <H2 id="procedure-guides">Which procedure did your clinician mention?</H2>
+      <ul className="mt-4 list-disc space-y-2 pl-5 text-body">
+        <li>
+          <Link href="/treatments/epidural-steroid-injections" className={link}>
+            Epidural steroid injections
+          </Link>
+          {" "}– what the injection is used for, how long relief may last, and
+          which risks to discuss.
+        </li>
+        <li>
+          <Link href="/treatments/nerve-blocks-and-rfa" className={link}>
+            Nerve blocks and radiofrequency ablation
+          </Link>
+          {" "}– why a clinician may start with a nerve block and how the
+          results can inform the next step.
+        </li>
+        <li>
+          <Link href="/treatments/spinal-cord-stimulation" className={link}>
+            Spinal cord stimulation
+          </Link>
+          {" "}– what happens during a stimulator trial and what to consider
+          before an implant.
+        </li>
+      </ul>
+
       <H2 id="the-map">The precision map</H2>
       <TargetsFigure />
       <P>
