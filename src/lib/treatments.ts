@@ -277,6 +277,11 @@ export const TREATMENT_ARTICLES: Article[] = [
         href: "/treatments/muscle-relaxants-for-pain",
         blurb: "Short-term for spasm, mostly sedation, not a maintenance plan.",
       },
+      {
+        title: "Acetaminophen and NSAIDs",
+        href: "/treatments/acetaminophen-and-nsaids",
+        blurb: "The everyday two: central versus tissue, and the stacking trap.",
+      },
     ],
   },
 
@@ -2495,6 +2500,96 @@ export const TREATMENT_ARTICLES: Article[] = [
         title: "Opioids, honestly",
         href: "/treatments/opioid-stewardship",
         blurb: "Dependence versus addiction when morphine-class drugs are in the mix.",
+      },
+    ],
+  },
+
+  {
+    hub: HUB,
+    slug: "acetaminophen-and-nsaids",
+    title: "Acetaminophen and NSAIDs",
+    seoTitle: "Tylenol vs Ibuprofen: Acetaminophen, NSAIDs, and When to Use Each",
+    description:
+      "Acetaminophen acts centrally with little anti-inflammatory effect. NSAIDs block prostaglandins at the tissue. Covers the stacking trap in cold medicines, ACP's back-pain listing, and why stomach, kidney, and heart history decide.",
+    status: "sourced",
+    lastUpdated: "2026-11-27",
+    answer:
+      "Acetaminophen (Tylenol, paracetamol) reduces pain mainly in the brain and spinal cord and is not much of an anti-inflammatory. NSAIDs such as ibuprofen and naproxen block prostaglandin chemistry at injured tissue. Guidelines list NSAIDs among first medication options for many inflammatory pains. Acetaminophen's boundary is the liver, especially when it hides in combination products. NSAIDs tax the stomach, kidneys, and heart.",
+    faqs: [
+      {
+        question: "Is Tylenol or ibuprofen better for pain?",
+        answer:
+          "It depends on the mechanism. Swelling, sprain, dental, menstrual, and many arthritis flares match NSAIDs. Pain without much inflammation, or a reason to avoid NSAIDs, matches acetaminophen. Neither is a nerve-pain drug.",
+      },
+      {
+        question: "Why do pharmacists ask what else I took?",
+        answer:
+          "Acetaminophen sits inside hundreds of combination cold, flu, sleep, and prescription products. Taken together they add up. Unintentional overdose is a leading cause of acute liver failure. The FDA's consumer warning is about doubling up, not about labeled use of a single product.",
+      },
+      {
+        question: "Are NSAIDs hard on the heart?",
+        answer:
+          "The FDA added a class cardiovascular warning in 2015. Stomach bleeding and kidney strain are the other long-running cautions. Blood thinners, prior ulcers, kidney disease, and heart disease are reasons to ask before making ibuprofen daily.",
+      },
+      {
+        question: "Can I take both together?",
+        answer:
+          "Some acute-pain protocols use both, because they act at different addresses. That is a clinician or pharmacist decision, not a default. Stacking two NSAIDs is a different, worse idea.",
+      },
+      {
+        question: "Where do gel and aspirin fit?",
+        answer:
+          "Diclofenac gel is an NSAID through the skin, covered on the topicals page. Aspirin is in the NSAID family with an extra clotting story. The organ-safety page is the health-history half for all of them.",
+      },
+    ],
+    references: [
+      {
+        source: "Annals of Internal Medicine / PubMed",
+        title:
+          "Qaseem et al. – Noninvasive Treatments for Acute, Subacute, and Chronic Low Back Pain: A Clinical Practice Guideline From the American College of Physicians (2017)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/28192789/",
+      },
+      {
+        source: "FDA Consumer Update",
+        title: "Don't Double Up on Acetaminophen",
+        url: "https://www.fda.gov/consumers/consumer-updates/dont-double-acetaminophen",
+      },
+      {
+        source: "NCBI StatPearls",
+        title: "Acetaminophen",
+        url: "https://www.ncbi.nlm.nih.gov/books/NBK482369/",
+      },
+      {
+        source: "NCBI StatPearls",
+        title: "Nonsteroidal Anti-Inflammatory Drugs (NSAIDs)",
+        url: "https://www.ncbi.nlm.nih.gov/books/NBK547742/",
+      },
+    ],
+    related: [
+      {
+        title: "Medications for pain",
+        href: "/treatments/medications-for-pain",
+        blurb: "The wider class map these two everyday tools sit inside.",
+      },
+      {
+        title: "Pain medications & your organs",
+        href: "/treatments/medication-organ-safety",
+        blurb: "Liver, kidneys, heart, and gut in more depth.",
+      },
+      {
+        title: "Low back pain",
+        href: "/conditions/low-back-pain",
+        blurb: "Where ACP lists NSAIDs among first medication options.",
+      },
+      {
+        title: "Arthritis pain",
+        href: "/conditions/arthritis-pain",
+        blurb: "Where anti-inflammatories earn their keep, and where they do not.",
+      },
+      {
+        title: "Topical treatments for pain",
+        href: "/treatments/topicals-for-pain",
+        blurb: "Diclofenac gel: the same class through the skin.",
       },
     ],
   },

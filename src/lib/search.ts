@@ -77,6 +77,8 @@ export const ALIASES: Record<string, string> = {
     "cortisone shot steroid injection knee hip shoulder joint injection kenalog depomedrol",
   "/treatments/suzetrigine":
     "journavx vx-548 nav1.8 vertex new pain pill suzetrigine",
+  "/treatments/acetaminophen-and-nsaids":
+    "tylenol ibuprofen advil aleve naproxen aspirin paracetamol nsaid acetaminophen",
   "/treatments/vertebroplasty-and-kyphoplasty":
     "vertebroplasty kyphoplasty cement spine compression fracture balloon kypho",
   "/treatments/intrathecal-pumps":

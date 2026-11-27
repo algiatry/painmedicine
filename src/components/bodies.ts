@@ -63,6 +63,7 @@ import JointSteroidInjections from "./treatments/JointSteroidInjections";
 import Suzetrigine from "./treatments/Suzetrigine";
 import VertebroplastyAndKyphoplasty from "./treatments/VertebroplastyAndKyphoplasty";
 import IntrathecalPumps from "./treatments/IntrathecalPumps";
+import AcetaminophenAndNsaids from "./treatments/AcetaminophenAndNsaids";
 
 /**
  * Maps an article slug to the component that renders its illustrated body.
@@ -134,4 +135,5 @@ export const ARTICLE_BODIES: Record<string, ComponentType> = {
   suzetrigine: Suzetrigine,
   "vertebroplasty-and-kyphoplasty": VertebroplastyAndKyphoplasty,
   "intrathecal-pumps": IntrathecalPumps,
+  "acetaminophen-and-nsaids": AcetaminophenAndNsaids,
 };
