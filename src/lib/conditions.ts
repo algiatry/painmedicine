@@ -339,7 +339,7 @@ export const CONDITION_ARTICLES: Article[] = [
     description:
       "Migraine is an inherited neurological condition involving the trigeminal-CGRP pathway. Covers the four phases of an attack, medication-overuse headache, and newer targeted treatments.",
     status: "sourced",
-    lastUpdated: "2026-08-28",
+    lastUpdated: "2026-11-27",
     answer:
       "Migraine is an inherited neurological disease, not a bad headache – the headache is one phase of a whole-brain attack that can begin a day before the pain and end a day after it. It affects roughly one person in seven, ranks second among the world's causes of disability, first among young women, and is now treatable with drugs designed for its specific biology.",
     faqs: [
@@ -404,6 +404,12 @@ export const CONDITION_ARTICLES: Article[] = [
       },
     ],
     related: [
+      {
+        title: "CGRP therapies and headache medications",
+        href: "/treatments/cgrp-and-headache-treatments",
+        blurb:
+          "The antibodies, gepants, triptans, and Botox: what the trials show, and what they do not.",
+      },
       {
         title: "Biologics & gene-targeted therapy",
         href: "/future-of-pain-medicine/biologics-and-gene-therapy",
@@ -2115,6 +2121,12 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Pain medications & your organs",
         href: "/treatments/medication-organ-safety",
         blurb: "What the everyday painkillers ask of the liver, kidneys, heart, and stomach when they are used often.",
+      },
+      {
+        title: "CGRP therapies and headache medications",
+        href: "/treatments/cgrp-and-headache-treatments",
+        blurb:
+          "Galcanezumab for episodic cluster, and the migraine CGRP drugs that do not carry a cluster indication.",
       },
       {
         title: "Physical & behavioral therapies",
