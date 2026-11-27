@@ -272,6 +272,11 @@ export const TREATMENT_ARTICLES: Article[] = [
         href: "/treatments/topicals-for-pain",
         blurb: "Lidocaine, capsaicin, and diclofenac gel when the pain is in one findable place.",
       },
+      {
+        title: "Muscle relaxants for pain",
+        href: "/treatments/muscle-relaxants-for-pain",
+        blurb: "Short-term for spasm, mostly sedation, not a maintenance plan.",
+      },
     ],
   },
 
@@ -2085,6 +2090,93 @@ export const TREATMENT_ARTICLES: Article[] = [
         title: "Nerve blocks and radiofrequency ablation",
         href: "/treatments/nerve-blocks-and-rfa",
         blurb: "The other needle: a diagnostic question, then heat, not a steroid bath.",
+      },
+    ],
+  },
+
+  {
+    hub: HUB,
+    slug: "muscle-relaxants-for-pain",
+    title: "Muscle relaxants for pain",
+    seoTitle: "Muscle Relaxants for Back Pain: Cyclobenzaprine, What They Do",
+    description:
+      "Most muscle relaxants sedate the nervous system rather than loosening a muscle. Covers ACP's acute-back listing, Cashin's 2021 review, the Friedman trial that adding cyclobenzaprine to naproxen did not help, and why they are a short course.",
+    status: "sourced",
+    lastUpdated: "2026-11-27",
+    answer:
+      "Most pills called muscle relaxants act on the brain and spinal cord, not on the muscle fiber. They are a short course for acute back or neck spasm, with drowsiness as the usual tax. ACP lists them as an option for acute low back pain if a drug is wanted. A 2021 review found the average pain drop may not be clinically important, and adding cyclobenzaprine to naproxen did not improve function at one week.",
+    faqs: [
+      {
+        question: "Do muscle relaxants relax muscles?",
+        answer:
+          "Mostly no. Cyclobenzaprine, methocarbamol, metaxalone, and similar antispasmodics sedate the central nervous system. Baclofen and dantrolene are a different family, used for true neurologic spasticity. The name describes the symptom people hope to treat, not where the drug works.",
+      },
+      {
+        question: "Do they work for back pain?",
+        answer:
+          "ACP 2017 lists skeletal muscle relaxants as an option for acute or subacute low back pain if a medicine is wanted, with moderate-quality evidence. Cashin's 2021 systematic review found they might reduce pain in the first two weeks, but the average drop may not be clinically important, and drowsiness is common.",
+      },
+      {
+        question: "Should I add one if I already take naproxen?",
+        answer:
+          "Not automatically. Friedman's 2015 emergency-department trial found that adding cyclobenzaprine to naproxen did not improve function or pain at one week compared with adding placebo. Extra sedation is the more reliable extra.",
+      },
+      {
+        question: "How long should I take a muscle relaxant?",
+        answer:
+          "These are written as a short course, days rather than months. There is little evidence for staying on them. If a course has gone on for weeks, that is a reason to ask the prescriber what the plan is, not to refill on autopilot.",
+      },
+      {
+        question: "Is Soma (carisoprodol) different?",
+        answer:
+          "Yes. It is a U.S. Schedule IV controlled substance because it is metabolized to meprobamate and has a misuse history. It is a poor default for ordinary spasm. Cyclobenzaprine is the name most people meet first.",
+      },
+      {
+        question: "Are they the same as nerve-pain medications?",
+        answer:
+          "No. Gabapentin, pregabalin, duloxetine, and the tricyclics are a different family, used for neuropathic pain. Muscle relaxants are for acute spasm. Mixing those jobs is how a seized-up weekend becomes a long prescription.",
+      },
+    ],
+    references: [
+      {
+        source: "The BMJ / PubMed",
+        title:
+          "Cashin et al. – Efficacy, acceptability, and safety of muscle relaxants for adults with non-specific low back pain: systematic review and meta-analysis",
+        url: "https://pubmed.ncbi.nlm.nih.gov/34233900/",
+      },
+      {
+        source: "Annals of Internal Medicine / PubMed",
+        title:
+          "Qaseem et al. – Noninvasive Treatments for Acute, Subacute, and Chronic Low Back Pain: A Clinical Practice Guideline From the American College of Physicians (2017)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/28192789/",
+      },
+      {
+        source: "JAMA / PubMed",
+        title:
+          "Friedman et al. – Naproxen With Cyclobenzaprine, Oxycodone/Acetaminophen, or Placebo for Treating Acute Low Back Pain: A Randomized Clinical Trial",
+        url: "https://pubmed.ncbi.nlm.nih.gov/26501533/",
+      },
+    ],
+    related: [
+      {
+        title: "Low back pain",
+        href: "/conditions/low-back-pain",
+        blurb: "The condition these pills are most often written for, and the guideline playbook.",
+      },
+      {
+        title: "Neck pain",
+        href: "/conditions/neck-pain",
+        blurb: "The other common seized-up territory.",
+      },
+      {
+        title: "Medications for pain",
+        href: "/treatments/medications-for-pain",
+        blurb: "The wider class map these short-course sedatives sit inside.",
+      },
+      {
+        title: "Physical & behavioral therapies",
+        href: "/treatments/physical-and-behavioral-therapies",
+        blurb: "What the short course is supposed to make room for.",
       },
     ],
   },

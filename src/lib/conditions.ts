@@ -126,6 +126,11 @@ export const CONDITION_ARTICLES: Article[] = [
         href: "/treatments/epidural-steroid-injections",
         blurb: "A short-term bridge for radiating leg pain, not a shot for ordinary backache.",
       },
+      {
+        title: "Muscle relaxants for pain",
+        href: "/treatments/muscle-relaxants-for-pain",
+        blurb: "A short course for spasm, not a stronger painkiller, and not a maintenance plan.",
+      },
     ],
   },
 
@@ -1283,6 +1288,11 @@ export const CONDITION_ARTICLES: Article[] = [
         title: "Nerve blocks and radiofrequency ablation",
         href: "/treatments/nerve-blocks-and-rfa",
         blurb: "Cervical facet pain uses the same test-then-treat sequence as the low back.",
+      },
+      {
+        title: "Muscle relaxants for pain",
+        href: "/treatments/muscle-relaxants-for-pain",
+        blurb: "A short course for a seized-up neck, and why the name oversells the mechanism.",
       },
       {
         title: "Your first visit to a pain physician",
