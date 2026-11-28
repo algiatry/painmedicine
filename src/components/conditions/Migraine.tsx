@@ -112,8 +112,9 @@ export default function Migraine() {
         waking up first. About one in three people then experience{" "}
         <strong>aura</strong>: a slow electrical wave crossing the
         brain&rsquo;s surface, felt most often as shimmering zigzags or a
-        growing blind spot that spreads over twenty to sixty minutes before
-        fading. The <strong>headache phase</strong> brings the signature:
+        growing blind spot. Visual symptoms can spread gradually. An
+        individual aura symptom typically lasts 5 to 60 minutes, though some
+        can last longer. The <strong>headache phase</strong> brings the signature:
         throbbing, often one-sided pain lasting hours to days, with a
         nervous system so amplified that light, sound, smells, and ordinary
         movement all hurt. And then the <strong>postdrome</strong> – the

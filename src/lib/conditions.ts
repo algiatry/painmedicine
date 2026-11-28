@@ -387,7 +387,7 @@ export const CONDITION_ARTICLES: Article[] = [
       {
         question: "What is a migraine aura, and how do I know it isn't a stroke?",
         answer:
-          "Aura is a slow electrical wave moving across the brain's surface, experienced by about one in three people with migraine, most often as shimmering zigzags or blind spots that gradually spread over twenty to sixty minutes, then fade. The gradual march is the signature: stroke symptoms typically arrive suddenly and all at once. Any first-ever aura, aura that includes weakness or trouble speaking, or a sudden thunderclap headache deserves emergency evaluation – this is one place not to self-diagnose.",
+          "Aura is a slow electrical wave moving across the brain's surface, experienced by about one in three people with migraine, most often as shimmering zigzags or blind spots that can spread gradually and then fade. An individual aura symptom typically lasts 5 to 60 minutes, though some can last longer. Timing alone cannot reliably distinguish aura from stroke. Any first-ever aura, aura that includes weakness or trouble speaking, or a sudden thunderclap headache deserves emergency evaluation – this is one place not to self-diagnose.",
       },
       {
         question: "Can taking painkillers make migraine worse?",
@@ -405,6 +405,11 @@ export const CONDITION_ARTICLES: Article[] = [
         source: "ICHD-3 (IHS)",
         title: "The International Classification of Headache Disorders, 3rd edition – migraine criteria",
         url: "https://ichd-3.org/",
+      },
+      {
+        source: "Front Hum Neurosci / PubMed",
+        title: "Symptoms and patterns of symptom propagation in incipient ischemic stroke and migraine aura",
+        url: "https://pubmed.ncbi.nlm.nih.gov/36741781/",
       },
       {
         source: "J Headache Pain / PubMed",
