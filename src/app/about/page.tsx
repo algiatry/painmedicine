@@ -1,3 +1,4 @@
+import ReadingControls from "@/components/ReadingControls";
 import Link from "next/link";
 import { SITE, correctionHref } from "@/lib/site";
 import { pageMetadata } from "@/lib/metadata";
@@ -12,10 +13,11 @@ export const metadata = pageMetadata({
 export default function AboutPage() {
   const correction = correctionHref();
   return (
-    <article className="editorial-shell space-y-8">
+    <article className="editorial-shell space-y-8 editorial-policy-reading">
       <h1 className="editorial-header editorial-title">
         About {SITE.name}
       </h1>
+      <ReadingControls />
 
       <section className="space-y-4">
         <p className="text-lg text-body">

@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
+import SearchBrowsePaths from "@/components/SearchBrowsePaths";
 import { prepare, search, type PreparedEntry, type SearchEntry } from "@/lib/search";
 
 /** Starting points shown before anything is typed. */
@@ -161,6 +162,7 @@ export default function SiteSearch() {
                     {r.section}
                   </span>
                 </div>
+                {r.reviewLabel && <p className="text-xs text-subtle">{r.reviewLabel}</p>}
                 <p className="mt-0.5 line-clamp-2 text-sm text-muted">
                   {r.summary}
                 </p>
@@ -198,17 +200,8 @@ export default function SiteSearch() {
             ) : !index ? (
               <p className="py-6">Loading…</p>
             ) : trimmed && results.length === 0 ? (
-              <p className="py-6">
-                Nothing matches &ldquo;{trimmed}&rdquo;. Try a condition, a treatment, or a
-                term from a report – or browse the{" "}
-                <button
-                  type="button"
-                  className="font-medium text-brand underline"
-                  onClick={() => go("/glossary")}
-                >
-                  glossary
-                </button>
-                .
+              <p className="break-words pt-4">
+                No results for &ldquo;{trimmed}&rdquo;. Try a shorter term or browse by topic.
               </p>
             ) : !trimmed ? (
               <div className="py-4">
@@ -233,6 +226,9 @@ export default function SiteSearch() {
               </div>
             ) : null}
           </div>
+          {index && trimmed && results.length === 0 && (
+            <div className="px-3 pb-2 text-sm"><SearchBrowsePaths onNavigate={close} /></div>
+          )}
         </div>
       </dialog>
     </>

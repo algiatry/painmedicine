@@ -1,10 +1,42 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useSyncExternalStore } from "react";
+
+const KEY = "painmedicine-reading-preferences";
+const CHANGE = "painmedicine:reading-preferences";
+let fallback = "";
+
+function readPreferences() {
+  try {
+    return localStorage.getItem(KEY) ?? fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function subscribe(listener: () => void) {
+  window.addEventListener(CHANGE, listener);
+  window.addEventListener("storage", listener);
+  return () => {
+    window.removeEventListener(CHANGE, listener);
+    window.removeEventListener("storage", listener);
+  };
+}
 
 export default function ReadingControls() {
-  const [largeText, setLargeText] = useState(false);
-  const [lowGlare, setLowGlare] = useState(false);
+  const preferences = useSyncExternalStore(subscribe, readPreferences, () => "");
+  const largeText = preferences[0] === "1";
+  const lowGlare = preferences[1] === "1";
+
+  function update(text: boolean, glare: boolean) {
+    fallback = `${Number(text)}${Number(glare)}`;
+    try {
+      localStorage.setItem(KEY, fallback);
+    } catch {
+      // The controls still work for the current session with storage disabled.
+    }
+    window.dispatchEvent(new Event(CHANGE));
+  }
 
   useEffect(() => {
     const root = document.documentElement;
@@ -26,11 +58,11 @@ export default function ReadingControls() {
     >
       <button
         type="button"
-        onClick={() => setLargeText((v) => !v)}
+        onClick={() => update(!largeText, lowGlare)}
         aria-pressed={largeText}
-        className={`rounded-full border px-2.5 py-1 font-mono transition-colors ${
+        className={`min-h-11 rounded-md border px-3 py-2 font-mono transition-colors ${
           largeText
-            ? "border-brand bg-brand/10 text-brand"
+            ? "border-brand bg-note text-note-ink"
             : "border-line bg-background text-muted hover:border-brand/50 hover:text-ink"
         }`}
       >
@@ -38,11 +70,11 @@ export default function ReadingControls() {
       </button>
       <button
         type="button"
-        onClick={() => setLowGlare((v) => !v)}
+        onClick={() => update(largeText, !lowGlare)}
         aria-pressed={lowGlare}
-        className={`rounded-full border px-2.5 py-1 font-mono transition-colors ${
+        className={`min-h-11 rounded-md border px-3 py-2 font-mono transition-colors ${
           lowGlare
-            ? "border-brand bg-brand/10 text-brand"
+            ? "border-brand bg-note text-note-ink"
             : "border-line bg-background text-muted hover:border-brand/50 hover:text-ink"
         }`}
       >

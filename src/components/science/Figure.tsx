@@ -90,12 +90,12 @@ export function KeyTakeaways({ items }: { items: ReactNode[] }) {
   return (
     <aside
       aria-label="Key takeaways"
-      className="my-8 rounded-2xl border border-brand/15 bg-gradient-to-b from-paper to-background p-6 shadow-card sm:p-7"
+      className="my-7 rounded-md border border-line border-s-4 border-s-brand bg-paper px-4 py-4 sm:px-6"
     >
-      <p className="text-xs font-semibold uppercase tracking-widest text-brand">
+      <p className="text-xs font-semibold uppercase tracking-widest text-brand-strong">
         Key takeaways
       </p>
-      <ul className="mt-4 space-y-3">
+      <ul className="mt-3 space-y-2">
         {items.map((item, i) => (
           <li key={i} className="flex gap-3 text-body">
             <svg

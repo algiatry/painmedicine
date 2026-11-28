@@ -123,6 +123,12 @@ export default function Home() {
                 >
                   See treatment options
                 </Link>
+                <Link
+                  href="/what-is-pain-medicine/your-first-visit"
+                  className="inline-flex min-h-11 items-center px-2 text-sm font-semibold text-brand-strong underline underline-offset-4"
+                >
+                  What to ask your clinician
+                </Link>
               </div>
               <ul className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-subtle">
                 {TRUST.map((t) => (

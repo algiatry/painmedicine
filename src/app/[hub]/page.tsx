@@ -1,10 +1,11 @@
+import ReadingControls from "@/components/ReadingControls";
 import HubIcon from "@/components/HubIcon";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import JsonLd from "@/components/JsonLd";
 import ReviewByline from "@/components/ReviewByline";
-import { faqJsonLd, medicalWebPageJsonLd } from "@/lib/schema";
+import { breadcrumbJsonLd, faqJsonLd, medicalWebPageJsonLd } from "@/lib/schema";
 import { HUBS, getHub } from "@/lib/hubs";
 import { pageMetadata } from "@/lib/metadata";
 import ArticleEmblem from "@/components/ArticleEmblem";
@@ -39,6 +40,17 @@ export default async function HubPage({
   const { hub: slug } = await params;
   const hub = getHub(slug);
   if (!hub) notFound();
+  const isConditions = hub.slug === "conditions";
+  const groups = new Map<string, typeof hub.planned>();
+  if (isConditions) {
+    for (const item of [...hub.planned].sort((a, b) => a.title.localeCompare(b.title, "en"))) {
+      const letter = item.title[0].toUpperCase();
+      const group = groups.get(letter) ?? [];
+      group.push(item);
+      groups.set(letter, group);
+    }
+  }
+  const directory = isConditions ? [...groups] : [["", hub.planned] as const];
   const isFutureHub = hub.slug === "future-of-pain-medicine";
 
   return (
@@ -51,10 +63,17 @@ export default async function HubPage({
           lastUpdated: hub.lastUpdated,
           publishedAt: hub.publishedAt,
           review: hub.review,
+          status: hub.status,
         })}
       />
       {hub.faqs && hub.faqs.length > 0 && <JsonLd data={faqJsonLd(hub.faqs)} />}
 
+      <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: hub.title, path: `/${hub.slug}` }])} />
+      <nav aria-label="Breadcrumb" className="mb-4 text-sm text-subtle">
+        <Link href="/" className="underline underline-offset-2">Home</Link>
+        <span aria-hidden="true"> / </span>
+        <span aria-current="page">{hub.title}</span>
+      </nav>
       <header className="editorial-header space-y-4">
         <span className="section-symbol"><HubIcon href={`/${hub.slug}`} /></span>
         <h1 className="editorial-title">
@@ -68,9 +87,11 @@ export default async function HubPage({
         />
       </header>
 
-      <div className="mt-8 space-y-5">
+      <div className="mt-4"><ReadingControls /></div>
+
+      <div className="editorial-reading mt-6 space-y-5">
         {hub.intro.map((p, i) => (
-          <p key={i} className="text-lg text-body">
+          <p key={i} className="text-body">
             {p}
           </p>
         ))}
@@ -107,53 +128,67 @@ export default async function HubPage({
           id={`${hub.slug}-coverage`}
           className="text-2xl font-bold tracking-tight text-ink"
         >
-          {isFutureHub
+          {isConditions ? "Conditions A–Z" : isFutureHub
             ? "New and emerging approaches to pain treatment"
             : hub.planned.some((p) => p.href)
               ? "Explore this section"
               : "What this section will cover"}
         </h2>
-        <ul className="mt-5 border-t border-line">
-          {hub.planned.map((item) =>
-            item.href ? (
-              <li key={item.title}>
-                <Link
-                  href={item.href}
-                  className="editorial-index-link group flex items-start gap-3 px-2 py-4 sm:gap-4 sm:px-3"
-                >
-                  <span className="flex size-12 shrink-0 items-center justify-center rounded-lg border border-edge bg-plate">
-                    <ArticleEmblem
-                      slug={item.href.split("/").filter(Boolean).pop() ?? ""}
-                      className="size-8"
-                    />
-                  </span>
-                  <span className="flex-1">
-                    <span className="block text-lg font-semibold text-ink group-hover:text-brand group-hover:underline">
-                      {item.title}
-                    </span>
-                    <span className="mt-1 block text-sm text-muted">
-                      {item.blurb}
-                    </span>
-                  </span>
-                  <span
-                    aria-hidden="true"
-                    className="mt-0.5 text-faint transition-colors group-hover:text-brand"
+        {isConditions && (
+          <nav aria-label="Jump to conditions by letter" className="mt-4 flex flex-wrap gap-2">
+            {[...groups.keys()].map((letter) => (
+              <a key={letter} href={`#conditions-${letter}`} aria-label={`Conditions starting with ${letter}`} className="inline-grid size-11 place-items-center rounded-md border border-line bg-paper font-semibold text-brand-strong underline underline-offset-2 hover:border-brand">
+                {letter}
+              </a>
+            ))}
+          </nav>
+        )}
+        {directory.map(([letter, items]) => (
+          <div key={letter} className="mt-5">
+            {letter && <h3 id={`conditions-${letter}`} tabIndex={-1} className="scroll-mt-24 text-lg font-semibold text-ink">{letter}</h3>}
+            <ul className="border-t border-line">
+              {items.map((item) =>
+                item.href ? (
+                  <li key={item.title}>
+                    <Link
+                      href={item.href}
+                      className="editorial-index-link group flex items-start gap-3 px-2 py-4 sm:gap-4 sm:px-3"
+                    >
+                      <span className="flex size-12 shrink-0 items-center justify-center rounded-lg border border-edge bg-plate">
+                        <ArticleEmblem
+                          slug={item.href.split("/").filter(Boolean).pop() ?? ""}
+                          className="size-8"
+                        />
+                      </span>
+                      <span className="flex-1">
+                        <span className="block text-lg font-semibold text-ink group-hover:text-brand group-hover:underline">
+                          {item.title}
+                        </span>
+                        <span className="mt-1 block text-sm text-muted">
+                          {item.blurb}
+                        </span>
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        className="mt-0.5 text-faint transition-colors group-hover:text-brand"
+                      >
+                        →
+                      </span>
+                    </Link>
+                  </li>
+                ) : (
+                  <li
+                    key={item.title}
+                    className="rounded-xl border border-dashed border-edge bg-well/60 p-5"
                   >
-                    →
-                  </span>
-                </Link>
-              </li>
-            ) : (
-              <li
-                key={item.title}
-                className="rounded-xl border border-dashed border-edge bg-well/60 p-5"
-              >
-                <h3 className="font-semibold text-ink">{item.title}</h3>
-                <p className="mt-1 text-sm text-muted">{item.blurb}</p>
-              </li>
-            ),
-          )}
-        </ul>
+                    <h3 className="font-semibold text-ink">{item.title}</h3>
+                    <p className="mt-1 text-sm text-muted">{item.blurb}</p>
+                  </li>
+                ),
+              )}
+            </ul>
+          </div>
+        ))}
       </section>
 
       {hub.faqs && hub.faqs.length > 0 && (

@@ -71,6 +71,7 @@ export function websiteJsonLd() {
     description: SITE.description,
     inLanguage: "en-US",
     publisher: { "@id": `${SITE.url}/#organization` },
+    about: { "@type": "Thing", name: "Pain medicine" },
     potentialAction: {
       "@type": "SearchAction",
       target: {
@@ -92,6 +93,7 @@ export function organizationJsonLd() {
     description: SITE.description,
     logo: `${SITE.url}/icon-512.png`,
     image: `${SITE.url}/opengraph-image`,
+    publishingPrinciples: `${SITE.url}/about`,
   };
 }
 
@@ -103,17 +105,21 @@ export function medicalWebPageJsonLd(meta: {
   /** ISO editorial publish date; when present, emitted as `datePublished`. */
   publishedAt?: string;
   review?: PageReview;
+  status: ReviewStatus;
+  citations?: string[];
 }) {
-  const profile = meta.review ? getReviewer(meta.review.reviewer) : undefined;
+  const profile = meta.status === "reviewed" && meta.review ? getReviewer(meta.review.reviewer) : undefined;
   return {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
+    "@id": `${SITE.url}${meta.path}#webpage`,
     name: meta.title,
     description: meta.description,
     url: `${SITE.url}${meta.path}`,
     ...(meta.publishedAt ? { datePublished: meta.publishedAt } : {}),
     inLanguage: "en-US",
     dateModified: meta.lastUpdated,
+    ...(meta.citations?.length ? { citation: meta.citations } : {}),
     // Link into the site's entity graph. The Organization and WebSite nodes
     // (with these @ids) are emitted site-wide from the root layout, so these
     // references resolve without re-declaring them here. No datePublished:
