@@ -30,9 +30,12 @@ export function JournalFigure({
           {children}
         </svg>
       </div>
-      <details className="journal-transcript mt-2 border-b border-line">
-        <summary className="min-h-11 cursor-pointer py-2.5 text-brand-strong">
+      <details className="journal-transcript group">
+        <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 py-2 font-semibold text-brand-strong [&::-webkit-details-marker]:hidden">
           Read figure as text
+          <svg aria-hidden="true" viewBox="0 0 16 16" className="size-4 shrink-0 group-open:rotate-180">
+            <path d="m4 6 4 4 4-4" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
         </summary>
         <div className="space-y-3 pb-4 text-body">
           <p>{description}</p>
@@ -48,7 +51,7 @@ export function JournalFigure({
           )}
         </div>
       </details>
-      <figcaption className="mt-3 text-sm leading-relaxed text-subtle">{caption}</figcaption>
+      <figcaption className="journal-caption">{caption}</figcaption>
     </figure>
   );
 }
