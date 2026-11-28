@@ -1,3 +1,4 @@
+import HubIcon from "@/components/HubIcon";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -101,6 +102,7 @@ export default async function ArticlePage({
       </nav>
 
       <header className="editorial-header mt-6 space-y-4">
+        <span className="section-symbol"><HubIcon href={`/${a.hub}`} /></span>
         <h1 className="editorial-title">
           {a.title}
         </h1>

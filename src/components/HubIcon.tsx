@@ -20,18 +20,10 @@ const ICONS: Record<string, ReactNode> = {
       <path d="M6.8 12.6l1.9-3.4 2.4 5.2 2-4 1.4 2.2h2.7" />
     </>
   ),
-  // Treatments: a capsule.
+  // Treatments: parallel options, including non-medication care.
   "/treatments": (
     <>
-      <rect
-        x="8.7"
-        y="4.4"
-        width="6.6"
-        height="15.2"
-        rx="3.3"
-        transform="rotate(45 12 12)"
-      />
-      <path d="M9.6 9.6l4.8 4.8" />
+      <path d="M4 12h4m0 0 5-6h7M8 12h12M8 12l5 6h7" />
     </>
   ),
   // Conditions: concentric rings around a site — where it hurts.

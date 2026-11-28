@@ -7,6 +7,7 @@ import { NAV } from "@/lib/site";
 export const metadata = pageMetadata({ path: "/" });
 import { ALL_ARTICLES } from "@/lib/articles";
 import HeroFigure from "@/components/HeroFigure";
+import TrustBadge from "@/components/TrustBadge";
 import HubIcon from "@/components/HubIcon";
 
 /** Curated flagship reads – keeps the site's strongest pages one click deep. */
@@ -125,7 +126,9 @@ export default function Home() {
               </div>
               <ul className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-subtle">
                 {TRUST.map((t) => (
-                  <li key={t} className="inline-flex items-center gap-1.5">
+                  t === "Clinician review in progress" ? (
+                    <li key={t}><TrustBadge>{t}</TrustBadge></li>
+                  ) : <li key={t} className="inline-flex items-center gap-1.5">
                     <svg
                       aria-hidden="true"
                       viewBox="0 0 20 20"
@@ -190,9 +193,9 @@ export default function Home() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="group flex items-start gap-4 rounded-xl border border-transparent px-3 py-4 transition-colors hover:border-line hover:bg-paper/70 sm:px-4"
+                    className="group flex items-start gap-4 rounded-md border border-line bg-surface px-3 py-4 transition-colors hover:border-brand/50 hover:bg-paper/70 sm:px-4"
                   >
-                    <span className="flex size-10 shrink-0 items-center justify-center rounded-lg border border-edge bg-paper/70 text-brand transition-colors group-hover:border-brand/50 group-hover:bg-surface">
+                    <span className="section-symbol">
                       <HubIcon href={item.href} className="size-5" />
                     </span>
                     <span className="min-w-0 flex-1">
@@ -266,13 +269,13 @@ export default function Home() {
             <h3 className="text-xs font-semibold uppercase tracking-widest text-brand">
               How we work
             </h3>
-            <ol className="mt-5 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <ol role="list" className="mt-5 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {PRINCIPLES.map((p, idx) => (
                 <li
                   key={p.title}
                   className="border-t border-line pt-4"
                 >
-                  <span className="font-mono text-xs font-semibold tracking-wider text-brand">
+                  <span aria-hidden="true" className="section-symbol font-mono text-xs font-semibold">
                     {String(idx + 1).padStart(2, "0")}
                   </span>
                   <p className="mt-2 font-semibold text-ink">{p.title}</p>
@@ -310,9 +313,10 @@ export default function Home() {
               >
                 <Link
                   href={item.href}
-                  className="group flex items-baseline justify-between gap-4 py-4 transition-colors"
+                  className="group flex items-start gap-3 py-4 transition-colors"
                 >
-                  <div>
+                  <span className="section-symbol"><HubIcon href={`/${item.href.split("/")[1]}`} /></span>
+                  <div className="min-w-0 flex-1">
                     <span className="text-xs font-semibold uppercase tracking-wider text-brand">
                       {item.eyebrow}
                     </span>
