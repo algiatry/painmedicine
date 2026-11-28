@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import HubIcon from "@/components/HubIcon";
 import { usePathname } from "next/navigation";
 import { SITE, NAV, SUPPORT_LINKS } from "@/lib/site";
 import BrandMark from "@/components/BrandMark";
@@ -59,7 +60,7 @@ export default function Header() {
           </Link>
 
           <nav aria-label="Primary" className="ml-auto hidden lg:block">
-            <ul className="flex items-center gap-5">
+            <ul className="flex items-center gap-3 xl:gap-5">
               <NavLinks />
             </ul>
           </nav>
@@ -120,14 +121,15 @@ export default function Header() {
                       href={item.href}
                       onClick={() => setOpen(false)}
                       aria-current={active ? "page" : undefined}
-                      className={`flex items-center justify-between rounded-lg px-3 py-3 text-[15px] transition-colors ${
+                      className={`flex items-center gap-3 rounded-lg px-3 py-3 text-[15px] transition-colors ${
                         active
                           ? "bg-note font-semibold text-brand-strong"
                           : "font-medium text-body hover:bg-sunken hover:text-brand"
                       }`}
                     >
+                      <HubIcon href={item.href} className="size-4 shrink-0" />
                       {item.label}
-                      <span aria-hidden="true" className="text-faint">
+                      <span aria-hidden="true" className="ml-auto text-faint">
                         →
                       </span>
                     </Link>

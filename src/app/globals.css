@@ -381,3 +381,72 @@ html[data-text-size="large"] {
 .skip-link:focus {
   transform: none;
 }
+
+/* Editorial graphics use the same warm surfaces and teal ink as the text. */
+:root {
+  --editorial-graphic-gap: 0.75rem;
+  --editorial-label-size: 0.875rem;
+  --editorial-symbol-size: 1.25rem;
+}
+
+.section-symbol {
+  display: inline-grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--line);
+  border-radius: var(--editorial-radius);
+  background: var(--paper);
+  color: var(--brand-strong);
+  flex: none;
+}
+
+.section-symbol svg {
+  width: var(--editorial-symbol-size);
+  height: var(--editorial-symbol-size);
+}
+
+.trust-badge {
+  display: inline-block;
+  max-inline-size: 100%;
+  border: 1px solid var(--line);
+  border-radius: var(--editorial-radius);
+  padding: 0.15rem 0.5rem;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: var(--editorial-label-size);
+  line-height: 1.45;
+}
+
+.trust-badge[data-tone="reviewed"] {
+  border-color: var(--note-line);
+  color: var(--note-ink);
+}
+
+.journal-figure {
+  margin-block: 2rem;
+}
+
+.journal-plate {
+  border-block: 1px solid var(--line);
+  background: var(--surface);
+  padding: var(--editorial-graphic-gap);
+}
+
+.journal-plate svg {
+  display: block;
+  width: 100%;
+  max-width: 26rem;
+  height: auto;
+  margin-inline: auto;
+  color: var(--brand-strong);
+  font-family: var(--font-sans);
+}
+
+.journal-plate .diagram-label { fill: var(--ink); }
+.journal-plate .diagram-detail { fill: var(--muted); }
+.journal-plate .diagram-rule { stroke: var(--edge); }
+
+.journal-transcript {
+  font-size: var(--editorial-reading-size);
+}

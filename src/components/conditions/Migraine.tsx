@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { JournalSequence } from "@/components/science/JournalFigure";
 import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 import { HeadProfile } from "../anatomy/HeadProfile";
@@ -6,65 +7,19 @@ import { HeadProfile } from "../anatomy/HeadProfile";
 const link =
   "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
-/**
- * Figure 1 – the four phases of a migraine attack, with the pain as one
- * chapter of a longer neurological event.
- */
 function PhasesFigure() {
-  const bands = [
-    { x: 40, w: 150, name: "Prodrome", time: "hours–a day before", fill: FIG.ground },
-    { x: 190, w: 70, name: "Aura", time: "20–60 min", fill: FIG.nerveTint },
-    { x: 260, w: 240, name: "Headache", time: "4–72 hours", fill: FIG.signalGround },
-    { x: 500, w: 140, name: "Postdrome", time: "up to a day after", fill: FIG.ground },
-  ];
   return (
-    <Figure caption="A migraine attack in four phases (widths not to scale). The headache is the loudest chapter, but the attack often starts a day earlier and ends a day later, which is why 'just take something for the headache' misreads the disease.">
-      <svg
-        role="img"
-        aria-labelledby="ph-title ph-desc"
-        viewBox="0 0 680 300"
-        className="mx-auto block h-auto w-full max-w-2xl"
-      >
-        <title id="ph-title">The four phases of a migraine attack</title>
-        <desc id="ph-desc">
-          A timeline divided into prodrome (hours to a day before), aura
-          (twenty to sixty minutes, in about one in three people), headache
-          (four to seventy-two hours), and postdrome (up to a day after). An
-          amber intensity curve stays low through the early phases, peaks
-          during the headache, and settles through the postdrome.
-        </desc>
-
-        {bands.map((b) => (
-          <g key={b.name}>
-            <rect x={b.x} y="80" width={b.w} height="150" fill={b.fill} />
-            <text x={b.x + b.w / 2} y="48" textAnchor="middle" fontSize="14" fontWeight="700" fill={FIG.ink}>
-              {b.name}
-            </text>
-            <text x={b.x + b.w / 2} y="66" textAnchor="middle" fontSize="11" fill={FIG.muted}>
-              {b.time}
-            </text>
-          </g>
-        ))}
-        <line x1="40" y1="230" x2="640" y2="230" stroke={FIG.faint} strokeWidth="1.5" />
-
-        {/* intensity curve */}
-        <path
-          d="M40 215 C90 213 140 208 190 205 C213 203 235 201 260 198 C300 130 340 105 385 105 C430 105 462 160 500 195 C540 214 590 217 640 217"
-          fill="none"
-          stroke={FIG.signalDark}
-          strokeWidth="3.5"
-          strokeLinecap="round"
-        />
-
-        {/* staggered phase notes */}
-        <g fontSize="11.5" fill={FIG.textMid} textAnchor="middle">
-          <text x="115" y="258">yawning, cravings, mood shifts</text>
-          <text x="380" y="258">throbbing pain – light, sound, movement hurt</text>
-          <text x="225" y="280">shimmering zigzags – 1 in 3 people</text>
-          <text x="565" y="280">fog and fatigue – the hangover</text>
-        </g>
-      </svg>
-    </Figure>
+    <JournalSequence
+      title="The four phases of a migraine attack"
+      description="A schematic sequence of prodrome, aura when present, headache, and postdrome. The stages are not drawn to scale."
+      caption="A migraine attack in four phases (widths not to scale). The headache is the loudest chapter, but the attack often starts a day earlier and ends a day later, which is why 'just take something for the headache' misreads the disease."
+      stages={[
+        { name: "Prodrome", lines: ["Hours to a day before", "Yawning, cravings, or mood shifts"] },
+        { name: "Aura, when present", lines: ["20–60 minutes · about 1 in 3 people", "Can include shimmering zigzags"] },
+        { name: "Headache", lines: ["4–72 hours", "Throbbing pain; light or sound sensitivity"] },
+        { name: "Postdrome", lines: ["Up to a day after", "Fog and fatigue"] },
+      ]}
+    />
   );
 }
 

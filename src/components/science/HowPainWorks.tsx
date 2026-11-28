@@ -1,143 +1,26 @@
 import Link from "next/link";
+import { JournalSequence } from "@/components/science/JournalFigure";
 import { Figure, H2, KeyTakeaways, P, anim } from "./Figure";
 import { FIG } from "@/lib/fig";
 import TreatmentPathwayInteractive from "./TreatmentPathwayInteractive";
 import GlossaryTerm from "../GlossaryTerm";
 
-/**
- * Figure 1 – the pain signal pathway, schematic. Skin → nerve → spinal
- * "gate" → brain, four numbered stages. Warm amber = the signal; teal = the
- * nervous system that interprets it; slate = anatomy. Alarm reds avoided.
- */
 function PathwayFigure() {
   return (
-    <Figure
-      animate
+    <JournalSequence
+      title="The pain signal pathway"
+      description="A stimulus activates nociceptors. A nerve carries the signal to the spinal cord, where signaling is filtered. The brain processes the signal into the experience of pain."
       caption="The pain signal pathway: a stimulus becomes a signal, the spinal gate filters it, and the brain builds the experience of pain."
-    >
-      <svg
-        role="img"
-        aria-labelledby="pathway-title pathway-desc"
-        viewBox="0 0 780 300"
-        className="mx-auto block h-auto w-full max-w-3xl"
-      >
-      <title id="pathway-title">The pain signal pathway</title>
-      <desc id="pathway-desc">
-        A stimulus at the skin activates nociceptors, which send a signal along
-        a nerve to the spinal cord, where a gate filters it, and up to the
-        brain, which builds the experience of pain.
-      </desc>
-
-      {/* signal path: skin -> spinal cord */}
-      <line
-        x1="118"
-        y1="150"
-        x2="366"
-        y2="150"
-        stroke={FIG.signal}
-        strokeWidth="3"
-        className="fig-draw"
-        style={anim(0.25, 252)}
-      />
-      <circle cx="180" cy="150" r="4" fill={FIG.signal} className="fig-pop" style={anim(0.5)} />
-      <circle cx="240" cy="150" r="4" fill={FIG.signal} className="fig-pop" style={anim(0.75)} />
-      <circle cx="300" cy="150" r="4" fill={FIG.signal} className="fig-pop" style={anim(1.0)} />
-      {/* path: spinal cord -> brain */}
-      <path
-        d="M441 116 C 520 70, 590 78, 628 104"
-        fill="none"
-        stroke={FIG.nerve}
-        strokeWidth="3"
-        className="fig-draw"
-        style={anim(1.35, 215)}
-      />
-
-      {/* Stage 1 – skin + nociceptor */}
-      <g>
-        <rect x="34" y="132" width="84" height="40" rx="8" fill={FIG.ground} stroke={FIG.line} />
-        {/* stimulus spark */}
-        <path
-          d="M76 104 l-9 20 h11 l-8 20 22 -26 h-12 z"
-          fill={FIG.signal}
-          stroke={FIG.signalDark}
-          strokeWidth="1"
-          className="fig-pop"
-          style={anim(0)}
-        />
-        {/* free nerve endings */}
-        <path d="M50 172 v14 M68 172 v18 M86 172 v14 M104 172 v18" stroke={FIG.faint} strokeWidth="2" fill="none" />
-      </g>
-
-      {/* Stage 3 – spinal cord cross-section with gate */}
-      <g>
-        <ellipse cx="404" cy="150" rx="40" ry="54" fill={FIG.white} stroke={FIG.faint} strokeWidth="2" />
-        {/* butterfly gray matter */}
-        <path
-          d="M404 118 C 388 128, 386 150, 396 158 C 386 166, 388 188, 404 182 C 420 188, 422 166, 412 158 C 422 150, 420 128, 404 118 Z"
-          fill={FIG.soft}
-          stroke={FIG.line}
-        />
-        {/* the gate */}
-        <rect x="356" y="138" width="14" height="24" rx="3" fill={FIG.nerveTint} stroke={FIG.nerve} strokeWidth="2" />
-        <line x1="363" y1="138" x2="363" y2="162" stroke={FIG.nerve} strokeWidth="1.5" />
-      </g>
-
-      {/* Stage 4 – brain */}
-      <g>
-        <path
-          d="M636 104 C 628 84, 656 70, 676 78 C 692 68, 720 78, 718 98 C 732 104, 730 128, 712 132 C 706 148, 680 150, 672 138 C 652 146, 630 128, 636 104 Z"
-          fill={FIG.nerveTint}
-          stroke={FIG.nerveDark}
-          strokeWidth="2"
-        />
-        <path
-          d="M660 96 c 10 -6, 16 4, 26 -2 M654 112 c 12 6, 22 -4, 34 2 M690 90 c 6 8, 2 16, 8 22"
-          fill="none"
-          stroke={FIG.nerveDark}
-          strokeWidth="1.5"
-          className="fig-draw"
-          style={anim(2.0, 130)}
-        />
-      </g>
-
-      {/* numbered badges – each pops as its stage of the story arrives */}
-      {[
-        { n: "1", x: 76, y: 210, d: 0.1 },
-        { n: "2", x: 242, y: 118, d: 0.7 },
-        { n: "3", x: 404, y: 210, d: 1.4 },
-        { n: "4", x: 678, y: 168, d: 2.15 },
-      ].map((b) => (
-        <g key={b.n} className="fig-pop" style={anim(b.d)}>
-          <circle cx={b.x} cy={b.y} r="13" fill={FIG.nerveDark} />
-          <text x={b.x} y={b.y + 5} textAnchor="middle" fontSize="15" fontWeight="700" fill={FIG.white}>
-            {b.n}
-          </text>
-        </g>
-      ))}
-
-      {/* labels */}
-      <g fontSize="14" fill={FIG.text} textAnchor="middle">
-        <text x="76" y="248" fontWeight="600">Nociceptors</text>
-        <text x="76" y="266" fill={FIG.muted}>detect a threat</text>
-
-        <text x="242" y="262" fontWeight="600">Signal travels</text>
-        <text x="242" y="280" fill={FIG.muted}>Aδ fast · C slow</text>
-
-        <text x="404" y="248" fontWeight="600">The spinal gate</text>
-        <text x="404" y="266" fill={FIG.muted}>filters the signal</text>
-
-        <text x="678" y="206" fontWeight="600">The brain</text>
-        <text x="678" y="224" fill={FIG.muted}>builds the pain</text>
-      </g>
-      </svg>
-    </Figure>
+      stages={[
+        { name: "Nociceptors", lines: ["Detect a possible threat."] },
+        { name: "Peripheral nerve", lines: ["Carries the signal to the spinal cord."] },
+        { name: "Spinal gate", lines: ["Filters the signal."] },
+        { name: "Brain", lines: ["Builds the experience of pain."] },
+      ]}
+    />
   );
 }
 
-/**
- * Figure 2 – central sensitization as a gain/volume metaphor. Same small
- * input, amplifier turned up, large output.
- */
 function SensitizationFigure() {
   return (
     <Figure
@@ -153,7 +36,7 @@ function SensitizationFigure() {
       <title id="sensitize-title">Central sensitization turns up the gain</title>
       <desc id="sensitize-desc">
         The same small input signal passes through an amplifier turned to high,
-        producing a much larger pain output – the idea behind central
+        producing a much larger pain output, the idea behind central
         sensitization.
       </desc>
 
@@ -309,7 +192,7 @@ export default function HowPainWorks() {
         the signal continues up to the brain.
       </P>
       <P>
-        This is not just theory – you use it every day. When you rub a banged
+        This is not just theory. You use it every day. When you rub a banged
         knee, you fire large, fast touch nerves that help{" "}
         <em>close</em> the gate, so fewer pain signals get through and the knee
         feels better. The same principle is behind TENS units and some other

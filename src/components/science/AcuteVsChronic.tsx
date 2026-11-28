@@ -1,76 +1,25 @@
 import Link from "next/link";
-import { Figure, H2, KeyTakeaways, P } from "./Figure";
-import { FIG } from "@/lib/fig";
+import { JournalFigure } from "@/components/science/JournalFigure";
+import { H2, KeyTakeaways, P } from "./Figure";
 
-/**
- * Figure – two pain trajectories over time. Acute pain (amber) rises with an
- * injury and fades as tissue heals; chronic pain (teal) persists past the
- * ~3-month line even after healing. Time on x, pain intensity on y.
- */
 function TimelineFigure() {
   return (
-    <Figure caption="Acute pain tracks healing and fades. Chronic pain persists past about three months, often after the tissue itself has healed.">
-      <svg
-        role="img"
-        aria-labelledby="timeline-title timeline-desc"
-        viewBox="0 0 760 320"
-        className="mx-auto block h-auto w-full max-w-3xl"
-      >
-        <title id="timeline-title">Acute versus chronic pain over time</title>
-        <desc id="timeline-desc">
-          A graph of pain intensity against time. The acute-pain curve rises
-          with injury and returns to zero as tissue heals. The chronic-pain
-          curve rises but stays elevated past the three-month mark.
-        </desc>
-
-        {/* axes */}
-        <line x1="70" y1="250" x2="712" y2="250" stroke={FIG.line} strokeWidth="2" markerEnd="url(#axis-arrow)" />
-        <line x1="70" y1="60" x2="70" y2="250" stroke={FIG.line} strokeWidth="2" />
-        <defs>
-          <marker id="axis-arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
-            <path d="M0 0 L 9 4.5 L 0 9 z" fill={FIG.line} />
-          </marker>
-        </defs>
-        <text x="66" y="150" textAnchor="middle" fontSize="12" fill={FIG.faint} transform="rotate(-90 66 150)">
-          Pain intensity
-        </text>
-        <text x="70" y="280" fontSize="13" fill={FIG.muted}>Injury</text>
-        <text x="700" y="280" textAnchor="end" fontSize="13" fill={FIG.muted}>Time →</text>
-
-        {/* 3-month marker */}
-        <line x1="312" y1="66" x2="312" y2="258" stroke={FIG.faint} strokeWidth="1.5" strokeDasharray="4 4" />
-        <text x="312" y="54" textAnchor="middle" fontSize="13" fontWeight="600" fill={FIG.textMid}>
-          ≈ 3 months
-        </text>
-
-        {/* chronic curve */}
-        <path
-          d="M70 250 C 110 112, 152 96, 188 108 C 236 128, 262 168, 312 176 C 384 186, 430 166, 500 178 C 566 188, 626 170, 700 178"
-          fill="none"
-          stroke={FIG.nerve}
-          strokeWidth="3.5"
-        />
-        {/* acute curve */}
-        <path
-          d="M70 250 C 110 110, 150 95, 185 105 C 235 122, 300 246, 360 249 L 700 250"
-          fill="none"
-          stroke={FIG.signal}
-          strokeWidth="3.5"
-        />
-
-        {/* legend */}
-        <g>
-          <line x1="96" y1="92" x2="128" y2="92" stroke={FIG.signal} strokeWidth="3.5" />
-          <text x="136" y="96" fontSize="13.5" fill={FIG.text}>
-            Acute – protective, fades with healing
-          </text>
-          <line x1="96" y1="116" x2="128" y2="116" stroke={FIG.nerve} strokeWidth="3.5" />
-          <text x="136" y="120" fontSize="13.5" fill={FIG.text}>
-            Chronic – persists past ~3 months
-          </text>
-        </g>
-      </svg>
-    </Figure>
+    <JournalFigure
+      title="Acute versus chronic pain over time"
+      description="Two schematic trajectories. The solid acute pain line falls as healing proceeds. The dashed chronic pain line stays elevated beyond about three months."
+      caption="Acute pain tracks healing and fades. Chronic pain persists past about three months, often after the tissue itself has healed."
+      height={205}
+    >
+      <path d="M42 35V160H302M177 36V160" className="diagram-rule" strokeWidth="1.5" fill="none" />
+      <text x="42" y="22" className="diagram-label" fontSize="15">Pain intensity</text>
+      <text x="42" y="182" className="diagram-detail" fontSize="14">Injury</text>
+      <text x="177" y="182" textAnchor="middle" className="diagram-detail" fontSize="14">≈ 3 months</text>
+      <text x="302" y="182" textAnchor="end" className="diagram-detail" fontSize="14">Time →</text>
+      <path d="M42 159C64 63 92 65 114 96S151 157 179 159H300" stroke="currentColor" strokeWidth="2.5" fill="none" />
+      <path d="M42 159C65 65 93 64 115 91S154 108 181 108H300" stroke="currentColor" strokeWidth="2.5" strokeDasharray="5 4" fill="none" />
+      <text x="300" y="99" textAnchor="end" className="diagram-label" fontSize="15">Chronic pain</text>
+      <text x="300" y="149" textAnchor="end" className="diagram-label" fontSize="15">Acute pain</text>
+    </JournalFigure>
   );
 }
 

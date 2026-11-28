@@ -1,4 +1,5 @@
 import Link from "next/link";
+import TrustBadge from "@/components/TrustBadge";
 import type { PageReview, ReviewStatus } from "@/lib/schema";
 import { defaultReviewDue, getReviewer } from "@/lib/reviewers";
 
@@ -37,18 +38,18 @@ export default function ReviewByline({
     return (
       <div data-review-state="reviewed" className="review-panel space-y-1 text-sm text-note-ink">
         <p>
-          <strong>Medically reviewed by</strong>{" "}
+          <TrustBadge tone="reviewed"><strong>Medically reviewed by</strong>{" "}
           <Link
             href={`/reviewers/${profile.slug}`}
             className="font-medium text-body underline decoration-brand/40 underline-offset-2 hover:text-brand"
           >
             {profile.name}, {profile.credentials}
-          </Link>{" "}
+          </Link></TrustBadge>{" "}
           on <time dateTime={review.reviewedAt}>{formatDate(review.reviewedAt)}</time>
         </p>
         {review.note && <p className="text-muted">In review: {review.note}</p>}
         <p>
-          Last updated <time dateTime={lastUpdated}>{formatDate(lastUpdated)}</time> · Next review by <time dateTime={due}>{formatDate(due)}</time>
+          <TrustBadge>Last updated <time dateTime={lastUpdated}>{formatDate(lastUpdated)}</time></TrustBadge> · Next review by <time dateTime={due}>{formatDate(due)}</time>
         </p>
       </div>
     );
@@ -58,9 +59,7 @@ export default function ReviewByline({
     return (
       <div data-review-state="sourced" className="review-panel space-y-1 text-sm text-muted">
         <p>
-          <span className="font-semibold text-ink">
-            Not yet medically reviewed.
-          </span>{" "}
+          <TrustBadge><strong>Not yet medically reviewed.</strong></TrustBadge>{" "}
           Written from the{" "}
           {referencesHref ? (
             <a href={referencesHref} className="font-medium text-brand underline underline-offset-2">
@@ -69,7 +68,7 @@ export default function ReviewByline({
           ) : "primary sources cited below"}; independent clinician
           review is pending. Educational information, not medical advice.
         </p>
-        <p className="text-subtle">Last updated <time dateTime={lastUpdated}>{formatDate(lastUpdated)}</time></p>
+        <p><TrustBadge>Last updated <time dateTime={lastUpdated}>{formatDate(lastUpdated)}</time></TrustBadge></p>
       </div>
     );
   }
@@ -77,7 +76,7 @@ export default function ReviewByline({
   return (
     <div data-review-state="in-review" className="review-panel space-y-1 text-sm text-caution-ink">
       <p className="text-sm text-caution-ink">
-        <strong>In editorial review.</strong> This page is being prepared with
+        <TrustBadge><strong>In editorial review.</strong></TrustBadge> This page is being prepared with
         our medical review board and currently provides general orientation
         only. Detailed clinical content publishes after physician review.
       </p>

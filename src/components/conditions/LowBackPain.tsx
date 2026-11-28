@@ -1,112 +1,50 @@
 import Link from "next/link";
+import { JournalFigure } from "@/components/science/JournalFigure";
 import { Callout, Figure, H2, KeyTakeaways, P, PullQuote } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 
 const link =
   "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
-/**
- * Figure 1 – the pain-generator map: a stylized lumbar segment with every
- * structure that can plausibly generate low back pain marked in amber.
- */
+/** A schematic, with candidate structures identified by leader lines. */
 function GeneratorsFigure() {
-  const vertebrae = [60, 150, 240];
-  const discs = [118, 208];
   return (
-    <Figure caption="The lower back's candidate pain generators. Any of these structures can hurt, and in most episodes, no single one can be confidently blamed.">
-      <svg
-        role="img"
-        aria-labelledby="gen-title gen-desc"
-        viewBox="0 0 680 400"
-        className="mx-auto block h-auto w-full max-w-2xl"
-      >
-        <title id="gen-title">What can hurt in the lower back</title>
-        <desc id="gen-desc">
-          A stylized stack of three vertebrae, discs, facet joints, exiting
-          nerve roots, supporting muscle, and the sacrum below. Amber markers
-          flag each structure that can generate pain: muscles and ligaments,
-          discs, facet joints, nerve roots, and the sacroiliac joints.
-        </desc>
-
-        {/* paraspinal muscle band */}
-        <rect x="128" y="62" width="26" height="252" rx="13" fill={FIG.soft} stroke={FIG.faint} strokeWidth="1.5" />
-
-        {/* vertebral bodies */}
-        {vertebrae.map((y) => (
-          <rect key={y} x="195" y={y} width="110" height="52" rx="12" fill={FIG.nerveGround} stroke={FIG.nerveDark} strokeWidth="2" />
+    <JournalFigure
+      title="What can hurt in the lower back"
+      description="A schematic of the lower spine and sacrum, with five possible sources of pain labeled: muscles and ligaments, a disc, a facet joint, a nerve root, and a sacroiliac joint."
+      caption="The lower back's candidate pain generators. Any of these structures can hurt, and in most episodes, no single one can be confidently blamed."
+      height={290}
+    >
+      <g stroke="currentColor" strokeWidth="1.8" fill="none">
+        <rect x="31" y="30" width="18" height="165" rx="9" />
+        {[32, 94, 156].map((y) => (
+          <rect key={y} x="69" y={y} width="67" height="34" rx="5" />
         ))}
-
-        {/* discs */}
-        {discs.map((y) => (
-          <rect key={y} x="207" y={y} width="86" height="26" rx="12" fill={FIG.ground} stroke={FIG.muted} strokeWidth="1.8" />
-        ))}
-
-        {/* facet joints (posterior, right edge) */}
-        {discs.map((y) => (
-          <circle key={y} cx="316" cy={y + 13} r="9" fill={FIG.white} stroke={FIG.nerveDark} strokeWidth="2" />
-        ))}
-
-        {/* nerve roots exiting left at each disc level */}
-        {discs.map((y) => (
-          <path
-            key={y}
-            d={`M195 ${y + 13} C 172 ${y + 16} 160 ${y + 30} 150 ${y + 48}`}
-            fill="none"
-            stroke={FIG.nerve}
-            strokeWidth="4"
-            strokeLinecap="round"
-          />
-        ))}
-
-        {/* sacrum */}
-        <path
-          d="M198 302 L302 302 L282 366 Q250 382 218 366 Z"
-          fill={FIG.nerveGround}
-          stroke={FIG.nerveDark}
-          strokeWidth="2"
-        />
-        {/* sacroiliac joint lines */}
-        <path d="M206 308 L226 360" fill="none" stroke={FIG.muted} strokeWidth="2.5" strokeLinecap="round" />
-        <path d="M294 308 L274 360" fill="none" stroke={FIG.muted} strokeWidth="2.5" strokeLinecap="round" />
-
-        {/* amber pain markers */}
-        {[
-          { cx: 141, cy: 120 }, // muscle
-          { cx: 250, cy: 131 }, // upper disc
-          { cx: 316, cy: 221 }, // facet joint
-          { cx: 153, cy: 254 }, // nerve root
-          { cx: 285, cy: 336 }, // SI joint
-        ].map((m) => (
-          <g key={`${m.cx}-${m.cy}`}>
-            <circle cx={m.cx} cy={m.cy} r="11" fill={FIG.signalTint} opacity="0.85" />
-            <circle cx={m.cx} cy={m.cy} r="5" fill={FIG.signal} />
+        {[72, 134].map((y) => (
+          <g key={y}>
+            <rect x="76" y={y} width="53" height="16" rx="4" />
+            <circle cx="145" cy={y + 8} r="5" />
+            <path d={`M70 ${y + 7}q-12 4 -19 21`} />
           </g>
         ))}
-
-        {/* labels + leader lines */}
-        <g fontSize="14" fontWeight="600" fill={FIG.ink}>
-          <text x="40" y="34">Muscles &amp; ligaments</text>
-          <text x="420" y="135">Disc</text>
-          <text x="420" y="226">Facet joint</text>
-          <text x="40" y="330">Nerve root</text>
-          <text x="420" y="341">Sacroiliac joint</text>
-        </g>
-        <g fontSize="12" fill={FIG.textMid}>
-          <text x="40" y="52">strain is the everyday culprit</text>
-          <text x="420" y="153">bulge, tear, degeneration</text>
-          <text x="420" y="244">small linking joints; arthritis</text>
-          <text x="40" y="348">compression → leg pain</text>
-          <text x="420" y="359">where spine meets pelvis</text>
-        </g>
-        <g stroke={FIG.line} strokeWidth="1.5" fill="none">
-          <path d="M120 40 Q136 60 141 106" />
-          <path d="M413 130 L264 131" />
-          <path d="M413 221 L330 221" />
-          <path d="M118 324 Q136 300 149 262" />
-          <path d="M413 336 L299 336" />
-        </g>
-      </svg>
-    </Figure>
+        <path d="M70 198h65l-12 42-20 15-20-15zM76 206l12 31m41-31-12 31" />
+      </g>
+      <g className="diagram-rule" strokeWidth="1.5" fill="none">
+        <path d="M40 48H174M110 80H174M145 142H174M58 155v45h116M121 229v25h53" />
+      </g>
+      <g fill="currentColor">
+        {[[40, 48], [110, 80], [145, 142], [58, 155], [121, 229]].map(([x,y]) => (
+          <circle key={x} cx={x} cy={y} r="3" />
+        ))}
+      </g>
+      <g className="diagram-label" fontSize="16" fontWeight="600">
+        <text x="180" y="53">Muscles &amp; ligaments</text>
+        <text x="180" y="85">Disc</text>
+        <text x="180" y="147">Facet joint</text>
+        <text x="180" y="205">Nerve root</text>
+        <text x="180" y="259">Sacroiliac joint</text>
+      </g>
+    </JournalFigure>
   );
 }
 

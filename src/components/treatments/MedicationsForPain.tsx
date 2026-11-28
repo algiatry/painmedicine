@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { JournalSequence } from "@/components/science/JournalFigure";
 import { Figure, H2, KeyTakeaways, P } from "../science/Figure";
 import { FIG } from "@/lib/fig";
 import TreatmentPathwayInteractive from "../science/TreatmentPathwayInteractive";
@@ -6,118 +7,19 @@ import TreatmentPathwayInteractive from "../science/TreatmentPathwayInteractive"
 const link =
   "text-brand underline decoration-faint underline-offset-2 hover:decoration-brand";
 
-/**
- * Figure 1 – the medication map: the pain pathway from tissue to brain, with
- * each drug family attached at its site of action.
- */
 function MapFigure() {
-  const stations = [
-    { x: 40, label: "Tissue" },
-    { x: 200, label: "Nerve" },
-    { x: 360, label: "Spinal cord" },
-    { x: 520, label: "Brain" },
-  ];
-  const callout = (
-    x: number,
-    y: number,
-    w: number,
-    title: string,
-    sub: string,
-    isNew = false,
-  ) => (
-    <g key={title}>
-      <rect
-        x={x}
-        y={y}
-        width={w}
-        height="52"
-        rx="10"
-        fill={isNew ? FIG.nerveTint : FIG.white}
-        stroke={isNew ? FIG.nerveDark : FIG.line}
-        strokeWidth={isNew ? 2 : 1.5}
-      />
-      <text x={x + w / 2} y={y + 22} textAnchor="middle" fontSize="13.5" fontWeight="700" fill={FIG.ink}>
-        {title}
-      </text>
-      <text x={x + w / 2} y={y + 40} textAnchor="middle" fontSize="11" fill={FIG.textMid}>
-        {sub}
-      </text>
-    </g>
-  );
   return (
-    <Figure caption="Where pain medications act along the pathway from tissue to brain. Each family intervenes at a different point, which is why no single 'painkiller' covers every pain.">
-      <svg
-        role="img"
-        aria-labelledby="map-title map-desc"
-        viewBox="0 0 680 420"
-        className="mx-auto block h-auto w-full max-w-2xl"
-      >
-        <title id="map-title">Where pain medications act</title>
-        <desc id="map-desc">
-          The pain pathway drawn as four stations (tissue, nerve, spinal cord,
-          brain) joined by an amber signal line. Drug families are attached
-          where they act: NSAIDs and topicals at the tissue, suzetrigine and
-          topical lidocaine at the nerve, gabapentinoids and the
-          brake-boosting antidepressants at the spinal cord, opioids and
-          acetaminophen centrally.
-        </desc>
-
-        {/* signal line through the stations */}
-        <path
-          d="M60 210 H640"
-          fill="none"
-          stroke={FIG.signal}
-          strokeWidth="4"
-          strokeLinecap="round"
-        />
-        <path d="M628 202 L642 210 L628 218" fill="none" stroke={FIG.signal} strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-
-        {/* stations */}
-        {stations.map((s) => (
-          <g key={s.label}>
-            <rect x={s.x} y="184" width="120" height="52" rx="12" fill={FIG.nerveGround} stroke={FIG.nerveDark} strokeWidth="2" />
-            <text x={s.x + 60} y="216" textAnchor="middle" fontSize="14.5" fontWeight="700" fill={FIG.ink}>
-              {s.label}
-            </text>
-          </g>
-        ))}
-
-        {/* top callouts */}
-        {callout(22, 60, 160, "NSAIDs · topical NSAIDs", "damp inflammatory chemistry")}
-        {callout(184, 24, 156, "Suzetrigine – new, 2025", "blocks the signal at its source", true)}
-        {callout(352, 60, 140, "SNRIs · tricyclics", "strengthen the brakes")}
-        {callout(506, 24, 156, "Opioids", "turn down the alarm centrally")}
-
-        {/* bottom callouts */}
-        {callout(192, 320, 140, "Lidocaine · capsaicin", "topicals: numb or exhaust")}
-        {callout(352, 320, 140, "Gabapentinoids", "calm sensitized signaling")}
-        {callout(506, 320, 156, "Acetaminophen", "central; mechanism debated")}
-
-        {/* connectors */}
-        <g stroke={FIG.line} strokeWidth="1.5" fill="none">
-          <path d="M100 112 L100 184" />
-          <path d="M262 76 L262 184" />
-          <path d="M422 112 L422 184" />
-          <path d="M584 76 L584 184" />
-          <path d="M262 320 L262 236" />
-          <path d="M422 320 L422 236" />
-          <path d="M584 320 L584 236" />
-        </g>
-
-        {/* descending-brakes arrow: brain down to cord */}
-        <path
-          d="M516 250 Q470 268 452 246"
-          fill="none"
-          stroke={FIG.nerve}
-          strokeWidth="2.5"
-          strokeDasharray="2 6"
-          strokeLinecap="round"
-        />
-        <text x="500" y="282" textAnchor="middle" fontSize="11.5" fill={FIG.nerveDark}>
-          descending pain control
-        </text>
-      </svg>
-    </Figure>
+    <JournalSequence
+      title="Where pain medications act"
+      description="Examples by site and mechanism along the pain pathway: anti-inflammatory medications at tissue, signal blockers at the nerve, medications affecting spinal signaling, and centrally acting medications."
+      caption="Where pain medications act along the pathway from tissue to brain. Each family intervenes at a different point, which is why no single 'painkiller' covers every pain."
+      stages={[
+        { name: "Tissue", lines: ["NSAIDs reduce inflammatory signaling."] },
+        { name: "Nerve", lines: ["Suzetrigine blocks signal transmission.", "Topicals include lidocaine and capsaicin."] },
+        { name: "Spinal cord", lines: ["Gabapentinoids calm sensitized signaling.", "SNRIs and tricyclics affect pain control."] },
+        { name: "Brain", lines: ["Opioids act centrally.", "Acetaminophen: mechanism debated."] },
+      ]}
+    />
   );
 }
 

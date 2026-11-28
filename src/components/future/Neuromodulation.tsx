@@ -1,76 +1,20 @@
 import Link from "next/link";
-import { Figure, H2, KeyTakeaways, P } from "@/components/science/Figure";
-import { FIG } from "@/lib/fig";
-
-const LEVELS = [
-  {
-    anat: "Brain",
-    yc: 70,
-    title: "Non-invasive brain stimulation",
-    detail: "rTMS & tDCS – magnetic or electrical pulses through the scalp",
-  },
-  {
-    anat: "Spinal cord",
-    yc: 150,
-    title: "Spinal cord stimulation (SCS)",
-    detail: "High-frequency 10 kHz (no tingling) · closed-loop, self-adjusting",
-  },
-  {
-    anat: "DRG",
-    yc: 230,
-    title: "Dorsal root ganglion stimulation",
-    detail: "Targets one nerve cluster for focal pain such as CRPS",
-  },
-  {
-    anat: "Nerve",
-    yc: 310,
-    title: "Peripheral nerve stimulation",
-    detail: "Stimulates a specific nerve close to the pain's source",
-  },
-];
+import { H2, KeyTakeaways, P } from "@/components/science/Figure";
+import { JournalSequence } from "@/components/science/JournalFigure";
 
 function LevelsFigure() {
   return (
-    <Figure caption="Neuromodulation now acts at every level of the pain pathway, from the brain down to a single peripheral nerve.">
-      <svg
-        role="img"
-        aria-labelledby="nm-title nm-desc"
-        viewBox="0 0 720 360"
-        className="mx-auto block h-auto w-full max-w-3xl"
-      >
-        <title id="nm-title">Where neuromodulation acts</title>
-        <desc id="nm-desc">
-          A vertical map of the nervous system (brain, spinal cord, dorsal root
-          ganglion, and peripheral nerve) each paired with the stimulation
-          technique that targets it.
-        </desc>
-
-        {/* neuraxis */}
-        <line x1="160" y1="52" x2="160" y2="328" stroke={FIG.line} strokeWidth="2" markerEnd="url(#nm-arrow)" />
-        <defs>
-          <marker id="nm-arrow" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
-            <path d="M0 0 L 9 4.5 L 0 9 z" fill={FIG.line} />
-          </marker>
-        </defs>
-
-        {LEVELS.map((l) => (
-          <g key={l.anat}>
-            <text x="138" y={l.yc + 4} textAnchor="end" fontSize="13" fontWeight="600" fill={FIG.textMid}>
-              {l.anat}
-            </text>
-            <line x1="170" y1={l.yc} x2="208" y2={l.yc} stroke={FIG.line} strokeWidth="2" />
-            <circle cx="160" cy={l.yc} r="9" fill={FIG.nerveTint} stroke={FIG.nerve} strokeWidth="2" />
-            <rect x="208" y={l.yc - 30} width="490" height="60" rx="10" fill={FIG.paper} stroke={FIG.soft} />
-            <text x="226" y={l.yc - 6} fontSize="15" fontWeight="600" fill={FIG.ink}>
-              {l.title}
-            </text>
-            <text x="226" y={l.yc + 16} fontSize="13" fill={FIG.muted}>
-              {l.detail}
-            </text>
-          </g>
-        ))}
-      </svg>
-    </Figure>
+    <JournalSequence
+      title="Where neuromodulation acts"
+      description="The location of each stimulation technique, shown from the brain to the peripheral nerves."
+      caption="Neuromodulation now acts at every level of the pain pathway, from the brain down to a single peripheral nerve."
+      stages={[
+        { name: "Brain", lines: ["Non-invasive rTMS or tDCS", "Magnetic or electrical pulses at the scalp"] },
+        { name: "Spinal cord", lines: ["Spinal cord stimulation (SCS)", "Includes 10 kHz and closed-loop systems"] },
+        { name: "Dorsal root ganglion", lines: ["Targets a nerve cluster for focal pain", "CRPS is one example"] },
+        { name: "Peripheral nerve", lines: ["Stimulates a specific nerve", "Close to the source of pain"] },
+      ]}
+    />
   );
 }
 

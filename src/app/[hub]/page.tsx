@@ -1,3 +1,4 @@
+import HubIcon from "@/components/HubIcon";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -55,6 +56,7 @@ export default async function HubPage({
       {hub.faqs && hub.faqs.length > 0 && <JsonLd data={faqJsonLd(hub.faqs)} />}
 
       <header className="editorial-header space-y-4">
+        <span className="section-symbol"><HubIcon href={`/${hub.slug}`} /></span>
         <h1 className="editorial-title">
           {hub.heading}
         </h1>
