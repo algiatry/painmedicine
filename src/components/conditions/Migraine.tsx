@@ -12,7 +12,7 @@ function PhasesFigure() {
     <JournalSequence
       title="The four phases of a migraine attack"
       description="A schematic sequence of prodrome, aura when present, headache, and postdrome. The stages are not drawn to scale."
-      caption="A migraine attack in four phases (widths not to scale). The headache is the loudest chapter, but the attack often starts a day earlier and ends a day later, which is why 'just take something for the headache' misreads the disease."
+      caption="A migraine attack in four phases (phases not drawn to scale). The headache is the loudest chapter, but the attack often starts a day earlier and ends a day later, which is why 'just take something for the headache' misreads the disease."
       stages={[
         { name: "Prodrome", lines: ["Hours to a day before", "Yawning, cravings, or mood shifts"] },
         { name: "Aura, when present", lines: ["20–60 minutes · about 1 in 3 people", "Can include shimmering zigzags"] },

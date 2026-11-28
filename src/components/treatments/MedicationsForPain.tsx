@@ -221,7 +221,7 @@ export default function MedicationsForPain() {
       <H2 id="the-map">The map: where each family acts</H2>
       <MapFigure />
       <P>
-        Reading the map from left to right: at the <strong>tissue</strong>,
+        Reading the map from top to bottom: at the <strong>tissue</strong>,
         anti-inflammatory drugs blunt the chemical alarm of injury. At the{" "}
         <strong>nerve</strong>, local anesthetics, and now a new drug class,
         quiet the signal in transit. At the <strong>spinal cord</strong>, some
