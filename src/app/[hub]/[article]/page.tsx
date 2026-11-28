@@ -57,6 +57,13 @@ export default async function ArticlePage({
       ? a.slug
       : undefined;
 
+  const relatedGroups = [
+    { labels: ["understanding-pain"], title: "Understanding the mechanism" },
+    { labels: ["treatments"], title: "Today’s treatments" },
+    { labels: ["future-of-pain-medicine"], title: "What’s next" },
+    { labels: ["conditions", "what-is-pain-medicine", "glossary", "find-help"], title: "More guides" },
+  ];
+  const knownSections = relatedGroups.flatMap(({ labels }) => labels);
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-14 xl:grid xl:grid-cols-[minmax(0,42rem)_15rem] xl:justify-center xl:gap-16">
       <article data-toc-root className="mx-auto max-w-[var(--editorial-measure)] xl:mx-0">
@@ -68,9 +75,11 @@ export default async function ArticlePage({
           lastUpdated: a.lastUpdated,
           publishedAt: a.publishedAt,
           review: a.review,
+          status: a.status,
+          citations: a.references.map((ref) => ref.url),
         })}
       />
-      <JsonLd data={faqJsonLd(a.faqs)} />
+      {a.faqs.length > 0 && <JsonLd data={faqJsonLd(a.faqs)} />}
       <JsonLd
         data={breadcrumbJsonLd([
           { name: "Home", path: "/" },
@@ -124,7 +133,7 @@ export default async function ArticlePage({
       {hub === "conditions" && (
         <aside
           aria-label="Red flags: when to seek urgent care"
-          className="mt-8 max-w-[65ch] rounded-xl border border-caution-line bg-caution px-5 py-4 text-sm text-caution-ink"
+          className="mt-8 max-w-[65ch] rounded-md border border-caution-line border-s-4 border-s-caution-ink bg-caution px-4 py-4 sm:px-5 text-sm text-caution-ink"
         >
           <p className="font-semibold">Red flags: when to seek urgent care</p>
           <p className="mt-1 leading-relaxed">
@@ -135,8 +144,16 @@ export default async function ArticlePage({
         </aside>
       )}
 
+      {(hub === "conditions" || hub === "treatments") && (
+        <p className="mt-6">
+          <Link href="/what-is-pain-medicine/your-first-visit" className="inline-flex min-h-11 items-center font-semibold text-brand-strong underline underline-offset-4">
+            What to ask your clinician
+          </Link>
+        </p>
+      )}
+
       {Body && (
-        <div className="editorial-reading mt-10">
+        <div className="editorial-reading mt-6 sm:mt-10">
           <Body />
         </div>
       )}
@@ -176,7 +193,7 @@ export default async function ArticlePage({
         >
           Frequently asked questions
         </h2>
-        <dl className="mt-6 space-y-6">
+        <dl className="editorial-reading mt-6 space-y-6">
           {a.faqs.map((f) => (
             <div key={f.question}>
               <dt className="font-semibold text-ink">{f.question}</dt>
@@ -193,24 +210,29 @@ export default async function ArticlePage({
         >
           References
         </h2>
-        <ol role="list" className="mt-4 divide-y divide-line border-y border-line text-base">
-          {a.references.map((ref, i) => (
-            <li key={ref.url} className="flex gap-3 py-3">
-              <span aria-hidden="true" className="w-7 shrink-0 text-subtle tabular-nums">{i + 1}.</span>
-              <span className="min-w-0 wrap-anywhere">
-                <a
-                  href={ref.url}
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
-                >
-                  {ref.title}
-                </a>
-                <span className="text-subtle"> – {ref.source}</span>
-              </span>
-            </li>
-          ))}
-        </ol>
+        <details open className="mt-3 border-y border-line">
+          <summary className="min-h-11 cursor-pointer py-2.5 font-semibold text-brand-strong">
+            Source list ({a.references.length})
+          </summary>
+          <ol role="list" className="editorial-reading divide-y divide-line border-t border-line">
+            {a.references.map((ref, i) => (
+              <li key={ref.url} className="flex gap-3 py-3">
+                <span aria-hidden="true" className="w-7 shrink-0 text-subtle tabular-nums">{i + 1}.</span>
+                <span className="min-w-0 wrap-anywhere">
+                  <a
+                    href={ref.url}
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    className="text-brand underline decoration-faint underline-offset-2 hover:decoration-brand"
+                  >
+                    {ref.title}
+                  </a>
+                  <span className="text-subtle"> – {ref.source}</span>
+                </span>
+              </li>
+            ))}
+          </ol>
+        </details>
       </section>
 
       {a.related.length > 0 && (
@@ -221,29 +243,49 @@ export default async function ArticlePage({
           >
             Keep reading
           </h2>
-          <div className="mt-6 flex flex-col gap-2">
-            {a.related.map((r) => (
-              <Link
-                key={r.href}
-                href={r.href}
-                className="group flex gap-4 rounded-xl border border-transparent px-3 py-4 transition-colors hover:border-line hover:bg-paper/70 sm:px-4"
-              >
-                <span className="mt-0.5 flex size-11 shrink-0 items-center justify-center rounded-lg border border-edge bg-plate transition-colors group-hover:border-brand/50 group-hover:bg-white">
-                  <ArticleEmblem
-                    slug={r.href.split("/").filter(Boolean).pop() ?? ""}
-                    className="size-7"
-                  />
-                </span>
-                <span className="flex flex-col gap-1">
-                  <span className="font-semibold text-ink group-hover:text-brand">
-                    {r.title}
-                  </span>
-                  <span className="text-sm text-muted">{r.blurb}</span>
-                </span>
-              </Link>
-            ))}
-          </div>
+          {relatedGroups.map(({ labels, title }) => {
+            const items = a.related.filter(({ href }) => {
+              const section = href.split("/")[1];
+              return labels.includes(section) || (title === "More guides" && !knownSections.includes(section));
+            });
+            if (!items.length) return null;
+            return (
+              <div key={title} className="mt-5 border-t border-line pt-3">
+                <h3 className="text-base font-semibold text-ink">{title}</h3>
+                <ul role="list">
+                  {items.map((r) => (
+                    <li key={r.href}>
+                      <Link
+                        href={r.href}
+                        className="group flex gap-4 rounded-xl border border-transparent px-3 py-4 transition-colors hover:border-line hover:bg-paper/70 sm:px-4"
+                      >
+                        <span className="mt-0.5 flex size-11 shrink-0 items-center justify-center rounded-lg border border-edge bg-plate transition-colors group-hover:border-brand/50 group-hover:bg-white">
+                          <ArticleEmblem
+                            slug={r.href.split("/").filter(Boolean).pop() ?? ""}
+                            className="size-7"
+                          />
+                        </span>
+                        <span className="flex flex-col gap-1">
+                          <span className="font-semibold text-ink group-hover:text-brand">
+                            {r.title}
+                          </span>
+                          <span className="text-sm text-muted">{r.blurb}</span>
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
         </section>
+      )}
+
+      {(hub === "conditions" || hub === "treatments") && (
+        <nav aria-label="Help with pain medicine" className="mt-8 flex flex-wrap gap-x-5 border-t border-line">
+          <Link href="/find-help" className="inline-flex min-h-11 items-center text-brand-strong underline underline-offset-4">Find help</Link>
+          <Link href="/glossary" className="inline-flex min-h-11 items-center text-brand-strong underline underline-offset-4">Look up a term</Link>
+        </nav>
       )}
 
       <p className="mt-12 border-t border-line pt-6 text-sm text-subtle">

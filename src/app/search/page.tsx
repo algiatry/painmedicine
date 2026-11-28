@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SearchBrowsePaths from "@/components/SearchBrowsePaths";
 import { buildSearchIndex, prepare, search } from "@/lib/search";
 
 export const metadata: Metadata = {
@@ -44,11 +45,10 @@ export default async function SearchPage({
           type="search"
           name="q"
           defaultValue={q}
-          autoFocus
           placeholder="Search conditions, treatments, terms…"
           aria-label="Search PainMedicine.com"
           enterKeyHint="search"
-          className="min-w-0 flex-1 rounded-xl border border-edge bg-paper px-4 py-3 text-base text-ink outline-none placeholder:text-subtle focus:border-brand"
+          className="min-w-0 flex-1 rounded-xl border border-edge bg-paper px-4 py-3 text-base text-ink placeholder:text-subtle focus:border-brand"
         />
         <button
           type="submit"
@@ -64,15 +64,12 @@ export default async function SearchPage({
           and press Search.
         </p>
       ) : results.length === 0 ? (
-        <p className="mt-8 text-body">
-          No results for{" "}
-          <span className="font-semibold text-ink">“{q}”</span>. Try a
-          different word, or browse from the{" "}
-          <Link href="/" className="text-brand underline underline-offset-2">
-            home page
-          </Link>
-          .
-        </p>
+        <div className="mt-8 space-y-2">
+          <p className="break-words text-body">
+            No results for <strong>“{q}”</strong>. Try a shorter term or browse by topic.
+          </p>
+          <SearchBrowsePaths />
+        </div>
       ) : (
         <>
           <p className="mt-8 text-sm text-subtle" aria-live="polite">
@@ -89,6 +86,7 @@ export default async function SearchPage({
                   <span className="text-xs font-medium uppercase tracking-wide text-subtle">
                     {r.section}
                   </span>
+                  {r.reviewLabel && <span className="ms-2 text-xs text-subtle">· {r.reviewLabel}</span>}
                   <span className="mt-1 block font-semibold text-ink group-hover:text-brand">
                     {r.title}
                   </span>

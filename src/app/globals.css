@@ -464,3 +464,18 @@ html[data-text-size="large"] {
   font-size: var(--editorial-label-size);
   line-height: 1.55;
 }
+
+.editorial-policy-reading {
+  font-size: var(--editorial-reading-size);
+}
+
+@media (prefers-color-scheme: dark) {
+  html[data-low-glare="true"] {
+    --background: #10151a;
+    --surface: #131b22;
+    --paper: #192128;
+    --ink: #dce4e8;
+    --body: #bfccd5;
+    --foreground: var(--body);
+  }
+}

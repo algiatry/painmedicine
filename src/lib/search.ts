@@ -1,3 +1,5 @@
+import { getReviewer } from "./reviewers";
+import type { PageMeta } from "./schema";
 import { HUBS } from "./hubs";
 import { ALL_ARTICLES } from "./articles";
 import { GLOSSARY, termSlug } from "./glossary";
@@ -15,6 +17,7 @@ export type SearchEntry = {
   section: string;
   /** One or two sentences shown under the title. */
   summary: string;
+  reviewLabel?: "Medically reviewed" | "Not yet medically reviewed" | "In editorial review";
   /** Extra searchable text that is matched but never displayed. */
   body: string;
   /** Everyday words people type for this page; ranked like the title. */
@@ -99,12 +102,20 @@ export const ALIASES: Record<string, string> = {
   "/future-of-pain-medicine/neuromodulation": "spinal cord stimulator scs brain stimulation",
 };
 
+function reviewLabel(page: PageMeta): SearchEntry["reviewLabel"] {
+  if (page.status === "reviewed" && page.review && getReviewer(page.review.reviewer)) {
+    return "Medically reviewed";
+  }
+  return page.status === "sourced" ? "Not yet medically reviewed" : "In editorial review";
+}
+
 export function buildSearchIndex(): SearchEntry[] {
   const articles = ALL_ARTICLES.map((a) => ({
     title: a.title,
     href: `/${a.hub}/${a.slug}`,
     section: SECTION[a.hub] ?? "Article",
     summary: a.description,
+    reviewLabel: reviewLabel(a),
     body: [a.answer, ...a.faqs.flatMap((f) => [f.question, f.answer])].join(" "),
     aliases: ALIASES[`/${a.hub}/${a.slug}`],
   }));
@@ -114,6 +125,7 @@ export function buildSearchIndex(): SearchEntry[] {
     href: `/${h.slug}`,
     section: "Section",
     summary: h.description,
+    reviewLabel: reviewLabel(h),
     body: h.intro.join(" "),
   }));
 

@@ -62,7 +62,7 @@ export default function ReviewByline({
           <TrustBadge><strong>Not yet medically reviewed.</strong></TrustBadge>{" "}
           Written from the{" "}
           {referencesHref ? (
-            <a href={referencesHref} className="font-medium text-brand underline underline-offset-2">
+            <a href={referencesHref} className="font-medium text-brand-strong underline underline-offset-2">
               primary sources cited below
             </a>
           ) : "primary sources cited below"}; independent clinician

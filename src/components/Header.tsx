@@ -10,9 +10,10 @@ import NavLinks from "@/components/NavLinks";
 import SiteSearch from "@/components/SiteSearch";
 
 /** Quick links surfaced in the mobile menu footer. */
-const MOBILE_UTILITY = SUPPORT_LINKS.filter((l) =>
-  ["/find-help", "/glossary", "/about"].includes(l.href),
-);
+const MOBILE_UTILITY = [
+  { label: "What to ask your clinician", href: "/what-is-pain-medicine/your-first-visit" },
+  ...SUPPORT_LINKS.filter((link) => ["/find-help", "/glossary", "/about"].includes(link.href)),
+];
 
 export default function Header() {
   const pathname = usePathname();
@@ -143,7 +144,7 @@ export default function Header() {
                   <Link
                     href={item.href}
                     onClick={() => setOpen(false)}
-                    className="text-sm font-medium text-subtle hover:text-brand"
+                    className="inline-flex min-h-11 items-center text-sm font-medium text-subtle underline underline-offset-2 hover:text-brand"
                   >
                     {item.label}
                   </Link>
